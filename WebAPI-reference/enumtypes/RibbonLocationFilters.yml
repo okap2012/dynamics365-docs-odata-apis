@@ -20,16 +20,16 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Retrieve just the form ribbon. "
-    name: Form
+    name: "Form"
     value: 1
   - description: "Retrieve just the ribbon displayed for entity grids. "
-    name: HomepageGrid
+    name: "HomepageGrid"
     value: 2
   - description: "Retrieve just the ribbon displayed when the entity is displayed in a subgrid or associated view.  "
-    name: SubGrid
+    name: "SubGrid"
     value: 4
   - description: "Retrieve all Ribbons. Equivalent to Default.  "
-    name: All
+    name: "All"
     value: 7
 usedby:
   description: "The following use the RibbonLocationFilters EnumType."

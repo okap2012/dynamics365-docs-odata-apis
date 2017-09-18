@@ -20,19 +20,19 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "For internal use only. "
-    name: None
+    name: "None"
     value: 0
   - description: "For internal use only. "
-    name: Low
+    name: "Low"
     value: 1
   - description: "For internal use only. "
-    name: Normal
+    name: "Normal"
     value: 2
   - description: "For internal use only. "
-    name: High
+    name: "High"
     value: 3
   - description: "For internal use only. "
-    name: Essential
+    name: "Essential"
     value: 4
 usedby:
   description: "The following use the ManagedPropertyEvaluationPriority EnumType."

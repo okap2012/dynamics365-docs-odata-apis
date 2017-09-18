@@ -20,13 +20,13 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Default access. The actual access is determined by the endpoint URL. "
-    name: Default
+    name: "Default"
     value: 0
   - description: "Internet access.  "
-    name: Internet
+    name: "Internet"
     value: 1
   - description: "Intranet access. "
-    name: Intranet
+    name: "Intranet"
     value: 2
 usedby:
   description: "The following use the EndpointAccessType EnumType."

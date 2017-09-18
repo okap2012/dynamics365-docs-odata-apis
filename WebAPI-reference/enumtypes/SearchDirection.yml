@@ -20,10 +20,10 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Search forward in the calendar. "
-    name: Forward
+    name: "Forward"
     value: 0
   - description: "Search backward in the calendar. "
-    name: Backward
+    name: "Backward"
     value: 1
 usedby:
   description: "The following use the SearchDirection EnumType."

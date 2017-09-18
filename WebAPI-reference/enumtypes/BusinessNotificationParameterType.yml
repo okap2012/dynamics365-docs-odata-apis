@@ -20,13 +20,13 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "For internal use only. "
-    name: None
+    name: "None"
     value: 0
   - description: "For internal use only. "
-    name: String
+    name: "String"
     value: 1
   - description: "For internal use only. "
-    name: Attribute
+    name: "Attribute"
     value: 2
 usedby:
   description: "The following use the BusinessNotificationParameterType EnumType."

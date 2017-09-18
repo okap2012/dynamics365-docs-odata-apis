@@ -20,16 +20,16 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: " All possible attribute values."
-    name: All
+    name: "All"
     value: 0
   - description: "Attribute values that are valid for create."
-    name: ValidForCreate
+    name: "ValidForCreate"
     value: 1
   - description: "Attribute values that are valid for update."
-    name: ValidForUpdate
+    name: "ValidForUpdate"
     value: 2
   - description: "Attribute values that are valid for read."
-    name: ValidForRead
+    name: "ValidForRead"
     value: 3
 usedby:
   description: "The following use the TargetFieldType EnumType."

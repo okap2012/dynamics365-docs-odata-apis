@@ -20,10 +20,10 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Display the date only. "
-    name: DateOnly
+    name: "DateOnly"
     value: 0
   - description: "Display the date and time."
-    name: DateAndTime
+    name: "DateAndTime"
     value: 1
 usedby:
   description: "The following use the DateTimeFormat EnumType."

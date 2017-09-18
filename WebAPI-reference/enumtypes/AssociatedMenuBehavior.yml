@@ -20,13 +20,13 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Use the collection name for the associated menu.  "
-    name: UseCollectionName
+    name: "UseCollectionName"
     value: 0
   - description: "Use the label for the associated menu.  "
-    name: UseLabel
+    name: "UseLabel"
     value: 1
   - description: "Do not show the associated menu.  "
-    name: DoNotDisplay
+    name: "DoNotDisplay"
     value: 2
 usedby:
   description: "The following use the AssociatedMenuBehavior EnumType."

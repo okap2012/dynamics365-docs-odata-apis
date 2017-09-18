@@ -20,10 +20,10 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: ""
-    name: Error
+    name: "Error"
     value: 1
   - description: ""
-    name: Warning
+    name: "Warning"
     value: 2
 usedby:
   description: "The following use the ErrorType EnumType."

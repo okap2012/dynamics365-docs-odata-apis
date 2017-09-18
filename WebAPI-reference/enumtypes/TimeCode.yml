@@ -20,16 +20,16 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "The time is available within the working hours of the resource."
-    name: Available
+    name: "Available"
     value: 0
   - description: "The time is committed to an activity."
-    name: Busy
+    name: "Busy"
     value: 1
   - description: "The time is unavailable. "
-    name: Unavailable
+    name: "Unavailable"
     value: 2
   - description: "Use additional filters for the time block such as service cost or service start time."
-    name: Filter
+    name: "Filter"
     value: 3
 usedby:
   description: "The following use the TimeCode EnumType."

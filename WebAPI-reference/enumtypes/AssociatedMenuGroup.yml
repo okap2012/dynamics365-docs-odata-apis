@@ -20,16 +20,16 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Show the associated menu in the details group. "
-    name: Details
+    name: "Details"
     value: 0
   - description: "Show the associated menu in the sales group. "
-    name: Sales
+    name: "Sales"
     value: 1
   - description: "Show the associated menu in the service group. "
-    name: Service
+    name: "Service"
     value: 2
   - description: "Show the associated menu in the marketing group.  "
-    name: Marketing
+    name: "Marketing"
     value: 3
 usedby:
   description: "The following use the AssociatedMenuGroup EnumType."

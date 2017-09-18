@@ -20,16 +20,16 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Specifies that the IME mode is chosen automatically. "
-    name: Auto
+    name: "Auto"
     value: 0
   - description: "Specifies that the IME mode is inactive. "
-    name: Inactive
+    name: "Inactive"
     value: 1
   - description: "Specifies that the IME mode is active.  "
-    name: Active
+    name: "Active"
     value: 2
   - description: "Specifies that the IME mode is disabled. "
-    name: Disabled
+    name: "Disabled"
     value: 3
 usedby:
   description: "The following use the ImeMode EnumType."

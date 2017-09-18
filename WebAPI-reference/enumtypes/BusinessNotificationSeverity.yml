@@ -20,19 +20,19 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "For internal use only. "
-    name: None
+    name: "None"
     value: 0
   - description: "For internal use only."
-    name: Error
+    name: "Error"
     value: 1
   - description: "For internal use only. "
-    name: Warning
+    name: "Warning"
     value: 2
   - description: "For internal use only."
-    name: Information
+    name: "Information"
     value: 3
   - description: "For internal use only. "
-    name: UserDefined
+    name: "UserDefined"
     value: 4
 usedby:
   description: "The following use the BusinessNotificationSeverity EnumType."

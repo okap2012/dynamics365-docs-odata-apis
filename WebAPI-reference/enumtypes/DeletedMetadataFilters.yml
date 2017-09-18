@@ -20,22 +20,22 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: ""
-    name: Default
+    name: "Default"
     value: 1
   - description: ""
-    name: Attribute
+    name: "Attribute"
     value: 2
   - description: ""
-    name: Relationship
+    name: "Relationship"
     value: 4
   - description: ""
-    name: Label
+    name: "Label"
     value: 8
   - description: ""
-    name: OptionSet
+    name: "OptionSet"
     value: 16
   - description: ""
-    name: All
+    name: "All"
     value: 31
 usedby:
   description: "The following use the DeletedMetadataFilters EnumType."

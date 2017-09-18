@@ -20,271 +20,271 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "The values are compared for equality."
-    name: Equal
+    name: "Equal"
     value: 0
   - description: "The two values are not equal."
-    name: NotEqual
+    name: "NotEqual"
     value: 1
   - description: "The value is greater than the compared value. "
-    name: GreaterThan
+    name: "GreaterThan"
     value: 2
   - description: "The value is less than the compared value. "
-    name: LessThan
+    name: "LessThan"
     value: 3
   - description: "The value is greater than or equal to the compared value. "
-    name: GreaterEqual
+    name: "GreaterEqual"
     value: 4
   - description: "The value is less than or equal to the compared value."
-    name: LessEqual
+    name: "LessEqual"
     value: 5
   - description: "The character string is matched to the specified pattern."
-    name: Like
+    name: "Like"
     value: 6
   - description: "The character string does not match the specified pattern."
-    name: NotLike
+    name: "NotLike"
     value: 7
   - description: "The value exists in a list of values. "
-    name: In
+    name: "In"
     value: 8
   - description: "The given value is not matched to a value in a subquery or a list.  "
-    name: NotIn
+    name: "NotIn"
     value: 9
   - description: "The value is between two values.  "
-    name: Between
+    name: "Between"
     value: 10
   - description: "The value is not between two values. "
-    name: NotBetween
+    name: "NotBetween"
     value: 11
   - description: "The value is null."
-    name: Null
+    name: "Null"
     value: 12
   - description: "The value is not null. "
-    name: NotNull
+    name: "NotNull"
     value: 13
   - description: "The value equals yesterday’s date. "
-    name: Yesterday
+    name: "Yesterday"
     value: 14
   - description: "The value equals today’s date. "
-    name: Today
+    name: "Today"
     value: 15
   - description: "The value equals tomorrow’s date."
-    name: Tomorrow
+    name: "Tomorrow"
     value: 16
   - description: "The value is within the last seven days including today."
-    name: Last7Days
+    name: "Last7Days"
     value: 17
   - description: "The value is within the next seven days."
-    name: Next7Days
+    name: "Next7Days"
     value: 18
   - description: "The value is within the previous week including Sunday through Saturday. "
-    name: LastWeek
+    name: "LastWeek"
     value: 19
   - description: "The value is within the current week. "
-    name: ThisWeek
+    name: "ThisWeek"
     value: 20
   - description: "The value is within the next week."
-    name: NextWeek
+    name: "NextWeek"
     value: 21
   - description: "The value is within the last month including first day of the last month and last day of the last month. "
-    name: LastMonth
+    name: "LastMonth"
     value: 22
   - description: "The value is within the current month. "
-    name: ThisMonth
+    name: "ThisMonth"
     value: 23
   - description: "The value is within the next month."
-    name: NextMonth
+    name: "NextMonth"
     value: 24
   - description: "The value is on a specified date. "
-    name: On
+    name: "On"
     value: 25
   - description: "The value is on or before a specified date. "
-    name: OnOrBefore
+    name: "OnOrBefore"
     value: 26
   - description: "The value is on or after a specified date."
-    name: OnOrAfter
+    name: "OnOrAfter"
     value: 27
   - description: "The value is within the previous year.  "
-    name: LastYear
+    name: "LastYear"
     value: 28
   - description: "The value is within the current year. "
-    name: ThisYear
+    name: "ThisYear"
     value: 29
   - description: "The value is within the next year.  "
-    name: NextYear
+    name: "NextYear"
     value: 30
   - description: "The value is within the last X hours."
-    name: LastXHours
+    name: "LastXHours"
     value: 31
   - description: "The value is within the next X (specified value) hours. "
-    name: NextXHours
+    name: "NextXHours"
     value: 32
   - description: "The value is within last X days."
-    name: LastXDays
+    name: "LastXDays"
     value: 33
   - description: "The value is within the next X (specified value) days."
-    name: NextXDays
+    name: "NextXDays"
     value: 34
   - description: "The value is within the last X (specified value) weeks. "
-    name: LastXWeeks
+    name: "LastXWeeks"
     value: 35
   - description: "The value is within the next X weeks. "
-    name: NextXWeeks
+    name: "NextXWeeks"
     value: 36
   - description: "The value is within the last X (specified value) months. "
-    name: LastXMonths
+    name: "LastXMonths"
     value: 37
   - description: "The value is within the next X (specified value) months. "
-    name: NextXMonths
+    name: "NextXMonths"
     value: 38
   - description: "The value is within the last X years. "
-    name: LastXYears
+    name: "LastXYears"
     value: 39
   - description: "The value is within the next X years."
-    name: NextXYears
+    name: "NextXYears"
     value: 40
   - description: "The value is equal to the specified user ID."
-    name: EqualUserId
+    name: "EqualUserId"
     value: 41
   - description: "The value is not equal to the specified user ID."
-    name: NotEqualUserId
+    name: "NotEqualUserId"
     value: 42
   - description: "The value is equal to the specified business ID."
-    name: EqualBusinessId
+    name: "EqualBusinessId"
     value: 43
   - description: "The value is not equal to the specified business ID. "
-    name: NotEqualBusinessId
+    name: "NotEqualBusinessId"
     value: 44
   - description: "For internal use only."
-    name: ChildOf
+    name: "ChildOf"
     value: 45
   - description: "The value is found in the specified bit-mask value. "
-    name: Mask
+    name: "Mask"
     value: 46
   - description: "The value is not found in the specified bit-mask value. "
-    name: NotMask
+    name: "NotMask"
     value: 47
   - description: "For internal use only."
-    name: MasksSelect
+    name: "MasksSelect"
     value: 48
   - description: "For an attribute enabled for full-text indexing: the string contains another string. "
-    name: Contains
+    name: "Contains"
     value: 49
   - description: "The string does not contain another string. "
-    name: DoesNotContain
+    name: "DoesNotContain"
     value: 50
   - description: "The value is equal to the language for the user.  "
-    name: EqualUserLanguage
+    name: "EqualUserLanguage"
     value: 51
   - description: "For internal use only. "
-    name: NotOn
+    name: "NotOn"
     value: 52
   - description: "The value is older than the specified number of months."
-    name: OlderThanXMonths
+    name: "OlderThanXMonths"
     value: 53
   - description: "The string occurs at the beginning of another string. "
-    name: BeginsWith
+    name: "BeginsWith"
     value: 54
   - description: "The string does not begin with another string"
-    name: DoesNotBeginWith
+    name: "DoesNotBeginWith"
     value: 55
   - description: "The string ends with another string."
-    name: EndsWith
+    name: "EndsWith"
     value: 56
   - description: "The string does not end with another string. "
-    name: DoesNotEndWith
+    name: "DoesNotEndWith"
     value: 57
   - description: "The value is within the current fiscal year ."
-    name: ThisFiscalYear
+    name: "ThisFiscalYear"
     value: 58
   - description: "The value is within the current fiscal period. "
-    name: ThisFiscalPeriod
+    name: "ThisFiscalPeriod"
     value: 59
   - description: "The value is within the next fiscal year.  "
-    name: NextFiscalYear
+    name: "NextFiscalYear"
     value: 60
   - description: "The value is within the next fiscal period. "
-    name: NextFiscalPeriod
+    name: "NextFiscalPeriod"
     value: 61
   - description: "The value is within the last fiscal year."
-    name: LastFiscalYear
+    name: "LastFiscalYear"
     value: 62
   - description: "The value is within the last fiscal period. "
-    name: LastFiscalPeriod
+    name: "LastFiscalPeriod"
     value: 63
   - description: "The value is within the last X (specified value) fiscal periods."
-    name: LastXFiscalYears
+    name: "LastXFiscalYears"
     value: 64
   - description: "The value is within the last X (specified value) fiscal periods. "
-    name: LastXFiscalPeriods
+    name: "LastXFiscalPeriods"
     value: 65
   - description: "The value is within the next X (specified value) fiscal years."
-    name: NextXFiscalYears
+    name: "NextXFiscalYears"
     value: 66
   - description: "The value is within the next X (specified value) fiscal period. "
-    name: NextXFiscalPeriods
+    name: "NextXFiscalPeriods"
     value: 67
   - description: "The value is within the specified year."
-    name: InFiscalYear
+    name: "InFiscalYear"
     value: 68
   - description: "The value is within the specified fiscal period."
-    name: InFiscalPeriod
+    name: "InFiscalPeriod"
     value: 69
   - description: "The value is within the specified fiscal period and year. "
-    name: InFiscalPeriodAndYear
+    name: "InFiscalPeriodAndYear"
     value: 70
   - description: "The value is within or before the specified fiscal period and year."
-    name: InOrBeforeFiscalPeriodAndYear
+    name: "InOrBeforeFiscalPeriodAndYear"
     value: 71
   - description: "The value is within or after the specified fiscal period and year. "
-    name: InOrAfterFiscalPeriodAndYear
+    name: "InOrAfterFiscalPeriodAndYear"
     value: 72
   - description: "The record is owned by teams that the user is a member of. "
-    name: EqualUserTeams
+    name: "EqualUserTeams"
     value: 73
   - description: "The record is owned by a user or teams that the user is a member of. "
-    name: EqualUserOrUserTeams
+    name: "EqualUserOrUserTeams"
     value: 74
   - description: "Returns all child records below the referenced record in the hierarchy. "
-    name: Under
+    name: "Under"
     value: 75
   - description: "Returns all records not below the referenced record in the hierarchy."
-    name: NotUnder
+    name: "NotUnder"
     value: 76
   - description: "Returns the referenced record and all child records below it in the hierarchy. "
-    name: UnderOrEqual
+    name: "UnderOrEqual"
     value: 77
   - description: "All records in referenced record's hierarchical ancestry line.  "
-    name: Above
+    name: "Above"
     value: 78
   - description: "The referenced record and all records above it in the hierarchy. "
-    name: AboveOrEqual
+    name: "AboveOrEqual"
     value: 79
   - description: "When hierarchical security models are used, Equals current user or their reporting hierarchy. "
-    name: EqualUserOrUserHierarchy
+    name: "EqualUserOrUserHierarchy"
     value: 80
   - description: "When hierarchical security models are used, Equals current user and his teams or their reporting hierarchy and their teams. "
-    name: EqualUserOrUserHierarchyAndTeams
+    name: "EqualUserOrUserHierarchyAndTeams"
     value: 81
   - description: "The value is older than the specified number of years. "
-    name: OlderThanXYears
+    name: "OlderThanXYears"
     value: 82
   - description: "The value is older than the specified number of weeks."
-    name: OlderThanXWeeks
+    name: "OlderThanXWeeks"
     value: 83
   - description: "The value is older than the specified number of days."
-    name: OlderThanXDays
+    name: "OlderThanXDays"
     value: 84
   - description: "The value is older than the specified number of hours."
-    name: OlderThanXHours
+    name: "OlderThanXHours"
     value: 85
   - description: "The value is older than the specified number of minutes. "
-    name: OlderThanXMinutes
+    name: "OlderThanXMinutes"
     value: 86
   - description: ""
-    name: ContainValues
+    name: "ContainValues"
     value: 87
   - description: ""
-    name: DoesNotContainValues
+    name: "DoesNotContainValues"
     value: 88
 usedby:
   description: "The following use the ConditionOperator EnumType."

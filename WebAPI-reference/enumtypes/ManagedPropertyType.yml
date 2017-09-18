@@ -20,16 +20,16 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "For internal use only. "
-    name: Operation
+    name: "Operation"
     value: 0
   - description: "For internal use only. "
-    name: Attribute
+    name: "Attribute"
     value: 1
   - description: "For internal use only. "
-    name: CustomEvaluator
+    name: "CustomEvaluator"
     value: 2
   - description: "For internal use only. "
-    name: Custom
+    name: "Custom"
     value: 3
 usedby:
   description: "The following use the ManagedPropertyType EnumType."

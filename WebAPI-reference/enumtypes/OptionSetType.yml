@@ -20,16 +20,16 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "The option set provides a list of options. "
-    name: Picklist
+    name: "Picklist"
     value: 0
   - description: "The option set represents state options for a StateAttributeMetadata attribute. "
-    name: State
+    name: "State"
     value: 1
   - description: "The option set represents status options for a StatusAttributeMetadata attribute.  "
-    name: Status
+    name: "Status"
     value: 2
   - description: "The option set provides two options for a BooleanAttributeMetadata attribute. "
-    name: Boolean
+    name: "Boolean"
     value: 3
 usedby:
   description: "The following use the OptionSetType EnumType."

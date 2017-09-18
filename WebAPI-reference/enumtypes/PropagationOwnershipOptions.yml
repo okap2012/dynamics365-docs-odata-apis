@@ -20,13 +20,13 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "There is no change in ownership for the created activities. "
-    name: None
+    name: "None"
     value: 0
   - description: "All created activities are assigned to the caller of the API.  "
-    name: Caller
+    name: "Caller"
     value: 1
   - description: "Created activities are assigned to respective owners of target members. "
-    name: ListMemberOwner
+    name: "ListMemberOwner"
     value: 2
 usedby:
   description: "The following use the PropagationOwnershipOptions EnumType."

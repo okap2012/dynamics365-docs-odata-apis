@@ -20,10 +20,10 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Performs a logical AND operation.  "
-    name: And
+    name: "And"
     value: 0
   - description: "Performs a logical OR operation.  "
-    name: Or
+    name: "Or"
     value: 1
 usedby:
   description: "The following use the LogicalOperator EnumType."

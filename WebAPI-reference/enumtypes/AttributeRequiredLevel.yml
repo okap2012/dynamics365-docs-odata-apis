@@ -20,16 +20,16 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "No requirements are specified."
-    name: None
+    name: "None"
     value: 0
   - description: "The attribute is required to have a value. "
-    name: SystemRequired
+    name: "SystemRequired"
     value: 1
   - description: "The attribute is required to have a value. "
-    name: ApplicationRequired
+    name: "ApplicationRequired"
     value: 2
   - description: "It is recommended that the attribute has a value."
-    name: Recommended
+    name: "Recommended"
     value: 3
 usedby:
   description: "The following use the AttributeRequiredLevel EnumType."

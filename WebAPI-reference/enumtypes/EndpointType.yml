@@ -20,13 +20,13 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "The organization service.  "
-    name: OrganizationService
+    name: "OrganizationService"
     value: 0
   - description: "The organization data service. "
-    name: OrganizationDataService
+    name: "OrganizationDataService"
     value: 1
   - description: "The Web application service.  "
-    name: WebApplication
+    name: "WebApplication"
     value: 2
 usedby:
   description: "The following use the EndpointType EnumType."

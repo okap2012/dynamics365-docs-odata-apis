@@ -20,22 +20,22 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Do nothing. "
-    name: NoCascade
+    name: "NoCascade"
     value: 0
   - description: "Perform the action on all referencing entity records associated with the referenced entity record. "
-    name: Cascade
+    name: "Cascade"
     value: 1
   - description: "Perform the action on all active referencing entity records associated with the referenced entity record. "
-    name: Active
+    name: "Active"
     value: 2
   - description: "Perform the action on all referencing entity records owned by the same user as the referenced entity record. "
-    name: UserOwned
+    name: "UserOwned"
     value: 3
   - description: "Remove the value of the referencing attribute for all referencing entity records associated with the referenced entity record. "
-    name: RemoveLink
+    name: "RemoveLink"
     value: 4
   - description: "Prevent the Referenced entity record from being deleted when referencing entities exist. "
-    name: Restrict
+    name: "Restrict"
     value: 5
 usedby:
   description: "The following use the CascadeType EnumType."
