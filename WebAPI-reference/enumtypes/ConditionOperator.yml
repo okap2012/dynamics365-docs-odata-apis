@@ -280,9 +280,11 @@ members:
   - description: "The value is older than the specified number of minutes. "
     name: OlderThanXMinutes
     value: 86
-  - name: ContainValues
+  - description: ""
+    name: ContainValues
     value: 87
-  - name: DoesNotContainValues
+  - description: ""
+    name: DoesNotContainValues
     value: 88
 usedby:
   description: "The following use the ConditionOperator EnumType."
