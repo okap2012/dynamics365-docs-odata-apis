@@ -10,6 +10,31 @@
           "**/obj/**",
           "**/includes/**",
 		  "remarks/**",
+		  "actions/**",
+		  "complextypes/**",
+		  "entitytypes/**",
+		  "enumtypes/**",
+		  "functions/**",
+		  "metadataentitytypes/**",
+		  "queryfunctions/**",
+		  "solutions/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+		"src": "solutions",
+		"dest": "./"
+      },
+	  {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+		  "remarks/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
