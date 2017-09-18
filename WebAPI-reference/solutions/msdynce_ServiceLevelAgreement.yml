@@ -4,7 +4,7 @@ name: "Service Level Agreement (SLA)"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Service Level Agreement (SLA) Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for service level agreements."
  unique_name: msdynce_ServiceLevelAgreement
- version: 1.0.0.0
+ version: "1.0.0.0"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."

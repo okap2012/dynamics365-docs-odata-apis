@@ -4,7 +4,7 @@ name: "Next7Days"
 type: queryfunction
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Next7Days Query Function Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -19,7 +19,7 @@ description: "Query function to evaluate whether the value is within the next 7 
 parameters:
   description: "Parameters allow for data to be passed to the query function."
   parameter_items:
-  - name: PropertyName
+  - name: "PropertyName"
     type: Edm.String
     nullable: false
     unicode: false

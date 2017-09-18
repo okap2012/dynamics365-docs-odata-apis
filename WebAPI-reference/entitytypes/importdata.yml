@@ -4,7 +4,7 @@ name: "importdata"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement importdata EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -21,6 +21,8 @@ header:
   display_name: Import Data
   primary_key: importdataid
   primary_name_attribute: data
+  operations_supported: 
+  - None
 namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."

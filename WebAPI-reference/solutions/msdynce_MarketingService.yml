@@ -4,7 +4,7 @@ name: "Marketing Service"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Marketing Service Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_MarketingService
- version: 9.0.1.5
+ version: "9.0.1.5"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."

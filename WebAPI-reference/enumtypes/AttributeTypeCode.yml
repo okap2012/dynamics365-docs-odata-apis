@@ -4,7 +4,7 @@ name: "AttributeTypeCode"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement AttributeTypeCode EnumType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 

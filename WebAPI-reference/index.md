@@ -34,7 +34,7 @@ Dynamics 365 Customer Engagement.
  An `EnumType` represents an enumeration type in an OData v4 entity model.  
   
  <xref:Microsoft.Dynamics.CRM.MetadataEntityTypeIndex>  
- Metadata EntityTypes represent the types used in the Dynamics 365 version 9.0 metadata model. For information about using these entity types, see [Use the Web API with Dynamics 365 metadata](assetId:///a0edc029-c6db-48ac-9538-b0270fe94440).  
+ Metadata EntityTypes represent the types used in the Dynamics 365 customer engagement metadata model. For information about using these entity types, see [Use the Web API with Dynamics 365 metadata](assetId:///a0edc029-c6db-48ac-9538-b0270fe94440).  
 
  <xref:Microsoft.Dynamics.CRM.SolutionIndex>  
  Solutions include components that are available in the Web API. Solutions can include custom entities, attributes, entity relationships, and custom actions which change the 

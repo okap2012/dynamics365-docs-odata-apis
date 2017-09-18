@@ -4,7 +4,7 @@ name: "ResourceInfo"
 type: complextype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement ResourceInfo ComplexType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
