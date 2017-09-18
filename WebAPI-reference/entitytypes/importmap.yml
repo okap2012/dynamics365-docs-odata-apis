@@ -1,0 +1,1150 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.importmap
+name: "importmap"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement importmap EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: aeef38c6-2438-4163-9fe9-4222304d498d
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement importmap entitytype."
+header: 
+  description: "Data map used in import."
+  entity_set_path: "[organization URI]/api/data/v9.0/importmaps"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Data Map
+  primary_key: importmapid
+  primary_name_attribute: name
+  operations_supported: 
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: componentstate
+      type: Edm.Int32
+      display_name: "Component State"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 0
+          label: "Published"
+        - value: 1
+          label: "Unpublished"
+        - value: 2
+          label: "Deleted"
+        - value: 3
+          label: "Deleted Unpublished"
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+      iscomputed: false
+      isreadonly: true
+    - name: description
+      type: Edm.String
+      display_name: "Description"
+      description: "Type additional information to describe the data map, such as the intended use or data source."
+      iscomputed: false
+      isreadonly: false
+    - name: entitiesperfile
+      type: Edm.Int32
+      display_name: "Entities Per File"
+      description: "Choose whether a data file can contain data for one or more record types."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Single Entity Per File"
+        - value: 2
+          label: "Multiple Entities Per File"
+    - name: importmapid
+      type: Edm.Guid
+      display_name: "Data Map"
+      description: "Unique identifier of the data map."
+      iscomputed: false
+      isreadonly: false
+    - name: importmapidunique
+      type: Edm.Guid
+      display_name: ""
+      description: "Unique identifier of the ImortMap."
+      iscomputed: false
+      isreadonly: true
+    - name: importmaptype
+      type: Edm.Int32
+      display_name: "Map Type"
+      description: "Select the type of data map to distinguish out-of-the-box data maps from custom maps."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Standard"
+        - value: 2
+          label: "Out of Box"
+        - value: 3
+          label: "In Process"
+    - name: introducedversion
+      type: Edm.String
+      display_name: "Introduced Version"
+      description: "Version in which the component is introduced."
+      iscomputed: false
+      isreadonly: false
+    - name: ismanaged
+      type: Edm.Boolean
+      display_name: "State"
+      description: "Information that specifies whether this component is managed."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Managed"
+        - value: 0
+          label: "Unmanaged"
+    - name: isvalidforimport
+      type: Edm.Boolean
+      display_name: "Is Valid For Import"
+      description: "Information about whether the data map is valid for use with data import."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: iswizardcreated
+      type: Edm.Boolean
+      display_name: "Is Wizard-Created"
+      description: "Information about whether this data map was created by the Data Migration Manager."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "True"
+        - value: 0
+          label: "False"
+    - name: mapcustomizations
+      type: Edm.String
+      display_name: "Map Customizations"
+      description: "Customizations XML"
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+      iscomputed: false
+      isreadonly: true
+    - name: name
+      type: Edm.String
+      display_name: "Map Name"
+      description: "Type a descriptive name for the data map."
+      iscomputed: false
+      isreadonly: false
+    - name: overwritetime
+      type: Edm.DateTimeOffset
+      display_name: "Record Overwrite Time"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: true
+    - name: solutionid
+      type: Edm.Guid
+      display_name: "Solution"
+      description: "Unique identifier of the associated solution."
+      iscomputed: false
+      isreadonly: true
+    - name: source
+      type: Edm.String
+      display_name: "Source"
+      description: "Type the name of the migration source that this data map is used for."
+      iscomputed: false
+      isreadonly: false
+    - name: sourcetype
+      type: Edm.Int32
+      display_name: "Source System Type"
+      description: "Select the migration source type that this data map is used for."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Map For SalesForce.com Full Data Export"
+        - value: 2
+          label: "Map For SalesForce.com Report Export"
+        - value: 3
+          label: "Map For SalesForce.com Contact and Account Report Export"
+        - value: 4
+          label: "Microsoft Office Outlook 2010 with Business Contact Manager"
+        - value: 5
+          label: "Generic Map for Contact and Account"
+    - name: sourceuseridentifierforsourcecrmuserlink
+      type: Edm.String
+      display_name: "Source User Value"
+      description: "Source user value for source Microsoft Dynamics 365 user link."
+      iscomputed: false
+      isreadonly: false
+    - name: sourceuseridentifierforsourcedatasourceuserlink
+      type: Edm.String
+      display_name: "Source User Identifier"
+      description: "Column in the source file that uniquely identifies a user."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Shows whether the data map is active or inactive. Inactive data maps are read-only and can't be edited."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Select the data map's status."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: targetentity
+      type: Edm.Int32
+      display_name: "Record Type"
+      description: "Select the name of the Microsoft Dynamics 365 record type that this data map is defined for."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 4501
+          label: "Relationship Role Map"
+        - value: 1140
+          label: "Replication Backlog"
+        - value: 9100
+          label: "Report"
+        - value: 4250
+          label: "Recurrence Rule"
+        - value: 4251
+          label: "Recurring Appointment"
+        - value: 4500
+          label: "Relationship Role"
+        - value: 9103
+          label: "Report Visibility"
+        - value: 4002
+          label: "Resource"
+        - value: 4005
+          label: "Scheduling Group"
+        - value: 9102
+          label: "Report Related Category"
+        - value: 9101
+          label: "Report Related Entity"
+        - value: 9104
+          label: "Report Link"
+        - value: 2029
+          label: "Queue Item"
+        - value: 2023
+          label: "QueueItemCount"
+        - value: 2024
+          label: "QueueMemberCount"
+        - value: 7102
+          label: "Publisher Address"
+        - value: 2002
+          label: "Quarterly Fiscal Calendar"
+        - value: 2020
+          label: "Queue"
+        - value: 1144
+          label: "Rating Model"
+        - value: 1142
+          label: "Rating Value"
+        - value: 1189
+          label: "Document Suggestions"
+        - value: 1084
+          label: "Quote"
+        - value: 4211
+          label: "Quote Close"
+        - value: 1085
+          label: "Quote Product"
+        - value: 4010
+          label: "Resource Expansion"
+        - value: 7200
+          label: "RuntimeDependency"
+        - value: 1038
+          label: "Sales Literature"
+        - value: 1070
+          label: "Sales Attachment"
+        - value: 9510
+          label: "Rollup Properties"
+        - value: 8181
+          label: "Routing Rule Set"
+        - value: 8199
+          label: "Rule Item"
+        - value: 1309
+          label: "Saved Organization Insights Configuration"
+        - value: 1039
+          label: "View"
+        - value: 1111
+          label: "System Chart"
+        - value: 1088
+          label: "Order"
+        - value: 1089
+          label: "Order Product"
+        - value: 32
+          label: "Sales Process Instance"
+        - value: 1115
+          label: "Ribbon Context Group"
+        - value: 1120
+          label: "Application Ribbons"
+        - value: 1130
+          label: "Ribbon Difference"
+        - value: 4006
+          label: "Resource Specification"
+        - value: 4579
+          label: "Ribbon Client Metadata."
+        - value: 1116
+          label: "Ribbon Command"
+        - value: 1037
+          label: "Role Template"
+        - value: 9604
+          label: "Rollup Field"
+        - value: 9511
+          label: "Rollup Job"
+        - value: 1117
+          label: "Ribbon Rule"
+        - value: 1113
+          label: "Ribbon Tab To Command Mapping"
+        - value: 1036
+          label: "Security Role"
+        - value: 7101
+          label: "Publisher"
+        - value: 1021
+          label: "Organization UI"
+        - value: 9699
+          label: "Organization Insights Metric"
+        - value: 9690
+          label: "Organization Insights Notification"
+        - value: 4209
+          label: "Order Close"
+        - value: 1019
+          label: "Organization"
+        - value: 4708
+          label: "Organization Statistic"
+        - value: 9941
+          label: "Personal Document Template"
+        - value: 4210
+          label: "Phone Call"
+        - value: 952
+          label: "Phone To Case Process"
+        - value: 7
+          label: "Owner"
+        - value: 4420
+          label: "Owner Mapping"
+        - value: 1095
+          label: "Partner Application"
+        - value: 4110
+          label: "Notification"
+        - value: 4490
+          label: "Office Document"
+        - value: 9950
+          label: "Office Graph Document"
+        - value: 9912
+          label: "Multi Select Option Value"
+        - value: 9900
+          label: "Navigation Setting"
+        - value: 950
+          label: "New Process"
+        - value: 25
+          label: "OpportunityCompetitors"
+        - value: 1083
+          label: "Opportunity Product"
+        - value: 953
+          label: "Opportunity Sales Process"
+        - value: 9870
+          label: "Offline Command Definition"
+        - value: 3
+          label: "Opportunity"
+        - value: 4208
+          label: "Opportunity Close"
+        - value: 4418
+          label: "List Value Mapping"
+        - value: 31
+          label: "Privilege Object Type Code"
+        - value: 4710
+          label: "Process Session"
+        - value: 4724
+          label: "Process Stage"
+        - value: 44
+          label: "Field Sharing"
+        - value: 1404
+          label: "Principal Sync Attribute Map"
+        - value: 1023
+          label: "Privilege"
+        - value: 1026
+          label: "Price List Item"
+        - value: 21
+          label: "ProductSalesLiterature"
+        - value: 1028
+          label: "Product Relationship"
+        - value: 4712
+          label: "Process Trigger"
+        - value: 1024
+          label: "Product"
+        - value: 1025
+          label: "Product Association"
+        - value: 4603
+          label: "Plug-in Type Statistic"
+        - value: 50
+          label: "Position"
+        - value: 8000
+          label: "Post"
+        - value: 4605
+          label: "Plug-in Assembly"
+        - value: 4619
+          label: "Plug-in Trace Log"
+        - value: 4602
+          label: "Plug-in Type"
+        - value: 8002
+          label: "Post Regarding"
+        - value: 8001
+          label: "Post Role"
+        - value: 1022
+          label: "Price List"
+        - value: 8005
+          label: "Comment"
+        - value: 8003
+          label: "Follow"
+        - value: 8006
+          label: "Like"
+        - value: 9948
+          label: "Text Analytics Topic"
+        - value: 9946
+          label: "Topic History"
+        - value: 9944
+          label: "Topic Model"
+        - value: 4810
+          label: "Time Zone Definition"
+        - value: 4812
+          label: "Time Zone Localized Name"
+        - value: 4811
+          label: "Time Zone Rule"
+        - value: 8050
+          label: "Trace"
+        - value: 8052
+          label: "Trace Regarding"
+        - value: 9105
+          label: "Currency"
+        - value: 9942
+          label: "Topic Model Configuration"
+        - value: 9943
+          label: "Topic Model Execution History"
+        - value: 8051
+          label: "Trace Association"
+        - value: 9
+          label: "Team"
+        - value: 1203
+          label: "Team Profiles"
+        - value: 1403
+          label: "Team Sync-Attribute Mapping Profiles"
+        - value: 51
+          label: "System User Manager Map"
+        - value: 14
+          label: "System User Principal"
+        - value: 4212
+          label: "Task"
+        - value: 9945
+          label: "Text Analytics Entity Mapping"
+        - value: 2015
+          label: "Theme"
+        - value: 9932
+          label: "Time Stamp Date Mapping"
+        - value: 92
+          label: "Team template"
+        - value: 2010
+          label: "Email Template"
+        - value: 2013
+          label: "Territory"
+        - value: 4426
+          label: "Transformation Mapping"
+        - value: 150
+          label: "User Settings"
+        - value: 9333
+          label: "Web Resource"
+        - value: 4800
+          label: "Web Wizard"
+        - value: 4230
+          label: "Saved View"
+        - value: 1112
+          label: "User Chart"
+        - value: 52
+          label: "User Search Facet"
+        - value: 4704
+          label: "Process Dependency"
+        - value: 4706
+          label: "Process Log"
+        - value: 4702
+          label: "Workflow Wait Subscription"
+        - value: 4803
+          label: "Web Wizard Access Privilege"
+        - value: 4802
+          label: "Wizard Page"
+        - value: 4703
+          label: "Process"
+        - value: 4220
+          label: "UntrackedEmail"
+        - value: 1055
+          label: "Unit"
+        - value: 1056
+          label: "Unit Group"
+        - value: 4427
+          label: "Transformation Parameter Mapping"
+        - value: 951
+          label: "Translation Process"
+        - value: 2012
+          label: "Unresolved Address"
+        - value: 1086
+          label: "User Fiscal Calendar"
+        - value: 1031
+          label: "User Dashboard"
+        - value: 2016
+          label: "User Mapping"
+        - value: 7001
+          label: "User Application Metadata"
+        - value: 2501
+          label: "User Entity Instance Data"
+        - value: 2500
+          label: "User Entity UI Settings"
+        - value: 42
+          label: "SystemUser BusinessUnit Entity Map"
+        - value: 9509
+          label: "SharePoint Data"
+        - value: 9507
+          label: "Sharepoint Document"
+        - value: 9508
+          label: "Document Location"
+        - value: 4214
+          label: "Service Activity"
+        - value: 20
+          label: "Service Contract Contact"
+        - value: 4618
+          label: "Service Endpoint"
+        - value: 4709
+          label: "Site Map"
+        - value: 9750
+          label: "SLA"
+        - value: 9751
+          label: "SLA Item"
+        - value: 9502
+          label: "SharePoint Site"
+        - value: 9951
+          label: "Similarity Rule"
+        - value: 4009
+          label: "Site"
+        - value: 4608
+          label: "Sdk Message Processing Step"
+        - value: 4615
+          label: "Sdk Message Processing Step Image"
+        - value: 4616
+          label: "Sdk Message Processing Step Secure Configuration"
+        - value: 4606
+          label: "Sdk Message"
+        - value: 4607
+          label: "Sdk Message Filter"
+        - value: 4613
+          label: "Sdk Message Pair"
+        - value: 4611
+          label: "Sdk Message Response Field"
+        - value: 2001
+          label: "Semiannual Fiscal Calendar"
+        - value: 4001
+          label: "Service"
+        - value: 4609
+          label: "Sdk Message Request"
+        - value: 4614
+          label: "Sdk Message Request Field"
+        - value: 4610
+          label: "Sdk Message Response"
+        - value: 9752
+          label: "SLA KPI Instance"
+        - value: 33
+          label: "Subscription Synchronization Information"
+        - value: 35
+          label: "Tracking information for deleted entities"
+        - value: 1190
+          label: "SuggestionCardTemplate"
+        - value: 46
+          label: "Subscription Statistic Outlook"
+        - value: 47
+          label: "Subscription Sync Entry Offline"
+        - value: 48
+          label: "Subscription Sync Entry Outlook"
+        - value: 7000
+          label: "System Application Metadata"
+        - value: 1030
+          label: "System Form"
+        - value: 8
+          label: "User"
+        - value: 1401
+          label: "Sync Attribute Mapping"
+        - value: 1400
+          label: "Sync Attribute Mapping Profile"
+        - value: 9869
+          label: "Sync Error"
+        - value: 7100
+          label: "Solution"
+        - value: 7103
+          label: "Solution Component"
+        - value: 1075
+          label: "Status Map"
+        - value: 4216
+          label: "Social Activity"
+        - value: 1300
+          label: "SocialInsightsConfiguration"
+        - value: 99
+          label: "Social Profile"
+        - value: 1072
+          label: "Subscription Clients"
+        - value: 37
+          label: "Subscription Manually Tracked Object"
+        - value: 45
+          label: "Subscription Statistic Offline"
+        - value: 1043
+          label: "String Map"
+        - value: 129
+          label: "Subject"
+        - value: 29
+          label: "Subscription"
+        - value: 4215
+          label: "Commitment"
+        - value: 123
+          label: "Competitor"
+        - value: 1004
+          label: "Competitor Address"
+        - value: 113
+          label: "Child Incident Count"
+        - value: 36
+          label: "Client update"
+        - value: 4417
+          label: "Column Mapping"
+        - value: 3234
+          label: "Connection"
+        - value: 3231
+          label: "Connection Role"
+        - value: 3233
+          label: "Connection Role Object Type Code"
+        - value: 1006
+          label: "Competitor Product"
+        - value: 26
+          label: "CompetitorSalesLiterature"
+        - value: 9650
+          label: "Process Configuration"
+        - value: 4401
+          label: "Campaign Response"
+        - value: 9983
+          label: "Action Card Type"
+        - value: 9959
+          label: "Category"
+        - value: 4402
+          label: "Campaign Activity"
+        - value: 4404
+          label: "Campaign Activity Item"
+        - value: 4403
+          label: "Campaign Item"
+        - value: 1236
+          label: "Channel Property"
+        - value: 1234
+          label: "Channel Property Group"
+        - value: 1141
+          label: "Characteristic"
+        - value: 3005
+          label: "Channel Access Profile"
+        - value: 9400
+          label: "Channel Access Profile Rule"
+        - value: 9401
+          label: "Channel Access Profile Rule Item"
+        - value: 4007
+          label: "Resource Group"
+        - value: 4502
+          label: "Customer Relationship"
+        - value: 4450
+          label: "Data Performance Dashboard"
+        - value: 9961
+          label: "DelveActionHub"
+        - value: 9754
+          label: "Custom Control Resource"
+        - value: 1071
+          label: "Address"
+        - value: 4503
+          label: "Opportunity Relationship"
+        - value: 1013
+          label: "Discount"
+        - value: 1080
+          label: "Discount List"
+        - value: 4102
+          label: "Display String"
+        - value: 7105
+          label: "Dependency"
+        - value: 7108
+          label: "Dependency Feature"
+        - value: 7106
+          label: "Dependency Node"
+        - value: 19
+          label: "ContactOrders"
+        - value: 18
+          label: "ContactQuotes"
+        - value: 1010
+          label: "Contract"
+        - value: 2
+          label: "Contact"
+        - value: 17
+          label: "ContactInvoices"
+        - value: 22
+          label: "ContactLeads"
+        - value: 9301
+          label: "Record Creation and Update Rule Item"
+        - value: 9753
+          label: "Custom Control"
+        - value: 9755
+          label: "Custom Control Default Config"
+        - value: 1011
+          label: "Contract Line"
+        - value: 2011
+          label: "Contract Template"
+        - value: 9300
+          label: "Record Creation and Update Rule"
+        - value: 4400
+          label: "Campaign"
+        - value: 4707
+          label: "Application File"
+        - value: 9006
+          label: "App"
+        - value: 9007
+          label: "App Module Component"
+        - value: 9012
+          label: "App Configuration"
+        - value: 9013
+          label: "App Configuration Instance"
+        - value: 9011
+          label: "App Config Master"
+        - value: 9009
+          label: "App Module Roles"
+        - value: 4201
+          label: "Appointment"
+        - value: 4700
+          label: "System Job"
+        - value: 8700
+          label: "AppModule Metadata"
+        - value: 8701
+          label: "AppModule Metadata Dependency"
+        - value: 8702
+          label: "AppModule Metadata Async Operation"
+        - value: 9962
+          label: "Action Card"
+        - value: 9973
+          label: "Action Card User Settings"
+        - value: 9968
+          label: "ActionCardUserState"
+        - value: 1
+          label: "Account"
+        - value: 16
+          label: "AccountLeads"
+        - value: 8040
+          label: "ACIViewMapper"
+        - value: 9949
+          label: "Advanced Similarity Rule"
+        - value: 5
+          label: "Note"
+        - value: 2000
+          label: "Annual Fiscal Calendar"
+        - value: 1001
+          label: "Attachment"
+        - value: 135
+          label: "Activity Party"
+        - value: 4200
+          label: "Activity"
+        - value: 1002
+          label: "Attachment"
+        - value: 4406
+          label: "Quick Campaign"
+        - value: 4405
+          label: "Bulk Operation Log"
+        - value: 4232
+          label: "Business Data Localized Label"
+        - value: 1152
+          label: "Booking Status"
+        - value: 4425
+          label: "Bulk Delete Failure"
+        - value: 4424
+          label: "Bulk Delete Operation"
+        - value: 132
+          label: "Announcement"
+        - value: 4003
+          label: "Calendar"
+        - value: 4004
+          label: "Calendar Rule"
+        - value: 4725
+          label: "Business Process Flow Instance"
+        - value: 10
+          label: "Business Unit"
+        - value: 6
+          label: "Business Unit Map"
+        - value: 9936
+          label: "Azure Service Connection"
+        - value: 1150
+          label: "Bookable Resource"
+        - value: 1145
+          label: "Bookable Resource Booking"
+        - value: 4601
+          label: "Attribute Map"
+        - value: 4567
+          label: "Auditing"
+        - value: 1094
+          label: "Authorization Server"
+        - value: 1149
+          label: "Bookable Resource Category Assn"
+        - value: 1148
+          label: "Bookable Resource Characteristic"
+        - value: 1151
+          label: "Bookable Resource Group"
+        - value: 4421
+          label: "BookableResourceBooking to Exchange Id Mapping"
+        - value: 1146
+          label: "Bookable Resource Booking Header"
+        - value: 1147
+          label: "Bookable Resource Category"
+        - value: 9954
+          label: "Knowledge Article Incident"
+        - value: 9960
+          label: "Knowledge Article Category"
+        - value: 9955
+          label: "Knowledge Article Views"
+        - value: 1082
+          label: "Article Comment"
+        - value: 1016
+          label: "Article Template"
+        - value: 9953
+          label: "Knowledge Article"
+        - value: 4
+          label: "Lead"
+        - value: 1017
+          label: "Lead Address"
+        - value: 24
+          label: "LeadCompetitors"
+        - value: 9930
+          label: "Knowledge Base Record"
+        - value: 9947
+          label: "Knowledge Search Model"
+        - value: 9957
+          label: "Language"
+        - value: 3000
+          label: "Integration Status"
+        - value: 9986
+          label: "Interaction for Email"
+        - value: 1003
+          label: "Internal Address"
+        - value: 112
+          label: "Case"
+        - value: 9931
+          label: "Incident KnowledgeBaseRecord"
+        - value: 4206
+          label: "Case Resolution"
+        - value: 1091
+          label: "Invoice Product"
+        - value: 4705
+          label: "ISV Config"
+        - value: 127
+          label: "Article"
+        - value: 4011
+          label: "Inter Process Lock"
+        - value: 7107
+          label: "Invalid Dependency"
+        - value: 1090
+          label: "Invoice"
+        - value: 27
+          label: "LeadProduct"
+        - value: 9868
+          label: "Mobile Offline Profile Item Association"
+        - value: 2003
+          label: "Monthly Fiscal Calendar"
+        - value: 10000
+          label: "OData v4 Data Source"
+        - value: 9603
+          label: "Goal Metric"
+        - value: 9866
+          label: "Mobile Offline Profile"
+        - value: 9867
+          label: "Mobile Offline Profile Item"
+        - value: 10004
+          label: "Wall View"
+        - value: 10005
+          label: "Filter"
+        - value: 9910
+          label: "MultiEntitySearch"
+        - value: 10001
+          label: "Profile Album"
+        - value: 10002
+          label: "Post Configuration"
+        - value: 10003
+          label: "Post Rule Configuration"
+        - value: 4300
+          label: "Marketing List"
+        - value: 4301
+          label: "Marketing List Member"
+        - value: 9201
+          label: "LocalConfigStore"
+        - value: 954
+          label: "Lead To Opportunity Sales Process"
+        - value: 4207
+          label: "Letter"
+        - value: 2027
+          label: "License"
+        - value: 9608
+          label: "Mailbox Auto Tracking Folder"
+        - value: 9106
+          label: "Mail Merge Template"
+        - value: 4231
+          label: "Metadata Difference"
+        - value: 4419
+          label: "Lookup Mapping"
+        - value: 9606
+          label: "Mailbox"
+        - value: 9607
+          label: "Mailbox Statistics"
+        - value: 4411
+          label: "Data Map"
+        - value: 9700
+          label: "Entitlement"
+        - value: 9701
+          label: "Entitlement Channel"
+        - value: 7272
+          label: "Entitlement Contact"
+        - value: 4299
+          label: "Email Search"
+        - value: 9605
+          label: "Email Server Profile"
+        - value: 9997
+          label: "Email Signature"
+        - value: 4545
+          label: "Entitlement Template Product"
+        - value: 78
+          label: "Virtual Entity Data Provider"
+        - value: 85
+          label: "Virtual Entity Data Source"
+        - value: 6363
+          label: "Entitlement Product"
+        - value: 9702
+          label: "Entitlement Template"
+        - value: 9703
+          label: "Entitlement Template Channel"
+        - value: 4415
+          label: "Duplicate Record"
+        - value: 4414
+          label: "Duplicate Detection Rule"
+        - value: 4416
+          label: "Duplicate Rule Condition"
+        - value: 4101
+          label: "Display String Map"
+        - value: 126
+          label: "Indexed Article"
+        - value: 9940
+          label: "Document Template"
+        - value: 1049
+          label: "Property Option Set Item"
+        - value: 4202
+          label: "Email"
+        - value: 4023
+          label: "Email Hash"
+        - value: 1048
+          label: "Property"
+        - value: 1235
+          label: "Property Association"
+        - value: 1333
+          label: "Property Instance"
+        - value: 4600
+          label: "Entity Map"
+        - value: 8840
+          label: "Hierarchy Rule"
+        - value: 9919
+          label: "Hierarchy Security Configuration"
+        - value: 1007
+          label: "Image Descriptor"
+        - value: 54
+          label: "Global Search Configuration"
+        - value: 9600
+          label: "Goal"
+        - value: 9602
+          label: "Rollup Query"
+        - value: 4412
+          label: "Import Source File"
+        - value: 9107
+          label: "Import Job"
+        - value: 4423
+          label: "Import Log"
+        - value: 4410
+          label: "Data Import"
+        - value: 4413
+          label: "Import Data"
+        - value: 4428
+          label: "Import Entity Mapping"
+        - value: 955
+          label: "Expired Process"
+        - value: 3008
+          label: "External Party"
+        - value: 9987
+          label: "External Party Item"
+        - value: 4000
+          label: "Facility/Equipment"
+        - value: 4120
+          label: "Exchange Sync Id Mapping"
+        - value: 4711
+          label: "Expander Event"
+        - value: 1200
+          label: "Field Security Profile"
+        - value: 30
+          label: "Filter Template"
+        - value: 2004
+          label: "Fixed Monthly Fiscal Calendar"
+        - value: 4204
+          label: "Fax"
+        - value: 9958
+          label: "Feedback"
+        - value: 1201
+          label: "Field Permission"
+    - name: targetuseridentifierforsourcecrmuserlink
+      type: Edm.String
+      display_name: "Target User Value"
+      description: "Microsoft Dynamics 365 user."
+      iscomputed: false
+      isreadonly: false
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Shows who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Shows who created the record on behalf of another user."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Shows who last updated the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Shows who last updated the record on behalf of another user."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Enter the user or team who is assigned to manage the record. This field is updated every time the record is assigned to a different user."
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Business unit that owns the data map."
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier of the team who owns the data map."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier of the user who owns the data map."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_importmapbase_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_importmap_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_importmapbase_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_importmap_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_importmaps
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: BusinessUnit_ImportMaps
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_ImportMaps
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: SystemUser_ImportMaps
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: ColumnMapping_ImportMap
+    type: Microsoft.Dynamics.CRM.columnmapping
+    partner: importmapid
+  - name: ImportEntityMapping_ImportMap
+    type: Microsoft.Dynamics.CRM.importentitymapping
+    partner: importmapid
+  - name: ImportMap_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_importmap
+  - name: ImportMap_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_importmap
+  - name: ImportMap_ImportFile
+    type: Microsoft.Dynamics.CRM.importfile
+    partner: importmapid
+  - name: ImportMap_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_importmap_syncerror
+  - name: OwnerMapping_ImportMap
+    type: Microsoft.Dynamics.CRM.ownermapping
+    partner: importmapid
+  - name: TransformationMapping_ImportMap
+    type: Microsoft.Dynamics.CRM.transformationmapping
+    partner: importmapid
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the importmap entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.ExportMappingsImportMap
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ImportMappingsImportMap
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the importmap entity type."
+  solution_items:
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

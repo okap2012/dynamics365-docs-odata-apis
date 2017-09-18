@@ -1,0 +1,40 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.TestSolution
+name: "Test Solution"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Test Solution Solution Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: da16d769-479a-e711-811c-000d3afd1636
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Test Solution Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "A Test solution that contains a custom action"
+ unique_name: TestSolution
+ version: 1.0.0.0
+ customization_prefix: new
+# This solution includes no entities.
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - Microsoft.Dynamics.CRM.new_TestAction
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

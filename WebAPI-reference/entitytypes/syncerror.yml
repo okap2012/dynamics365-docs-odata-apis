@@ -1,0 +1,805 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.syncerror
+name: "syncerror"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement syncerror EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: ba5ffe82-70bb-4b26-a55c-ebbeac2b52fa
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement syncerror entitytype."
+header: 
+  description: "Failure reason and other detailed information for a record that failed to sync."
+  entity_set_path: "[organization URI]/api/data/v9.0/syncerrors"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Sync Error
+  primary_key: syncerrorid
+  primary_name_attribute: name
+  operations_supported: 
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: action
+      type: Edm.String
+      display_name: "Action"
+      description: "Action Name for which sync error has occurred"
+      iscomputed: false
+      isreadonly: false
+    - name: actiondata
+      type: Edm.String
+      display_name: "Action Data"
+      description: "Show the action data"
+      iscomputed: false
+      isreadonly: false
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the sync Error was created."
+      iscomputed: false
+      isreadonly: true
+    - name: description
+      type: Edm.String
+      display_name: "Description"
+      description: "Enter a short description of the sync error."
+      iscomputed: false
+      isreadonly: false
+    - name: errorcode
+      type: Edm.String
+      display_name: "Error Code"
+      description: "Displays the error code."
+      iscomputed: false
+      isreadonly: false
+    - name: errordetail
+      type: Edm.String
+      display_name: "Error Detail"
+      description: "Error description from the exception"
+      iscomputed: false
+      isreadonly: false
+    - name: errormessage
+      type: Edm.String
+      display_name: "Error Message"
+      description: "Error Message of the exception"
+      iscomputed: false
+      isreadonly: false
+    - name: errortime
+      type: Edm.DateTimeOffset
+      display_name: "Error Time"
+      description: "Date and time when the upsync request was executed on CRM server"
+      iscomputed: false
+      isreadonly: false
+    - name: errortype
+      type: Edm.Int32
+      display_name: "Error Type"
+      description: "Select the preferred error type."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Conflict"
+        - value: 1
+          label: "Record not found"
+        - value: 2
+          label: "Record already exists"
+        - value: 3
+          label: "Others"
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the sync error was last modified."
+      iscomputed: false
+      isreadonly: true
+    - name: name
+      type: Edm.String
+      display_name: "Entity"
+      description: "Entity name of the record for which sync error has occurred"
+      iscomputed: false
+      isreadonly: false
+    - name: requestdata
+      type: Edm.String
+      display_name: "Request Data"
+      description: "Request data for the entity that had the sync error."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "State"
+      description: "Shows whether the sync error is active or resolved."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Resolved"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Select the sync error status."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Fixed"
+    - name: syncerrorid
+      type: Edm.Guid
+      display_name: "Sync Error Id"
+      description: "Unique identifier of the sync error."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Shows the version number of the sync error."
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the sync error."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the sync error."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who last modified the sync error."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who last modified the sync error."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Unique identifier of the user or team who owns the sync error."
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Business unit that owns the sync error."
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier of the team who owns the sync error."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - regardingobjectid_systemuser
+    description: "Unique identifier of the user who owns the sync error."
+  - name: _regardingobjectid_value
+    single_valued_navigation_property:
+    - regardingobjectid_territory_syncerror
+    - regardingobjectid_leadaddress_syncerror
+    - regardingobjectid_lead_syncerror
+    - regardingobjectid_dynamicproperty
+    - regardingobjectid_dynamicpropertyassociation
+    - regardingobjectid_dynamicpropertyinstance
+    - regardingobjectid_dynamicpropertyoptionsetitem
+    - regardingobjectid_pricelevel_syncerror
+    - regardingobjectid_product_syncerror
+    - regardingobjectid_productassociation_syncerror
+    - regardingobjectid_productpricelevel_syncerror
+    - regardingobjectid_productsubstitute_syncerror
+    - regardingobjectid_uom_syncerror
+    - regardingobjectid_uomschedule_syncerror
+    - regardingobjectid_bookableresource_syncerror
+    - regardingobjectid_bookableresourcebooking_syncerror
+    - regardingobjectid_bookableresourcebookingheader_syncerror
+    - regardingobjectid_bookableresourcecategory_syncerror
+    - regardingobjectid_bookableresourcecategoryassn_syncerror
+    - regardingobjectid_bookableresourcecharacteristic_syncerror
+    - regardingobjectid_bookableresourcegroup_syncerror
+    - regardingobjectid_bookingstatus_syncerror
+    - regardingobjectid_characteristic_syncerror
+    - regardingobjectid_ratingmodel_syncerror
+    - regardingobjectid_ratingvalue_syncerror
+    - regardingobjectid_bulkoperationlog
+    - regardingobjectid_campaign_syncerror
+    - regardingobjectid_list_syncerror
+    - regardingobjectid_constraintbasedgroup
+    - regardingobjectid_contract_syncerror
+    - regardingobjectid_contractdetail_syncerror
+    - regardingobjectid_contracttemplate_syncerror
+    - regardingobjectid_entitlement_syncerror
+    - regardingobjectid_entitlementchannel
+    - regardingobjectid_entitlementtemplate_syncerror
+    - regardingobjectid_entitlementtemplatechannel
+    - regardingobjectid_equipment_syncerror
+    - regardingobjectid_incident_syncerror
+    - regardingobjectid_knowledgearticleincident_syncerror
+    - regardingobjectid_PhoneToCaseProcess_syncerror
+    - regardingobjectid_resource_syncerror
+    - regardingobjectid_resourcegroup_syncerror
+    - regardingobjectid_resourcespec
+    - regardingobjectid_service_syncerror
+    - regardingobjectid_site_syncerror
+    - regardingobjectid_competitoraddress_syncerror
+    - regardingobjectid_discount_syncerror
+    - regardingobjectid_discounttype_syncerror
+    - regardingobjectid_invoice_syncerror
+    - regardingobjectid_invoicedetail_syncerror
+    - regardingobjectid_LeadToOpportunitySalesProcess_syncerror
+    - regardingobjectid_opportunity_syncerror
+    - regardingobjectid_opportunityproduct_syncerror
+    - regardingobjectid_OpportunitySalesProcess_syncerror
+    - regardingobjectid_quote_syncerror
+    - regardingobjectid_quotedetail_syncerror
+    - regardingobjectid_salesliterature_syncerror
+    - regardingobjectid_salesliteratureitem
+    - regardingobjectid_salesorder_syncerror
+    - regardingobjectid_salesorderdetail_syncerror
+    - regardingobjectid_competitor_syncerror
+    - regardingobjectid_msdyn_postalbum
+    - regardingobjectid_msdyn_postconfig
+    - regardingobjectid_msdyn_postruleconfig
+    - regardingobjectid_msdyn_wallsavedquery
+    - regardingobjectid_msdyn_wallsavedqueryusersettings
+    - regardingobjectid_ExpiredProcess_syncerror
+    - regardingobjectid_businessunit_syncerror
+    - regardingobjectid_knowledgearticleviews_syncerror
+    - regardingobjectid_TranslationProcess_syncerror
+    - regardingobjectid_account_syncerror
+    - regardingobjectid_publisher_syncerror
+    - regardingobjectid_activitymimeattachment_syncerror
+    - regardingobjectid_userqueryvisualization_syncerror
+    - regardingobjectid_savedqueryvisualization_syncerror
+    - regardingobjectid_attachment_syncerror
+    - regardingobjectid_systemuser_syncerror
+    - regardingobjectid_fieldsecurityprofile_syncerror
+    - regardingobjectid_importmap_syncerror
+    - regardingobjectid_activityparty_syncerror
+    - regardingobjectid_fieldpermission_syncerror
+    - regardingobjectid_processstage_syncerror
+    - regardingobjectid_duplicaterulecondition_syncerror
+    - regardingobjectid_duplicaterule_syncerror
+    - regardingobjectid_sla_syncerror
+    - regardingobjectid_knowledgearticle_syncerror
+    - regardingobjectid_knowledgebaserecord_syncerror
+    - regardingobjectid_reportcategory_syncerror
+    - regardingobjectid_processsession_syncerror
+    - regardingobjectid_contact_syncerror
+    - regardingobjectid_report_syncerror
+    - regardingobjectid_category_syncerror
+    - regardingobjectid_processtrigger_syncerror
+    - regardingobjectid_team_syncerror
+    - regardingobjectid_organization_syncerror
+    - regardingobjectid_queueitem_syncerror
+    - regardingobjectid_connectionrole_syncerror
+    - regardingobjectid_userquery_syncerror
+    - regardingobjectid_solution_syncerror
+    - regardingobjectid_mailbox_syncerror
+    - regardingobjectid_goal_syncerror
+    - regardingobjectid_socialprofile_syncerror
+    - regardingobjectid_savedquery_syncerror
+    - regardingobjectid_kbarticletemplate_syncerror
+    - regardingobjectid_syncerror_syncerror
+    - regardingobjectid_postfollow_syncerror
+    - regardingobjectid_customeraddress_syncerror
+    - regardingobjectid_mailmergetemplate_syncerror
+    - regardingobjectid_subject_syncerror
+    - regardingobjectid_workflow_syncerror
+    - regardingobjectid_queue_syncerror
+    - regardingobjectid_position_syncerror
+    - regardingobjectid_annotation_syncerror
+    - regardingobjectid_rollupfield_syncerror
+    - regardingobjectid_connection_syncerror
+    - regardingobjectid_kbarticle_syncerror
+    - regardingobjectid_slaitem_syncerror
+    - regardingobjectid_template_syncerror
+    - regardingobjectid_feedback_syncerror
+    - regardingobjectid_metric_syncerror
+    - regardingobjectid_slakpiinstance_syncerror
+    - regardingobjectid_sharepointsite_syncerror
+    - regardingobjectid_NewProcess_syncerror
+    - regardingobjectid_sharepointdocumentlocation_syncerror
+    - regardingobjectid_teamtemplate_syncerror
+    - regardingobjectid_role_syncerror
+    - regardingobjectid_emailserverprofile_syncerror
+    - regardingobjectid_goalrollupquery_syncerror
+    - regardingobjectid_transactioncurrency_syncerror
+    description: "Choose the record that the sync error relates to."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_syncerrorbase_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_syncerrorbase_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_syncerrorbase_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_syncerrorbase_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_SyncError
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: BusinessUnit_SyncError
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_SyncError
+  - name: regardingobjectid_account_syncerror
+    type: Microsoft.Dynamics.CRM.account
+    partner: Account_SyncErrors
+  - name: regardingobjectid_activitymimeattachment_syncerror
+    type: Microsoft.Dynamics.CRM.activitymimeattachment
+    partner: ActivityMimeAttachment_SyncErrors
+  - name: regardingobjectid_activityparty_syncerror
+    type: Microsoft.Dynamics.CRM.activityparty
+    partner: ActivityParty_SyncErrors
+  - name: regardingobjectid_annotation_syncerror
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: Annotation_SyncErrors
+  - name: regardingobjectid_appointment_syncerror
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: Appointment_SyncErrors
+  - name: regardingobjectid_attachment_syncerror
+    type: Microsoft.Dynamics.CRM.attachment
+    partner: Attachment_SyncErrors
+  - name: regardingobjectid_bookableresource_syncerror
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: BookableResource_SyncErrors
+  - name: regardingobjectid_bookableresourcebooking_syncerror
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: BookableResourceBooking_SyncErrors
+  - name: regardingobjectid_bookableresourcebookingheader_syncerror
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: BookableResourceBookingHeader_SyncErrors
+  - name: regardingobjectid_bookableresourcecategory_syncerror
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: BookableResourceCategory_SyncErrors
+  - name: regardingobjectid_bookableresourcecategoryassn_syncerror
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: BookableResourceCategoryAssn_SyncErrors
+  - name: regardingobjectid_bookableresourcecharacteristic_syncerror
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: BookableResourceCharacteristic_SyncErrors
+  - name: regardingobjectid_bookableresourcegroup_syncerror
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: BookableResourceGroup_SyncErrors
+  - name: regardingobjectid_bookingstatus_syncerror
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: BookingStatus_SyncErrors
+  - name: regardingobjectid_bulkoperation_syncerror
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: BulkOperation_SyncErrors
+  - name: regardingobjectid_bulkoperationlog
+    type: Microsoft.Dynamics.CRM.bulkoperationlog
+    partner: bulkoperationlog_SyncErrors
+  - name: regardingobjectid_businessunit_syncerror
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: BusinessUnit_SyncErrors
+  - name: regardingobjectid_campaign_syncerror
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: Campaign_SyncErrors
+  - name: regardingobjectid_campaignactivity_syncerror
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: CampaignActivity_SyncErrors
+  - name: regardingobjectid_campaignresponse_syncerror
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: CampaignResponse_SyncErrors
+  - name: regardingobjectid_category_syncerror
+    type: Microsoft.Dynamics.CRM.category
+    partner: Category_SyncErrors
+  - name: regardingobjectid_characteristic_syncerror
+    type: Microsoft.Dynamics.CRM.characteristic
+    partner: Characteristic_SyncErrors
+  - name: regardingobjectid_competitor_syncerror
+    type: Microsoft.Dynamics.CRM.competitor
+    partner: Competitor_SyncErrors
+  - name: regardingobjectid_competitoraddress_syncerror
+    type: Microsoft.Dynamics.CRM.competitoraddress
+    partner: CompetitorAddress_SyncErrors
+  - name: regardingobjectid_connection_syncerror
+    type: Microsoft.Dynamics.CRM.connection
+    partner: Connection_SyncErrors
+  - name: regardingobjectid_connectionrole_syncerror
+    type: Microsoft.Dynamics.CRM.connectionrole
+    partner: ConnectionRole_SyncErrors
+  - name: regardingobjectid_constraintbasedgroup
+    type: Microsoft.Dynamics.CRM.constraintbasedgroup
+    partner: constraintbasedgroup_SyncErrors
+  - name: regardingobjectid_contact_syncerror
+    type: Microsoft.Dynamics.CRM.contact
+    partner: Contact_SyncErrors
+  - name: regardingobjectid_contract_syncerror
+    type: Microsoft.Dynamics.CRM.contract
+    partner: Contract_SyncErrors
+  - name: regardingobjectid_contractdetail_syncerror
+    type: Microsoft.Dynamics.CRM.contractdetail
+    partner: ContractDetail_SyncErrors
+  - name: regardingobjectid_contracttemplate_syncerror
+    type: Microsoft.Dynamics.CRM.contracttemplate
+    partner: ContractTemplate_SyncErrors
+  - name: regardingobjectid_customeraddress_syncerror
+    type: Microsoft.Dynamics.CRM.customeraddress
+    partner: CustomerAddress_SyncErrors
+  - name: regardingobjectid_discount_syncerror
+    type: Microsoft.Dynamics.CRM.discount
+    partner: Discount_SyncErrors
+  - name: regardingobjectid_discounttype_syncerror
+    type: Microsoft.Dynamics.CRM.discounttype
+    partner: DiscountType_SyncErrors
+  - name: regardingobjectid_duplicaterule_syncerror
+    type: Microsoft.Dynamics.CRM.duplicaterule
+    partner: DuplicateRule_SyncErrors
+  - name: regardingobjectid_duplicaterulecondition_syncerror
+    type: Microsoft.Dynamics.CRM.duplicaterulecondition
+    partner: DuplicateRuleCondition_SyncErrors
+  - name: regardingobjectid_dynamicproperty
+    type: Microsoft.Dynamics.CRM.dynamicproperty
+    partner: dynamicproperty_SyncErrors
+  - name: regardingobjectid_dynamicpropertyassociation
+    type: Microsoft.Dynamics.CRM.dynamicpropertyassociation
+    partner: dynamicpropertyassociation_SyncErrors
+  - name: regardingobjectid_dynamicpropertyinstance
+    type: Microsoft.Dynamics.CRM.dynamicpropertyinstance
+    partner: dynamicpropertyinstance_SyncErrors
+  - name: regardingobjectid_dynamicpropertyoptionsetitem
+    type: Microsoft.Dynamics.CRM.dynamicpropertyoptionsetitem
+    partner: dynamicpropertyoptionsetitem_SyncErrors
+  - name: regardingobjectid_email_syncerror
+    type: Microsoft.Dynamics.CRM.email
+    partner: Email_SyncErrors
+  - name: regardingobjectid_emailserverprofile_syncerror
+    type: Microsoft.Dynamics.CRM.emailserverprofile
+    partner: EmailServerProfile_SyncErrors
+  - name: regardingobjectid_entitlement_syncerror
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: Entitlement_SyncErrors
+  - name: regardingobjectid_entitlementchannel
+    type: Microsoft.Dynamics.CRM.entitlementchannel
+    partner: entitlementchannel_SyncErrors
+  - name: regardingobjectid_entitlementtemplate_syncerror
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: EntitlementTemplate_SyncErrors
+  - name: regardingobjectid_entitlementtemplatechannel
+    type: Microsoft.Dynamics.CRM.entitlementtemplatechannel
+    partner: entitlementtemplatechannel_SyncErrors
+  - name: regardingobjectid_equipment_syncerror
+    type: Microsoft.Dynamics.CRM.equipment
+    partner: Equipment_SyncErrors
+  - name: regardingobjectid_ExpiredProcess_syncerror
+    type: Microsoft.Dynamics.CRM.expiredprocess
+    partner: ExpiredProcess_SyncErrors
+  - name: regardingobjectid_fax_syncerror
+    type: Microsoft.Dynamics.CRM.fax
+    partner: Fax_SyncErrors
+  - name: regardingobjectid_feedback_syncerror
+    type: Microsoft.Dynamics.CRM.feedback
+    partner: Feedback_SyncErrors
+  - name: regardingobjectid_fieldpermission_syncerror
+    type: Microsoft.Dynamics.CRM.fieldpermission
+    partner: FieldPermission_SyncErrors
+  - name: regardingobjectid_fieldsecurityprofile_syncerror
+    type: Microsoft.Dynamics.CRM.fieldsecurityprofile
+    partner: FieldSecurityProfile_SyncErrors
+  - name: regardingobjectid_goal_syncerror
+    type: Microsoft.Dynamics.CRM.goal
+    partner: Goal_SyncErrors
+  - name: regardingobjectid_goalrollupquery_syncerror
+    type: Microsoft.Dynamics.CRM.goalrollupquery
+    partner: GoalRollupQuery_SyncErrors
+  - name: regardingobjectid_importmap_syncerror
+    type: Microsoft.Dynamics.CRM.importmap
+    partner: ImportMap_SyncErrors
+  - name: regardingobjectid_incident_syncerror
+    type: Microsoft.Dynamics.CRM.incident
+    partner: Incident_SyncErrors
+  - name: regardingobjectid_incidentresolution_syncerror
+    type: Microsoft.Dynamics.CRM.incidentresolution
+    partner: IncidentResolution_SyncErrors
+  - name: regardingobjectid_invoice_syncerror
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: Invoice_SyncErrors
+  - name: regardingobjectid_invoicedetail_syncerror
+    type: Microsoft.Dynamics.CRM.invoicedetail
+    partner: InvoiceDetail_SyncErrors
+  - name: regardingobjectid_kbarticle_syncerror
+    type: Microsoft.Dynamics.CRM.kbarticle
+    partner: KbArticle_SyncErrors
+  - name: regardingobjectid_kbarticletemplate_syncerror
+    type: Microsoft.Dynamics.CRM.kbarticletemplate
+    partner: KbArticleTemplate_SyncErrors
+  - name: regardingobjectid_knowledgearticle_syncerror
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: KnowledgeArticle_SyncErrors
+  - name: regardingobjectid_knowledgearticleincident_syncerror
+    type: Microsoft.Dynamics.CRM.knowledgearticleincident
+    partner: KnowledgeArticleIncident_SyncErrors
+  - name: regardingobjectid_knowledgearticleviews_syncerror
+    type: Microsoft.Dynamics.CRM.knowledgearticleviews
+    partner: KnowledgeArticleViews_SyncErrors
+  - name: regardingobjectid_knowledgebaserecord_syncerror
+    type: Microsoft.Dynamics.CRM.knowledgebaserecord
+    partner: KnowledgeBaseRecord_SyncErrors
+  - name: regardingobjectid_lead_syncerror
+    type: Microsoft.Dynamics.CRM.lead
+    partner: Lead_SyncErrors
+  - name: regardingobjectid_leadaddress_syncerror
+    type: Microsoft.Dynamics.CRM.leadaddress
+    partner: LeadAddress_SyncErrors
+  - name: regardingobjectid_LeadToOpportunitySalesProcess_syncerror
+    type: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
+    partner: LeadToOpportunitySalesProcess_SyncErrors
+  - name: regardingobjectid_letter_syncerror
+    type: Microsoft.Dynamics.CRM.letter
+    partner: Letter_SyncErrors
+  - name: regardingobjectid_list_syncerror
+    type: Microsoft.Dynamics.CRM.list
+    partner: List_SyncErrors
+  - name: regardingobjectid_mailbox_syncerror
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: Mailbox_SyncErrors
+  - name: regardingobjectid_mailmergetemplate_syncerror
+    type: Microsoft.Dynamics.CRM.mailmergetemplate
+    partner: MailMergeTemplate_SyncErrors
+  - name: regardingobjectid_metric_syncerror
+    type: Microsoft.Dynamics.CRM.metric
+    partner: Metric_SyncErrors
+  - name: regardingobjectid_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_SyncErrors
+  - name: regardingobjectid_msdyn_postconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postconfig
+    partner: msdyn_postconfig_SyncErrors
+  - name: regardingobjectid_msdyn_postruleconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
+    partner: msdyn_postruleconfig_SyncErrors
+  - name: regardingobjectid_msdyn_wallsavedquery
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
+    partner: msdyn_wallsavedquery_SyncErrors
+  - name: regardingobjectid_msdyn_wallsavedqueryusersettings
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+    partner: msdyn_wallsavedqueryusersettings_SyncErrors
+  - name: regardingobjectid_NewProcess_syncerror
+    type: Microsoft.Dynamics.CRM.newprocess
+    partner: NewProcess_SyncErrors
+  - name: regardingobjectid_opportunity_syncerror
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: Opportunity_SyncErrors
+  - name: regardingobjectid_opportunityclose_syncerror
+    type: Microsoft.Dynamics.CRM.opportunityclose
+    partner: OpportunityClose_SyncErrors
+  - name: regardingobjectid_opportunityproduct_syncerror
+    type: Microsoft.Dynamics.CRM.opportunityproduct
+    partner: OpportunityProduct_SyncErrors
+  - name: regardingobjectid_OpportunitySalesProcess_syncerror
+    type: Microsoft.Dynamics.CRM.opportunitysalesprocess
+    partner: OpportunitySalesProcess_SyncErrors
+  - name: regardingobjectid_orderclose_syncerror
+    type: Microsoft.Dynamics.CRM.orderclose
+    partner: OrderClose_SyncErrors
+  - name: regardingobjectid_organization_syncerror
+    type: Microsoft.Dynamics.CRM.organization
+    partner: Organization_SyncErrors
+  - name: regardingobjectid_phonecall_syncerror
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: PhoneCall_SyncErrors
+  - name: regardingobjectid_PhoneToCaseProcess_syncerror
+    type: Microsoft.Dynamics.CRM.phonetocaseprocess
+    partner: PhoneToCaseProcess_SyncErrors
+  - name: regardingobjectid_position_syncerror
+    type: Microsoft.Dynamics.CRM.position
+    partner: Position_SyncErrors
+  - name: regardingobjectid_postfollow_syncerror
+    type: Microsoft.Dynamics.CRM.postfollow
+    partner: PostFollow_SyncErrors
+  - name: regardingobjectid_pricelevel_syncerror
+    type: Microsoft.Dynamics.CRM.pricelevel
+    partner: PriceLevel_SyncErrors
+  - name: regardingobjectid_processsession_syncerror
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: ProcessSession_SyncErrors
+  - name: regardingobjectid_processstage_syncerror
+    type: Microsoft.Dynamics.CRM.processstage
+    partner: ProcessStage_SyncErrors
+  - name: regardingobjectid_processtrigger_syncerror
+    type: Microsoft.Dynamics.CRM.processtrigger
+    partner: ProcessTrigger_SyncErrors
+  - name: regardingobjectid_product_syncerror
+    type: Microsoft.Dynamics.CRM.product
+    partner: Product_SyncErrors
+  - name: regardingobjectid_productassociation_syncerror
+    type: Microsoft.Dynamics.CRM.productassociation
+    partner: ProductAssociation_SyncErrors
+  - name: regardingobjectid_productpricelevel_syncerror
+    type: Microsoft.Dynamics.CRM.productpricelevel
+    partner: ProductPriceLevel_SyncErrors
+  - name: regardingobjectid_productsubstitute_syncerror
+    type: Microsoft.Dynamics.CRM.productsubstitute
+    partner: ProductSubstitute_SyncErrors
+  - name: regardingobjectid_publisher_syncerror
+    type: Microsoft.Dynamics.CRM.publisher
+    partner: Publisher_SyncErrors
+  - name: regardingobjectid_queue_syncerror
+    type: Microsoft.Dynamics.CRM.queue
+    partner: Queue_SyncErrors
+  - name: regardingobjectid_queueitem_syncerror
+    type: Microsoft.Dynamics.CRM.queueitem
+    partner: QueueItem_SyncErrors
+  - name: regardingobjectid_quote_syncerror
+    type: Microsoft.Dynamics.CRM.quote
+    partner: Quote_SyncErrors
+  - name: regardingobjectid_quoteclose_syncerror
+    type: Microsoft.Dynamics.CRM.quoteclose
+    partner: QuoteClose_SyncErrors
+  - name: regardingobjectid_quotedetail_syncerror
+    type: Microsoft.Dynamics.CRM.quotedetail
+    partner: QuoteDetail_SyncErrors
+  - name: regardingobjectid_ratingmodel_syncerror
+    type: Microsoft.Dynamics.CRM.ratingmodel
+    partner: RatingModel_SyncErrors
+  - name: regardingobjectid_ratingvalue_syncerror
+    type: Microsoft.Dynamics.CRM.ratingvalue
+    partner: RatingValue_SyncErrors
+  - name: regardingobjectid_recurringappointmentmaster_syncerror
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: RecurringAppointmentMaster_SyncErrors
+  - name: regardingobjectid_report_syncerror
+    type: Microsoft.Dynamics.CRM.report
+    partner: Report_SyncErrors
+  - name: regardingobjectid_reportcategory_syncerror
+    type: Microsoft.Dynamics.CRM.reportcategory
+    partner: ReportCategory_SyncErrors
+  - name: regardingobjectid_resource_syncerror
+    type: Microsoft.Dynamics.CRM.resource
+    partner: Resource_SyncErrors
+  - name: regardingobjectid_resourcegroup_syncerror
+    type: Microsoft.Dynamics.CRM.resourcegroup
+    partner: ResourceGroup_SyncErrors
+  - name: regardingobjectid_resourcespec
+    type: Microsoft.Dynamics.CRM.resourcespec
+    partner: resourcespec_SyncErrors
+  - name: regardingobjectid_role_syncerror
+    type: Microsoft.Dynamics.CRM.role
+    partner: Role_SyncErrors
+  - name: regardingobjectid_rollupfield_syncerror
+    type: Microsoft.Dynamics.CRM.rollupfield
+    partner: RollupField_SyncErrors
+  - name: regardingobjectid_salesliterature_syncerror
+    type: Microsoft.Dynamics.CRM.salesliterature
+    partner: SalesLiterature_SyncErrors
+  - name: regardingobjectid_salesliteratureitem
+    type: Microsoft.Dynamics.CRM.salesliteratureitem
+    partner: salesliteratureitem_SyncErrors
+  - name: regardingobjectid_salesorder_syncerror
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: SalesOrder_SyncErrors
+  - name: regardingobjectid_salesorderdetail_syncerror
+    type: Microsoft.Dynamics.CRM.salesorderdetail
+    partner: SalesOrderDetail_SyncErrors
+  - name: regardingobjectid_savedquery_syncerror
+    type: Microsoft.Dynamics.CRM.savedquery
+    partner: SavedQuery_SyncErrors
+  - name: regardingobjectid_savedqueryvisualization_syncerror
+    type: Microsoft.Dynamics.CRM.savedqueryvisualization
+    partner: SavedQueryVisualization_SyncErrors
+  - name: regardingobjectid_service_syncerror
+    type: Microsoft.Dynamics.CRM.service
+    partner: Service_SyncErrors
+  - name: regardingobjectid_serviceappointment_syncerror
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: ServiceAppointment_SyncErrors
+  - name: regardingobjectid_sharepointdocumentlocation_syncerror
+    type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+    partner: SharePointDocumentLocation_SyncErrors
+  - name: regardingobjectid_sharepointsite_syncerror
+    type: Microsoft.Dynamics.CRM.sharepointsite
+    partner: SharePointSite_SyncErrors
+  - name: regardingobjectid_site_syncerror
+    type: Microsoft.Dynamics.CRM.site
+    partner: Site_SyncErrors
+  - name: regardingobjectid_sla_syncerror
+    type: Microsoft.Dynamics.CRM.sla
+    partner: SLA_SyncErrors
+  - name: regardingobjectid_slaitem_syncerror
+    type: Microsoft.Dynamics.CRM.slaitem
+    partner: SLAItem_SyncErrors
+  - name: regardingobjectid_slakpiinstance_syncerror
+    type: Microsoft.Dynamics.CRM.slakpiinstance
+    partner: SLAKPIInstance_SyncErrors
+  - name: regardingobjectid_socialactivity_syncerror
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: SocialActivity_SyncErrors
+  - name: regardingobjectid_socialprofile_syncerror
+    type: Microsoft.Dynamics.CRM.socialprofile
+    partner: SocialProfile_SyncErrors
+  - name: regardingobjectid_solution_syncerror
+    type: Microsoft.Dynamics.CRM.solution
+    partner: Solution_SyncErrors
+  - name: regardingobjectid_subject_syncerror
+    type: Microsoft.Dynamics.CRM.subject
+    partner: Subject_SyncErrors
+  - name: regardingobjectid_syncerror_syncerror
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: SyncError_SyncErrors
+  - name: regardingobjectid_systemuser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: SystemUser_SyncError
+  - name: regardingobjectid_systemuser_syncerror
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: SystemUser_SyncErrors
+  - name: regardingobjectid_task_syncerror
+    type: Microsoft.Dynamics.CRM.task
+    partner: Task_SyncErrors
+  - name: regardingobjectid_team_syncerror
+    type: Microsoft.Dynamics.CRM.team
+    partner: Team_SyncErrors
+  - name: regardingobjectid_teamtemplate_syncerror
+    type: Microsoft.Dynamics.CRM.teamtemplate
+    partner: TeamTemplate_SyncErrors
+  - name: regardingobjectid_template_syncerror
+    type: Microsoft.Dynamics.CRM.template
+    partner: Template_SyncErrors
+  - name: regardingobjectid_territory_syncerror
+    type: Microsoft.Dynamics.CRM.territory
+    partner: Territory_SyncErrors
+  - name: regardingobjectid_transactioncurrency_syncerror
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: TransactionCurrency_SyncErrors
+  - name: regardingobjectid_TranslationProcess_syncerror
+    type: Microsoft.Dynamics.CRM.translationprocess
+    partner: TranslationProcess_SyncErrors
+  - name: regardingobjectid_uom_syncerror
+    type: Microsoft.Dynamics.CRM.uom
+    partner: UoM_SyncErrors
+  - name: regardingobjectid_uomschedule_syncerror
+    type: Microsoft.Dynamics.CRM.uomschedule
+    partner: UoMSchedule_SyncErrors
+  - name: regardingobjectid_userquery_syncerror
+    type: Microsoft.Dynamics.CRM.userquery
+    partner: UserQuery_SyncErrors
+  - name: regardingobjectid_userqueryvisualization_syncerror
+    type: Microsoft.Dynamics.CRM.userqueryvisualization
+    partner: UserQueryVisualization_SyncErrors
+  - name: regardingobjectid_workflow_syncerror
+    type: Microsoft.Dynamics.CRM.workflow
+    partner: Workflow_SyncErrors
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: SyncError_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_syncerror_syncerror
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the syncerror entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the syncerror entity type."
+  solution_items:
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

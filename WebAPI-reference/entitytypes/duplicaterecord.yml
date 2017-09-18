@@ -1,0 +1,499 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.duplicaterecord
+name: "duplicaterecord"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement duplicaterecord EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: a29c6379-e1d1-495e-9062-97d25604f27e
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement duplicaterecord entitytype."
+header: 
+  description: "Potential duplicate record."
+  entity_set_path: "[organization URI]/api/data/v9.0/duplicaterecords"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Duplicate Record
+  primary_key: duplicateid
+  primary_name_attribute: None
+  operations_supported: 
+  - GET
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: ""
+      description: "Date and time when the duplicate record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: duplicateid
+      type: Edm.Guid
+      display_name: ""
+      description: "Unique identifier of the duplicate record."
+      iscomputed: false
+      isreadonly: false
+    - name: owningbusinessunit
+      type: Edm.Guid
+      display_name: "Owning Business Unit"
+      description: "Unique identifier of the business unit that owns the duplicate record."
+      iscomputed: false
+      isreadonly: true
+    - name: owninguser
+      type: Edm.Guid
+      display_name: "Owning User"
+      description: "Unique identifier of the user who owns the duplicate record."
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _asyncoperationid_value
+    single_valued_navigation_property:
+    - asyncoperationid
+    description: "Unique identifier of the system job that created this record."
+  - name: _baserecordid_value
+    single_valued_navigation_property:
+    - baserecordid_lead
+    - baserecordid_bookableresource
+    - baserecordid_bookableresourcebooking
+    - baserecordid_bookableresourcebookingheader
+    - baserecordid_bookableresourcecategory
+    - baserecordid_bookableresourcecategoryassn
+    - baserecordid_bookableresourcecharacteristic
+    - baserecordid_bookableresourcegroup
+    - baserecordid_bookingstatus
+    - baserecordid_characteristic
+    - baserecordid_ratingmodel
+    - baserecordid_ratingvalue
+    - baserecordid_campaign
+    - baserecordid_list
+    - baserecordid_contract
+    - baserecordid_equipment
+    - baserecordid_incident
+    - baserecordid_entitlement
+    - baserecordid_entitlementchannel
+    - baserecordid_entitlementtemplate
+    - baserecordid_resourcegroup
+    - baserecordid_service
+    - baserecordid_opportunity
+    - baserecordid_quote
+    - baserecordid_competitor
+    - baserecordid_territory
+    - baserecordid_msdyn_postalbum
+    - baserecordid_knowledgearticle
+    - baserecordid_knowledgebaserecord
+    - baserecordid_goalrollupquery
+    - baserecordid_transactioncurrency
+    - baserecordid_socialprofile
+    - baserecordid_team
+    - baserecordid_systemuser
+    - baserecordid_account
+    - baserecordid_sharepointdocumentlocation
+    - baserecordid_publisher
+    - baserecordid_sharepointsite
+    - baserecordid_kbarticle
+    - baserecordid_goal
+    - baserecordid_contact
+    - baserecordid_queue
+    - baserecordid_emailserverprofile
+    description: "Unique identifier of the base record."
+  - name: _duplicaterecordid_value
+    single_valued_navigation_property:
+    - duplicaterecordid_lead
+    - duplicaterecordid_bookableresource
+    - duplicaterecordid_bookableresourcebooking
+    - duplicaterecordid_bookableresourcebookingheader
+    - duplicaterecordid_bookableresourcecategory
+    - duplicaterecordid_bookableresourcecategoryassn
+    - duplicaterecordid_bookableresourcecharacteristic
+    - duplicaterecordid_bookableresourcegroup
+    - duplicaterecordid_bookingstatus
+    - duplicaterecordid_characteristic
+    - duplicaterecordid_ratingmodel
+    - duplicaterecordid_ratingvalue
+    - duplicaterecordid_campaign
+    - duplicaterecordid_list
+    - duplicaterecordid_contract
+    - duplicaterecordid_equipment
+    - duplicaterecordid_incident
+    - duplicaterecordid_entitlement
+    - duplicaterecordid_entitlementchannel
+    - duplicaterecordid_entitlementtemplate
+    - duplicaterecordid_resourcegroup
+    - duplicaterecordid_service
+    - duplicaterecordid_opportunity
+    - duplicaterecordid_quote
+    - duplicaterecordid_competitor
+    - duplicaterecordid_territory
+    - duplicaterecordid_msdyn_postalbum
+    - duplicaterecordid_knowledgearticle
+    - duplicaterecordid_knowledgebaserecord
+    - duplicaterecordid_publisher
+    - duplicaterecordid_goal
+    - duplicaterecordid_transactioncurrency
+    - duplicaterecordid_sharepointsite
+    - duplicaterecordid_kbarticle
+    - duplicaterecordid_team
+    - duplicaterecordid_goalrollupquery
+    - duplicaterecordid_contact
+    - duplicaterecordid_systemuser
+    - duplicaterecordid_sharepointdocumentlocation
+    - duplicaterecordid_socialprofile
+    - duplicaterecordid_account
+    - duplicaterecordid_queue
+    - duplicaterecordid_emailserverprofile
+    description: "Unique identifier of the potential duplicate record."
+  - name: _duplicateruleid_value
+    single_valued_navigation_property:
+    - duplicateruleid
+    description: "Unique identifier of the duplicate rule against which this duplicate was found."
+  - name: _ownerid_value
+    description: "Unique identifier of the user or team who owns the duplicate record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: asyncoperationid
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: AsyncOperation_DuplicateBaseRecord
+  - name: baserecordid_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: Account_DuplicateBaseRecord
+  - name: baserecordid_appointment
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: Appointment_DuplicateBaseRecord
+  - name: baserecordid_bookableresource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: bookableresource_DuplicateBaseRecord
+  - name: baserecordid_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: bookableresourcebooking_DuplicateBaseRecord
+  - name: baserecordid_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: bookableresourcebookingheader_DuplicateBaseRecord
+  - name: baserecordid_bookableresourcecategory
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: bookableresourcecategory_DuplicateBaseRecord
+  - name: baserecordid_bookableresourcecategoryassn
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: bookableresourcecategoryassn_DuplicateBaseRecord
+  - name: baserecordid_bookableresourcecharacteristic
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: bookableresourcecharacteristic_DuplicateBaseRecord
+  - name: baserecordid_bookableresourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: bookableresourcegroup_DuplicateBaseRecord
+  - name: baserecordid_bookingstatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: bookingstatus_DuplicateBaseRecord
+  - name: baserecordid_campaign
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: Campaign_DuplicateBaseRecord
+  - name: baserecordid_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: CampaignResponse_DuplicateBaseRecord
+  - name: baserecordid_characteristic
+    type: Microsoft.Dynamics.CRM.characteristic
+    partner: characteristic_DuplicateBaseRecord
+  - name: baserecordid_competitor
+    type: Microsoft.Dynamics.CRM.competitor
+    partner: Competitor_DuplicateBaseRecord
+  - name: baserecordid_contact
+    type: Microsoft.Dynamics.CRM.contact
+    partner: Contact_DuplicateBaseRecord
+  - name: baserecordid_contract
+    type: Microsoft.Dynamics.CRM.contract
+    partner: Contract_DuplicateBaseRecord
+  - name: baserecordid_email
+    type: Microsoft.Dynamics.CRM.email
+    partner: Email_DuplicateBaseRecord
+  - name: baserecordid_emailserverprofile
+    type: Microsoft.Dynamics.CRM.emailserverprofile
+    partner: emailserverprofile_duplicatebaserecord
+  - name: baserecordid_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: entitlement_DuplicateBaseRecord
+  - name: baserecordid_entitlementchannel
+    type: Microsoft.Dynamics.CRM.entitlementchannel
+    partner: entitlementchannel_DuplicateBaseRecord
+  - name: baserecordid_entitlementtemplate
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: entitlementtemplate_DuplicateBaseRecord
+  - name: baserecordid_equipment
+    type: Microsoft.Dynamics.CRM.equipment
+    partner: Equipment_DuplicateBaseRecord
+  - name: baserecordid_fax
+    type: Microsoft.Dynamics.CRM.fax
+    partner: Fax_DuplicateBaseRecord
+  - name: baserecordid_goal
+    type: Microsoft.Dynamics.CRM.goal
+    partner: Goal_DuplicateBaseRecord
+  - name: baserecordid_goalrollupquery
+    type: Microsoft.Dynamics.CRM.goalrollupquery
+    partner: GoalRollupQuery_DuplicateBaseRecord
+  - name: baserecordid_incident
+    type: Microsoft.Dynamics.CRM.incident
+    partner: Incident_DuplicateBaseRecord
+  - name: baserecordid_kbarticle
+    type: Microsoft.Dynamics.CRM.kbarticle
+    partner: KbArticle_DuplicateBaseRecord
+  - name: baserecordid_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: knowledgearticle_DuplicateBaseRecord
+  - name: baserecordid_knowledgebaserecord
+    type: Microsoft.Dynamics.CRM.knowledgebaserecord
+    partner: KnowledgeBaseRecord_DuplicateBaseRecord
+  - name: baserecordid_lead
+    type: Microsoft.Dynamics.CRM.lead
+    partner: Lead_DuplicateBaseRecord
+  - name: baserecordid_letter
+    type: Microsoft.Dynamics.CRM.letter
+    partner: Letter_DuplicateBaseRecord
+  - name: baserecordid_list
+    type: Microsoft.Dynamics.CRM.list
+    partner: List_DuplicateBaseRecord
+  - name: baserecordid_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_DuplicateBaseRecord
+  - name: baserecordid_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: Opportunity_DuplicateBaseRecord
+  - name: baserecordid_phonecall
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: PhoneCall_DuplicateBaseRecord
+  - name: baserecordid_publisher
+    type: Microsoft.Dynamics.CRM.publisher
+    partner: Publisher_DuplicateBaseRecord
+  - name: baserecordid_queue
+    type: Microsoft.Dynamics.CRM.queue
+    partner: Queue_DuplicateBaseRecord
+  - name: baserecordid_quote
+    type: Microsoft.Dynamics.CRM.quote
+    partner: Quote_DuplicateBaseRecord
+  - name: baserecordid_ratingmodel
+    type: Microsoft.Dynamics.CRM.ratingmodel
+    partner: ratingmodel_DuplicateBaseRecord
+  - name: baserecordid_ratingvalue
+    type: Microsoft.Dynamics.CRM.ratingvalue
+    partner: ratingvalue_DuplicateBaseRecord
+  - name: baserecordid_recurringappointmentmaster
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: RecurringAppointmentMaster_DuplicateBaseRecord
+  - name: baserecordid_resourcegroup
+    type: Microsoft.Dynamics.CRM.resourcegroup
+    partner: ResourceGroup_DuplicateBaseRecord
+  - name: baserecordid_service
+    type: Microsoft.Dynamics.CRM.service
+    partner: Service_DuplicateBaseRecord
+  - name: baserecordid_sharepointdocumentlocation
+    type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+    partner: SharePointDocumentLocation_DuplicateBaseRecord
+  - name: baserecordid_sharepointsite
+    type: Microsoft.Dynamics.CRM.sharepointsite
+    partner: SharePointSite_DuplicateBaseRecord
+  - name: baserecordid_socialactivity
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: SocialActivity_DuplicateBaseRecord
+  - name: baserecordid_socialprofile
+    type: Microsoft.Dynamics.CRM.socialprofile
+    partner: SocialProfile_DuplicateBaseRecord
+  - name: baserecordid_systemuser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: SystemUser_DuplicateBaseRecord
+  - name: baserecordid_task
+    type: Microsoft.Dynamics.CRM.task
+    partner: Task_DuplicateBaseRecord
+  - name: baserecordid_team
+    type: Microsoft.Dynamics.CRM.team
+    partner: Team_DuplicateBaseRecord
+  - name: baserecordid_territory
+    type: Microsoft.Dynamics.CRM.territory
+    partner: Territory_DuplicateBaseRecord
+  - name: baserecordid_transactioncurrency
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: TransactionCurrency_DuplicateBaseRecord
+  - name: duplicaterecordid_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: Account_DuplicateMatchingRecord
+  - name: duplicaterecordid_appointment
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: Appointment_DuplicateMatchingRecord
+  - name: duplicaterecordid_bookableresource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: bookableresource_DuplicateMatchingRecord
+  - name: duplicaterecordid_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: bookableresourcebooking_DuplicateMatchingRecord
+  - name: duplicaterecordid_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: bookableresourcebookingheader_DuplicateMatchingRecord
+  - name: duplicaterecordid_bookableresourcecategory
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: bookableresourcecategory_DuplicateMatchingRecord
+  - name: duplicaterecordid_bookableresourcecategoryassn
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: bookableresourcecategoryassn_DuplicateMatchingRecord
+  - name: duplicaterecordid_bookableresourcecharacteristic
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: bookableresourcecharacteristic_DuplicateMatchingRecord
+  - name: duplicaterecordid_bookableresourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: bookableresourcegroup_DuplicateMatchingRecord
+  - name: duplicaterecordid_bookingstatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: bookingstatus_DuplicateMatchingRecord
+  - name: duplicaterecordid_campaign
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: Campaign_DuplicateMatchingRecord
+  - name: duplicaterecordid_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: CampaignResponse_DuplicateMatchingRecord
+  - name: duplicaterecordid_characteristic
+    type: Microsoft.Dynamics.CRM.characteristic
+    partner: characteristic_DuplicateMatchingRecord
+  - name: duplicaterecordid_competitor
+    type: Microsoft.Dynamics.CRM.competitor
+    partner: Competitor_DuplicateMatchingRecord
+  - name: duplicaterecordid_contact
+    type: Microsoft.Dynamics.CRM.contact
+    partner: Contact_DuplicateMatchingRecord
+  - name: duplicaterecordid_contract
+    type: Microsoft.Dynamics.CRM.contract
+    partner: Contract_DuplicateMatchingRecord
+  - name: duplicaterecordid_email
+    type: Microsoft.Dynamics.CRM.email
+    partner: Email_DuplicateMatchingRecord
+  - name: duplicaterecordid_emailserverprofile
+    type: Microsoft.Dynamics.CRM.emailserverprofile
+    partner: emailserverprofile_duplicatematchingrecord
+  - name: duplicaterecordid_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: entitlement_DuplicateMatchingRecord
+  - name: duplicaterecordid_entitlementchannel
+    type: Microsoft.Dynamics.CRM.entitlementchannel
+    partner: entitlementchannel_DuplicateMatchingRecord
+  - name: duplicaterecordid_entitlementtemplate
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: entitlementtemplate_DuplicateMatchingRecord
+  - name: duplicaterecordid_equipment
+    type: Microsoft.Dynamics.CRM.equipment
+    partner: Equipment_DuplicateMatchingRecord
+  - name: duplicaterecordid_fax
+    type: Microsoft.Dynamics.CRM.fax
+    partner: Fax_DuplicateMatchingRecord
+  - name: duplicaterecordid_goal
+    type: Microsoft.Dynamics.CRM.goal
+    partner: Goal_DuplicateMatchingRecord
+  - name: duplicaterecordid_goalrollupquery
+    type: Microsoft.Dynamics.CRM.goalrollupquery
+    partner: GoalRollupQuery_DuplicateMatchingRecord
+  - name: duplicaterecordid_incident
+    type: Microsoft.Dynamics.CRM.incident
+    partner: Incident_DuplicateMatchingRecord
+  - name: duplicaterecordid_kbarticle
+    type: Microsoft.Dynamics.CRM.kbarticle
+    partner: KbArticle_DuplicateMatchingRecord
+  - name: duplicaterecordid_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: knowledgearticle_DuplicateMatchingRecord
+  - name: duplicaterecordid_knowledgebaserecord
+    type: Microsoft.Dynamics.CRM.knowledgebaserecord
+    partner: KnowledgeBaseRecord_DuplicateMatchingRecord
+  - name: duplicaterecordid_lead
+    type: Microsoft.Dynamics.CRM.lead
+    partner: Lead_DuplicateMatchingRecord
+  - name: duplicaterecordid_letter
+    type: Microsoft.Dynamics.CRM.letter
+    partner: Letter_DuplicateMatchingRecord
+  - name: duplicaterecordid_list
+    type: Microsoft.Dynamics.CRM.list
+    partner: List_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_DuplicateMatchingRecord
+  - name: duplicaterecordid_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: Opportunity_DuplicateMatchingRecord
+  - name: duplicaterecordid_phonecall
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: PhoneCall_DuplicateMatchingRecord
+  - name: duplicaterecordid_publisher
+    type: Microsoft.Dynamics.CRM.publisher
+    partner: Publisher_DuplicateMatchingRecord
+  - name: duplicaterecordid_queue
+    type: Microsoft.Dynamics.CRM.queue
+    partner: Queue_DuplicateMatchingRecord
+  - name: duplicaterecordid_quote
+    type: Microsoft.Dynamics.CRM.quote
+    partner: Quote_DuplicateMatchingRecord
+  - name: duplicaterecordid_ratingmodel
+    type: Microsoft.Dynamics.CRM.ratingmodel
+    partner: ratingmodel_DuplicateMatchingRecord
+  - name: duplicaterecordid_ratingvalue
+    type: Microsoft.Dynamics.CRM.ratingvalue
+    partner: ratingvalue_DuplicateMatchingRecord
+  - name: duplicaterecordid_recurringappointmentmaster
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: RecurringAppointmentMaster_DuplicateMatchingRecord
+  - name: duplicaterecordid_resourcegroup
+    type: Microsoft.Dynamics.CRM.resourcegroup
+    partner: ResourceGroup_DuplicateMatchingRecord
+  - name: duplicaterecordid_service
+    type: Microsoft.Dynamics.CRM.service
+    partner: Service_DuplicateMatchingRecord
+  - name: duplicaterecordid_sharepointdocumentlocation
+    type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+    partner: SharePointDocumentLocation_DuplicateMatchingRecord
+  - name: duplicaterecordid_sharepointsite
+    type: Microsoft.Dynamics.CRM.sharepointsite
+    partner: SharePointSite_DuplicateMatchingRecord
+  - name: duplicaterecordid_socialactivity
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: SocialActivity_DuplicateMatchingRecord
+  - name: duplicaterecordid_socialprofile
+    type: Microsoft.Dynamics.CRM.socialprofile
+    partner: SocialProfile_DuplicateMatchingRecord
+  - name: duplicaterecordid_systemuser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: SystemUser_DuplicateMatchingRecord
+  - name: duplicaterecordid_task
+    type: Microsoft.Dynamics.CRM.task
+    partner: Task_DuplicateMatchingRecord
+  - name: duplicaterecordid_team
+    type: Microsoft.Dynamics.CRM.team
+    partner: Team_DuplicateMatchingRecord
+  - name: duplicaterecordid_territory
+    type: Microsoft.Dynamics.CRM.territory
+    partner: Territory_DuplicateMatchingRecord
+  - name: duplicaterecordid_transactioncurrency
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: TransactionCurrency_DuplicateMatchingRecord
+  - name: duplicateruleid
+    type: Microsoft.Dynamics.CRM.duplicaterule
+    partner: DuplicateRule_DuplicateBaseRecord
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the duplicaterecord entity type."
+  solution_items:
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

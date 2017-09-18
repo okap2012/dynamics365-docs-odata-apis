@@ -1,0 +1,59 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_AppCommon
+name: "Application Common"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Application Common Solution Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 201c8449-702a-40ec-ab51-da33bb0d2659
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Application Common Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "For internal use only."
+ unique_name: msdynce_AppCommon
+ version: 9.0.1.5
+ customization_prefix: none
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - Microsoft.Dynamics.CRM.account
+   - Microsoft.Dynamics.CRM.appointment
+   - Microsoft.Dynamics.CRM.connection
+   - Microsoft.Dynamics.CRM.contact
+   - Microsoft.Dynamics.CRM.documenttemplate
+   - Microsoft.Dynamics.CRM.email
+   - Microsoft.Dynamics.CRM.fax
+   - Microsoft.Dynamics.CRM.importfile
+   - Microsoft.Dynamics.CRM.letter
+   - Microsoft.Dynamics.CRM.mailbox
+   - Microsoft.Dynamics.CRM.phonecall
+   - Microsoft.Dynamics.CRM.queueitem
+   - Microsoft.Dynamics.CRM.recurringappointmentmaster
+   - Microsoft.Dynamics.CRM.savedquery
+   - Microsoft.Dynamics.CRM.systemform
+   - Microsoft.Dynamics.CRM.systemuser
+   - Microsoft.Dynamics.CRM.task
+   - Microsoft.Dynamics.CRM.team
+   - Microsoft.Dynamics.CRM.territory
+   - Microsoft.Dynamics.CRM.workflow
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

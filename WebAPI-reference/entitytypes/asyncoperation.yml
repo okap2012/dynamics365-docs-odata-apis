@@ -1,0 +1,1134 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.asyncoperation
+name: "asyncoperation"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement asyncoperation EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: a3d5e391-3751-4d67-bb96-2d03256c9ad1
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement asyncoperation entitytype."
+header: 
+  description: "Process whose execution can proceed independently or in the background."
+  entity_set_path: "[organization URI]/api/data/v9.0/asyncoperations"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: System Job
+  primary_key: asyncoperationid
+  primary_name_attribute: name
+  operations_supported: 
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: asyncoperationid
+      type: Edm.Guid
+      display_name: "System Job"
+      description: "Unique identifier of the system job."
+      iscomputed: false
+      isreadonly: false
+    - name: completedon
+      type: Edm.DateTimeOffset
+      display_name: "Completed On"
+      description: "Date and time when the system job was completed."
+      iscomputed: false
+      isreadonly: true
+    - name: correlationid
+      type: Edm.Guid
+      display_name: "Correlation Id"
+      description: "Unique identifier used to correlate between multiple SDK requests and system jobs."
+      iscomputed: false
+      isreadonly: false
+    - name: correlationupdatedtime
+      type: Edm.DateTimeOffset
+      display_name: "Correlation Updated Time"
+      description: "Last time the correlation depth was updated."
+      iscomputed: false
+      isreadonly: false
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the system job was created."
+      iscomputed: false
+      isreadonly: true
+    - name: data
+      type: Edm.String
+      display_name: "Data"
+      description: "Unstructured data associated with the system job."
+      iscomputed: false
+      isreadonly: false
+    - name: dependencytoken
+      type: Edm.String
+      display_name: "Dependency Token"
+      description: "Execution of all operations with the same dependency token is serialized."
+      iscomputed: false
+      isreadonly: false
+    - name: depth
+      type: Edm.Int32
+      display_name: "Depth"
+      description: "Number of SDK calls made since the first call."
+      iscomputed: false
+      isreadonly: false
+    - name: errorcode
+      type: Edm.Int32
+      display_name: "Error Code"
+      description: "Error code returned from a canceled system job."
+      iscomputed: false
+      isreadonly: true
+    - name: executiontimespan
+      type: Edm.Double
+      display_name: "ExecutionTimeSpan"
+      description: "Time that the system job has taken to execute."
+      iscomputed: false
+      isreadonly: true
+    - name: friendlymessage
+      type: Edm.String
+      display_name: "Friendly message"
+      description: "Message provided by the system job."
+      iscomputed: false
+      isreadonly: false
+    - name: hostid
+      type: Edm.String
+      display_name: "Host"
+      description: "Unique identifier of the host that owns this system job."
+      iscomputed: false
+      isreadonly: false
+    - name: iswaitingforevent
+      type: Edm.Boolean
+      display_name: "Waiting for Event"
+      description: "Indicates that the system job is waiting for an event."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: message
+      type: Edm.String
+      display_name: "Message"
+      description: "Message related to the system job."
+      iscomputed: false
+      isreadonly: true
+    - name: messagename
+      type: Edm.String
+      display_name: "Message Name"
+      description: "Name of the message that started this system job."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the system job was last modified."
+      iscomputed: false
+      isreadonly: true
+    - name: name
+      type: Edm.String
+      display_name: "System Job Name"
+      description: "Name of the system job."
+      iscomputed: false
+      isreadonly: false
+    - name: operationtype
+      type: Edm.Int32
+      display_name: "System Job Type"
+      description: "Type of the system job."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "System Event"
+        - value: 2
+          label: "Bulk Email"
+        - value: 3
+          label: "Import File Parse"
+        - value: 4
+          label: "Transform Parse Data"
+        - value: 5
+          label: "Import"
+        - value: 6
+          label: "Activity Propagation"
+        - value: 7
+          label: "Duplicate Detection Rule Publish"
+        - value: 8
+          label: "Bulk Duplicate Detection"
+        - value: 9
+          label: "SQM Data Collection"
+        - value: 10
+          label: "Workflow"
+        - value: 11
+          label: "Quick Campaign"
+        - value: 12
+          label: "Matchcode Update"
+        - value: 13
+          label: "Bulk Delete"
+        - value: 14
+          label: "Deletion Service"
+        - value: 15
+          label: "Index Management"
+        - value: 16
+          label: "Collect Organization Statistics"
+        - value: 17
+          label: "Import Subprocess"
+        - value: 18
+          label: "Calculate Organization Storage Size"
+        - value: 19
+          label: "Collect Organization Database Statistics"
+        - value: 20
+          label: "Collection Organization Size Statistics"
+        - value: 21
+          label: "Database Tuning"
+        - value: 22
+          label: "Calculate Organization Maximum Storage Size"
+        - value: 23
+          label: "Bulk Delete Subprocess"
+        - value: 24
+          label: "Update Statistic Intervals"
+        - value: 25
+          label: "Organization Full Text Catalog Index"
+        - value: 26
+          label: "Database log backup"
+        - value: 27
+          label: "Update Contract States"
+        - value: 28
+          label: "DBCC SHRINKDATABASE maintenance job"
+        - value: 29
+          label: "DBCC SHRINKFILE maintenance job"
+        - value: 30
+          label: "Reindex all indices maintenance job"
+        - value: 31
+          label: "Storage Limit Notification"
+        - value: 32
+          label: "Cleanup inactive workflow assemblies"
+        - value: 35
+          label: "Recurring Series Expansion"
+        - value: 38
+          label: "Import Sample Data"
+        - value: 40
+          label: "Goal Roll Up"
+        - value: 41
+          label: "Audit Partition Creation"
+        - value: 42
+          label: "Check For Language Pack Updates"
+        - value: 43
+          label: "Provision Language Pack"
+        - value: 44
+          label: "Update Organization Database"
+        - value: 45
+          label: "Update Solution"
+        - value: 46
+          label: "Regenerate Entity Row Count Snapshot Data"
+        - value: 47
+          label: "Regenerate Read Share Snapshot Data"
+        - value: 50
+          label: "Outgoing Activity"
+        - value: 51
+          label: "Incoming Email Processing"
+        - value: 52
+          label: "Mailbox Test Access"
+        - value: 53
+          label: "Encryption Health Check"
+        - value: 54
+          label: "Execute Async Request"
+        - value: 49
+          label: "Post to Yammer"
+        - value: 56
+          label: "Update Entitlement States"
+        - value: 57
+          label: "Calculate Rollup Field"
+        - value: 58
+          label: "Mass Calculate Rollup Field"
+        - value: 59
+          label: "Import Translation"
+        - value: 62
+          label: "Convert Date And Time Behavior"
+        - value: 63
+          label: "EntityKey Index Creation"
+        - value: 65
+          label: "Update Knowledge Article States"
+        - value: 68
+          label: "Resource Booking Sync"
+        - value: 69
+          label: "Relationship Assistant Cards"
+        - value: 71
+          label: "Cleanup Solution Components"
+        - value: 72
+          label: "App Module Metadata Operation"
+    - name: parentpluginexecutionid
+      type: Edm.Guid
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: postponeuntil
+      type: Edm.DateTimeOffset
+      display_name: "Postpone Until"
+      description: "Indicates whether the system job should run only after the specified date and time."
+      iscomputed: false
+      isreadonly: false
+    - name: primaryentitytype
+      type: Edm.String
+      display_name: "Primary Entity Type"
+      description: "Type of entity with which the system job is primarily associated."
+      iscomputed: false
+      isreadonly: false
+    - name: recurrencepattern
+      type: Edm.String
+      display_name: "Recurrence Pattern"
+      description: "Pattern of the system job's recurrence."
+      iscomputed: false
+      isreadonly: false
+    - name: recurrencestarttime
+      type: Edm.DateTimeOffset
+      display_name: "Recurrence Start"
+      description: "Starting time in UTC for the recurrence pattern."
+      iscomputed: false
+      isreadonly: false
+    - name: requestid
+      type: Edm.Guid
+      display_name: "Request"
+      description: "Unique identifier of the request that generated the system job."
+      iscomputed: false
+      isreadonly: false
+    - name: retrycount
+      type: Edm.Int32
+      display_name: "Retry Count"
+      description: "Number of times to retry the system job."
+      iscomputed: false
+      isreadonly: true
+    - name: sequence
+      type: Edm.Int64
+      display_name: "Sequence"
+      description: "Order in which operations were submitted."
+      iscomputed: false
+      isreadonly: true
+    - name: startedon
+      type: Edm.DateTimeOffset
+      display_name: "Started On"
+      description: "Date and time when the system job was started."
+      iscomputed: false
+      isreadonly: true
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the system job."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Ready"
+        - value: 1
+          label: "Suspended"
+        - value: 2
+          label: "Locked"
+        - value: 3
+          label: "Completed"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the system job."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Waiting For Resources"
+        - value: 10
+          label: "Waiting"
+        - value: 20
+          label: "In Progress"
+        - value: 21
+          label: "Pausing"
+        - value: 22
+          label: "Canceling"
+        - value: 30
+          label: "Succeeded"
+        - value: 31
+          label: "Failed"
+        - value: 32
+          label: "Canceled"
+    - name: subtype
+      type: Edm.Int32
+      display_name: "Subtype"
+      description: "The Subtype of the Async Job"
+      iscomputed: false
+      isreadonly: true
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: ""
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: ""
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: workflowstagename
+      type: Edm.String
+      display_name: "Workflow Stage"
+      description: "Name of a workflow stage."
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the system job."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the asyncoperation."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who last modified the system job."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who last modified the asyncoperation."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Unique identifier of the user or team who owns the system job."
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier of the business unit that owns the system job."
+  - name: _owningextensionid_value
+    single_valued_navigation_property:
+    - owningextensionid
+    description: "Unique identifier of the owning extension with which the system job is associated."
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier of the team who owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier of the user who owns the record."
+  - name: _regardingobjectid_value
+    single_valued_navigation_property:
+    - regardingobjectid_territory
+    - regardingobjectid_accountleads
+    - regardingobjectid_contactleads
+    - regardingobjectid_leadaddress
+    - regardingobjectid_lead
+    - regardingobjectid_dynamicproperty
+    - regardingobjectid_dynamicpropertyassociation
+    - regardingobjectid_dynamicpropertyinstance
+    - regardingobjectid_dynamicpropertyoptionsetitem
+    - regardingobjectid_pricelevel
+    - regardingobjectid_product
+    - regardingobjectid_productassociation
+    - regardingobjectid_productpricelevel
+    - regardingobjectid_productsubstitute
+    - regardingobjectid_uom
+    - regardingobjectid_uomschedule
+    - regardingobjectid_bookableresource
+    - regardingobjectid_bookableresourcebooking
+    - regardingobjectid_bookableresourcebookingheader
+    - regardingobjectid_bookableresourcecategory
+    - regardingobjectid_bookableresourcecategoryassn
+    - regardingobjectid_bookableresourcecharacteristic
+    - regardingobjectid_bookableresourcegroup
+    - regardingobjectid_bookingstatus
+    - regardingobjectid_characteristic
+    - regardingobjectid_ratingmodel
+    - regardingobjectid_ratingvalue
+    - regardingobjectid_bulkoperationlog
+    - regardingobjectid_campaign
+    - regardingobjectid_campaignactivityitem
+    - regardingobjectid_campaignitem
+    - regardingobjectid_list
+    - regardingobjectid_listmember
+    - regardingobjectid_constraintbasedgroup
+    - regardingobjectid_contract
+    - regardingobjectid_contractdetail
+    - regardingobjectid_contracttemplate
+    - regardingobjectid_entitlement
+    - regardingobjectid_entitlementchannel
+    - regardingobjectid_entitlementcontacts
+    - regardingobjectid_entitlementproducts
+    - regardingobjectid_entitlementtemplate
+    - regardingobjectid_entitlementtemplatechannel
+    - regardingobjectid_entitlementtemplateproducts
+    - regardingobjectid_equipment
+    - regardingobjectid_incident
+    - regardingobjectid_incidentknowledgebaserecord
+    - regardingobjectid_knowledgearticleincident
+    - regardingobjectid_phonetocaseprocess
+    - regardingobjectid_resource
+    - regardingobjectid_resourcegroup
+    - regardingobjectid_resourcespec
+    - regardingobjectid_service
+    - regardingobjectid_servicecontractcontacts
+    - regardingobjectid_site
+    - regardingobjectid_competitoraddress
+    - regardingobjectid_competitorproduct
+    - regardingobjectid_competitorsalesliterature
+    - regardingobjectid_contactinvoices
+    - regardingobjectid_contactorders
+    - regardingobjectid_contactquotes
+    - regardingobjectid_discount
+    - regardingobjectid_discounttype
+    - regardingobjectid_invoice
+    - regardingobjectid_invoicedetail
+    - regardingobjectid_leadcompetitors
+    - regardingobjectid_leadproduct
+    - regardingobjectid_leadtoopportunitysalesprocess
+    - regardingobjectid_opportunity
+    - regardingobjectid_opportunitycompetitors
+    - regardingobjectid_opportunityproduct
+    - regardingobjectid_opportunitysalesprocess
+    - regardingobjectid_productsalesliterature
+    - regardingobjectid_quote
+    - regardingobjectid_quotedetail
+    - regardingobjectid_salesliterature
+    - regardingobjectid_salesliteratureitem
+    - regardingobjectid_salesorder
+    - regardingobjectid_salesorderdetail
+    - regardingobjectid_competitor
+    - regardingobjectid_msdyn_postalbum
+    - regardingobjectid_msdyn_postconfig
+    - regardingobjectid_msdyn_postruleconfig
+    - regardingobjectid_msdyn_wallsavedquery
+    - regardingobjectid_msdyn_wallsavedqueryusersettings
+    - regardingobjectid_theme
+    - regardingobjectid_usermapping
+    - regardingobjectid_new_interactionforemail
+    - regardingobjectid_knowledgearticle
+    - regardingobjectid_post
+    - regardingobjectid_position
+    - regardingobjectid_similarityrule
+    - regardingobjectid_knowledgebaserecord
+    - regardingobjectid_report
+    - regardingobjectid_privilege
+    - regardingobjectid_goalrollupquery
+    - regardingobjectid_postfollow
+    - regardingobjectid_businessunit
+    - regardingobjectid_annualfiscalcalendar
+    - regardingobjectid_monthlyfiscalcalendar
+    - regardingobjectid_mailbox
+    - regardingobjectid_importfile
+    - regardingobjectid_importdata
+    - regardingobjectid_team
+    - regardingobjectid_kbarticletemplate
+    - regardingobjectid_emailserverprofile
+    - regardingobjectid_userform
+    - regardingobjectid_transactioncurrency
+    - regardingobjectid_socialprofile
+    - regardingobjectid_importmap
+    - regardingobjectid_account
+    - regardingobjectid_queueitem
+    - regardingobjectid_quarterlyfiscalcalendar
+    - regardingobjectid_queue
+    - regardingobjectid_template
+    - regardingobjectid_kbarticle
+    - regardingobjectid_systemform
+    - regardingobjectid_displaystring
+    - regardingobjectid_organization
+    - regardingobjectid_connectionrole
+    - regardingobjectid_kbarticlecomment
+    - regardingobjectid_systemuser
+    - regardingobjectid_mailmergetemplate
+    - regardingobjectid_calendar
+    - regardingobjectid_rollupfield
+    - regardingobjectid_connection
+    - regardingobjectid_metric
+    - regardingobjectid_role
+    - regardingobjectid_subject
+    - regardingobjectid_savedquery
+    - regardingobjectid_sla
+    - regardingobjectid_activitymimeattachment
+    - regardingobjectid_annotation
+    - regardingobjectid_userquery
+    - regardingobjectid_contact
+    - regardingobjectid_sharepointsite
+    - regardingobjectid_businessunitnewsarticle
+    - regardingobjectid_goal
+    - regardingobjectid_importlog
+    - regardingobjectid_semiannualfiscalcalendar
+    - regardingobjectid_fixedmonthlyfiscalcalendar
+    - regardingobjectid_customeraddress
+    - regardingobjectid_sharepointdocumentlocation
+    - regardingobjectid_activitypointer
+    - regardingobjectid_import
+    description: "Unique identifier of the object with which the system job is associated."
+  - name: _workflowactivationid_value
+    single_valued_navigation_property:
+    - workflowactivationid
+    description: "Unique identifier of the workflow activation related to the system job."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_asyncoperation_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_asyncoperation_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_asyncoperation_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_asyncoperation_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_asyncoperations
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_asyncoperation
+  - name: owningextensionid
+    type: Microsoft.Dynamics.CRM.sdkmessageprocessingstep
+    partner: SdkMessageProcessingStep_AsyncOperations
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_asyncoperation
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: system_user_asyncoperation
+  - name: regardingobjectid_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: Account_AsyncOperations
+  - name: regardingobjectid_accountleads
+    type: Microsoft.Dynamics.CRM.accountleads
+    partner: accountleads_AsyncOperations
+  - name: regardingobjectid_activitymimeattachment
+    type: Microsoft.Dynamics.CRM.activitymimeattachment
+    partner: ActivityMimeAttachment_AsyncOperations
+  - name: regardingobjectid_activitypointer
+    type: Microsoft.Dynamics.CRM.activitypointer
+    partner: ActivityPointer_AsyncOperations
+  - name: regardingobjectid_annotation
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: Annotation_AsyncOperations
+  - name: regardingobjectid_annualfiscalcalendar
+    type: Microsoft.Dynamics.CRM.annualfiscalcalendar
+    partner: AnnualFiscalCalendar_AsyncOperations
+  - name: regardingobjectid_appointment
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: Appointment_AsyncOperations
+  - name: regardingobjectid_bookableresource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: bookableresource_AsyncOperations
+  - name: regardingobjectid_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: bookableresourcebooking_AsyncOperations
+  - name: regardingobjectid_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: bookableresourcebookingheader_AsyncOperations
+  - name: regardingobjectid_bookableresourcecategory
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: bookableresourcecategory_AsyncOperations
+  - name: regardingobjectid_bookableresourcecategoryassn
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: bookableresourcecategoryassn_AsyncOperations
+  - name: regardingobjectid_bookableresourcecharacteristic
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: bookableresourcecharacteristic_AsyncOperations
+  - name: regardingobjectid_bookableresourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: bookableresourcegroup_AsyncOperations
+  - name: regardingobjectid_bookingstatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: bookingstatus_AsyncOperations
+  - name: regardingobjectid_bulkoperation
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: BulkOperation_AsyncOperations
+  - name: regardingobjectid_bulkoperationlog
+    type: Microsoft.Dynamics.CRM.bulkoperationlog
+    partner: BulkOperationLog_AsyncOperations
+  - name: regardingobjectid_businessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: BusinessUnit_AsyncOperations
+  - name: regardingobjectid_businessunitnewsarticle
+    type: Microsoft.Dynamics.CRM.businessunitnewsarticle
+    partner: BusinessUnitNewsArticle_AsyncOperations
+  - name: regardingobjectid_calendar
+    type: Microsoft.Dynamics.CRM.calendar
+    partner: Calendar_AsyncOperations
+  - name: regardingobjectid_campaign
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: Campaign_AsyncOperations
+  - name: regardingobjectid_campaignactivity
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: CampaignActivity_AsyncOperations
+  - name: regardingobjectid_campaignactivityitem
+    type: Microsoft.Dynamics.CRM.campaignactivityitem
+    partner: campaignactivityitem_AsyncOperations
+  - name: regardingobjectid_campaignitem
+    type: Microsoft.Dynamics.CRM.campaignitem
+    partner: campaignitem_AsyncOperations
+  - name: regardingobjectid_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: CampaignResponse_AsyncOperations
+  - name: regardingobjectid_characteristic
+    type: Microsoft.Dynamics.CRM.characteristic
+    partner: characteristic_AsyncOperations
+  - name: regardingobjectid_competitor
+    type: Microsoft.Dynamics.CRM.competitor
+    partner: Competitor_AsyncOperations
+  - name: regardingobjectid_competitoraddress
+    type: Microsoft.Dynamics.CRM.competitoraddress
+    partner: competitoraddress_AsyncOperations
+  - name: regardingobjectid_competitorproduct
+    type: Microsoft.Dynamics.CRM.competitorproduct
+    partner: competitorproduct_AsyncOperations
+  - name: regardingobjectid_competitorsalesliterature
+    type: Microsoft.Dynamics.CRM.competitorsalesliterature
+    partner: competitorsalesliterature_AsyncOperations
+  - name: regardingobjectid_connection
+    type: Microsoft.Dynamics.CRM.connection
+    partner: Connection_AsyncOperations
+  - name: regardingobjectid_connectionrole
+    type: Microsoft.Dynamics.CRM.connectionrole
+    partner: Connection_Role_AsyncOperations
+  - name: regardingobjectid_constraintbasedgroup
+    type: Microsoft.Dynamics.CRM.constraintbasedgroup
+    partner: ConstraintBasedGroup_AsyncOperations
+  - name: regardingobjectid_contact
+    type: Microsoft.Dynamics.CRM.contact
+    partner: Contact_AsyncOperations
+  - name: regardingobjectid_contactinvoices
+    type: Microsoft.Dynamics.CRM.contactinvoices
+    partner: contactinvoices_AsyncOperations
+  - name: regardingobjectid_contactleads
+    type: Microsoft.Dynamics.CRM.contactleads
+    partner: contactleads_AsyncOperations
+  - name: regardingobjectid_contactorders
+    type: Microsoft.Dynamics.CRM.contactorders
+    partner: contactorders_AsyncOperations
+  - name: regardingobjectid_contactquotes
+    type: Microsoft.Dynamics.CRM.contactquotes
+    partner: contactquotes_AsyncOperations
+  - name: regardingobjectid_contract
+    type: Microsoft.Dynamics.CRM.contract
+    partner: Contract_AsyncOperations
+  - name: regardingobjectid_contractdetail
+    type: Microsoft.Dynamics.CRM.contractdetail
+    partner: ContractDetail_AsyncOperations
+  - name: regardingobjectid_contracttemplate
+    type: Microsoft.Dynamics.CRM.contracttemplate
+    partner: ContractTemplate_AsyncOperations
+  - name: regardingobjectid_customeraddress
+    type: Microsoft.Dynamics.CRM.customeraddress
+    partner: CustomerAddress_AsyncOperations
+  - name: regardingobjectid_discount
+    type: Microsoft.Dynamics.CRM.discount
+    partner: Discount_AsyncOperations
+  - name: regardingobjectid_discounttype
+    type: Microsoft.Dynamics.CRM.discounttype
+    partner: DiscountType_AsyncOperations
+  - name: regardingobjectid_displaystring
+    type: Microsoft.Dynamics.CRM.displaystring
+    partner: DisplayString_AsyncOperations
+  - name: regardingobjectid_dynamicproperty
+    type: Microsoft.Dynamics.CRM.dynamicproperty
+    partner: dynamicproperty_AsyncOperations
+  - name: regardingobjectid_dynamicpropertyassociation
+    type: Microsoft.Dynamics.CRM.dynamicpropertyassociation
+    partner: dynamicpropertyassociation_AsyncOperations
+  - name: regardingobjectid_dynamicpropertyinstance
+    type: Microsoft.Dynamics.CRM.dynamicpropertyinstance
+    partner: dynamicpropertyinstance_AsyncOperations
+  - name: regardingobjectid_dynamicpropertyoptionsetitem
+    type: Microsoft.Dynamics.CRM.dynamicpropertyoptionsetitem
+    partner: dynamicpropertyoptionsetitem_AsyncOperations
+  - name: regardingobjectid_email
+    type: Microsoft.Dynamics.CRM.email
+    partner: Email_AsyncOperations
+  - name: regardingobjectid_emailserverprofile
+    type: Microsoft.Dynamics.CRM.emailserverprofile
+    partner: emailserverprofile_asyncoperations
+  - name: regardingobjectid_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: entitlement_AsyncOperations
+  - name: regardingobjectid_entitlementchannel
+    type: Microsoft.Dynamics.CRM.entitlementchannel
+    partner: entitlementchannel_AsyncOperations
+  - name: regardingobjectid_entitlementcontacts
+    type: Microsoft.Dynamics.CRM.entitlementcontacts
+    partner: entitlementcontacts_AsyncOperations
+  - name: regardingobjectid_entitlementproducts
+    type: Microsoft.Dynamics.CRM.entitlementproducts
+    partner: entitlementproducts_AsyncOperations
+  - name: regardingobjectid_entitlementtemplate
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: entitlementtemplate_AsyncOperations
+  - name: regardingobjectid_entitlementtemplatechannel
+    type: Microsoft.Dynamics.CRM.entitlementtemplatechannel
+    partner: entitlementtemplatechannel_AsyncOperations
+  - name: regardingobjectid_entitlementtemplateproducts
+    type: Microsoft.Dynamics.CRM.entitlementtemplateproducts
+    partner: entitlementtemplateproducts_AsyncOperations
+  - name: regardingobjectid_equipment
+    type: Microsoft.Dynamics.CRM.equipment
+    partner: Equipment_AsyncOperations
+  - name: regardingobjectid_fax
+    type: Microsoft.Dynamics.CRM.fax
+    partner: Fax_AsyncOperations
+  - name: regardingobjectid_fixedmonthlyfiscalcalendar
+    type: Microsoft.Dynamics.CRM.fixedmonthlyfiscalcalendar
+    partner: FixedMonthlyFiscalCalendar_AsyncOperations
+  - name: regardingobjectid_goal
+    type: Microsoft.Dynamics.CRM.goal
+    partner: Goal_AsyncOperations
+  - name: regardingobjectid_goalrollupquery
+    type: Microsoft.Dynamics.CRM.goalrollupquery
+    partner: goalrollupquery_AsyncOperations
+  - name: regardingobjectid_import
+    type: Microsoft.Dynamics.CRM.import
+    partner: Import_AsyncOperations
+  - name: regardingobjectid_importdata
+    type: Microsoft.Dynamics.CRM.importdata
+    partner: ImportData_AsyncOperations
+  - name: regardingobjectid_importfile
+    type: Microsoft.Dynamics.CRM.importfile
+    partner: ImportFile_AsyncOperations
+  - name: regardingobjectid_importlog
+    type: Microsoft.Dynamics.CRM.importlog
+    partner: ImportLog_AsyncOperations
+  - name: regardingobjectid_importmap
+    type: Microsoft.Dynamics.CRM.importmap
+    partner: ImportMap_AsyncOperations
+  - name: regardingobjectid_incident
+    type: Microsoft.Dynamics.CRM.incident
+    partner: Incident_AsyncOperations
+  - name: regardingobjectid_incidentknowledgebaserecord
+    type: Microsoft.Dynamics.CRM.incidentknowledgebaserecord
+    partner: incidentknowledgebaserecord_AsyncOperations
+  - name: regardingobjectid_incidentresolution
+    type: Microsoft.Dynamics.CRM.incidentresolution
+    partner: IncidentResolution_AsyncOperations
+  - name: regardingobjectid_invoice
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: Invoice_AsyncOperations
+  - name: regardingobjectid_invoicedetail
+    type: Microsoft.Dynamics.CRM.invoicedetail
+    partner: InvoiceDetail_AsyncOperations
+  - name: regardingobjectid_kbarticle
+    type: Microsoft.Dynamics.CRM.kbarticle
+    partner: KbArticle_AsyncOperations
+  - name: regardingobjectid_kbarticlecomment
+    type: Microsoft.Dynamics.CRM.kbarticlecomment
+    partner: KbArticleComment_AsyncOperations
+  - name: regardingobjectid_kbarticletemplate
+    type: Microsoft.Dynamics.CRM.kbarticletemplate
+    partner: KbArticleTemplate_AsyncOperations
+  - name: regardingobjectid_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: knowledgearticle_AsyncOperations
+  - name: regardingobjectid_knowledgearticleincident
+    type: Microsoft.Dynamics.CRM.knowledgearticleincident
+    partner: knowledgearticleincident_AsyncOperations
+  - name: regardingobjectid_knowledgebaserecord
+    type: Microsoft.Dynamics.CRM.knowledgebaserecord
+    partner: KnowledgeBaseRecord_AsyncOperations
+  - name: regardingobjectid_lead
+    type: Microsoft.Dynamics.CRM.lead
+    partner: Lead_AsyncOperations
+  - name: regardingobjectid_leadaddress
+    type: Microsoft.Dynamics.CRM.leadaddress
+    partner: leadaddress_AsyncOperations
+  - name: regardingobjectid_leadcompetitors
+    type: Microsoft.Dynamics.CRM.leadcompetitors
+    partner: leadcompetitors_AsyncOperations
+  - name: regardingobjectid_leadproduct
+    type: Microsoft.Dynamics.CRM.leadproduct
+    partner: leadproduct_AsyncOperations
+  - name: regardingobjectid_leadtoopportunitysalesprocess
+    type: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
+    partner: leadtoopportunitysalesprocess_AsyncOperations
+  - name: regardingobjectid_letter
+    type: Microsoft.Dynamics.CRM.letter
+    partner: Letter_AsyncOperations
+  - name: regardingobjectid_list
+    type: Microsoft.Dynamics.CRM.list
+    partner: List_AsyncOperations
+  - name: regardingobjectid_listmember
+    type: Microsoft.Dynamics.CRM.listmember
+    partner: listmember_AsyncOperations
+  - name: regardingobjectid_mailbox
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: mailbox_asyncoperations
+  - name: regardingobjectid_mailmergetemplate
+    type: Microsoft.Dynamics.CRM.mailmergetemplate
+    partner: MailMergeTemplate_AsyncOperations
+  - name: regardingobjectid_metric
+    type: Microsoft.Dynamics.CRM.metric
+    partner: metric_AsyncOperations
+  - name: regardingobjectid_monthlyfiscalcalendar
+    type: Microsoft.Dynamics.CRM.monthlyfiscalcalendar
+    partner: MonthlyFiscalCalendar_AsyncOperations
+  - name: regardingobjectid_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_AsyncOperations
+  - name: regardingobjectid_msdyn_postconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postconfig
+    partner: msdyn_postconfig_AsyncOperations
+  - name: regardingobjectid_msdyn_postruleconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
+    partner: msdyn_postruleconfig_AsyncOperations
+  - name: regardingobjectid_msdyn_wallsavedquery
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
+    partner: msdyn_wallsavedquery_AsyncOperations
+  - name: regardingobjectid_msdyn_wallsavedqueryusersettings
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+    partner: msdyn_wallsavedqueryusersettings_AsyncOperations
+  - name: regardingobjectid_new_interactionforemail
+    type: Microsoft.Dynamics.CRM.interactionforemail
+    partner: new_interactionforemail_AsyncOperations
+  - name: regardingobjectid_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: Opportunity_AsyncOperations
+  - name: regardingobjectid_opportunityclose
+    type: Microsoft.Dynamics.CRM.opportunityclose
+    partner: OpportunityClose_AsyncOperations
+  - name: regardingobjectid_opportunitycompetitors
+    type: Microsoft.Dynamics.CRM.opportunitycompetitors
+    partner: opportunitycompetitors_AsyncOperations
+  - name: regardingobjectid_opportunityproduct
+    type: Microsoft.Dynamics.CRM.opportunityproduct
+    partner: OpportunityProduct_AsyncOperations
+  - name: regardingobjectid_opportunitysalesprocess
+    type: Microsoft.Dynamics.CRM.opportunitysalesprocess
+    partner: opportunitysalesprocess_AsyncOperations
+  - name: regardingobjectid_orderclose
+    type: Microsoft.Dynamics.CRM.orderclose
+    partner: OrderClose_AsyncOperations
+  - name: regardingobjectid_organization
+    type: Microsoft.Dynamics.CRM.organization
+    partner: Organization_AsyncOperations
+  - name: regardingobjectid_phonecall
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: PhoneCall_AsyncOperations
+  - name: regardingobjectid_phonetocaseprocess
+    type: Microsoft.Dynamics.CRM.phonetocaseprocess
+    partner: phonetocaseprocess_AsyncOperations
+  - name: regardingobjectid_position
+    type: Microsoft.Dynamics.CRM.position
+    partner: position_AsyncOperations
+  - name: regardingobjectid_post
+    type: Microsoft.Dynamics.CRM.post
+    partner: post_AsyncOperations
+  - name: regardingobjectid_postfollow
+    type: Microsoft.Dynamics.CRM.postfollow
+    partner: PostFollow_AsyncOperations
+  - name: regardingobjectid_pricelevel
+    type: Microsoft.Dynamics.CRM.pricelevel
+    partner: PriceLevel_AsyncOperations
+  - name: regardingobjectid_privilege
+    type: Microsoft.Dynamics.CRM.privilege
+    partner: Privilege_AsyncOperations
+  - name: regardingobjectid_product
+    type: Microsoft.Dynamics.CRM.product
+    partner: Product_AsyncOperations
+  - name: regardingobjectid_productassociation
+    type: Microsoft.Dynamics.CRM.productassociation
+    partner: ProductAssociation_AsyncOperations
+  - name: regardingobjectid_productpricelevel
+    type: Microsoft.Dynamics.CRM.productpricelevel
+    partner: ProductPriceLevel_AsyncOperations
+  - name: regardingobjectid_productsalesliterature
+    type: Microsoft.Dynamics.CRM.productsalesliterature
+    partner: productsalesliterature_AsyncOperations
+  - name: regardingobjectid_productsubstitute
+    type: Microsoft.Dynamics.CRM.productsubstitute
+    partner: ProductSubstitute_AsyncOperations
+  - name: regardingobjectid_quarterlyfiscalcalendar
+    type: Microsoft.Dynamics.CRM.quarterlyfiscalcalendar
+    partner: QuarterlyFiscalCalendar_AsyncOperations
+  - name: regardingobjectid_queue
+    type: Microsoft.Dynamics.CRM.queue
+    partner: Queue_AsyncOperations
+  - name: regardingobjectid_queueitem
+    type: Microsoft.Dynamics.CRM.queueitem
+    partner: QueueItem_AsyncOperations
+  - name: regardingobjectid_quote
+    type: Microsoft.Dynamics.CRM.quote
+    partner: Quote_AsyncOperations
+  - name: regardingobjectid_quoteclose
+    type: Microsoft.Dynamics.CRM.quoteclose
+    partner: QuoteClose_AsyncOperations
+  - name: regardingobjectid_quotedetail
+    type: Microsoft.Dynamics.CRM.quotedetail
+    partner: QuoteDetail_AsyncOperations
+  - name: regardingobjectid_ratingmodel
+    type: Microsoft.Dynamics.CRM.ratingmodel
+    partner: ratingmodel_AsyncOperations
+  - name: regardingobjectid_ratingvalue
+    type: Microsoft.Dynamics.CRM.ratingvalue
+    partner: ratingvalue_AsyncOperations
+  - name: regardingobjectid_recurringappointmentmaster
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: RecurringAppointmentMaster_AsyncOperations
+  - name: regardingobjectid_report
+    type: Microsoft.Dynamics.CRM.report
+    partner: Report_AsyncOperations
+  - name: regardingobjectid_resource
+    type: Microsoft.Dynamics.CRM.resource
+    partner: Resource_AsyncOperations
+  - name: regardingobjectid_resourcegroup
+    type: Microsoft.Dynamics.CRM.resourcegroup
+    partner: ResourceGroup_AsyncOperations
+  - name: regardingobjectid_resourcespec
+    type: Microsoft.Dynamics.CRM.resourcespec
+    partner: ResourceSpec_AsyncOperations
+  - name: regardingobjectid_role
+    type: Microsoft.Dynamics.CRM.role
+    partner: Role_AsyncOperations
+  - name: regardingobjectid_rollupfield
+    type: Microsoft.Dynamics.CRM.rollupfield
+    partner: rollupfield_AsyncOperations
+  - name: regardingobjectid_salesliterature
+    type: Microsoft.Dynamics.CRM.salesliterature
+    partner: SalesLiterature_AsyncOperations
+  - name: regardingobjectid_salesliteratureitem
+    type: Microsoft.Dynamics.CRM.salesliteratureitem
+    partner: SalesLiteratureItem_AsyncOperations
+  - name: regardingobjectid_salesorder
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: SalesOrder_AsyncOperations
+  - name: regardingobjectid_salesorderdetail
+    type: Microsoft.Dynamics.CRM.salesorderdetail
+    partner: SalesOrderDetail_AsyncOperations
+  - name: regardingobjectid_savedquery
+    type: Microsoft.Dynamics.CRM.savedquery
+    partner: SavedQuery_AsyncOperations
+  - name: regardingobjectid_semiannualfiscalcalendar
+    type: Microsoft.Dynamics.CRM.semiannualfiscalcalendar
+    partner: SemiAnnualFiscalCalendar_AsyncOperations
+  - name: regardingobjectid_service
+    type: Microsoft.Dynamics.CRM.service
+    partner: Service_AsyncOperations
+  - name: regardingobjectid_serviceappointment
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: ServiceAppointment_AsyncOperations
+  - name: regardingobjectid_servicecontractcontacts
+    type: Microsoft.Dynamics.CRM.servicecontractcontacts
+    partner: servicecontractcontacts_AsyncOperations
+  - name: regardingobjectid_sharepointdocumentlocation
+    type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+    partner: SharePointDocumentLocation_AsyncOperations
+  - name: regardingobjectid_sharepointsite
+    type: Microsoft.Dynamics.CRM.sharepointsite
+    partner: SharePointSite_AsyncOperations
+  - name: regardingobjectid_similarityrule
+    type: Microsoft.Dynamics.CRM.similarityrule
+    partner: similarityrule_AsyncOperations
+  - name: regardingobjectid_site
+    type: Microsoft.Dynamics.CRM.site
+    partner: Site_AsyncOperations
+  - name: regardingobjectid_sla
+    type: Microsoft.Dynamics.CRM.sla
+    partner: slabase_AsyncOperations
+  - name: regardingobjectid_socialactivity
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: SocialActivity_AsyncOperations
+  - name: regardingobjectid_socialprofile
+    type: Microsoft.Dynamics.CRM.socialprofile
+    partner: SocialProfile_AsyncOperations
+  - name: regardingobjectid_subject
+    type: Microsoft.Dynamics.CRM.subject
+    partner: Subject_AsyncOperations
+  - name: regardingobjectid_systemform
+    type: Microsoft.Dynamics.CRM.systemform
+    partner: SystemForm_AsyncOperations
+  - name: regardingobjectid_systemuser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: SystemUser_AsyncOperations
+  - name: regardingobjectid_task
+    type: Microsoft.Dynamics.CRM.task
+    partner: Task_AsyncOperations
+  - name: regardingobjectid_team
+    type: Microsoft.Dynamics.CRM.team
+    partner: Team_AsyncOperations
+  - name: regardingobjectid_template
+    type: Microsoft.Dynamics.CRM.template
+    partner: Template_AsyncOperations
+  - name: regardingobjectid_territory
+    type: Microsoft.Dynamics.CRM.territory
+    partner: Territory_AsyncOperations
+  - name: regardingobjectid_theme
+    type: Microsoft.Dynamics.CRM.theme
+    partner: theme_AsyncOperations
+  - name: regardingobjectid_transactioncurrency
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: TransactionCurrency_AsyncOperations
+  - name: regardingobjectid_uom
+    type: Microsoft.Dynamics.CRM.uom
+    partner: UoM_AsyncOperations
+  - name: regardingobjectid_uomschedule
+    type: Microsoft.Dynamics.CRM.uomschedule
+    partner: UoMSchedule_AsyncOperations
+  - name: regardingobjectid_userform
+    type: Microsoft.Dynamics.CRM.userform
+    partner: UserForm_AsyncOperations
+  - name: regardingobjectid_usermapping
+    type: Microsoft.Dynamics.CRM.usermapping
+    partner: usermapping_AsyncOperations
+  - name: regardingobjectid_userquery
+    type: Microsoft.Dynamics.CRM.userquery
+    partner: UserQuery_AsyncOperations
+  - name: workflowactivationid
+    type: Microsoft.Dynamics.CRM.workflow
+    partner: lk_asyncoperation_workflowactivationid
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: AsyncOperation_BulkDeleteOperation
+    type: Microsoft.Dynamics.CRM.bulkdeleteoperation
+    partner: asyncoperationid
+  - name: AsyncOperation_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: asyncoperationid
+  - name: AsyncOperation_Emails
+    type: Microsoft.Dynamics.CRM.email
+    partner: regardingobjectid_asyncoperation
+  - name: AsyncOperation_MailboxTrackingFolder
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_asyncoperation
+  - name: AsyncOperation_SocialActivities
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: regardingobjectid_asyncoperation
+  - name: lk_workflowlog_asyncoperation_childworkflow
+    type: Microsoft.Dynamics.CRM.workflowlog
+    partner: childworkflowinstanceid_asyncoperation
+  - name: lk_workflowlog_asyncoperations
+    type: Microsoft.Dynamics.CRM.workflowlog
+    partner: asyncoperationid_asyncoperation
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the asyncoperation entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the asyncoperation entity type."
+  solution_items:
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

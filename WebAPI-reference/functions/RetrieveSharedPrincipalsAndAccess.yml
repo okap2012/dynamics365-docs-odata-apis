@@ -1,0 +1,121 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+name: "RetrieveSharedPrincipalsAndAccess"
+type: function
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveSharedPrincipalsAndAccess Function Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 1eb8911d-ad58-4829-846e-953e05a07ad3
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement RetrieveSharedPrincipalsAndAccess Function."
+namespace: Microsoft.Dynamics.CRM
+header:
+  description: ""
+  iscomposable: false
+# This function is not bound to any entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the function."
+  parameter_items:
+  - name: Target
+    type: Microsoft.Dynamics.CRM.crmbaseentity
+    nullable: false
+    unicode: true
+    description: ""
+return_type:
+  description: "The RetrieveSharedPrincipalsAndAccess function returns the following value."
+  type: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccessResponse
+  iscollection: false
+  nullable: false
+  description: ""
+entities:
+  description: "Use the RetrieveSharedPrincipalsAndAccess function with the following entity types:"
+  entity_items:
+  - Microsoft.Dynamics.CRM.account
+  - Microsoft.Dynamics.CRM.annotation
+  - Microsoft.Dynamics.CRM.appointment
+  - Microsoft.Dynamics.CRM.bookableresource
+  - Microsoft.Dynamics.CRM.bookableresourcebooking
+  - Microsoft.Dynamics.CRM.bookableresourcebookingheader
+  - Microsoft.Dynamics.CRM.bookableresourcecategory
+  - Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+  - Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+  - Microsoft.Dynamics.CRM.bookableresourcegroup
+  - Microsoft.Dynamics.CRM.bookingstatus
+  - Microsoft.Dynamics.CRM.campaign
+  - Microsoft.Dynamics.CRM.campaignactivity
+  - Microsoft.Dynamics.CRM.campaignresponse
+  - Microsoft.Dynamics.CRM.category
+  - Microsoft.Dynamics.CRM.characteristic
+  - Microsoft.Dynamics.CRM.connection
+  - Microsoft.Dynamics.CRM.contact
+  - Microsoft.Dynamics.CRM.contract
+  - Microsoft.Dynamics.CRM.duplicaterule
+  - Microsoft.Dynamics.CRM.email
+  - Microsoft.Dynamics.CRM.emailserverprofile
+  - Microsoft.Dynamics.CRM.entitlement
+  - Microsoft.Dynamics.CRM.fax
+  - Microsoft.Dynamics.CRM.feedback
+  - Microsoft.Dynamics.CRM.goal
+  - Microsoft.Dynamics.CRM.goalrollupquery
+  - Microsoft.Dynamics.CRM.import
+  - Microsoft.Dynamics.CRM.importfile
+  - Microsoft.Dynamics.CRM.importmap
+  - Microsoft.Dynamics.CRM.incident
+  - Microsoft.Dynamics.CRM.incidentresolution
+  - Microsoft.Dynamics.CRM.invoice
+  - Microsoft.Dynamics.CRM.knowledgearticle
+  - Microsoft.Dynamics.CRM.knowledgebaserecord
+  - Microsoft.Dynamics.CRM.lead
+  - Microsoft.Dynamics.CRM.letter
+  - Microsoft.Dynamics.CRM.list
+  - Microsoft.Dynamics.CRM.mailbox
+  - Microsoft.Dynamics.CRM.mailmergetemplate
+  - Microsoft.Dynamics.CRM.msdyn_postalbum
+  - Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+  - Microsoft.Dynamics.CRM.opportunity
+  - Microsoft.Dynamics.CRM.opportunityclose
+  - Microsoft.Dynamics.CRM.orderclose
+  - Microsoft.Dynamics.CRM.personaldocumenttemplate
+  - Microsoft.Dynamics.CRM.phonecall
+  - Microsoft.Dynamics.CRM.processsession
+  - Microsoft.Dynamics.CRM.queue
+  - Microsoft.Dynamics.CRM.quote
+  - Microsoft.Dynamics.CRM.quoteclose
+  - Microsoft.Dynamics.CRM.ratingmodel
+  - Microsoft.Dynamics.CRM.ratingvalue
+  - Microsoft.Dynamics.CRM.recurringappointmentmaster
+  - Microsoft.Dynamics.CRM.report
+  - Microsoft.Dynamics.CRM.salesorder
+  - Microsoft.Dynamics.CRM.serviceappointment
+  - Microsoft.Dynamics.CRM.sharepointdocumentlocation
+  - Microsoft.Dynamics.CRM.sharepointsite
+  - Microsoft.Dynamics.CRM.sla
+  - Microsoft.Dynamics.CRM.slakpiinstance
+  - Microsoft.Dynamics.CRM.socialactivity
+  - Microsoft.Dynamics.CRM.socialprofile
+  - Microsoft.Dynamics.CRM.task
+  - Microsoft.Dynamics.CRM.template
+  - Microsoft.Dynamics.CRM.userform
+  - Microsoft.Dynamics.CRM.userquery
+  - Microsoft.Dynamics.CRM.userqueryvisualization
+  - Microsoft.Dynamics.CRM.workflow
+# There are no remarks for this function.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

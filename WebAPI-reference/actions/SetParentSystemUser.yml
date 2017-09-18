@@ -1,0 +1,58 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.SetParentSystemUser
+name: "SetParentSystemUser"
+type: action
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement SetParentSystemUser Action Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 5a4d1065-09c4-4300-a2be-bb192dae5869
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement SetParentSystemUser Action."
+namespace: Microsoft.Dynamics.CRM
+header: 
+  description: "Sets a new parent system user (user) for the specified user.  "
+  solution: Microsoft.Dynamics.CRM.System
+bound_entities:
+  description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."
+  bound_entity_items:
+  - entity_type: Microsoft.Dynamics.CRM.systemuser
+    binding_type: entity
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: Parent
+    type: Microsoft.Dynamics.CRM.systemuser
+    nullable: false
+    unicode: true
+    description: "The new parent user. "
+  - name: KeepChildUsers
+    type: Edm.Boolean
+    nullable: false
+    unicode: true
+    description: "Indicates whether the child users are to be retained. "
+# This action has no return value.
+hasreturnvalue: false
+entities:
+  description: "Use the SetParentSystemUser action with the following entity types:"
+  entity_items:
+  - Microsoft.Dynamics.CRM.businessunit
+  - Microsoft.Dynamics.CRM.team
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

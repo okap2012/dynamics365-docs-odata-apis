@@ -1,0 +1,281 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.principal
+name: "principal"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement principal EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: eadc0332-b4ca-448c-adba-25dd85c9586b
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement principal entitytype."
+header: 
+  description: "Group of undeleted system users and undeleted teams. Owners can be used to control access to specific objects."
+  entity_set_path: "None"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: None
+  primary_key: ownerid
+  primary_name_attribute: None
+  operations_supported: None
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: ownerid
+      type: Edm.Guid
+      display_name: ""
+      description: "Unique identifier for the Owner: systemuserid or teamid."
+      iscomputed: false
+      isreadonly: false
+# This entity has no lookup properties
+# This entity has no single-valued navigation properties
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: ActionCardUserState_Owner
+    type: Microsoft.Dynamics.CRM.actioncarduserstate
+    partner: ownerid
+  - name: bulkoperation_owner_ownerid
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: ownerid_bulkoperation
+  - name: campaignactivity_owner_ownerid
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: ownerid_campaignactivity
+  - name: campaignresponse_owner_ownerid
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: ownerid_campaignresponse
+  - name: incidentresolution_owner_ownerid
+    type: Microsoft.Dynamics.CRM.incidentresolution
+    partner: ownerid_incidentresolution
+  - name: opportunityclose_owner_ownerid
+    type: Microsoft.Dynamics.CRM.opportunityclose
+    partner: ownerid_opportunityclose
+  - name: orderclose_owner_ownerid
+    type: Microsoft.Dynamics.CRM.orderclose
+    partner: ownerid_orderclose
+  - name: owner_accounts
+    type: Microsoft.Dynamics.CRM.account
+    partner: ownerid
+  - name: owner_actioncards
+    type: Microsoft.Dynamics.CRM.actioncard
+    partner: ownerid
+  - name: owner_activitypointers
+    type: Microsoft.Dynamics.CRM.activitypointer
+    partner: ownerid
+  - name: owner_annotations
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: ownerid
+  - name: owner_asyncoperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: ownerid
+  - name: owner_bookableresource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: ownerid
+  - name: owner_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: ownerid
+  - name: owner_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: ownerid
+  - name: owner_bookableresourcecategory
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: ownerid
+  - name: owner_bookableresourcecategoryassn
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: ownerid
+  - name: owner_bookableresourcecharacteristic
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: ownerid
+  - name: owner_bookableresourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: ownerid
+  - name: owner_bookingstatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: ownerid
+  - name: owner_campaigns
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: ownerid
+  - name: owner_categories
+    type: Microsoft.Dynamics.CRM.category
+    partner: ownerid
+  - name: owner_characteristic
+    type: Microsoft.Dynamics.CRM.characteristic
+    partner: ownerid
+  - name: owner_connections
+    type: Microsoft.Dynamics.CRM.connection
+    partner: ownerid
+  - name: owner_contacts
+    type: Microsoft.Dynamics.CRM.contact
+    partner: ownerid
+  - name: owner_contracts
+    type: Microsoft.Dynamics.CRM.contract
+    partner: ownerid
+  - name: owner_duplicaterules
+    type: Microsoft.Dynamics.CRM.duplicaterule
+    partner: ownerid
+  - name: Owner_dynamicproperyinstance
+    type: Microsoft.Dynamics.CRM.dynamicpropertyinstance
+    partner: ownerid
+  - name: owner_emailserverprofile
+    type: Microsoft.Dynamics.CRM.emailserverprofile
+    partner: ownerid
+  - name: owner_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: ownerid
+  - name: owner_exchangesyncidmapping
+    type: Microsoft.Dynamics.CRM.exchangesyncidmapping
+    partner: ownerid
+  - name: owner_feedback
+    type: Microsoft.Dynamics.CRM.feedback
+    partner: ownerid
+  - name: owner_goal
+    type: Microsoft.Dynamics.CRM.goal
+    partner: ownerid
+  - name: owner_goalrollupquery
+    type: Microsoft.Dynamics.CRM.goalrollupquery
+    partner: ownerid
+  - name: owner_importdatas
+    type: Microsoft.Dynamics.CRM.importdata
+    partner: ownerid
+  - name: owner_importfiles
+    type: Microsoft.Dynamics.CRM.importfile
+    partner: ownerid
+  - name: owner_importlogs
+    type: Microsoft.Dynamics.CRM.importlog
+    partner: ownerid
+  - name: owner_importmaps
+    type: Microsoft.Dynamics.CRM.importmap
+    partner: ownerid
+  - name: owner_imports
+    type: Microsoft.Dynamics.CRM.import
+    partner: ownerid
+  - name: owner_incidents
+    type: Microsoft.Dynamics.CRM.incident
+    partner: ownerid
+  - name: owner_invoices
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: ownerid
+  - name: owner_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: ownerid
+  - name: owner_leads
+    type: Microsoft.Dynamics.CRM.lead
+    partner: ownerid
+  - name: owner_lists
+    type: Microsoft.Dynamics.CRM.list
+    partner: ownerid
+  - name: owner_mailbox
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: ownerid
+  - name: owner_mailboxtrackingfolder
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: ownerid
+  - name: owner_mailmergetemplates
+    type: Microsoft.Dynamics.CRM.mailmergetemplate
+    partner: ownerid
+  - name: owner_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: ownerid
+  - name: owner_msdyn_wallsavedqueryusersettings
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+    partner: ownerid
+  - name: owner_new_interactionforemail
+    type: Microsoft.Dynamics.CRM.interactionforemail
+    partner: ownerid
+  - name: owner_opportunitys
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: ownerid
+  - name: owner_personaldocumenttemplates
+    type: Microsoft.Dynamics.CRM.personaldocumenttemplate
+    partner: ownerid
+  - name: owner_postfollows
+    type: Microsoft.Dynamics.CRM.postfollow
+    partner: ownerid
+  - name: owner_processsessions
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: ownerid
+  - name: owner_queues
+    type: Microsoft.Dynamics.CRM.queue
+    partner: ownerid
+  - name: owner_quotes
+    type: Microsoft.Dynamics.CRM.quote
+    partner: ownerid
+  - name: owner_ratingmodel
+    type: Microsoft.Dynamics.CRM.ratingmodel
+    partner: ownerid
+  - name: owner_ratingvalue
+    type: Microsoft.Dynamics.CRM.ratingvalue
+    partner: ownerid
+  - name: owner_recurrencerules
+    type: Microsoft.Dynamics.CRM.recurrencerule
+    partner: ownerid
+  - name: owner_reports
+    type: Microsoft.Dynamics.CRM.report
+    partner: ownerid
+  - name: owner_salesorders
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: ownerid
+  - name: owner_sharepointdocumentlocation
+    type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+    partner: ownerid
+  - name: owner_sharepointsite
+    type: Microsoft.Dynamics.CRM.sharepointsite
+    partner: ownerid
+  - name: owner_slas
+    type: Microsoft.Dynamics.CRM.sla
+    partner: ownerid
+  - name: owner_SocialProfile
+    type: Microsoft.Dynamics.CRM.socialprofile
+    partner: ownerid
+  - name: owner_SyncError
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: ownerid
+  - name: owner_templates
+    type: Microsoft.Dynamics.CRM.template
+    partner: ownerid
+  - name: owner_userform
+    type: Microsoft.Dynamics.CRM.userform
+    partner: ownerid
+  - name: owner_userquerys
+    type: Microsoft.Dynamics.CRM.userquery
+    partner: ownerid
+  - name: owner_userqueryvisualizations
+    type: Microsoft.Dynamics.CRM.userqueryvisualization
+    partner: ownerid
+  - name: owner_workflows
+    type: Microsoft.Dynamics.CRM.workflow
+    partner: ownerid
+  - name: quoteclose_owner_ownerid
+    type: Microsoft.Dynamics.CRM.quoteclose
+    partner: ownerid_quoteclose
+  - name: serviceappointment_owner_ownerid
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: ownerid_serviceappointment
+  - name: slakpiinstance_owner
+    type: Microsoft.Dynamics.CRM.slakpiinstance
+    partner: ownerid
+derived_types:
+  description: "The following entity types inherit from the principal entity type."
+  derived_type_items:
+  - Microsoft.Dynamics.CRM.systemuser 
+  - Microsoft.Dynamics.CRM.team 
+# This entity has no operations
+# This entity is not included in any solutions.
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

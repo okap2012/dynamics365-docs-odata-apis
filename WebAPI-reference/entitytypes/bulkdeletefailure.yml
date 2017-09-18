@@ -1,0 +1,666 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.bulkdeletefailure
+name: "bulkdeletefailure"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement bulkdeletefailure EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 190d387a-f97a-4d9d-ab6a-0b72a7ede0cb
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement bulkdeletefailure entitytype."
+header: 
+  description: "Record that was not deleted during a bulk deletion job."
+  entity_set_path: "[organization URI]/api/data/v9.0/bulkdeletefailures"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Bulk Delete Failure
+  primary_key: bulkdeletefailureid
+  primary_name_attribute: None
+  operations_supported: 
+  - GET
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: bulkdeletefailureid
+      type: Edm.Guid
+      display_name: "Bulk Deletion Failure"
+      description: "Unique identifier of the bulk deletion failure record."
+      iscomputed: false
+      isreadonly: true
+    - name: errordescription
+      type: Edm.String
+      display_name: "Error Description"
+      description: "Description of the error."
+      iscomputed: false
+      isreadonly: true
+    - name: errornumber
+      type: Edm.Int32
+      display_name: "Error Code"
+      description: "Error code for the failed bulk deletion."
+      iscomputed: false
+      isreadonly: true
+    - name: orderedqueryindex
+      type: Edm.Int32
+      display_name: "Index"
+      description: "Index of the ordered query expression that retrieved this record."
+      iscomputed: false
+      isreadonly: true
+    - name: owningbusinessunit
+      type: Edm.Guid
+      display_name: "Owning Business Unit"
+      description: "Unique identifier of the business unit that owns the bulk deletion failure."
+      iscomputed: false
+      isreadonly: true
+    - name: owninguser
+      type: Edm.Guid
+      display_name: "Owning User"
+      description: "Unique identifier of the user who owns the bulk deletion failure record.
+"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _asyncoperationid_value
+    description: "Unique identifier of the system job that created this record."
+  - name: _bulkdeleteoperationid_value
+    single_valued_navigation_property:
+    - bulkdeleteoperationid
+    description: "Unique identifier of the bulk operation job which created this record"
+  - name: _ownerid_value
+    description: "Unique identifier of the user or team who owns the bulk operation log."
+  - name: _regardingobjectid_value
+    single_valued_navigation_property:
+    - regardingobjectid_territory
+    - regardingobjectid_accountleads
+    - regardingobjectid_contactleads
+    - regardingobjectid_leadaddress
+    - regardingobjectid_lead
+    - regardingobjectid_dynamicproperty
+    - regardingobjectid_dynamicpropertyassociation
+    - regardingobjectid_dynamicpropertyinstance
+    - regardingobjectid_dynamicpropertyoptionsetitem
+    - regardingobjectid_pricelevel
+    - regardingobjectid_product
+    - regardingobjectid_productassociation
+    - regardingobjectid_productpricelevel
+    - regardingobjectid_productsubstitute
+    - regardingobjectid_uom
+    - regardingobjectid_uomschedule
+    - regardingobjectid_bookableresource
+    - regardingobjectid_bookableresourcebooking
+    - regardingobjectid_bookableresourcebookingheader
+    - regardingobjectid_bookableresourcecategory
+    - regardingobjectid_bookableresourcecategoryassn
+    - regardingobjectid_bookableresourcecharacteristic
+    - regardingobjectid_bookableresourcegroup
+    - regardingobjectid_bookingstatus
+    - regardingobjectid_characteristic
+    - regardingobjectid_ratingmodel
+    - regardingobjectid_ratingvalue
+    - regardingobjectid_bulkoperationlog
+    - regardingobjectid_campaign
+    - regardingobjectid_campaignactivityitem
+    - regardingobjectid_campaignitem
+    - regardingobjectid_list
+    - regardingobjectid_listmember
+    - regardingobjectid_constraintbasedgroup
+    - regardingobjectid_contract
+    - regardingobjectid_contractdetail
+    - regardingobjectid_contracttemplate
+    - regardingobjectid_entitlement
+    - regardingobjectid_entitlementchannel
+    - regardingobjectid_entitlementcontacts
+    - regardingobjectid_entitlementproducts
+    - regardingobjectid_entitlementtemplate
+    - regardingobjectid_entitlementtemplatechannel
+    - regardingobjectid_entitlementtemplateproducts
+    - regardingobjectid_equipment
+    - regardingobjectid_incident
+    - regardingobjectid_incidentknowledgebaserecord
+    - regardingobjectid_knowledgearticleincident
+    - regardingobjectid_phonetocaseprocess
+    - regardingobjectid_resource
+    - regardingobjectid_resourcegroup
+    - regardingobjectid_resourcespec
+    - regardingobjectid_service
+    - regardingobjectid_servicecontractcontacts
+    - regardingobjectid_site
+    - regardingobjectid_competitoraddress
+    - regardingobjectid_competitorproduct
+    - regardingobjectid_competitorsalesliterature
+    - regardingobjectid_contactinvoices
+    - regardingobjectid_contactorders
+    - regardingobjectid_contactquotes
+    - regardingobjectid_discount
+    - regardingobjectid_discounttype
+    - regardingobjectid_invoice
+    - regardingobjectid_invoicedetail
+    - regardingobjectid_leadcompetitors
+    - regardingobjectid_leadproduct
+    - regardingobjectid_leadtoopportunitysalesprocess
+    - regardingobjectid_opportunity
+    - regardingobjectid_opportunitycompetitors
+    - regardingobjectid_opportunityproduct
+    - regardingobjectid_opportunitysalesprocess
+    - regardingobjectid_productsalesliterature
+    - regardingobjectid_quote
+    - regardingobjectid_quotedetail
+    - regardingobjectid_salesliterature
+    - regardingobjectid_salesliteratureitem
+    - regardingobjectid_salesorder
+    - regardingobjectid_salesorderdetail
+    - regardingobjectid_competitor
+    - regardingobjectid_msdyn_postalbum
+    - regardingobjectid_msdyn_postconfig
+    - regardingobjectid_msdyn_postruleconfig
+    - regardingobjectid_msdyn_wallsavedquery
+    - regardingobjectid_msdyn_wallsavedqueryusersettings
+    - regardingobjectid_theme
+    - regardingobjectid_usermapping
+    - regardingobjectid_knowledgearticle
+    - regardingobjectid_post
+    - regardingobjectid_knowledgebaserecord
+    - regardingobjectid_customeraddress
+    - regardingobjectid_annualfiscalcalendar
+    - regardingobjectid_queue
+    - regardingobjectid_calendar
+    - regardingobjectid_kbarticlecomment
+    - regardingobjectid_annotation
+    - regardingobjectid_privilege
+    - regardingobjectid_fixedmonthlyfiscalcalendar
+    - regardingobjectid_businessunitnewsarticle
+    - regardingobjectid_systemuser
+    - regardingobjectid_kbarticle
+    - regardingobjectid_template
+    - regardingobjectid_quarterlyfiscalcalendar
+    - regardingobjectid_semiannualfiscalcalendar
+    - regardingobjectid_importfile
+    - regardingobjectid_systemform
+    - regardingobjectid_importlog
+    - regardingobjectid_role
+    - regardingobjectid_userform
+    - regardingobjectid_account
+    - regardingobjectid_displaystring
+    - regardingobjectid_savedquery
+    - regardingobjectid_userquery
+    - regardingobjectid_organization
+    - regardingobjectid_businessunit
+    - regardingobjectid_monthlyfiscalcalendar
+    - regardingobjectid_activitymimeattachment
+    - regardingobjectid_kbarticletemplate
+    - regardingobjectid_emailserverprofile
+    - regardingobjectid_sla
+    - regardingobjectid_import
+    - regardingobjectid_importmap
+    - regardingobjectid_importdata
+    - regardingobjectid_contact
+    - regardingobjectid_activitypointer
+    - regardingobjectid_team
+    - regardingobjectid_queueitem
+    - regardingobjectid_subject
+    description: "Unique identifier of the record that can not be deleted."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: bulkdeleteoperationid
+    type: Microsoft.Dynamics.CRM.bulkdeleteoperation
+    partner: BulkDeleteOperation_BulkDeleteFailure
+  - name: regardingobjectid_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: Account_BulkDeleteFailures
+  - name: regardingobjectid_accountleads
+    type: Microsoft.Dynamics.CRM.accountleads
+    partner: accountleads_BulkDeleteFailures
+  - name: regardingobjectid_activitymimeattachment
+    type: Microsoft.Dynamics.CRM.activitymimeattachment
+    partner: ActivityMimeAttachment_BulkDeleteFailures
+  - name: regardingobjectid_activitypointer
+    type: Microsoft.Dynamics.CRM.activitypointer
+    partner: ActivityPointer_BulkDeleteFailures
+  - name: regardingobjectid_annotation
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: Annotation_BulkDeleteFailures
+  - name: regardingobjectid_annualfiscalcalendar
+    type: Microsoft.Dynamics.CRM.annualfiscalcalendar
+    partner: AnnualFiscalCalendar_BulkDeleteFailures
+  - name: regardingobjectid_appointment
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: Appointment_BulkDeleteFailures
+  - name: regardingobjectid_bookableresource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: bookableresource_BulkDeleteFailures
+  - name: regardingobjectid_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: bookableresourcebooking_BulkDeleteFailures
+  - name: regardingobjectid_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: bookableresourcebookingheader_BulkDeleteFailures
+  - name: regardingobjectid_bookableresourcecategory
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: bookableresourcecategory_BulkDeleteFailures
+  - name: regardingobjectid_bookableresourcecategoryassn
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: bookableresourcecategoryassn_BulkDeleteFailures
+  - name: regardingobjectid_bookableresourcecharacteristic
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: bookableresourcecharacteristic_BulkDeleteFailures
+  - name: regardingobjectid_bookableresourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: bookableresourcegroup_BulkDeleteFailures
+  - name: regardingobjectid_bookingstatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: bookingstatus_BulkDeleteFailures
+  - name: regardingobjectid_bulkoperation
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: BulkOperation_BulkDeleteFailures
+  - name: regardingobjectid_bulkoperationlog
+    type: Microsoft.Dynamics.CRM.bulkoperationlog
+    partner: BulkOperationLog_BulkDeleteFailures
+  - name: regardingobjectid_businessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: BusinessUnit_BulkDeleteFailures
+  - name: regardingobjectid_businessunitnewsarticle
+    type: Microsoft.Dynamics.CRM.businessunitnewsarticle
+    partner: BusinessUnitNewsArticle_BulkDeleteFailures
+  - name: regardingobjectid_calendar
+    type: Microsoft.Dynamics.CRM.calendar
+    partner: Calendar_BulkDeleteFailures
+  - name: regardingobjectid_campaign
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: Campaign_BulkDeleteFailures
+  - name: regardingobjectid_campaignactivity
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: CampaignActivity_BulkDeleteFailures
+  - name: regardingobjectid_campaignactivityitem
+    type: Microsoft.Dynamics.CRM.campaignactivityitem
+    partner: campaignactivityitem_BulkDeleteFailures
+  - name: regardingobjectid_campaignitem
+    type: Microsoft.Dynamics.CRM.campaignitem
+    partner: campaignitem_BulkDeleteFailures
+  - name: regardingobjectid_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: CampaignResponse_BulkDeleteFailures
+  - name: regardingobjectid_characteristic
+    type: Microsoft.Dynamics.CRM.characteristic
+    partner: characteristic_BulkDeleteFailures
+  - name: regardingobjectid_competitor
+    type: Microsoft.Dynamics.CRM.competitor
+    partner: Competitor_BulkDeleteFailures
+  - name: regardingobjectid_competitoraddress
+    type: Microsoft.Dynamics.CRM.competitoraddress
+    partner: competitoraddress_BulkDeleteFailures
+  - name: regardingobjectid_competitorproduct
+    type: Microsoft.Dynamics.CRM.competitorproduct
+    partner: competitorproduct_BulkDeleteFailures
+  - name: regardingobjectid_competitorsalesliterature
+    type: Microsoft.Dynamics.CRM.competitorsalesliterature
+    partner: competitorsalesliterature_BulkDeleteFailures
+  - name: regardingobjectid_constraintbasedgroup
+    type: Microsoft.Dynamics.CRM.constraintbasedgroup
+    partner: ConstraintBasedGroup_BulkDeleteFailures
+  - name: regardingobjectid_contact
+    type: Microsoft.Dynamics.CRM.contact
+    partner: Contact_BulkDeleteFailures
+  - name: regardingobjectid_contactinvoices
+    type: Microsoft.Dynamics.CRM.contactinvoices
+    partner: contactinvoices_BulkDeleteFailures
+  - name: regardingobjectid_contactleads
+    type: Microsoft.Dynamics.CRM.contactleads
+    partner: contactleads_BulkDeleteFailures
+  - name: regardingobjectid_contactorders
+    type: Microsoft.Dynamics.CRM.contactorders
+    partner: contactorders_BulkDeleteFailures
+  - name: regardingobjectid_contactquotes
+    type: Microsoft.Dynamics.CRM.contactquotes
+    partner: contactquotes_BulkDeleteFailures
+  - name: regardingobjectid_contract
+    type: Microsoft.Dynamics.CRM.contract
+    partner: Contract_BulkDeleteFailures
+  - name: regardingobjectid_contractdetail
+    type: Microsoft.Dynamics.CRM.contractdetail
+    partner: ContractDetail_BulkDeleteFailures
+  - name: regardingobjectid_contracttemplate
+    type: Microsoft.Dynamics.CRM.contracttemplate
+    partner: ContractTemplate_BulkDeleteFailures
+  - name: regardingobjectid_customeraddress
+    type: Microsoft.Dynamics.CRM.customeraddress
+    partner: CustomerAddress_BulkDeleteFailures
+  - name: regardingobjectid_discount
+    type: Microsoft.Dynamics.CRM.discount
+    partner: Discount_BulkDeleteFailures
+  - name: regardingobjectid_discounttype
+    type: Microsoft.Dynamics.CRM.discounttype
+    partner: DiscountType_BulkDeleteFailures
+  - name: regardingobjectid_displaystring
+    type: Microsoft.Dynamics.CRM.displaystring
+    partner: DisplayString_BulkDeleteFailures
+  - name: regardingobjectid_dynamicproperty
+    type: Microsoft.Dynamics.CRM.dynamicproperty
+    partner: dynamicproperty_BulkDeleteFailures
+  - name: regardingobjectid_dynamicpropertyassociation
+    type: Microsoft.Dynamics.CRM.dynamicpropertyassociation
+    partner: dynamicpropertyassociation_BulkDeleteFailures
+  - name: regardingobjectid_dynamicpropertyinstance
+    type: Microsoft.Dynamics.CRM.dynamicpropertyinstance
+    partner: dynamicpropertyinstance_BulkDeleteFailures
+  - name: regardingobjectid_dynamicpropertyoptionsetitem
+    type: Microsoft.Dynamics.CRM.dynamicpropertyoptionsetitem
+    partner: dynamicpropertyoptionsetitem_BulkDeleteFailures
+  - name: regardingobjectid_email
+    type: Microsoft.Dynamics.CRM.email
+    partner: Email_BulkDeleteFailures
+  - name: regardingobjectid_emailserverprofile
+    type: Microsoft.Dynamics.CRM.emailserverprofile
+    partner: emailserverprofile_bulkdeletefailures
+  - name: regardingobjectid_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: entitlement_BulkDeleteFailures
+  - name: regardingobjectid_entitlementchannel
+    type: Microsoft.Dynamics.CRM.entitlementchannel
+    partner: entitlementchannel_BulkDeleteFailures
+  - name: regardingobjectid_entitlementcontacts
+    type: Microsoft.Dynamics.CRM.entitlementcontacts
+    partner: entitlementcontacts_BulkDeleteFailures
+  - name: regardingobjectid_entitlementproducts
+    type: Microsoft.Dynamics.CRM.entitlementproducts
+    partner: entitlementproducts_BulkDeleteFailures
+  - name: regardingobjectid_entitlementtemplate
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: entitlementtemplate_BulkDeleteFailures
+  - name: regardingobjectid_entitlementtemplatechannel
+    type: Microsoft.Dynamics.CRM.entitlementtemplatechannel
+    partner: entitlementtemplatechannel_BulkDeleteFailures
+  - name: regardingobjectid_entitlementtemplateproducts
+    type: Microsoft.Dynamics.CRM.entitlementtemplateproducts
+    partner: entitlementtemplateproducts_BulkDeleteFailures
+  - name: regardingobjectid_equipment
+    type: Microsoft.Dynamics.CRM.equipment
+    partner: Equipment_BulkDeleteFailures
+  - name: regardingobjectid_fax
+    type: Microsoft.Dynamics.CRM.fax
+    partner: Fax_BulkDeleteFailures
+  - name: regardingobjectid_fixedmonthlyfiscalcalendar
+    type: Microsoft.Dynamics.CRM.fixedmonthlyfiscalcalendar
+    partner: FixedMonthlyFiscalCalendar_BulkDeleteFailures
+  - name: regardingobjectid_import
+    type: Microsoft.Dynamics.CRM.import
+    partner: Import_BulkDeleteFailures
+  - name: regardingobjectid_importdata
+    type: Microsoft.Dynamics.CRM.importdata
+    partner: ImportData_BulkDeleteFailures
+  - name: regardingobjectid_importfile
+    type: Microsoft.Dynamics.CRM.importfile
+    partner: ImportFile_BulkDeleteFailures
+  - name: regardingobjectid_importlog
+    type: Microsoft.Dynamics.CRM.importlog
+    partner: ImportLog_BulkDeleteFailures
+  - name: regardingobjectid_importmap
+    type: Microsoft.Dynamics.CRM.importmap
+    partner: ImportMap_BulkDeleteFailures
+  - name: regardingobjectid_incident
+    type: Microsoft.Dynamics.CRM.incident
+    partner: Incident_BulkDeleteFailures
+  - name: regardingobjectid_incidentknowledgebaserecord
+    type: Microsoft.Dynamics.CRM.incidentknowledgebaserecord
+    partner: incidentknowledgebaserecord_BulkDeleteFailures
+  - name: regardingobjectid_incidentresolution
+    type: Microsoft.Dynamics.CRM.incidentresolution
+    partner: IncidentResolution_BulkDeleteFailures
+  - name: regardingobjectid_invoice
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: Invoice_BulkDeleteFailures
+  - name: regardingobjectid_invoicedetail
+    type: Microsoft.Dynamics.CRM.invoicedetail
+    partner: InvoiceDetail_BulkDeleteFailures
+  - name: regardingobjectid_kbarticle
+    type: Microsoft.Dynamics.CRM.kbarticle
+    partner: KbArticle_BulkDeleteFailures
+  - name: regardingobjectid_kbarticlecomment
+    type: Microsoft.Dynamics.CRM.kbarticlecomment
+    partner: KbArticleComment_BulkDeleteFailures
+  - name: regardingobjectid_kbarticletemplate
+    type: Microsoft.Dynamics.CRM.kbarticletemplate
+    partner: KbArticleTemplate_BulkDeleteFailures
+  - name: regardingobjectid_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: knowledgearticle_BulkDeleteFailures
+  - name: regardingobjectid_knowledgearticleincident
+    type: Microsoft.Dynamics.CRM.knowledgearticleincident
+    partner: knowledgearticleincident_BulkDeleteFailures
+  - name: regardingobjectid_knowledgebaserecord
+    type: Microsoft.Dynamics.CRM.knowledgebaserecord
+    partner: KnowledgeBaseRecord_BulkDeleteFailures
+  - name: regardingobjectid_lead
+    type: Microsoft.Dynamics.CRM.lead
+    partner: Lead_BulkDeleteFailures
+  - name: regardingobjectid_leadaddress
+    type: Microsoft.Dynamics.CRM.leadaddress
+    partner: leadaddress_BulkDeleteFailures
+  - name: regardingobjectid_leadcompetitors
+    type: Microsoft.Dynamics.CRM.leadcompetitors
+    partner: leadcompetitors_BulkDeleteFailures
+  - name: regardingobjectid_leadproduct
+    type: Microsoft.Dynamics.CRM.leadproduct
+    partner: leadproduct_BulkDeleteFailures
+  - name: regardingobjectid_leadtoopportunitysalesprocess
+    type: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
+    partner: leadtoopportunitysalesprocess_BulkDeleteFailures
+  - name: regardingobjectid_letter
+    type: Microsoft.Dynamics.CRM.letter
+    partner: Letter_BulkDeleteFailures
+  - name: regardingobjectid_list
+    type: Microsoft.Dynamics.CRM.list
+    partner: List_BulkDeleteFailures
+  - name: regardingobjectid_listmember
+    type: Microsoft.Dynamics.CRM.listmember
+    partner: listmember_BulkDeleteFailures
+  - name: regardingobjectid_monthlyfiscalcalendar
+    type: Microsoft.Dynamics.CRM.monthlyfiscalcalendar
+    partner: MonthlyFiscalCalendar_BulkDeleteFailures
+  - name: regardingobjectid_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_BulkDeleteFailures
+  - name: regardingobjectid_msdyn_postconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postconfig
+    partner: msdyn_postconfig_BulkDeleteFailures
+  - name: regardingobjectid_msdyn_postruleconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
+    partner: msdyn_postruleconfig_BulkDeleteFailures
+  - name: regardingobjectid_msdyn_wallsavedquery
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
+    partner: msdyn_wallsavedquery_BulkDeleteFailures
+  - name: regardingobjectid_msdyn_wallsavedqueryusersettings
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+    partner: msdyn_wallsavedqueryusersettings_BulkDeleteFailures
+  - name: regardingobjectid_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: Opportunity_BulkDeleteFailures
+  - name: regardingobjectid_opportunityclose
+    type: Microsoft.Dynamics.CRM.opportunityclose
+    partner: OpportunityClose_BulkDeleteFailures
+  - name: regardingobjectid_opportunitycompetitors
+    type: Microsoft.Dynamics.CRM.opportunitycompetitors
+    partner: opportunitycompetitors_BulkDeleteFailures
+  - name: regardingobjectid_opportunityproduct
+    type: Microsoft.Dynamics.CRM.opportunityproduct
+    partner: OpportunityProduct_BulkDeleteFailures
+  - name: regardingobjectid_opportunitysalesprocess
+    type: Microsoft.Dynamics.CRM.opportunitysalesprocess
+    partner: opportunitysalesprocess_BulkDeleteFailures
+  - name: regardingobjectid_orderclose
+    type: Microsoft.Dynamics.CRM.orderclose
+    partner: OrderClose_BulkDeleteFailures
+  - name: regardingobjectid_organization
+    type: Microsoft.Dynamics.CRM.organization
+    partner: Organization_BulkDeleteFailures
+  - name: regardingobjectid_phonecall
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: PhoneCall_BulkDeleteFailures
+  - name: regardingobjectid_phonetocaseprocess
+    type: Microsoft.Dynamics.CRM.phonetocaseprocess
+    partner: phonetocaseprocess_BulkDeleteFailures
+  - name: regardingobjectid_post
+    type: Microsoft.Dynamics.CRM.post
+    partner: post_BulkDeleteFailures
+  - name: regardingobjectid_pricelevel
+    type: Microsoft.Dynamics.CRM.pricelevel
+    partner: PriceLevel_BulkDeleteFailures
+  - name: regardingobjectid_privilege
+    type: Microsoft.Dynamics.CRM.privilege
+    partner: Privilege_BulkDeleteFailures
+  - name: regardingobjectid_product
+    type: Microsoft.Dynamics.CRM.product
+    partner: Product_BulkDeleteFailures
+  - name: regardingobjectid_productassociation
+    type: Microsoft.Dynamics.CRM.productassociation
+    partner: productassociation_BulkDeleteFailures
+  - name: regardingobjectid_productpricelevel
+    type: Microsoft.Dynamics.CRM.productpricelevel
+    partner: ProductPriceLevel_BulkDeleteFailures
+  - name: regardingobjectid_productsalesliterature
+    type: Microsoft.Dynamics.CRM.productsalesliterature
+    partner: productsalesliterature_BulkDeleteFailures
+  - name: regardingobjectid_productsubstitute
+    type: Microsoft.Dynamics.CRM.productsubstitute
+    partner: ProductSubstitute_BulkDeleteFailures
+  - name: regardingobjectid_quarterlyfiscalcalendar
+    type: Microsoft.Dynamics.CRM.quarterlyfiscalcalendar
+    partner: QuarterlyFiscalCalendar_BulkDeleteFailures
+  - name: regardingobjectid_queue
+    type: Microsoft.Dynamics.CRM.queue
+    partner: Queue_BulkDeleteFailures
+  - name: regardingobjectid_queueitem
+    type: Microsoft.Dynamics.CRM.queueitem
+    partner: QueueItem_BulkDeleteFailures
+  - name: regardingobjectid_quote
+    type: Microsoft.Dynamics.CRM.quote
+    partner: Quote_BulkDeleteFailures
+  - name: regardingobjectid_quoteclose
+    type: Microsoft.Dynamics.CRM.quoteclose
+    partner: QuoteClose_BulkDeleteFailures
+  - name: regardingobjectid_quotedetail
+    type: Microsoft.Dynamics.CRM.quotedetail
+    partner: QuoteDetail_BulkDeleteFailures
+  - name: regardingobjectid_ratingmodel
+    type: Microsoft.Dynamics.CRM.ratingmodel
+    partner: ratingmodel_BulkDeleteFailures
+  - name: regardingobjectid_ratingvalue
+    type: Microsoft.Dynamics.CRM.ratingvalue
+    partner: ratingvalue_BulkDeleteFailures
+  - name: regardingobjectid_recurringappointmentmaster
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: RecurringAppointmentMaster_BulkDeleteFailures
+  - name: regardingobjectid_resource
+    type: Microsoft.Dynamics.CRM.resource
+    partner: Resource_BulkDeleteFailures
+  - name: regardingobjectid_resourcegroup
+    type: Microsoft.Dynamics.CRM.resourcegroup
+    partner: ResourceGroup_BulkDeleteFailures
+  - name: regardingobjectid_resourcespec
+    type: Microsoft.Dynamics.CRM.resourcespec
+    partner: ResourceSpec_BulkDeleteFailures
+  - name: regardingobjectid_role
+    type: Microsoft.Dynamics.CRM.role
+    partner: Role_BulkDeleteFailures
+  - name: regardingobjectid_salesliterature
+    type: Microsoft.Dynamics.CRM.salesliterature
+    partner: SalesLiterature_BulkDeleteFailures
+  - name: regardingobjectid_salesliteratureitem
+    type: Microsoft.Dynamics.CRM.salesliteratureitem
+    partner: SalesLiteratureItem_BulkDeleteFailures
+  - name: regardingobjectid_salesorder
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: SalesOrder_BulkDeleteFailures
+  - name: regardingobjectid_salesorderdetail
+    type: Microsoft.Dynamics.CRM.salesorderdetail
+    partner: SalesOrderDetail_BulkDeleteFailures
+  - name: regardingobjectid_savedquery
+    type: Microsoft.Dynamics.CRM.savedquery
+    partner: SavedQuery_BulkDeleteFailures
+  - name: regardingobjectid_semiannualfiscalcalendar
+    type: Microsoft.Dynamics.CRM.semiannualfiscalcalendar
+    partner: SemiAnnualFiscalCalendar_BulkDeleteFailures
+  - name: regardingobjectid_service
+    type: Microsoft.Dynamics.CRM.service
+    partner: Service_BulkDeleteFailures
+  - name: regardingobjectid_serviceappointment
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: ServiceAppointment_BulkDeleteFailures
+  - name: regardingobjectid_servicecontractcontacts
+    type: Microsoft.Dynamics.CRM.servicecontractcontacts
+    partner: servicecontractcontacts_BulkDeleteFailures
+  - name: regardingobjectid_site
+    type: Microsoft.Dynamics.CRM.site
+    partner: Site_BulkDeleteFailures
+  - name: regardingobjectid_sla
+    type: Microsoft.Dynamics.CRM.sla
+    partner: slabase_BulkDeleteFailures
+  - name: regardingobjectid_socialactivity
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: SocialActivity_BulkDeleteFailures
+  - name: regardingobjectid_subject
+    type: Microsoft.Dynamics.CRM.subject
+    partner: Subject_BulkDeleteFailures
+  - name: regardingobjectid_systemform
+    type: Microsoft.Dynamics.CRM.systemform
+    partner: SystemForm_BulkDeleteFailures
+  - name: regardingobjectid_systemuser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: SystemUser_BulkDeleteFailures
+  - name: regardingobjectid_task
+    type: Microsoft.Dynamics.CRM.task
+    partner: Task_BulkDeleteFailures
+  - name: regardingobjectid_team
+    type: Microsoft.Dynamics.CRM.team
+    partner: Team_BulkDeleteFailures
+  - name: regardingobjectid_template
+    type: Microsoft.Dynamics.CRM.template
+    partner: Template_BulkDeleteFailures
+  - name: regardingobjectid_territory
+    type: Microsoft.Dynamics.CRM.territory
+    partner: Territory_BulkDeleteFailures
+  - name: regardingobjectid_theme
+    type: Microsoft.Dynamics.CRM.theme
+    partner: theme_BulkDeleteFailures
+  - name: regardingobjectid_uom
+    type: Microsoft.Dynamics.CRM.uom
+    partner: UoM_BulkDeleteFailures
+  - name: regardingobjectid_uomschedule
+    type: Microsoft.Dynamics.CRM.uomschedule
+    partner: UoMSchedule_BulkDeleteFailures
+  - name: regardingobjectid_userform
+    type: Microsoft.Dynamics.CRM.userform
+    partner: UserForm_BulkDeleteFailures
+  - name: regardingobjectid_usermapping
+    type: Microsoft.Dynamics.CRM.usermapping
+    partner: usermapping_BulkDeleteFailures
+  - name: regardingobjectid_userquery
+    type: Microsoft.Dynamics.CRM.userquery
+    partner: UserQuery_BulkDeleteFailures
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the bulkdeletefailure entity type."
+  solution_items:
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

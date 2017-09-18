@@ -1,0 +1,448 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.annotation
+name: "annotation"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement annotation EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 108a7d17-f416-4d6b-9045-e23a1f6c21a5
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement annotation entitytype."
+header: 
+  description: "Note that is attached to one or more objects, including other notes."
+  entity_set_path: "[organization URI]/api/data/v9.0/annotations"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Note
+  primary_key: annotationid
+  primary_name_attribute: subject
+  operations_supported: 
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: annotationid
+      type: Edm.Guid
+      display_name: "Note"
+      description: "Unique identifier of the note."
+      iscomputed: false
+      isreadonly: false
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the note was created."
+      iscomputed: false
+      isreadonly: true
+    - name: documentbody
+      type: Edm.String
+      display_name: "Document"
+      description: "Contents of the note's attachment."
+      iscomputed: false
+      isreadonly: false
+    - name: documentbody_binary
+      type: Edm.Binary
+      display_name: ""
+      description: "Contents of the note's attachment."
+      iscomputed: false
+      isreadonly: false
+    - name: filename
+      type: Edm.String
+      display_name: "File Name"
+      description: "File name of the note."
+      iscomputed: false
+      isreadonly: false
+    - name: filesize
+      type: Edm.Int32
+      display_name: "File Size (Bytes)"
+      description: "File size of the note."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Unique identifier of the data import or data migration that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: isdocument
+      type: Edm.Boolean
+      display_name: "Is Document"
+      description: "Specifies whether the note is an attachment."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: langid
+      type: Edm.String
+      display_name: "Language ID"
+      description: "Language identifier for the note."
+      iscomputed: false
+      isreadonly: false
+    - name: mimetype
+      type: Edm.String
+      display_name: "Mime Type"
+      description: "MIME type of the note's attachment."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the note was last modified."
+      iscomputed: false
+      isreadonly: true
+    - name: notetext
+      type: Edm.String
+      display_name: "Description"
+      description: "Text of the note."
+      iscomputed: false
+      isreadonly: false
+    - name: objecttypecode
+      type: Edm.String
+      display_name: "Object Type "
+      description: "Type of entity with which the note is associated."
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: stepid
+      type: Edm.String
+      display_name: "Step Id"
+      description: "workflow step id associated with the note."
+      iscomputed: false
+      isreadonly: false
+    - name: subject
+      type: Edm.String
+      display_name: "Title"
+      description: "Subject associated with the note."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version number of the note."
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the note."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the annotation."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who last modified the note."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who last modified the annotation."
+  - name: _objectid_value
+    single_valued_navigation_property:
+    - objectid_lead
+    - objectid_product
+    - objectid_bookableresource
+    - objectid_bookableresourcebooking
+    - objectid_bookableresourcebookingheader
+    - objectid_bookableresourcecategoryassn
+    - objectid_bookableresourcecharacteristic
+    - objectid_bookableresourcegroup
+    - objectid_campaign
+    - objectid_list
+    - objectid_contract
+    - objectid_contractdetail
+    - objectid_entitlement
+    - objectid_entitlementchannel
+    - objectid_entitlementtemplate
+    - objectid_equipment
+    - objectid_incident
+    - objectid_resourcespec
+    - objectid_service
+    - objectid_invoice
+    - objectid_opportunity
+    - objectid_quote
+    - objectid_salesorder
+    - objectid_competitor
+    - objectid_msdyn_postalbum
+    - objectid_knowledgearticle
+    - objectid_knowledgebaserecord
+    - objectid_account
+    - objectid_kbarticle
+    - objectid_sla
+    - objectid_calendar
+    - objectid_contact
+    - objectid_goal
+    - objectid_workflow
+    - objectid_mailbox
+    - objectid_duplicaterule
+    - objectid_emailserverprofile
+    description: "Unique identifier of the object with which the note is associated."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Unique identifier of the user or team who owns the note."
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier of the business unit that owns the note."
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier of the team who owns the note."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier of the user who owns the note."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_annotationbase_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_annotationbase_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_annotationbase_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_annotationbase_modifiedonbehalfby
+  - name: objectid_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: Account_Annotation
+  - name: objectid_appointment
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: Appointment_Annotation
+  - name: objectid_bookableresource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: bookableresource_Annotations
+  - name: objectid_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: bookableresourcebooking_Annotations
+  - name: objectid_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: bookableresourcebookingheader_Annotations
+  - name: objectid_bookableresourcecategoryassn
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: bookableresourcecategoryassn_Annotations
+  - name: objectid_bookableresourcecharacteristic
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: bookableresourcecharacteristic_Annotations
+  - name: objectid_bookableresourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: bookableresourcegroup_Annotations
+  - name: objectid_bulkoperation
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: bulkoperation_Annotations
+  - name: objectid_calendar
+    type: Microsoft.Dynamics.CRM.calendar
+    partner: Calendar_Annotation
+  - name: objectid_campaign
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: Campaign_Annotation
+  - name: objectid_campaignactivity
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: CampaignActivity_Annotation
+  - name: objectid_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: CampaignResponse_Annotation
+  - name: objectid_competitor
+    type: Microsoft.Dynamics.CRM.competitor
+    partner: Competitor_Annotation
+  - name: objectid_contact
+    type: Microsoft.Dynamics.CRM.contact
+    partner: Contact_Annotation
+  - name: objectid_contract
+    type: Microsoft.Dynamics.CRM.contract
+    partner: Contract_Annotation
+  - name: objectid_contractdetail
+    type: Microsoft.Dynamics.CRM.contractdetail
+    partner: ContractDetail_Annotation
+  - name: objectid_duplicaterule
+    type: Microsoft.Dynamics.CRM.duplicaterule
+    partner: DuplicateRule_Annotation
+  - name: objectid_email
+    type: Microsoft.Dynamics.CRM.email
+    partner: Email_Annotation
+  - name: objectid_emailserverprofile
+    type: Microsoft.Dynamics.CRM.emailserverprofile
+    partner: EmailServerProfile_Annotation
+  - name: objectid_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: entitlement_Annotations
+  - name: objectid_entitlementchannel
+    type: Microsoft.Dynamics.CRM.entitlementchannel
+    partner: entitlementchannel_Annotations
+  - name: objectid_entitlementtemplate
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: entitlementtemplate_Annotations
+  - name: objectid_equipment
+    type: Microsoft.Dynamics.CRM.equipment
+    partner: Equipment_Annotation
+  - name: objectid_fax
+    type: Microsoft.Dynamics.CRM.fax
+    partner: Fax_Annotation
+  - name: objectid_goal
+    type: Microsoft.Dynamics.CRM.goal
+    partner: Goal_Annotation
+  - name: objectid_incident
+    type: Microsoft.Dynamics.CRM.incident
+    partner: Incident_Annotation
+  - name: objectid_incidentresolution
+    type: Microsoft.Dynamics.CRM.incidentresolution
+    partner: IncidentResolution_Annotation
+  - name: objectid_invoice
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: Invoice_Annotation
+  - name: objectid_kbarticle
+    type: Microsoft.Dynamics.CRM.kbarticle
+    partner: KbArticle_Annotation
+  - name: objectid_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: knowledgearticle_Annotations
+  - name: objectid_knowledgebaserecord
+    type: Microsoft.Dynamics.CRM.knowledgebaserecord
+    partner: KnowledgeBaseRecord_Annotations
+  - name: objectid_lead
+    type: Microsoft.Dynamics.CRM.lead
+    partner: Lead_Annotation
+  - name: objectid_letter
+    type: Microsoft.Dynamics.CRM.letter
+    partner: Letter_Annotation
+  - name: objectid_list
+    type: Microsoft.Dynamics.CRM.list
+    partner: List_Annotation
+  - name: objectid_mailbox
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: Mailbox_Annotation
+  - name: objectid_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_Annotations
+  - name: objectid_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: Opportunity_Annotation
+  - name: objectid_opportunityclose
+    type: Microsoft.Dynamics.CRM.opportunityclose
+    partner: OpportunityClose_Annotation
+  - name: objectid_orderclose
+    type: Microsoft.Dynamics.CRM.orderclose
+    partner: OrderClose_Annotation
+  - name: objectid_phonecall
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: PhoneCall_Annotation
+  - name: objectid_product
+    type: Microsoft.Dynamics.CRM.product
+    partner: Product_Annotation
+  - name: objectid_quote
+    type: Microsoft.Dynamics.CRM.quote
+    partner: Quote_Annotation
+  - name: objectid_quoteclose
+    type: Microsoft.Dynamics.CRM.quoteclose
+    partner: QuoteClose_Annotation
+  - name: objectid_recurringappointmentmaster
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: RecurringAppointmentMaster_Annotation
+  - name: objectid_resourcespec
+    type: Microsoft.Dynamics.CRM.resourcespec
+    partner: ResourceSpec_Annotation
+  - name: objectid_salesorder
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: SalesOrder_Annotation
+  - name: objectid_service
+    type: Microsoft.Dynamics.CRM.service
+    partner: Service_Annotation
+  - name: objectid_serviceappointment
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: ServiceAppointment_Annotation
+  - name: objectid_sla
+    type: Microsoft.Dynamics.CRM.sla
+    partner: sla_Annotation
+  - name: objectid_socialactivity
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: SocialActivity_Annotation
+  - name: objectid_task
+    type: Microsoft.Dynamics.CRM.task
+    partner: Task_Annotation
+  - name: objectid_workflow
+    type: Microsoft.Dynamics.CRM.workflow
+    partner: Workflow_Annotation
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_annotations
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_annotations
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_annotations
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: annotation_owning_user
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: Annotation_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_annotation
+  - name: Annotation_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_annotation
+  - name: Annotation_ProcessSessions
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_annotation
+  - name: Annotation_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_annotation_syncerror
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the annotation entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.Rollup
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the annotation entity type."
+  solution_items:
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

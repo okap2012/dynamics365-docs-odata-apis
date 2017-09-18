@@ -11,10 +11,13 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "ODataIndex": "Content",
+        "OData": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "customized_template_paths": "custom_template"
     }
   ],
   "notification_subscribers": [],

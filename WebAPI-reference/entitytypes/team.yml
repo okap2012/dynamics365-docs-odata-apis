@@ -1,0 +1,804 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.team
+name: "team"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement team EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 3c62c4cc-6841-4b6e-81a4-d8992ba19d86
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement team entitytype."
+header: 
+  description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units."
+  entity_set_path: "[organization URI]/api/data/v9.0/teams"
+  base_type: Microsoft.Dynamics.CRM.principal
+  display_name: Team
+  primary_key: ownerid
+  primary_name_attribute: name
+  operations_supported: 
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the team was created."
+      iscomputed: false
+      isreadonly: true
+    - name: description
+      type: Edm.String
+      display_name: "Description"
+      description: "Description of the team."
+      iscomputed: false
+      isreadonly: false
+    - name: emailaddress
+      type: Edm.String
+      display_name: "Email"
+      description: "Email address for the team."
+      iscomputed: false
+      isreadonly: false
+    - name: exchangerate
+      type: Edm.Decimal
+      display_name: "Exchange Rate"
+      description: "Exchange rate for the currency associated with the team with respect to the base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Unique identifier of the data import or data migration that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: isdefault
+      type: Edm.Boolean
+      display_name: "Is Default"
+      description: "Information about whether the team is a default business unit team."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the team was last modified."
+      iscomputed: false
+      isreadonly: true
+    - name: name
+      type: Edm.String
+      display_name: "Team Name"
+      description: "Name of the team."
+      iscomputed: false
+      isreadonly: false
+    - name: organizationid
+      type: Edm.Guid
+      display_name: "Organization "
+      description: "Unique identifier of the organization associated with the team."
+      iscomputed: false
+      isreadonly: true
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: ownerid
+      type: Edm.Guid
+      display_name: ""
+      description: "Unique identifier for the Owner: systemuserid or teamid."
+      iscomputed: false
+      isreadonly: false
+    - name: processid
+      type: Edm.Guid
+      display_name: "Process"
+      description: "Shows the ID of the process."
+      iscomputed: false
+      isreadonly: false
+    - name: stageid
+      type: Edm.Guid
+      display_name: "Process Stage"
+      description: "Shows the ID of the stage."
+      iscomputed: false
+      isreadonly: false
+    - name: systemmanaged
+      type: Edm.Boolean
+      display_name: "Is System Managed"
+      description: "Select whether the team will be managed by the system."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: teamid
+      type: Edm.Guid
+      display_name: "Team"
+      description: "Unique identifier for the team."
+      iscomputed: false
+      isreadonly: false
+    - name: teamtype
+      type: Edm.Int32
+      display_name: "Team Type"
+      description: "Select the team type."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Owner"
+        - value: 1
+          label: "Access"
+    - name: traversedpath
+      type: Edm.String
+      display_name: "Traversed Path"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version number"
+      description: "Version number of the team."
+      iscomputed: false
+      isreadonly: true
+    - name: yominame
+      type: Edm.String
+      display_name: "Yomi Name"
+      description: "Pronunciation of the full name of the team, written in phonetic hiragana or katakana characters."
+      iscomputed: false
+      isreadonly: false
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _administratorid_value
+    single_valued_navigation_property:
+    - administratorid
+    description: "Unique identifier of the user primary responsible for the team."
+  - name: _businessunitid_value
+    single_valued_navigation_property:
+    - businessunitid
+    description: "Unique identifier of the business unit with which the team is associated."
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the team."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the team."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who last modified the team."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who last modified the team."
+  - name: _queueid_value
+    single_valued_navigation_property:
+    - queueid
+    description: "Unique identifier of the default queue for the team."
+  - name: _regardingobjectid_value
+    single_valued_navigation_property:
+    - regardingobjectid_opportunity
+    - regardingobjectid_knowledgearticle
+    description: "Choose the record that the team relates to."
+  - name: _teamtemplateid_value
+    single_valued_navigation_property:
+    - associatedteamtemplateid
+    description: "Shows the team template that is associated with the team."
+  - name: _transactioncurrencyid_value
+    single_valued_navigation_property:
+    - transactioncurrencyid
+    description: "Unique identifier of the currency associated with the team."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: administratorid
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_teambase_administratorid
+  - name: associatedteamtemplateid
+    type: Microsoft.Dynamics.CRM.teamtemplate
+    partner: teamtemplate_Teams
+  - name: businessunitid
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_teams
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_teambase_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_team_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_teambase_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_team_modifiedonbehalfby
+  - name: organizationid_organization
+    type: Microsoft.Dynamics.CRM.organization
+    partner: organization_teams
+  - name: queueid
+    type: Microsoft.Dynamics.CRM.queue
+    partner: queue_team
+  - name: regardingobjectid_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: knowledgearticle_Teams
+  - name: regardingobjectid_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: opportunity_Teams
+  - name: stageid_processstage
+    type: Microsoft.Dynamics.CRM.processstage
+    partner: processstage_teams
+  - name: transactioncurrencyid
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: TransactionCurrency_Team
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: ActionCardUserState_Owner
+    type: Microsoft.Dynamics.CRM.actioncarduserstate
+    partner: ownerid
+  - name: bulkoperation_owner_ownerid
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: ownerid_bulkoperation
+  - name: campaignactivity_owner_ownerid
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: ownerid_campaignactivity
+  - name: campaignresponse_owner_ownerid
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: ownerid_campaignresponse
+  - name: ImportFile_Team
+    type: Microsoft.Dynamics.CRM.importfile
+    partner: recordsownerid_team
+  - name: incidentresolution_owner_ownerid
+    type: Microsoft.Dynamics.CRM.incidentresolution
+    partner: ownerid_incidentresolution
+  - name: lead_owning_team
+    type: Microsoft.Dynamics.CRM.lead
+    partner: owningteam
+  - name: opportunityclose_owner_ownerid
+    type: Microsoft.Dynamics.CRM.opportunityclose
+    partner: ownerid_opportunityclose
+  - name: orderclose_owner_ownerid
+    type: Microsoft.Dynamics.CRM.orderclose
+    partner: ownerid_orderclose
+  - name: owner_accounts
+    type: Microsoft.Dynamics.CRM.account
+    partner: ownerid
+  - name: owner_actioncards
+    type: Microsoft.Dynamics.CRM.actioncard
+    partner: ownerid
+  - name: owner_activitypointers
+    type: Microsoft.Dynamics.CRM.activitypointer
+    partner: ownerid
+  - name: owner_annotations
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: ownerid
+  - name: owner_asyncoperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: ownerid
+  - name: owner_bookableresource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: ownerid
+  - name: owner_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: ownerid
+  - name: owner_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: ownerid
+  - name: owner_bookableresourcecategory
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: ownerid
+  - name: owner_bookableresourcecategoryassn
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: ownerid
+  - name: owner_bookableresourcecharacteristic
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: ownerid
+  - name: owner_bookableresourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: ownerid
+  - name: owner_bookingstatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: ownerid
+  - name: owner_campaigns
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: ownerid
+  - name: owner_categories
+    type: Microsoft.Dynamics.CRM.category
+    partner: ownerid
+  - name: owner_characteristic
+    type: Microsoft.Dynamics.CRM.characteristic
+    partner: ownerid
+  - name: owner_connections
+    type: Microsoft.Dynamics.CRM.connection
+    partner: ownerid
+  - name: owner_contacts
+    type: Microsoft.Dynamics.CRM.contact
+    partner: ownerid
+  - name: owner_contracts
+    type: Microsoft.Dynamics.CRM.contract
+    partner: ownerid
+  - name: owner_duplicaterules
+    type: Microsoft.Dynamics.CRM.duplicaterule
+    partner: ownerid
+  - name: Owner_dynamicproperyinstance
+    type: Microsoft.Dynamics.CRM.dynamicpropertyinstance
+    partner: ownerid
+  - name: owner_emailserverprofile
+    type: Microsoft.Dynamics.CRM.emailserverprofile
+    partner: ownerid
+  - name: owner_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: ownerid
+  - name: owner_exchangesyncidmapping
+    type: Microsoft.Dynamics.CRM.exchangesyncidmapping
+    partner: ownerid
+  - name: owner_feedback
+    type: Microsoft.Dynamics.CRM.feedback
+    partner: ownerid
+  - name: owner_goal
+    type: Microsoft.Dynamics.CRM.goal
+    partner: ownerid
+  - name: owner_goalrollupquery
+    type: Microsoft.Dynamics.CRM.goalrollupquery
+    partner: ownerid
+  - name: owner_importdatas
+    type: Microsoft.Dynamics.CRM.importdata
+    partner: ownerid
+  - name: owner_importfiles
+    type: Microsoft.Dynamics.CRM.importfile
+    partner: ownerid
+  - name: owner_importlogs
+    type: Microsoft.Dynamics.CRM.importlog
+    partner: ownerid
+  - name: owner_importmaps
+    type: Microsoft.Dynamics.CRM.importmap
+    partner: ownerid
+  - name: owner_imports
+    type: Microsoft.Dynamics.CRM.import
+    partner: ownerid
+  - name: owner_incidents
+    type: Microsoft.Dynamics.CRM.incident
+    partner: ownerid
+  - name: owner_invoices
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: ownerid
+  - name: owner_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: ownerid
+  - name: owner_leads
+    type: Microsoft.Dynamics.CRM.lead
+    partner: ownerid
+  - name: owner_lists
+    type: Microsoft.Dynamics.CRM.list
+    partner: ownerid
+  - name: owner_mailbox
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: ownerid
+  - name: owner_mailboxtrackingfolder
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: ownerid
+  - name: owner_mailmergetemplates
+    type: Microsoft.Dynamics.CRM.mailmergetemplate
+    partner: ownerid
+  - name: owner_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: ownerid
+  - name: owner_msdyn_wallsavedqueryusersettings
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+    partner: ownerid
+  - name: owner_new_interactionforemail
+    type: Microsoft.Dynamics.CRM.interactionforemail
+    partner: ownerid
+  - name: owner_opportunitys
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: ownerid
+  - name: owner_personaldocumenttemplates
+    type: Microsoft.Dynamics.CRM.personaldocumenttemplate
+    partner: ownerid
+  - name: owner_postfollows
+    type: Microsoft.Dynamics.CRM.postfollow
+    partner: ownerid
+  - name: owner_processsessions
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: ownerid
+  - name: owner_queues
+    type: Microsoft.Dynamics.CRM.queue
+    partner: ownerid
+  - name: owner_quotes
+    type: Microsoft.Dynamics.CRM.quote
+    partner: ownerid
+  - name: owner_ratingmodel
+    type: Microsoft.Dynamics.CRM.ratingmodel
+    partner: ownerid
+  - name: owner_ratingvalue
+    type: Microsoft.Dynamics.CRM.ratingvalue
+    partner: ownerid
+  - name: owner_recurrencerules
+    type: Microsoft.Dynamics.CRM.recurrencerule
+    partner: ownerid
+  - name: owner_reports
+    type: Microsoft.Dynamics.CRM.report
+    partner: ownerid
+  - name: owner_salesorders
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: ownerid
+  - name: owner_sharepointdocumentlocation
+    type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+    partner: ownerid
+  - name: owner_sharepointsite
+    type: Microsoft.Dynamics.CRM.sharepointsite
+    partner: ownerid
+  - name: owner_slas
+    type: Microsoft.Dynamics.CRM.sla
+    partner: ownerid
+  - name: owner_SocialProfile
+    type: Microsoft.Dynamics.CRM.socialprofile
+    partner: ownerid
+  - name: owner_SyncError
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: ownerid
+  - name: owner_templates
+    type: Microsoft.Dynamics.CRM.template
+    partner: ownerid
+  - name: owner_userform
+    type: Microsoft.Dynamics.CRM.userform
+    partner: ownerid
+  - name: owner_userquerys
+    type: Microsoft.Dynamics.CRM.userquery
+    partner: ownerid
+  - name: owner_userqueryvisualizations
+    type: Microsoft.Dynamics.CRM.userqueryvisualization
+    partner: ownerid
+  - name: owner_workflows
+    type: Microsoft.Dynamics.CRM.workflow
+    partner: ownerid
+  - name: OwningTeam_postfollows
+    type: Microsoft.Dynamics.CRM.postfollow
+    partner: owningteam
+  - name: quoteclose_owner_ownerid
+    type: Microsoft.Dynamics.CRM.quoteclose
+    partner: ownerid_quoteclose
+  - name: serviceappointment_owner_ownerid
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: ownerid_serviceappointment
+  - name: slakpiinstance_owner
+    type: Microsoft.Dynamics.CRM.slakpiinstance
+    partner: ownerid
+  - name: team_accounts
+    type: Microsoft.Dynamics.CRM.account
+    partner: owningteam
+  - name: team_activity
+    type: Microsoft.Dynamics.CRM.activitypointer
+    partner: owningteam
+  - name: team_annotations
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: owningteam
+  - name: team_appointment
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: owningteam_appointment
+  - name: team_asyncoperation
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: owningteam
+  - name: Team_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_team
+  - name: team_bookableresource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: owningteam
+  - name: team_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: owningteam
+  - name: team_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: owningteam
+  - name: team_bookableresourcecategory
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: owningteam
+  - name: team_bookableresourcecategoryassn
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: owningteam
+  - name: team_bookableresourcecharacteristic
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: owningteam
+  - name: team_bookableresourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: owningteam
+  - name: team_bookingstatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: owningteam
+  - name: Team_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_team
+  - name: team_BulkOperation
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: owningteam_bulkoperation
+  - name: team_bulkoperationlog
+    type: Microsoft.Dynamics.CRM.bulkoperationlog
+    partner: owningteam
+  - name: team_campaignactivity
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: owningteam_campaignactivity
+  - name: team_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: owningteam_campaignresponse
+  - name: team_Campaigns
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: owningteam
+  - name: team_characteristic
+    type: Microsoft.Dynamics.CRM.characteristic
+    partner: owningteam
+  - name: team_connections1
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record1id_team
+  - name: team_connections2
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record2id_team
+  - name: team_contacts
+    type: Microsoft.Dynamics.CRM.contact
+    partner: owningteam
+  - name: team_contractdetail
+    type: Microsoft.Dynamics.CRM.contractdetail
+    partner: owningteam
+  - name: Team_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_team
+  - name: Team_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_team
+  - name: team_DuplicateRules
+    type: Microsoft.Dynamics.CRM.duplicaterule
+    partner: owningteam
+  - name: team_DynamicPropertyInstance
+    type: Microsoft.Dynamics.CRM.dynamicpropertyinstance
+    partner: owningteam
+  - name: team_email
+    type: Microsoft.Dynamics.CRM.email
+    partner: owningteam_email
+  - name: team_email_templates
+    type: Microsoft.Dynamics.CRM.template
+    partner: owningteam
+  - name: team_emailserverprofile
+    type: Microsoft.Dynamics.CRM.emailserverprofile
+    partner: owningteam
+  - name: team_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: owningteam
+  - name: team_entitlementchannel
+    type: Microsoft.Dynamics.CRM.entitlementchannel
+    partner: owningteam
+  - name: team_exchangesyncidmapping
+    type: Microsoft.Dynamics.CRM.exchangesyncidmapping
+    partner: owningteam
+  - name: team_fax
+    type: Microsoft.Dynamics.CRM.fax
+    partner: owningteam_fax
+  - name: team_goal
+    type: Microsoft.Dynamics.CRM.goal
+    partner: owningteam
+  - name: team_goal_goalowner
+    type: Microsoft.Dynamics.CRM.goal
+    partner: goalownerid_team
+  - name: team_goalrollupquery
+    type: Microsoft.Dynamics.CRM.goalrollupquery
+    partner: owningteam
+  - name: team_ImportData
+    type: Microsoft.Dynamics.CRM.importdata
+    partner: owningteam
+  - name: team_ImportFiles
+    type: Microsoft.Dynamics.CRM.importfile
+    partner: owningteam
+  - name: team_ImportLogs
+    type: Microsoft.Dynamics.CRM.importlog
+    partner: owningteam
+  - name: team_ImportMaps
+    type: Microsoft.Dynamics.CRM.importmap
+    partner: owningteam
+  - name: team_Imports
+    type: Microsoft.Dynamics.CRM.import
+    partner: owningteam
+  - name: team_incidentresolution
+    type: Microsoft.Dynamics.CRM.incidentresolution
+    partner: owningteam_incidentresolution
+  - name: team_incidents
+    type: Microsoft.Dynamics.CRM.incident
+    partner: owningteam
+  - name: team_invoicedetail
+    type: Microsoft.Dynamics.CRM.invoicedetail
+    partner: owningteam
+  - name: team_invoices
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: owningteam
+  - name: team_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: owningteam
+  - name: team_knowledgearticleincident
+    type: Microsoft.Dynamics.CRM.knowledgearticleincident
+    partner: owningteam
+  - name: team_letter
+    type: Microsoft.Dynamics.CRM.letter
+    partner: owningteam_letter
+  - name: team_list
+    type: Microsoft.Dynamics.CRM.list
+    partner: owningteam
+  - name: team_mailbox
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: owningteam
+  - name: team_mailboxtrackingfolder
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: owningteam
+  - name: team_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: owningteam
+  - name: team_msdyn_wallsavedqueryusersettings
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+    partner: owningteam
+  - name: team_new_interactionforemail
+    type: Microsoft.Dynamics.CRM.interactionforemail
+    partner: owningteam
+  - name: team_opportunities
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: owningteam
+  - name: team_opportunityclose
+    type: Microsoft.Dynamics.CRM.opportunityclose
+    partner: owningteam_opportunityclose
+  - name: team_opportunityproduct
+    type: Microsoft.Dynamics.CRM.opportunityproduct
+    partner: owningteam
+  - name: team_orderclose
+    type: Microsoft.Dynamics.CRM.orderclose
+    partner: owningteam_orderclose
+  - name: team_orders
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: owningteam
+  - name: team_phonecall
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: owningteam_phonecall
+  - name: team_PostRegardings
+    type: Microsoft.Dynamics.CRM.postregarding
+    partner: regardingobjectid_team
+  - name: team_principalobjectattributeaccess
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_team
+  - name: team_principalobjectattributeaccess_principalid
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: principalid_team
+  - name: team_processsession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: owningteam
+  - name: Team_ProcessSessions
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_team
+  - name: team_queueitembase_workerid
+    type: Microsoft.Dynamics.CRM.queueitem
+    partner: workerid_team
+  - name: team_quoteclose
+    type: Microsoft.Dynamics.CRM.quoteclose
+    partner: owningteam_quoteclose
+  - name: team_quotedetail
+    type: Microsoft.Dynamics.CRM.quotedetail
+    partner: owningteam
+  - name: team_quotes
+    type: Microsoft.Dynamics.CRM.quote
+    partner: owningteam
+  - name: team_ratingmodel
+    type: Microsoft.Dynamics.CRM.ratingmodel
+    partner: owningteam
+  - name: team_ratingvalue
+    type: Microsoft.Dynamics.CRM.ratingvalue
+    partner: owningteam
+  - name: team_recurringappointmentmaster
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: owningteam_recurringappointmentmaster
+  - name: team_resource_groups
+    type: Microsoft.Dynamics.CRM.resourcegroup
+    partner: resourcegroupid_team
+  - name: team_resource_specs
+    type: Microsoft.Dynamics.CRM.resourcespec
+    partner: groupobjectid_team
+  - name: team_salesorderdetail
+    type: Microsoft.Dynamics.CRM.salesorderdetail
+    partner: owningteam
+  - name: team_service_appointments
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: owningteam_serviceappointment
+  - name: team_service_contracts
+    type: Microsoft.Dynamics.CRM.contract
+    partner: owningteam
+  - name: team_sharepointdocumentlocation
+    type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+    partner: owningteam
+  - name: team_sharepointsite
+    type: Microsoft.Dynamics.CRM.sharepointsite
+    partner: owningteam
+  - name: team_slaBase
+    type: Microsoft.Dynamics.CRM.sla
+    partner: owningteam
+  - name: team_socialactivity
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: owningteam_socialactivity
+  - name: team_SyncError
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: owningteam
+  - name: Team_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_team_syncerror
+  - name: team_task
+    type: Microsoft.Dynamics.CRM.task
+    partner: owningteam_task
+  - name: team_userform
+    type: Microsoft.Dynamics.CRM.userform
+    partner: owningteam
+  - name: team_userquery
+    type: Microsoft.Dynamics.CRM.userquery
+    partner: owningteam
+  - name: team_userqueryvisualizations
+    type: Microsoft.Dynamics.CRM.userqueryvisualization
+    partner: owningteam
+  - name: team_workflow
+    type: Microsoft.Dynamics.CRM.workflow
+    partner: owningteam
+  - name: team_workflowlog
+    type: Microsoft.Dynamics.CRM.workflowlog
+    partner: owningteam
+  - name: teammembership_association
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: teammembership_association
+  - name: teamprofiles_association
+    type: Microsoft.Dynamics.CRM.fieldsecurityprofile
+    partner: teamprofiles_association
+  - name: teamroles_association
+    type: Microsoft.Dynamics.CRM.role
+    partner: teamroles_association
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the team entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.AddMembersTeam
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.ConvertOwnerTeamToAccessTeam
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.RemoveMembersTeam
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAttributePrivileges
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalSyncAttributeMappings
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.RetrieveTeamPrivileges
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.SetParentSystemUser
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the team entity type."
+  solution_items:
+  - Microsoft.Dynamics.CRM.msdynce_AppCommon
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

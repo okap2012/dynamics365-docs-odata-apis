@@ -1,0 +1,731 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.processsession
+name: "processsession"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement processsession EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 42e8689d-57fb-4dd1-8146-47e9207d83f4
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement processsession entitytype."
+header: 
+  description: "Information that is generated when a dialog is run. Every time that you run a dialog, a dialog session is created."
+  entity_set_path: "[organization URI]/api/data/v9.0/processsessions"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Process Session
+  primary_key: processsessionid
+  primary_name_attribute: name
+  operations_supported: 
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: activityname
+      type: Edm.String
+      display_name: "Activity Name"
+      description: "Name of the activity that is being executed."
+      iscomputed: false
+      isreadonly: false
+    - name: canceledon
+      type: Edm.DateTimeOffset
+      display_name: "Canceled On"
+      description: "Date and time when the dialog session was canceled."
+      iscomputed: false
+      isreadonly: false
+    - name: comments
+      type: Edm.String
+      display_name: "Comments"
+      description: "User comments."
+      iscomputed: false
+      isreadonly: false
+    - name: completedon
+      type: Edm.DateTimeOffset
+      display_name: "Completed On"
+      description: "Date and time when the dialog session was completed."
+      iscomputed: false
+      isreadonly: false
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the dialog session was created."
+      iscomputed: false
+      isreadonly: true
+    - name: errorcode
+      type: Edm.Int32
+      display_name: "Error Code"
+      description: "Error code related to the dialog session."
+      iscomputed: false
+      isreadonly: false
+    - name: executedon
+      type: Edm.DateTimeOffset
+      display_name: "Executed On"
+      description: "Date and time when the dialog process was run."
+      iscomputed: false
+      isreadonly: true
+    - name: inputarguments
+      type: Edm.String
+      display_name: "Input Arguments"
+      description: "Input arguments for the child dialog process."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the dialog session was last modified."
+      iscomputed: false
+      isreadonly: true
+    - name: name
+      type: Edm.String
+      display_name: "Name"
+      description: "Name of the dialog session."
+      iscomputed: false
+      isreadonly: false
+    - name: processsessionid
+      type: Edm.Guid
+      display_name: "Dialog Session"
+      description: "Unique identifier of the dialog session."
+      iscomputed: false
+      isreadonly: false
+    - name: processstagename
+      type: Edm.String
+      display_name: "Dialog Stage"
+      description: "Name of the dialog stage."
+      iscomputed: false
+      isreadonly: false
+    - name: processstate
+      type: Edm.String
+      display_name: "Process State"
+      description: "State of the dialog process."
+      iscomputed: false
+      isreadonly: false
+    - name: processstate_binary
+      type: Edm.Binary
+      display_name: ""
+      description: "State of the dialog process."
+      iscomputed: false
+      isreadonly: false
+    - name: startedon
+      type: Edm.DateTimeOffset
+      display_name: "Started On"
+      description: "Date and time when the dialog session was started."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the dialog session."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Incomplete"
+        - value: 1
+          label: "Complete"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the dialog session."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Not Started"
+        - value: 2
+          label: "In Progress"
+        - value: 3
+          label: "Paused"
+        - value: 4
+          label: "Completed"
+        - value: 5
+          label: "Canceled"
+        - value: 6
+          label: "Failed"
+    - name: stepname
+      type: Edm.String
+      display_name: "Step Name"
+      description: "Name of the dialog step."
+      iscomputed: false
+      isreadonly: false
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _canceledby_value
+    single_valued_navigation_property:
+    - canceledby
+    description: "Unique identifier of the user who canceled the dialog session."
+  - name: _completedby_value
+    single_valued_navigation_property:
+    - completedby
+    description: "Unique identifier of the user who completed the dialog session."
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who started the dialog session."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the dialog session."
+  - name: _executedby_value
+    single_valued_navigation_property:
+    - executedby
+    description: "Unique identifier of the user who ran the dialog process."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who last modified the dialog session."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the dialog session."
+  - name: _nextlinkedsessionid_value
+    single_valued_navigation_property:
+    - nextlinkedsessionid
+    description: "Unique identifier of the succeeding linked dialog session."
+  - name: _originatingsessionid_value
+    single_valued_navigation_property:
+    - originatingsessionid
+    description: "Unique identifier of the originating dialog session."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Unique identifier of the user or team who owns the dialog session."
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier of the business unit that owns the dialog session."
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier of the team who owns the dialog session."
+  - name: _owninguser_value
+    description: "Unique identifier of the user who owns the dialog session."
+  - name: _previouslinkedsessionid_value
+    single_valued_navigation_property:
+    - previouslinkedsessionid
+    description: "Unique identifier of the preceding linked dialog session."
+  - name: _processid_value
+    single_valued_navigation_property:
+    - processid
+    description: "Select the process activation record that is related to the dialog session."
+  - name: _regardingobjectid_value
+    single_valued_navigation_property:
+    - regardingobjectid_territory
+    - regardingobjectid_lead
+    - regardingobjectid_pricelevel
+    - regardingobjectid_product
+    - regardingobjectid_productassociation
+    - regardingobjectid_productpricelevel
+    - regardingobjectid_productsubstitute
+    - regardingobjectid_bookableresource
+    - regardingobjectid_bookableresourcebooking
+    - regardingobjectid_bookableresourcebookingheader
+    - regardingobjectid_bookableresourcecategory
+    - regardingobjectid_bookableresourcecategoryassn
+    - regardingobjectid_bookableresourcecharacteristic
+    - regardingobjectid_bookableresourcegroup
+    - regardingobjectid_bookingstatus
+    - regardingobjectid_characteristic
+    - regardingobjectid_ratingmodel
+    - regardingobjectid_ratingvalue
+    - regardingobjectid_campaign
+    - regardingobjectid_list
+    - regardingobjectid_constraintbasedgroup
+    - regardingobjectid_contract
+    - regardingobjectid_contractdetail
+    - regardingobjectid_contracttemplate
+    - regardingobjectid_entitlement
+    - regardingobjectid_entitlementtemplate
+    - regardingobjectid_equipment
+    - regardingobjectid_incident
+    - regardingobjectid_knowledgearticleincident
+    - regardingobjectid_phonetocaseprocess
+    - regardingobjectid_service
+    - regardingobjectid_site
+    - regardingobjectid_entitlementchannel
+    - regardingobjectid_discount
+    - regardingobjectid_discounttype
+    - regardingobjectid_invoice
+    - regardingobjectid_invoicedetail
+    - regardingobjectid_leadtoopportunitysalesprocess
+    - regardingobjectid_opportunity
+    - regardingobjectid_opportunityproduct
+    - regardingobjectid_opportunitysalesprocess
+    - regardingobjectid_quote
+    - regardingobjectid_quotedetail
+    - regardingobjectid_salesliterature
+    - regardingobjectid_salesliteratureitem
+    - regardingobjectid_salesorder
+    - regardingobjectid_salesorderdetail
+    - regardingobjectid_competitor
+    - regardingobjectid_msdyn_postalbum
+    - regardingobjectid_msdyn_postconfig
+    - regardingobjectid_msdyn_postruleconfig
+    - regardingobjectid_msdyn_wallsavedquery
+    - regardingobjectid_msdyn_wallsavedqueryusersettings
+    - regardingobjectid_theme
+    - regardingobjectid_usermapping
+    - regardingobjectid_knowledgearticle
+    - regardingobjectid_position
+    - regardingobjectid_knowledgebaserecord
+    - regardingobjectid_queue
+    - regardingobjectid_contact
+    - regardingobjectid_kbarticletemplate
+    - regardingobjectid_queueitem
+    - regardingobjectid_expiredprocess
+    - regardingobjectid_systemuser
+    - regardingobjectid_report
+    - regardingobjectid_account
+    - regardingobjectid_transactioncurrency
+    - regardingobjectid_sharepointsite
+    - regardingobjectid_subject
+    - regardingobjectid_rollupfield
+    - regardingobjectid_connectionrole
+    - regardingobjectid_sla
+    - regardingobjectid_customeraddress
+    - regardingobjectid_kbarticle
+    - regardingobjectid_newprocess
+    - regardingobjectid_businessunit
+    - regardingobjectid_mailmergetemplate
+    - regardingobjectid_connection
+    - regardingobjectid_metric
+    - regardingobjectid_template
+    - regardingobjectid_team
+    - regardingobjectid_annotation
+    - regardingobjectid_businessunitnewsarticle
+    - regardingobjectid_kbarticlecomment
+    - regardingobjectid_socialprofile
+    - regardingobjectid_sharepointdocumentlocation
+    - regardingobjectid_goalrollupquery
+    - regardingobjectid_goal
+    - regardingobjectid_translationprocess
+    - regardingobjectid_mailbox
+    description: "Unique identifier of the object with which the dialog session is associated."
+  - name: _startedby_value
+    single_valued_navigation_property:
+    - startedby
+    description: "Unique identifier of the user who started the dialog session."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: canceledby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_processsession_canceledby
+  - name: completedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_processsession_completedby
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_processsession_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_processsessionbase_createdonbehalfby
+  - name: executedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_processsession_executedby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_processsession_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_processsessionbase_modifiedonbehalfby
+  - name: nextlinkedsessionid
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: lk_processsession_nextlinkedsessionid
+  - name: originatingsessionid
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: lk_processsession_originatingsessionid
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_processsessions
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: Owning_businessunit_processsessions
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_processsession
+  - name: previouslinkedsessionid
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: lk_processsession_previouslinkedsessionid
+  - name: processid
+    type: Microsoft.Dynamics.CRM.workflow
+    partner: lk_processsession_processid
+  - name: regardingobjectid_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: Account_ProcessSessions
+  - name: regardingobjectid_annotation
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: Annotation_ProcessSessions
+  - name: regardingobjectid_appointment
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: Appointment_ProcessSessions
+  - name: regardingobjectid_bookableresource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: bookableresource_ProcessSession
+  - name: regardingobjectid_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: bookableresourcebooking_ProcessSession
+  - name: regardingobjectid_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: bookableresourcebookingheader_ProcessSession
+  - name: regardingobjectid_bookableresourcecategory
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: bookableresourcecategory_ProcessSession
+  - name: regardingobjectid_bookableresourcecategoryassn
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: bookableresourcecategoryassn_ProcessSession
+  - name: regardingobjectid_bookableresourcecharacteristic
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: bookableresourcecharacteristic_ProcessSession
+  - name: regardingobjectid_bookableresourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: bookableresourcegroup_ProcessSession
+  - name: regardingobjectid_bookingstatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: bookingstatus_ProcessSession
+  - name: regardingobjectid_businessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: BusinessUnit_ProcessSessions
+  - name: regardingobjectid_businessunitnewsarticle
+    type: Microsoft.Dynamics.CRM.businessunitnewsarticle
+    partner: BusinessUnitNewsArticle_ProcessSessions
+  - name: regardingobjectid_campaign
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: Campaign_ProcessSessions
+  - name: regardingobjectid_campaignactivity
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: CampaignActivity_ProcessSessions
+  - name: regardingobjectid_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: CampaignResponse_ProcessSessions
+  - name: regardingobjectid_characteristic
+    type: Microsoft.Dynamics.CRM.characteristic
+    partner: characteristic_ProcessSession
+  - name: regardingobjectid_competitor
+    type: Microsoft.Dynamics.CRM.competitor
+    partner: Competitor_ProcessSessions
+  - name: regardingobjectid_connection
+    type: Microsoft.Dynamics.CRM.connection
+    partner: Connection_ProcessSessions
+  - name: regardingobjectid_connectionrole
+    type: Microsoft.Dynamics.CRM.connectionrole
+    partner: ConnectionRole_ProcessSessions
+  - name: regardingobjectid_constraintbasedgroup
+    type: Microsoft.Dynamics.CRM.constraintbasedgroup
+    partner: ConstraintBasedGroup_ProcessSessions
+  - name: regardingobjectid_contact
+    type: Microsoft.Dynamics.CRM.contact
+    partner: Contact_ProcessSessions
+  - name: regardingobjectid_contract
+    type: Microsoft.Dynamics.CRM.contract
+    partner: Contract_ProcessSessions
+  - name: regardingobjectid_contractdetail
+    type: Microsoft.Dynamics.CRM.contractdetail
+    partner: ContractDetail_ProcessSessions
+  - name: regardingobjectid_contracttemplate
+    type: Microsoft.Dynamics.CRM.contracttemplate
+    partner: ContractTemplate_ProcessSessions
+  - name: regardingobjectid_customeraddress
+    type: Microsoft.Dynamics.CRM.customeraddress
+    partner: CustomerAddress_ProcessSessions
+  - name: regardingobjectid_discount
+    type: Microsoft.Dynamics.CRM.discount
+    partner: Discount_ProcessSessions
+  - name: regardingobjectid_discounttype
+    type: Microsoft.Dynamics.CRM.discounttype
+    partner: DiscountType_ProcessSessions
+  - name: regardingobjectid_email
+    type: Microsoft.Dynamics.CRM.email
+    partner: Email_ProcessSessions
+  - name: regardingobjectid_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: entitlement_ProcessSession
+  - name: regardingobjectid_entitlementchannel
+    type: Microsoft.Dynamics.CRM.entitlementchannel
+    partner: entitlementchannel_ProcessSession
+  - name: regardingobjectid_entitlementtemplate
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: entitlementtemplate_ProcessSession
+  - name: regardingobjectid_equipment
+    type: Microsoft.Dynamics.CRM.equipment
+    partner: Equipment_ProcessSessions
+  - name: regardingobjectid_expiredprocess
+    type: Microsoft.Dynamics.CRM.expiredprocess
+    partner: ExpiredProcess_ProcessSessions
+  - name: regardingobjectid_fax
+    type: Microsoft.Dynamics.CRM.fax
+    partner: Fax_ProcessSessions
+  - name: regardingobjectid_goal
+    type: Microsoft.Dynamics.CRM.goal
+    partner: Goal_ProcessSessions
+  - name: regardingobjectid_goalrollupquery
+    type: Microsoft.Dynamics.CRM.goalrollupquery
+    partner: goalrollupquery_ProcessSessions
+  - name: regardingobjectid_incident
+    type: Microsoft.Dynamics.CRM.incident
+    partner: Incident_ProcessSessions
+  - name: regardingobjectid_invoice
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: Invoice_ProcessSessions
+  - name: regardingobjectid_invoicedetail
+    type: Microsoft.Dynamics.CRM.invoicedetail
+    partner: InvoiceDetail_ProcessSessions
+  - name: regardingobjectid_kbarticle
+    type: Microsoft.Dynamics.CRM.kbarticle
+    partner: KbArticle_ProcessSessions
+  - name: regardingobjectid_kbarticlecomment
+    type: Microsoft.Dynamics.CRM.kbarticlecomment
+    partner: KbArticleComment_ProcessSessions
+  - name: regardingobjectid_kbarticletemplate
+    type: Microsoft.Dynamics.CRM.kbarticletemplate
+    partner: KbArticleTemplate_ProcessSessions
+  - name: regardingobjectid_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: knowledgearticle_ProcessSession
+  - name: regardingobjectid_knowledgearticleincident
+    type: Microsoft.Dynamics.CRM.knowledgearticleincident
+    partner: knowledgearticleincident_ProcessSession
+  - name: regardingobjectid_knowledgebaserecord
+    type: Microsoft.Dynamics.CRM.knowledgebaserecord
+    partner: KnowledgeBaseRecord_ProcessSession
+  - name: regardingobjectid_lead
+    type: Microsoft.Dynamics.CRM.lead
+    partner: Lead_ProcessSessions
+  - name: regardingobjectid_leadtoopportunitysalesprocess
+    type: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
+    partner: leadtoopportunitysalesprocess_ProcessSession
+  - name: regardingobjectid_letter
+    type: Microsoft.Dynamics.CRM.letter
+    partner: Letter_ProcessSessions
+  - name: regardingobjectid_list
+    type: Microsoft.Dynamics.CRM.list
+    partner: List_ProcessSessions
+  - name: regardingobjectid_mailbox
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: mailbox_processsessions
+  - name: regardingobjectid_mailmergetemplate
+    type: Microsoft.Dynamics.CRM.mailmergetemplate
+    partner: MailMergeTemplate_ProcessSessions
+  - name: regardingobjectid_metric
+    type: Microsoft.Dynamics.CRM.metric
+    partner: metric_ProcessSessions
+  - name: regardingobjectid_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_ProcessSession
+  - name: regardingobjectid_msdyn_postconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postconfig
+    partner: msdyn_postconfig_ProcessSession
+  - name: regardingobjectid_msdyn_postruleconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
+    partner: msdyn_postruleconfig_ProcessSession
+  - name: regardingobjectid_msdyn_wallsavedquery
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
+    partner: msdyn_wallsavedquery_ProcessSession
+  - name: regardingobjectid_msdyn_wallsavedqueryusersettings
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+    partner: msdyn_wallsavedqueryusersettings_ProcessSession
+  - name: regardingobjectid_newprocess
+    type: Microsoft.Dynamics.CRM.newprocess
+    partner: NewProcess_ProcessSessions
+  - name: regardingobjectid_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: Opportunity_ProcessSessions
+  - name: regardingobjectid_opportunityproduct
+    type: Microsoft.Dynamics.CRM.opportunityproduct
+    partner: OpportunityProduct_ProcessSessions
+  - name: regardingobjectid_opportunitysalesprocess
+    type: Microsoft.Dynamics.CRM.opportunitysalesprocess
+    partner: opportunitysalesprocess_ProcessSession
+  - name: regardingobjectid_phonecall
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: PhoneCall_ProcessSessions
+  - name: regardingobjectid_phonetocaseprocess
+    type: Microsoft.Dynamics.CRM.phonetocaseprocess
+    partner: phonetocaseprocess_ProcessSession
+  - name: regardingobjectid_position
+    type: Microsoft.Dynamics.CRM.position
+    partner: position_ProcessSession
+  - name: regardingobjectid_pricelevel
+    type: Microsoft.Dynamics.CRM.pricelevel
+    partner: PriceLevel_ProcessSessions
+  - name: regardingobjectid_product
+    type: Microsoft.Dynamics.CRM.product
+    partner: Product_ProcessSessions
+  - name: regardingobjectid_productassociation
+    type: Microsoft.Dynamics.CRM.productassociation
+    partner: ProductAssociation_ProcessSessions
+  - name: regardingobjectid_productpricelevel
+    type: Microsoft.Dynamics.CRM.productpricelevel
+    partner: ProductPriceLevel_ProcessSessions
+  - name: regardingobjectid_productsubstitute
+    type: Microsoft.Dynamics.CRM.productsubstitute
+    partner: ProductSubstitute_ProcessSession
+  - name: regardingobjectid_queue
+    type: Microsoft.Dynamics.CRM.queue
+    partner: Queue_ProcessSessions
+  - name: regardingobjectid_queueitem
+    type: Microsoft.Dynamics.CRM.queueitem
+    partner: QueueItem_ProcessSessions
+  - name: regardingobjectid_quote
+    type: Microsoft.Dynamics.CRM.quote
+    partner: Quote_ProcessSessions
+  - name: regardingobjectid_quotedetail
+    type: Microsoft.Dynamics.CRM.quotedetail
+    partner: QuoteDetail_ProcessSessions
+  - name: regardingobjectid_ratingmodel
+    type: Microsoft.Dynamics.CRM.ratingmodel
+    partner: ratingmodel_ProcessSession
+  - name: regardingobjectid_ratingvalue
+    type: Microsoft.Dynamics.CRM.ratingvalue
+    partner: ratingvalue_ProcessSession
+  - name: regardingobjectid_recurringappointmentmaster
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: RecurringAppointmentMaster_ProcessSessions
+  - name: regardingobjectid_report
+    type: Microsoft.Dynamics.CRM.report
+    partner: Report_ProcessSessions
+  - name: regardingobjectid_rollupfield
+    type: Microsoft.Dynamics.CRM.rollupfield
+    partner: rollupfield_ProcessSessions
+  - name: regardingobjectid_salesliterature
+    type: Microsoft.Dynamics.CRM.salesliterature
+    partner: SalesLiterature_ProcessSessions
+  - name: regardingobjectid_salesliteratureitem
+    type: Microsoft.Dynamics.CRM.salesliteratureitem
+    partner: SalesLiteratureItem_ProcessSessions
+  - name: regardingobjectid_salesorder
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: SalesOrder_ProcessSessions
+  - name: regardingobjectid_salesorderdetail
+    type: Microsoft.Dynamics.CRM.salesorderdetail
+    partner: SalesOrderDetail_ProcessSessions
+  - name: regardingobjectid_service
+    type: Microsoft.Dynamics.CRM.service
+    partner: Service_ProcessSessions
+  - name: regardingobjectid_serviceappointment
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: ServiceAppointment_ProcessSessions
+  - name: regardingobjectid_sharepointdocumentlocation
+    type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+    partner: SharePointDocumentLocation_ProcessSessions
+  - name: regardingobjectid_sharepointsite
+    type: Microsoft.Dynamics.CRM.sharepointsite
+    partner: SharePointSite_ProcessSessions
+  - name: regardingobjectid_site
+    type: Microsoft.Dynamics.CRM.site
+    partner: Site_ProcessSessions
+  - name: regardingobjectid_sla
+    type: Microsoft.Dynamics.CRM.sla
+    partner: slabase_ProcessSessions
+  - name: regardingobjectid_socialactivity
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: SocialActivity_ProcessSessions
+  - name: regardingobjectid_socialprofile
+    type: Microsoft.Dynamics.CRM.socialprofile
+    partner: SocialProfile_ProcessSessions
+  - name: regardingobjectid_subject
+    type: Microsoft.Dynamics.CRM.subject
+    partner: Subject_ProcessSessions
+  - name: regardingobjectid_systemuser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: SystemUser_ProcessSessions
+  - name: regardingobjectid_task
+    type: Microsoft.Dynamics.CRM.task
+    partner: Task_ProcessSessions
+  - name: regardingobjectid_team
+    type: Microsoft.Dynamics.CRM.team
+    partner: Team_ProcessSessions
+  - name: regardingobjectid_template
+    type: Microsoft.Dynamics.CRM.template
+    partner: Template_ProcessSessions
+  - name: regardingobjectid_territory
+    type: Microsoft.Dynamics.CRM.territory
+    partner: Territory_ProcessSessions
+  - name: regardingobjectid_theme
+    type: Microsoft.Dynamics.CRM.theme
+    partner: theme_ProcessSession
+  - name: regardingobjectid_transactioncurrency
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: TransactionCurrency_ProcessSessions
+  - name: regardingobjectid_translationprocess
+    type: Microsoft.Dynamics.CRM.translationprocess
+    partner: TranslationProcess_ProcessSessions
+  - name: regardingobjectid_usermapping
+    type: Microsoft.Dynamics.CRM.usermapping
+    partner: usermapping_ProcessSession
+  - name: startedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_processsession_startedby
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: lk_processsession_nextlinkedsessionid
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: nextlinkedsessionid
+  - name: lk_processsession_originatingsessionid
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: originatingsessionid
+  - name: lk_processsession_previouslinkedsessionid
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: previouslinkedsessionid
+  - name: lk_workflowlog_processsession
+    type: Microsoft.Dynamics.CRM.workflowlog
+    partner: asyncoperationid_processsession
+  - name: lk_workflowlog_processsession_childworkflow
+    type: Microsoft.Dynamics.CRM.workflowlog
+    partner: childworkflowinstanceid_processsession
+  - name: processsession_connections1
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record1id_processsession
+  - name: processsession_connections2
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record2id_processsession
+  - name: processsession_PostFollows
+    type: Microsoft.Dynamics.CRM.postfollow
+    partner: regardingobjectid_processsession
+  - name: processsession_PostRegardings
+    type: Microsoft.Dynamics.CRM.postregarding
+    partner: regardingobjectid_processsession
+  - name: ProcessSession_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_processsession_syncerror
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the processsession entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the processsession entity type."
+  solution_items:
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

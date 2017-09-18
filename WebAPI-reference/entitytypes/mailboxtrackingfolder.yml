@@ -1,0 +1,537 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+name: "mailboxtrackingfolder"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement mailboxtrackingfolder EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: f6cf14db-0289-4912-b0ee-e85657552f91
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement mailboxtrackingfolder entitytype."
+header: 
+  description: "Stores data about what folders for a mailbox are auto tracked"
+  entity_set_path: "[organization URI]/api/data/v9.0/mailboxtrackingfolders"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Mailbox Auto Tracking Folder
+  primary_key: mailboxtrackingfolderid
+  primary_name_attribute: None
+  operations_supported: 
+  - POST
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the entry was created."
+      iscomputed: false
+      isreadonly: true
+    - name: exchangefolderid
+      type: Edm.String
+      display_name: "Exchange Folder Id"
+      description: "Folder Id for a folder in Exchange"
+      iscomputed: false
+      isreadonly: false
+    - name: exchangefoldername
+      type: Edm.String
+      display_name: "Exchange Folder Name"
+      description: "Exchange Folder Name"
+      iscomputed: false
+      isreadonly: false
+    - name: folderonboardingstatus
+      type: Edm.Int32
+      display_name: "Folder on boarding Status"
+      description: "Information to indicate whether the folder has been on boarded for auto tracking"
+      iscomputed: false
+      isreadonly: false
+    - name: mailboxtrackingfolderid
+      type: Edm.Guid
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the entry was last modified."
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Shows who created the record on behalf of another user."
+  - name: _mailboxid_value
+    single_valued_navigation_property:
+    - mailboxid
+    description: "Mailbox id associated with this record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _organizationid_value
+    single_valued_navigation_property:
+    - organizationid
+    description: "Unique identifier of the organization associated with the record."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Enter the user or team who is assigned to manage the record. This field is updated every time the record is assigned to a different user."
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier of the business unit that owns the folder mapping."
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier of the team who owns the folder mapping."
+  - name: _owninguser_value
+    description: "Unique identifier for the user that owns the record."
+  - name: _regardingobjectid_value
+    single_valued_navigation_property:
+    - regardingobjectid_territory
+    - regardingobjectid_accountleads
+    - regardingobjectid_contactleads
+    - regardingobjectid_leadaddress
+    - regardingobjectid_lead
+    - regardingobjectid_dynamicproperty
+    - regardingobjectid_dynamicpropertyassociation
+    - regardingobjectid_dynamicpropertyinstance
+    - regardingobjectid_dynamicpropertyoptionsetitem
+    - regardingobjectid_pricelevel
+    - regardingobjectid_product
+    - regardingobjectid_productassociation
+    - regardingobjectid_productpricelevel
+    - regardingobjectid_productsubstitute
+    - regardingobjectid_uom
+    - regardingobjectid_uomschedule
+    - regardingobjectid_bookableresource
+    - regardingobjectid_bookableresourcebooking
+    - regardingobjectid_bookableresourcebookingheader
+    - regardingobjectid_bookableresourcecategory
+    - regardingobjectid_bookableresourcecategoryassn
+    - regardingobjectid_bookableresourcecharacteristic
+    - regardingobjectid_bookableresourcegroup
+    - regardingobjectid_bookingstatus
+    - regardingobjectid_characteristic
+    - regardingobjectid_ratingmodel
+    - regardingobjectid_ratingvalue
+    - regardingobjectid_bulkoperationlog
+    - regardingobjectid_campaign
+    - regardingobjectid_campaignactivityitem
+    - regardingobjectid_campaignitem
+    - regardingobjectid_list
+    - regardingobjectid_listmember
+    - regardingobjectid_constraintbasedgroup
+    - regardingobjectid_contract
+    - regardingobjectid_contractdetail
+    - regardingobjectid_contracttemplate
+    - regardingobjectid_entitlement
+    - regardingobjectid_entitlementchannel
+    - regardingobjectid_entitlementcontacts
+    - regardingobjectid_entitlementproducts
+    - regardingobjectid_entitlementtemplate
+    - regardingobjectid_entitlementtemplatechannel
+    - regardingobjectid_entitlementtemplateproducts
+    - regardingobjectid_equipment
+    - regardingobjectid_incident
+    - regardingobjectid_incidentknowledgebaserecord
+    - regardingobjectid_knowledgearticleincident
+    - regardingobjectid_phonetocaseprocess
+    - regardingobjectid_resource
+    - regardingobjectid_resourcegroup
+    - regardingobjectid_resourcespec
+    - regardingobjectid_service
+    - regardingobjectid_servicecontractcontacts
+    - regardingobjectid_site
+    - regardingobjectid_competitoraddress
+    - regardingobjectid_competitorproduct
+    - regardingobjectid_competitorsalesliterature
+    - regardingobjectid_contactinvoices
+    - regardingobjectid_contactorders
+    - regardingobjectid_contactquotes
+    - regardingobjectid_discount
+    - regardingobjectid_discounttype
+    - regardingobjectid_invoice
+    - regardingobjectid_invoicedetail
+    - regardingobjectid_leadcompetitors
+    - regardingobjectid_leadproduct
+    - regardingobjectid_leadtoopportunitysalesprocess
+    - regardingobjectid_opportunity
+    - regardingobjectid_opportunitycompetitors
+    - regardingobjectid_opportunityproduct
+    - regardingobjectid_opportunitysalesprocess
+    - regardingobjectid_productsalesliterature
+    - regardingobjectid_quote
+    - regardingobjectid_quotedetail
+    - regardingobjectid_salesliterature
+    - regardingobjectid_salesliteratureitem
+    - regardingobjectid_salesorder
+    - regardingobjectid_salesorderdetail
+    - regardingobjectid_competitor
+    - regardingobjectid_msdyn_postalbum
+    - regardingobjectid_msdyn_postconfig
+    - regardingobjectid_msdyn_postruleconfig
+    - regardingobjectid_msdyn_wallsavedquery
+    - regardingobjectid_msdyn_wallsavedqueryusersettings
+    - regardingobjectid_account
+    - regardingobjectid_asyncoperation
+    - regardingobjectid_contact
+    description: "The regarding object such as Account, Contact, Lead etc. that the folder relates to."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_mailboxtrackingfolder_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_mailboxtrackingfolder_createdonbehalfby
+  - name: mailboxid
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: Mailbox_MailboxTrackingFolder
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_mailboxtrackingfolder_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_mailboxtrackingfolder_modifiedonbehalfby
+  - name: organizationid
+    type: Microsoft.Dynamics.CRM.organization
+    partner: Organization_MailboxTrackingFolder
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_mailboxtrackingfolder
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: businessunit_mailboxtrackingfolder
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_mailboxtrackingfolder
+  - name: regardingobjectid_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: Account_MailboxTrackingFolder
+  - name: regardingobjectid_accountleads
+    type: Microsoft.Dynamics.CRM.accountleads
+    partner: accountleads_MailboxTrackingFolders
+  - name: regardingobjectid_asyncoperation
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: AsyncOperation_MailboxTrackingFolder
+  - name: regardingobjectid_bookableresource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: bookableresource_MailboxTrackingFolders
+  - name: regardingobjectid_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: bookableresourcebooking_MailboxTrackingFolders
+  - name: regardingobjectid_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: bookableresourcebookingheader_MailboxTrackingFolders
+  - name: regardingobjectid_bookableresourcecategory
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: bookableresourcecategory_MailboxTrackingFolders
+  - name: regardingobjectid_bookableresourcecategoryassn
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: bookableresourcecategoryassn_MailboxTrackingFolders
+  - name: regardingobjectid_bookableresourcecharacteristic
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: bookableresourcecharacteristic_MailboxTrackingFolders
+  - name: regardingobjectid_bookableresourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: bookableresourcegroup_MailboxTrackingFolders
+  - name: regardingobjectid_bookingstatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: bookingstatus_MailboxTrackingFolders
+  - name: regardingobjectid_bulkoperation
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: BulkOperation_MailboxTrackingFolder
+  - name: regardingobjectid_bulkoperationlog
+    type: Microsoft.Dynamics.CRM.bulkoperationlog
+    partner: bulkoperationlog_MailboxTrackingFolders
+  - name: regardingobjectid_campaign
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: Campaign_MailboxTrackingFolder
+  - name: regardingobjectid_campaignactivity
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: CampaignActivity_MailboxTrackingFolder
+  - name: regardingobjectid_campaignactivityitem
+    type: Microsoft.Dynamics.CRM.campaignactivityitem
+    partner: campaignactivityitem_MailboxTrackingFolders
+  - name: regardingobjectid_campaignitem
+    type: Microsoft.Dynamics.CRM.campaignitem
+    partner: campaignitem_MailboxTrackingFolders
+  - name: regardingobjectid_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: campaignresponse_MailboxTrackingFolders
+  - name: regardingobjectid_characteristic
+    type: Microsoft.Dynamics.CRM.characteristic
+    partner: characteristic_MailboxTrackingFolders
+  - name: regardingobjectid_competitor
+    type: Microsoft.Dynamics.CRM.competitor
+    partner: competitor_MailboxTrackingFolders
+  - name: regardingobjectid_competitoraddress
+    type: Microsoft.Dynamics.CRM.competitoraddress
+    partner: competitoraddress_MailboxTrackingFolders
+  - name: regardingobjectid_competitorproduct
+    type: Microsoft.Dynamics.CRM.competitorproduct
+    partner: competitorproduct_MailboxTrackingFolders
+  - name: regardingobjectid_competitorsalesliterature
+    type: Microsoft.Dynamics.CRM.competitorsalesliterature
+    partner: competitorsalesliterature_MailboxTrackingFolders
+  - name: regardingobjectid_constraintbasedgroup
+    type: Microsoft.Dynamics.CRM.constraintbasedgroup
+    partner: constraintbasedgroup_MailboxTrackingFolders
+  - name: regardingobjectid_contact
+    type: Microsoft.Dynamics.CRM.contact
+    partner: Contact_MailboxTrackingFolder
+  - name: regardingobjectid_contactinvoices
+    type: Microsoft.Dynamics.CRM.contactinvoices
+    partner: contactinvoices_MailboxTrackingFolders
+  - name: regardingobjectid_contactleads
+    type: Microsoft.Dynamics.CRM.contactleads
+    partner: contactleads_MailboxTrackingFolders
+  - name: regardingobjectid_contactorders
+    type: Microsoft.Dynamics.CRM.contactorders
+    partner: contactorders_MailboxTrackingFolders
+  - name: regardingobjectid_contactquotes
+    type: Microsoft.Dynamics.CRM.contactquotes
+    partner: contactquotes_MailboxTrackingFolders
+  - name: regardingobjectid_contract
+    type: Microsoft.Dynamics.CRM.contract
+    partner: Contract_MailboxTrackingFolder
+  - name: regardingobjectid_contractdetail
+    type: Microsoft.Dynamics.CRM.contractdetail
+    partner: contractdetail_MailboxTrackingFolders
+  - name: regardingobjectid_contracttemplate
+    type: Microsoft.Dynamics.CRM.contracttemplate
+    partner: contracttemplate_MailboxTrackingFolders
+  - name: regardingobjectid_discount
+    type: Microsoft.Dynamics.CRM.discount
+    partner: discount_MailboxTrackingFolders
+  - name: regardingobjectid_discounttype
+    type: Microsoft.Dynamics.CRM.discounttype
+    partner: discounttype_MailboxTrackingFolders
+  - name: regardingobjectid_dynamicproperty
+    type: Microsoft.Dynamics.CRM.dynamicproperty
+    partner: dynamicproperty_MailboxTrackingFolders
+  - name: regardingobjectid_dynamicpropertyassociation
+    type: Microsoft.Dynamics.CRM.dynamicpropertyassociation
+    partner: dynamicpropertyassociation_MailboxTrackingFolders
+  - name: regardingobjectid_dynamicpropertyinstance
+    type: Microsoft.Dynamics.CRM.dynamicpropertyinstance
+    partner: dynamicpropertyinstance_MailboxTrackingFolders
+  - name: regardingobjectid_dynamicpropertyoptionsetitem
+    type: Microsoft.Dynamics.CRM.dynamicpropertyoptionsetitem
+    partner: dynamicpropertyoptionsetitem_MailboxTrackingFolders
+  - name: regardingobjectid_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: Entitlement_MailboxTrackingFolder
+  - name: regardingobjectid_entitlementchannel
+    type: Microsoft.Dynamics.CRM.entitlementchannel
+    partner: entitlementchannel_MailboxTrackingFolders
+  - name: regardingobjectid_entitlementcontacts
+    type: Microsoft.Dynamics.CRM.entitlementcontacts
+    partner: entitlementcontacts_MailboxTrackingFolders
+  - name: regardingobjectid_entitlementproducts
+    type: Microsoft.Dynamics.CRM.entitlementproducts
+    partner: entitlementproducts_MailboxTrackingFolders
+  - name: regardingobjectid_entitlementtemplate
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: EntitlementTemplate_MailboxTrackingFolder
+  - name: regardingobjectid_entitlementtemplatechannel
+    type: Microsoft.Dynamics.CRM.entitlementtemplatechannel
+    partner: entitlementtemplatechannel_MailboxTrackingFolders
+  - name: regardingobjectid_entitlementtemplateproducts
+    type: Microsoft.Dynamics.CRM.entitlementtemplateproducts
+    partner: entitlementtemplateproducts_MailboxTrackingFolders
+  - name: regardingobjectid_equipment
+    type: Microsoft.Dynamics.CRM.equipment
+    partner: equipment_MailboxTrackingFolders
+  - name: regardingobjectid_incident
+    type: Microsoft.Dynamics.CRM.incident
+    partner: Incident_MailboxTrackingFolder
+  - name: regardingobjectid_incidentknowledgebaserecord
+    type: Microsoft.Dynamics.CRM.incidentknowledgebaserecord
+    partner: incidentknowledgebaserecord_MailboxTrackingFolders
+  - name: regardingobjectid_incidentresolution
+    type: Microsoft.Dynamics.CRM.incidentresolution
+    partner: incidentresolution_MailboxTrackingFolders
+  - name: regardingobjectid_invoice
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: Invoice_MailboxTrackingFolder
+  - name: regardingobjectid_invoicedetail
+    type: Microsoft.Dynamics.CRM.invoicedetail
+    partner: invoicedetail_MailboxTrackingFolders
+  - name: regardingobjectid_knowledgearticleincident
+    type: Microsoft.Dynamics.CRM.knowledgearticleincident
+    partner: knowledgearticleincident_MailboxTrackingFolders
+  - name: regardingobjectid_lead
+    type: Microsoft.Dynamics.CRM.lead
+    partner: Lead_MailboxTrackingFolder
+  - name: regardingobjectid_leadaddress
+    type: Microsoft.Dynamics.CRM.leadaddress
+    partner: leadaddress_MailboxTrackingFolders
+  - name: regardingobjectid_leadcompetitors
+    type: Microsoft.Dynamics.CRM.leadcompetitors
+    partner: leadcompetitors_MailboxTrackingFolders
+  - name: regardingobjectid_leadproduct
+    type: Microsoft.Dynamics.CRM.leadproduct
+    partner: leadproduct_MailboxTrackingFolders
+  - name: regardingobjectid_leadtoopportunitysalesprocess
+    type: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
+    partner: leadtoopportunitysalesprocess_MailboxTrackingFolders
+  - name: regardingobjectid_list
+    type: Microsoft.Dynamics.CRM.list
+    partner: list_MailboxTrackingFolders
+  - name: regardingobjectid_listmember
+    type: Microsoft.Dynamics.CRM.listmember
+    partner: listmember_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_postconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postconfig
+    partner: msdyn_postconfig_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_postruleconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
+    partner: msdyn_postruleconfig_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_wallsavedquery
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
+    partner: msdyn_wallsavedquery_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_wallsavedqueryusersettings
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+    partner: msdyn_wallsavedqueryusersettings_MailboxTrackingFolders
+  - name: regardingobjectid_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: Opportunity_MailboxTrackingFolder
+  - name: regardingobjectid_opportunityclose
+    type: Microsoft.Dynamics.CRM.opportunityclose
+    partner: opportunityclose_MailboxTrackingFolders
+  - name: regardingobjectid_opportunitycompetitors
+    type: Microsoft.Dynamics.CRM.opportunitycompetitors
+    partner: opportunitycompetitors_MailboxTrackingFolders
+  - name: regardingobjectid_opportunityproduct
+    type: Microsoft.Dynamics.CRM.opportunityproduct
+    partner: opportunityproduct_MailboxTrackingFolders
+  - name: regardingobjectid_opportunitysalesprocess
+    type: Microsoft.Dynamics.CRM.opportunitysalesprocess
+    partner: opportunitysalesprocess_MailboxTrackingFolders
+  - name: regardingobjectid_orderclose
+    type: Microsoft.Dynamics.CRM.orderclose
+    partner: orderclose_MailboxTrackingFolders
+  - name: regardingobjectid_phonetocaseprocess
+    type: Microsoft.Dynamics.CRM.phonetocaseprocess
+    partner: phonetocaseprocess_MailboxTrackingFolders
+  - name: regardingobjectid_pricelevel
+    type: Microsoft.Dynamics.CRM.pricelevel
+    partner: pricelevel_MailboxTrackingFolders
+  - name: regardingobjectid_product
+    type: Microsoft.Dynamics.CRM.product
+    partner: product_MailboxTrackingFolders
+  - name: regardingobjectid_productassociation
+    type: Microsoft.Dynamics.CRM.productassociation
+    partner: productassociation_MailboxTrackingFolders
+  - name: regardingobjectid_productpricelevel
+    type: Microsoft.Dynamics.CRM.productpricelevel
+    partner: productpricelevel_MailboxTrackingFolders
+  - name: regardingobjectid_productsalesliterature
+    type: Microsoft.Dynamics.CRM.productsalesliterature
+    partner: productsalesliterature_MailboxTrackingFolders
+  - name: regardingobjectid_productsubstitute
+    type: Microsoft.Dynamics.CRM.productsubstitute
+    partner: productsubstitute_MailboxTrackingFolders
+  - name: regardingobjectid_quote
+    type: Microsoft.Dynamics.CRM.quote
+    partner: Quote_MailboxTrackingFolder
+  - name: regardingobjectid_quoteclose
+    type: Microsoft.Dynamics.CRM.quoteclose
+    partner: quoteclose_MailboxTrackingFolders
+  - name: regardingobjectid_quotedetail
+    type: Microsoft.Dynamics.CRM.quotedetail
+    partner: quotedetail_MailboxTrackingFolders
+  - name: regardingobjectid_ratingmodel
+    type: Microsoft.Dynamics.CRM.ratingmodel
+    partner: ratingmodel_MailboxTrackingFolders
+  - name: regardingobjectid_ratingvalue
+    type: Microsoft.Dynamics.CRM.ratingvalue
+    partner: ratingvalue_MailboxTrackingFolders
+  - name: regardingobjectid_resource
+    type: Microsoft.Dynamics.CRM.resource
+    partner: resource_MailboxTrackingFolders
+  - name: regardingobjectid_resourcegroup
+    type: Microsoft.Dynamics.CRM.resourcegroup
+    partner: resourcegroup_MailboxTrackingFolders
+  - name: regardingobjectid_resourcespec
+    type: Microsoft.Dynamics.CRM.resourcespec
+    partner: resourcespec_MailboxTrackingFolders
+  - name: regardingobjectid_salesliterature
+    type: Microsoft.Dynamics.CRM.salesliterature
+    partner: salesliterature_MailboxTrackingFolders
+  - name: regardingobjectid_salesliteratureitem
+    type: Microsoft.Dynamics.CRM.salesliteratureitem
+    partner: salesliteratureitem_MailboxTrackingFolders
+  - name: regardingobjectid_salesorder
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: SalesOrder_MailboxTrackingFolder
+  - name: regardingobjectid_salesorderdetail
+    type: Microsoft.Dynamics.CRM.salesorderdetail
+    partner: salesorderdetail_MailboxTrackingFolders
+  - name: regardingobjectid_service
+    type: Microsoft.Dynamics.CRM.service
+    partner: service_MailboxTrackingFolders
+  - name: regardingobjectid_serviceappointment
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: serviceappointment_MailboxTrackingFolders
+  - name: regardingobjectid_servicecontractcontacts
+    type: Microsoft.Dynamics.CRM.servicecontractcontacts
+    partner: servicecontractcontacts_MailboxTrackingFolders
+  - name: regardingobjectid_site
+    type: Microsoft.Dynamics.CRM.site
+    partner: site_MailboxTrackingFolders
+  - name: regardingobjectid_territory
+    type: Microsoft.Dynamics.CRM.territory
+    partner: territory_MailboxTrackingFolders
+  - name: regardingobjectid_uom
+    type: Microsoft.Dynamics.CRM.uom
+    partner: uom_MailboxTrackingFolders
+  - name: regardingobjectid_uomschedule
+    type: Microsoft.Dynamics.CRM.uomschedule
+    partner: uomschedule_MailboxTrackingFolders
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the mailboxtrackingfolder entity type."
+  solution_items:
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

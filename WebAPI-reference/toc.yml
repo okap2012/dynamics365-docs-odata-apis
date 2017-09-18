@@ -1,0 +1,1733 @@
+items:
+- uid: Microsoft.Dynamics.CRM.EntityTypeIndex
+  name: EntityType Reference
+  items:
+  - uid: Microsoft.Dynamics.CRM.account
+    name: account
+  - uid: Microsoft.Dynamics.CRM.accountleads
+    name: accountleads
+  - uid: Microsoft.Dynamics.CRM.aciviewmapper
+    name: aciviewmapper
+  - uid: Microsoft.Dynamics.CRM.actioncard
+    name: actioncard
+  - uid: Microsoft.Dynamics.CRM.actioncarduserstate
+    name: actioncarduserstate
+  - uid: Microsoft.Dynamics.CRM.activitymimeattachment
+    name: activitymimeattachment
+  - uid: Microsoft.Dynamics.CRM.activityparty
+    name: activityparty
+  - uid: Microsoft.Dynamics.CRM.activitypointer
+    name: activitypointer
+  - uid: Microsoft.Dynamics.CRM.annotation
+    name: annotation
+  - uid: Microsoft.Dynamics.CRM.annualfiscalcalendar
+    name: annualfiscalcalendar
+  - uid: Microsoft.Dynamics.CRM.appconfig
+    name: appconfig
+  - uid: Microsoft.Dynamics.CRM.appconfiginstance
+    name: appconfiginstance
+  - uid: Microsoft.Dynamics.CRM.appconfigmaster
+    name: appconfigmaster
+  - uid: Microsoft.Dynamics.CRM.appmodule
+    name: appmodule
+  - uid: Microsoft.Dynamics.CRM.appmodulecomponent
+    name: appmodulecomponent
+  - uid: Microsoft.Dynamics.CRM.appmoduleroles
+    name: appmoduleroles
+  - uid: Microsoft.Dynamics.CRM.appointment
+    name: appointment
+  - uid: Microsoft.Dynamics.CRM.asyncoperation
+    name: asyncoperation
+  - uid: Microsoft.Dynamics.CRM.attachment
+    name: attachment
+  - uid: Microsoft.Dynamics.CRM.audit
+    name: audit
+  - uid: Microsoft.Dynamics.CRM.bookableresource
+    name: bookableresource
+  - uid: Microsoft.Dynamics.CRM.bookableresourcebooking
+    name: bookableresourcebooking
+  - uid: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    name: bookableresourcebookingheader
+  - uid: Microsoft.Dynamics.CRM.bookableresourcecategory
+    name: bookableresourcecategory
+  - uid: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    name: bookableresourcecategoryassn
+  - uid: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    name: bookableresourcecharacteristic
+  - uid: Microsoft.Dynamics.CRM.bookableresourcegroup
+    name: bookableresourcegroup
+  - uid: Microsoft.Dynamics.CRM.bookingstatus
+    name: bookingstatus
+  - uid: Microsoft.Dynamics.CRM.bulkdeletefailure
+    name: bulkdeletefailure
+  - uid: Microsoft.Dynamics.CRM.bulkdeleteoperation
+    name: bulkdeleteoperation
+  - uid: Microsoft.Dynamics.CRM.bulkoperation
+    name: bulkoperation
+  - uid: Microsoft.Dynamics.CRM.bulkoperationlog
+    name: bulkoperationlog
+  - uid: Microsoft.Dynamics.CRM.businessunit
+    name: businessunit
+  - uid: Microsoft.Dynamics.CRM.businessunitnewsarticle
+    name: businessunitnewsarticle
+  - uid: Microsoft.Dynamics.CRM.calendar
+    name: calendar
+  - uid: Microsoft.Dynamics.CRM.calendarrule
+    name: calendarrule
+  - uid: Microsoft.Dynamics.CRM.campaign
+    name: campaign
+  - uid: Microsoft.Dynamics.CRM.campaignactivity
+    name: campaignactivity
+  - uid: Microsoft.Dynamics.CRM.campaignactivityitem
+    name: campaignactivityitem
+  - uid: Microsoft.Dynamics.CRM.campaignitem
+    name: campaignitem
+  - uid: Microsoft.Dynamics.CRM.campaignresponse
+    name: campaignresponse
+  - uid: Microsoft.Dynamics.CRM.category
+    name: category
+  - uid: Microsoft.Dynamics.CRM.characteristic
+    name: characteristic
+  - uid: Microsoft.Dynamics.CRM.columnmapping
+    name: columnmapping
+  - uid: Microsoft.Dynamics.CRM.competitor
+    name: competitor
+  - uid: Microsoft.Dynamics.CRM.competitoraddress
+    name: competitoraddress
+  - uid: Microsoft.Dynamics.CRM.competitorproduct
+    name: competitorproduct
+  - uid: Microsoft.Dynamics.CRM.competitorsalesliterature
+    name: competitorsalesliterature
+  - uid: Microsoft.Dynamics.CRM.complexcontrol
+    name: complexcontrol
+  - uid: Microsoft.Dynamics.CRM.connection
+    name: connection
+  - uid: Microsoft.Dynamics.CRM.connectionrole
+    name: connectionrole
+  - uid: Microsoft.Dynamics.CRM.constraintbasedgroup
+    name: constraintbasedgroup
+  - uid: Microsoft.Dynamics.CRM.contact
+    name: contact
+  - uid: Microsoft.Dynamics.CRM.contactinvoices
+    name: contactinvoices
+  - uid: Microsoft.Dynamics.CRM.contactleads
+    name: contactleads
+  - uid: Microsoft.Dynamics.CRM.contactorders
+    name: contactorders
+  - uid: Microsoft.Dynamics.CRM.contactquotes
+    name: contactquotes
+  - uid: Microsoft.Dynamics.CRM.contract
+    name: contract
+  - uid: Microsoft.Dynamics.CRM.contractdetail
+    name: contractdetail
+  - uid: Microsoft.Dynamics.CRM.contracttemplate
+    name: contracttemplate
+  - uid: Microsoft.Dynamics.CRM.crmbaseentity
+    name: crmbaseentity
+  - uid: Microsoft.Dynamics.CRM.customcontrol
+    name: customcontrol
+  - uid: Microsoft.Dynamics.CRM.customcontroldefaultconfig
+    name: customcontroldefaultconfig
+  - uid: Microsoft.Dynamics.CRM.customcontrolresource
+    name: customcontrolresource
+  - uid: Microsoft.Dynamics.CRM.customeraddress
+    name: customeraddress
+  - uid: Microsoft.Dynamics.CRM.dataperformance
+    name: dataperformance
+  - uid: Microsoft.Dynamics.CRM.dependency
+    name: dependency
+  - uid: Microsoft.Dynamics.CRM.discount
+    name: discount
+  - uid: Microsoft.Dynamics.CRM.discounttype
+    name: discounttype
+  - uid: Microsoft.Dynamics.CRM.displaystring
+    name: displaystring
+  - uid: Microsoft.Dynamics.CRM.documenttemplate
+    name: documenttemplate
+  - uid: Microsoft.Dynamics.CRM.duplicaterecord
+    name: duplicaterecord
+  - uid: Microsoft.Dynamics.CRM.duplicaterule
+    name: duplicaterule
+  - uid: Microsoft.Dynamics.CRM.duplicaterulecondition
+    name: duplicaterulecondition
+  - uid: Microsoft.Dynamics.CRM.dynamicproperty
+    name: dynamicproperty
+  - uid: Microsoft.Dynamics.CRM.dynamicpropertyassociation
+    name: dynamicpropertyassociation
+  - uid: Microsoft.Dynamics.CRM.dynamicpropertyinstance
+    name: dynamicpropertyinstance
+  - uid: Microsoft.Dynamics.CRM.dynamicpropertyoptionsetitem
+    name: dynamicpropertyoptionsetitem
+  - uid: Microsoft.Dynamics.CRM.email
+    name: email
+  - uid: Microsoft.Dynamics.CRM.emailserverprofile
+    name: emailserverprofile
+  - uid: Microsoft.Dynamics.CRM.entitlement
+    name: entitlement
+  - uid: Microsoft.Dynamics.CRM.entitlementchannel
+    name: entitlementchannel
+  - uid: Microsoft.Dynamics.CRM.entitlementcontacts
+    name: entitlementcontacts
+  - uid: Microsoft.Dynamics.CRM.entitlementproducts
+    name: entitlementproducts
+  - uid: Microsoft.Dynamics.CRM.entitlementtemplate
+    name: entitlementtemplate
+  - uid: Microsoft.Dynamics.CRM.entitlementtemplatechannel
+    name: entitlementtemplatechannel
+  - uid: Microsoft.Dynamics.CRM.entitlementtemplateproducts
+    name: entitlementtemplateproducts
+  - uid: Microsoft.Dynamics.CRM.entitydataprovider
+    name: entitydataprovider
+  - uid: Microsoft.Dynamics.CRM.equipment
+    name: equipment
+  - uid: Microsoft.Dynamics.CRM.exchangesyncidmapping
+    name: exchangesyncidmapping
+  - uid: Microsoft.Dynamics.CRM.expiredprocess
+    name: expiredprocess
+  - uid: Microsoft.Dynamics.CRM.fax
+    name: fax
+  - uid: Microsoft.Dynamics.CRM.feedback
+    name: feedback
+  - uid: Microsoft.Dynamics.CRM.fieldpermission
+    name: fieldpermission
+  - uid: Microsoft.Dynamics.CRM.fieldsecurityprofile
+    name: fieldsecurityprofile
+  - uid: Microsoft.Dynamics.CRM.fixedmonthlyfiscalcalendar
+    name: fixedmonthlyfiscalcalendar
+  - uid: Microsoft.Dynamics.CRM.goal
+    name: goal
+  - uid: Microsoft.Dynamics.CRM.goalrollupquery
+    name: goalrollupquery
+  - uid: Microsoft.Dynamics.CRM.import
+    name: import
+  - uid: Microsoft.Dynamics.CRM.importdata
+    name: importdata
+  - uid: Microsoft.Dynamics.CRM.importentitymapping
+    name: importentitymapping
+  - uid: Microsoft.Dynamics.CRM.importfile
+    name: importfile
+  - uid: Microsoft.Dynamics.CRM.importjob
+    name: importjob
+  - uid: Microsoft.Dynamics.CRM.importlog
+    name: importlog
+  - uid: Microsoft.Dynamics.CRM.importmap
+    name: importmap
+  - uid: Microsoft.Dynamics.CRM.incident
+    name: incident
+  - uid: Microsoft.Dynamics.CRM.incidentknowledgebaserecord
+    name: incidentknowledgebaserecord
+  - uid: Microsoft.Dynamics.CRM.incidentresolution
+    name: incidentresolution
+  - uid: Microsoft.Dynamics.CRM.interactionforemail
+    name: interactionforemail
+  - uid: Microsoft.Dynamics.CRM.invaliddependency
+    name: invaliddependency
+  - uid: Microsoft.Dynamics.CRM.invoice
+    name: invoice
+  - uid: Microsoft.Dynamics.CRM.invoicedetail
+    name: invoicedetail
+  - uid: Microsoft.Dynamics.CRM.kbarticle
+    name: kbarticle
+  - uid: Microsoft.Dynamics.CRM.kbarticlecomment
+    name: kbarticlecomment
+  - uid: Microsoft.Dynamics.CRM.kbarticletemplate
+    name: kbarticletemplate
+  - uid: Microsoft.Dynamics.CRM.knowledgearticle
+    name: knowledgearticle
+  - uid: Microsoft.Dynamics.CRM.knowledgearticleincident
+    name: knowledgearticleincident
+  - uid: Microsoft.Dynamics.CRM.knowledgearticleviews
+    name: knowledgearticleviews
+  - uid: Microsoft.Dynamics.CRM.knowledgebaserecord
+    name: knowledgebaserecord
+  - uid: Microsoft.Dynamics.CRM.languagelocale
+    name: languagelocale
+  - uid: Microsoft.Dynamics.CRM.lead
+    name: lead
+  - uid: Microsoft.Dynamics.CRM.leadaddress
+    name: leadaddress
+  - uid: Microsoft.Dynamics.CRM.leadcompetitors
+    name: leadcompetitors
+  - uid: Microsoft.Dynamics.CRM.leadproduct
+    name: leadproduct
+  - uid: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
+    name: leadtoopportunitysalesprocess
+  - uid: Microsoft.Dynamics.CRM.letter
+    name: letter
+  - uid: Microsoft.Dynamics.CRM.list
+    name: list
+  - uid: Microsoft.Dynamics.CRM.listmember
+    name: listmember
+  - uid: Microsoft.Dynamics.CRM.lookupmapping
+    name: lookupmapping
+  - uid: Microsoft.Dynamics.CRM.mailbox
+    name: mailbox
+  - uid: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    name: mailboxtrackingfolder
+  - uid: Microsoft.Dynamics.CRM.mailmergetemplate
+    name: mailmergetemplate
+  - uid: Microsoft.Dynamics.CRM.metric
+    name: metric
+  - uid: Microsoft.Dynamics.CRM.mobileofflineprofile
+    name: mobileofflineprofile
+  - uid: Microsoft.Dynamics.CRM.mobileofflineprofileitem
+    name: mobileofflineprofileitem
+  - uid: Microsoft.Dynamics.CRM.mobileofflineprofileitemassociation
+    name: mobileofflineprofileitemassociation
+  - uid: Microsoft.Dynamics.CRM.monthlyfiscalcalendar
+    name: monthlyfiscalcalendar
+  - uid: Microsoft.Dynamics.CRM.msdyn_odatav4ds
+    name: msdyn_odatav4ds
+  - uid: Microsoft.Dynamics.CRM.msdyn_postalbum
+    name: msdyn_postalbum
+  - uid: Microsoft.Dynamics.CRM.msdyn_postconfig
+    name: msdyn_postconfig
+  - uid: Microsoft.Dynamics.CRM.msdyn_postruleconfig
+    name: msdyn_postruleconfig
+  - uid: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
+    name: msdyn_wallsavedquery
+  - uid: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+    name: msdyn_wallsavedqueryusersettings
+  - uid: Microsoft.Dynamics.CRM.navigationsetting
+    name: navigationsetting
+  - uid: Microsoft.Dynamics.CRM.newprocess
+    name: newprocess
+  - uid: Microsoft.Dynamics.CRM.officegraphdocument
+    name: officegraphdocument
+  - uid: Microsoft.Dynamics.CRM.opportunity
+    name: opportunity
+  - uid: Microsoft.Dynamics.CRM.opportunityclose
+    name: opportunityclose
+  - uid: Microsoft.Dynamics.CRM.opportunitycompetitors
+    name: opportunitycompetitors
+  - uid: Microsoft.Dynamics.CRM.opportunityproduct
+    name: opportunityproduct
+  - uid: Microsoft.Dynamics.CRM.opportunitysalesprocess
+    name: opportunitysalesprocess
+  - uid: Microsoft.Dynamics.CRM.orderclose
+    name: orderclose
+  - uid: Microsoft.Dynamics.CRM.organization
+    name: organization
+  - uid: Microsoft.Dynamics.CRM.ownermapping
+    name: ownermapping
+  - uid: Microsoft.Dynamics.CRM.personaldocumenttemplate
+    name: personaldocumenttemplate
+  - uid: Microsoft.Dynamics.CRM.phonecall
+    name: phonecall
+  - uid: Microsoft.Dynamics.CRM.phonetocaseprocess
+    name: phonetocaseprocess
+  - uid: Microsoft.Dynamics.CRM.picklistmapping
+    name: picklistmapping
+  - uid: Microsoft.Dynamics.CRM.pluginassembly
+    name: pluginassembly
+  - uid: Microsoft.Dynamics.CRM.plugintracelog
+    name: plugintracelog
+  - uid: Microsoft.Dynamics.CRM.plugintype
+    name: plugintype
+  - uid: Microsoft.Dynamics.CRM.plugintypestatistic
+    name: plugintypestatistic
+  - uid: Microsoft.Dynamics.CRM.position
+    name: position
+  - uid: Microsoft.Dynamics.CRM.post
+    name: post
+  - uid: Microsoft.Dynamics.CRM.postcomment
+    name: postcomment
+  - uid: Microsoft.Dynamics.CRM.postfollow
+    name: postfollow
+  - uid: Microsoft.Dynamics.CRM.postlike
+    name: postlike
+  - uid: Microsoft.Dynamics.CRM.postregarding
+    name: postregarding
+  - uid: Microsoft.Dynamics.CRM.pricelevel
+    name: pricelevel
+  - uid: Microsoft.Dynamics.CRM.principal
+    name: principal
+  - uid: Microsoft.Dynamics.CRM.principalobjectaccess
+    name: principalobjectaccess
+  - uid: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    name: principalobjectattributeaccess
+  - uid: Microsoft.Dynamics.CRM.privilege
+    name: privilege
+  - uid: Microsoft.Dynamics.CRM.processsession
+    name: processsession
+  - uid: Microsoft.Dynamics.CRM.processstage
+    name: processstage
+  - uid: Microsoft.Dynamics.CRM.processtrigger
+    name: processtrigger
+  - uid: Microsoft.Dynamics.CRM.product
+    name: product
+  - uid: Microsoft.Dynamics.CRM.productassociation
+    name: productassociation
+  - uid: Microsoft.Dynamics.CRM.productpricelevel
+    name: productpricelevel
+  - uid: Microsoft.Dynamics.CRM.productsalesliterature
+    name: productsalesliterature
+  - uid: Microsoft.Dynamics.CRM.productsubstitute
+    name: productsubstitute
+  - uid: Microsoft.Dynamics.CRM.publisher
+    name: publisher
+  - uid: Microsoft.Dynamics.CRM.publisheraddress
+    name: publisheraddress
+  - uid: Microsoft.Dynamics.CRM.quarterlyfiscalcalendar
+    name: quarterlyfiscalcalendar
+  - uid: Microsoft.Dynamics.CRM.queue
+    name: queue
+  - uid: Microsoft.Dynamics.CRM.queueitem
+    name: queueitem
+  - uid: Microsoft.Dynamics.CRM.quote
+    name: quote
+  - uid: Microsoft.Dynamics.CRM.quoteclose
+    name: quoteclose
+  - uid: Microsoft.Dynamics.CRM.quotedetail
+    name: quotedetail
+  - uid: Microsoft.Dynamics.CRM.ratingmodel
+    name: ratingmodel
+  - uid: Microsoft.Dynamics.CRM.ratingvalue
+    name: ratingvalue
+  - uid: Microsoft.Dynamics.CRM.recommendeddocument
+    name: recommendeddocument
+  - uid: Microsoft.Dynamics.CRM.recurrencerule
+    name: recurrencerule
+  - uid: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    name: recurringappointmentmaster
+  - uid: Microsoft.Dynamics.CRM.report
+    name: report
+  - uid: Microsoft.Dynamics.CRM.reportcategory
+    name: reportcategory
+  - uid: Microsoft.Dynamics.CRM.resource
+    name: resource
+  - uid: Microsoft.Dynamics.CRM.resourcegroup
+    name: resourcegroup
+  - uid: Microsoft.Dynamics.CRM.resourcespec
+    name: resourcespec
+  - uid: Microsoft.Dynamics.CRM.role
+    name: role
+  - uid: Microsoft.Dynamics.CRM.roleprivileges
+    name: roleprivileges
+  - uid: Microsoft.Dynamics.CRM.roletemplate
+    name: roletemplate
+  - uid: Microsoft.Dynamics.CRM.roletemplateprivileges
+    name: roletemplateprivileges
+  - uid: Microsoft.Dynamics.CRM.rollupfield
+    name: rollupfield
+  - uid: Microsoft.Dynamics.CRM.runtimedependency
+    name: runtimedependency
+  - uid: Microsoft.Dynamics.CRM.salesliterature
+    name: salesliterature
+  - uid: Microsoft.Dynamics.CRM.salesliteratureitem
+    name: salesliteratureitem
+  - uid: Microsoft.Dynamics.CRM.salesorder
+    name: salesorder
+  - uid: Microsoft.Dynamics.CRM.salesorderdetail
+    name: salesorderdetail
+  - uid: Microsoft.Dynamics.CRM.savedquery
+    name: savedquery
+  - uid: Microsoft.Dynamics.CRM.savedqueryvisualization
+    name: savedqueryvisualization
+  - uid: Microsoft.Dynamics.CRM.sdkmessage
+    name: sdkmessage
+  - uid: Microsoft.Dynamics.CRM.sdkmessagefilter
+    name: sdkmessagefilter
+  - uid: Microsoft.Dynamics.CRM.sdkmessageprocessingstep
+    name: sdkmessageprocessingstep
+  - uid: Microsoft.Dynamics.CRM.sdkmessageprocessingstepimage
+    name: sdkmessageprocessingstepimage
+  - uid: Microsoft.Dynamics.CRM.sdkmessageprocessingstepsecureconfig
+    name: sdkmessageprocessingstepsecureconfig
+  - uid: Microsoft.Dynamics.CRM.semiannualfiscalcalendar
+    name: semiannualfiscalcalendar
+  - uid: Microsoft.Dynamics.CRM.service
+    name: service
+  - uid: Microsoft.Dynamics.CRM.serviceappointment
+    name: serviceappointment
+  - uid: Microsoft.Dynamics.CRM.servicecontractcontacts
+    name: servicecontractcontacts
+  - uid: Microsoft.Dynamics.CRM.serviceendpoint
+    name: serviceendpoint
+  - uid: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+    name: sharepointdocumentlocation
+  - uid: Microsoft.Dynamics.CRM.sharepointsite
+    name: sharepointsite
+  - uid: Microsoft.Dynamics.CRM.similarityrule
+    name: similarityrule
+  - uid: Microsoft.Dynamics.CRM.site
+    name: site
+  - uid: Microsoft.Dynamics.CRM.sitemap
+    name: sitemap
+  - uid: Microsoft.Dynamics.CRM.sla
+    name: sla
+  - uid: Microsoft.Dynamics.CRM.slaitem
+    name: slaitem
+  - uid: Microsoft.Dynamics.CRM.slakpiinstance
+    name: slakpiinstance
+  - uid: Microsoft.Dynamics.CRM.socialactivity
+    name: socialactivity
+  - uid: Microsoft.Dynamics.CRM.socialprofile
+    name: socialprofile
+  - uid: Microsoft.Dynamics.CRM.solution
+    name: solution
+  - uid: Microsoft.Dynamics.CRM.solutioncomponent
+    name: solutioncomponent
+  - uid: Microsoft.Dynamics.CRM.subject
+    name: subject
+  - uid: Microsoft.Dynamics.CRM.subscriptionmanuallytrackedobject
+    name: subscriptionmanuallytrackedobject
+  - uid: Microsoft.Dynamics.CRM.subscriptionstatisticsoffline
+    name: subscriptionstatisticsoffline
+  - uid: Microsoft.Dynamics.CRM.subscriptionstatisticsoutlook
+    name: subscriptionstatisticsoutlook
+  - uid: Microsoft.Dynamics.CRM.subscriptionsyncentryoffline
+    name: subscriptionsyncentryoffline
+  - uid: Microsoft.Dynamics.CRM.subscriptionsyncentryoutlook
+    name: subscriptionsyncentryoutlook
+  - uid: Microsoft.Dynamics.CRM.syncerror
+    name: syncerror
+  - uid: Microsoft.Dynamics.CRM.systemform
+    name: systemform
+  - uid: Microsoft.Dynamics.CRM.systemuser
+    name: systemuser
+  - uid: Microsoft.Dynamics.CRM.task
+    name: task
+  - uid: Microsoft.Dynamics.CRM.team
+    name: team
+  - uid: Microsoft.Dynamics.CRM.teamtemplate
+    name: teamtemplate
+  - uid: Microsoft.Dynamics.CRM.template
+    name: template
+  - uid: Microsoft.Dynamics.CRM.territory
+    name: territory
+  - uid: Microsoft.Dynamics.CRM.theme
+    name: theme
+  - uid: Microsoft.Dynamics.CRM.timestampdatemapping
+    name: timestampdatemapping
+  - uid: Microsoft.Dynamics.CRM.timezonedefinition
+    name: timezonedefinition
+  - uid: Microsoft.Dynamics.CRM.timezonelocalizedname
+    name: timezonelocalizedname
+  - uid: Microsoft.Dynamics.CRM.timezonerule
+    name: timezonerule
+  - uid: Microsoft.Dynamics.CRM.tracelog
+    name: tracelog
+  - uid: Microsoft.Dynamics.CRM.transactioncurrency
+    name: transactioncurrency
+  - uid: Microsoft.Dynamics.CRM.transformationmapping
+    name: transformationmapping
+  - uid: Microsoft.Dynamics.CRM.transformationparametermapping
+    name: transformationparametermapping
+  - uid: Microsoft.Dynamics.CRM.translationprocess
+    name: translationprocess
+  - uid: Microsoft.Dynamics.CRM.uom
+    name: uom
+  - uid: Microsoft.Dynamics.CRM.uomschedule
+    name: uomschedule
+  - uid: Microsoft.Dynamics.CRM.userform
+    name: userform
+  - uid: Microsoft.Dynamics.CRM.usermapping
+    name: usermapping
+  - uid: Microsoft.Dynamics.CRM.userquery
+    name: userquery
+  - uid: Microsoft.Dynamics.CRM.userqueryvisualization
+    name: userqueryvisualization
+  - uid: Microsoft.Dynamics.CRM.usersettings
+    name: usersettings
+  - uid: Microsoft.Dynamics.CRM.webresource
+    name: webresource
+  - uid: Microsoft.Dynamics.CRM.webwizard
+    name: webwizard
+  - uid: Microsoft.Dynamics.CRM.workflow
+    name: workflow
+  - uid: Microsoft.Dynamics.CRM.workflowlog
+    name: workflowlog
+- uid: Microsoft.Dynamics.CRM.ActionIndex
+  name: Action Reference
+  items:
+  - uid: Microsoft.Dynamics.CRM.AddAppComponents
+    name: AddAppComponents
+  - uid: Microsoft.Dynamics.CRM.AddItemCampaign
+    name: AddItemCampaign
+  - uid: Microsoft.Dynamics.CRM.AddItemCampaignActivity
+    name: AddItemCampaignActivity
+  - uid: Microsoft.Dynamics.CRM.AddListMembersList
+    name: AddListMembersList
+  - uid: Microsoft.Dynamics.CRM.AddMemberList
+    name: AddMemberList
+  - uid: Microsoft.Dynamics.CRM.AddMembersTeam
+    name: AddMembersTeam
+  - uid: Microsoft.Dynamics.CRM.AddPrincipalToQueue
+    name: AddPrincipalToQueue
+  - uid: Microsoft.Dynamics.CRM.AddPrivilegesRole
+    name: AddPrivilegesRole
+  - uid: Microsoft.Dynamics.CRM.AddRecurrence
+    name: AddRecurrence
+  - uid: Microsoft.Dynamics.CRM.AddSolutionComponent
+    name: AddSolutionComponent
+  - uid: Microsoft.Dynamics.CRM.AddToQueue
+    name: AddToQueue
+  - uid: Microsoft.Dynamics.CRM.AddUserToRecordTeam
+    name: AddUserToRecordTeam
+  - uid: Microsoft.Dynamics.CRM.ApplyRecordCreationAndUpdateRule
+    name: ApplyRecordCreationAndUpdateRule
+  - uid: Microsoft.Dynamics.CRM.ApplyRoutingRule
+    name: ApplyRoutingRule
+  - uid: Microsoft.Dynamics.CRM.AutoMapEntity
+    name: AutoMapEntity
+  - uid: Microsoft.Dynamics.CRM.BackgroundSendEmail
+    name: BackgroundSendEmail
+  - uid: Microsoft.Dynamics.CRM.Book
+    name: Book
+  - uid: Microsoft.Dynamics.CRM.BulkDelete
+    name: BulkDelete
+  - uid: Microsoft.Dynamics.CRM.BulkDetectDuplicates
+    name: BulkDetectDuplicates
+  - uid: Microsoft.Dynamics.CRM.CalculateActualValueOpportunity
+    name: CalculateActualValueOpportunity
+  - uid: Microsoft.Dynamics.CRM.CalculatePrice
+    name: CalculatePrice
+  - uid: Microsoft.Dynamics.CRM.CanBeReferenced
+    name: CanBeReferenced
+  - uid: Microsoft.Dynamics.CRM.CanBeReferencing
+    name: CanBeReferencing
+  - uid: Microsoft.Dynamics.CRM.CancelContract
+    name: CancelContract
+  - uid: Microsoft.Dynamics.CRM.CancelSalesOrder
+    name: CancelSalesOrder
+  - uid: Microsoft.Dynamics.CRM.CanManyToMany
+    name: CanManyToMany
+  - uid: Microsoft.Dynamics.CRM.CloneAsPatch
+    name: CloneAsPatch
+  - uid: Microsoft.Dynamics.CRM.CloneAsSolution
+    name: CloneAsSolution
+  - uid: Microsoft.Dynamics.CRM.CloneContract
+    name: CloneContract
+  - uid: Microsoft.Dynamics.CRM.CloneMobileOfflineProfile
+    name: CloneMobileOfflineProfile
+  - uid: Microsoft.Dynamics.CRM.CloneProduct
+    name: CloneProduct
+  - uid: Microsoft.Dynamics.CRM.CloseIncident
+    name: CloseIncident
+  - uid: Microsoft.Dynamics.CRM.CloseQuote
+    name: CloseQuote
+  - uid: Microsoft.Dynamics.CRM.CompoundUpdateDuplicateDetectionRule
+    name: CompoundUpdateDuplicateDetectionRule
+  - uid: Microsoft.Dynamics.CRM.ConvertOwnerTeamToAccessTeam
+    name: ConvertOwnerTeamToAccessTeam
+  - uid: Microsoft.Dynamics.CRM.ConvertQuoteToSalesOrder
+    name: ConvertQuoteToSalesOrder
+  - uid: Microsoft.Dynamics.CRM.ConvertSalesOrderToInvoice
+    name: ConvertSalesOrderToInvoice
+  - uid: Microsoft.Dynamics.CRM.CopyCampaign
+    name: CopyCampaign
+  - uid: Microsoft.Dynamics.CRM.CopyCampaignResponse
+    name: CopyCampaignResponse
+  - uid: Microsoft.Dynamics.CRM.CopyDynamicListToStatic
+    name: CopyDynamicListToStatic
+  - uid: Microsoft.Dynamics.CRM.CopyMembersList
+    name: CopyMembersList
+  - uid: Microsoft.Dynamics.CRM.CopySystemForm
+    name: CopySystemForm
+  - uid: Microsoft.Dynamics.CRM.CreateActivitiesList
+    name: CreateActivitiesList
+  - uid: Microsoft.Dynamics.CRM.CreateCustomerRelationships
+    name: CreateCustomerRelationships
+  - uid: Microsoft.Dynamics.CRM.CreateException
+    name: CreateException
+  - uid: Microsoft.Dynamics.CRM.CreateInstance
+    name: CreateInstance
+  - uid: Microsoft.Dynamics.CRM.CreateKnowledgeArticleTranslation
+    name: CreateKnowledgeArticleTranslation
+  - uid: Microsoft.Dynamics.CRM.CreateKnowledgeArticleVersion
+    name: CreateKnowledgeArticleVersion
+  - uid: Microsoft.Dynamics.CRM.CreateWorkflowFromTemplate
+    name: CreateWorkflowFromTemplate
+  - uid: Microsoft.Dynamics.CRM.DeleteAndPromote
+    name: DeleteAndPromote
+  - uid: Microsoft.Dynamics.CRM.DeleteAuditData
+    name: DeleteAuditData
+  - uid: Microsoft.Dynamics.CRM.DeleteOpenInstances
+    name: DeleteOpenInstances
+  - uid: Microsoft.Dynamics.CRM.DeleteOptionValue
+    name: DeleteOptionValue
+  - uid: Microsoft.Dynamics.CRM.DeliverIncomingEmail
+    name: DeliverIncomingEmail
+  - uid: Microsoft.Dynamics.CRM.DeliverPromoteEmail
+    name: DeliverPromoteEmail
+  - uid: Microsoft.Dynamics.CRM.DeprovisionLanguage
+    name: DeprovisionLanguage
+  - uid: Microsoft.Dynamics.CRM.DistributeCampaignActivity
+    name: DistributeCampaignActivity
+  - uid: Microsoft.Dynamics.CRM.ExecuteWorkflow
+    name: ExecuteWorkflow
+  - uid: Microsoft.Dynamics.CRM.ExportMappingsImportMap
+    name: ExportMappingsImportMap
+  - uid: Microsoft.Dynamics.CRM.ExportSolution
+    name: ExportSolution
+  - uid: Microsoft.Dynamics.CRM.ExportTranslation
+    name: ExportTranslation
+  - uid: Microsoft.Dynamics.CRM.FulfillSalesOrder
+    name: FulfillSalesOrder
+  - uid: Microsoft.Dynamics.CRM.FullTextSearchKnowledgeArticle
+    name: FullTextSearchKnowledgeArticle
+  - uid: Microsoft.Dynamics.CRM.GenerateInvoiceFromOpportunity
+    name: GenerateInvoiceFromOpportunity
+  - uid: Microsoft.Dynamics.CRM.GenerateQuoteFromOpportunity
+    name: GenerateQuoteFromOpportunity
+  - uid: Microsoft.Dynamics.CRM.GenerateSalesOrderFromOpportunity
+    name: GenerateSalesOrderFromOpportunity
+  - uid: Microsoft.Dynamics.CRM.GenerateSocialProfile
+    name: GenerateSocialProfile
+  - uid: Microsoft.Dynamics.CRM.GetInvoiceProductsFromOpportunity
+    name: GetInvoiceProductsFromOpportunity
+  - uid: Microsoft.Dynamics.CRM.GetQuoteProductsFromOpportunity
+    name: GetQuoteProductsFromOpportunity
+  - uid: Microsoft.Dynamics.CRM.GetSalesOrderProductsFromOpportunity
+    name: GetSalesOrderProductsFromOpportunity
+  - uid: Microsoft.Dynamics.CRM.GetTrackingTokenEmail
+    name: GetTrackingTokenEmail
+  - uid: Microsoft.Dynamics.CRM.GrantAccess
+    name: GrantAccess
+  - uid: Microsoft.Dynamics.CRM.ImportFieldTranslation
+    name: ImportFieldTranslation
+  - uid: Microsoft.Dynamics.CRM.ImportMappingsImportMap
+    name: ImportMappingsImportMap
+  - uid: Microsoft.Dynamics.CRM.ImportRecordsImport
+    name: ImportRecordsImport
+  - uid: Microsoft.Dynamics.CRM.ImportSolution
+    name: ImportSolution
+  - uid: Microsoft.Dynamics.CRM.ImportTranslation
+    name: ImportTranslation
+  - uid: Microsoft.Dynamics.CRM.InsertOptionValue
+    name: InsertOptionValue
+  - uid: Microsoft.Dynamics.CRM.InsertStatusValue
+    name: InsertStatusValue
+  - uid: Microsoft.Dynamics.CRM.InstallSampleData
+    name: InstallSampleData
+  - uid: Microsoft.Dynamics.CRM.InstantiateFilters
+    name: InstantiateFilters
+  - uid: Microsoft.Dynamics.CRM.InstantiateTemplate
+    name: InstantiateTemplate
+  - uid: Microsoft.Dynamics.CRM.LockInvoicePricing
+    name: LockInvoicePricing
+  - uid: Microsoft.Dynamics.CRM.LockSalesOrderPricing
+    name: LockSalesOrderPricing
+  - uid: Microsoft.Dynamics.CRM.LoseOpportunity
+    name: LoseOpportunity
+  - uid: Microsoft.Dynamics.CRM.Merge
+    name: Merge
+  - uid: Microsoft.Dynamics.CRM.ModifyAccess
+    name: ModifyAccess
+  - uid: Microsoft.Dynamics.CRM.new_TestAction
+    name: new_TestAction
+  - uid: Microsoft.Dynamics.CRM.OrderOption
+    name: OrderOption
+  - uid: Microsoft.Dynamics.CRM.ParseImport
+    name: ParseImport
+  - uid: Microsoft.Dynamics.CRM.PickFromQueue
+    name: PickFromQueue
+  - uid: Microsoft.Dynamics.CRM.ProcessInboundEmail
+    name: ProcessInboundEmail
+  - uid: Microsoft.Dynamics.CRM.PropagateByExpression
+    name: PropagateByExpression
+  - uid: Microsoft.Dynamics.CRM.ProvisionLanguage
+    name: ProvisionLanguage
+  - uid: Microsoft.Dynamics.CRM.PublishAllXml
+    name: PublishAllXml
+  - uid: Microsoft.Dynamics.CRM.PublishDuplicateRule
+    name: PublishDuplicateRule
+  - uid: Microsoft.Dynamics.CRM.PublishProductHierarchy
+    name: PublishProductHierarchy
+  - uid: Microsoft.Dynamics.CRM.PublishTheme
+    name: PublishTheme
+  - uid: Microsoft.Dynamics.CRM.PublishXml
+    name: PublishXml
+  - uid: Microsoft.Dynamics.CRM.QualifyLead
+    name: QualifyLead
+  - uid: Microsoft.Dynamics.CRM.QualifyMemberList
+    name: QualifyMemberList
+  - uid: Microsoft.Dynamics.CRM.QueryExpressionToFetchXml
+    name: QueryExpressionToFetchXml
+  - uid: Microsoft.Dynamics.CRM.ReactivateEntityKey
+    name: ReactivateEntityKey
+  - uid: Microsoft.Dynamics.CRM.ReassignObjectsOwner
+    name: ReassignObjectsOwner
+  - uid: Microsoft.Dynamics.CRM.ReassignObjectsSystemUser
+    name: ReassignObjectsSystemUser
+  - uid: Microsoft.Dynamics.CRM.Recalculate
+    name: Recalculate
+  - uid: Microsoft.Dynamics.CRM.ReleaseToQueue
+    name: ReleaseToQueue
+  - uid: Microsoft.Dynamics.CRM.RemoveAppComponents
+    name: RemoveAppComponents
+  - uid: Microsoft.Dynamics.CRM.RemoveFromQueue
+    name: RemoveFromQueue
+  - uid: Microsoft.Dynamics.CRM.RemoveItemCampaign
+    name: RemoveItemCampaign
+  - uid: Microsoft.Dynamics.CRM.RemoveItemCampaignActivity
+    name: RemoveItemCampaignActivity
+  - uid: Microsoft.Dynamics.CRM.RemoveMemberList
+    name: RemoveMemberList
+  - uid: Microsoft.Dynamics.CRM.RemoveMembersTeam
+    name: RemoveMembersTeam
+  - uid: Microsoft.Dynamics.CRM.RemoveParent
+    name: RemoveParent
+  - uid: Microsoft.Dynamics.CRM.RemovePrivilegeRole
+    name: RemovePrivilegeRole
+  - uid: Microsoft.Dynamics.CRM.RemoveSolutionComponent
+    name: RemoveSolutionComponent
+  - uid: Microsoft.Dynamics.CRM.RemoveUserFromRecordTeam
+    name: RemoveUserFromRecordTeam
+  - uid: Microsoft.Dynamics.CRM.RenewContract
+    name: RenewContract
+  - uid: Microsoft.Dynamics.CRM.RenewEntitlement
+    name: RenewEntitlement
+  - uid: Microsoft.Dynamics.CRM.ReplacePrivilegesRole
+    name: ReplacePrivilegesRole
+  - uid: Microsoft.Dynamics.CRM.Reschedule
+    name: Reschedule
+  - uid: Microsoft.Dynamics.CRM.ResetUserFilters
+    name: ResetUserFilters
+  - uid: Microsoft.Dynamics.CRM.RevertProduct
+    name: RevertProduct
+  - uid: Microsoft.Dynamics.CRM.ReviseQuote
+    name: ReviseQuote
+  - uid: Microsoft.Dynamics.CRM.RevokeAccess
+    name: RevokeAccess
+  - uid: Microsoft.Dynamics.CRM.RouteTo
+    name: RouteTo
+  - uid: Microsoft.Dynamics.CRM.SendBulkMail
+    name: SendBulkMail
+  - uid: Microsoft.Dynamics.CRM.SendEmail
+    name: SendEmail
+  - uid: Microsoft.Dynamics.CRM.SendEmailFromTemplate
+    name: SendEmailFromTemplate
+  - uid: Microsoft.Dynamics.CRM.SendFax
+    name: SendFax
+  - uid: Microsoft.Dynamics.CRM.SendTemplate
+    name: SendTemplate
+  - uid: Microsoft.Dynamics.CRM.SetAutoNumberSeed
+    name: SetAutoNumberSeed
+  - uid: Microsoft.Dynamics.CRM.SetBusinessSystemUser
+    name: SetBusinessSystemUser
+  - uid: Microsoft.Dynamics.CRM.SetDataEncryptionKey
+    name: SetDataEncryptionKey
+  - uid: Microsoft.Dynamics.CRM.SetFeatureStatus
+    name: SetFeatureStatus
+  - uid: Microsoft.Dynamics.CRM.SetLocLabels
+    name: SetLocLabels
+  - uid: Microsoft.Dynamics.CRM.SetParentSystemUser
+    name: SetParentSystemUser
+  - uid: Microsoft.Dynamics.CRM.SetProcess
+    name: SetProcess
+  - uid: Microsoft.Dynamics.CRM.SetReportRelated
+    name: SetReportRelated
+  - uid: Microsoft.Dynamics.CRM.TransformImport
+    name: TransformImport
+  - uid: Microsoft.Dynamics.CRM.TriggerServiceEndpointCheck
+    name: TriggerServiceEndpointCheck
+  - uid: Microsoft.Dynamics.CRM.UninstallSampleData
+    name: UninstallSampleData
+  - uid: Microsoft.Dynamics.CRM.UnlockInvoicePricing
+    name: UnlockInvoicePricing
+  - uid: Microsoft.Dynamics.CRM.UnlockSalesOrderPricing
+    name: UnlockSalesOrderPricing
+  - uid: Microsoft.Dynamics.CRM.UnpublishDuplicateRule
+    name: UnpublishDuplicateRule
+  - uid: Microsoft.Dynamics.CRM.UpdateFeatureConfig
+    name: UpdateFeatureConfig
+  - uid: Microsoft.Dynamics.CRM.UpdateOptionValue
+    name: UpdateOptionValue
+  - uid: Microsoft.Dynamics.CRM.UpdateProductProperties
+    name: UpdateProductProperties
+  - uid: Microsoft.Dynamics.CRM.UpdateSolutionComponent
+    name: UpdateSolutionComponent
+  - uid: Microsoft.Dynamics.CRM.UpdateStateValue
+    name: UpdateStateValue
+  - uid: Microsoft.Dynamics.CRM.Validate
+    name: Validate
+  - uid: Microsoft.Dynamics.CRM.ValidateSavedQuery
+    name: ValidateSavedQuery
+  - uid: Microsoft.Dynamics.CRM.WinOpportunity
+    name: WinOpportunity
+  - uid: Microsoft.Dynamics.CRM.WinQuote
+    name: WinQuote
+- uid: Microsoft.Dynamics.CRM.FunctionIndex
+  name: Function Reference
+  items:
+  - uid: Microsoft.Dynamics.CRM.CalculateRollupField
+    name: CalculateRollupField
+  - uid: Microsoft.Dynamics.CRM.CalculateTotalTimeIncident
+    name: CalculateTotalTimeIncident
+  - uid: Microsoft.Dynamics.CRM.CheckIncomingEmail
+    name: CheckIncomingEmail
+  - uid: Microsoft.Dynamics.CRM.CheckPromoteEmail
+    name: CheckPromoteEmail
+  - uid: Microsoft.Dynamics.CRM.DownloadReportDefinition
+    name: DownloadReportDefinition
+  - uid: Microsoft.Dynamics.CRM.ExpandCalendar
+    name: ExpandCalendar
+  - uid: Microsoft.Dynamics.CRM.ExportFieldTranslation
+    name: ExportFieldTranslation
+  - uid: Microsoft.Dynamics.CRM.FetchXmlToQueryExpression
+    name: FetchXmlToQueryExpression
+  - uid: Microsoft.Dynamics.CRM.FindParentResourceGroup
+    name: FindParentResourceGroup
+  - uid: Microsoft.Dynamics.CRM.FormatAddress
+    name: FormatAddress
+  - uid: Microsoft.Dynamics.CRM.GetAllTimeZonesWithDisplayName
+    name: GetAllTimeZonesWithDisplayName
+  - uid: Microsoft.Dynamics.CRM.GetDefaultPriceLevel
+    name: GetDefaultPriceLevel
+  - uid: Microsoft.Dynamics.CRM.GetDistinctValuesImportFile
+    name: GetDistinctValuesImportFile
+  - uid: Microsoft.Dynamics.CRM.GetHeaderColumnsImportFile
+    name: GetHeaderColumnsImportFile
+  - uid: Microsoft.Dynamics.CRM.GetQuantityDecimal
+    name: GetQuantityDecimal
+  - uid: Microsoft.Dynamics.CRM.GetReportHistoryLimit
+    name: GetReportHistoryLimit
+  - uid: Microsoft.Dynamics.CRM.GetTimeZoneCodeByLocalizedName
+    name: GetTimeZoneCodeByLocalizedName
+  - uid: Microsoft.Dynamics.CRM.GetValidManyToMany
+    name: GetValidManyToMany
+  - uid: Microsoft.Dynamics.CRM.GetValidReferencedEntities
+    name: GetValidReferencedEntities
+  - uid: Microsoft.Dynamics.CRM.GetValidReferencingEntities
+    name: GetValidReferencingEntities
+  - uid: Microsoft.Dynamics.CRM.IncrementKnowledgeArticleViewCount
+    name: IncrementKnowledgeArticleViewCount
+  - uid: Microsoft.Dynamics.CRM.InitializeFrom
+    name: InitializeFrom
+  - uid: Microsoft.Dynamics.CRM.IsComponentCustomizable
+    name: IsComponentCustomizable
+  - uid: Microsoft.Dynamics.CRM.IsDataEncryptionActive
+    name: IsDataEncryptionActive
+  - uid: Microsoft.Dynamics.CRM.IsValidStateTransition
+    name: IsValidStateTransition
+  - uid: Microsoft.Dynamics.CRM.QueryMultipleSchedules
+    name: QueryMultipleSchedules
+  - uid: Microsoft.Dynamics.CRM.QuerySchedule
+    name: QuerySchedule
+  - uid: Microsoft.Dynamics.CRM.RetrieveAbsoluteAndSiteCollectionUrl
+    name: RetrieveAbsoluteAndSiteCollectionUrl
+  - uid: Microsoft.Dynamics.CRM.RetrieveActivePath
+    name: RetrieveActivePath
+  - uid: Microsoft.Dynamics.CRM.RetrieveAllChildUsersSystemUser
+    name: RetrieveAllChildUsersSystemUser
+  - uid: Microsoft.Dynamics.CRM.RetrieveAllEntities
+    name: RetrieveAllEntities
+  - uid: Microsoft.Dynamics.CRM.RetrieveAppComponents
+    name: RetrieveAppComponents
+  - uid: Microsoft.Dynamics.CRM.RetrieveApplicationRibbon
+    name: RetrieveApplicationRibbon
+  - uid: Microsoft.Dynamics.CRM.RetrieveAttributeChangeHistory
+    name: RetrieveAttributeChangeHistory
+  - uid: Microsoft.Dynamics.CRM.RetrieveAuditDetails
+    name: RetrieveAuditDetails
+  - uid: Microsoft.Dynamics.CRM.RetrieveAuditPartitionList
+    name: RetrieveAuditPartitionList
+  - uid: Microsoft.Dynamics.CRM.RetrieveAvailableLanguages
+    name: RetrieveAvailableLanguages
+  - uid: Microsoft.Dynamics.CRM.RetrieveBusinessHierarchyBusinessUnit
+    name: RetrieveBusinessHierarchyBusinessUnit
+  - uid: Microsoft.Dynamics.CRM.RetrieveByGroupResource
+    name: RetrieveByGroupResource
+  - uid: Microsoft.Dynamics.CRM.RetrieveByResourceResourceGroup
+    name: RetrieveByResourceResourceGroup
+  - uid: Microsoft.Dynamics.CRM.RetrieveByResourcesService
+    name: RetrieveByResourcesService
+  - uid: Microsoft.Dynamics.CRM.RetrieveByTopIncidentProductKbArticle
+    name: RetrieveByTopIncidentProductKbArticle
+  - uid: Microsoft.Dynamics.CRM.RetrieveByTopIncidentSubjectKbArticle
+    name: RetrieveByTopIncidentSubjectKbArticle
+  - uid: Microsoft.Dynamics.CRM.RetrieveCurrentOrganization
+    name: RetrieveCurrentOrganization
+  - uid: Microsoft.Dynamics.CRM.RetrieveDataEncryptionKey
+    name: RetrieveDataEncryptionKey
+  - uid: Microsoft.Dynamics.CRM.RetrieveDependenciesForDelete
+    name: RetrieveDependenciesForDelete
+  - uid: Microsoft.Dynamics.CRM.RetrieveDependenciesForUninstall
+    name: RetrieveDependenciesForUninstall
+  - uid: Microsoft.Dynamics.CRM.RetrieveDependentComponents
+    name: RetrieveDependentComponents
+  - uid: Microsoft.Dynamics.CRM.RetrieveDeploymentLicenseType
+    name: RetrieveDeploymentLicenseType
+  - uid: Microsoft.Dynamics.CRM.RetrieveDeprovisionedLanguages
+    name: RetrieveDeprovisionedLanguages
+  - uid: Microsoft.Dynamics.CRM.RetrieveDuplicates
+    name: RetrieveDuplicates
+  - uid: Microsoft.Dynamics.CRM.RetrieveEntity
+    name: RetrieveEntity
+  - uid: Microsoft.Dynamics.CRM.RetrieveEntityRibbon
+    name: RetrieveEntityRibbon
+  - uid: Microsoft.Dynamics.CRM.RetrieveExchangeAppointments
+    name: RetrieveExchangeAppointments
+  - uid: Microsoft.Dynamics.CRM.RetrieveExchangeRate
+    name: RetrieveExchangeRate
+  - uid: Microsoft.Dynamics.CRM.RetrieveFilteredForms
+    name: RetrieveFilteredForms
+  - uid: Microsoft.Dynamics.CRM.RetrieveFormattedImportJobResults
+    name: RetrieveFormattedImportJobResults
+  - uid: Microsoft.Dynamics.CRM.RetrieveInstalledLanguagePacks
+    name: RetrieveInstalledLanguagePacks
+  - uid: Microsoft.Dynamics.CRM.RetrieveInstalledLanguagePackVersion
+    name: RetrieveInstalledLanguagePackVersion
+  - uid: Microsoft.Dynamics.CRM.RetrieveLicenseInfo
+    name: RetrieveLicenseInfo
+  - uid: Microsoft.Dynamics.CRM.RetrieveLocLabels
+    name: RetrieveLocLabels
+  - uid: Microsoft.Dynamics.CRM.RetrieveMailboxTrackingFolders
+    name: RetrieveMailboxTrackingFolders
+  - uid: Microsoft.Dynamics.CRM.RetrieveMembersBulkOperation
+    name: RetrieveMembersBulkOperation
+  - uid: Microsoft.Dynamics.CRM.RetrieveMetadataChanges
+    name: RetrieveMetadataChanges
+  - uid: Microsoft.Dynamics.CRM.RetrieveMissingComponents
+    name: RetrieveMissingComponents
+  - uid: Microsoft.Dynamics.CRM.RetrieveMissingDependencies
+    name: RetrieveMissingDependencies
+  - uid: Microsoft.Dynamics.CRM.RetrieveOrganizationResources
+    name: RetrieveOrganizationResources
+  - uid: Microsoft.Dynamics.CRM.RetrieveParentGroupsResourceGroup
+    name: RetrieveParentGroupsResourceGroup
+  - uid: Microsoft.Dynamics.CRM.RetrieveParsedDataImportFile
+    name: RetrieveParsedDataImportFile
+  - uid: Microsoft.Dynamics.CRM.RetrievePersonalWall
+    name: RetrievePersonalWall
+  - uid: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    name: RetrievePrincipalAccess
+  - uid: Microsoft.Dynamics.CRM.RetrievePrincipalAttributePrivileges
+    name: RetrievePrincipalAttributePrivileges
+  - uid: Microsoft.Dynamics.CRM.RetrievePrincipalSyncAttributeMappings
+    name: RetrievePrincipalSyncAttributeMappings
+  - uid: Microsoft.Dynamics.CRM.RetrievePrivilegeSet
+    name: RetrievePrivilegeSet
+  - uid: Microsoft.Dynamics.CRM.RetrieveProcessInstances
+    name: RetrieveProcessInstances
+  - uid: Microsoft.Dynamics.CRM.RetrieveProductProperties
+    name: RetrieveProductProperties
+  - uid: Microsoft.Dynamics.CRM.RetrieveProvisionedLanguagePackVersion
+    name: RetrieveProvisionedLanguagePackVersion
+  - uid: Microsoft.Dynamics.CRM.RetrieveProvisionedLanguages
+    name: RetrieveProvisionedLanguages
+  - uid: Microsoft.Dynamics.CRM.RetrieveRecordChangeHistory
+    name: RetrieveRecordChangeHistory
+  - uid: Microsoft.Dynamics.CRM.RetrieveRecordWall
+    name: RetrieveRecordWall
+  - uid: Microsoft.Dynamics.CRM.RetrieveRequiredComponents
+    name: RetrieveRequiredComponents
+  - uid: Microsoft.Dynamics.CRM.RetrieveRolePrivilegesRole
+    name: RetrieveRolePrivilegesRole
+  - uid: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    name: RetrieveSharedPrincipalsAndAccess
+  - uid: Microsoft.Dynamics.CRM.RetrieveSubGroupsResourceGroup
+    name: RetrieveSubGroupsResourceGroup
+  - uid: Microsoft.Dynamics.CRM.RetrieveTeamPrivileges
+    name: RetrieveTeamPrivileges
+  - uid: Microsoft.Dynamics.CRM.RetrieveTimestamp
+    name: RetrieveTimestamp
+  - uid: Microsoft.Dynamics.CRM.RetrieveTotalRecordCount
+    name: RetrieveTotalRecordCount
+  - uid: Microsoft.Dynamics.CRM.RetrieveUnpublished
+    name: RetrieveUnpublished
+  - uid: Microsoft.Dynamics.CRM.RetrieveUnpublishedMultiple
+    name: RetrieveUnpublishedMultiple
+  - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivileges
+    name: RetrieveUserPrivileges
+  - uid: Microsoft.Dynamics.CRM.RetrieveUserQueues
+    name: RetrieveUserQueues
+  - uid: Microsoft.Dynamics.CRM.RetrieveVersion
+    name: RetrieveVersion
+  - uid: Microsoft.Dynamics.CRM.Rollup
+    name: Rollup
+  - uid: Microsoft.Dynamics.CRM.Search
+    name: Search
+  - uid: Microsoft.Dynamics.CRM.SearchByBodyKbArticle
+    name: SearchByBodyKbArticle
+  - uid: Microsoft.Dynamics.CRM.SearchByKeywordsKbArticle
+    name: SearchByKeywordsKbArticle
+  - uid: Microsoft.Dynamics.CRM.SearchByTitleKbArticle
+    name: SearchByTitleKbArticle
+  - uid: Microsoft.Dynamics.CRM.ValidateApp
+    name: ValidateApp
+  - uid: Microsoft.Dynamics.CRM.ValidateRecurrenceRule
+    name: ValidateRecurrenceRule
+  - uid: Microsoft.Dynamics.CRM.WhoAmI
+    name: WhoAmI
+- uid: Microsoft.Dynamics.CRM.QueryFunctionIndex
+  name: Query Function Reference
+  items:
+  - uid: Microsoft.Dynamics.CRM.Above
+    name: Above
+  - uid: Microsoft.Dynamics.CRM.AboveOrEqual
+    name: AboveOrEqual
+  - uid: Microsoft.Dynamics.CRM.Between
+    name: Between
+  - uid: Microsoft.Dynamics.CRM.Contains
+    name: Contains
+  - uid: Microsoft.Dynamics.CRM.ContainValues
+    name: ContainValues
+  - uid: Microsoft.Dynamics.CRM.DoesNotContainValues
+    name: DoesNotContainValues
+  - uid: Microsoft.Dynamics.CRM.EqualBusinessId
+    name: EqualBusinessId
+  - uid: Microsoft.Dynamics.CRM.EqualUserId
+    name: EqualUserId
+  - uid: Microsoft.Dynamics.CRM.EqualUserLanguage
+    name: EqualUserLanguage
+  - uid: Microsoft.Dynamics.CRM.EqualUserOrUserHierarchy
+    name: EqualUserOrUserHierarchy
+  - uid: Microsoft.Dynamics.CRM.EqualUserOrUserHierarchyAndTeams
+    name: EqualUserOrUserHierarchyAndTeams
+  - uid: Microsoft.Dynamics.CRM.EqualUserOrUserTeams
+    name: EqualUserOrUserTeams
+  - uid: Microsoft.Dynamics.CRM.EqualUserTeams
+    name: EqualUserTeams
+  - uid: Microsoft.Dynamics.CRM.In
+    name: In
+  - uid: Microsoft.Dynamics.CRM.InFiscalPeriod
+    name: InFiscalPeriod
+  - uid: Microsoft.Dynamics.CRM.InFiscalPeriodAndYear
+    name: InFiscalPeriodAndYear
+  - uid: Microsoft.Dynamics.CRM.InFiscalYear
+    name: InFiscalYear
+  - uid: Microsoft.Dynamics.CRM.InOrAfterFiscalPeriodAndYear
+    name: InOrAfterFiscalPeriodAndYear
+  - uid: Microsoft.Dynamics.CRM.InOrBeforeFiscalPeriodAndYear
+    name: InOrBeforeFiscalPeriodAndYear
+  - uid: Microsoft.Dynamics.CRM.Last7Days
+    name: Last7Days
+  - uid: Microsoft.Dynamics.CRM.LastFiscalPeriod
+    name: LastFiscalPeriod
+  - uid: Microsoft.Dynamics.CRM.LastFiscalYear
+    name: LastFiscalYear
+  - uid: Microsoft.Dynamics.CRM.LastMonth
+    name: LastMonth
+  - uid: Microsoft.Dynamics.CRM.LastWeek
+    name: LastWeek
+  - uid: Microsoft.Dynamics.CRM.LastXDays
+    name: LastXDays
+  - uid: Microsoft.Dynamics.CRM.LastXFiscalPeriods
+    name: LastXFiscalPeriods
+  - uid: Microsoft.Dynamics.CRM.LastXFiscalYears
+    name: LastXFiscalYears
+  - uid: Microsoft.Dynamics.CRM.LastXHours
+    name: LastXHours
+  - uid: Microsoft.Dynamics.CRM.LastXMonths
+    name: LastXMonths
+  - uid: Microsoft.Dynamics.CRM.LastXWeeks
+    name: LastXWeeks
+  - uid: Microsoft.Dynamics.CRM.LastXYears
+    name: LastXYears
+  - uid: Microsoft.Dynamics.CRM.LastYear
+    name: LastYear
+  - uid: Microsoft.Dynamics.CRM.Next7Days
+    name: Next7Days
+  - uid: Microsoft.Dynamics.CRM.NextFiscalPeriod
+    name: NextFiscalPeriod
+  - uid: Microsoft.Dynamics.CRM.NextFiscalYear
+    name: NextFiscalYear
+  - uid: Microsoft.Dynamics.CRM.NextMonth
+    name: NextMonth
+  - uid: Microsoft.Dynamics.CRM.NextWeek
+    name: NextWeek
+  - uid: Microsoft.Dynamics.CRM.NextXDays
+    name: NextXDays
+  - uid: Microsoft.Dynamics.CRM.NextXFiscalPeriods
+    name: NextXFiscalPeriods
+  - uid: Microsoft.Dynamics.CRM.NextXFiscalYears
+    name: NextXFiscalYears
+  - uid: Microsoft.Dynamics.CRM.NextXHours
+    name: NextXHours
+  - uid: Microsoft.Dynamics.CRM.NextXMonths
+    name: NextXMonths
+  - uid: Microsoft.Dynamics.CRM.NextXWeeks
+    name: NextXWeeks
+  - uid: Microsoft.Dynamics.CRM.NextXYears
+    name: NextXYears
+  - uid: Microsoft.Dynamics.CRM.NextYear
+    name: NextYear
+  - uid: Microsoft.Dynamics.CRM.NotBetween
+    name: NotBetween
+  - uid: Microsoft.Dynamics.CRM.NotEqualBusinessId
+    name: NotEqualBusinessId
+  - uid: Microsoft.Dynamics.CRM.NotEqualUserId
+    name: NotEqualUserId
+  - uid: Microsoft.Dynamics.CRM.NotIn
+    name: NotIn
+  - uid: Microsoft.Dynamics.CRM.NotUnder
+    name: NotUnder
+  - uid: Microsoft.Dynamics.CRM.OlderThanXDays
+    name: OlderThanXDays
+  - uid: Microsoft.Dynamics.CRM.OlderThanXHours
+    name: OlderThanXHours
+  - uid: Microsoft.Dynamics.CRM.OlderThanXMinutes
+    name: OlderThanXMinutes
+  - uid: Microsoft.Dynamics.CRM.OlderThanXMonths
+    name: OlderThanXMonths
+  - uid: Microsoft.Dynamics.CRM.OlderThanXWeeks
+    name: OlderThanXWeeks
+  - uid: Microsoft.Dynamics.CRM.OlderThanXYears
+    name: OlderThanXYears
+  - uid: Microsoft.Dynamics.CRM.On
+    name: On
+  - uid: Microsoft.Dynamics.CRM.OnOrAfter
+    name: OnOrAfter
+  - uid: Microsoft.Dynamics.CRM.OnOrBefore
+    name: OnOrBefore
+  - uid: Microsoft.Dynamics.CRM.ThisFiscalPeriod
+    name: ThisFiscalPeriod
+  - uid: Microsoft.Dynamics.CRM.ThisFiscalYear
+    name: ThisFiscalYear
+  - uid: Microsoft.Dynamics.CRM.ThisMonth
+    name: ThisMonth
+  - uid: Microsoft.Dynamics.CRM.ThisWeek
+    name: ThisWeek
+  - uid: Microsoft.Dynamics.CRM.ThisYear
+    name: ThisYear
+  - uid: Microsoft.Dynamics.CRM.Today
+    name: Today
+  - uid: Microsoft.Dynamics.CRM.Tomorrow
+    name: Tomorrow
+  - uid: Microsoft.Dynamics.CRM.Under
+    name: Under
+  - uid: Microsoft.Dynamics.CRM.UnderOrEqual
+    name: UnderOrEqual
+  - uid: Microsoft.Dynamics.CRM.Yesterday
+    name: Yesterday
+- uid: Microsoft.Dynamics.CRM.ComplexTypeIndex
+  name: ComplexType Reference
+  items:
+  - uid: Microsoft.Dynamics.CRM.AddItemCampaignActivityResponse
+    name: AddItemCampaignActivityResponse
+  - uid: Microsoft.Dynamics.CRM.AddMemberListResponse
+    name: AddMemberListResponse
+  - uid: Microsoft.Dynamics.CRM.AddSolutionComponentResponse
+    name: AddSolutionComponentResponse
+  - uid: Microsoft.Dynamics.CRM.AddToQueueResponse
+    name: AddToQueueResponse
+  - uid: Microsoft.Dynamics.CRM.AddUserToRecordTeamResponse
+    name: AddUserToRecordTeamResponse
+  - uid: Microsoft.Dynamics.CRM.AppointmentProposal
+    name: AppointmentProposal
+  - uid: Microsoft.Dynamics.CRM.AppointmentRequest
+    name: AppointmentRequest
+  - uid: Microsoft.Dynamics.CRM.AppointmentsToIgnore
+    name: AppointmentsToIgnore
+  - uid: Microsoft.Dynamics.CRM.AppValidationResponse
+    name: AppValidationResponse
+  - uid: Microsoft.Dynamics.CRM.AssociatedMenuConfiguration
+    name: AssociatedMenuConfiguration
+  - uid: Microsoft.Dynamics.CRM.AttributeMapping
+    name: AttributeMapping
+  - uid: Microsoft.Dynamics.CRM.AttributePrivilege
+    name: AttributePrivilege
+  - uid: Microsoft.Dynamics.CRM.AttributeQueryExpression
+    name: AttributeQueryExpression
+  - uid: Microsoft.Dynamics.CRM.AttributeRequiredLevelManagedProperty
+    name: AttributeRequiredLevelManagedProperty
+  - uid: Microsoft.Dynamics.CRM.AttributeTypeDisplayName
+    name: AttributeTypeDisplayName
+  - uid: Microsoft.Dynamics.CRM.AuditDetail
+    name: AuditDetail
+  - uid: Microsoft.Dynamics.CRM.AuditDetailCollection
+    name: AuditDetailCollection
+  - uid: Microsoft.Dynamics.CRM.AuditPartitionDetail
+    name: AuditPartitionDetail
+  - uid: Microsoft.Dynamics.CRM.BackgroundSendEmailResponse
+    name: BackgroundSendEmailResponse
+  - uid: Microsoft.Dynamics.CRM.BookResponse
+    name: BookResponse
+  - uid: Microsoft.Dynamics.CRM.BooleanManagedProperty
+    name: BooleanManagedProperty
+  - uid: Microsoft.Dynamics.CRM.BulkDeleteResponse
+    name: BulkDeleteResponse
+  - uid: Microsoft.Dynamics.CRM.BulkDetectDuplicatesResponse
+    name: BulkDetectDuplicatesResponse
+  - uid: Microsoft.Dynamics.CRM.BusinessNotification
+    name: BusinessNotification
+  - uid: Microsoft.Dynamics.CRM.BusinessNotificationParameter
+    name: BusinessNotificationParameter
+  - uid: Microsoft.Dynamics.CRM.CalculateActualValueOpportunityResponse
+    name: CalculateActualValueOpportunityResponse
+  - uid: Microsoft.Dynamics.CRM.CalculateTotalTimeIncidentResponse
+    name: CalculateTotalTimeIncidentResponse
+  - uid: Microsoft.Dynamics.CRM.CanBeReferencedResponse
+    name: CanBeReferencedResponse
+  - uid: Microsoft.Dynamics.CRM.CanBeReferencingResponse
+    name: CanBeReferencingResponse
+  - uid: Microsoft.Dynamics.CRM.CanManyToManyResponse
+    name: CanManyToManyResponse
+  - uid: Microsoft.Dynamics.CRM.CascadeConfiguration
+    name: CascadeConfiguration
+  - uid: Microsoft.Dynamics.CRM.CheckIncomingEmailResponse
+    name: CheckIncomingEmailResponse
+  - uid: Microsoft.Dynamics.CRM.CheckPromoteEmailResponse
+    name: CheckPromoteEmailResponse
+  - uid: Microsoft.Dynamics.CRM.CloneAsPatchResponse
+    name: CloneAsPatchResponse
+  - uid: Microsoft.Dynamics.CRM.CloneAsSolutionResponse
+    name: CloneAsSolutionResponse
+  - uid: Microsoft.Dynamics.CRM.ColumnSet
+    name: ColumnSet
+  - uid: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
+    name: ComplexAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.ComplexEntityKeyMetadata
+    name: ComplexEntityKeyMetadata
+  - uid: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    name: ComplexEntityMetadata
+  - uid: Microsoft.Dynamics.CRM.ComplexLookupAttributeMetadata
+    name: ComplexLookupAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.ComplexManyToManyRelationshipMetadata
+    name: ComplexManyToManyRelationshipMetadata
+  - uid: Microsoft.Dynamics.CRM.ComplexOneToManyRelationshipMetadata
+    name: ComplexOneToManyRelationshipMetadata
+  - uid: Microsoft.Dynamics.CRM.Component
+    name: Component
+  - uid: Microsoft.Dynamics.CRM.ComponentDetail
+    name: ComponentDetail
+  - uid: Microsoft.Dynamics.CRM.ConditionExpression
+    name: ConditionExpression
+  - uid: Microsoft.Dynamics.CRM.ConstraintRelation
+    name: ConstraintRelation
+  - uid: Microsoft.Dynamics.CRM.CreateActivitiesListResponse
+    name: CreateActivitiesListResponse
+  - uid: Microsoft.Dynamics.CRM.CreateCustomerRelationshipsResponse
+    name: CreateCustomerRelationshipsResponse
+  - uid: Microsoft.Dynamics.CRM.CreateExceptionResponse
+    name: CreateExceptionResponse
+  - uid: Microsoft.Dynamics.CRM.CreateInstanceResponse
+    name: CreateInstanceResponse
+  - uid: Microsoft.Dynamics.CRM.DateTimeBehavior
+    name: DateTimeBehavior
+  - uid: Microsoft.Dynamics.CRM.DeleteAndPromoteResponse
+    name: DeleteAndPromoteResponse
+  - uid: Microsoft.Dynamics.CRM.DeleteAuditDataResponse
+    name: DeleteAuditDataResponse
+  - uid: Microsoft.Dynamics.CRM.DeletedMetadataCollection
+    name: DeletedMetadataCollection
+  - uid: Microsoft.Dynamics.CRM.DownloadReportDefinitionResponse
+    name: DownloadReportDefinitionResponse
+  - uid: Microsoft.Dynamics.CRM.EndpointCollection
+    name: EndpointCollection
+  - uid: Microsoft.Dynamics.CRM.EntityKeyQueryExpression
+    name: EntityKeyQueryExpression
+  - uid: Microsoft.Dynamics.CRM.EntityQueryExpression
+    name: EntityQueryExpression
+  - uid: Microsoft.Dynamics.CRM.EntityRecordCountCollection
+    name: EntityRecordCountCollection
+  - uid: Microsoft.Dynamics.CRM.ErrorInfo
+    name: ErrorInfo
+  - uid: Microsoft.Dynamics.CRM.ExpandCalendarResponse
+    name: ExpandCalendarResponse
+  - uid: Microsoft.Dynamics.CRM.ExportFieldTranslationResponse
+    name: ExportFieldTranslationResponse
+  - uid: Microsoft.Dynamics.CRM.ExportMappingsImportMapResponse
+    name: ExportMappingsImportMapResponse
+  - uid: Microsoft.Dynamics.CRM.ExportSolutionResponse
+    name: ExportSolutionResponse
+  - uid: Microsoft.Dynamics.CRM.ExportTranslationResponse
+    name: ExportTranslationResponse
+  - uid: Microsoft.Dynamics.CRM.FetchXmlToQueryExpressionResponse
+    name: FetchXmlToQueryExpressionResponse
+  - uid: Microsoft.Dynamics.CRM.FilterExpression
+    name: FilterExpression
+  - uid: Microsoft.Dynamics.CRM.FindParentResourceGroupResponse
+    name: FindParentResourceGroupResponse
+  - uid: Microsoft.Dynamics.CRM.FormatAddressResponse
+    name: FormatAddressResponse
+  - uid: Microsoft.Dynamics.CRM.GetDistinctValuesImportFileResponse
+    name: GetDistinctValuesImportFileResponse
+  - uid: Microsoft.Dynamics.CRM.GetHeaderColumnsImportFileResponse
+    name: GetHeaderColumnsImportFileResponse
+  - uid: Microsoft.Dynamics.CRM.GetQuantityDecimalResponse
+    name: GetQuantityDecimalResponse
+  - uid: Microsoft.Dynamics.CRM.GetReportHistoryLimitResponse
+    name: GetReportHistoryLimitResponse
+  - uid: Microsoft.Dynamics.CRM.GetTimeZoneCodeByLocalizedNameResponse
+    name: GetTimeZoneCodeByLocalizedNameResponse
+  - uid: Microsoft.Dynamics.CRM.GetTrackingTokenEmailResponse
+    name: GetTrackingTokenEmailResponse
+  - uid: Microsoft.Dynamics.CRM.GetValidManyToManyResponse
+    name: GetValidManyToManyResponse
+  - uid: Microsoft.Dynamics.CRM.GetValidReferencedEntitiesResponse
+    name: GetValidReferencedEntitiesResponse
+  - uid: Microsoft.Dynamics.CRM.GetValidReferencingEntitiesResponse
+    name: GetValidReferencingEntitiesResponse
+  - uid: Microsoft.Dynamics.CRM.GuidCollection
+    name: GuidCollection
+  - uid: Microsoft.Dynamics.CRM.InputArgument
+    name: InputArgument
+  - uid: Microsoft.Dynamics.CRM.InputArgumentCollection
+    name: InputArgumentCollection
+  - uid: Microsoft.Dynamics.CRM.InsertOptionValueResponse
+    name: InsertOptionValueResponse
+  - uid: Microsoft.Dynamics.CRM.InsertStatusValueResponse
+    name: InsertStatusValueResponse
+  - uid: Microsoft.Dynamics.CRM.IsComponentCustomizableResponse
+    name: IsComponentCustomizableResponse
+  - uid: Microsoft.Dynamics.CRM.IsDataEncryptionActiveResponse
+    name: IsDataEncryptionActiveResponse
+  - uid: Microsoft.Dynamics.CRM.IsValidStateTransitionResponse
+    name: IsValidStateTransitionResponse
+  - uid: Microsoft.Dynamics.CRM.Label
+    name: Label
+  - uid: Microsoft.Dynamics.CRM.LabelQueryExpression
+    name: LabelQueryExpression
+  - uid: Microsoft.Dynamics.CRM.LinkEntity
+    name: LinkEntity
+  - uid: Microsoft.Dynamics.CRM.LocalizedLabel
+    name: LocalizedLabel
+  - uid: Microsoft.Dynamics.CRM.MailboxTrackingFolderMapping
+    name: MailboxTrackingFolderMapping
+  - uid: Microsoft.Dynamics.CRM.MetadataConditionExpression
+    name: MetadataConditionExpression
+  - uid: Microsoft.Dynamics.CRM.MetadataFilterExpression
+    name: MetadataFilterExpression
+  - uid: Microsoft.Dynamics.CRM.MetadataPropertiesExpression
+    name: MetadataPropertiesExpression
+  - uid: Microsoft.Dynamics.CRM.MissingComponent
+    name: MissingComponent
+  - uid: Microsoft.Dynamics.CRM.new_TestActionResponse
+    name: new_TestActionResponse
+  - uid: Microsoft.Dynamics.CRM.Object
+    name: Object
+  - uid: Microsoft.Dynamics.CRM.ObjectiveRelation
+    name: ObjectiveRelation
+  - uid: Microsoft.Dynamics.CRM.OptionMetadata
+    name: OptionMetadata
+  - uid: Microsoft.Dynamics.CRM.OrderExpression
+    name: OrderExpression
+  - uid: Microsoft.Dynamics.CRM.OrganizationDetail
+    name: OrganizationDetail
+  - uid: Microsoft.Dynamics.CRM.OrganizationResources
+    name: OrganizationResources
+  - uid: Microsoft.Dynamics.CRM.PagingInfo
+    name: PagingInfo
+  - uid: Microsoft.Dynamics.CRM.PrincipalAccess
+    name: PrincipalAccess
+  - uid: Microsoft.Dynamics.CRM.PropagateByExpressionResponse
+    name: PropagateByExpressionResponse
+  - uid: Microsoft.Dynamics.CRM.ProposalParty
+    name: ProposalParty
+  - uid: Microsoft.Dynamics.CRM.QueryBase
+    name: QueryBase
+  - uid: Microsoft.Dynamics.CRM.QueryExpression
+    name: QueryExpression
+  - uid: Microsoft.Dynamics.CRM.QueryExpressionToFetchXmlResponse
+    name: QueryExpressionToFetchXmlResponse
+  - uid: Microsoft.Dynamics.CRM.QueryMultipleSchedulesResponse
+    name: QueryMultipleSchedulesResponse
+  - uid: Microsoft.Dynamics.CRM.QueryScheduleResponse
+    name: QueryScheduleResponse
+  - uid: Microsoft.Dynamics.CRM.RelationshipQueryExpression
+    name: RelationshipQueryExpression
+  - uid: Microsoft.Dynamics.CRM.RemoveSolutionComponentResponse
+    name: RemoveSolutionComponentResponse
+  - uid: Microsoft.Dynamics.CRM.RemoveUserFromRecordTeamResponse
+    name: RemoveUserFromRecordTeamResponse
+  - uid: Microsoft.Dynamics.CRM.RequiredResource
+    name: RequiredResource
+  - uid: Microsoft.Dynamics.CRM.RescheduleResponse
+    name: RescheduleResponse
+  - uid: Microsoft.Dynamics.CRM.ResourceInfo
+    name: ResourceInfo
+  - uid: Microsoft.Dynamics.CRM.RetrieveAbsoluteAndSiteCollectionUrlResponse
+    name: RetrieveAbsoluteAndSiteCollectionUrlResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveAllEntitiesResponse
+    name: RetrieveAllEntitiesResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveApplicationRibbonResponse
+    name: RetrieveApplicationRibbonResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveAttributeChangeHistoryResponse
+    name: RetrieveAttributeChangeHistoryResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveAuditDetailsResponse
+    name: RetrieveAuditDetailsResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveAuditPartitionListResponse
+    name: RetrieveAuditPartitionListResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveAvailableLanguagesResponse
+    name: RetrieveAvailableLanguagesResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveCurrentOrganizationResponse
+    name: RetrieveCurrentOrganizationResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveDataEncryptionKeyResponse
+    name: RetrieveDataEncryptionKeyResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveDeploymentLicenseTypeResponse
+    name: RetrieveDeploymentLicenseTypeResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveDeprovisionedLanguagesResponse
+    name: RetrieveDeprovisionedLanguagesResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveEntityResponse
+    name: RetrieveEntityResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveEntityRibbonResponse
+    name: RetrieveEntityRibbonResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveExchangeRateResponse
+    name: RetrieveExchangeRateResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveFormattedImportJobResultsResponse
+    name: RetrieveFormattedImportJobResultsResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveInstalledLanguagePacksResponse
+    name: RetrieveInstalledLanguagePacksResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveInstalledLanguagePackVersionResponse
+    name: RetrieveInstalledLanguagePackVersionResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveLicenseInfoResponse
+    name: RetrieveLicenseInfoResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveLocLabelsResponse
+    name: RetrieveLocLabelsResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveMailboxTrackingFoldersResponse
+    name: RetrieveMailboxTrackingFoldersResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveMetadataChangesResponse
+    name: RetrieveMetadataChangesResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveMissingComponentsResponse
+    name: RetrieveMissingComponentsResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveOrganizationResourcesResponse
+    name: RetrieveOrganizationResourcesResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveParsedDataImportFileResponse
+    name: RetrieveParsedDataImportFileResponse
+  - uid: Microsoft.Dynamics.CRM.RetrievePrincipalAccessResponse
+    name: RetrievePrincipalAccessResponse
+  - uid: Microsoft.Dynamics.CRM.RetrievePrincipalAttributePrivilegesResponse
+    name: RetrievePrincipalAttributePrivilegesResponse
+  - uid: Microsoft.Dynamics.CRM.RetrievePrincipalSyncAttributeMappingsResponse
+    name: RetrievePrincipalSyncAttributeMappingsResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveProvisionedLanguagePackVersionResponse
+    name: RetrieveProvisionedLanguagePackVersionResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveProvisionedLanguagesResponse
+    name: RetrieveProvisionedLanguagesResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveRecordChangeHistoryResponse
+    name: RetrieveRecordChangeHistoryResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveRolePrivilegesRoleResponse
+    name: RetrieveRolePrivilegesRoleResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccessResponse
+    name: RetrieveSharedPrincipalsAndAccessResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveTeamPrivilegesResponse
+    name: RetrieveTeamPrivilegesResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveTimestampResponse
+    name: RetrieveTimestampResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveTotalRecordCountResponse
+    name: RetrieveTotalRecordCountResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivilegesResponse
+    name: RetrieveUserPrivilegesResponse
+  - uid: Microsoft.Dynamics.CRM.RetrieveVersionResponse
+    name: RetrieveVersionResponse
+  - uid: Microsoft.Dynamics.CRM.RolePrivilege
+    name: RolePrivilege
+  - uid: Microsoft.Dynamics.CRM.SearchResponse
+    name: SearchResponse
+  - uid: Microsoft.Dynamics.CRM.SearchResults
+    name: SearchResults
+  - uid: Microsoft.Dynamics.CRM.SecurityPrivilegeMetadata
+    name: SecurityPrivilegeMetadata
+  - uid: Microsoft.Dynamics.CRM.SendEmailResponse
+    name: SendEmailResponse
+  - uid: Microsoft.Dynamics.CRM.StateOptionMetadata
+    name: StateOptionMetadata
+  - uid: Microsoft.Dynamics.CRM.StatusOptionMetadata
+    name: StatusOptionMetadata
+  - uid: Microsoft.Dynamics.CRM.StringCollection
+    name: StringCollection
+  - uid: Microsoft.Dynamics.CRM.StringFormatName
+    name: StringFormatName
+  - uid: Microsoft.Dynamics.CRM.TimeInfo
+    name: TimeInfo
+  - uid: Microsoft.Dynamics.CRM.TimeInfoCollection
+    name: TimeInfoCollection
+  - uid: Microsoft.Dynamics.CRM.TraceInfo
+    name: TraceInfo
+  - uid: Microsoft.Dynamics.CRM.ValidateAppResponse
+    name: ValidateAppResponse
+  - uid: Microsoft.Dynamics.CRM.ValidateRecurrenceRuleResponse
+    name: ValidateRecurrenceRuleResponse
+  - uid: Microsoft.Dynamics.CRM.ValidateResponse
+    name: ValidateResponse
+  - uid: Microsoft.Dynamics.CRM.ValidationIssue
+    name: ValidationIssue
+  - uid: Microsoft.Dynamics.CRM.ValidationResult
+    name: ValidationResult
+  - uid: Microsoft.Dynamics.CRM.WhoAmIResponse
+    name: WhoAmIResponse
+- uid: Microsoft.Dynamics.CRM.EnumTypeIndex
+  name: EnumType Reference
+  items:
+  - uid: Microsoft.Dynamics.CRM.AccessRights
+    name: AccessRights
+  - uid: Microsoft.Dynamics.CRM.AssociatedMenuBehavior
+    name: AssociatedMenuBehavior
+  - uid: Microsoft.Dynamics.CRM.AssociatedMenuGroup
+    name: AssociatedMenuGroup
+  - uid: Microsoft.Dynamics.CRM.AttributeRequiredLevel
+    name: AttributeRequiredLevel
+  - uid: Microsoft.Dynamics.CRM.AttributeTypeCode
+    name: AttributeTypeCode
+  - uid: Microsoft.Dynamics.CRM.BusinessNotificationParameterType
+    name: BusinessNotificationParameterType
+  - uid: Microsoft.Dynamics.CRM.BusinessNotificationSeverity
+    name: BusinessNotificationSeverity
+  - uid: Microsoft.Dynamics.CRM.CascadeType
+    name: CascadeType
+  - uid: Microsoft.Dynamics.CRM.ConditionOperator
+    name: ConditionOperator
+  - uid: Microsoft.Dynamics.CRM.DateTimeFormat
+    name: DateTimeFormat
+  - uid: Microsoft.Dynamics.CRM.DeletedMetadataFilters
+    name: DeletedMetadataFilters
+  - uid: Microsoft.Dynamics.CRM.EndpointAccessType
+    name: EndpointAccessType
+  - uid: Microsoft.Dynamics.CRM.EndpointType
+    name: EndpointType
+  - uid: Microsoft.Dynamics.CRM.EntityFilters
+    name: EntityFilters
+  - uid: Microsoft.Dynamics.CRM.EntityKeyIndexStatus
+    name: EntityKeyIndexStatus
+  - uid: Microsoft.Dynamics.CRM.ErrorType
+    name: ErrorType
+  - uid: Microsoft.Dynamics.CRM.ImeMode
+    name: ImeMode
+  - uid: Microsoft.Dynamics.CRM.IntegerFormat
+    name: IntegerFormat
+  - uid: Microsoft.Dynamics.CRM.JoinOperator
+    name: JoinOperator
+  - uid: Microsoft.Dynamics.CRM.LogicalOperator
+    name: LogicalOperator
+  - uid: Microsoft.Dynamics.CRM.LookupFormat
+    name: LookupFormat
+  - uid: Microsoft.Dynamics.CRM.ManagedPropertyEvaluationPriority
+    name: ManagedPropertyEvaluationPriority
+  - uid: Microsoft.Dynamics.CRM.ManagedPropertyOperation
+    name: ManagedPropertyOperation
+  - uid: Microsoft.Dynamics.CRM.ManagedPropertyType
+    name: ManagedPropertyType
+  - uid: Microsoft.Dynamics.CRM.MetadataConditionOperator
+    name: MetadataConditionOperator
+  - uid: Microsoft.Dynamics.CRM.OptionSetType
+    name: OptionSetType
+  - uid: Microsoft.Dynamics.CRM.OrderType
+    name: OrderType
+  - uid: Microsoft.Dynamics.CRM.OrganizationState
+    name: OrganizationState
+  - uid: Microsoft.Dynamics.CRM.OwnershipTypes
+    name: OwnershipTypes
+  - uid: Microsoft.Dynamics.CRM.PrivilegeDepth
+    name: PrivilegeDepth
+  - uid: Microsoft.Dynamics.CRM.PrivilegeType
+    name: PrivilegeType
+  - uid: Microsoft.Dynamics.CRM.PropagationOwnershipOptions
+    name: PropagationOwnershipOptions
+  - uid: Microsoft.Dynamics.CRM.RelationshipType
+    name: RelationshipType
+  - uid: Microsoft.Dynamics.CRM.RibbonLocationFilters
+    name: RibbonLocationFilters
+  - uid: Microsoft.Dynamics.CRM.RollupType
+    name: RollupType
+  - uid: Microsoft.Dynamics.CRM.SearchDirection
+    name: SearchDirection
+  - uid: Microsoft.Dynamics.CRM.SecurityTypes
+    name: SecurityTypes
+  - uid: Microsoft.Dynamics.CRM.StringFormat
+    name: StringFormat
+  - uid: Microsoft.Dynamics.CRM.SubCode
+    name: SubCode
+  - uid: Microsoft.Dynamics.CRM.TargetFieldType
+    name: TargetFieldType
+  - uid: Microsoft.Dynamics.CRM.TimeCode
+    name: TimeCode
+- uid: Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+  name: Metadata EntityType Reference
+  items:
+  - uid: Microsoft.Dynamics.CRM.AttributeMetadata
+    name: AttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.BigIntAttributeMetadata
+    name: BigIntAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.BooleanAttributeMetadata
+    name: BooleanAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.BooleanOptionSetMetadata
+    name: BooleanOptionSetMetadata
+  - uid: Microsoft.Dynamics.CRM.crmmodelbaseentity
+    name: crmmodelbaseentity
+  - uid: Microsoft.Dynamics.CRM.DateTimeAttributeMetadata
+    name: DateTimeAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.DecimalAttributeMetadata
+    name: DecimalAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.DoubleAttributeMetadata
+    name: DoubleAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.EntityKeyMetadata
+    name: EntityKeyMetadata
+  - uid: Microsoft.Dynamics.CRM.EntityMetadata
+    name: EntityMetadata
+  - uid: Microsoft.Dynamics.CRM.EntityNameAttributeMetadata
+    name: EntityNameAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.EnumAttributeMetadata
+    name: EnumAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.ImageAttributeMetadata
+    name: ImageAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.IntegerAttributeMetadata
+    name: IntegerAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.LookupAttributeMetadata
+    name: LookupAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.ManagedPropertyAttributeMetadata
+    name: ManagedPropertyAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.ManagedPropertyMetadata
+    name: ManagedPropertyMetadata
+  - uid: Microsoft.Dynamics.CRM.ManyToManyRelationshipMetadata
+    name: ManyToManyRelationshipMetadata
+  - uid: Microsoft.Dynamics.CRM.MemoAttributeMetadata
+    name: MemoAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.MetadataBase
+    name: MetadataBase
+  - uid: Microsoft.Dynamics.CRM.MoneyAttributeMetadata
+    name: MoneyAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.MultiSelectPicklistAttributeMetadata
+    name: MultiSelectPicklistAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata
+    name: OneToManyRelationshipMetadata
+  - uid: Microsoft.Dynamics.CRM.OptionSetMetadata
+    name: OptionSetMetadata
+  - uid: Microsoft.Dynamics.CRM.OptionSetMetadataBase
+    name: OptionSetMetadataBase
+  - uid: Microsoft.Dynamics.CRM.PicklistAttributeMetadata
+    name: PicklistAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.RelationshipMetadataBase
+    name: RelationshipMetadataBase
+  - uid: Microsoft.Dynamics.CRM.StateAttributeMetadata
+    name: StateAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.StatusAttributeMetadata
+    name: StatusAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.StringAttributeMetadata
+    name: StringAttributeMetadata
+  - uid: Microsoft.Dynamics.CRM.UniqueIdentifierAttributeMetadata
+    name: UniqueIdentifierAttributeMetadata
+- uid: Microsoft.Dynamics.CRM.SolutionIndex
+  name: Solutions Reference
+  items:
+  - uid: Microsoft.Dynamics.CRM.msdynce_Activities
+    name: Activities
+  - uid: Microsoft.Dynamics.CRM.ActivityFeedsCore
+    name: Activity Feeds
+  - uid: Microsoft.Dynamics.CRM.AppforOutlook
+    name: App for Outlook
+  - uid: Microsoft.Dynamics.CRM.msdynce_AppCommon
+    name: Application Common
+  - uid: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagement
+    name: Knowledge Management
+  - uid: Microsoft.Dynamics.CRM.msdynce_LeadManagement
+    name: Lead Management
+  - uid: Microsoft.Dynamics.CRM.msdynce_Marketing
+    name: Marketing
+  - uid: Microsoft.Dynamics.CRM.msdynce_MarketingSales
+    name: Marketing Sales
+  - uid: Microsoft.Dynamics.CRM.msdynce_MarketingService
+    name: Marketing Service
+  - uid: Microsoft.Dynamics.CRM.ODatav4DataProvider
+    name: OData v4 Data Provider
+  - uid: Microsoft.Dynamics.CRM.msdynce_ProductManagement
+    name: Product Management
+  - uid: Microsoft.Dynamics.CRM.msdynce_Sales
+    name: Sales
+  - uid: Microsoft.Dynamics.CRM.msdynce_SalesService
+    name: Sales Service
+  - uid: Microsoft.Dynamics.CRM.msdynce_Scheduling
+    name: Scheduling
+  - uid: Microsoft.Dynamics.CRM.msdynce_Service
+    name: Service
+  - uid: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreement
+    name: Service Level Agreement (SLA)
+  - uid: Microsoft.Dynamics.CRM.msdynce_SocialProfile
+    name: Social Profile
+  - uid: Microsoft.Dynamics.CRM.System
+    name: System Solution
+  - uid: Microsoft.Dynamics.CRM.TestSolution
+    name: Test Solution

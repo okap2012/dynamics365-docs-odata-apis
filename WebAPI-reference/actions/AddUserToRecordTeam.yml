@@ -1,0 +1,60 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.AddUserToRecordTeam
+name: "AddUserToRecordTeam"
+type: action
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement AddUserToRecordTeam Action Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: c99d5329-481e-466a-99c5-116df1c7ee4a
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement AddUserToRecordTeam Action."
+namespace: Microsoft.Dynamics.CRM
+header: 
+  description: "Adds a user to the auto created access team for the specified record. "
+  solution: Microsoft.Dynamics.CRM.System
+bound_entities:
+  description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."
+  bound_entity_items:
+  - entity_type: Microsoft.Dynamics.CRM.systemuser
+    binding_type: entity
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: Record
+    type: Microsoft.Dynamics.CRM.crmbaseentity
+    nullable: false
+    unicode: true
+    description: "Record for which the access team is auto created. "
+  - name: TeamTemplate
+    type: Microsoft.Dynamics.CRM.teamtemplate
+    nullable: false
+    unicode: true
+    description: "Team template that is used to create the access team."
+return_type:
+  description: "The AddUserToRecordTeam action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.AddUserToRecordTeamResponse
+entities:
+  description: "Use the AddUserToRecordTeam action with this entity type:"
+  entity_items:
+  - Microsoft.Dynamics.CRM.teamtemplate
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

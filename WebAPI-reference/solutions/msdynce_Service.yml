@@ -1,0 +1,87 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_Service
+name: "Service"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Service Solution Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: e32fb4b1-fcb1-4a6a-849a-9cceac30be66
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Service Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Dynamics 365 workload for service."
+ unique_name: msdynce_Service
+ version: 9.0.1.5
+ customization_prefix: none
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - Microsoft.Dynamics.CRM.account
+   - Microsoft.Dynamics.CRM.actioncard
+   - Microsoft.Dynamics.CRM.activityparty
+   - Microsoft.Dynamics.CRM.activitypointer
+   - Microsoft.Dynamics.CRM.appointment
+   - Microsoft.Dynamics.CRM.calendarrule
+   - Microsoft.Dynamics.CRM.connection
+   - Microsoft.Dynamics.CRM.constraintbasedgroup
+   - Microsoft.Dynamics.CRM.contact
+   - Microsoft.Dynamics.CRM.contract
+   - Microsoft.Dynamics.CRM.contractdetail
+   - Microsoft.Dynamics.CRM.contracttemplate
+   - Microsoft.Dynamics.CRM.email
+   - Microsoft.Dynamics.CRM.entitlement
+   - Microsoft.Dynamics.CRM.entitlementchannel
+   - Microsoft.Dynamics.CRM.entitlementcontacts
+   - Microsoft.Dynamics.CRM.entitlementproducts
+   - Microsoft.Dynamics.CRM.entitlementtemplate
+   - Microsoft.Dynamics.CRM.entitlementtemplatechannel
+   - Microsoft.Dynamics.CRM.entitlementtemplateproducts
+   - Microsoft.Dynamics.CRM.equipment
+   - Microsoft.Dynamics.CRM.fax
+   - Microsoft.Dynamics.CRM.incident
+   - Microsoft.Dynamics.CRM.incidentknowledgebaserecord
+   - Microsoft.Dynamics.CRM.incidentresolution
+   - Microsoft.Dynamics.CRM.knowledgearticle
+   - Microsoft.Dynamics.CRM.knowledgearticleincident
+   - Microsoft.Dynamics.CRM.knowledgebaserecord
+   - Microsoft.Dynamics.CRM.lead
+   - Microsoft.Dynamics.CRM.letter
+   - Microsoft.Dynamics.CRM.phonecall
+   - Microsoft.Dynamics.CRM.phonetocaseprocess
+   - Microsoft.Dynamics.CRM.postfollow
+   - Microsoft.Dynamics.CRM.postregarding
+   - Microsoft.Dynamics.CRM.recurringappointmentmaster
+   - Microsoft.Dynamics.CRM.resource
+   - Microsoft.Dynamics.CRM.resourcegroup
+   - Microsoft.Dynamics.CRM.resourcespec
+   - Microsoft.Dynamics.CRM.service
+   - Microsoft.Dynamics.CRM.serviceappointment
+   - Microsoft.Dynamics.CRM.servicecontractcontacts
+   - Microsoft.Dynamics.CRM.site
+   - Microsoft.Dynamics.CRM.slakpiinstance
+   - Microsoft.Dynamics.CRM.socialactivity
+   - Microsoft.Dynamics.CRM.socialprofile
+   - Microsoft.Dynamics.CRM.systemuser
+   - Microsoft.Dynamics.CRM.task
+   - Microsoft.Dynamics.CRM.template
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

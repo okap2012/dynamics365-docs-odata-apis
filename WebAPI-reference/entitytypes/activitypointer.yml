@@ -1,0 +1,661 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.activitypointer
+name: "activitypointer"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement activitypointer EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: d8413f17-5b14-41c1-bb4b-b8553945ab90
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement activitypointer entitytype."
+header: 
+  description: "Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar."
+  entity_set_path: "[organization URI]/api/data/v9.0/activitypointers"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Activity
+  primary_key: activityid
+  primary_name_attribute: subject
+  operations_supported: 
+  - GET
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: activityadditionalparams
+      type: Edm.String
+      display_name: "Activity Additional Parameters"
+      description: "Additional information provided by the external application as JSON. For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: activityid
+      type: Edm.Guid
+      display_name: "Activity"
+      description: "Unique identifier of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: activitytypecode
+      type: Edm.String
+      display_name: "Activity Type"
+      description: "Type of activity."
+      iscomputed: false
+      isreadonly: true
+    - name: actualdurationminutes
+      type: Edm.Int32
+      display_name: "Actual Duration"
+      description: "Actual duration of the activity in minutes."
+      iscomputed: false
+      isreadonly: false
+    - name: actualend
+      type: Edm.DateTimeOffset
+      display_name: "Actual End"
+      description: "Actual end time of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: actualstart
+      type: Edm.DateTimeOffset
+      display_name: "Actual Start"
+      description: "Actual start time of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: community
+      type: Edm.Int32
+      display_name: "Social Channel"
+      description: "Shows how contact about the social activity originated, such as from Twitter or Facebook. This field is read-only."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Facebook"
+        - value: 2
+          label: "Twitter"
+        - value: 0
+          label: "Other"
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Date Created"
+      description: "Date and time when the activity was created."
+      iscomputed: false
+      isreadonly: true
+    - name: deliverylastattemptedon
+      type: Edm.DateTimeOffset
+      display_name: "Date Delivery Last Attempted"
+      description: "Date and time when the delivery of the activity was last attempted."
+      iscomputed: false
+      isreadonly: true
+    - name: deliveryprioritycode
+      type: Edm.Int32
+      display_name: "Delivery Priority"
+      description: "Priority of delivery of the activity to the email server."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Low"
+        - value: 1
+          label: "Normal"
+        - value: 2
+          label: "High"
+    - name: description
+      type: Edm.String
+      display_name: "Description"
+      description: "Description of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: exchangeitemid
+      type: Edm.String
+      display_name: "Exchange Item ID"
+      description: "The message id of activity which is returned from Exchange Server."
+      iscomputed: false
+      isreadonly: false
+    - name: exchangerate
+      type: Edm.Decimal
+      display_name: "Exchange Rate"
+      description: "Exchange rate for the currency associated with the activitypointer with respect to the base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: exchangeweblink
+      type: Edm.String
+      display_name: "Exchange WebLink"
+      description: "Shows the web link of Activity of type email."
+      iscomputed: false
+      isreadonly: false
+    - name: instancetypecode
+      type: Edm.Int32
+      display_name: "Recurring Instance Type"
+      description: "Type of instance of a recurring series."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 0
+          label: "Not Recurring"
+        - value: 1
+          label: "Recurring Master"
+        - value: 2
+          label: "Recurring Instance"
+        - value: 3
+          label: "Recurring Exception"
+        - value: 4
+          label: "Recurring Future Exception"
+    - name: isbilled
+      type: Edm.Boolean
+      display_name: "Is Billed"
+      description: "Information regarding whether the activity was billed as part of resolving a case."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: ismapiprivate
+      type: Edm.Boolean
+      display_name: "Is Private"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: isregularactivity
+      type: Edm.Boolean
+      display_name: "Is Regular Activity"
+      description: "Information regarding whether the activity is a regular activity type or event type."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: isworkflowcreated
+      type: Edm.Boolean
+      display_name: "Is Workflow Created"
+      description: "Information regarding whether the activity was created from a workflow rule."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: lastonholdtime
+      type: Edm.DateTimeOffset
+      display_name: "Last On Hold Time"
+      description: "Contains the date and time stamp of the last on hold time."
+      iscomputed: false
+      isreadonly: false
+    - name: leftvoicemail
+      type: Edm.Boolean
+      display_name: "Left Voice Mail"
+      description: "Left the voice mail"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Last Updated"
+      description: "Date and time when activity was last modified."
+      iscomputed: false
+      isreadonly: true
+    - name: onholdtime
+      type: Edm.Int32
+      display_name: "On Hold Time (Minutes)"
+      description: "Shows how long, in minutes, that the record was on hold."
+      iscomputed: false
+      isreadonly: true
+    - name: postponeactivityprocessinguntil
+      type: Edm.DateTimeOffset
+      display_name: "Delay activity processing until"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: true
+    - name: prioritycode
+      type: Edm.Int32
+      display_name: "Priority"
+      description: "Priority of the activity."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Low"
+        - value: 1
+          label: "Normal"
+        - value: 2
+          label: "High"
+    - name: processid
+      type: Edm.Guid
+      display_name: "Process"
+      description: "Unique identifier of the Process."
+      iscomputed: false
+      isreadonly: false
+    - name: scheduleddurationminutes
+      type: Edm.Int32
+      display_name: "Scheduled Duration"
+      description: "Scheduled duration of the activity, specified in minutes."
+      iscomputed: false
+      isreadonly: false
+    - name: scheduledend
+      type: Edm.DateTimeOffset
+      display_name: "Due Date"
+      description: "Scheduled end time of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: scheduledstart
+      type: Edm.DateTimeOffset
+      display_name: "Start Date"
+      description: "Scheduled start time of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: senton
+      type: Edm.DateTimeOffset
+      display_name: "Date Sent"
+      description: "Date and time when the activity was sent."
+      iscomputed: false
+      isreadonly: true
+    - name: seriesid
+      type: Edm.Guid
+      display_name: "Series Id"
+      description: "Uniqueidentifier specifying the id of recurring series of an instance."
+      iscomputed: false
+      isreadonly: true
+    - name: sortdate
+      type: Edm.DateTimeOffset
+      display_name: "Sort Date"
+      description: "Shows the date and time by which the activities are sorted."
+      iscomputed: false
+      isreadonly: false
+    - name: stageid
+      type: Edm.Guid
+      display_name: "Process Stage"
+      description: "Unique identifier of the Stage."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Activity Status"
+      description: "Status of the activity."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Open"
+        - value: 1
+          label: "Completed"
+        - value: 2
+          label: "Canceled"
+        - value: 3
+          label: "Scheduled"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the activity."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Open"
+        - value: 2
+          label: "Completed"
+        - value: 3
+          label: "Canceled"
+        - value: 4
+          label: "Scheduled"
+    - name: subject
+      type: Edm.String
+      display_name: "Subject"
+      description: "Subject associated with the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: traversedpath
+      type: Edm.String
+      display_name: "Traversed Path"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version number of the activity."
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the activity."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the activitypointer."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of user who last modified the activity."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who last modified the activitypointer."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Unique identifier of the user or team who owns the activity."
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier of the business unit that owns the activity."
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier of the team that owns the activity."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier of the user that owns the activity."
+  - name: _regardingobjectid_value
+    single_valued_navigation_property:
+    - regardingobjectid_lead
+    - regardingobjectid_bookableresourcebooking
+    - regardingobjectid_bookableresourcebookingheader
+    - regardingobjectid_campaign
+    - regardingobjectid_contract
+    - regardingobjectid_entitlement
+    - regardingobjectid_entitlementtemplate
+    - regardingobjectid_incident
+    - regardingobjectid_site
+    - regardingobjectid_invoice
+    - regardingobjectid_opportunity
+    - regardingobjectid_quote
+    - regardingobjectid_salesorder
+    - regardingobjectid_msdyn_postalbum
+    - regardingobjectid_new_interactionforemail
+    - regardingobjectid_knowledgebaserecord
+    - regardingobjectid_account
+    - regardingobjectid_contact
+    - regardingobjectid_knowledgearticle
+    description: "Unique identifier of the object with which the activity is associated."
+  - name: _sendermailboxid_value
+    single_valued_navigation_property:
+    - sendermailboxid
+    description: "Unique identifier of the mailbox associated with the sender of the email message."
+  - name: _serviceid_value
+    single_valued_navigation_property:
+    - serviceid
+    description: "Unique identifier of an associated service."
+  - name: _slaid_value
+    single_valued_navigation_property:
+    - sla_activitypointer_sla
+    description: "Choose the service level agreement (SLA) that you want to apply to the case record."
+  - name: _slainvokedid_value
+    single_valued_navigation_property:
+    - slainvokedid_activitypointer_sla
+    description: "Last SLA that was applied to this case. This field is for internal use only."
+  - name: _transactioncurrencyid_value
+    single_valued_navigation_property:
+    - transactioncurrencyid
+    description: "Unique identifier of the currency associated with the activitypointer."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_activitypointer_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_activitypointer_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_activitypointer_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_activitypointer_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_activitypointers
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_activitypointer
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_activity
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_activity
+  - name: regardingobjectid_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: Account_ActivityPointers
+  - name: regardingobjectid_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: bookableresourcebooking_ActivityPointers
+  - name: regardingobjectid_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: bookableresourcebookingheader_ActivityPointers
+  - name: regardingobjectid_bulkoperation
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: BulkOperation_ActivityPointers
+  - name: regardingobjectid_campaign
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: Campaign_ActivityPointers
+  - name: regardingobjectid_campaignactivity
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: CampaignActivity_ActivityPointers
+  - name: regardingobjectid_contact
+    type: Microsoft.Dynamics.CRM.contact
+    partner: Contact_ActivityPointers
+  - name: regardingobjectid_contract
+    type: Microsoft.Dynamics.CRM.contract
+    partner: Contract_ActivityPointers
+  - name: regardingobjectid_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: entitlement_ActivityPointers
+  - name: regardingobjectid_entitlementtemplate
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: entitlementtemplate_ActivityPointers
+  - name: regardingobjectid_incident
+    type: Microsoft.Dynamics.CRM.incident
+    partner: Incident_ActivityPointers
+  - name: regardingobjectid_invoice
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: Invoice_ActivityPointers
+  - name: regardingobjectid_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: KnowledgeArticle_ActivityPointers
+  - name: regardingobjectid_knowledgebaserecord
+    type: Microsoft.Dynamics.CRM.knowledgebaserecord
+    partner: KnowledgeBaseRecord_ActivityPointers
+  - name: regardingobjectid_lead
+    type: Microsoft.Dynamics.CRM.lead
+    partner: Lead_ActivityPointers
+  - name: regardingobjectid_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_ActivityPointers
+  - name: regardingobjectid_new_interactionforemail
+    type: Microsoft.Dynamics.CRM.interactionforemail
+    partner: new_interactionforemail_ActivityPointers
+  - name: regardingobjectid_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: Opportunity_ActivityPointers
+  - name: regardingobjectid_quote
+    type: Microsoft.Dynamics.CRM.quote
+    partner: Quote_ActivityPointers
+  - name: regardingobjectid_salesorder
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: SalesOrder_ActivityPointers
+  - name: regardingobjectid_site
+    type: Microsoft.Dynamics.CRM.site
+    partner: site_ActivityPointers
+  - name: sendermailboxid
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: activitypointer_sendermailboxid_mailbox
+  - name: serviceid
+    type: Microsoft.Dynamics.CRM.service
+    partner: service_activity_pointers
+  - name: sla_activitypointer_sla
+    type: Microsoft.Dynamics.CRM.sla
+    partner: manualsla_activitypointer
+  - name: slainvokedid_activitypointer_sla
+    type: Microsoft.Dynamics.CRM.sla
+    partner: sla_activitypointer
+  - name: transactioncurrencyid
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: TransactionCurrency_ActivityPointer
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: activity_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: originatingactivityid_activitypointer
+  - name: activity_pointer_activity_mime_attachment
+    type: Microsoft.Dynamics.CRM.activitymimeattachment
+    partner: objectid_activitypointer
+  - name: activity_pointer_appointment
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: activityid_activitypointer
+  - name: activity_pointer_BulkOperation
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: activityid_activitypointer
+  - name: activity_pointer_BulkOperation_logs
+    type: Microsoft.Dynamics.CRM.bulkoperationlog
+    partner: bulkoperationid_activitypointer
+  - name: activity_pointer_campaignactivity
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: activityid_activitypointer
+  - name: activity_pointer_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: activityid_activitypointer
+  - name: activity_pointer_email
+    type: Microsoft.Dynamics.CRM.email
+    partner: activityid_activitypointer
+  - name: activity_pointer_fax
+    type: Microsoft.Dynamics.CRM.fax
+    partner: activityid_activitypointer
+  - name: activity_pointer_incident_resolution
+    type: Microsoft.Dynamics.CRM.incidentresolution
+    partner: activityid_activitypointer
+  - name: activity_pointer_letter
+    type: Microsoft.Dynamics.CRM.letter
+    partner: activityid_activitypointer
+  - name: activity_pointer_opportunity_close
+    type: Microsoft.Dynamics.CRM.opportunityclose
+    partner: activityid_activitypointer
+  - name: activity_pointer_order_close
+    type: Microsoft.Dynamics.CRM.orderclose
+    partner: activityid_activitypointer
+  - name: activity_pointer_phonecall
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: activityid_activitypointer
+  - name: activity_pointer_quote_close
+    type: Microsoft.Dynamics.CRM.quoteclose
+    partner: activityid_activitypointer
+  - name: activity_pointer_recurrencerule
+    type: Microsoft.Dynamics.CRM.recurrencerule
+    partner: objectid
+  - name: activity_pointer_recurringappointmentmaster
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: activityid_activitypointer
+  - name: activity_pointer_service_appointment
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: activityid_activitypointer
+  - name: activity_pointer_socialactivity
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: activityid_activitypointer
+  - name: activity_pointer_task
+    type: Microsoft.Dynamics.CRM.task
+    partner: activityid_activitypointer
+  - name: activitypointer_activity_parties
+    type: Microsoft.Dynamics.CRM.activityparty
+    partner: activityid_activitypointer
+  - name: ActivityPointer_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_activitypointer
+  - name: ActivityPointer_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_activitypointer
+  - name: ActivityPointer_CampaignActivityItems
+    type: Microsoft.Dynamics.CRM.campaignactivityitem
+    partner: campaignactivityid
+  - name: activitypointer_connections1
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record1id_activitypointer
+  - name: activitypointer_connections2
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record2id_activitypointer
+  - name: ActivityPointer_QueueItem
+    type: Microsoft.Dynamics.CRM.queueitem
+    partner: objectid_activitypointer
+  - name: CreatedActivity_BulkOperationLogs
+    type: Microsoft.Dynamics.CRM.bulkoperationlog
+    partner: createdobjectid_activitypointer
+  - name: slakpiinstance_activitypointer
+    type: Microsoft.Dynamics.CRM.slakpiinstance
+    partner: regarding_activitypointer
+derived_types:
+  description: "The following entity types inherit from the activitypointer entity type."
+  derived_type_items:
+  - Microsoft.Dynamics.CRM.appointment 
+  - Microsoft.Dynamics.CRM.bulkoperation 
+  - Microsoft.Dynamics.CRM.campaignactivity 
+  - Microsoft.Dynamics.CRM.campaignresponse 
+  - Microsoft.Dynamics.CRM.email 
+  - Microsoft.Dynamics.CRM.fax 
+  - Microsoft.Dynamics.CRM.incidentresolution 
+  - Microsoft.Dynamics.CRM.letter 
+  - Microsoft.Dynamics.CRM.opportunityclose 
+  - Microsoft.Dynamics.CRM.orderclose 
+  - Microsoft.Dynamics.CRM.phonecall 
+  - Microsoft.Dynamics.CRM.quoteclose 
+  - Microsoft.Dynamics.CRM.recurringappointmentmaster 
+  - Microsoft.Dynamics.CRM.serviceappointment 
+  - Microsoft.Dynamics.CRM.socialactivity 
+  - Microsoft.Dynamics.CRM.task 
+operations:
+  description: "The following operations can be used with the activitypointer entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.Rollup
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the activitypointer entity type."
+  solution_items:
+  - Microsoft.Dynamics.CRM.AppforOutlook
+  - Microsoft.Dynamics.CRM.msdynce_Activities
+  - Microsoft.Dynamics.CRM.msdynce_Marketing
+  - Microsoft.Dynamics.CRM.msdynce_Service
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

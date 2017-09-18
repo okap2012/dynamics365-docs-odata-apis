@@ -1,0 +1,42 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreement
+name: "Service Level Agreement (SLA)"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Service Level Agreement (SLA) Solution Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 0c20ebf5-583f-476d-b7ea-b5e0d738b429
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Service Level Agreement (SLA) Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Dynamics 365 workload for service level agreements."
+ unique_name: msdynce_ServiceLevelAgreement
+ version: 1.0.0.0
+ customization_prefix: none
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - Microsoft.Dynamics.CRM.sla
+   - Microsoft.Dynamics.CRM.slaitem
+   - Microsoft.Dynamics.CRM.slakpiinstance
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

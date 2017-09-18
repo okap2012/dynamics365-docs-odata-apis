@@ -1,0 +1,591 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+name: "principalobjectattributeaccess"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement principalobjectattributeaccess EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 2d9c9b60-1989-4c54-a5cf-85163f11e593
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement principalobjectattributeaccess entitytype."
+header: 
+  description: "Defines CRM security principals (users and teams) access rights to secured field for an entity instance."
+  entity_set_path: "[organization URI]/api/data/v9.0/principalobjectattributeaccessset"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Field Sharing
+  primary_key: principalobjectattributeaccessid
+  primary_name_attribute: None
+  operations_supported: 
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: attributeid
+      type: Edm.Guid
+      display_name: "Secured field"
+      description: "Unique identifier of the shared secured field"
+      iscomputed: false
+      isreadonly: false
+    - name: principalobjectattributeaccessid
+      type: Edm.Guid
+      display_name: "Shared secured field"
+      description: "Unique identifier of the shared secured field instance"
+      iscomputed: false
+      isreadonly: false
+    - name: readaccess
+      type: Edm.Boolean
+      display_name: "Read permission"
+      description: "Read permission for secured field instance"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: updateaccess
+      type: Edm.Boolean
+      display_name: "Update permission"
+      description: "Update permission for secured field instance"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _objectid_value
+    single_valued_navigation_property:
+    - objectid_territory
+    - objectid_accountleads
+    - objectid_contactleads
+    - objectid_leadaddress
+    - objectid_lead
+    - objectid_dynamicproperty
+    - objectid_dynamicpropertyassociation
+    - objectid_dynamicpropertyinstance
+    - objectid_dynamicpropertyoptionsetitem
+    - objectid_pricelevel
+    - objectid_product
+    - objectid_productassociation
+    - objectid_productpricelevel
+    - objectid_productsubstitute
+    - objectid_uom
+    - objectid_uomschedule
+    - objectid_bookableresource
+    - objectid_bookableresourcebooking
+    - objectid_bookableresourcebookingheader
+    - objectid_bookableresourcecategory
+    - objectid_bookableresourcecategoryassn
+    - objectid_bookableresourcecharacteristic
+    - objectid_bookableresourcegroup
+    - objectid_bookingstatus
+    - objectid_characteristic
+    - objectid_ratingmodel
+    - objectid_ratingvalue
+    - objectid_bulkoperationlog
+    - objectid_campaign
+    - objectid_campaignactivityitem
+    - objectid_campaignitem
+    - objectid_list
+    - objectid_listmember
+    - objectid_constraintbasedgroup
+    - objectid_contract
+    - objectid_contractdetail
+    - objectid_contracttemplate
+    - objectid_entitlement
+    - objectid_entitlementchannel
+    - objectid_entitlementcontacts
+    - objectid_entitlementproducts
+    - objectid_entitlementtemplate
+    - objectid_entitlementtemplatechannel
+    - objectid_entitlementtemplateproducts
+    - objectid_equipment
+    - objectid_incident
+    - objectid_incidentknowledgebaserecord
+    - objectid_knowledgearticleincident
+    - objectid_phonetocaseprocess
+    - objectid_resource
+    - objectid_resourcegroup
+    - objectid_resourcespec
+    - objectid_service
+    - objectid_servicecontractcontacts
+    - objectid_site
+    - objectid_competitoraddress
+    - objectid_competitorproduct
+    - objectid_competitorsalesliterature
+    - objectid_contactinvoices
+    - objectid_contactorders
+    - objectid_contactquotes
+    - objectid_discount
+    - objectid_discounttype
+    - objectid_invoice
+    - objectid_invoicedetail
+    - objectid_leadcompetitors
+    - objectid_leadproduct
+    - objectid_leadtoopportunitysalesprocess
+    - objectid_opportunity
+    - objectid_opportunitycompetitors
+    - objectid_opportunityproduct
+    - objectid_opportunitysalesprocess
+    - objectid_productsalesliterature
+    - objectid_quote
+    - objectid_quotedetail
+    - objectid_salesliterature
+    - objectid_salesliteratureitem
+    - objectid_salesorder
+    - objectid_salesorderdetail
+    - objectid_competitor
+    - objectid_msdyn_postalbum
+    - objectid_msdyn_postconfig
+    - objectid_msdyn_postruleconfig
+    - objectid_msdyn_wallsavedquery
+    - objectid_msdyn_wallsavedqueryusersettings
+    - objectid_contact
+    - objectid_account
+    - objectid_knowledgearticle
+    - objectid_knowledgebaserecord
+    - objectid_reportcategory
+    - objectid_sharepointdocumentlocation
+    - objectid_connection
+    - objectid_position
+    - objectid_feedback
+    - objectid_mailmergetemplate
+    - objectid_sharepointsite
+    - objectid_socialprofile
+    - objectid_kbarticle
+    - objectid_knowledgearticleviews
+    - objectid_team
+    - objectid_businessunit
+    - objectid_queue
+    - objectid_customeraddress
+    - objectid_systemuser
+    - objectid_queueitem
+    - objectid_goal
+    description: "Unique identifier of the entity instance with shared secured field"
+  - name: _organizationid_value
+    single_valued_navigation_property:
+    - organizationid
+    description: "Unique identifier of the associated organization."
+  - name: _principalid_value
+    single_valued_navigation_property:
+    - principalid_systemuser
+    - principalid_team
+    description: "Unique identifier of the principal to which secured field is shared"
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: objectid_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: account_principalobjectattributeaccess
+  - name: objectid_accountleads
+    type: Microsoft.Dynamics.CRM.accountleads
+    partner: accountleads_PrincipalObjectAttributeAccesses
+  - name: objectid_appointment
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: appointment_principalobjectattributeaccess
+  - name: objectid_bookableresource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: bookableresource_PrincipalObjectAttributeAccesses
+  - name: objectid_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: bookableresourcebooking_PrincipalObjectAttributeAccesses
+  - name: objectid_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: bookableresourcebookingheader_PrincipalObjectAttributeAccesses
+  - name: objectid_bookableresourcecategory
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: bookableresourcecategory_PrincipalObjectAttributeAccesses
+  - name: objectid_bookableresourcecategoryassn
+    type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+    partner: bookableresourcecategoryassn_PrincipalObjectAttributeAccesses
+  - name: objectid_bookableresourcecharacteristic
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: bookableresourcecharacteristic_PrincipalObjectAttributeAccesses
+  - name: objectid_bookableresourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresourcegroup
+    partner: bookableresourcegroup_PrincipalObjectAttributeAccesses
+  - name: objectid_bookingstatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: bookingstatus_PrincipalObjectAttributeAccesses
+  - name: objectid_bulkoperation
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: bulkoperation_PrincipalObjectAttributeAccesses
+  - name: objectid_bulkoperationlog
+    type: Microsoft.Dynamics.CRM.bulkoperationlog
+    partner: bulkoperationlog_PrincipalObjectAttributeAccesses
+  - name: objectid_businessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: businessunit_principalobjectattributeaccess
+  - name: objectid_campaign
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: campaign_principalobjectattributeaccess
+  - name: objectid_campaignactivity
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: campaignactivity_principalobjectattributeaccess
+  - name: objectid_campaignactivityitem
+    type: Microsoft.Dynamics.CRM.campaignactivityitem
+    partner: campaignactivityitem_PrincipalObjectAttributeAccesses
+  - name: objectid_campaignitem
+    type: Microsoft.Dynamics.CRM.campaignitem
+    partner: campaignitem_PrincipalObjectAttributeAccesses
+  - name: objectid_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: campaignresponse_principalobjectattributeaccess
+  - name: objectid_characteristic
+    type: Microsoft.Dynamics.CRM.characteristic
+    partner: characteristic_PrincipalObjectAttributeAccesses
+  - name: objectid_competitor
+    type: Microsoft.Dynamics.CRM.competitor
+    partner: competitor_principalobjectattributeaccess
+  - name: objectid_competitoraddress
+    type: Microsoft.Dynamics.CRM.competitoraddress
+    partner: competitoraddress_PrincipalObjectAttributeAccesses
+  - name: objectid_competitorproduct
+    type: Microsoft.Dynamics.CRM.competitorproduct
+    partner: competitorproduct_PrincipalObjectAttributeAccesses
+  - name: objectid_competitorsalesliterature
+    type: Microsoft.Dynamics.CRM.competitorsalesliterature
+    partner: competitorsalesliterature_PrincipalObjectAttributeAccesses
+  - name: objectid_connection
+    type: Microsoft.Dynamics.CRM.connection
+    partner: connection_principalobjectattributeaccess
+  - name: objectid_constraintbasedgroup
+    type: Microsoft.Dynamics.CRM.constraintbasedgroup
+    partner: constraintbasedgroup_PrincipalObjectAttributeAccesses
+  - name: objectid_contact
+    type: Microsoft.Dynamics.CRM.contact
+    partner: contact_principalobjectattributeaccess
+  - name: objectid_contactinvoices
+    type: Microsoft.Dynamics.CRM.contactinvoices
+    partner: contactinvoices_PrincipalObjectAttributeAccesses
+  - name: objectid_contactleads
+    type: Microsoft.Dynamics.CRM.contactleads
+    partner: contactleads_PrincipalObjectAttributeAccesses
+  - name: objectid_contactorders
+    type: Microsoft.Dynamics.CRM.contactorders
+    partner: contactorders_PrincipalObjectAttributeAccesses
+  - name: objectid_contactquotes
+    type: Microsoft.Dynamics.CRM.contactquotes
+    partner: contactquotes_PrincipalObjectAttributeAccesses
+  - name: objectid_contract
+    type: Microsoft.Dynamics.CRM.contract
+    partner: contract_principalobjectattributeaccess
+  - name: objectid_contractdetail
+    type: Microsoft.Dynamics.CRM.contractdetail
+    partner: contractdetail_principalobjectattributeaccess
+  - name: objectid_contracttemplate
+    type: Microsoft.Dynamics.CRM.contracttemplate
+    partner: contracttemplate_PrincipalObjectAttributeAccesses
+  - name: objectid_customeraddress
+    type: Microsoft.Dynamics.CRM.customeraddress
+    partner: customeraddress_principalobjectattributeaccess
+  - name: objectid_discount
+    type: Microsoft.Dynamics.CRM.discount
+    partner: discount_PrincipalObjectAttributeAccesses
+  - name: objectid_discounttype
+    type: Microsoft.Dynamics.CRM.discounttype
+    partner: discounttype_PrincipalObjectAttributeAccesses
+  - name: objectid_dynamicproperty
+    type: Microsoft.Dynamics.CRM.dynamicproperty
+    partner: dynamicproperty_PrincipalObjectAttributeAccesses
+  - name: objectid_dynamicpropertyassociation
+    type: Microsoft.Dynamics.CRM.dynamicpropertyassociation
+    partner: dynamicpropertyassociation_PrincipalObjectAttributeAccesses
+  - name: objectid_dynamicpropertyinstance
+    type: Microsoft.Dynamics.CRM.dynamicpropertyinstance
+    partner: dynamicpropertyinstance_PrincipalObjectAttributeAccesses
+  - name: objectid_dynamicpropertyoptionsetitem
+    type: Microsoft.Dynamics.CRM.dynamicpropertyoptionsetitem
+    partner: dynamicpropertyoptionsetitem_PrincipalObjectAttributeAccesses
+  - name: objectid_email
+    type: Microsoft.Dynamics.CRM.email
+    partner: email_principalobjectattributeaccess
+  - name: objectid_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: entitlement_PrincipalObjectAttributeAccesses
+  - name: objectid_entitlementchannel
+    type: Microsoft.Dynamics.CRM.entitlementchannel
+    partner: entitlementchannel_PrincipalObjectAttributeAccesses
+  - name: objectid_entitlementcontacts
+    type: Microsoft.Dynamics.CRM.entitlementcontacts
+    partner: entitlementcontacts_PrincipalObjectAttributeAccesses
+  - name: objectid_entitlementproducts
+    type: Microsoft.Dynamics.CRM.entitlementproducts
+    partner: entitlementproducts_PrincipalObjectAttributeAccesses
+  - name: objectid_entitlementtemplate
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: entitlementtemplate_PrincipalObjectAttributeAccesses
+  - name: objectid_entitlementtemplatechannel
+    type: Microsoft.Dynamics.CRM.entitlementtemplatechannel
+    partner: entitlementtemplatechannel_PrincipalObjectAttributeAccesses
+  - name: objectid_entitlementtemplateproducts
+    type: Microsoft.Dynamics.CRM.entitlementtemplateproducts
+    partner: entitlementtemplateproducts_PrincipalObjectAttributeAccesses
+  - name: objectid_equipment
+    type: Microsoft.Dynamics.CRM.equipment
+    partner: equipment_principalobjectattributeaccess
+  - name: objectid_fax
+    type: Microsoft.Dynamics.CRM.fax
+    partner: fax_principalobjectattributeaccess
+  - name: objectid_feedback
+    type: Microsoft.Dynamics.CRM.feedback
+    partner: feedback_principalobjectattributeaccess
+  - name: objectid_goal
+    type: Microsoft.Dynamics.CRM.goal
+    partner: goal_principalobjectattributeaccess
+  - name: objectid_incident
+    type: Microsoft.Dynamics.CRM.incident
+    partner: incident_principalobjectattributeaccess
+  - name: objectid_incidentknowledgebaserecord
+    type: Microsoft.Dynamics.CRM.incidentknowledgebaserecord
+    partner: incidentknowledgebaserecord_PrincipalObjectAttributeAccesses
+  - name: objectid_incidentresolution
+    type: Microsoft.Dynamics.CRM.incidentresolution
+    partner: incidentresolution_PrincipalObjectAttributeAccesses
+  - name: objectid_invoice
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: invoice_principalobjectattributeaccess
+  - name: objectid_invoicedetail
+    type: Microsoft.Dynamics.CRM.invoicedetail
+    partner: invoicedetail_principalobjectattributeaccess
+  - name: objectid_kbarticle
+    type: Microsoft.Dynamics.CRM.kbarticle
+    partner: kbarticle_principalobjectattributeaccess
+  - name: objectid_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: knowledgearticle_PrincipalObjectAttributeAccess
+  - name: objectid_knowledgearticleincident
+    type: Microsoft.Dynamics.CRM.knowledgearticleincident
+    partner: knowledgearticleincident_principalobjectattributeaccess
+  - name: objectid_knowledgearticleviews
+    type: Microsoft.Dynamics.CRM.knowledgearticleviews
+    partner: knowledgearticleviews_principalobjectattributeaccess
+  - name: objectid_knowledgebaserecord
+    type: Microsoft.Dynamics.CRM.knowledgebaserecord
+    partner: KnowledgeBaseRecord_PrincipalObjectAttributeAccess
+  - name: objectid_lead
+    type: Microsoft.Dynamics.CRM.lead
+    partner: lead_principalobjectattributeaccess
+  - name: objectid_leadaddress
+    type: Microsoft.Dynamics.CRM.leadaddress
+    partner: leadaddress_PrincipalObjectAttributeAccesses
+  - name: objectid_leadcompetitors
+    type: Microsoft.Dynamics.CRM.leadcompetitors
+    partner: leadcompetitors_PrincipalObjectAttributeAccesses
+  - name: objectid_leadproduct
+    type: Microsoft.Dynamics.CRM.leadproduct
+    partner: leadproduct_PrincipalObjectAttributeAccesses
+  - name: objectid_leadtoopportunitysalesprocess
+    type: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
+    partner: leadtoopportunitysalesprocess_PrincipalObjectAttributeAccesses
+  - name: objectid_letter
+    type: Microsoft.Dynamics.CRM.letter
+    partner: letter_principalobjectattributeaccess
+  - name: objectid_list
+    type: Microsoft.Dynamics.CRM.list
+    partner: list_principalobjectattributeaccess
+  - name: objectid_listmember
+    type: Microsoft.Dynamics.CRM.listmember
+    partner: listmember_PrincipalObjectAttributeAccesses
+  - name: objectid_mailmergetemplate
+    type: Microsoft.Dynamics.CRM.mailmergetemplate
+    partner: mailmergetemplate_principalobjectattributeaccess
+  - name: objectid_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_postconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postconfig
+    partner: msdyn_postconfig_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_postruleconfig
+    type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
+    partner: msdyn_postruleconfig_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_wallsavedquery
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
+    partner: msdyn_wallsavedquery_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_wallsavedqueryusersettings
+    type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+    partner: msdyn_wallsavedqueryusersettings_PrincipalObjectAttributeAccesses
+  - name: objectid_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: opportunity_principalobjectattributeaccess
+  - name: objectid_opportunityclose
+    type: Microsoft.Dynamics.CRM.opportunityclose
+    partner: opportunityclose_PrincipalObjectAttributeAccesses
+  - name: objectid_opportunitycompetitors
+    type: Microsoft.Dynamics.CRM.opportunitycompetitors
+    partner: opportunitycompetitors_PrincipalObjectAttributeAccesses
+  - name: objectid_opportunityproduct
+    type: Microsoft.Dynamics.CRM.opportunityproduct
+    partner: opportunityproduct_principalobjectattributeaccess
+  - name: objectid_opportunitysalesprocess
+    type: Microsoft.Dynamics.CRM.opportunitysalesprocess
+    partner: opportunitysalesprocess_PrincipalObjectAttributeAccesses
+  - name: objectid_orderclose
+    type: Microsoft.Dynamics.CRM.orderclose
+    partner: orderclose_PrincipalObjectAttributeAccesses
+  - name: objectid_phonecall
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: phonecall_principalobjectattributeaccess
+  - name: objectid_phonetocaseprocess
+    type: Microsoft.Dynamics.CRM.phonetocaseprocess
+    partner: phonetocaseprocess_PrincipalObjectAttributeAccesses
+  - name: objectid_position
+    type: Microsoft.Dynamics.CRM.position
+    partner: position_principalobjectattributeaccess
+  - name: objectid_pricelevel
+    type: Microsoft.Dynamics.CRM.pricelevel
+    partner: pricelevel_principalobjectattributeaccess
+  - name: objectid_product
+    type: Microsoft.Dynamics.CRM.product
+    partner: product_principalobjectattributeaccess
+  - name: objectid_productassociation
+    type: Microsoft.Dynamics.CRM.productassociation
+    partner: ProductAssociation_PrincipalObjectAttributeAccess
+  - name: objectid_productpricelevel
+    type: Microsoft.Dynamics.CRM.productpricelevel
+    partner: productpricelevel_PrincipalObjectAttributeAccesses
+  - name: objectid_productsalesliterature
+    type: Microsoft.Dynamics.CRM.productsalesliterature
+    partner: productsalesliterature_PrincipalObjectAttributeAccesses
+  - name: objectid_productsubstitute
+    type: Microsoft.Dynamics.CRM.productsubstitute
+    partner: ProductSubstitute_PrincipalObjectAttributeAccess
+  - name: objectid_queue
+    type: Microsoft.Dynamics.CRM.queue
+    partner: queue_principalobjectattributeaccess
+  - name: objectid_queueitem
+    type: Microsoft.Dynamics.CRM.queueitem
+    partner: queueitem_principalobjectattributeaccess
+  - name: objectid_quote
+    type: Microsoft.Dynamics.CRM.quote
+    partner: quote_principalobjectattributeaccess
+  - name: objectid_quoteclose
+    type: Microsoft.Dynamics.CRM.quoteclose
+    partner: quoteclose_PrincipalObjectAttributeAccesses
+  - name: objectid_quotedetail
+    type: Microsoft.Dynamics.CRM.quotedetail
+    partner: quotedetail_principalobjectattributeaccess
+  - name: objectid_ratingmodel
+    type: Microsoft.Dynamics.CRM.ratingmodel
+    partner: ratingmodel_PrincipalObjectAttributeAccesses
+  - name: objectid_ratingvalue
+    type: Microsoft.Dynamics.CRM.ratingvalue
+    partner: ratingvalue_PrincipalObjectAttributeAccesses
+  - name: objectid_recurringappointmentmaster
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: recurringappointmentmaster_principalobjectattributeaccess
+  - name: objectid_reportcategory
+    type: Microsoft.Dynamics.CRM.reportcategory
+    partner: reportcategory_principalobjectattributeaccess
+  - name: objectid_resource
+    type: Microsoft.Dynamics.CRM.resource
+    partner: resource_PrincipalObjectAttributeAccesses
+  - name: objectid_resourcegroup
+    type: Microsoft.Dynamics.CRM.resourcegroup
+    partner: resourcegroup_PrincipalObjectAttributeAccesses
+  - name: objectid_resourcespec
+    type: Microsoft.Dynamics.CRM.resourcespec
+    partner: resourcespec_PrincipalObjectAttributeAccesses
+  - name: objectid_salesliterature
+    type: Microsoft.Dynamics.CRM.salesliterature
+    partner: salesliterature_principalobjectattributeaccess
+  - name: objectid_salesliteratureitem
+    type: Microsoft.Dynamics.CRM.salesliteratureitem
+    partner: salesliteratureitem_PrincipalObjectAttributeAccesses
+  - name: objectid_salesorder
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: salesorder_principalobjectattributeaccess
+  - name: objectid_salesorderdetail
+    type: Microsoft.Dynamics.CRM.salesorderdetail
+    partner: salesorderdetail_principalobjectattributeaccess
+  - name: objectid_service
+    type: Microsoft.Dynamics.CRM.service
+    partner: service_PrincipalObjectAttributeAccesses
+  - name: objectid_serviceappointment
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: serviceappointment_principalobjectattributeaccess
+  - name: objectid_servicecontractcontacts
+    type: Microsoft.Dynamics.CRM.servicecontractcontacts
+    partner: servicecontractcontacts_PrincipalObjectAttributeAccesses
+  - name: objectid_sharepointdocumentlocation
+    type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+    partner: sharepointdocumentlocation_principalobjectattributeaccess
+  - name: objectid_sharepointsite
+    type: Microsoft.Dynamics.CRM.sharepointsite
+    partner: sharepointsite_principalobjectattributeaccess
+  - name: objectid_site
+    type: Microsoft.Dynamics.CRM.site
+    partner: site_PrincipalObjectAttributeAccesses
+  - name: objectid_socialactivity
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: socialactivity_principalobjectattributeaccess
+  - name: objectid_socialprofile
+    type: Microsoft.Dynamics.CRM.socialprofile
+    partner: socialprofile_principalobjectattributeaccess
+  - name: objectid_systemuser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: systemuser_principalobjectattributeaccess
+  - name: objectid_task
+    type: Microsoft.Dynamics.CRM.task
+    partner: task_principalobjectattributeaccess
+  - name: objectid_team
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_principalobjectattributeaccess
+  - name: objectid_territory
+    type: Microsoft.Dynamics.CRM.territory
+    partner: territory_principalobjectattributeaccess
+  - name: objectid_uom
+    type: Microsoft.Dynamics.CRM.uom
+    partner: uom_PrincipalObjectAttributeAccesses
+  - name: objectid_uomschedule
+    type: Microsoft.Dynamics.CRM.uomschedule
+    partner: uomschedule_PrincipalObjectAttributeAccesses
+  - name: organizationid
+    type: Microsoft.Dynamics.CRM.organization
+    partner: lk_principalobjectattributeaccess_organizationid
+  - name: principalid_systemuser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: systemuser_principalobjectattributeaccess_principalid
+  - name: principalid_team
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_principalobjectattributeaccess_principalid
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the principalobjectattributeaccess entity type."
+  solution_items:
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

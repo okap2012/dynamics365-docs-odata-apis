@@ -1,0 +1,88 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_Sales
+name: "Sales"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Sales Solution Reference | MicrosoftDocs"
+  ms.date: "2017-09-15"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 57501570-9a3a-4582-858e-58ff760c1491
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Sales Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Dynamics 365 workload for sales."
+ unique_name: msdynce_Sales
+ version: 9.0.1.5
+ customization_prefix: none
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - Microsoft.Dynamics.CRM.account
+   - Microsoft.Dynamics.CRM.actioncard
+   - Microsoft.Dynamics.CRM.appointment
+   - Microsoft.Dynamics.CRM.competitor
+   - Microsoft.Dynamics.CRM.competitoraddress
+   - Microsoft.Dynamics.CRM.competitorproduct
+   - Microsoft.Dynamics.CRM.competitorsalesliterature
+   - Microsoft.Dynamics.CRM.connection
+   - Microsoft.Dynamics.CRM.contact
+   - Microsoft.Dynamics.CRM.contactinvoices
+   - Microsoft.Dynamics.CRM.contactorders
+   - Microsoft.Dynamics.CRM.contactquotes
+   - Microsoft.Dynamics.CRM.discount
+   - Microsoft.Dynamics.CRM.discounttype
+   - Microsoft.Dynamics.CRM.dynamicpropertyinstance
+   - Microsoft.Dynamics.CRM.email
+   - Microsoft.Dynamics.CRM.fax
+   - Microsoft.Dynamics.CRM.invoice
+   - Microsoft.Dynamics.CRM.invoicedetail
+   - Microsoft.Dynamics.CRM.lead
+   - Microsoft.Dynamics.CRM.leadcompetitors
+   - Microsoft.Dynamics.CRM.leadproduct
+   - Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
+   - Microsoft.Dynamics.CRM.letter
+   - Microsoft.Dynamics.CRM.mailmergetemplate
+   - Microsoft.Dynamics.CRM.opportunity
+   - Microsoft.Dynamics.CRM.opportunityclose
+   - Microsoft.Dynamics.CRM.opportunitycompetitors
+   - Microsoft.Dynamics.CRM.opportunityproduct
+   - Microsoft.Dynamics.CRM.opportunitysalesprocess
+   - Microsoft.Dynamics.CRM.orderclose
+   - Microsoft.Dynamics.CRM.phonecall
+   - Microsoft.Dynamics.CRM.postfollow
+   - Microsoft.Dynamics.CRM.postregarding
+   - Microsoft.Dynamics.CRM.productpricelevel
+   - Microsoft.Dynamics.CRM.productsalesliterature
+   - Microsoft.Dynamics.CRM.quote
+   - Microsoft.Dynamics.CRM.quoteclose
+   - Microsoft.Dynamics.CRM.quotedetail
+   - Microsoft.Dynamics.CRM.recurringappointmentmaster
+   - Microsoft.Dynamics.CRM.salesliterature
+   - Microsoft.Dynamics.CRM.salesliteratureitem
+   - Microsoft.Dynamics.CRM.salesorder
+   - Microsoft.Dynamics.CRM.salesorderdetail
+   - Microsoft.Dynamics.CRM.sharepointdocumentlocation
+   - Microsoft.Dynamics.CRM.socialprofile
+   - Microsoft.Dynamics.CRM.systemuser
+   - Microsoft.Dynamics.CRM.task
+   - Microsoft.Dynamics.CRM.template
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex
