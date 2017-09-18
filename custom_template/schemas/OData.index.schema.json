@@ -6,9 +6,17 @@
     "id": "https://github.com/dotnet/docfx/schemas/OData.index.schema.json",
     "type": "object",
     "properties": {
-        "metadata": {
-            "type": "object"
-        },
+      "metadata":{
+         "properties":{
+            "title":{
+               "type":"string",
+               "tags":[
+                  "localizable"
+               ]
+            }
+         },
+         "type":"object"
+      },
         "description": {
             "type": "string",
             "contentType": "markdown",
