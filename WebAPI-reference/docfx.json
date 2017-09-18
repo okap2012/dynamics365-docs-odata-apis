@@ -1,16 +1,74 @@
 {
-  "metadata": [
-    {
-      "src": [
-        {
-          "files": ["actions/**", "complextypes/**", "entitytypes/**", "enumtypes/**", "functions/**", "metadataentitytypes/**", "queryfunctions/**", "solutions/**"]
-        }
-      ],
-      "dest": "./"
-    }
-  ],
   "build": {
     "content": [
+	  {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+		  "remarks/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+		"src": "solutions",
+		"dest": "./"
+      },
+	  {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+		  "remarks/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+		"src": "queryfunctions",
+		"dest": "./"
+      },
+	  {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+		  "remarks/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+		"src": "metadataentitytypes",
+		"dest": "./"
+      },
+	  {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+		  "remarks/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+		"src": "functions",
+		"dest": "./"
+      },
       {
         "files": [
           "**/*.md",
@@ -24,7 +82,60 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
+        ],
+		"src": "actions",
+		"dest": "./"
+      },
+	  {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+		  "remarks/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+		"src": "complextypes",
+		"dest": "./"
+      },
+	  {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+		  "remarks/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+		"src": "entitytypes",
+		"dest": "./"
+      },
+	  {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+		  "remarks/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+		"src": "enumtypes",
+		"dest": "./"
       }
     ],
     "resource": [
