@@ -1,4 +1,14 @@
 {
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["actions/**", "complextypes/**", "entitytypes/**", "enumtypes/**", "functions/**", "metadataentitytypes/**", "queryfunctions/**", "solutions/**"]
+        }
+      ],
+      "dest": "./"
+    }
+  ],
   "build": {
     "content": [
       {
@@ -9,6 +19,7 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+		  "remarks/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
