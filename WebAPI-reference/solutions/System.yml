@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Internal CRM System Solution"
  unique_name: System
- version: 5.0
+ version: "5.0"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
