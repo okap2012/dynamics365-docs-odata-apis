@@ -7,6 +7,14 @@
    "type":"object",
    "properties":{
       "metadata":{
+         "properties":{
+            "title":{
+               "type":"string",
+               "tags":[
+                  "localizable"
+               ]
+            }
+         },
          "type":"object"
       },
       "uid":{
