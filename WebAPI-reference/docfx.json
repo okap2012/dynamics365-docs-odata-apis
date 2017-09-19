@@ -10,20 +10,20 @@
           "**/obj/**",
           "**/includes/**",
 		  "remarks/**",
-		  "actions/**",
-		  "complextypes/**",
-		  "entitytypes/**",
-		  "enumtypes/**",
-		  "functions/**",
-		  "metadataentitytypes/**",
-		  "queryfunctions/**",
-		  "solutions/**",
+		  "dynamics-ce-odata-9/actions/**",
+		  "dynamics-ce-odata-9/complextypes/**",
+		  "dynamics-ce-odata-9/entitytypes/**",
+		  "dynamics-ce-odata-9/enumtypes/**",
+		  "dynamics-ce-odata-9/functions/**",
+		  "dynamics-ce-odata-9/metadataentitytypes/**",
+		  "dynamics-ce-odata-9/queryfunctions/**",
+		  "dynamics-ce-odata-9/solutions/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ],
-		"src": "solutions",
+		"src": "dynamics-ce-odata-9",
 		"dest": "./"
       },
 	  {
@@ -40,7 +40,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ],
-		"src": "solutions",
+		"src": "dynamics-ce-odata-9/solutions",
 		"dest": "./"
       },
 	  {
@@ -57,7 +57,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ],
-		"src": "queryfunctions",
+		"src": "dynamics-ce-odata-9/queryfunctions",
 		"dest": "./"
       },
 	  {
@@ -74,7 +74,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ],
-		"src": "metadataentitytypes",
+		"src": "dynamics-ce-odata-9/metadataentitytypes",
 		"dest": "./"
       },
 	  {
@@ -91,7 +91,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ],
-		"src": "functions",
+		"src": "dynamics-ce-odata-9/functions",
 		"dest": "./"
       },
       {
@@ -108,7 +108,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ],
-		"src": "actions",
+		"src": "dynamics-ce-odata-9/actions",
 		"dest": "./"
       },
 	  {
@@ -125,7 +125,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ],
-		"src": "complextypes",
+		"src": "dynamics-ce-odata-9/complextypes",
 		"dest": "./"
       },
 	  {
@@ -142,7 +142,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ],
-		"src": "entitytypes",
+		"src": "dynamics-ce-odata-9/entitytypes",
 		"dest": "./"
       },
 	  {
@@ -159,7 +159,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ],
-		"src": "enumtypes",
+		"src": "dynamics-ce-odata-9/enumtypes",
 		"dest": "./"
       }
     ],
@@ -175,6 +175,11 @@
         ]
       }
     ],
+	"versions": { 
+       "dynamics-ce-odata-9": { 
+         "dest": "dynamics-ce-odata-9" 
+       }
+     },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {},
