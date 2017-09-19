@@ -21,17 +21,8 @@
       },
 	  {
         "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-		  "remarks/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "*.md",
+          "*.yml"
         ],
 		"src": "dynamics-ce-odata-9/queryfunctions",
 		"version": "dynamics-ce-odata-9",
@@ -39,17 +30,8 @@
       },
 	  {
         "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-		  "remarks/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "*.md",
+          "*.yml"
         ],
 		"src": "dynamics-ce-odata-9/metadataentitytypes",
 		"version": "dynamics-ce-odata-9",
@@ -57,17 +39,8 @@
       },
 	  {
         "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-		  "remarks/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "*.md",
+          "*.yml"
         ],
 		"src": "dynamics-ce-odata-9/functions",
 		"version": "dynamics-ce-odata-9",
@@ -75,17 +48,8 @@
       },
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-		  "remarks/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "*.md",
+          "*.yml"
         ],
 		"src": "dynamics-ce-odata-9/actions",
 		"version": "dynamics-ce-odata-9",
@@ -93,17 +57,8 @@
       },
 	  {
         "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-		  "remarks/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "*.md",
+          "*.yml"
         ],
 		"src": "dynamics-ce-odata-9/complextypes",
 		"version": "dynamics-ce-odata-9",
@@ -111,17 +66,8 @@
       },
 	  {
         "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-		  "remarks/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "*.md",
+          "*.yml"
         ],
 		"src": "dynamics-ce-odata-9/entitytypes",
 		"version": "dynamics-ce-odata-9",
@@ -129,17 +75,8 @@
       },
 	  {
         "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-		  "remarks/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "*.md",
+          "*.yml"
         ],
 		"src": "dynamics-ce-odata-9/enumtypes",
 		"version": "dynamics-ce-odata-9",
