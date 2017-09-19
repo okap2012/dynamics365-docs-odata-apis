@@ -3,25 +3,8 @@
     "content": [
 	  {
         "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-		  "remarks/**",
-		  "actions/**",
-		  "complextypes/**",
-		  "entitytypes/**",
-		  "enumtypes/**",
-		  "functions/**",
-		  "metadataentitytypes/**",
-		  "queryfunctions/**",
-		  "solutions/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "*.md",
+          "*.yml"
         ],
 		"src": "dynamics-ce-odata-9",
 		"version": "dynamics-ce-odata-9",
@@ -29,17 +12,8 @@
       },
 	  {
         "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-		  "remarks/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "*.md",
+          "*.yml"
         ],
 		"src": "dynamics-ce-odata-9/solutions",
 		"version": "dynamics-ce-odata-9",
