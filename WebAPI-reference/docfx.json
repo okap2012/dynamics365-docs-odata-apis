@@ -15,24 +15,6 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ],
-		"src": "dynamics-ce-odata-9",
-		"version": "dynamics-ce-odata-9",
-		"dest": ""
-      },
-	  {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-		  "remarks/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ],
 		"src": "dynamics-ce-odata-9/solutions",
 		"version": "dynamics-ce-odata-9",
 		"dest": ""
