@@ -10,6 +10,32 @@
           "**/obj/**",
           "**/includes/**",
 		  "remarks/**",
+		  "actions/**",
+		  "complextypes/**",
+		  "entitytypes/**",
+		  "enumtypes/**",
+		  "functions/**",
+		  "metadataentitytypes/**",
+		  "queryfunctions/**",
+		  "solutions/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+		"src": "dynamics-ce-odata-9",
+		"version": "dynamics-ce-odata-9",
+		"dest": "./"
+      },
+	  {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+		  "remarks/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -17,7 +43,7 @@
         ],
 		"src": "dynamics-ce-odata-9/solutions",
 		"version": "dynamics-ce-odata-9",
-		"dest": ""
+		"dest": "./"
       },
 	  {
         "files": [
@@ -35,7 +61,7 @@
         ],
 		"src": "dynamics-ce-odata-9/queryfunctions",
 		"version": "dynamics-ce-odata-9",
-		"dest": ""
+		"dest": "./"
       },
 	  {
         "files": [
@@ -53,7 +79,7 @@
         ],
 		"src": "dynamics-ce-odata-9/metadataentitytypes",
 		"version": "dynamics-ce-odata-9",
-		"dest": ""
+		"dest": "./"
       },
 	  {
         "files": [
@@ -71,7 +97,7 @@
         ],
 		"src": "dynamics-ce-odata-9/functions",
 		"version": "dynamics-ce-odata-9",
-		"dest": ""
+		"dest": "./"
       },
       {
         "files": [
@@ -89,7 +115,7 @@
         ],
 		"src": "dynamics-ce-odata-9/actions",
 		"version": "dynamics-ce-odata-9",
-		"dest": ""
+		"dest": "./"
       },
 	  {
         "files": [
@@ -107,7 +133,7 @@
         ],
 		"src": "dynamics-ce-odata-9/complextypes",
 		"version": "dynamics-ce-odata-9",
-		"dest": ""
+		"dest": "./"
       },
 	  {
         "files": [
@@ -125,7 +151,7 @@
         ],
 		"src": "dynamics-ce-odata-9/entitytypes",
 		"version": "dynamics-ce-odata-9",
-		"dest": ""
+		"dest": "./"
       },
 	  {
         "files": [
@@ -143,7 +169,7 @@
         ],
 		"src": "dynamics-ce-odata-9/enumtypes",
 		"version": "dynamics-ce-odata-9",
-		"dest": ""
+		"dest": "./"
       }
     ],
     "resource": [
