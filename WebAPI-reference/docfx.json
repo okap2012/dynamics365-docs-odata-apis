@@ -24,7 +24,8 @@
           "ThirdPartyNotices"
         ],
 		"src": "dynamics-ce-odata-9",
-		"dest": "./"
+		"version": "dynamics-ce-odata-9",
+		"dest": ""
       },
 	  {
         "files": [
@@ -41,7 +42,8 @@
           "ThirdPartyNotices"
         ],
 		"src": "dynamics-ce-odata-9/solutions",
-		"dest": "./"
+		"version": "dynamics-ce-odata-9",
+		"dest": ""
       },
 	  {
         "files": [
@@ -58,7 +60,8 @@
           "ThirdPartyNotices"
         ],
 		"src": "dynamics-ce-odata-9/queryfunctions",
-		"dest": "./"
+		"version": "dynamics-ce-odata-9",
+		"dest": ""
       },
 	  {
         "files": [
@@ -75,7 +78,8 @@
           "ThirdPartyNotices"
         ],
 		"src": "dynamics-ce-odata-9/metadataentitytypes",
-		"dest": "./"
+		"version": "dynamics-ce-odata-9",
+		"dest": ""
       },
 	  {
         "files": [
@@ -92,7 +96,8 @@
           "ThirdPartyNotices"
         ],
 		"src": "dynamics-ce-odata-9/functions",
-		"dest": "./"
+		"version": "dynamics-ce-odata-9",
+		"dest": ""
       },
       {
         "files": [
@@ -109,7 +114,8 @@
           "ThirdPartyNotices"
         ],
 		"src": "dynamics-ce-odata-9/actions",
-		"dest": "./"
+		"version": "dynamics-ce-odata-9",
+		"dest": ""
       },
 	  {
         "files": [
@@ -126,7 +132,8 @@
           "ThirdPartyNotices"
         ],
 		"src": "dynamics-ce-odata-9/complextypes",
-		"dest": "./"
+		"version": "dynamics-ce-odata-9",
+		"dest": ""
       },
 	  {
         "files": [
@@ -143,7 +150,8 @@
           "ThirdPartyNotices"
         ],
 		"src": "dynamics-ce-odata-9/entitytypes",
-		"dest": "./"
+		"version": "dynamics-ce-odata-9",
+		"dest": ""
       },
 	  {
         "files": [
@@ -160,7 +168,8 @@
           "ThirdPartyNotices"
         ],
 		"src": "dynamics-ce-odata-9/enumtypes",
-		"dest": "./"
+		"version": "dynamics-ce-odata-9",
+		"dest": ""
       }
     ],
     "resource": [
