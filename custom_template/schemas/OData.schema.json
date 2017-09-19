@@ -370,6 +370,10 @@
          },
          "type":"object"
       },
+      "owningsolution":{
+         "contentType":"xref",
+         "type":"string"
+      },
       "solutions":{
          "properties":{
             "description":{

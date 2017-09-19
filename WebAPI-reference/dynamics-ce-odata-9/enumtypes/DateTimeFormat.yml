@@ -4,7 +4,7 @@ name: "DateTimeFormat"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement DateTimeFormat EnumType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -20,10 +20,10 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Display the date only. "
-    name: DateOnly
+    name: "DateOnly"
     value: 0
   - description: "Display the date and time."
-    name: DateAndTime
+    name: "DateAndTime"
     value: 1
 usedby:
   description: "The following use the DateTimeFormat EnumType."

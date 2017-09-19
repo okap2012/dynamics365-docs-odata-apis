@@ -4,7 +4,7 @@ name: "OwnershipTypes"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement OwnershipTypes EnumType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -20,22 +20,22 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "The entity does not have an owner. For internal use only. "
-    name: None
+    name: "None"
     value: 0
   - description: "The entity is owned by a system user. "
-    name: UserOwned
+    name: "UserOwned"
     value: 1
   - description: "The entity is owned by a team. For internal use only."
-    name: TeamOwned
+    name: "TeamOwned"
     value: 2
   - description: "The entity is owned by a business unit. For internal use only.  "
-    name: BusinessOwned
+    name: "BusinessOwned"
     value: 4
   - description: "The entity is owned by an organization.  "
-    name: OrganizationOwned
+    name: "OrganizationOwned"
     value: 8
   - description: "The entity is parented by a business unit. For internal use only.  "
-    name: BusinessParented
+    name: "BusinessParented"
     value: 16
 usedby:
   description: "The following use the OwnershipTypes EnumType."

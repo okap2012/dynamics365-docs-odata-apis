@@ -4,7 +4,7 @@ name: "SubCode"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement SubCode EnumType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -20,43 +20,43 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Specifies free time with no specified restrictions."
-    name: Unspecified
+    name: "Unspecified"
     value: 0
   - description: "A schedulable block of time."
-    name: Schedulable
+    name: "Schedulable"
     value: 1
   - description: "A block of time that is committed to perform an action."
-    name: Committed
+    name: "Committed"
     value: 2
   - description: "A block of time that is tentatively scheduled but not committed."
-    name: Uncommitted
+    name: "Uncommitted"
     value: 3
   - description: "A block of time that cannot be committed due to a scheduled break."
-    name: Break
+    name: "Break"
     value: 4
   - description: "A block of time that cannot be scheduled due to a scheduled holiday."
-    name: Holiday
+    name: "Holiday"
     value: 5
   - description: "A block of time that cannot be scheduled due to a scheduled vacation."
-    name: Vacation
+    name: "Vacation"
     value: 6
   - description: "A block of time that is already scheduled for an appointment."
-    name: Appointment
+    name: "Appointment"
     value: 7
   - description: "Specifies to filter a resource start time."
-    name: ResourceStartTime
+    name: "ResourceStartTime"
     value: 8
   - description: "A restriction for a resource for the specified service."
-    name: ResourceServiceRestriction
+    name: "ResourceServiceRestriction"
     value: 9
   - description: "Specifies the capacity of a resource for the specified time interval. "
-    name: ResourceCapacity
+    name: "ResourceCapacity"
     value: 10
   - description: "Specifies that a service is restricted during the specified block of time."
-    name: ServiceRestriction
+    name: "ServiceRestriction"
     value: 11
   - description: "An override to the service cost for the specified time block."
-    name: ServiceCost
+    name: "ServiceCost"
     value: 12
 usedby:
   description: "The following use the SubCode EnumType."

@@ -4,7 +4,7 @@ name: "Activity Feeds"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Activity Feeds Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "This solution enables Activity Feeds including Walls for your Microsoft Dynamics 365 organization."
  unique_name: ActivityFeedsCore
- version: 9.0.0.0
+ version: "9.0.0.0"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."

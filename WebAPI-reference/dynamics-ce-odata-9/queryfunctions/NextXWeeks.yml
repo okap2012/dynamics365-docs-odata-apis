@@ -4,7 +4,7 @@ name: "NextXWeeks"
 type: queryfunction
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement NextXWeeks Query Function Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -19,12 +19,12 @@ description: "Query function to evaluate whether the value is in the next X week
 parameters:
   description: "Parameters allow for data to be passed to the query function."
   parameter_items:
-  - name: PropertyName
+  - name: "PropertyName"
     type: Edm.String
     nullable: false
     unicode: false
     description: "The name of the property to evaluate. "
-  - name: PropertyValue
+  - name: "PropertyValue"
     type: Edm.Int64
     nullable: false
     unicode: true

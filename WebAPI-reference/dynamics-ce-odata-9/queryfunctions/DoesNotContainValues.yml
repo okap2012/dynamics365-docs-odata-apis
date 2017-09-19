@@ -4,7 +4,7 @@ name: "DoesNotContainValues"
 type: queryfunction
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement DoesNotContainValues Query Function Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -19,12 +19,12 @@ description: ""
 parameters:
   description: "Parameters allow for data to be passed to the query function."
   parameter_items:
-  - name: PropertyName
+  - name: "PropertyName"
     type: Edm.String
     nullable: false
     unicode: false
     description: ""
-  - name: PropertyValues
+  - name: "PropertyValues"
     type: Edm.String
     nullable: false
     unicode: false

@@ -4,7 +4,7 @@ name: "StringFormat"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement StringFormat EnumType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -20,28 +20,28 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Specifies to display the string as an e-mail.  "
-    name: Email
+    name: "Email"
     value: 0
   - description: "Specifies to display the string as text. V"
-    name: Text
+    name: "Text"
     value: 1
   - description: "Specifies to display the string as a text area.  "
-    name: TextArea
+    name: "TextArea"
     value: 2
   - description: "Specifies to display the string as a URL.  "
-    name: Url
+    name: "Url"
     value: 3
   - description: "Specifies to display the string as a ticker symbol. "
-    name: TickerSymbol
+    name: "TickerSymbol"
     value: 4
   - description: "Specifies to display the string as a phonetic guide. "
-    name: PhoneticGuide
+    name: "PhoneticGuide"
     value: 5
   - description: "Specifies to display the string as a version number. "
-    name: VersionNumber
+    name: "VersionNumber"
     value: 6
   - description: "For internal use only. "
-    name: Phone
+    name: "Phone"
     value: 7
 usedby:
   description: "The following use the StringFormat EnumType."

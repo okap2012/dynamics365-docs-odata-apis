@@ -4,7 +4,7 @@ name: "subscriptionstatisticsoffline"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement subscriptionstatisticsoffline EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -21,6 +21,8 @@ header:
   display_name: Subscription Statistic Offline
   primary_key: subscriptionid
   primary_name_attribute: None
+  operations_supported: 
+  - None
 namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."

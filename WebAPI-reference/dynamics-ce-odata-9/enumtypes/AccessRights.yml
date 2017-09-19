@@ -4,7 +4,7 @@ name: "AccessRights"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement AccessRights EnumType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -20,31 +20,31 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "No access. "
-    name: None
+    name: "None"
     value: 0
   - description: "The right to read the specified type of record. "
-    name: ReadAccess
+    name: "ReadAccess"
     value: 1
   - description: "The right to update the specified record. "
-    name: WriteAccess
+    name: "WriteAccess"
     value: 2
   - description: "The right to append the specified record to another object. "
-    name: AppendAccess
+    name: "AppendAccess"
     value: 4
   - description: "The right to append another record to the specified object. "
-    name: AppendToAccess
+    name: "AppendToAccess"
     value: 16
   - description: "The right to create a record. "
-    name: CreateAccess
+    name: "CreateAccess"
     value: 32
   - description: "The right to delete the specified record. "
-    name: DeleteAccess
+    name: "DeleteAccess"
     value: 65536
   - description: "The right to share the specified record. "
-    name: ShareAccess
+    name: "ShareAccess"
     value: 262144
   - description: "The right to assign the specified record to another user or team. "
-    name: AssignAccess
+    name: "AssignAccess"
     value: 524288
 usedby:
   description: "The following use the AccessRights EnumType."

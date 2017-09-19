@@ -4,7 +4,7 @@ name: "Test Solution"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Test Solution Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "A Test solution that contains a custom action"
  unique_name: TestSolution
- version: 1.0.0.0
+ version: "1.0.0.0"
  customization_prefix: new
 # This solution includes no entities.
 actions:

@@ -4,7 +4,7 @@ name: "App for Outlook"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement App for Outlook Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: AppforOutlook
- version: 1.0.0.0
+ version: "1.0.0.0"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."

@@ -4,7 +4,7 @@ name: "SecurityTypes"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement SecurityTypes EnumType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -20,19 +20,19 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "No security privileges are checked during create or update operations. "
-    name: None
+    name: "None"
     value: 0
   - description: "The Append and AppendTo privileges are checked for create or update operations. "
-    name: Append
+    name: "Append"
     value: 1
   - description: "Security for the referencing entity record is derived from the referenced entity record. "
-    name: ParentChild
+    name: "ParentChild"
     value: 2
   - description: "Security for the referencing entity record is derived from a pointer record.  "
-    name: Pointer
+    name: "Pointer"
     value: 4
   - description: "The referencing entity record inherits security from the referenced security record."
-    name: Inheritance
+    name: "Inheritance"
     value: 8
 usedby:
   description: "The following use the SecurityTypes EnumType."

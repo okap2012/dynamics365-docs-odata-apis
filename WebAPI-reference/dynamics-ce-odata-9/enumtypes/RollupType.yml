@@ -4,7 +4,7 @@ name: "RollupType"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RollupType EnumType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -20,13 +20,13 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "A rollup record is not requested. This member only retrieves the records that are directly related to a parent record. "
-    name: None
+    name: "None"
     value: 0
   - description: "A rollup record that is directly related to a parent record and to any direct child of a parent record. "
-    name: Related
+    name: "Related"
     value: 1
   - description: "A rollup record that is directly related to a parent record and to any descendent record of a parent record, for example, children, grandchildren, and great-grandchildren records. "
-    name: Extended
+    name: "Extended"
     value: 2
 usedby:
   description: "The following use the RollupType EnumType."

@@ -4,7 +4,7 @@ name: "AttributeTypeCode"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement AttributeTypeCode EnumType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -20,67 +20,67 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "A Boolean attribute.  "
-    name: Boolean
+    name: "Boolean"
     value: 0
   - description: "An attribute that represents a customer."
-    name: Customer
+    name: "Customer"
     value: 1
   - description: "A date/time attribute. "
-    name: DateTime
+    name: "DateTime"
     value: 2
   - description: "A decimal attribute.  "
-    name: Decimal
+    name: "Decimal"
     value: 3
   - description: "A double attribute.  "
-    name: Double
+    name: "Double"
     value: 4
   - description: "An integer attribute. "
-    name: Integer
+    name: "Integer"
     value: 5
   - description: "A lookup attribute.  "
-    name: Lookup
+    name: "Lookup"
     value: 6
   - description: "A memo attribute."
-    name: Memo
+    name: "Memo"
     value: 7
   - description: "A money attribute. "
-    name: Money
+    name: "Money"
     value: 8
   - description: "An owner attribute."
-    name: Owner
+    name: "Owner"
     value: 9
   - description: "A partylist attribute."
-    name: PartyList
+    name: "PartyList"
     value: 10
   - description: "A picklist attribute."
-    name: Picklist
+    name: "Picklist"
     value: 11
   - description: "A state attribute."
-    name: State
+    name: "State"
     value: 12
   - description: "A status attribute."
-    name: Status
+    name: "Status"
     value: 13
   - description: "A string attribute."
-    name: String
+    name: "String"
     value: 14
   - description: "An attribute that is an ID."
-    name: Uniqueidentifier
+    name: "Uniqueidentifier"
     value: 15
   - description: "An attribute that contains calendar rules. "
-    name: CalendarRules
+    name: "CalendarRules"
     value: 16
   - description: "An attribute that is created by the system at run time. "
-    name: Virtual
+    name: "Virtual"
     value: 17
   - description: "A big integer attribute. "
-    name: BigInt
+    name: "BigInt"
     value: 18
   - description: "A managed property attribute. "
-    name: ManagedProperty
+    name: "ManagedProperty"
     value: 19
   - description: "An entity name attribute.  "
-    name: EntityName
+    name: "EntityName"
     value: 20
 usedby:
   description: "The following use the AttributeTypeCode EnumType."

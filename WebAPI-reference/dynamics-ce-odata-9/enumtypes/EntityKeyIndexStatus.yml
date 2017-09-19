@@ -4,7 +4,7 @@ name: "EntityKeyIndexStatus"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement EntityKeyIndexStatus EnumType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -20,16 +20,16 @@ members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
   - description: "Specifies that the key index creation is pending."
-    name: Pending
+    name: "Pending"
     value: 0
   - description: "Specifies that the key index creation is in progress. "
-    name: InProgress
+    name: "InProgress"
     value: 1
   - description: "Specifies that the key index creation is active. "
-    name: Active
+    name: "Active"
     value: 2
   - description: "Specifies that the key index creation failed."
-    name: Failed
+    name: "Failed"
     value: 3
 usedby:
   description: "The following use the EntityKeyIndexStatus EnumType."

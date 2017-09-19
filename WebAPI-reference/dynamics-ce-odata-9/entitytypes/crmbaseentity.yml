@@ -4,7 +4,7 @@ name: "crmbaseentity"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement crmbaseentity EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-15"
+  ms.date: "2017-09-18"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -21,6 +21,8 @@ header:
   display_name: None
   primary_key: None
   primary_name_attribute: None
+  operations_supported: 
+  - None
 namespace: Microsoft.Dynamics.CRM
 # This entity has no properties
 # This entity has no lookup properties
