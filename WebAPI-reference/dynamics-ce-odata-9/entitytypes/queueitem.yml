@@ -4,7 +4,7 @@ name: "queueitem"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement queueitem EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -67,36 +67,36 @@ properties:
       iscomputed: false
       isreadonly: true
       options:
-        - value: 4214
-          label: "Service Activity"
-        - value: 112
-          label: "Case"
-        - value: 4251
-          label: "Recurring Appointment"
-        - value: 4406
-          label: "Quick Campaign"
-        - value: 4202
-          label: "Email"
-        - value: 4212
-          label: "Task"
-        - value: 4210
-          label: "Phone Call"
-        - value: 4200
-          label: "Activity"
-        - value: 4216
-          label: "Social Activity"
-        - value: 4201
-          label: "Appointment"
-        - value: 4204
-          label: "Fax"
         - value: 4402
           label: "Campaign Activity"
+        - value: 4251
+          label: "Recurring Appointment"
+        - value: 4200
+          label: "Activity"
+        - value: 4210
+          label: "Phone Call"
+        - value: 4202
+          label: "Email"
+        - value: 4406
+          label: "Quick Campaign"
+        - value: 4212
+          label: "Task"
         - value: 4207
           label: "Letter"
+        - value: 4204
+          label: "Fax"
         - value: 4401
           label: "Campaign Response"
+        - value: 4214
+          label: "Service Activity"
+        - value: 4201
+          label: "Appointment"
         - value: 9953
           label: "Knowledge Article"
+        - value: 4216
+          label: "Social Activity"
+        - value: 112
+          label: "Case"
     - name: overriddencreatedon
       type: Edm.DateTimeOffset
       display_name: "Record Created On"
@@ -319,8 +319,8 @@ operations:
 solutions:
   description: "The following solutions include the queueitem entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_AppCommon
   - Microsoft.Dynamics.CRM.System
+  - Microsoft.Dynamics.CRM.msdynce_AppCommon
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

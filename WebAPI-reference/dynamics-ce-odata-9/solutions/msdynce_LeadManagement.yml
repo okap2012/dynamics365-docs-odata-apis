@@ -4,12 +4,12 @@ name: "Lead Management"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Lead Management Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: 3862e09d-05b2-44e0-ad4b-9fa2a5284774
+  ms.assetid: 6732520e-6e1b-45d8-bc01-6dea8534adc1
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for lead management."
  unique_name: msdynce_LeadManagement
- version: "9.0.1.5"
+ version: "9.0.0.1043"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."

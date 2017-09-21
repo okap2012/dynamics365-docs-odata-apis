@@ -4,12 +4,12 @@ name: "Service"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Service Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: e32fb4b1-fcb1-4a6a-849a-9cceac30be66
+  ms.assetid: a0c25440-918c-4536-8058-667e23556868
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for service."
  unique_name: msdynce_Service
- version: "9.0.1.5"
+ version: "9.0.0.1043"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."

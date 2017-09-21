@@ -4,7 +4,7 @@ name: "lead"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement lead EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -1359,11 +1359,12 @@ solutions:
   description: "The following solutions include the lead entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.AppforOutlook
-  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
-  - Microsoft.Dynamics.CRM.msdynce_Marketing
+  - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
   - Microsoft.Dynamics.CRM.msdynce_MarketingSales
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_Service
+  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.msdynce_Marketing
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

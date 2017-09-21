@@ -4,7 +4,7 @@ name: "organization"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement organization EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -2048,6 +2048,17 @@ properties:
       description: "Prefix used for custom entities and attributes."
       iscomputed: false
       isreadonly: false
+    - name: servestaticresourcesfromazurecdn
+      type: Edm.Boolean
+      display_name: "Serve Static Content From CDN"
+      description: "Serve Static Content From CDN"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: sessiontimeoutenabled
       type: Edm.Boolean
       display_name: "Session timeout enabled"

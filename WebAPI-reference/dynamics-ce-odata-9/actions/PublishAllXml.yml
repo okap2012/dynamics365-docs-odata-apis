@@ -4,7 +4,7 @@ name: "PublishAllXml"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement PublishAllXml Action Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -17,7 +17,7 @@ metadata:
 namespace: Microsoft.Dynamics.CRM
 header: 
   description: "Publishes all changes to solution components. "
-  solution: Microsoft.Dynamics.CRM.System
+owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
 # This action has no parameters.

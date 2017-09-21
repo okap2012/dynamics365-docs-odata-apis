@@ -4,7 +4,7 @@ name: "LockSalesOrderPricing"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement LockSalesOrderPricing Action Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -17,7 +17,7 @@ metadata:
 namespace: Microsoft.Dynamics.CRM
 header: 
   description: "Locks the total price of products and services that are specified in the sales order (order).  "
-  solution: Microsoft.Dynamics.CRM.System
+owningsolution: Microsoft.Dynamics.CRM.System
 bound_entities:
   description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."
   bound_entity_items:

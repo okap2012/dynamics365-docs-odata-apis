@@ -4,12 +4,12 @@ name: "Marketing Sales"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Marketing Sales Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: 0ab3faca-5a15-4c76-8042-ab61fb55a7ae
+  ms.assetid: cd9c5c0d-44ae-48a3-9b01-55249367b6ad
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_MarketingSales
- version: "9.0.1.5"
+ version: "9.0.0.1043"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."

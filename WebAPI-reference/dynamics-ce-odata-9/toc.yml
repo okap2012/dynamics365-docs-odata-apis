@@ -1386,8 +1386,6 @@ items:
     name: MetadataPropertiesExpression
   - uid: Microsoft.Dynamics.CRM.MissingComponent
     name: MissingComponent
-  - uid: Microsoft.Dynamics.CRM.new_TestActionResponse
-    name: new_TestActionResponse
   - uid: Microsoft.Dynamics.CRM.Object
     name: Object
   - uid: Microsoft.Dynamics.CRM.ObjectiveRelation
@@ -1701,6 +1699,8 @@ items:
     name: App for Outlook
   - uid: Microsoft.Dynamics.CRM.msdynce_AppCommon
     name: Application Common
+  - uid: Microsoft.Dynamics.CRM.msdynce_CRMExtensions
+    name: CRM Extensions
   - uid: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagement
     name: Knowledge Management
   - uid: Microsoft.Dynamics.CRM.msdynce_LeadManagement

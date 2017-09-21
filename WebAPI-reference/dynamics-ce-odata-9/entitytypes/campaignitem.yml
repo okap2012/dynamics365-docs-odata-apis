@@ -4,7 +4,7 @@ name: "campaignitem"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement campaignitem EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -123,8 +123,8 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the campaignitem entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_Marketing
   - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_Marketing
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

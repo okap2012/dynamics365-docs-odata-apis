@@ -4,12 +4,12 @@ name: "Sales Service"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Sales Service Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: d316aacb-1d3f-432a-b78f-df685e39d0af
+  ms.assetid: 61188317-90bd-45d7-a68e-8d639735a97a
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_SalesService
- version: "9.0.1.5"
+ version: "9.0.0.1043"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."

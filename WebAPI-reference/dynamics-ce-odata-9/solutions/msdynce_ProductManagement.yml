@@ -4,12 +4,12 @@ name: "Product Management"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Product Management Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: 55100b76-8a12-4e84-ad9e-9e176d49207a
+  ms.assetid: 9b97eb2e-4008-44ac-a513-bf46e61c5ed0
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for product management."
  unique_name: msdynce_ProductManagement
- version: "9.0.1.5"
+ version: "9.0.0.1043"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."

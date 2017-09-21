@@ -2,7 +2,7 @@
 uid: Microsoft.Dynamics.CRM.ComplexTypeIndex
 title: "Dynamics 365 Customer Engagement Web API ComplexType Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -108,7 +108,6 @@ in_this_section:
 - Microsoft.Dynamics.CRM.MetadataFilterExpression
 - Microsoft.Dynamics.CRM.MetadataPropertiesExpression
 - Microsoft.Dynamics.CRM.MissingComponent
-- Microsoft.Dynamics.CRM.new_TestActionResponse
 - Microsoft.Dynamics.CRM.Object
 - Microsoft.Dynamics.CRM.ObjectiveRelation
 - Microsoft.Dynamics.CRM.OptionMetadata

@@ -4,12 +4,12 @@ name: "Activities"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Activities Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: c20360b5-897f-40bc-921d-2e6f1477b146
+  ms.assetid: 0202c2e5-2a6a-4be6-827c-39fe5a231927
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for activities."
  unique_name: msdynce_Activities
- version: "9.0.0.3031"
+ version: "9.0.0.2006"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."

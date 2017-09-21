@@ -4,7 +4,7 @@ name: "ReactivateEntityKey"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement ReactivateEntityKey Action Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,9 +15,8 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement ReactivateEntityKey Action."
 namespace: Microsoft.Dynamics.CRM
-header: 
 # This Action has no description.
-  solution: Microsoft.Dynamics.CRM.System
+owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
 parameters:

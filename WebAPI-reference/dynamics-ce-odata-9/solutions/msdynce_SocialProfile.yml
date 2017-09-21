@@ -4,12 +4,12 @@ name: "Social Profile"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Social Profile Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: 8bb93486-12ce-4b73-b543-5c708f1c0484
+  ms.assetid: 3ec890ca-2696-4f13-badc-46ff5a2081a2
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"

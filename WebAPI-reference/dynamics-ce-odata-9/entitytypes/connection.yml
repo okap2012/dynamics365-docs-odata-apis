@@ -4,7 +4,7 @@ name: "connection"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement connection EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -132,90 +132,90 @@ properties:
       iscomputed: false
       isreadonly: true
       options:
-        - value: 4251
-          label: "Recurring Appointment"
-        - value: 4
-          label: "Lead"
-        - value: 4300
-          label: "Marketing List"
-        - value: 9701
-          label: "Entitlement Channel"
-        - value: 4212
-          label: "Task"
-        - value: 1090
-          label: "Invoice"
-        - value: 10001
-          label: "Profile Album"
-        - value: 4000
-          label: "Facility/Equipment"
-        - value: 4007
-          label: "Resource Group"
-        - value: 1024
-          label: "Product"
-        - value: 9700
-          label: "Entitlement"
-        - value: 112
-          label: "Case"
-        - value: 9400
-          label: "Channel Access Profile Rule"
-        - value: 1084
-          label: "Quote"
-        - value: 4402
-          label: "Campaign Activity"
-        - value: 4710
-          label: "Process Session"
-        - value: 4005
-          label: "Scheduling Group"
-        - value: 4214
-          label: "Service Activity"
-        - value: 99
-          label: "Social Profile"
-        - value: 9
-          label: "Team"
-        - value: 4210
-          label: "Phone Call"
-        - value: 9600
-          label: "Goal"
-        - value: 1088
-          label: "Order"
-        - value: 8
-          label: "User"
-        - value: 1
-          label: "Account"
-        - value: 1010
-          label: "Contract"
-        - value: 3
-          label: "Opportunity"
-        - value: 9953
-          label: "Knowledge Article"
-        - value: 2013
-          label: "Territory"
-        - value: 4200
-          label: "Activity"
-        - value: 4207
-          label: "Letter"
-        - value: 4216
-          label: "Social Activity"
-        - value: 4201
-          label: "Appointment"
-        - value: 50
-          label: "Position"
+        - value: 2
+          label: "Contact"
         - value: 4202
           label: "Email"
         - value: 4204
           label: "Fax"
-        - value: 2
-          label: "Contact"
+        - value: 1088
+          label: "Order"
+        - value: 1084
+          label: "Quote"
+        - value: 4216
+          label: "Social Activity"
+        - value: 1
+          label: "Account"
         - value: 9930
           label: "Knowledge Base Record"
-        - value: 123
-          label: "Competitor"
+        - value: 4201
+          label: "Appointment"
+        - value: 50
+          label: "Position"
         - value: 9703
           label: "Entitlement Template Channel"
         - value: 1022
           label: "Price List"
+        - value: 4210
+          label: "Phone Call"
+        - value: 9
+          label: "Team"
+        - value: 4710
+          label: "Process Session"
+        - value: 9400
+          label: "Channel Access Profile Rule"
+        - value: 123
+          label: "Competitor"
+        - value: 4214
+          label: "Service Activity"
+        - value: 4251
+          label: "Recurring Appointment"
+        - value: 99
+          label: "Social Profile"
+        - value: 4212
+          label: "Task"
+        - value: 9953
+          label: "Knowledge Article"
+        - value: 4005
+          label: "Scheduling Group"
+        - value: 4300
+          label: "Marketing List"
+        - value: 3
+          label: "Opportunity"
+        - value: 4007
+          label: "Resource Group"
+        - value: 9701
+          label: "Entitlement Channel"
+        - value: 112
+          label: "Case"
+        - value: 9700
+          label: "Entitlement"
+        - value: 1090
+          label: "Invoice"
+        - value: 10001
+          label: "Profile Album"
+        - value: 2013
+          label: "Territory"
+        - value: 4000
+          label: "Facility/Equipment"
+        - value: 9600
+          label: "Goal"
         - value: 4400
           label: "Campaign"
+        - value: 4
+          label: "Lead"
+        - value: 8
+          label: "User"
+        - value: 1024
+          label: "Product"
+        - value: 4207
+          label: "Letter"
+        - value: 4402
+          label: "Campaign Activity"
+        - value: 1010
+          label: "Contract"
+        - value: 4200
+          label: "Activity"
     - name: record2objecttypecode
       type: Edm.Int32
       display_name: "Type (To)"
@@ -223,90 +223,90 @@ properties:
       iscomputed: false
       isreadonly: true
       options:
-        - value: 2
-          label: "Contact"
-        - value: 4210
-          label: "Phone Call"
         - value: 9
           label: "Team"
-        - value: 4000
-          label: "Facility/Equipment"
-        - value: 1024
-          label: "Product"
-        - value: 50
-          label: "Position"
-        - value: 9400
-          label: "Channel Access Profile Rule"
-        - value: 4204
-          label: "Fax"
-        - value: 4251
-          label: "Recurring Appointment"
-        - value: 1084
-          label: "Quote"
+        - value: 2
+          label: "Contact"
+        - value: 10001
+          label: "Profile Album"
+        - value: 4
+          label: "Lead"
         - value: 1010
           label: "Contract"
+        - value: 1024
+          label: "Product"
+        - value: 4204
+          label: "Fax"
+        - value: 1084
+          label: "Quote"
+        - value: 4210
+          label: "Phone Call"
+        - value: 4251
+          label: "Recurring Appointment"
+        - value: 1022
+          label: "Price List"
+        - value: 4216
+          label: "Social Activity"
+        - value: 9700
+          label: "Entitlement"
+        - value: 9703
+          label: "Entitlement Template Channel"
+        - value: 4000
+          label: "Facility/Equipment"
+        - value: 123
+          label: "Competitor"
+        - value: 4402
+          label: "Campaign Activity"
+        - value: 4207
+          label: "Letter"
+        - value: 4202
+          label: "Email"
         - value: 9953
           label: "Knowledge Article"
         - value: 8
           label: "User"
-        - value: 4216
-          label: "Social Activity"
-        - value: 112
-          label: "Case"
-        - value: 4
-          label: "Lead"
-        - value: 4207
-          label: "Letter"
-        - value: 1088
-          label: "Order"
-        - value: 4402
-          label: "Campaign Activity"
-        - value: 4400
-          label: "Campaign"
-        - value: 4202
-          label: "Email"
         - value: 4300
           label: "Marketing List"
-        - value: 4200
-          label: "Activity"
         - value: 4201
           label: "Appointment"
-        - value: 4005
-          label: "Scheduling Group"
-        - value: 9701
-          label: "Entitlement Channel"
-        - value: 99
-          label: "Social Profile"
-        - value: 10001
-          label: "Profile Album"
-        - value: 9700
-          label: "Entitlement"
-        - value: 9600
-          label: "Goal"
-        - value: 1022
-          label: "Price List"
-        - value: 1090
-          label: "Invoice"
-        - value: 123
-          label: "Competitor"
+        - value: 4400
+          label: "Campaign"
         - value: 9930
           label: "Knowledge Base Record"
-        - value: 4212
-          label: "Task"
-        - value: 4710
-          label: "Process Session"
-        - value: 3
-          label: "Opportunity"
-        - value: 2013
-          label: "Territory"
-        - value: 4214
-          label: "Service Activity"
-        - value: 9703
-          label: "Entitlement Template Channel"
-        - value: 4007
-          label: "Resource Group"
         - value: 1
           label: "Account"
+        - value: 2013
+          label: "Territory"
+        - value: 99
+          label: "Social Profile"
+        - value: 9600
+          label: "Goal"
+        - value: 4200
+          label: "Activity"
+        - value: 112
+          label: "Case"
+        - value: 1088
+          label: "Order"
+        - value: 4710
+          label: "Process Session"
+        - value: 9701
+          label: "Entitlement Channel"
+        - value: 4007
+          label: "Resource Group"
+        - value: 50
+          label: "Position"
+        - value: 9400
+          label: "Channel Access Profile Rule"
+        - value: 4214
+          label: "Service Activity"
+        - value: 4212
+          label: "Task"
+        - value: 3
+          label: "Opportunity"
+        - value: 4005
+          label: "Scheduling Group"
+        - value: 1090
+          label: "Invoice"
     - name: statecode
       type: Edm.Int32
       display_name: "Status"
@@ -764,16 +764,16 @@ operations:
 solutions:
   description: "The following solutions include the connection entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.System
   - Microsoft.Dynamics.CRM.AppforOutlook
-  - Microsoft.Dynamics.CRM.msdynce_AppCommon
   - Microsoft.Dynamics.CRM.msdynce_KnowledgeManagement
-  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
-  - Microsoft.Dynamics.CRM.msdynce_Marketing
   - Microsoft.Dynamics.CRM.msdynce_MarketingSales
-  - Microsoft.Dynamics.CRM.msdynce_ProductManagement
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.System
+  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.msdynce_AppCommon
+  - Microsoft.Dynamics.CRM.msdynce_Marketing
+  - Microsoft.Dynamics.CRM.msdynce_ProductManagement
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

@@ -4,7 +4,7 @@ name: "Validate"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Validate Action Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -17,7 +17,7 @@ metadata:
 namespace: Microsoft.Dynamics.CRM
 header: 
   description: "Verifies that an appointment or service appointment (service activity) has valid available resources for the activity, duration, and site, as appropriate.  "
-  solution: Microsoft.Dynamics.CRM.System
+owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
 parameters:

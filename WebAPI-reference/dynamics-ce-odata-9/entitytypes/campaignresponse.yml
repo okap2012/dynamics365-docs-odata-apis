@@ -4,7 +4,7 @@ name: "campaignresponse"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement campaignresponse EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -861,8 +861,8 @@ operations:
 solutions:
   description: "The following solutions include the campaignresponse entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_Marketing
   - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_Marketing
   - Microsoft.Dynamics.CRM.msdynce_MarketingService
 # There are no remarks for this entity.
 href_see_also:

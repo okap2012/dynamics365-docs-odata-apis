@@ -4,12 +4,12 @@ name: "App for Outlook"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement App for Outlook Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: d1a35e9e-db5c-479b-a948-0e353ba25074
+  ms.assetid: 25b9996d-c522-4691-9f37-01c267caaf4b
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"

@@ -4,7 +4,7 @@ name: "IntegerAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement IntegerAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 

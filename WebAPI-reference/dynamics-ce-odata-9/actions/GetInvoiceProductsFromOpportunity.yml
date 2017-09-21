@@ -4,7 +4,7 @@ name: "GetInvoiceProductsFromOpportunity"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement GetInvoiceProductsFromOpportunity Action Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -17,7 +17,7 @@ metadata:
 namespace: Microsoft.Dynamics.CRM
 header: 
   description: "Retrieves the products from an opportunity and copy them to the invoice.  "
-  solution: Microsoft.Dynamics.CRM.System
+owningsolution: Microsoft.Dynamics.CRM.System
 bound_entities:
   description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."
   bound_entity_items:

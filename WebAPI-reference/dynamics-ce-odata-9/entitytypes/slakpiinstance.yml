@@ -4,7 +4,7 @@ name: "slakpiinstance"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement slakpiinstance EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -166,6 +166,7 @@ lookup_properties:
   - name: _regarding_value
     single_valued_navigation_property:
     - regarding_lead
+    - regarding_entitlement
     - regarding
     - regarding_invoice
     - regarding_opportunity
@@ -218,6 +219,9 @@ single_valued_navigation_properties:
   - name: regarding_email
     type: Microsoft.Dynamics.CRM.email
     partner: slakpiinstance_email
+  - name: regarding_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: entitlement_SLAKPIInstances
   - name: regarding_fax
     type: Microsoft.Dynamics.CRM.fax
     partner: slakpiinstance_fax
@@ -283,9 +287,9 @@ operations:
 solutions:
   description: "The following solutions include the slakpiinstance entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.System
   - Microsoft.Dynamics.CRM.msdynce_Service
   - Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreement
-  - Microsoft.Dynamics.CRM.System
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

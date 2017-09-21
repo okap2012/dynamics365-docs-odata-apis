@@ -4,12 +4,12 @@ name: "Application Common"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Application Common Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: 201c8449-702a-40ec-ab51-da33bb0d2659
+  ms.assetid: 42e6f9de-9d6e-4b94-877c-7384f336d498
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_AppCommon
- version: "9.0.1.5"
+ version: "9.0.0.1043"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."

@@ -4,7 +4,7 @@ name: "team"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement team EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -787,8 +787,8 @@ operations:
 solutions:
   description: "The following solutions include the team entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_AppCommon
   - Microsoft.Dynamics.CRM.System
+  - Microsoft.Dynamics.CRM.msdynce_AppCommon
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

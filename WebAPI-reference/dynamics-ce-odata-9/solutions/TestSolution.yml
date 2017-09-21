@@ -4,19 +4,19 @@ name: "Test Solution"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Test Solution Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: da16d769-479a-e711-811c-000d3afd1636
+  ms.assetid: 74649fad-059f-e711-8122-000d3aa2331c
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement Test Solution Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
- description: "A Test solution that contains a custom action"
+# This solution has no description.
  unique_name: TestSolution
  version: "1.0.0.0"
  customization_prefix: new

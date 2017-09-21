@@ -4,12 +4,12 @@ name: "Service Level Agreement (SLA)"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Service Level Agreement (SLA) Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: 0c20ebf5-583f-476d-b7ea-b5e0d738b429
+  ms.assetid: 9c6a211a-51d9-428a-8d09-b1acdc295060
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"

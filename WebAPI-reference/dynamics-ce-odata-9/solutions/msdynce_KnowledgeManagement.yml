@@ -4,12 +4,12 @@ name: "Knowledge Management"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Knowledge Management Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-18"
+  ms.date: "2017-09-21"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: 3ed76ced-7daa-4e17-acfa-6cac59d488dc
+  ms.assetid: 5235fb94-2453-438d-a617-1b572954dfb3
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for knowledge management."
  unique_name: msdynce_KnowledgeManagement
- version: "7.0.0.64"
+ version: "9.0.0.0"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
