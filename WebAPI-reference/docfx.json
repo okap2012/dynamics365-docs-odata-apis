@@ -105,6 +105,7 @@
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "WebAPI-reference"
+    "dest": "WebAPI-reference",
+    "exportRawModel": true
   }
 }
