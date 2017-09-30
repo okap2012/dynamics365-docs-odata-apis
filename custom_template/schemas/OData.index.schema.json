@@ -17,7 +17,7 @@
          },
          "type":"object"
       },
-        "description": {
+        "summary": {
             "type": "string",
             "contentType": "markdown",
             "tags": [
@@ -35,7 +35,7 @@
             "contentType": "uid",
             "type": "string"
         },
-        "title": {
+        "name": {
             "type": "string",
             "contentType": "markdown",
             "tags": [
@@ -45,7 +45,7 @@
     },
     "metadata": "/metadata",
     "xrefProperties": [
-        "description",
-        "title"
+        "summary",
+        "name"
     ]
 }

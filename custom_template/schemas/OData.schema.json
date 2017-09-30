@@ -39,63 +39,58 @@
          "description":"the short name of this entity, for example: Microsoft.Dynamics.CRM.AddToQueue may named as AddToQueue",
          "type":"string"
       },
-      "header":{
-         "properties":{
-            "base_type":{
-               "type":"string",
-               "description":"this field is used for EntityType, it's the base type of the current EntityType",
-               "contentType":"xref"
-            },
-            "primary_key":{
-               "description":"primary key of the entitytype",
-               "type":"string"
-            },
-            "description":{
-               "type":"string",
-               "contentType":"markdown",
-               "tags":[
-                  "localizable"
-               ]
-            },
-            "iscomposable":{
-               "type":"boolean"
-            },
-            "entity_set_path":{
-               "type":"string"
-            },
-            "display_name":{
-               "type":"string"
-            },
-            "unique_name":{
-               "type":"string"
-            },
-            "version":{
-               "type":"string"
-            },
-            "customization_prefix":{
-               "type":"string"
-            },
-            "primary_name_attribute":{
-               "type":"string"
-            },
-            "operations_supported":{
-               "items":{
-                  "description":"Examples: POST,GET,PATCH,DELETE,...",
-                  "type":"string",
-                  "enum":[
-                     "GET",
-                     "GET (Retrieve Only)",
-                     "GET (RetrieveMultiple Only)",
-                     "POST",
-                     "PUT",
-                     "DELETE",
-                     "PATCH"
-                  ]
-               },
-               "type":"array"
-            }
+      "base_type":{
+         "type":"string",
+         "description":"this field is used for EntityType, it's the base type of the current EntityType",
+         "contentType":"xref"
+      },
+      "primary_key":{
+         "description":"primary key of the entitytype",
+         "type":"string"
+      },
+      "description":{
+         "type":"string",
+         "contentType":"markdown",
+         "tags":[
+            "localizable"
+         ]
+      },
+      "iscomposable":{
+         "type":"boolean"
+      },
+      "entity_set_path":{
+         "type":"string"
+      },
+      "display_name":{
+         "type":"string"
+      },
+      "unique_name":{
+         "type":"string"
+      },
+      "version":{
+         "type":"string"
+      },
+      "customization_prefix":{
+         "type":"string"
+      },
+      "primary_name_attribute":{
+         "type":"string"
+      },
+      "operations_supported":{
+         "items":{
+            "description":"Examples: POST,GET,PATCH,DELETE,...",
+            "type":"string",
+            "enum":[
+               "GET",
+               "GET (Retrieve Only)",
+               "GET (RetrieveMultiple Only)",
+               "POST",
+               "PUT",
+               "DELETE",
+               "PATCH"
+            ]
          },
-         "type":"object"
+         "type":"array"
       },
       "isbound":{
          "type":"boolean"
@@ -105,13 +100,6 @@
       },
       "hasreturnvalue":{
          "type":"boolean"
-      },
-      "description":{
-         "type":"string",
-         "contentType":"markdown",
-         "tags":[
-            "localizable"
-         ]
       },
       "remarks":{
          "type":"string",
