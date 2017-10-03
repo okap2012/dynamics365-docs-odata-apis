@@ -4,7 +4,7 @@ name: "activityparty"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement activityparty EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -234,6 +234,12 @@ single_valued_navigation_properties:
   - name: activityid_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: letter_activity_parties
+  - name: activityid_msdyn_approval_activityparty
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: msdyn_approval_activity_parties
+  - name: activityid_msdyn_bookingalert_activityparty
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: msdyn_bookingalert_activity_parties
   - name: activityid_opportunityclose
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: opportunityclose_activity_parties
@@ -325,7 +331,7 @@ solutions:
   solution_items:
   - Microsoft.Dynamics.CRM.System
   - Microsoft.Dynamics.CRM.msdynce_Service
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

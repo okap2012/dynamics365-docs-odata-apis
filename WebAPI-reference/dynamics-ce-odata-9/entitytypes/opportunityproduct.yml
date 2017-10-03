@@ -4,7 +4,7 @@ name: "opportunityproduct"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement opportunityproduct EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,7 +18,7 @@ header:
   description: "Association between an opportunity and a product."
   entity_set_path: "[organization URI]/api/data/v9.0/opportunityproducts"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
-  display_name: Opportunity Product
+  display_name: Opportunity Line
   primary_key: opportunityproductid
   primary_name_attribute: productidname
   operations_supported: 
@@ -148,6 +148,82 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_billingmethod
+      type: Edm.Int32
+      display_name: "Billing Method"
+      description: "Billing method for the project opportunity line. Valid values are Time and Material and Fixed Price"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Time and Material"
+        - value: 192350001
+          label: "Fixed Price"
+    - name: msdyn_budgetamount
+      type: Edm.Decimal
+      display_name: "Budget Amount"
+      description: "Enter the customer budget amount for this opportunity line."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_budgetamount_base
+      type: Edm.Decimal
+      display_name: "Budget Amount (Base)"
+      description: "Value of the Budget Amount in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_costamount
+      type: Edm.Decimal
+      display_name: "Cost Amount"
+      description: "Shows the total cost price of the product based on the cost price per unit and quantity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_costamount_base
+      type: Edm.Decimal
+      display_name: "Cost Amount (Base)"
+      description: "Value of the Cost Amount in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_costpriceperunit
+      type: Edm.Decimal
+      display_name: "Cost Price Per Unit"
+      description: "Cost price per unit of the product. The default is the cost price of the product."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_costpriceperunit_base
+      type: Edm.Decimal
+      display_name: "Cost Price Per Unit (Base)"
+      description: "Value of the Cost Price Per Unit in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_duration
+      type: Edm.Int32
+      display_name: "Duration"
+      description: "Enter the duration of the agreement"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_enddate
+      type: Edm.DateTimeOffset
+      display_name: "End Date"
+      description: "Enter the end date of the agreement"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_linetype
+      type: Edm.Int32
+      display_name: "Line Type"
+      description: "The field to distinguish the order lines to be of project service or field service"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 690970000
+          label: "Project Service Line"
+        - value: 690970001
+          label: "Field Service Line"
+    - name: msdyn_startdate
+      type: Edm.DateTimeOffset
+      display_name: "Start Date"
+      description: "Start date of the Agreement"
+      iscomputed: false
+      isreadonly: false
     - name: opportunityproductid
       type: Edm.Guid
       display_name: "Opportunity Product"
@@ -388,6 +464,18 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who last modified the opportunityproduct."
+  - name: _msdyn_pricelist_value
+    single_valued_navigation_property:
+    - msdyn_pricelist
+    description: "Select a price list for the opportunity line"
+  - name: _msdyn_project_value
+    single_valued_navigation_property:
+    - msdyn_Project
+    description: "Select the project for this opportunity line."
+  - name: _msdyn_serviceaccount_value
+    single_valued_navigation_property:
+    - msdyn_serviceaccount
+    description: "Select the service account for the opportunity line"
   - name: _opportunityid_value
     single_valued_navigation_property:
     - opportunityid
@@ -431,6 +519,15 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_opportunityproduct_modifiedonbehalfby
+  - name: msdyn_pricelist
+    type: Microsoft.Dynamics.CRM.pricelevel
+    partner: msdyn_pricelevel_opportunityproduct_PriceList
+  - name: msdyn_Project
+    type: Microsoft.Dynamics.CRM.msdyn_project
+    partner: msdyn_msdyn_project_opportunityproduct_Project
+  - name: msdyn_serviceaccount
+    type: Microsoft.Dynamics.CRM.account
+    partner: msdyn_account_opportunityproduct_ServiceAccount
   - name: opportunityid
     type: Microsoft.Dynamics.CRM.opportunity
     partner: product_opportunities
@@ -493,8 +590,10 @@ operations:
 solutions:
   description: "The following solutions include the opportunityproduct entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_Sales
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.ProjectService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

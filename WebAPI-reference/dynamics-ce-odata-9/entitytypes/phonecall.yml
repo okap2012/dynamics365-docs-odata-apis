@@ -4,7 +4,7 @@ name: "phonecall"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement phonecall EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -532,12 +532,384 @@ single_valued_navigation_properties:
   - name: regardingobjectid_lead_phonecall
     type: Microsoft.Dynamics.CRM.lead
     partner: Lead_Phonecalls
+  - name: regardingobjectid_msdyn_agreement
+    type: Microsoft.Dynamics.CRM.msdyn_agreement
+    partner: msdyn_agreement_ActivityPointers
+  - name: regardingobjectid_msdyn_agreement_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_agreement
+    partner: msdyn_agreement_PhoneCalls
+  - name: regardingobjectid_msdyn_agreementbookingdate
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
+    partner: msdyn_agreementbookingdate_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingdate_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
+    partner: msdyn_agreementbookingdate_PhoneCalls
+  - name: regardingobjectid_msdyn_agreementbookingincident
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
+    partner: msdyn_agreementbookingincident_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingincident_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
+    partner: msdyn_agreementbookingincident_PhoneCalls
+  - name: regardingobjectid_msdyn_agreementbookingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
+    partner: msdyn_agreementbookingproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingproduct_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
+    partner: msdyn_agreementbookingproduct_PhoneCalls
+  - name: regardingobjectid_msdyn_agreementbookingservice
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
+    partner: msdyn_agreementbookingservice_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingservice_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
+    partner: msdyn_agreementbookingservice_PhoneCalls
+  - name: regardingobjectid_msdyn_agreementbookingservicetask
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask
+    partner: msdyn_agreementbookingservicetask_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingservicetask_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask
+    partner: msdyn_agreementbookingservicetask_PhoneCalls
+  - name: regardingobjectid_msdyn_agreementbookingsetup
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
+    partner: msdyn_agreementbookingsetup_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingsetup_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
+    partner: msdyn_agreementbookingsetup_PhoneCalls
+  - name: regardingobjectid_msdyn_agreementinvoicedate
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
+    partner: msdyn_agreementinvoicedate_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementinvoicedate_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
+    partner: msdyn_agreementinvoicedate_PhoneCalls
+  - name: regardingobjectid_msdyn_agreementinvoiceproduct
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+    partner: msdyn_agreementinvoiceproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementinvoiceproduct_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+    partner: msdyn_agreementinvoiceproduct_PhoneCalls
+  - name: regardingobjectid_msdyn_agreementinvoicesetup
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
+    partner: msdyn_agreementinvoicesetup_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementinvoicesetup_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
+    partner: msdyn_agreementinvoicesetup_PhoneCalls
+  - name: regardingobjectid_msdyn_bookingalertstatus
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
+    partner: msdyn_bookingalertstatus_ActivityPointers
+  - name: regardingobjectid_msdyn_bookingalertstatus_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
+    partner: msdyn_bookingalertstatus_PhoneCalls
+  - name: regardingobjectid_msdyn_bookingrule
+    type: Microsoft.Dynamics.CRM.msdyn_bookingrule
+    partner: msdyn_bookingrule_ActivityPointers
+  - name: regardingobjectid_msdyn_bookingrule_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_bookingrule
+    partner: msdyn_bookingrule_PhoneCalls
+  - name: regardingobjectid_msdyn_bookingtimestamp
+    type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
+    partner: msdyn_bookingtimestamp_ActivityPointers
+  - name: regardingobjectid_msdyn_bookingtimestamp_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
+    partner: msdyn_bookingtimestamp_PhoneCalls
+  - name: regardingobjectid_msdyn_customerasset
+    type: Microsoft.Dynamics.CRM.msdyn_customerasset
+    partner: msdyn_customerasset_ActivityPointers
+  - name: regardingobjectid_msdyn_customerasset_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_customerasset
+    partner: msdyn_customerasset_PhoneCalls
+  - name: regardingobjectid_msdyn_fieldservicesetting
+    type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
+    partner: msdyn_fieldservicesetting_ActivityPointers
+  - name: regardingobjectid_msdyn_fieldservicesetting_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
+    partner: msdyn_fieldservicesetting_PhoneCalls
+  - name: regardingobjectid_msdyn_incidenttypecharacteristic
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
+    partner: msdyn_incidenttypecharacteristic_ActivityPointers
+  - name: regardingobjectid_msdyn_incidenttypecharacteristic_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
+    partner: msdyn_incidenttypecharacteristic_PhoneCalls
+  - name: regardingobjectid_msdyn_incidenttypeproduct
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
+    partner: msdyn_incidenttypeproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_incidenttypeproduct_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
+    partner: msdyn_incidenttypeproduct_PhoneCalls
+  - name: regardingobjectid_msdyn_incidenttypeservice
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
+    partner: msdyn_incidenttypeservice_ActivityPointers
+  - name: regardingobjectid_msdyn_incidenttypeservice_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
+    partner: msdyn_incidenttypeservice_PhoneCalls
+  - name: regardingobjectid_msdyn_inventoryadjustment
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
+    partner: msdyn_inventoryadjustment_ActivityPointers
+  - name: regardingobjectid_msdyn_inventoryadjustment_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
+    partner: msdyn_inventoryadjustment_PhoneCalls
+  - name: regardingobjectid_msdyn_inventoryadjustmentproduct
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
+    partner: msdyn_inventoryadjustmentproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_inventoryadjustmentproduct_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
+    partner: msdyn_inventoryadjustmentproduct_PhoneCalls
+  - name: regardingobjectid_msdyn_inventoryjournal
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
+    partner: msdyn_inventoryjournal_ActivityPointers
+  - name: regardingobjectid_msdyn_inventoryjournal_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
+    partner: msdyn_inventoryjournal_PhoneCalls
+  - name: regardingobjectid_msdyn_inventorytransfer
+    type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
+    partner: msdyn_inventorytransfer_ActivityPointers
+  - name: regardingobjectid_msdyn_inventorytransfer_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
+    partner: msdyn_inventorytransfer_PhoneCalls
+  - name: regardingobjectid_msdyn_payment
+    type: Microsoft.Dynamics.CRM.msdyn_payment
+    partner: msdyn_payment_ActivityPointers
+  - name: regardingobjectid_msdyn_payment_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_payment
+    partner: msdyn_payment_PhoneCalls
+  - name: regardingobjectid_msdyn_paymentdetail
+    type: Microsoft.Dynamics.CRM.msdyn_paymentdetail
+    partner: msdyn_paymentdetail_ActivityPointers
+  - name: regardingobjectid_msdyn_paymentdetail_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_paymentdetail
+    partner: msdyn_paymentdetail_PhoneCalls
+  - name: regardingobjectid_msdyn_paymentmethod
+    type: Microsoft.Dynamics.CRM.msdyn_paymentmethod
+    partner: msdyn_paymentmethod_ActivityPointers
+  - name: regardingobjectid_msdyn_paymentmethod_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_paymentmethod
+    partner: msdyn_paymentmethod_PhoneCalls
+  - name: regardingobjectid_msdyn_paymentterm
+    type: Microsoft.Dynamics.CRM.msdyn_paymentterm
+    partner: msdyn_paymentterm_ActivityPointers
+  - name: regardingobjectid_msdyn_paymentterm_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_paymentterm
+    partner: msdyn_paymentterm_PhoneCalls
   - name: regardingobjectid_msdyn_postalbum
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: msdyn_postalbum_ActivityPointers
   - name: regardingobjectid_msdyn_postalbum_phonecall
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: msdyn_postalbum_PhoneCalls
+  - name: regardingobjectid_msdyn_postalcode
+    type: Microsoft.Dynamics.CRM.msdyn_postalcode
+    partner: msdyn_postalcode_ActivityPointers
+  - name: regardingobjectid_msdyn_postalcode_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_postalcode
+    partner: msdyn_postalcode_PhoneCalls
+  - name: regardingobjectid_msdyn_processnotes
+    type: Microsoft.Dynamics.CRM.msdyn_processnotes
+    partner: msdyn_processnotes_ActivityPointers
+  - name: regardingobjectid_msdyn_processnotes_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_processnotes
+    partner: msdyn_processnotes_PhoneCalls
+  - name: regardingobjectid_msdyn_productinventory
+    type: Microsoft.Dynamics.CRM.msdyn_productinventory
+    partner: msdyn_productinventory_ActivityPointers
+  - name: regardingobjectid_msdyn_productinventory_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_productinventory
+    partner: msdyn_productinventory_PhoneCalls
+  - name: regardingobjectid_msdyn_projectteam
+    type: Microsoft.Dynamics.CRM.msdyn_projectteam
+    partner: msdyn_projectteam_ActivityPointers
+  - name: regardingobjectid_msdyn_projectteam_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_projectteam
+    partner: msdyn_projectteam_PhoneCalls
+  - name: regardingobjectid_msdyn_purchaseorder
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+    partner: msdyn_purchaseorder_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseorder_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+    partner: msdyn_purchaseorder_PhoneCalls
+  - name: regardingobjectid_msdyn_purchaseorderbill
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
+    partner: msdyn_purchaseorderbill_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseorderbill_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
+    partner: msdyn_purchaseorderbill_PhoneCalls
+  - name: regardingobjectid_msdyn_purchaseorderproduct
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+    partner: msdyn_purchaseorderproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseorderproduct_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+    partner: msdyn_purchaseorderproduct_PhoneCalls
+  - name: regardingobjectid_msdyn_purchaseorderreceipt
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
+    partner: msdyn_purchaseorderreceipt_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseorderreceipt_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
+    partner: msdyn_purchaseorderreceipt_PhoneCalls
+  - name: regardingobjectid_msdyn_purchaseorderreceiptproduct
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
+    partner: msdyn_purchaseorderreceiptproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseorderreceiptproduct_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
+    partner: msdyn_purchaseorderreceiptproduct_PhoneCalls
+  - name: regardingobjectid_msdyn_purchaseordersubstatus
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus
+    partner: msdyn_purchaseordersubstatus_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseordersubstatus_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus
+    partner: msdyn_purchaseordersubstatus_PhoneCalls
+  - name: regardingobjectid_msdyn_quotebookingincident
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingincident
+    partner: msdyn_quotebookingincident_ActivityPointers
+  - name: regardingobjectid_msdyn_quotebookingincident_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingincident
+    partner: msdyn_quotebookingincident_PhoneCalls
+  - name: regardingobjectid_msdyn_quotebookingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+    partner: msdyn_quotebookingproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_quotebookingproduct_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+    partner: msdyn_quotebookingproduct_PhoneCalls
+  - name: regardingobjectid_msdyn_quotebookingservice
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+    partner: msdyn_quotebookingservice_ActivityPointers
+  - name: regardingobjectid_msdyn_quotebookingservice_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+    partner: msdyn_quotebookingservice_PhoneCalls
+  - name: regardingobjectid_msdyn_quotebookingservicetask
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask
+    partner: msdyn_quotebookingservicetask_ActivityPointers
+  - name: regardingobjectid_msdyn_quotebookingservicetask_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask
+    partner: msdyn_quotebookingservicetask_PhoneCalls
+  - name: regardingobjectid_msdyn_resourceterritory
+    type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
+    partner: msdyn_resourceterritory_ActivityPointers
+  - name: regardingobjectid_msdyn_resourceterritory_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
+    partner: msdyn_resourceterritory_PhoneCalls
+  - name: regardingobjectid_msdyn_rma
+    type: Microsoft.Dynamics.CRM.msdyn_rma
+    partner: msdyn_rma_ActivityPointers
+  - name: regardingobjectid_msdyn_rma_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_rma
+    partner: msdyn_rma_PhoneCalls
+  - name: regardingobjectid_msdyn_rmaproduct
+    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+    partner: msdyn_rmaproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_rmaproduct_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+    partner: msdyn_rmaproduct_PhoneCalls
+  - name: regardingobjectid_msdyn_rmareceipt
+    type: Microsoft.Dynamics.CRM.msdyn_rmareceipt
+    partner: msdyn_rmareceipt_ActivityPointers
+  - name: regardingobjectid_msdyn_rmareceipt_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_rmareceipt
+    partner: msdyn_rmareceipt_PhoneCalls
+  - name: regardingobjectid_msdyn_rmareceiptproduct
+    type: Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct
+    partner: msdyn_rmareceiptproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_rmareceiptproduct_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct
+    partner: msdyn_rmareceiptproduct_PhoneCalls
+  - name: regardingobjectid_msdyn_rmasubstatus
+    type: Microsoft.Dynamics.CRM.msdyn_rmasubstatus
+    partner: msdyn_rmasubstatus_ActivityPointers
+  - name: regardingobjectid_msdyn_rmasubstatus_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_rmasubstatus
+    partner: msdyn_rmasubstatus_PhoneCalls
+  - name: regardingobjectid_msdyn_rtv
+    type: Microsoft.Dynamics.CRM.msdyn_rtv
+    partner: msdyn_rtv_ActivityPointers
+  - name: regardingobjectid_msdyn_rtv_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_rtv
+    partner: msdyn_rtv_PhoneCalls
+  - name: regardingobjectid_msdyn_rtvproduct
+    type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
+    partner: msdyn_rtvproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_rtvproduct_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
+    partner: msdyn_rtvproduct_PhoneCalls
+  - name: regardingobjectid_msdyn_rtvsubstatus
+    type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
+    partner: msdyn_rtvsubstatus_ActivityPointers
+  - name: regardingobjectid_msdyn_rtvsubstatus_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
+    partner: msdyn_rtvsubstatus_PhoneCalls
+  - name: regardingobjectid_msdyn_shipvia
+    type: Microsoft.Dynamics.CRM.msdyn_shipvia
+    partner: msdyn_shipvia_ActivityPointers
+  - name: regardingobjectid_msdyn_shipvia_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_shipvia
+    partner: msdyn_shipvia_PhoneCalls
+  - name: regardingobjectid_msdyn_systemuserschedulersetting
+    type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
+    partner: msdyn_systemuserschedulersetting_ActivityPointers
+  - name: regardingobjectid_msdyn_systemuserschedulersetting_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
+    partner: msdyn_systemuserschedulersetting_PhoneCalls
+  - name: regardingobjectid_msdyn_timegroup
+    type: Microsoft.Dynamics.CRM.msdyn_timegroup
+    partner: msdyn_timegroup_ActivityPointers
+  - name: regardingobjectid_msdyn_timegroup_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_timegroup
+    partner: msdyn_timegroup_PhoneCalls
+  - name: regardingobjectid_msdyn_timegroupdetail
+    type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
+    partner: msdyn_timegroupdetail_ActivityPointers
+  - name: regardingobjectid_msdyn_timegroupdetail_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
+    partner: msdyn_timegroupdetail_PhoneCalls
+  - name: regardingobjectid_msdyn_timeoffrequest
+    type: Microsoft.Dynamics.CRM.msdyn_timeoffrequest
+    partner: msdyn_timeoffrequest_ActivityPointers
+  - name: regardingobjectid_msdyn_timeoffrequest_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_timeoffrequest
+    partner: msdyn_timeoffrequest_PhoneCalls
+  - name: regardingobjectid_msdyn_warehouse
+    type: Microsoft.Dynamics.CRM.msdyn_warehouse
+    partner: msdyn_warehouse_ActivityPointers
+  - name: regardingobjectid_msdyn_warehouse_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_warehouse
+    partner: msdyn_warehouse_PhoneCalls
+  - name: regardingobjectid_msdyn_workorder
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_workorder_ActivityPointers
+  - name: regardingobjectid_msdyn_workorder_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_workorder_PhoneCalls
+  - name: regardingobjectid_msdyn_workordercharacteristic
+    type: Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
+    partner: msdyn_workordercharacteristic_ActivityPointers
+  - name: regardingobjectid_msdyn_workordercharacteristic_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
+    partner: msdyn_workordercharacteristic_PhoneCalls
+  - name: regardingobjectid_msdyn_workorderincident
+    type: Microsoft.Dynamics.CRM.msdyn_workorderincident
+    partner: msdyn_workorderincident_ActivityPointers
+  - name: regardingobjectid_msdyn_workorderincident_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_workorderincident
+    partner: msdyn_workorderincident_PhoneCalls
+  - name: regardingobjectid_msdyn_workorderproduct
+    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+    partner: msdyn_workorderproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_workorderproduct_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+    partner: msdyn_workorderproduct_PhoneCalls
+  - name: regardingobjectid_msdyn_workorderresourcerestriction
+    type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
+    partner: msdyn_workorderresourcerestriction_ActivityPointers
+  - name: regardingobjectid_msdyn_workorderresourcerestriction_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
+    partner: msdyn_workorderresourcerestriction_PhoneCalls
+  - name: regardingobjectid_msdyn_workorderservice
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+    partner: msdyn_workorderservice_ActivityPointers
+  - name: regardingobjectid_msdyn_workorderservice_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+    partner: msdyn_workorderservice_PhoneCalls
+  - name: regardingobjectid_msdyn_workorderservicetask
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
+    partner: msdyn_workorderservicetask_ActivityPointers
+  - name: regardingobjectid_msdyn_workorderservicetask_phonecall
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
+    partner: msdyn_workorderservicetask_PhoneCalls
   - name: regardingobjectid_new_interactionforemail
     type: Microsoft.Dynamics.CRM.interactionforemail
     partner: new_interactionforemail_ActivityPointers
@@ -631,6 +1003,12 @@ collection_valued_navigation_properties:
   - name: activity_pointer_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: activityid_activitypointer
+  - name: activity_pointer_msdyn_approval
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: activityid_msdyn_approval
+  - name: activity_pointer_msdyn_bookingalert
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: activityid_msdyn_bookingalert
   - name: activity_pointer_opportunity_close
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: activityid_activitypointer
@@ -754,14 +1132,15 @@ solutions:
   description: "The following solutions include the phonecall entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-  - Microsoft.Dynamics.CRM.AppforOutlook
   - Microsoft.Dynamics.CRM.msdynce_Activities
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_Service
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
   - Microsoft.Dynamics.CRM.msdynce_AppCommon
+  - Microsoft.Dynamics.CRM.AppforOutlook
   - Microsoft.Dynamics.CRM.msdynce_Marketing
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

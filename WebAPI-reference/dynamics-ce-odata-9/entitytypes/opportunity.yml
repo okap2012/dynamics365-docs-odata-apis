@@ -4,7 +4,7 @@ name: "opportunity"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement opportunity EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -315,6 +315,18 @@ properties:
           label: "Contacted"
         - value: 1
           label: "Not Contacted"
+    - name: int_forecast
+      type: Edm.Decimal
+      display_name: "Forecast"
+      description: "Shows the forecasted revenue for an Opportunity."
+      iscomputed: false
+      isreadonly: false
+    - name: int_forecast_base
+      type: Edm.Decimal
+      display_name: "Forecast (Base)"
+      description: "Value of the Forecast in base currency."
+      iscomputed: false
+      isreadonly: true
     - name: isrevenuesystemcalculated
       type: Edm.Boolean
       display_name: "Revenue"
@@ -338,6 +350,19 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_ordertype
+      type: Edm.Int32
+      display_name: "Order Type"
+      description: "Internal use only."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350001
+          label: "Work based"
+        - value: 192350000
+          label: "Item based"
+        - value: 690970002
+          label: "Service-Maintenance Based"
     - name: name
       type: Edm.String
       display_name: "Topic"
@@ -843,6 +868,18 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Shows who last updated the record on behalf of another user."
+  - name: _msdyn_accountmanagerid_value
+    single_valued_navigation_property:
+    - msdyn_AccountManagerId
+    description: "The account manager responsible for the opportunity."
+  - name: _msdyn_contractorganizationalunitid_value
+    single_valued_navigation_property:
+    - msdyn_ContractOrganizationalUnitId
+    description: "The organizational unit in charge of the opportunity."
+  - name: _msdyn_workordertype_value
+    single_valued_navigation_property:
+    - msdyn_workordertype
+    description: "Unique identifier for Work Order Type associated with Opportunity."
   - name: _originatingleadid_value
     single_valued_navigation_property:
     - originatingleadid
@@ -911,6 +948,15 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_opportunity_modifiedonbehalfby
+  - name: msdyn_AccountManagerId
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: msdyn_accountmanager_opportunity
+  - name: msdyn_ContractOrganizationalUnitId
+    type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+    partner: msdyn_organizationalunit_opportunity
+  - name: msdyn_workordertype
+    type: Microsoft.Dynamics.CRM.msdyn_workordertype
+    partner: msdyn_msdyn_workordertype_opportunity_WorkOrderType
   - name: originatingleadid
     type: Microsoft.Dynamics.CRM.lead
     partner: opportunity_originating_lead
@@ -956,6 +1002,12 @@ collection_valued_navigation_properties:
   - name: lead_qualifying_opportunity
     type: Microsoft.Dynamics.CRM.lead
     partner: qualifyingopportunityid
+  - name: msdyn_opportunity_msdyn_opportunitypricelist_Opportunity
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitypricelist
+    partner: msdyn_Opportunity
+  - name: msdyn_opportunity_msdyn_workorder
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_opportunityid
   - name: opportunity_actioncard
     type: Microsoft.Dynamics.CRM.actioncard
     partner: regardingobjectid_opportunity_actioncard
@@ -1007,6 +1059,12 @@ collection_valued_navigation_properties:
   - name: Opportunity_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_opportunity
+  - name: opportunity_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_opportunity_msdyn_approval
+  - name: opportunity_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_opportunity_msdyn_bookingalert
   - name: Opportunity_OpportunityClose
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: opportunityid
@@ -1091,6 +1149,10 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_CloseAllOpportunityQuotes
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_CreateQuoteFromOpportunity
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -1106,11 +1168,14 @@ operations:
 solutions:
   description: "The following solutions include the opportunity entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.msdynce_Sales
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
   - Microsoft.Dynamics.CRM.AppforOutlook
   - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
-  - Microsoft.Dynamics.CRM.msdynce_Sales
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.FreeTrialBaseSolution2
+  - Microsoft.Dynamics.CRM.ProjectService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -4,7 +4,7 @@ name: "invoicedetail"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement invoicedetail EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,7 +18,7 @@ header:
   description: "Line item in an invoice containing detailed billing information for a product."
   entity_set_path: "[organization URI]/api/data/v9.0/invoicedetails"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
-  display_name: Invoice Product
+  display_name: Invoice Line
   primary_key: invoicedetailid
   primary_name_attribute: productidname
   operations_supported: 
@@ -162,6 +162,100 @@ properties:
       type: Edm.DateTimeOffset
       display_name: "Modified On"
       description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_billingmethod
+      type: Edm.Int32
+      display_name: "Billing Method"
+      description: "Billing method for the project invoice line. Valid values are Time and Material and Fixed Price"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Time and Material"
+        - value: 192350001
+          label: "Fixed Price"
+    - name: msdyn_chargeableamount
+      type: Edm.Decimal
+      display_name: "Chargeable Amount"
+      description: "The amount from included line details that is chargeable."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_chargeableamount_base
+      type: Edm.Decimal
+      display_name: "Chargeable Amount (Base)"
+      description: "Value of the Chargeable Amount in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_complimentaryamount
+      type: Edm.Decimal
+      display_name: "Complimentary Amount"
+      description: "The amount from included line details that is complimentary and won't be charged."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_complimentaryamount_base
+      type: Edm.Decimal
+      display_name: "Complimentary Amount (Base)"
+      description: "Value of the Complimentary Amount in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_contractline
+      type: Edm.String
+      display_name: "Project Contract Line"
+      description: "Shows the project contract line for this invoice line."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_contractlineamount
+      type: Edm.Decimal
+      display_name: "Contract Line Amount"
+      description: "Amount from the related project contract line if present."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_contractlineamount_base
+      type: Edm.Decimal
+      display_name: "Contract Line Amount (Base)"
+      description: "Value of the project contract line amount in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_invoicedtilldate
+      type: Edm.Decimal
+      display_name: "Amount Previously Invoiced"
+      description: "Amount already invoiced to customer for the same project contract line."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_invoicedtilldate_base
+      type: Edm.Decimal
+      display_name: "Amount Previously Invoiced (Base)"
+      description: "Value of the Amount Previously Invoiced in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_lineorder
+      type: Edm.Int32
+      display_name: "Line Order"
+      description: "Shows the order of this invoice product within the invoice."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_linetype
+      type: Edm.Int32
+      display_name: "Line Type"
+      description: "The field to distinguish the Invoice lines to be of project service or field service"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 690970000
+          label: "Project Service Line"
+        - value: 690970001
+          label: "Field Service Line"
+    - name: msdyn_nonchargeableamount
+      type: Edm.Decimal
+      display_name: "Non Chargeable Amount"
+      description: "The amount from included line details that is non-chargeable."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_nonchargeableamount_base
+      type: Edm.Decimal
+      display_name: "Non Chargeable Amount (Base)"
+      description: "Value of the Non Chargeable Amount in base currency."
       iscomputed: false
       isreadonly: true
     - name: overriddencreatedon
@@ -502,6 +596,38 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Shows who last updated the record on behalf of another user."
+  - name: _msdyn_agreement_value
+    single_valued_navigation_property:
+    - msdyn_agreement
+    description: "Unique identifier for Agreement associated with Invoice Product."
+  - name: _msdyn_agreementinvoiceproduct_value
+    single_valued_navigation_property:
+    - msdyn_agreementinvoiceproduct
+    description: "Unique identifier for Agreement Invoice Product associated with Invoice Product."
+  - name: _msdyn_currency_value
+    single_valued_navigation_property:
+    - msdyn_currency
+    description: "Unique identifier for Currency associated with Invoice Product."
+  - name: _msdyn_orderinvoicingproduct_value
+    single_valued_navigation_property:
+    - msdyn_OrderInvoicingProduct
+    description: "Unique identifier for Order Invoicing Product associated with Invoice Product."
+  - name: _msdyn_project_value
+    single_valued_navigation_property:
+    - msdyn_Project
+    description: "Shows the project for this invoice line."
+  - name: _msdyn_workorderid_value
+    single_valued_navigation_property:
+    - msdyn_workorderid
+    description: "Unique identifier for Work Order associated with Invoice Product."
+  - name: _msdyn_workorderproductid_value
+    single_valued_navigation_property:
+    - msdyn_workorderproductid
+    description: "Unique identifier for Work Order Product associated with Invoice Product."
+  - name: _msdyn_workorderserviceid_value
+    single_valued_navigation_property:
+    - msdyn_workorderserviceid
+    description: "Unique identifier for Work Order Service associated with Invoice Product."
   - name: _ownerid_value
     description: "Owner Id"
   - name: _owningbusinessunit_value
@@ -548,6 +674,30 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_invoicedetail_modifiedonbehalfby
+  - name: msdyn_agreement
+    type: Microsoft.Dynamics.CRM.msdyn_agreement
+    partner: msdyn_msdyn_agreement_invoicedetail_Agreement
+  - name: msdyn_agreementinvoiceproduct
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+    partner: msdyn_msdyn_agreementinvoiceproduct_invoicedetail_AgreementInvoiceProduct
+  - name: msdyn_currency
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: msdyn_transactioncurrency_invoicedetail_Currency
+  - name: msdyn_OrderInvoicingProduct
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct
+    partner: msdyn_msdyn_orderinvoicingproduct_invoicedetail_OrderInvoiceProduct
+  - name: msdyn_Project
+    type: Microsoft.Dynamics.CRM.msdyn_project
+    partner: msdyn_msdyn_project_invoicedetail_Project
+  - name: msdyn_workorderid
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_msdyn_workorder_invoicedetail
+  - name: msdyn_workorderproductid
+    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+    partner: msdyn_msdyn_workorderproduct_invoicedetail
+  - name: msdyn_workorderserviceid
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+    partner: msdyn_msdyn_workorderservice_invoicedetail
   - name: owningteam
     type: Microsoft.Dynamics.CRM.team
     partner: team_invoicedetail
@@ -610,8 +760,10 @@ operations:
 solutions:
   description: "The following solutions include the invoicedetail entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_Sales
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.ProjectService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

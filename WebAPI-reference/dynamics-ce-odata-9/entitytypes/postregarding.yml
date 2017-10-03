@@ -4,7 +4,7 @@ name: "postregarding"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement postregarding EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -137,11 +137,11 @@ solutions:
   description: "The following solutions include the postregarding entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

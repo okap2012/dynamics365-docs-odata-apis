@@ -4,7 +4,7 @@ name: "invoice"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement invoice EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -233,6 +233,63 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_amountdue
+      type: Edm.Decimal
+      display_name: "Amount Due"
+      description: "Enter the amount due on this invoice."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_amountdue_base
+      type: Edm.Decimal
+      display_name: "Amount Due (Base)"
+      description: "Value of the Amount Due in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_hascorrections
+      type: Edm.Boolean
+      display_name: "Has Corrections"
+      description: "Indicates if this invoice contains corrections to previous invoices."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_invoicedate
+      type: Edm.DateTimeOffset
+      display_name: "Invoice Date"
+      description: "Document date of the Invoice for use in calculation of payment due date"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_ordertype
+      type: Edm.Int32
+      display_name: "Type"
+      description: "Whether the Invoice is for an Item-based or a service maintainence-based sale"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350001
+          label: "Work based"
+        - value: 192350000
+          label: "Item based"
+        - value: 690970002
+          label: "Service-Maintenance Based"
+    - name: msdyn_projectinvoicestatus
+      type: Edm.Int32
+      display_name: "Project Invoice Status"
+      description: "Project specific status"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Draft"
+        - value: 192350001
+          label: "In Review"
+        - value: 192350002
+          label: "Confirmed"
+        - value: 192350003
+          label: "Invoice Paid"
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -740,6 +797,9 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: bpf_invoice_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+    partner: bpf_invoiceid
   - name: contactinvoices_association
     type: Microsoft.Dynamics.CRM.contact
     partner: contactinvoices_association
@@ -782,6 +842,12 @@ collection_valued_navigation_properties:
   - name: Invoice_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_invoice
+  - name: invoice_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_invoice_msdyn_approval
+  - name: invoice_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_invoice_msdyn_bookingalert
   - name: Invoice_Phonecalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_invoice_phonecall
@@ -806,6 +872,27 @@ collection_valued_navigation_properties:
   - name: Invoice_Tasks
     type: Microsoft.Dynamics.CRM.task
     partner: regardingobjectid_invoice_task
+  - name: msdyn_invoice_msdyn_actual_Invoice
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_Invoice
+  - name: msdyn_invoice_msdyn_agreementinvoicedate_Invoice
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
+    partner: msdyn_Invoice
+  - name: msdyn_invoice_msdyn_contractlineinvoiceschedule_Invoice
+    type: Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule
+    partner: msdyn_Invoice
+  - name: msdyn_invoice_msdyn_invoicelinetransaction_Invoice
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_Invoice
+  - name: msdyn_invoice_msdyn_orderinvoicingdate_Invoice
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingdate
+    partner: msdyn_Invoice
+  - name: msdyn_invoice_msdyn_orderinvoicingsetupdate_Invoice
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetupdate
+    partner: msdyn_Invoice
+  - name: msdyn_invoice_msdyn_paymentdetail_Invoice
+    type: Microsoft.Dynamics.CRM.msdyn_paymentdetail
+    partner: msdyn_invoice
   - name: slakpiinstance_invoice
     type: Microsoft.Dynamics.CRM.slakpiinstance
     partner: regarding_invoice
@@ -827,6 +914,16 @@ operations:
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_AddInvoiceLineDetails
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_CorrectInvoice
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_InvoicePaid
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_InvoiceRecalculate
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_PostInvoice
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -838,9 +935,11 @@ operations:
 solutions:
   description: "The following solutions include the invoice entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_Sales
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
+  - Microsoft.Dynamics.CRM.ProjectService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

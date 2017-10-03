@@ -4,7 +4,7 @@ name: "bookableresource"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement bookableresource EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -60,6 +60,126 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_bookingstodrip
+      type: Edm.Int32
+      display_name: "Bookings To Drip"
+      description: "The number of bookings to drip on the Mobile . This field is disabled/enabled based on Enable Drip Scheduling field"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_displayonscheduleassistant
+      type: Edm.Boolean
+      display_name: "Enable for Availability Search"
+      description: "Specify if this resource should be enabled for availablity search."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_displayonscheduleboard
+      type: Edm.Boolean
+      display_name: "Display On Schedule Board"
+      description: "Specify if this resource should be displayed on the schedule board."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_enabledripscheduling
+      type: Edm.Boolean
+      display_name: "Enable Drip Scheduling"
+      description: "Enables drip scheduling on the mobile app."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_endlocation
+      type: Edm.Int32
+      display_name: "End Location"
+      description: "Shows the default ending location type when booking daily schedules for this resource."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 690970002
+          label: "Location Agnostic"
+        - value: 690970000
+          label: "Resource Address"
+        - value: 690970001
+          label: "Organizational Unit Address"
+    - name: msdyn_generictype
+      type: Edm.Int32
+      display_name: "Generic Type"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 690970000
+          label: "Service Center"
+    - name: msdyn_hourlyrate
+      type: Edm.Decimal
+      display_name: "Hourly Rate"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_hourlyrate_base
+      type: Edm.Decimal
+      display_name: "Hourly Rate (Base)"
+      description: "Value of the Hourly Rate in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_isgenericresourceprojectscoped
+      type: Edm.Boolean
+      display_name: "Is Default"
+      description: "Is Default"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_primaryemail
+      type: Edm.String
+      display_name: "Primary EMail"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_startlocation
+      type: Edm.Int32
+      display_name: "Start Location"
+      description: "Shows the default starting location type when booking daily schedules for this resource."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 690970002
+          label: "Location Agnostic"
+        - value: 690970000
+          label: "Resource Address"
+        - value: 690970001
+          label: "Organizational Unit Address"
+    - name: msdyn_targetutilization
+      type: Edm.Int32
+      display_name: "Target Utilization"
+      description: "Shows the target utilization for the resource."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_timeoffapprovalrequired
+      type: Edm.Boolean
+      display_name: "Time Off Approval Required"
+      description: "Specifies if approval required for Time Off Requests."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -186,6 +306,14 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfbyname
     description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_organizationalunit_value
+    single_valued_navigation_property:
+    - msdyn_OrganizationalUnit
+    description: "Organizational Unit that resource belong to"
+  - name: _msdyn_warehouse_value
+    single_valued_navigation_property:
+    - msdyn_warehouse
+    description: "Default Warehouse for this resource."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -234,6 +362,12 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfbyname
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_bookableresource_modifiedonbehalfby
+  - name: msdyn_OrganizationalUnit
+    type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+    partner: msdyn_msdyn_organizationalunit_bookableresource_organizationalunit
+  - name: msdyn_warehouse
+    type: Microsoft.Dynamics.CRM.msdyn_warehouse
+    partner: msdyn_msdyn_warehouse_bookableresource_Warehouse
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_bookableresource
@@ -297,6 +431,117 @@ collection_valued_navigation_properties:
   - name: BookableResource_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_bookableresource_syncerror
+  - name: msdyn_bookableresource_account_PreferredResource
+    type: Microsoft.Dynamics.CRM.account
+    partner: msdyn_PreferredResource
+  - name: msdyn_bookableresource_bookableresourcebooking_ResourceGroup
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: msdyn_resourcegroup
+  - name: msdyn_bookableresource_bookableresourcebookingheader_bookableresourceid
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: msdyn_bookableresourceid
+  - name: msdyn_bookableresource_msdyn_actual_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_bookableresource
+  - name: msdyn_bookableresource_msdyn_agreementbookingdate_Resource
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
+    partner: msdyn_resource
+  - name: msdyn_bookableresource_msdyn_agreementbookingsetup_PreferredResource
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
+    partner: msdyn_preferredresource
+  - name: msdyn_bookableresource_msdyn_delegation_delegationfrom
+    type: Microsoft.Dynamics.CRM.msdyn_delegation
+    partner: msdyn_delegationfrom
+  - name: msdyn_bookableresource_msdyn_delegation_delegationto
+    type: Microsoft.Dynamics.CRM.msdyn_delegation
+    partner: msdyn_delegationto
+  - name: msdyn_bookableresource_msdyn_estimateline_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: msdyn_bookableresource
+  - name: msdyn_bookableresource_msdyn_expense_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_expense
+    partner: msdyn_bookableresource
+  - name: msdyn_bookableresource_msdyn_fact_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_fact
+    partner: msdyn_bookableresource
+  - name: msdyn_bookableresource_msdyn_findworkevent_BookableResource
+    type: Microsoft.Dynamics.CRM.msdyn_findworkevent
+    partner: msdyn_BookableResource
+  - name: msdyn_bookableresource_msdyn_inventoryadjustment_AdjustedByResource
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
+    partner: msdyn_adjustedbyresource
+  - name: msdyn_bookableresource_msdyn_inventoryadjustment_RequestedByResource
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
+    partner: msdyn_requestedbyresource
+  - name: msdyn_bookableresource_msdyn_inventorytransfer_TransferredByResource
+    type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
+    partner: msdyn_transferredbyresource
+  - name: msdyn_bookableresource_msdyn_invoicelinetransaction_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_bookableresource
+  - name: msdyn_bookableresource_msdyn_journalline_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: msdyn_bookableresource
+  - name: msdyn_bookableresource_msdyn_opportunitylinetransaction_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: msdyn_bookableresource
+  - name: msdyn_bookableresource_msdyn_orderlinetransaction_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_bookableresource
+  - name: msdyn_bookableresource_msdyn_projectapproval_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_projectapproval
+    partner: msdyn_bookableresource
+  - name: msdyn_bookableresource_msdyn_projectapproval_SubmittedBy
+    type: Microsoft.Dynamics.CRM.msdyn_projectapproval
+    partner: msdyn_SubmittedBy
+  - name: msdyn_bookableresource_msdyn_projecttaskstatususer_BookableResource
+    type: Microsoft.Dynamics.CRM.msdyn_projecttaskstatususer
+    partner: msdyn_BookableResource
+  - name: msdyn_bookableresource_msdyn_projectteam_bookableresourceid
+    type: Microsoft.Dynamics.CRM.msdyn_projectteam
+    partner: msdyn_bookableresourceid
+  - name: msdyn_bookableresource_msdyn_projectteammembersignup_BookableResource
+    type: Microsoft.Dynamics.CRM.msdyn_projectteammembersignup
+    partner: msdyn_BookableResource
+  - name: msdyn_bookableresource_msdyn_purchaseorder_RequestedByResource
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+    partner: msdyn_requestedbyresource
+  - name: msdyn_bookableresource_msdyn_quotebookingsetup_PreferredResource
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingsetup
+    partner: msdyn_preferredresource
+  - name: msdyn_bookableresource_msdyn_quotelinetransaction_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: msdyn_bookableresource
+  - name: msdyn_bookableresource_msdyn_requirementresourcepreference_BookableResource
+    type: Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
+    partner: msdyn_BookableResource
+  - name: msdyn_bookableresource_msdyn_resourceassignment_bookableresourceid
+    type: Microsoft.Dynamics.CRM.msdyn_resourceassignment
+    partner: msdyn_bookableresourceid
+  - name: msdyn_bookableresource_msdyn_resourceterritory_Resource
+    type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
+    partner: msdyn_resource
+  - name: msdyn_bookableresource_msdyn_timeentry_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_timeentry
+    partner: msdyn_bookableresource
+  - name: msdyn_bookableresource_msdyn_timeoffrequest_Resource
+    type: Microsoft.Dynamics.CRM.msdyn_timeoffrequest
+    partner: msdyn_resource
+  - name: msdyn_bookableresource_msdyn_userworkhistory_Bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_userworkhistory
+    partner: msdyn_Bookableresource
+  - name: msdyn_bookableresource_msdyn_workhourtemplate_bookableresourceid
+    type: Microsoft.Dynamics.CRM.msdyn_workhourtemplate
+    partner: msdyn_bookableresourceid
+  - name: msdyn_bookableresource_msdyn_workorder_PreferredResource
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_preferredresource
+  - name: msdyn_bookableresource_msdyn_workorderresourcerestriction_Resource
+    type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
+    partner: msdyn_resource
+  - name: msdyn_resourcerequirement_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+    partner: msdyn_resourcerequirement_bookableresource
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the bookableresource entity type."
@@ -305,6 +550,10 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_GetBookingDetailsByResource
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_GetResourceBookingDetails
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -314,8 +563,11 @@ operations:
 solutions:
   description: "The following solutions include the bookableresource entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+  - Microsoft.Dynamics.CRM.ProjectService
   - Microsoft.Dynamics.CRM.msdynce_Scheduling
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

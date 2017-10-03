@@ -4,7 +4,7 @@ name: "pricelevel"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement pricelevel EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -81,6 +81,45 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_breakhoursbillable
+      type: Edm.Boolean
+      display_name: "Break Hours Billable"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_entity
+      type: Edm.Int32
+      display_name: "Entity"
+      description: "Select the entity for this price level."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Organization"
+        - value: 192350001
+          label: "Customer"
+        - value: 192350002
+          label: "Sales document"
+        - value: 192350003
+          label: "Project"
+    - name: msdyn_module
+      type: Edm.Int32
+      display_name: "Context"
+      description: "Select the context for this price level i.e whether it is sales prices, cost prices or purchase prices"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Cost"
+        - value: 192350001
+          label: "Purchase"
+        - value: 192350002
+          label: "Sales"
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -176,6 +215,14 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who last modified the pricelevel."
+  - name: _msdyn_copiedfrompricelevel_value
+    single_valued_navigation_property:
+    - msdyn_CopiedFromPriceLevel
+    description: "Shows the price level that this price level was copied from."
+  - name: _msdyn_timeunit_value
+    single_valued_navigation_property:
+    - msdyn_TimeUnit
+    description: "Select the default unit of role based time on this price list"
   - name: _organizationid_value
     single_valued_navigation_property:
     - organizationid
@@ -199,6 +246,12 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_pricelevel_modifiedonbehalfby
+  - name: msdyn_CopiedFromPriceLevel
+    type: Microsoft.Dynamics.CRM.pricelevel
+    partner: msdyn_pricelevel_pricelevel_CopiedFromPriceLevel
+  - name: msdyn_TimeUnit
+    type: Microsoft.Dynamics.CRM.uom
+    partner: msdyn_uom_pricelevel_TimeUnit
   - name: organizationid
     type: Microsoft.Dynamics.CRM.organization
     partner: organization_price_levels
@@ -208,6 +261,105 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: msdyn_organizationalunit_pricelevel
+    type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+    partner: msdyn_organizationalunit_pricelevel
+  - name: msdyn_pricelevel_msdyn_accountpricelist_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_actual_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_agreement_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_agreement
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_agreementbookingproduct_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_agreementbookingservice_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_agreementinvoiceproduct_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_contactpricelist_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_contactpricelist
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_estimateline_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_fieldservicepricelistitem_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_invoicelinetransaction_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_journalline_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_opportunitylinetransaction_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_opportunitypricelist_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitypricelist
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_orderlinetransaction_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_orderpricelist_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_orderpricelist
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_projectparameterpricelist_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_projectparameterpricelist
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_projectpricelist_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_projectpricelist
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_quotebookingproduct_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_quotebookingservice_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_quotelinetransaction_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_quotepricelist_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_quotepricelist
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_resourcecategorypricelevel_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_rma_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_rma
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_rmaproduct_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_transactioncategorypricelevel_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel
+    partner: msdyn_PriceList
+  - name: msdyn_pricelevel_msdyn_workorder_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_workorderproduct_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_workorderservice_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_msdyn_workordertype_PriceList
+    type: Microsoft.Dynamics.CRM.msdyn_workordertype
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_opportunityproduct_PriceList
+    type: Microsoft.Dynamics.CRM.opportunityproduct
+    partner: msdyn_pricelist
+  - name: msdyn_pricelevel_pricelevel_CopiedFromPriceLevel
+    type: Microsoft.Dynamics.CRM.pricelevel
+    partner: msdyn_CopiedFromPriceLevel
+  - name: msdyn_pricelevel_quotedetail_PriceList
+    type: Microsoft.Dynamics.CRM.quotedetail
+    partner: msdyn_PriceList
   - name: price_level_accounts
     type: Microsoft.Dynamics.CRM.account
     partner: defaultpricelevelid
@@ -268,8 +420,10 @@ operations:
 solutions:
   description: "The following solutions include the pricelevel entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_ProductManagement
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.ProjectService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

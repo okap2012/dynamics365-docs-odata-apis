@@ -4,7 +4,7 @@ name: "interactionforemail"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement interactionforemail EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -256,6 +256,12 @@ collection_valued_navigation_properties:
   - name: interactionforemail_IncidentResolutions
     type: Microsoft.Dynamics.CRM.incidentresolution
     partner: regardingobjectid_new_interactionforemail_incidentresolution
+  - name: interactionforemail_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_new_interactionforemail_msdyn_approval
+  - name: interactionforemail_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_new_interactionforemail_msdyn_bookingalert
   - name: interactionforemail_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_new_interactionforemail_opportunityclose
@@ -280,7 +286,7 @@ solutions:
   description: "The following solutions include the interactionforemail entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

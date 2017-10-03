@@ -4,7 +4,7 @@ name: "product"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement product EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -130,6 +130,53 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_converttocustomerasset
+      type: Edm.Boolean
+      display_name: "Convert to Customer Asset"
+      description: "Specify whether a product is to be converted to a customer asset. When a product is used on a work order, the system will automatically convert it into a customer asset when the work order is closed."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_fieldserviceproducttype
+      type: Edm.Int32
+      display_name: "Field Service Product Type"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 690970000
+          label: "Inventory"
+        - value: 690970001
+          label: "Non-Inventory"
+        - value: 690970002
+          label: "Service"
+    - name: msdyn_purchasename
+      type: Edm.String
+      display_name: "Purchase Name"
+      description: "Type the name for the product when used on a purchase order."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_taxable
+      type: Edm.Boolean
+      display_name: "Taxable"
+      description: "Select whether the item is taxable. If an item is set as not taxable, it won't be taxable even on a taxable work order."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_upccode
+      type: Edm.String
+      display_name: "UPC Code"
+      description: "Shows the UPC Code for product. Used for bar code scanning."
+      iscomputed: false
+      isreadonly: false
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -375,6 +422,14 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who last modified the product."
+  - name: _msdyn_defaultvendor_value
+    single_valued_navigation_property:
+    - msdyn_defaultvendor
+    description: "Default vendor that supplies this product"
+  - name: _msdyn_transactioncategory_value
+    single_valued_navigation_property:
+    - msdyn_TransactionCategory
+    description: "Select the transaction category for this product."
   - name: _organizationid_value
     single_valued_navigation_property:
     - organizationid
@@ -416,6 +471,12 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_product_modifiedonbehalfby
+  - name: msdyn_defaultvendor
+    type: Microsoft.Dynamics.CRM.account
+    partner: msdyn_account_product_DefaultVendor
+  - name: msdyn_TransactionCategory
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategory
+    partner: msdyn_msdyn_transactioncategory_product_TransactionCategory
   - name: organizationid
     type: Microsoft.Dynamics.CRM.organization
     partner: organization_products
@@ -446,6 +507,93 @@ collection_valued_navigation_properties:
   - name: leadproduct_association
     type: Microsoft.Dynamics.CRM.lead
     partner: leadproduct_association
+  - name: msdyn_product_msdyn_actual_Product
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_Product
+  - name: msdyn_product_msdyn_agreementbookingproduct_Product
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_agreementbookingservice_Service
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
+    partner: msdyn_service
+  - name: msdyn_product_msdyn_agreementinvoiceproduct_Product
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_customerasset_Product
+    type: Microsoft.Dynamics.CRM.msdyn_customerasset
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_estimateline_Product
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: msdyn_Product
+  - name: msdyn_product_msdyn_fact_Product
+    type: Microsoft.Dynamics.CRM.msdyn_fact
+    partner: msdyn_Product
+  - name: msdyn_product_msdyn_fieldcomputation_ProductId
+    type: Microsoft.Dynamics.CRM.msdyn_fieldcomputation
+    partner: msdyn_ProductId
+  - name: msdyn_product_msdyn_fieldservicepricelistitem_ProductService
+    type: Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem
+    partner: msdyn_productservice
+  - name: msdyn_product_msdyn_fieldservicesetting
+    type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
+    partner: msdyn_travelchargeitemid
+  - name: msdyn_product_msdyn_incidenttypeproduct_Product
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_incidenttypeservice_Service
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
+    partner: msdyn_service
+  - name: msdyn_product_msdyn_inventoryadjustmentproduct_Product
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_inventoryjournal_Product
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_invoicelinetransaction_Product
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_Product
+  - name: msdyn_product_msdyn_journalline_Product
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: msdyn_Product
+  - name: msdyn_product_msdyn_opportunitylinetransaction_Product
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: msdyn_Product
+  - name: msdyn_product_msdyn_orderinvoicingproduct_Product
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct
+    partner: msdyn_Product
+  - name: msdyn_product_msdyn_orderlinetransaction_Product
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_Product
+  - name: msdyn_product_msdyn_productinventory_Product
+    type: Microsoft.Dynamics.CRM.msdyn_productinventory
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_purchaseorderproduct_Product
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_quotebookingproduct_Product
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_quotebookingservice_Service
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+    partner: msdyn_Service
+  - name: msdyn_product_msdyn_quoteinvoicingproduct_Product
+    type: Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct
+    partner: msdyn_Product
+  - name: msdyn_product_msdyn_quotelinetransaction_Product
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: msdyn_Product
+  - name: msdyn_product_msdyn_rmaproduct_Product
+    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_rtvproduct_Product
+    type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_workorderproduct_Product
+    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+    partner: msdyn_product
+  - name: msdyn_product_msdyn_workorderservice_Service
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+    partner: msdyn_service
   - name: opportunity_products
     type: Microsoft.Dynamics.CRM.opportunityproduct
     partner: productid
@@ -544,8 +692,10 @@ operations:
 solutions:
   description: "The following solutions include the product entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_ProductManagement
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.ProjectService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

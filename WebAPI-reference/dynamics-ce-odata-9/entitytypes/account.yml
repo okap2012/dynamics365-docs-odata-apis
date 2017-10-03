@@ -4,7 +4,7 @@ name: "account"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement account EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -796,6 +796,62 @@ properties:
       description: "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_externalaccountid
+      type: Edm.String
+      display_name: "External ID"
+      description: "External Account ID from other systems."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_taxexempt
+      type: Edm.Boolean
+      display_name: "Tax Exempt"
+      description: "Select whether the account is tax exempt."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_taxexemptnumber
+      type: Edm.String
+      display_name: "Tax Exempt Number"
+      description: "Shows the government tax exempt number."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_travelcharge
+      type: Edm.Decimal
+      display_name: "Travel Charge"
+      description: "Enter the travel charge to include on work orders. This value will be multiplied by the travel charge type."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_travelcharge_base
+      type: Edm.Decimal
+      display_name: "Travel Charge (Base)"
+      description: "Value of the Travel Charge in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_travelchargetype
+      type: Edm.Int32
+      display_name: "Travel Charge Type"
+      description: "Specify how travel is charged for this account."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 690970000
+          label: "Hourly"
+        - value: 690970001
+          label: "Mileage"
+        - value: 690970002
+          label: "Fixed"
+        - value: 690970003
+          label: "None"
+    - name: msdyn_workorderinstructions
+      type: Edm.String
+      display_name: "Work Order Instructions"
+      description: "Shows the default instructions to show on new work orders."
+      iscomputed: false
+      isreadonly: false
     - name: name
       type: Edm.String
       display_name: "Account Name"
@@ -1145,6 +1201,22 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Shows who created the record on behalf of another user."
+  - name: _msdyn_billingaccount_value
+    single_valued_navigation_property:
+    - msdyn_billingaccount_account
+    description: "Reference to an other account to be used for billing (only to be used if billing account differs)"
+  - name: _msdyn_preferredresource_value
+    single_valued_navigation_property:
+    - msdyn_PreferredResource
+    description: ""
+  - name: _msdyn_salestaxcode_value
+    single_valued_navigation_property:
+    - msdyn_salestaxcode
+    description: "Default Sales Tax Code"
+  - name: _msdyn_serviceterritory_value
+    single_valued_navigation_property:
+    - msdyn_serviceterritory
+    description: "The Service Territory this account belongs to. This is used to optimize scheduling and routing"
   - name: _originatingleadid_value
     single_valued_navigation_property:
     - originatingleadid
@@ -1222,6 +1294,18 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_accountbase_modifiedonbehalfby
+  - name: msdyn_billingaccount_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: msdyn_account_account_BillingAccount
+  - name: msdyn_PreferredResource
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: msdyn_bookableresource_account_PreferredResource
+  - name: msdyn_salestaxcode
+    type: Microsoft.Dynamics.CRM.msdyn_taxcode
+    partner: msdyn_msdyn_taxcode_account_SalesTaxCode
+  - name: msdyn_serviceterritory
+    type: Microsoft.Dynamics.CRM.territory
+    partner: msdyn_territory_account_ServiceTerritory
   - name: originatingleadid
     type: Microsoft.Dynamics.CRM.lead
     partner: account_originating_lead
@@ -1348,6 +1432,12 @@ collection_valued_navigation_properties:
   - name: account_master_account
     type: Microsoft.Dynamics.CRM.account
     partner: masterid
+  - name: account_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_account_msdyn_approval
+  - name: account_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_account_msdyn_bookingalert
   - name: account_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_account_opportunityclose
@@ -1426,6 +1516,123 @@ collection_valued_navigation_properties:
   - name: listaccount_association
     type: Microsoft.Dynamics.CRM.list
     partner: listaccount_association
+  - name: msdyn_account_account_BillingAccount
+    type: Microsoft.Dynamics.CRM.account
+    partner: msdyn_billingaccount_account
+  - name: msdyn_account_msdyn_accountpricelist_Account
+    type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
+    partner: msdyn_Account
+  - name: msdyn_account_msdyn_actual_AccountCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_AccountCustomer
+  - name: msdyn_account_msdyn_actual_AccountVendor
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_AccountVendor
+  - name: msdyn_account_msdyn_actual_ServiceAccount
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_ServiceAccount
+  - name: msdyn_account_msdyn_agreement_BillingAccount
+    type: Microsoft.Dynamics.CRM.msdyn_agreement
+    partner: msdyn_billingaccount
+  - name: msdyn_account_msdyn_agreement_ServiceAccount
+    type: Microsoft.Dynamics.CRM.msdyn_agreement
+    partner: msdyn_serviceaccount
+  - name: msdyn_account_msdyn_customerasset_Account
+    type: Microsoft.Dynamics.CRM.msdyn_customerasset
+    partner: msdyn_account
+  - name: msdyn_account_msdyn_estimateline_AccountCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: msdyn_AccountCustomer
+  - name: msdyn_account_msdyn_estimateline_AccountVendor
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: msdyn_AccountVendor
+  - name: msdyn_account_msdyn_fact_AccountCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_fact
+    partner: msdyn_AccountCustomer
+  - name: msdyn_account_msdyn_fact_AccountVendor
+    type: Microsoft.Dynamics.CRM.msdyn_fact
+    partner: msdyn_AccountVendor
+  - name: msdyn_account_msdyn_invoicelinetransaction_AccountCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_AccountCustomer
+  - name: msdyn_account_msdyn_invoicelinetransaction_AccountVendor
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_AccountVendor
+  - name: msdyn_account_msdyn_journalline_AccountCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: msdyn_AccountCustomer
+  - name: msdyn_account_msdyn_journalline_AccountVendor
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: msdyn_AccountVendor
+  - name: msdyn_account_msdyn_opportunitylinetransaction_AccountCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: msdyn_AccountCustomer
+  - name: msdyn_account_msdyn_opportunitylinetransaction_AccountVendor
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: msdyn_AccountVendor
+  - name: msdyn_account_msdyn_orderlinetransaction_AccountCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_AccountCustomer
+  - name: msdyn_account_msdyn_orderlinetransaction_AccountVendor
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_AccountVendor
+  - name: msdyn_account_msdyn_payment_Account
+    type: Microsoft.Dynamics.CRM.msdyn_payment
+    partner: msdyn_account
+  - name: msdyn_account_msdyn_project_Customer
+    type: Microsoft.Dynamics.CRM.msdyn_project
+    partner: msdyn_customer
+  - name: msdyn_account_msdyn_purchaseorder_Vendor
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+    partner: msdyn_vendor
+  - name: msdyn_account_msdyn_quotelinetransaction_AccountCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: msdyn_AccountCustomer
+  - name: msdyn_account_msdyn_quotelinetransaction_AccountVendor
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: msdyn_AccountVendor
+  - name: msdyn_account_msdyn_requirementresourcepreference_Account
+    type: Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
+    partner: msdyn_Account
+  - name: msdyn_account_msdyn_rma_BillingAccount
+    type: Microsoft.Dynamics.CRM.msdyn_rma
+    partner: msdyn_billingaccount
+  - name: msdyn_account_msdyn_rma_ServiceAccount
+    type: Microsoft.Dynamics.CRM.msdyn_rma
+    partner: msdyn_serviceaccount
+  - name: msdyn_account_msdyn_rmaproduct_Changeownership
+    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+    partner: msdyn_changeownership
+  - name: msdyn_account_msdyn_rmaproduct_ReturntoVendor
+    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+    partner: msdyn_returntovendor
+  - name: msdyn_account_msdyn_rtv_Vendor
+    type: Microsoft.Dynamics.CRM.msdyn_rtv
+    partner: msdyn_vendor
+  - name: msdyn_account_msdyn_workorder_BillingAccount
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_billingaccount
+  - name: msdyn_account_msdyn_workorder_ServiceAccount
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_serviceaccount
+  - name: msdyn_account_msdyn_workorderresourcerestriction_Account
+    type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
+    partner: msdyn_Account
+  - name: msdyn_account_opportunityproduct_ServiceAccount
+    type: Microsoft.Dynamics.CRM.opportunityproduct
+    partner: msdyn_serviceaccount
+  - name: msdyn_account_product_DefaultVendor
+    type: Microsoft.Dynamics.CRM.product
+    partner: msdyn_defaultvendor
+  - name: msdyn_account_quote_Account
+    type: Microsoft.Dynamics.CRM.quote
+    partner: msdyn_account
+  - name: msdyn_account_quotedetail_ServiceAccount
+    type: Microsoft.Dynamics.CRM.quotedetail
+    partner: msdyn_ServiceAccount
+  - name: msdyn_account_salesorder_Account
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: msdyn_account
   - name: opportunity_customer_accounts
     type: Microsoft.Dynamics.CRM.opportunity
     partner: customerid_account
@@ -1463,8 +1670,6 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
-  - name: Microsoft.Dynamics.CRM.new_TestAction
-    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -1477,14 +1682,17 @@ solutions:
   description: "The following solutions include the account entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-  - Microsoft.Dynamics.CRM.AppforOutlook
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
   - Microsoft.Dynamics.CRM.msdynce_AppCommon
+  - Microsoft.Dynamics.CRM.AppforOutlook
   - Microsoft.Dynamics.CRM.msdynce_Marketing
+  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
   - Microsoft.Dynamics.CRM.msdynce_ProductManagement
+  - Microsoft.Dynamics.CRM.ProjectService
 remarks: |
   ## SubTopic
   Here are some remarks to add for the account entity type.

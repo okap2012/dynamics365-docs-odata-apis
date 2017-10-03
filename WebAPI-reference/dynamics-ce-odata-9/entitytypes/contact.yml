@@ -4,7 +4,7 @@ name: "contact"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement contact EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -1508,6 +1508,12 @@ collection_valued_navigation_properties:
   - name: contact_master_contact
     type: Microsoft.Dynamics.CRM.contact
     partner: masterid
+  - name: contact_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_contact_msdyn_approval
+  - name: contact_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_contact_msdyn_bookingalert
   - name: Contact_Phonecalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_contact_phonecall
@@ -1586,6 +1592,66 @@ collection_valued_navigation_properties:
   - name: lk_contact_feedback_createdonbehalfby
     type: Microsoft.Dynamics.CRM.feedback
     partner: CreatedOnBehalfByContact
+  - name: msdyn_contact_msdyn_actual_ContactCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_ContactCustomer
+  - name: msdyn_contact_msdyn_actual_ContactVendor
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_ContactVendor
+  - name: msdyn_contact_msdyn_contactpricelist_Contact
+    type: Microsoft.Dynamics.CRM.msdyn_contactpricelist
+    partner: msdyn_Contact
+  - name: msdyn_contact_msdyn_estimateline_ContactCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: msdyn_ContactCustomer
+  - name: msdyn_contact_msdyn_estimateline_ContactVendor
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: msdyn_ContactVendor
+  - name: msdyn_contact_msdyn_fact_ContactCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_fact
+    partner: msdyn_ContactCustomer
+  - name: msdyn_contact_msdyn_fact_ContactVendor
+    type: Microsoft.Dynamics.CRM.msdyn_fact
+    partner: msdyn_ContactVendor
+  - name: msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_ContactCustomer
+  - name: msdyn_contact_msdyn_invoicelinetransaction_ContactVendor
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_ContactVendor
+  - name: msdyn_contact_msdyn_journalline_ContactCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: msdyn_ContactCustomer
+  - name: msdyn_contact_msdyn_journalline_ContactVendor
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: msdyn_ContactVendor
+  - name: msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: msdyn_ContactCustomer
+  - name: msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: msdyn_ContactVendor
+  - name: msdyn_contact_msdyn_orderlinetransaction_ContactCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_ContactCustomer
+  - name: msdyn_contact_msdyn_orderlinetransaction_ContactVendor
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_ContactVendor
+  - name: msdyn_contact_msdyn_quotelinetransaction_ContactCustomer
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: msdyn_ContactCustomer
+  - name: msdyn_contact_msdyn_quotelinetransaction_ContactVendor
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: msdyn_ContactVendor
+  - name: msdyn_contact_msdyn_rma_RequestedByContact
+    type: Microsoft.Dynamics.CRM.msdyn_rma
+    partner: msdyn_requestedbycontact
+  - name: msdyn_contact_msdyn_rtv_VendorContact
+    type: Microsoft.Dynamics.CRM.msdyn_rtv
+    partner: msdyn_vendorcontact
+  - name: msdyn_contact_msdyn_workorder_ReportedByContact
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_reportedbycontact
   - name: opportunity_customer_contacts
     type: Microsoft.Dynamics.CRM.opportunity
     partner: customerid_contact
@@ -1638,15 +1704,19 @@ solutions:
   description: "The following solutions include the contact entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-  - Microsoft.Dynamics.CRM.AppforOutlook
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
   - Microsoft.Dynamics.CRM.msdynce_AppCommon
+  - Microsoft.Dynamics.CRM.AppforOutlook
   - Microsoft.Dynamics.CRM.msdynce_Marketing
+  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
   - Microsoft.Dynamics.CRM.msdynce_ProductManagement
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.FreeTrialBaseSolution2
+  - Microsoft.Dynamics.CRM.ProjectService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

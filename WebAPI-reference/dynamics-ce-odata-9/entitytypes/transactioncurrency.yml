@@ -4,7 +4,7 @@ name: "transactioncurrency"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement transactioncurrency EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -201,6 +201,18 @@ collection_valued_navigation_properties:
   - name: incidentresolution_transactioncurrency_transactioncurrencyid
     type: Microsoft.Dynamics.CRM.incidentresolution
     partner: transactioncurrencyid_incidentresolution
+  - name: msdyn_approval_transactioncurrency_transactioncurrencyid
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: transactioncurrencyid_msdyn_approval
+  - name: msdyn_bookingalert_transactioncurrency_transactioncurrencyid
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: transactioncurrencyid_msdyn_bookingalert
+  - name: msdyn_organizationalunit_currency
+    type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+    partner: msdyn_currency
+  - name: msdyn_transactioncurrency_invoicedetail_Currency
+    type: Microsoft.Dynamics.CRM.invoicedetail
+    partner: msdyn_currency
   - name: orderclose_transactioncurrency_transactioncurrencyid
     type: Microsoft.Dynamics.CRM.orderclose
     partner: transactioncurrencyid_orderclose
@@ -384,6 +396,132 @@ collection_valued_navigation_properties:
   - name: transactioncurrency_monthlyfiscalcalendar
     type: Microsoft.Dynamics.CRM.monthlyfiscalcalendar
     partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_actual
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_agreementbookingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_agreementbookingservice
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_agreementinvoiceproduct
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_bookingjournal
+    type: Microsoft.Dynamics.CRM.msdyn_bookingjournal
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_contractlinescheduleofvalue
+    type: Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_estimateline
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_expense
+    type: Microsoft.Dynamics.CRM.msdyn_expense
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_fact
+    type: Microsoft.Dynamics.CRM.msdyn_fact
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_fieldservicepricelistitem
+    type: Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_invoicelinetransaction
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_journalline
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_opportunitylinetransaction
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_orderinvoicingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_orderlinetransaction
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_payment
+    type: Microsoft.Dynamics.CRM.msdyn_payment
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_paymentdetail
+    type: Microsoft.Dynamics.CRM.msdyn_paymentdetail
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_project
+    type: Microsoft.Dynamics.CRM.msdyn_project
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_projectapproval
+    type: Microsoft.Dynamics.CRM.msdyn_projectapproval
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_projecttask
+    type: Microsoft.Dynamics.CRM.msdyn_projecttask
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_purchaseorder
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_purchaseorderbill
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_purchaseorderproduct
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_purchaseorderreceiptproduct
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_quotebookingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_quotebookingservice
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_quotebookingsetup
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingsetup
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_quoteinvoicingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_quoteinvoicingsetup
+    type: Microsoft.Dynamics.CRM.msdyn_quoteinvoicingsetup
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_quotelineanalyticsbreakdown
+    type: Microsoft.Dynamics.CRM.msdyn_quotelineanalyticsbreakdown
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_quotelinescheduleofvalue
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinescheduleofvalue
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_quotelinetransaction
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_resourcecategorypricelevel
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_resourcerequirement
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_rma
+    type: Microsoft.Dynamics.CRM.msdyn_rma
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_rmaproduct
+    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_rtv
+    type: Microsoft.Dynamics.CRM.msdyn_rtv
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_rtvproduct
+    type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_transactioncategorypricelevel
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_workorder
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_workorderproduct
+    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+    partner: transactioncurrencyid
+  - name: TransactionCurrency_msdyn_workorderservice
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+    partner: transactioncurrencyid
   - name: transactioncurrency_newprocess
     type: Microsoft.Dynamics.CRM.newprocess
     partner: transactioncurrencyid
@@ -535,7 +673,8 @@ solutions:
   description: "The following solutions include the transactioncurrency entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.FieldService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

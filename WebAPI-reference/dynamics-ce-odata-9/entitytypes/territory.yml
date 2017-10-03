@@ -4,7 +4,7 @@ name: "territory"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement territory EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -178,6 +178,30 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: msdyn_territory_account_ServiceTerritory
+    type: Microsoft.Dynamics.CRM.account
+    partner: msdyn_serviceterritory
+  - name: msdyn_territory_msdyn_actual_ServiceTerritory
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_ServiceTerritory
+  - name: msdyn_territory_msdyn_agreement_ServiceTerritory
+    type: Microsoft.Dynamics.CRM.msdyn_agreement
+    partner: msdyn_serviceterritory
+  - name: msdyn_territory_msdyn_postalcode_ServiceTerritory
+    type: Microsoft.Dynamics.CRM.msdyn_postalcode
+    partner: msdyn_serviceterritory
+  - name: msdyn_territory_msdyn_resourcerequirement_Territory
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+    partner: msdyn_Territory
+  - name: msdyn_territory_msdyn_resourceterritory_Territory
+    type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
+    partner: msdyn_territory
+  - name: msdyn_territory_msdyn_workorder_ServiceTerritory
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_serviceterritory
+  - name: msdyn_territory_quotedetail_ServiceTerritory
+    type: Microsoft.Dynamics.CRM.quotedetail
+    partner: msdyn_ServiceTerritory
   - name: territory_accounts
     type: Microsoft.Dynamics.CRM.account
     partner: territoryid
@@ -219,8 +243,9 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the territory entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_AppCommon
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

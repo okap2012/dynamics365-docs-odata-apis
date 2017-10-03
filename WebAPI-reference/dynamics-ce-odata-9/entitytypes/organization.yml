@@ -4,7 +4,7 @@ name: "organization"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement organization EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -2693,14 +2693,116 @@ collection_valued_navigation_properties:
   - name: organization_metric
     type: Microsoft.Dynamics.CRM.metric
     partner: organizationid
+  - name: organization_msdyn_batchjob
+    type: Microsoft.Dynamics.CRM.msdyn_batchjob
+    partner: organizationid
+  - name: organization_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
+    partner: organizationid
+  - name: organization_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+    partner: organizationid
+  - name: organization_msdyn_bpf_989e9b1857e24af18787d5143b67523b
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
+    partner: organizationid
+  - name: organization_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
+    partner: organizationid
+  - name: organization_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
+    partner: organizationid
+  - name: organization_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+    partner: organizationid
+  - name: organization_msdyn_contractlineinvoiceschedule
+    type: Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule
+    partner: organizationid
+  - name: organization_msdyn_expensecategory
+    type: Microsoft.Dynamics.CRM.msdyn_expensecategory
+    partner: organizationid
+  - name: organization_msdyn_fieldservicepricelistitem
+    type: Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem
+    partner: organizationid
+  - name: organization_msdyn_fieldservicesystemjob
+    type: Microsoft.Dynamics.CRM.msdyn_fieldservicesystemjob
+    partner: organizationid
+  - name: organization_msdyn_invoicefrequency
+    type: Microsoft.Dynamics.CRM.msdyn_invoicefrequency
+    partner: organizationid
+  - name: organization_msdyn_invoicefrequencydetail
+    type: Microsoft.Dynamics.CRM.msdyn_invoicefrequencydetail
+    partner: organizationid
+  - name: organization_msdyn_mlresultcache
+    type: Microsoft.Dynamics.CRM.msdyn_mlresultcache
+    partner: organizationid
+  - name: organization_msdyn_organizationalunit
+    type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+    partner: organizationid
   - name: organization_msdyn_postconfig
     type: Microsoft.Dynamics.CRM.msdyn_postconfig
     partner: organizationid
   - name: organization_msdyn_postruleconfig
     type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
     partner: organizationid
+  - name: organization_msdyn_processnotes
+    type: Microsoft.Dynamics.CRM.msdyn_processnotes
+    partner: organizationid
+  - name: organization_msdyn_productinventory
+    type: Microsoft.Dynamics.CRM.msdyn_productinventory
+    partner: organizationid
+  - name: organization_msdyn_projectparameter
+    type: Microsoft.Dynamics.CRM.msdyn_projectparameter
+    partner: organizationid
+  - name: organization_msdyn_projectparameterpricelist
+    type: Microsoft.Dynamics.CRM.msdyn_projectparameterpricelist
+    partner: organizationid
+  - name: organization_msdyn_projectteammembersignup
+    type: Microsoft.Dynamics.CRM.msdyn_projectteammembersignup
+    partner: organizationid
+  - name: organization_msdyn_quotelineinvoiceschedule
+    type: Microsoft.Dynamics.CRM.msdyn_quotelineinvoiceschedule
+    partner: organizationid
+  - name: organization_msdyn_resourcecategorypricelevel
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
+    partner: organizationid
+  - name: organization_msdyn_schedulingparameter
+    type: Microsoft.Dynamics.CRM.msdyn_schedulingparameter
+    partner: organizationid
+  - name: organization_msdyn_transactioncategory
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategory
+    partner: organizationid
+  - name: organization_msdyn_transactioncategoryclassification
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategoryclassification
+    partner: organizationid
+  - name: organization_msdyn_transactioncategoryhierarchyelement
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategoryhierarchyelement
+    partner: organizationid
+  - name: organization_msdyn_transactioncategorypricelevel
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel
+    partner: organizationid
+  - name: organization_msdyn_transactiontype
+    type: Microsoft.Dynamics.CRM.msdyn_transactiontype
+    partner: organizationid
+  - name: organization_msdyn_uniquenumber
+    type: Microsoft.Dynamics.CRM.msdyn_uniquenumber
+    partner: organizationid
   - name: organization_msdyn_wallsavedquery
     type: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
+    partner: organizationid
+  - name: organization_msdyn_workorderdetailsgenerationqueue
+    type: Microsoft.Dynamics.CRM.msdyn_workorderdetailsgenerationqueue
+    partner: organizationid
+  - name: organization_msdynsm_marketingsitemap
+    type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
+    partner: organizationid
+  - name: organization_msdynsm_salessitemap
+    type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
+    partner: organizationid
+  - name: organization_msdynsm_servicessitemap
+    type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
+    partner: organizationid
+  - name: organization_msdynsm_settingssitemap
+    type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
     partner: organizationid
   - name: organization_navigationsetting
     type: Microsoft.Dynamics.CRM.navigationsetting
@@ -2864,7 +2966,7 @@ solutions:
   description: "The following solutions include the organization entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

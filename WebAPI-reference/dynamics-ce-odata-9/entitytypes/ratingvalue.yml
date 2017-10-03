@@ -4,7 +4,7 @@ name: "ratingvalue"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement ratingvalue EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -54,6 +54,17 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_isdefault
+      type: Edm.Boolean
+      display_name: "Is Default"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -94,6 +105,8 @@ properties:
           label: "Active"
         - value: 2
           label: "Inactive"
+        - value: 192350000
+          label: "Disabled By Generation Process"
     - name: timezoneruleversionnumber
       type: Edm.Int32
       display_name: "Time Zone Rule Version Number"
@@ -197,6 +210,21 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: msdyn_ratingvalue_msdyn_characteristicreqforteammember_ratingvalue
+    type: Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember
+    partner: msdyn_ratingvalue
+  - name: msdyn_ratingvalue_msdyn_incidenttypecharacteristic_RatingValue
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
+    partner: msdyn_ratingvalue
+  - name: msdyn_ratingvalue_msdyn_requirementcharacteristic_ratingvalue
+    type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
+    partner: msdyn_ratingvalue
+  - name: msdyn_ratingvalue_msdyn_rolecompetencyrequirement_ratingvalue
+    type: Microsoft.Dynamics.CRM.msdyn_rolecompetencyrequirement
+    partner: msdyn_ratingvalue
+  - name: msdyn_ratingvalue_msdyn_workordercharacteristic_RatingValue
+    type: Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
+    partner: msdyn_ratingvalue
   - name: ratingvalue_AsyncOperations
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: regardingobjectid_ratingvalue
@@ -241,8 +269,11 @@ operations:
 solutions:
   description: "The following solutions include the ratingvalue entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+  - Microsoft.Dynamics.CRM.ProjectService
   - Microsoft.Dynamics.CRM.msdynce_Scheduling
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

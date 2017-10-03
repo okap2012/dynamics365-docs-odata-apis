@@ -4,7 +4,7 @@ name: "plugintypestatistic"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement plugintypestatistic EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -166,7 +166,7 @@ solutions:
   description: "The following solutions include the plugintypestatistic entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

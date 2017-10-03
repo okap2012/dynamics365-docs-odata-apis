@@ -4,12 +4,12 @@ name: "Product Management"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Product Management Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: 9b97eb2e-4008-44ac-a513-bf46e61c5ed0
+  ms.assetid: 7a3bb93f-7d49-4797-ad9a-9183cd76c60e
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for product management."
  unique_name: msdynce_ProductManagement
- version: "9.0.0.1043"
+ version: "9.0.0.1053"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
@@ -43,7 +43,7 @@ entities:
    - Microsoft.Dynamics.CRM.uom
    - Microsoft.Dynamics.CRM.uomschedule
 # This solution includes no actions.
-# There are no remarks for this solution.
+# This solution has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

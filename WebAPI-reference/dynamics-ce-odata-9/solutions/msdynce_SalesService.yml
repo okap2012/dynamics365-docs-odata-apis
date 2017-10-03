@@ -4,12 +4,12 @@ name: "Sales Service"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Sales Service Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: 61188317-90bd-45d7-a68e-8d639735a97a
+  ms.assetid: 429fbc9c-3d14-4572-aafb-c95325f69735
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_SalesService
- version: "9.0.0.1043"
+ version: "9.0.0.1053"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
@@ -30,7 +30,7 @@ entities:
    - Microsoft.Dynamics.CRM.quoteclose
    - Microsoft.Dynamics.CRM.socialprofile
 # This solution includes no actions.
-# There are no remarks for this solution.
+# This solution has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

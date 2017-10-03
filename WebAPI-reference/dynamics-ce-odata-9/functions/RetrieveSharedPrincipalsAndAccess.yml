@@ -4,7 +4,7 @@ name: "RetrieveSharedPrincipalsAndAccess"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveSharedPrincipalsAndAccess Function Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -77,8 +77,154 @@ entities:
   - Microsoft.Dynamics.CRM.list
   - Microsoft.Dynamics.CRM.mailbox
   - Microsoft.Dynamics.CRM.mailmergetemplate
+  - Microsoft.Dynamics.CRM.msdyn_accountpricelist
+  - Microsoft.Dynamics.CRM.msdyn_actual
+  - Microsoft.Dynamics.CRM.msdyn_agreement
+  - Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
+  - Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
+  - Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
+  - Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
+  - Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask
+  - Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
+  - Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
+  - Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+  - Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
+  - Microsoft.Dynamics.CRM.msdyn_agreementsubstatus
+  - Microsoft.Dynamics.CRM.msdyn_approval
+  - Microsoft.Dynamics.CRM.msdyn_bookingalert
+  - Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
+  - Microsoft.Dynamics.CRM.msdyn_bookingchange
+  - Microsoft.Dynamics.CRM.msdyn_bookingjournal
+  - Microsoft.Dynamics.CRM.msdyn_bookingrule
+  - Microsoft.Dynamics.CRM.msdyn_bookingsetupmetadata
+  - Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
+  - Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember
+  - Microsoft.Dynamics.CRM.msdyn_clientextension
+  - Microsoft.Dynamics.CRM.msdyn_configuration
+  - Microsoft.Dynamics.CRM.msdyn_contactpricelist
+  - Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue
+  - Microsoft.Dynamics.CRM.msdyn_customerasset
+  - Microsoft.Dynamics.CRM.msdyn_dataexport
+  - Microsoft.Dynamics.CRM.msdyn_delegation
+  - Microsoft.Dynamics.CRM.msdyn_estimate
+  - Microsoft.Dynamics.CRM.msdyn_estimateline
+  - Microsoft.Dynamics.CRM.msdyn_expense
+  - Microsoft.Dynamics.CRM.msdyn_expensereceipt
+  - Microsoft.Dynamics.CRM.msdyn_fact
+  - Microsoft.Dynamics.CRM.msdyn_fieldcomputation
+  - Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
+  - Microsoft.Dynamics.CRM.msdyn_findworkevent
+  - Microsoft.Dynamics.CRM.msdyn_incidenttype
+  - Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
+  - Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
+  - Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
+  - Microsoft.Dynamics.CRM.msdyn_incidenttypeservicetask
+  - Microsoft.Dynamics.CRM.msdyn_integrationjob
+  - Microsoft.Dynamics.CRM.msdyn_integrationjobdetail
+  - Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
+  - Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
+  - Microsoft.Dynamics.CRM.msdyn_inventoryjournal
+  - Microsoft.Dynamics.CRM.msdyn_inventorytransfer
+  - Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+  - Microsoft.Dynamics.CRM.msdyn_journal
+  - Microsoft.Dynamics.CRM.msdyn_journalline
+  - Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory
+  - Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+  - Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactioncategory
+  - Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactionclassificatio
+  - Microsoft.Dynamics.CRM.msdyn_opportunitypricelist
+  - Microsoft.Dynamics.CRM.msdyn_orderinvoicingdate
+  - Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct
+  - Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetup
+  - Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetupdate
+  - Microsoft.Dynamics.CRM.msdyn_orderlineresourcecategory
+  - Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+  - Microsoft.Dynamics.CRM.msdyn_orderlinetransactioncategory
+  - Microsoft.Dynamics.CRM.msdyn_orderlinetransactionclassification
+  - Microsoft.Dynamics.CRM.msdyn_orderpricelist
+  - Microsoft.Dynamics.CRM.msdyn_payment
+  - Microsoft.Dynamics.CRM.msdyn_paymentdetail
+  - Microsoft.Dynamics.CRM.msdyn_paymentmethod
+  - Microsoft.Dynamics.CRM.msdyn_paymentterm
   - Microsoft.Dynamics.CRM.msdyn_postalbum
+  - Microsoft.Dynamics.CRM.msdyn_postalcode
+  - Microsoft.Dynamics.CRM.msdyn_priority
+  - Microsoft.Dynamics.CRM.msdyn_project
+  - Microsoft.Dynamics.CRM.msdyn_projectapproval
+  - Microsoft.Dynamics.CRM.msdyn_projectpricelist
+  - Microsoft.Dynamics.CRM.msdyn_projecttask
+  - Microsoft.Dynamics.CRM.msdyn_projecttaskdependency
+  - Microsoft.Dynamics.CRM.msdyn_projecttaskstatususer
+  - Microsoft.Dynamics.CRM.msdyn_projectteam
+  - Microsoft.Dynamics.CRM.msdyn_projecttransactioncategory
+  - Microsoft.Dynamics.CRM.msdyn_purchaseorder
+  - Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
+  - Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+  - Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
+  - Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
+  - Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus
+  - Microsoft.Dynamics.CRM.msdyn_quotebookingincident
+  - Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+  - Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+  - Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask
+  - Microsoft.Dynamics.CRM.msdyn_quotebookingsetup
+  - Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct
+  - Microsoft.Dynamics.CRM.msdyn_quoteinvoicingsetup
+  - Microsoft.Dynamics.CRM.msdyn_quotelineanalyticsbreakdown
+  - Microsoft.Dynamics.CRM.msdyn_quotelineresourcecategory
+  - Microsoft.Dynamics.CRM.msdyn_quotelinescheduleofvalue
+  - Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+  - Microsoft.Dynamics.CRM.msdyn_quotelinetransactioncategory
+  - Microsoft.Dynamics.CRM.msdyn_quotelinetransactionclassification
+  - Microsoft.Dynamics.CRM.msdyn_quotepricelist
+  - Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
+  - Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
+  - Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
+  - Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
+  - Microsoft.Dynamics.CRM.msdyn_requirementstatus
+  - Microsoft.Dynamics.CRM.msdyn_resourceassignment
+  - Microsoft.Dynamics.CRM.msdyn_resourceassignmentdetail
+  - Microsoft.Dynamics.CRM.msdyn_resourcepaytype
+  - Microsoft.Dynamics.CRM.msdyn_resourcerequest
+  - Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+  - Microsoft.Dynamics.CRM.msdyn_resourcerequirementdetail
+  - Microsoft.Dynamics.CRM.msdyn_resourceterritory
+  - Microsoft.Dynamics.CRM.msdyn_rma
+  - Microsoft.Dynamics.CRM.msdyn_rmaproduct
+  - Microsoft.Dynamics.CRM.msdyn_rmareceipt
+  - Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct
+  - Microsoft.Dynamics.CRM.msdyn_rmasubstatus
+  - Microsoft.Dynamics.CRM.msdyn_rolecompetencyrequirement
+  - Microsoft.Dynamics.CRM.msdyn_roleutilization
+  - Microsoft.Dynamics.CRM.msdyn_rtv
+  - Microsoft.Dynamics.CRM.msdyn_rtvproduct
+  - Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
+  - Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
+  - Microsoft.Dynamics.CRM.msdyn_servicetasktype
+  - Microsoft.Dynamics.CRM.msdyn_shipvia
+  - Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
+  - Microsoft.Dynamics.CRM.msdyn_taxcode
+  - Microsoft.Dynamics.CRM.msdyn_taxcodedetail
+  - Microsoft.Dynamics.CRM.msdyn_timeentry
+  - Microsoft.Dynamics.CRM.msdyn_timegroup
+  - Microsoft.Dynamics.CRM.msdyn_timegroupdetail
+  - Microsoft.Dynamics.CRM.msdyn_timeoffcalendar
+  - Microsoft.Dynamics.CRM.msdyn_timeoffrequest
+  - Microsoft.Dynamics.CRM.msdyn_transactionconnection
+  - Microsoft.Dynamics.CRM.msdyn_transactionorigin
+  - Microsoft.Dynamics.CRM.msdyn_userworkhistory
   - Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+  - Microsoft.Dynamics.CRM.msdyn_warehouse
+  - Microsoft.Dynamics.CRM.msdyn_workhourtemplate
+  - Microsoft.Dynamics.CRM.msdyn_workorder
+  - Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
+  - Microsoft.Dynamics.CRM.msdyn_workorderincident
+  - Microsoft.Dynamics.CRM.msdyn_workorderproduct
+  - Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
+  - Microsoft.Dynamics.CRM.msdyn_workorderservice
+  - Microsoft.Dynamics.CRM.msdyn_workorderservicetask
+  - Microsoft.Dynamics.CRM.msdyn_workordersubstatus
+  - Microsoft.Dynamics.CRM.msdyn_workordertype
   - Microsoft.Dynamics.CRM.opportunity
   - Microsoft.Dynamics.CRM.opportunityclose
   - Microsoft.Dynamics.CRM.orderclose
@@ -106,7 +252,7 @@ entities:
   - Microsoft.Dynamics.CRM.userquery
   - Microsoft.Dynamics.CRM.userqueryvisualization
   - Microsoft.Dynamics.CRM.workflow
-# There are no remarks for this function.
+# This function has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

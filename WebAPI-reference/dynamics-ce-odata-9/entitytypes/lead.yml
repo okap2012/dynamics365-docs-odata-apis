@@ -4,7 +4,7 @@ name: "lead"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement lead EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -740,6 +740,19 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_ordertype
+      type: Edm.Int32
+      display_name: "Type"
+      description: "Whether the Opportunity created when qualifying this Lead is for an Item- based or a Work-based sale"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350001
+          label: "Work based"
+        - value: 192350000
+          label: "Item based"
+        - value: 690970002
+          label: "Service-Maintenance Based"
     - name: need
       type: Edm.Int32
       display_name: "Need"
@@ -1277,6 +1290,12 @@ collection_valued_navigation_properties:
   - name: lead_master_lead
     type: Microsoft.Dynamics.CRM.lead
     partner: masterid
+  - name: lead_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_lead_msdyn_approval
+  - name: lead_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_lead_msdyn_bookingalert
   - name: lead_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_lead_opportunityclose
@@ -1358,14 +1377,17 @@ operations:
 solutions:
   description: "The following solutions include the lead entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.AppforOutlook
-  - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.AppforOutlook
+  - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
   - Microsoft.Dynamics.CRM.msdynce_Marketing
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.FreeTrialBaseSolution2
+  - Microsoft.Dynamics.CRM.ProjectService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -4,7 +4,7 @@ name: "quote"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement quote EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -213,6 +213,242 @@ properties:
       type: Edm.DateTimeOffset
       display_name: "Modified On"
       description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_adjustedgrossmargin
+      type: Edm.Decimal
+      display_name: "Adjusted Gross Margin (%)"
+      description: "Shows the estimated gross margin after accounting for non-chargeable components."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_competitive
+      type: Edm.Int32
+      display_name: "Competitive"
+      description: "Shows how the quote estimation of sales value and schedule compare to customer expectations on those parameters. Possible values are 1: Within Customer expectations, 2: Not Within Customer expectations, and 0: Customer expectations Not Available."
+      iscomputed: true
+      isreadonly: true
+      options:
+        - value: 192350000
+          label: "Customer Budget Not Available"
+        - value: 192350001
+          label: "Within Customer Expectations"
+        - value: 192350002
+          label: "Outside Customer Expectations"
+    - name: msdyn_customerbudgetrollup
+      type: Edm.Decimal
+      display_name: "Customer Budget"
+      description: "Shows the total customer budget for the quote, computed from all the quote lines."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_customerbudgetrollup_base
+      type: Edm.Decimal
+      display_name: "Customer Budget (Base)"
+      description: "Shows the value of the customer budget in the base currency."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_customerbudgetrollup_date
+      type: Edm.DateTimeOffset
+      display_name: "Customer Budget (Last Updated On)"
+      description: "Last Updated time of rollup field Customer Budget."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_customerbudgetrollup_state
+      type: Edm.Int32
+      display_name: "Customer Budget (State)"
+      description: "State of rollup field Customer Budget."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_estimatedbudget
+      type: Edm.Int32
+      display_name: "Estimated Budget"
+      description: "Shows how the estimated sales value on the quote compares to customer budgets. Possible values are 1: Within Customer Budget, 2: Exceeds Customer Budget, 0: Budget Estimate Not Available"
+      iscomputed: true
+      isreadonly: true
+      options:
+        - value: 192350000
+          label: "Budget Estimate Not Available"
+        - value: 192350001
+          label: "Within Customer Budget"
+        - value: 192350002
+          label: "Exceeds Customer Budget"
+    - name: msdyn_estimatedcompletionrollup
+      type: Edm.DateTimeOffset
+      display_name: "Estimated Completion"
+      description: "Estimated completion date, computed from the details of each quote line."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_estimatedcompletionrollup_date
+      type: Edm.DateTimeOffset
+      display_name: "Estimated Completion (Last Updated On)"
+      description: "Last Updated time of rollup field Estimated Completion."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_estimatedcompletionrollup_state
+      type: Edm.Int32
+      display_name: "Estimated Completion (State)"
+      description: "State of rollup field Estimated Completion."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_estimatedcost
+      type: Edm.Decimal
+      display_name: "Estimated Cost"
+      description: "The estimated cost of this quote"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_estimatedcost_base
+      type: Edm.Decimal
+      display_name: "Estimated Cost (Base)"
+      description: "Value of the Estimated Cost in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_estimatedquotemargin
+      type: Edm.Decimal
+      display_name: "Estimated Margin"
+      description: "Estimated Margin of this quote"
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_estimatedschedule
+      type: Edm.Int32
+      display_name: "Estimated Schedule"
+      description: "Shows how the estimated schedule on the quote compares to customer expectations. Possible values are 1: Estimated To Finish Early, 2: Estimated To Finish Late, 3: Estimated To Finish On Schedule, and 0: Schedule Not Available."
+      iscomputed: true
+      isreadonly: true
+      options:
+        - value: 192350000
+          label: "Schedule Not Available"
+        - value: 192350001
+          label: "Estimated To Finish Early"
+        - value: 192350002
+          label: "Estimated To Finish Late"
+        - value: 192350003
+          label: "Estimated To Finish On Schedule"
+    - name: msdyn_feasible
+      type: Edm.Int32
+      display_name: "Feasibility"
+      description: "Shows how the quote estimation compares to project estimation. Possible values are 0: Feasibility Not Available, 1: Feasible, and 2: Not Feasible."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Feasibility Not Available"
+        - value: 192350001
+          label: "Feasible"
+        - value: 192350002
+          label: "Not Feasible"
+    - name: msdyn_grossmargin
+      type: Edm.Decimal
+      display_name: "Gross Margin (%)"
+      description: "Shows the estimated gross margin without accounting for non-chargeable components."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_invoicesetuptotals
+      type: Edm.Decimal
+      display_name: "Invoice Setup Totals"
+      description: "The totals of all assigned Invoice Setups"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_invoicesetuptotals_base
+      type: Edm.Decimal
+      display_name: "Invoice Setup Totals (Base)"
+      description: "Value of the Invoice Setup Totals in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_ordertype
+      type: Edm.Int32
+      display_name: "Order Type"
+      description: "Internal use only."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350001
+          label: "Work based"
+        - value: 192350000
+          label: "Item based"
+        - value: 690970002
+          label: "Service-Maintenance Based"
+    - name: msdyn_profitability
+      type: Edm.Int32
+      display_name: "Profitability"
+      description: "Shows the estimated profitability of the quote. Possible values are Profitable, Not Profitable, and Profitability not available."
+      iscomputed: true
+      isreadonly: true
+      options:
+        - value: 192350000
+          label: "Profitability Not Available"
+        - value: 192350001
+          label: "Profitable"
+        - value: 192350002
+          label: "Not Profitable"
+    - name: msdyn_quotelineenddate
+      type: Edm.DateTimeOffset
+      display_name: "Latest Quote Line End Date"
+      description: "The latest end date of all associated quote lines"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_quotelinestartdate
+      type: Edm.DateTimeOffset
+      display_name: "Earliest Quote Line Start Date"
+      description: "The earliest Start Date of all Quote Lines that are associated to this quote"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_totalamount
+      type: Edm.Decimal
+      display_name: "TotalAmount"
+      description: ""
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_totalamount_base
+      type: Edm.Decimal
+      display_name: "TotalAmount (Base)"
+      description: "Value of the TotalAmount in base currency."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_totalchargeablecostrollup
+      type: Edm.Decimal
+      display_name: "Total Chargeable Cost"
+      description: ""
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_totalchargeablecostrollup_base
+      type: Edm.Decimal
+      display_name: "Total Chargeable Cost (Base)"
+      description: "Value of the Total Chargeable Cost in base currency."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_totalchargeablecostrollup_date
+      type: Edm.DateTimeOffset
+      display_name: "Total Chargeable Cost (Last Updated On)"
+      description: "Last Updated time of rollup field Total Chargeable Cost."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_totalchargeablecostrollup_state
+      type: Edm.Int32
+      display_name: "Total Chargeable Cost (State)"
+      description: "State of rollup field Total Chargeable Cost."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_totalnonchargeablecostrollup
+      type: Edm.Decimal
+      display_name: "Total Non-chargeable Cost"
+      description: ""
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_totalnonchargeablecostrollup_base
+      type: Edm.Decimal
+      display_name: "Total Non-chargeable Cost (Base)"
+      description: "Value of the Total Non-chargeable Cost in base currency."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_totalnonchargeablecostrollup_date
+      type: Edm.DateTimeOffset
+      display_name: "Total Non-chargeable Cost (Last Updated On)"
+      description: "Last Updated time of rollup field Total Non-chargeable Cost."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_totalnonchargeablecostrollup_state
+      type: Edm.Int32
+      display_name: "Total Non-chargeable Cost (State)"
+      description: "State of rollup field Total Non-chargeable Cost."
       iscomputed: false
       isreadonly: true
     - name: name
@@ -650,6 +886,18 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Shows who last updated the record on behalf of another user."
+  - name: _msdyn_account_value
+    single_valued_navigation_property:
+    - msdyn_account
+    description: "Customer Account associated with this Quote"
+  - name: _msdyn_accountmanagerid_value
+    single_valued_navigation_property:
+    - msdyn_AccountManagerId
+    description: "Account manager responsible for the quote."
+  - name: _msdyn_contractorganizationalunitid_value
+    single_valued_navigation_property:
+    - msdyn_ContractOrganizationalUnitId
+    description: "The organizational unit in charge of the contract."
   - name: _opportunityid_value
     single_valued_navigation_property:
     - opportunityid
@@ -710,6 +958,15 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_quote_modifiedonbehalfby
+  - name: msdyn_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: msdyn_account_quote_Account
+  - name: msdyn_AccountManagerId
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: msdyn_accountmanager_quote
+  - name: msdyn_ContractOrganizationalUnitId
+    type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+    partner: msdyn_organizationalunit_quote
   - name: opportunityid
     type: Microsoft.Dynamics.CRM.opportunity
     partner: opportunity_quotes
@@ -743,9 +1000,39 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: bpf_quote_OpportunitySalesProcess
+    type: Microsoft.Dynamics.CRM.opportunitysalesprocess
+    partner: bpf_quoteid
   - name: contactquotes_association
     type: Microsoft.Dynamics.CRM.contact
     partner: contactquotes_association
+  - name: msdyn_quote_msdyn_quotebookingincident_Quote
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingincident
+    partner: msdyn_Quote
+  - name: msdyn_quote_msdyn_quotebookingproduct_Quote
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+    partner: msdyn_quote
+  - name: msdyn_quote_msdyn_quotebookingservice_Quote
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+    partner: msdyn_quote
+  - name: msdyn_quote_msdyn_quotebookingservicetask_Quote
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask
+    partner: msdyn_quote
+  - name: msdyn_quote_msdyn_quotebookingsetup_Quote
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingsetup
+    partner: msdyn_quote
+  - name: msdyn_quote_msdyn_quoteinvoicingsetup_Quote
+    type: Microsoft.Dynamics.CRM.msdyn_quoteinvoicingsetup
+    partner: msdyn_Quote
+  - name: msdyn_quote_msdyn_quotelineanalyticsbreakdown_Quote
+    type: Microsoft.Dynamics.CRM.msdyn_quotelineanalyticsbreakdown
+    partner: msdyn_Quote
+  - name: msdyn_quote_msdyn_quotelinetransaction
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: msdyn_QuoteId
+  - name: msdyn_quote_msdyn_quotepricelist_Quote
+    type: Microsoft.Dynamics.CRM.msdyn_quotepricelist
+    partner: msdyn_Quote
   - name: quote_activity_parties
     type: Microsoft.Dynamics.CRM.activityparty
     partner: partyid_quote
@@ -791,6 +1078,12 @@ collection_valued_navigation_properties:
   - name: Quote_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_quote
+  - name: quote_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_quote_msdyn_approval
+  - name: quote_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_quote_msdyn_bookingalert
   - name: quote_opportunitysalesprocess
     type: Microsoft.Dynamics.CRM.opportunitysalesprocess
     partner: quoteid
@@ -855,6 +1148,14 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_CloseQuoteAsLost
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_CloseQuoteAsWon
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_CreateQuoteSpecificPriceList
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_GetProjectsForQuote
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -872,10 +1173,12 @@ operations:
 solutions:
   description: "The following solutions include the quote entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_Sales
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
+  - Microsoft.Dynamics.CRM.ProjectService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

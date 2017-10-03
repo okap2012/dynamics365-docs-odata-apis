@@ -4,7 +4,7 @@ name: "uomschedule"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement uomschedule EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -169,6 +169,39 @@ collection_valued_navigation_properties:
   - name: contract_detail_unit_of_measure_schedule
     type: Microsoft.Dynamics.CRM.contractdetail
     partner: uomscheduleid
+  - name: msdyn_uomschedule_msdyn_actual_UnitSchedule
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_UnitSchedule
+  - name: msdyn_uomschedule_msdyn_estimateline_UnitSchedule
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: msdyn_UnitSchedule
+  - name: msdyn_uomschedule_msdyn_invoicelinetransaction_UnitSchedule
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_UnitSchedule
+  - name: msdyn_uomschedule_msdyn_journalline_UnitSchedule
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: msdyn_UnitSchedule
+  - name: msdyn_uomschedule_msdyn_opportunitylinetransaction_UnitSchedule
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: msdyn_UnitSchedule
+  - name: msdyn_uomschedule_msdyn_orderlinetransaction_UnitSchedule
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_UnitSchedule
+  - name: msdyn_uomschedule_msdyn_quotelinetransaction_UnitSchedule
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: msdyn_UnitSchedule
+  - name: msdyn_uomschedule_msdyn_resourcecategorypricelevel_UnitSchedule
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
+    partner: msdyn_UnitSchedule
+  - name: msdyn_uomschedule_msdyn_transactioncategory_UnitGroup
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategory
+    partner: msdyn_UnitGroup
+  - name: msdyn_uomschedule_msdyn_transactioncategorypricelevel_UnitSchedule
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel
+    partner: msdyn_UnitSchedule
+  - name: msdyn_uomschedule_msdyn_transactiontype_UnitGroup
+    type: Microsoft.Dynamics.CRM.msdyn_transactiontype
+    partner: msdyn_UnitGroup
   - name: unit_of_measure_schedule_conversions
     type: Microsoft.Dynamics.CRM.uom
     partner: uomscheduleid
@@ -198,8 +231,9 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the uomschedule entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_ProductManagement
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

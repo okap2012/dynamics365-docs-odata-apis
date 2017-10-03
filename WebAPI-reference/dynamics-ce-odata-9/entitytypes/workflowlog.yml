@@ -4,7 +4,7 @@ name: "workflowlog"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement workflowlog EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -133,6 +133,12 @@ lookup_properties:
     - PhoneToCaseProcess_asyncoperationid
     - LeadToOpportunitySalesProcess_asyncoperationid
     - OpportunitySalesProcess_asyncoperationid
+    - asyncoperationid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+    - asyncoperationid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+    - asyncoperationid_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
+    - asyncoperationid_msdyn_bpf_989e9b1857e24af18787d5143b67523b
+    - asyncoperationid_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
+    - asyncoperationid_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
     - asyncoperationid_processsession
     - ExpiredProcess_asyncoperationid
     - TranslationProcess_asyncoperationid
@@ -180,6 +186,24 @@ single_valued_navigation_properties:
   - name: asyncoperationid_asyncoperation
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: lk_workflowlog_asyncoperations
+  - name: asyncoperationid_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
+    partner: msdyn_bpf_2c5fe86acc8b414b8322ae571000c799_WorkflowLogs
+  - name: asyncoperationid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+    partner: msdyn_bpf_665e73aa18c247d886bfc50499c73b82_WorkflowLogs
+  - name: asyncoperationid_msdyn_bpf_989e9b1857e24af18787d5143b67523b
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
+    partner: msdyn_bpf_989e9b1857e24af18787d5143b67523b_WorkflowLogs
+  - name: asyncoperationid_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
+    partner: msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3_WorkflowLogs
+  - name: asyncoperationid_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
+    partner: msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39_WorkflowLogs
+  - name: asyncoperationid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+    partner: msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d_WorkflowLogs
   - name: asyncoperationid_processsession
     type: Microsoft.Dynamics.CRM.processsession
     partner: lk_workflowlog_processsession
@@ -232,7 +256,7 @@ solutions:
   description: "The following solutions include the workflowlog entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

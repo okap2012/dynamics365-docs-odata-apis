@@ -4,7 +4,7 @@ name: "salesorder"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement salesorder EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -236,6 +236,103 @@ properties:
       type: Edm.DateTimeOffset
       display_name: "Modified On"
       description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_ordertype
+      type: Edm.Int32
+      display_name: "Order Type"
+      description: "Internal use only"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350001
+          label: "Work based"
+        - value: 192350000
+          label: "Item based"
+        - value: 690970002
+          label: "Service-Maintenance Based"
+    - name: msdyn_psastate
+      type: Edm.Int32
+      display_name: "Contract Status"
+      description: "Shows the current state of the project contract."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Draft"
+        - value: 192350001
+          label: "On hold"
+        - value: 192350002
+          label: "Active"
+        - value: 192350003
+          label: "Closed"
+    - name: msdyn_psastatusreason
+      type: Edm.Int32
+      display_name: "Contract Status Reason"
+      description: "Shows the reason for the project contract status."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Draft"
+        - value: 192350001
+          label: "In review"
+        - value: 192350002
+          label: "On hold"
+        - value: 192350003
+          label: "Confirmed"
+        - value: 192350004
+          label: "Completed"
+        - value: 192350005
+          label: "Lost"
+        - value: 192350006
+          label: "Abandoned"
+    - name: msdyn_totalchargeablecostrollup
+      type: Edm.Decimal
+      display_name: "Total Chargeable Cost"
+      description: "Value of the estimated chargeable cost."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_totalchargeablecostrollup_base
+      type: Edm.Decimal
+      display_name: "Total Chargeable Cost (Base)"
+      description: "Value of the Total Chargeable Cost in base currency."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_totalchargeablecostrollup_date
+      type: Edm.DateTimeOffset
+      display_name: "Total Chargeable Cost (Last Updated On)"
+      description: "Last Updated time of rollup field Total Chargeable Cost."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_totalchargeablecostrollup_state
+      type: Edm.Int32
+      display_name: "Total Chargeable Cost (State)"
+      description: "State of rollup field Total Chargeable Cost."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_totalnonchargeablecostrollup
+      type: Edm.Decimal
+      display_name: "Total Non-chargeable Cost"
+      description: "Total estimated cost that will not be charged to the customer."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_totalnonchargeablecostrollup_base
+      type: Edm.Decimal
+      display_name: "Total Non-chargeable Cost (Base)"
+      description: "Value of the Total Non-chargeable Cost in base currency."
+      iscomputed: true
+      isreadonly: true
+    - name: msdyn_totalnonchargeablecostrollup_date
+      type: Edm.DateTimeOffset
+      display_name: "Total Non-chargeable Cost (Last Updated On)"
+      description: "Last Updated time of rollup field Total Non-chargeable Cost."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_totalnonchargeablecostrollup_state
+      type: Edm.Int32
+      display_name: "Total Non-chargeable Cost (State)"
+      description: "State of rollup field Total Non-chargeable Cost."
       iscomputed: false
       isreadonly: true
     - name: name
@@ -525,14 +622,16 @@ properties:
       iscomputed: false
       isreadonly: false
       options:
-        - value: 3
-          label: "In Progress"
-        - value: 4
-          label: "No Money"
         - value: 1
           label: "New"
         - value: 2
           label: "Pending"
+        - value: 690970000
+          label: "On hold"
+        - value: 3
+          label: "In Progress"
+        - value: 4
+          label: "No Money"
         - value: 100001
           label: "Complete"
         - value: 100002
@@ -696,6 +795,18 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Shows who last updated the record on behalf of another user."
+  - name: _msdyn_account_value
+    single_valued_navigation_property:
+    - msdyn_account
+    description: "Customer Account associated with this Order"
+  - name: _msdyn_accountmanagerid_value
+    single_valued_navigation_property:
+    - msdyn_AccountManagerId
+    description: "User responsible for managing the account referenced by this contract."
+  - name: _msdyn_contractorganizationalunitid_value
+    single_valued_navigation_property:
+    - msdyn_ContractOrganizationalUnitId
+    description: "Organizational unit responsible for this contract."
   - name: _opportunityid_value
     single_valued_navigation_property:
     - opportunityid
@@ -760,6 +871,15 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_salesorder_modifiedonbehalfby
+  - name: msdyn_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: msdyn_account_salesorder_Account
+  - name: msdyn_AccountManagerId
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: msdyn_accountmanager_salesorder
+  - name: msdyn_ContractOrganizationalUnitId
+    type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+    partner: msdyn_organizationalunit_salesorder
   - name: opportunityid
     type: Microsoft.Dynamics.CRM.opportunity
     partner: opportunity_sales_orders
@@ -796,9 +916,45 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: bpf_salesorder_OpportunitySalesProcess
+    type: Microsoft.Dynamics.CRM.opportunitysalesprocess
+    partner: bpf_salesorderid
   - name: contactorders_association
     type: Microsoft.Dynamics.CRM.contact
     partner: contactorders_association
+  - name: msdyn_salesorder_msdyn_actual_SalesContract
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_SalesContract
+  - name: msdyn_salesorder_msdyn_contractlinescheduleofvalue_contract
+    type: Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue
+    partner: msdyn_contract
+  - name: msdyn_salesorder_msdyn_fact_SalesContract
+    type: Microsoft.Dynamics.CRM.msdyn_fact
+    partner: msdyn_SalesContract
+  - name: msdyn_salesorder_msdyn_invoicelinetransaction_SalesContract
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_SalesContract
+  - name: msdyn_salesorder_msdyn_journalline_SalesContract
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: msdyn_SalesContract
+  - name: msdyn_salesorder_msdyn_orderinvoicingdate_Order
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingdate
+    partner: msdyn_Order
+  - name: msdyn_salesorder_msdyn_orderinvoicingsetup_Order
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetup
+    partner: msdyn_Order
+  - name: msdyn_salesorder_msdyn_orderinvoicingsetupdate_Order
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetupdate
+    partner: msdyn_Order
+  - name: msdyn_salesorder_msdyn_orderlinetransaction_SalesContract
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_SalesContract
+  - name: msdyn_salesorder_msdyn_orderpricelist_Contract
+    type: Microsoft.Dynamics.CRM.msdyn_orderpricelist
+    partner: msdyn_Contract
+  - name: msdyn_salesorder_msdyn_project_salesorderid
+    type: Microsoft.Dynamics.CRM.msdyn_project
+    partner: msdyn_salesorderid
   - name: order_details
     type: Microsoft.Dynamics.CRM.salesorderdetail
     partner: salesorderid
@@ -841,6 +997,12 @@ collection_valued_navigation_properties:
   - name: SalesOrder_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_salesorder
+  - name: salesorder_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_salesorder_msdyn_approval
+  - name: salesorder_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_salesorder_msdyn_bookingalert
   - name: salesorder_opportunitysalesprocess
     type: Microsoft.Dynamics.CRM.opportunitysalesprocess
     partner: salesorderid
@@ -900,6 +1062,22 @@ operations:
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_CreateContractSpecificPriceList
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_createinvoicefrominvoiceschedule
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_GetContractBillingRadialGaugeData
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_GetContractDetailedTransactions
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_GetContractEffortRadialGaugeData
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_GetContractLines
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_GetProjectsForContract
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_NewInvoiceContract
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -911,10 +1089,12 @@ operations:
 solutions:
   description: "The following solutions include the salesorder entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_Sales
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
+  - Microsoft.Dynamics.CRM.ProjectService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

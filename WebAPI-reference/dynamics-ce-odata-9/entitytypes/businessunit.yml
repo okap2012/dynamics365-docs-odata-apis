@@ -4,7 +4,7 @@ name: "businessunit"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement businessunit EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -471,6 +471,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who last modified the businessunit."
+  - name: _msdyn_warehouse_value
+    single_valued_navigation_property:
+    - msdyn_warehouse
+    description: "Unique identifier for Warehouse associated with Business Unit."
   - name: _organizationid_value
     single_valued_navigation_property:
     - organizationid
@@ -501,6 +505,9 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_businessunit_modifiedonbehalfby
+  - name: msdyn_warehouse
+    type: Microsoft.Dynamics.CRM.msdyn_warehouse
+    partner: msdyn_msdyn_warehouse_businessunit_Warehouse
   - name: organizationid
     type: Microsoft.Dynamics.CRM.organization
     partner: organization_business_units
@@ -642,11 +649,443 @@ collection_valued_navigation_properties:
   - name: business_unit_mailmergetemplates
     type: Microsoft.Dynamics.CRM.mailmergetemplate
     partner: owningbusinessunit
+  - name: business_unit_msdyn_accountpricelist
+    type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_actual
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_agreement
+    type: Microsoft.Dynamics.CRM.msdyn_agreement
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_agreementbookingdate
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_agreementbookingincident
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_agreementbookingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_agreementbookingservice
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_agreementbookingservicetask
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_agreementbookingsetup
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_agreementinvoicedate
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_agreementinvoiceproduct
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_agreementinvoicesetup
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_agreementsubstatus
+    type: Microsoft.Dynamics.CRM.msdyn_agreementsubstatus
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_bookingalertstatus
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_bookingchange
+    type: Microsoft.Dynamics.CRM.msdyn_bookingchange
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_bookingjournal
+    type: Microsoft.Dynamics.CRM.msdyn_bookingjournal
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_bookingrule
+    type: Microsoft.Dynamics.CRM.msdyn_bookingrule
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_bookingsetupmetadata
+    type: Microsoft.Dynamics.CRM.msdyn_bookingsetupmetadata
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_bookingtimestamp
+    type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_characteristicreqforteammember
+    type: Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_clientextension
+    type: Microsoft.Dynamics.CRM.msdyn_clientextension
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_configuration
+    type: Microsoft.Dynamics.CRM.msdyn_configuration
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_contactpricelist
+    type: Microsoft.Dynamics.CRM.msdyn_contactpricelist
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_contractlinescheduleofvalue
+    type: Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_customerasset
+    type: Microsoft.Dynamics.CRM.msdyn_customerasset
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_dataexport
+    type: Microsoft.Dynamics.CRM.msdyn_dataexport
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_delegation
+    type: Microsoft.Dynamics.CRM.msdyn_delegation
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_estimate
+    type: Microsoft.Dynamics.CRM.msdyn_estimate
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_estimateline
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_expense
+    type: Microsoft.Dynamics.CRM.msdyn_expense
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_expensereceipt
+    type: Microsoft.Dynamics.CRM.msdyn_expensereceipt
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_fact
+    type: Microsoft.Dynamics.CRM.msdyn_fact
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_fieldcomputation
+    type: Microsoft.Dynamics.CRM.msdyn_fieldcomputation
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_fieldservicesetting
+    type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_findworkevent
+    type: Microsoft.Dynamics.CRM.msdyn_findworkevent
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_incidenttype
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttype
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_incidenttypecharacteristic
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_incidenttypeproduct
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_incidenttypeservice
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_incidenttypeservicetask
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservicetask
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_integrationjob
+    type: Microsoft.Dynamics.CRM.msdyn_integrationjob
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_integrationjobdetail
+    type: Microsoft.Dynamics.CRM.msdyn_integrationjobdetail
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_inventoryadjustment
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_inventoryadjustmentproduct
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_inventoryjournal
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_inventorytransfer
+    type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_invoicelinetransaction
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_journal
+    type: Microsoft.Dynamics.CRM.msdyn_journal
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_journalline
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_opportunitylineresourcecategory
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_opportunitylinetransaction
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_opportunitylinetransactioncategory
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactioncategory
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_opportunitylinetransactionclassificatio
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactionclassificatio
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_opportunitypricelist
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitypricelist
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_orderinvoicingdate
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingdate
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_orderinvoicingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_orderinvoicingsetup
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetup
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_orderinvoicingsetupdate
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetupdate
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_orderlineresourcecategory
+    type: Microsoft.Dynamics.CRM.msdyn_orderlineresourcecategory
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_orderlinetransaction
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_orderlinetransactioncategory
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransactioncategory
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_orderlinetransactionclassification
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransactionclassification
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_orderpricelist
+    type: Microsoft.Dynamics.CRM.msdyn_orderpricelist
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_payment
+    type: Microsoft.Dynamics.CRM.msdyn_payment
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_paymentdetail
+    type: Microsoft.Dynamics.CRM.msdyn_paymentdetail
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_paymentmethod
+    type: Microsoft.Dynamics.CRM.msdyn_paymentmethod
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_paymentterm
+    type: Microsoft.Dynamics.CRM.msdyn_paymentterm
+    partner: owningbusinessunit
   - name: business_unit_msdyn_postalbum
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: owningbusinessunit
+  - name: business_unit_msdyn_postalcode
+    type: Microsoft.Dynamics.CRM.msdyn_postalcode
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_priority
+    type: Microsoft.Dynamics.CRM.msdyn_priority
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_project
+    type: Microsoft.Dynamics.CRM.msdyn_project
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_projectapproval
+    type: Microsoft.Dynamics.CRM.msdyn_projectapproval
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_projectpricelist
+    type: Microsoft.Dynamics.CRM.msdyn_projectpricelist
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_projecttask
+    type: Microsoft.Dynamics.CRM.msdyn_projecttask
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_projecttaskdependency
+    type: Microsoft.Dynamics.CRM.msdyn_projecttaskdependency
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_projecttaskstatususer
+    type: Microsoft.Dynamics.CRM.msdyn_projecttaskstatususer
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_projectteam
+    type: Microsoft.Dynamics.CRM.msdyn_projectteam
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_projecttransactioncategory
+    type: Microsoft.Dynamics.CRM.msdyn_projecttransactioncategory
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_purchaseorder
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_purchaseorderbill
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_purchaseorderproduct
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_purchaseorderreceipt
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_purchaseorderreceiptproduct
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_purchaseordersubstatus
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotebookingincident
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingincident
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotebookingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotebookingservice
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotebookingservicetask
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotebookingsetup
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingsetup
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quoteinvoicingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quoteinvoicingsetup
+    type: Microsoft.Dynamics.CRM.msdyn_quoteinvoicingsetup
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotelineanalyticsbreakdown
+    type: Microsoft.Dynamics.CRM.msdyn_quotelineanalyticsbreakdown
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotelineresourcecategory
+    type: Microsoft.Dynamics.CRM.msdyn_quotelineresourcecategory
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotelinescheduleofvalue
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinescheduleofvalue
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotelinetransaction
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotelinetransactioncategory
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransactioncategory
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotelinetransactionclassification
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransactionclassification
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_quotepricelist
+    type: Microsoft.Dynamics.CRM.msdyn_quotepricelist
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_requirementcharacteristic
+    type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_requirementorganizationunit
+    type: Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_requirementresourcecategory
+    type: Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_requirementresourcepreference
+    type: Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_requirementstatus
+    type: Microsoft.Dynamics.CRM.msdyn_requirementstatus
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_resourceassignment
+    type: Microsoft.Dynamics.CRM.msdyn_resourceassignment
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_resourceassignmentdetail
+    type: Microsoft.Dynamics.CRM.msdyn_resourceassignmentdetail
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_resourcepaytype
+    type: Microsoft.Dynamics.CRM.msdyn_resourcepaytype
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_resourcerequest
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequest
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_resourcerequirement
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_resourcerequirementdetail
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequirementdetail
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_resourceterritory
+    type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_rma
+    type: Microsoft.Dynamics.CRM.msdyn_rma
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_rmaproduct
+    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_rmareceipt
+    type: Microsoft.Dynamics.CRM.msdyn_rmareceipt
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_rmareceiptproduct
+    type: Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_rmasubstatus
+    type: Microsoft.Dynamics.CRM.msdyn_rmasubstatus
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_rolecompetencyrequirement
+    type: Microsoft.Dynamics.CRM.msdyn_rolecompetencyrequirement
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_roleutilization
+    type: Microsoft.Dynamics.CRM.msdyn_roleutilization
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_rtv
+    type: Microsoft.Dynamics.CRM.msdyn_rtv
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_rtvproduct
+    type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_rtvsubstatus
+    type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_scheduleboardsetting
+    type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_servicetasktype
+    type: Microsoft.Dynamics.CRM.msdyn_servicetasktype
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_shipvia
+    type: Microsoft.Dynamics.CRM.msdyn_shipvia
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_systemuserschedulersetting
+    type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_taxcode
+    type: Microsoft.Dynamics.CRM.msdyn_taxcode
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_taxcodedetail
+    type: Microsoft.Dynamics.CRM.msdyn_taxcodedetail
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_timeentry
+    type: Microsoft.Dynamics.CRM.msdyn_timeentry
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_timegroup
+    type: Microsoft.Dynamics.CRM.msdyn_timegroup
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_timegroupdetail
+    type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_timeoffcalendar
+    type: Microsoft.Dynamics.CRM.msdyn_timeoffcalendar
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_timeoffrequest
+    type: Microsoft.Dynamics.CRM.msdyn_timeoffrequest
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_transactionconnection
+    type: Microsoft.Dynamics.CRM.msdyn_transactionconnection
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_transactionorigin
+    type: Microsoft.Dynamics.CRM.msdyn_transactionorigin
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_userworkhistory
+    type: Microsoft.Dynamics.CRM.msdyn_userworkhistory
+    partner: owningbusinessunit
   - name: business_unit_msdyn_wallsavedqueryusersettings
     type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_warehouse
+    type: Microsoft.Dynamics.CRM.msdyn_warehouse
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_workhourtemplate
+    type: Microsoft.Dynamics.CRM.msdyn_workhourtemplate
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_workorder
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_workordercharacteristic
+    type: Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_workorderincident
+    type: Microsoft.Dynamics.CRM.msdyn_workorderincident
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_workorderproduct
+    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_workorderresourcerestriction
+    type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_workorderservice
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_workorderservicetask
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_workordersubstatus
+    type: Microsoft.Dynamics.CRM.msdyn_workordersubstatus
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_workordertype
+    type: Microsoft.Dynamics.CRM.msdyn_workordertype
     partner: owningbusinessunit
   - name: business_unit_new_interactionforemail
     type: Microsoft.Dynamics.CRM.interactionforemail
@@ -813,6 +1252,12 @@ collection_valued_navigation_properties:
   - name: BusinessUnit_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_businessunit_syncerror
+  - name: msdyn_approval_businessunit_owningbusinessunit
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: owningbusinessunit_msdyn_approval
+  - name: msdyn_bookingalert_businessunit_owningbusinessunit
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: owningbusinessunit_msdyn_bookingalert
   - name: Owning_businessunit_processsessions
     type: Microsoft.Dynamics.CRM.processsession
     partner: owningbusinessunit
@@ -828,7 +1273,8 @@ solutions:
   description: "The following solutions include the businessunit entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.FieldService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

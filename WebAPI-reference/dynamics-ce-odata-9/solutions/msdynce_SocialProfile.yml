@@ -4,12 +4,12 @@ name: "Social Profile"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Social Profile Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: 3ec890ca-2696-4f13-badc-46ff5a2081a2
+  ms.assetid: 71dccddf-5e40-4e55-9cf0-a8668b87e70a
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -25,7 +25,7 @@ entities:
   entity_items:
    - Microsoft.Dynamics.CRM.socialprofile
 # This solution includes no actions.
-# There are no remarks for this solution.
+# This solution has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

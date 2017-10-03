@@ -4,7 +4,7 @@ name: "bookableresourcecategoryassn"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement bookableresourcecategoryassn EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -60,6 +60,17 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_isdefault
+      type: Edm.Boolean
+      display_name: "Is Default"
+      description: "Shows the default resource role."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -242,8 +253,10 @@ operations:
 solutions:
   description: "The following solutions include the bookableresourcecategoryassn entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.ProjectService
   - Microsoft.Dynamics.CRM.msdynce_Scheduling
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -4,7 +4,7 @@ name: "AddToQueue"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement AddToQueue Action Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -50,7 +50,7 @@ entities:
   description: "Use the AddToQueue action with this entity type:"
   entity_items:
   - Microsoft.Dynamics.CRM.queueitem
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

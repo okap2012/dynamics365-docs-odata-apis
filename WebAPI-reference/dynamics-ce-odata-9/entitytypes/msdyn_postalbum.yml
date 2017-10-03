@@ -4,7 +4,7 @@ name: "msdyn_postalbum"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_postalbum EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -210,6 +210,12 @@ collection_valued_navigation_properties:
   - name: msdyn_postalbum_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_postalbum
+  - name: msdyn_postalbum_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_msdyn_postalbum_msdyn_approval
+  - name: msdyn_postalbum_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_msdyn_postalbum_msdyn_bookingalert
   - name: msdyn_postalbum_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_postalbum_phonecall
@@ -254,7 +260,7 @@ solutions:
   description: "The following solutions include the msdyn_postalbum entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.ActivityFeedsCore
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -1,0 +1,99 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+name: "Unified Resource Scheduling"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Unified Resource Scheduling Solution Reference | MicrosoftDocs"
+  ms.date: "2017-10-02"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 0c0162e7-1b61-40c8-8be4-8294370e85ff
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Unified Resource Scheduling Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Unified scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+ unique_name: MicrosoftDynamicsScheduling
+ version: "2.0.0.260"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - Microsoft.Dynamics.CRM.account
+   - Microsoft.Dynamics.CRM.bookableresource
+   - Microsoft.Dynamics.CRM.bookableresourcebooking
+   - Microsoft.Dynamics.CRM.bookableresourcebookingheader
+   - Microsoft.Dynamics.CRM.bookableresourcecategory
+   - Microsoft.Dynamics.CRM.bookingstatus
+   - Microsoft.Dynamics.CRM.characteristic
+   - Microsoft.Dynamics.CRM.contact
+   - Microsoft.Dynamics.CRM.msdyn_actual
+   - Microsoft.Dynamics.CRM.msdyn_bookingalert
+   - Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
+   - Microsoft.Dynamics.CRM.msdyn_bookingchange
+   - Microsoft.Dynamics.CRM.msdyn_bookingrule
+   - Microsoft.Dynamics.CRM.msdyn_bookingsetupmetadata
+   - Microsoft.Dynamics.CRM.msdyn_clientextension
+   - Microsoft.Dynamics.CRM.msdyn_configuration
+   - Microsoft.Dynamics.CRM.msdyn_organizationalunit
+   - Microsoft.Dynamics.CRM.msdyn_priority
+   - Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
+   - Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
+   - Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
+   - Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
+   - Microsoft.Dynamics.CRM.msdyn_requirementstatus
+   - Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+   - Microsoft.Dynamics.CRM.msdyn_resourcerequirementdetail
+   - Microsoft.Dynamics.CRM.msdyn_resourceterritory
+   - Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
+   - Microsoft.Dynamics.CRM.msdyn_schedulingparameter
+   - Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
+   - Microsoft.Dynamics.CRM.msdyn_timegroup
+   - Microsoft.Dynamics.CRM.msdyn_timegroupdetail
+   - Microsoft.Dynamics.CRM.msdyn_transactionorigin
+   - Microsoft.Dynamics.CRM.msdyn_workhourtemplate
+   - Microsoft.Dynamics.CRM.ratingvalue
+   - Microsoft.Dynamics.CRM.systemuser
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - Microsoft.Dynamics.CRM.msdyn_applyworktemplateforresources
+   - Microsoft.Dynamics.CRM.msdyn_BookingResource
+   - Microsoft.Dynamics.CRM.msdyn_BookingResourceRequirement
+   - Microsoft.Dynamics.CRM.msdyn_CancelBookings
+   - Microsoft.Dynamics.CRM.msdyn_cloneentity
+   - Microsoft.Dynamics.CRM.msdyn_FpsAction
+   - Microsoft.Dynamics.CRM.msdyn_GeocodeAddress
+   - Microsoft.Dynamics.CRM.msdyn_GetAvailabilitySummaryFromDemand
+   - Microsoft.Dynamics.CRM.msdyn_GetBookingDetailsByRequirementIds
+   - Microsoft.Dynamics.CRM.msdyn_GetMultipleResourceBookingDetails
+   - Microsoft.Dynamics.CRM.msdyn_GetRequirementChartData
+   - Microsoft.Dynamics.CRM.msdyn_GetRequirementDemand
+   - Microsoft.Dynamics.CRM.msdyn_GetRequirementDemandDisplay
+   - Microsoft.Dynamics.CRM.msdyn_GetResourceBookingDetails
+   - Microsoft.Dynamics.CRM.msdyn_GetResourceBookingFormParameters
+   - Microsoft.Dynamics.CRM.msdyn_GetResourcePopupDetails
+   - Microsoft.Dynamics.CRM.msdyn_GetResources
+   - Microsoft.Dynamics.CRM.msdyn_GetSummaryBookings
+   - Microsoft.Dynamics.CRM.msdyn_initializedefaultclonequery
+   - Microsoft.Dynamics.CRM.msdyn_ResolveTimezone
+   - Microsoft.Dynamics.CRM.msdyn_RetrieveDistanceMatrix
+   - Microsoft.Dynamics.CRM.msdyn_RetrieveResourceAvailability
+   - Microsoft.Dynamics.CRM.msdyn_UpdateRequirementDemand
+# This solution has no remarks.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

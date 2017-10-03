@@ -4,7 +4,7 @@ name: "uom"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement uom EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -162,6 +162,96 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: msdyn_uom_msdyn_actual_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_Unit
+  - name: msdyn_uom_msdyn_agreementbookingproduct_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_agreementbookingservice_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_agreementinvoiceproduct_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_estimateline_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: msdyn_Unit
+  - name: msdyn_uom_msdyn_incidenttypeproduct_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_incidenttypeservice_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_inventoryadjustmentproduct_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_inventoryjournal_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_invoicelinetransaction_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_Unit
+  - name: msdyn_uom_msdyn_journalline_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: msdyn_Unit
+  - name: msdyn_uom_msdyn_opportunitylinetransaction_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: msdyn_Unit
+  - name: msdyn_uom_msdyn_orderinvoicingproduct_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct
+    partner: msdyn_Unit
+  - name: msdyn_uom_msdyn_orderlinetransaction_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_Unit
+  - name: msdyn_uom_msdyn_productinventory_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_productinventory
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_purchaseorderproduct_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_quotebookingproduct_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_quotebookingservice_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_quoteinvoicingproduct_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct
+    partner: msdyn_Unit
+  - name: msdyn_uom_msdyn_quotelinetransaction_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: msdyn_Unit
+  - name: msdyn_uom_msdyn_resourcecategorypricelevel_PrimaryUnit
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
+    partner: msdyn_PrimaryUnit
+  - name: msdyn_uom_msdyn_resourcecategorypricelevel_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
+    partner: msdyn_Unit
+  - name: msdyn_uom_msdyn_rmaproduct_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_rtvproduct_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_transactioncategory_DefaultUnit
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategory
+    partner: msdyn_DefaultUnit
+  - name: msdyn_uom_msdyn_transactioncategorypricelevel_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel
+    partner: msdyn_Unit
+  - name: msdyn_uom_msdyn_transactiontype_DefaultUnit
+    type: Microsoft.Dynamics.CRM.msdyn_transactiontype
+    partner: msdyn_DefaultUnit
+  - name: msdyn_uom_msdyn_workorderproduct_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+    partner: msdyn_unit
+  - name: msdyn_uom_msdyn_workorderservice_Unit
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+    partner: msdyn_unit
+  - name: msdyn_uom_pricelevel_TimeUnit
+    type: Microsoft.Dynamics.CRM.pricelevel
+    partner: msdyn_TimeUnit
   - name: unit_of_measurement_base_unit
     type: Microsoft.Dynamics.CRM.uom
     partner: baseuom
@@ -209,8 +299,9 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the uom entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_ProductManagement
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

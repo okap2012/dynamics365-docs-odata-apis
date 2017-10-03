@@ -4,7 +4,7 @@ name: "characteristic"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement characteristic EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -77,6 +77,17 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_requireapproval
+      type: Edm.Boolean
+      display_name: "Require Approval"
+      description: "Require approval"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -228,6 +239,21 @@ collection_valued_navigation_properties:
   - name: Characteristic_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_characteristic_syncerror
+  - name: msdyn_characteristic_msdyn_characteristicreqforteammember_characteristic
+    type: Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember
+    partner: msdyn_characteristic
+  - name: msdyn_characteristic_msdyn_incidenttypecharacteristic_Characteristic
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
+    partner: msdyn_characteristic
+  - name: msdyn_characteristic_msdyn_requirementcharacteristic_characteristic
+    type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
+    partner: msdyn_Characteristic
+  - name: msdyn_characteristic_msdyn_rolecompetencyrequirement_characteristic
+    type: Microsoft.Dynamics.CRM.msdyn_rolecompetencyrequirement
+    partner: msdyn_characteristic
+  - name: msdyn_characteristic_msdyn_workordercharacteristic_Characteristic
+    type: Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
+    partner: msdyn_characteristic
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the characteristic entity type."
@@ -245,8 +271,11 @@ operations:
 solutions:
   description: "The following solutions include the characteristic entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+  - Microsoft.Dynamics.CRM.ProjectService
   - Microsoft.Dynamics.CRM.msdynce_Scheduling
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

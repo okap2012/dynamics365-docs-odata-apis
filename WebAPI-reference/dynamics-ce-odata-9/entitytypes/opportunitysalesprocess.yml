@@ -4,7 +4,7 @@ name: "opportunitysalesprocess"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement opportunitysalesprocess EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,7 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement opportunitysalesprocess entitytype."
 header: 
-  description: "Opportunity Sales Process Business Process Flow"
+  description: "Base entity for process Opportunity Sales Process"
   entity_set_path: "[organization URI]/api/data/v9.0/opportunitysalesprocesses"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Opportunity Sales Process
@@ -145,6 +145,14 @@ lookup_properties:
     single_valued_navigation_property:
     - activestageid
     description: "Unique identifier of the active stage for the Business Process Flow instance."
+  - name: _bpf_quoteid_value
+    single_valued_navigation_property:
+    - bpf_quoteid
+    description: ""
+  - name: _bpf_salesorderid_value
+    single_valued_navigation_property:
+    - bpf_salesorderid
+    description: ""
   - name: _createdby_value
     single_valued_navigation_property:
     - createdbyname
@@ -191,6 +199,12 @@ single_valued_navigation_properties:
   - name: activestageid
     type: Microsoft.Dynamics.CRM.processstage
     partner: processstage_opportunitysalesprocess
+  - name: bpf_quoteid
+    type: Microsoft.Dynamics.CRM.quote
+    partner: bpf_quote_OpportunitySalesProcess
+  - name: bpf_salesorderid
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: bpf_salesorder_OpportunitySalesProcess
   - name: createdbyname
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_opportunitysalesprocess_createdby
@@ -251,7 +265,9 @@ solutions:
   description: "The following solutions include the opportunitysalesprocess entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.msdynce_Sales
-# There are no remarks for this entity.
+  - Microsoft.Dynamics.CRM.FreeTrialBaseSolution2
+  - Microsoft.Dynamics.CRM.ProjectService
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

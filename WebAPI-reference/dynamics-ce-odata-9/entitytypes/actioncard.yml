@@ -4,7 +4,7 @@ name: "actioncard"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement actioncard EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -261,6 +261,12 @@ single_valued_navigation_properties:
   - name: regardingobjectid_letter_actioncard
     type: Microsoft.Dynamics.CRM.letter
     partner: letter_actioncard
+  - name: regardingobjectid_msdyn_approval
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: msdyn_approval_ActionCards
+  - name: regardingobjectid_msdyn_bookingalert
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: msdyn_bookingalert_ActionCards
   - name: regardingobjectid_opportunity_actioncard
     type: Microsoft.Dynamics.CRM.opportunity
     partner: opportunity_actioncard
@@ -293,7 +299,7 @@ solutions:
   - Microsoft.Dynamics.CRM.System
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_Service
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

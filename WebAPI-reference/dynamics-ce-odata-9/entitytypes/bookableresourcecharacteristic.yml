@@ -4,7 +4,7 @@ name: "bookableresourcecharacteristic"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement bookableresourcecharacteristic EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -60,6 +60,23 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_approvalstatus
+      type: Edm.Int32
+      display_name: "Approval status"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Saved"
+        - value: 192350001
+          label: "Pending Approval"
+        - value: 192350002
+          label: "Rejected"
+        - value: 192350003
+          label: "Approved"
+        - value: 192350004
+          label: "Recalled"
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -153,6 +170,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfbyname
     description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_supportingrecord_value
+    single_valued_navigation_property:
+    - msdyn_supportingrecord
+    description: ""
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -199,6 +220,9 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfbyname
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_bookableresourcecharacteristic_modifiedonbehalfby
+  - name: msdyn_supportingrecord
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: msdyn_bookableresourcecharacteristic_bookableresourcecharacteristic_supportingrecord
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_bookableresourcecharacteristic
@@ -250,6 +274,12 @@ collection_valued_navigation_properties:
   - name: BookableResourceCharacteristic_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_bookableresourcecharacteristic_syncerror
+  - name: msdyn_bookableresourcecharacteristic_bookableresourcecharacteristic_supportingrecord
+    type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+    partner: msdyn_supportingrecord
+  - name: msdyn_bookableresourcecharacteristic_msdyn_approval_Characteristic
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: msdyn_Characteristic_msdyn_approval
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the bookableresourcecharacteristic entity type."
@@ -267,8 +297,10 @@ operations:
 solutions:
   description: "The following solutions include the bookableresourcecharacteristic entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.ProjectService
   - Microsoft.Dynamics.CRM.msdynce_Scheduling
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

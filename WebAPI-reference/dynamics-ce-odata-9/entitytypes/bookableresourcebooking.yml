@@ -4,7 +4,7 @@ name: "bookableresourcebooking"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement bookableresourcebooking EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -83,6 +83,163 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_actualarrivaltime
+      type: Edm.DateTimeOffset
+      display_name: "Actual Arrival Time"
+      description: "Shows the time that work started."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_actualtravelduration
+      type: Edm.Int32
+      display_name: "Actual Travel Duration"
+      description: "Shows the total travel duration. If you leave this field blank the system automatically determines the travel duration by calculating the resource journal details."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_allowoverlapping
+      type: Edm.Boolean
+      display_name: "Allow Overlapping"
+      description: "Allow the time of this booking to be displayed on the schedule assistant as available."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_bookingmethod
+      type: Edm.Int32
+      display_name: "Booking Method"
+      description: "Shows the method used to create this booking."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 690970005
+          label: "System - Agreement Schedule"
+        - value: 690970001
+          label: "Schedule Board"
+        - value: 690970002
+          label: "Mobile"
+        - value: 690970003
+          label: "Manual"
+        - value: 690970004
+          label: "Schedule Assistant"
+    - name: msdyn_cascadecrewchanges
+      type: Edm.Boolean
+      display_name: "Cascade Crew Changes"
+      description: "Defines whether changing any of the following fields (Start Time, End Time, Status) should cascade the changes to other bookings on this requirement that have the same start and end time."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_estimatedarrivaltime
+      type: Edm.DateTimeOffset
+      display_name: "Estimated Arrival Time"
+      description: "Estimated Arrival Time"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_estimatedtravelduration
+      type: Edm.Int32
+      display_name: "Estimated Travel Duration"
+      description: "Estimated Travel Duration"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_internalflags
+      type: Edm.String
+      display_name: "Internal Flags"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_latitude
+      type: Edm.Double
+      display_name: "Latitude"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_longitude
+      type: Edm.Double
+      display_name: "Longitude"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_milestraveled
+      type: Edm.Double
+      display_name: "Miles Traveled"
+      description: "In this field you can enter the total miles the resource drove to the job site"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_offlinetimestamp
+      type: Edm.DateTimeOffset
+      display_name: "Offline Timestamp"
+      description: "Internal Use. This field is used to capture the time when the Booking was updated on mobile offline."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_preventtimestampcreation
+      type: Edm.Boolean
+      display_name: "Prevent Timestamp Creation"
+      description: "Prevents time stamp creation if the time stamp was already created on a mobile device."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_signature
+      type: Edm.String
+      display_name: "Signature"
+      description: "This field is used for capturing signature on MoCa (using the Pen Control)"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_slottext
+      type: Edm.String
+      display_name: "Slot Text"
+      description: "Shows the automatically generated text of the time slot on the schedule board."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_totalbillableduration
+      type: Edm.Int32
+      display_name: "Total Billable Duration"
+      description: "Shows the total billable duration. If you leave this field blank the system automatically determines the billable duration by calculating the resource journal details."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_totalbreakduration
+      type: Edm.Int32
+      display_name: "Total Break Duration"
+      description: "Shows the total break duration. If you leave this field blank the system automatically determines the break duration by calculating the resource journal details."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_totalcost
+      type: Edm.Decimal
+      display_name: "Total Cost"
+      description: "Shows the total cost for this booking."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_totalcost_base
+      type: Edm.Decimal
+      display_name: "Total Cost (Base)"
+      description: "Value of the Total Cost in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_totaldurationinprogress
+      type: Edm.Int32
+      display_name: "Total Duration In Progress"
+      description: "Shows the total duration that this booking was in progress."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_traveltimerescheduling
+      type: Edm.Boolean
+      display_name: "Travel Time Rescheduling (Deprecated)"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -186,6 +343,42 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfbyname
     description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_agreementbookingdate_value
+    single_valued_navigation_property:
+    - msdyn_agreementbookingdate
+    description: "Agreement Booking Date from where this Booking was generated"
+  - name: _msdyn_bookingsetupmetadataid_value
+    single_valued_navigation_property:
+    - msdyn_BookingSetupMetadataId
+    description: "A unique identifier for the booking setup metadata that is associated with a bookable resource booking."
+  - name: _msdyn_projectid_value
+    single_valued_navigation_property:
+    - msdyn_projectid
+    description: "Project of booking detail record"
+  - name: _msdyn_projectteamid_value
+    single_valued_navigation_property:
+    - msdyn_projectteamid
+    description: "Project team member of booking detail record"
+  - name: _msdyn_resourcecategoryid_value
+    single_valued_navigation_property:
+    - msdyn_resourcecategoryid
+    description: "Resource Category"
+  - name: _msdyn_resourcegroup_value
+    single_valued_navigation_property:
+    - msdyn_resourcegroup
+    description: "Unique identifier for Resource associated with Resource Booking"
+  - name: _msdyn_resourcerequirement_value
+    single_valued_navigation_property:
+    - msdyn_ResourceRequirement
+    description: "Resource Requirement"
+  - name: _msdyn_timegroupdetailselected_value
+    single_valued_navigation_property:
+    - msdyn_timegroupdetailselected
+    description: ""
+  - name: _msdyn_workorder_value
+    single_valued_navigation_property:
+    - msdyn_workorder
+    description: "Unique identifier for Work Order associated with Resource Booking."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -231,6 +424,33 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfbyname
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_bookableresourcebooking_modifiedonbehalfby
+  - name: msdyn_agreementbookingdate
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
+    partner: msdyn_msdyn_agreementbookingdate_bookableresourcebooking_AgreementBookingDate
+  - name: msdyn_BookingSetupMetadataId
+    type: Microsoft.Dynamics.CRM.msdyn_bookingsetupmetadata
+    partner: msdyn_msdyn_bookingsetupmetadata_bookableresour
+  - name: msdyn_projectid
+    type: Microsoft.Dynamics.CRM.msdyn_project
+    partner: msdyn_msdyn_project_bookableresourcebooking_projectid
+  - name: msdyn_projectteamid
+    type: Microsoft.Dynamics.CRM.msdyn_projectteam
+    partner: msdyn_msdyn_projectteam_bookableresourcebooking_projectteamid
+  - name: msdyn_resourcecategoryid
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: msdyn_bookableresourcecategory_bookableresourcebooking_resourcecategoryid
+  - name: msdyn_resourcegroup
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: msdyn_bookableresource_bookableresourcebooking_ResourceGroup
+  - name: msdyn_ResourceRequirement
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+    partner: msdyn_resourcerequirement_bookableresourcebooking_ResourceRequirement
+  - name: msdyn_timegroupdetailselected
+    type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
+    partner: msdyn_msdyn_timegroupdetail_bookableresourcebooking_TimeGroupDetailSelected
+  - name: msdyn_workorder
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_msdyn_workorder_bookableresourcebooking_WorkOrder
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_bookableresourcebooking
@@ -297,6 +517,12 @@ collection_valued_navigation_properties:
   - name: bookableresourcebooking_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_bookableresourcebooking
+  - name: bookableresourcebooking_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_bookableresourcebooking_msdyn_approval
+  - name: bookableresourcebooking_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_bookableresourcebooking_msdyn_bookingalert
   - name: bookableresourcebooking_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_bookableresourcebooking_opportunityclose
@@ -330,6 +556,33 @@ collection_valued_navigation_properties:
   - name: bookableresourcebooking_Tasks
     type: Microsoft.Dynamics.CRM.task
     partner: regardingobjectid_bookableresourcebooking_task
+  - name: msdyn_bookableresourcebooking_msdyn_bookingjournal_Booking
+    type: Microsoft.Dynamics.CRM.msdyn_bookingjournal
+    partner: msdyn_booking
+  - name: msdyn_bookableresourcebooking_msdyn_bookingtimestamp_Booking
+    type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
+    partner: msdyn_booking
+  - name: msdyn_bookableresourcebooking_msdyn_purchaseorder_Booking
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+    partner: msdyn_booking
+  - name: msdyn_bookableresourcebooking_msdyn_purchaseorderproduct_AssociateToBooking
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+    partner: msdyn_associatetobooking
+  - name: msdyn_bookableresourcebooking_msdyn_purchaseorderreceiptproduct_AssociateToBooking
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
+    partner: msdyn_associatetobooking
+  - name: msdyn_bookableresourcebooking_msdyn_rtv_Booking
+    type: Microsoft.Dynamics.CRM.msdyn_rtv
+    partner: msdyn_booking
+  - name: msdyn_bookableresourcebooking_msdyn_workorderproduct_Booking
+    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+    partner: msdyn_booking
+  - name: msdyn_bookableresourcebooking_msdyn_workorderservice_Booking
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+    partner: msdyn_booking
+  - name: msdyn_bookableresourcebooking_msdyn_workorderservicetask_Booking
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
+    partner: msdyn_booking
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the bookableresourcebooking entity type."
@@ -347,8 +600,11 @@ operations:
 solutions:
   description: "The following solutions include the bookableresourcebooking entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+  - Microsoft.Dynamics.CRM.ProjectService
   - Microsoft.Dynamics.CRM.msdynce_Scheduling
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

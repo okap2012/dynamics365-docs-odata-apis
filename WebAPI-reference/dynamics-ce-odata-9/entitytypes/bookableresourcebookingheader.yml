@@ -4,7 +4,7 @@ name: "bookableresourcebookingheader"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement bookableresourcebookingheader EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,7 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement bookableresourcebookingheader entitytype."
 header: 
-  description: "Reservation entity representing the summary of the associated resource bookings."
+  description: "Shows the reservation table where the summary of resource bookings are persisted."
   entity_set_path: "[organization URI]/api/data/v9.0/bookableresourcebookingheaders"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Bookable Resource Booking Header
@@ -72,6 +72,17 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_bookingtype
+      type: Edm.Int32
+      display_name: "Booking Type"
+      description: "Select whether the booking is solid or liquid. Solid bookings are firm and cannot be changed whereas liquid bookings can be changed."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Solid"
+        - value: 2
+          label: "Liquid"
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -167,6 +178,30 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfbyname
     description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_bookableresourceid_value
+    single_valued_navigation_property:
+    - msdyn_bookableresourceid
+    description: "Shows the resource."
+  - name: _msdyn_bookingstatusid_value
+    single_valued_navigation_property:
+    - msdyn_bookingstatusid
+    description: "Booking Status"
+  - name: _msdyn_projectid_value
+    single_valued_navigation_property:
+    - msdyn_projectid
+    description: "Project"
+  - name: _msdyn_projectteamid_value
+    single_valued_navigation_property:
+    - msdyn_projectteamid
+    description: "Project Team"
+  - name: _msdyn_resourcecategoryid_value
+    single_valued_navigation_property:
+    - msdyn_resourcecategoryid
+    description: "Resource Category"
+  - name: _msdyn_resourcerequirement_value
+    single_valued_navigation_property:
+    - msdyn_ResourceRequirement
+    description: "Resource Requirement"
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -202,6 +237,24 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfbyname
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_bookableresourcebookingheader_modifiedonbehalfby
+  - name: msdyn_bookableresourceid
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: msdyn_bookableresource_bookableresourcebookingheader_bookableresourceid
+  - name: msdyn_bookingstatusid
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: msdyn_bookingstatus_bookableresourcebookingheader_bookingstatusid
+  - name: msdyn_projectid
+    type: Microsoft.Dynamics.CRM.msdyn_project
+    partner: msdyn_msdyn_project_bookableresourcebookingheader_projectid
+  - name: msdyn_projectteamid
+    type: Microsoft.Dynamics.CRM.msdyn_projectteam
+    partner: msdyn_msdyn_projectteam_bookableresourcebookingheader_projectteamid
+  - name: msdyn_resourcecategoryid
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: msdyn_bookableresourcecategory_bookableresourcebookingheader_resourcecategoryid
+  - name: msdyn_ResourceRequirement
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+    partner: msdyn_resourcerequirement_bookableresourcebookingheader_ResourceRequirement
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_bookableresourcebookingheader
@@ -268,6 +321,12 @@ collection_valued_navigation_properties:
   - name: bookableresourcebookingheader_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_bookableresourcebookingheader
+  - name: bookableresourcebookingheader_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_bookableresourcebookingheader_msdyn_approval
+  - name: bookableresourcebookingheader_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_bookableresourcebookingheader_msdyn_bookingalert
   - name: bookableresourcebookingheader_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_bookableresourcebookingheader_opportunityclose
@@ -301,6 +360,9 @@ collection_valued_navigation_properties:
   - name: bookableresourcebookingheader_Tasks
     type: Microsoft.Dynamics.CRM.task
     partner: regardingobjectid_bookableresourcebookingheader_task
+  - name: msdyn_resourcerequirement_bookingheader
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+    partner: msdyn_resourcerequirement_bookingheader
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the bookableresourcebookingheader entity type."
@@ -318,8 +380,11 @@ operations:
 solutions:
   description: "The following solutions include the bookableresourcebookingheader entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+  - Microsoft.Dynamics.CRM.ProjectService
   - Microsoft.Dynamics.CRM.msdynce_Scheduling
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

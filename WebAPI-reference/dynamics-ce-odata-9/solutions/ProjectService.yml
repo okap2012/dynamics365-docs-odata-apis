@@ -1,0 +1,290 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.ProjectService
+name: "Project Service Automation"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Project Service Automation Solution Reference | MicrosoftDocs"
+  ms.date: "2017-10-02"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 5d8db9ed-c9f4-4144-ae18-d1bfa0dad0d1
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Project Service Automation Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
+ unique_name: ProjectService
+ version: "2.0.0.273"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - Microsoft.Dynamics.CRM.account
+   - Microsoft.Dynamics.CRM.bookableresource
+   - Microsoft.Dynamics.CRM.bookableresourcebooking
+   - Microsoft.Dynamics.CRM.bookableresourcebookingheader
+   - Microsoft.Dynamics.CRM.bookableresourcecategory
+   - Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+   - Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+   - Microsoft.Dynamics.CRM.bookingstatus
+   - Microsoft.Dynamics.CRM.characteristic
+   - Microsoft.Dynamics.CRM.contact
+   - Microsoft.Dynamics.CRM.invoice
+   - Microsoft.Dynamics.CRM.invoicedetail
+   - Microsoft.Dynamics.CRM.lead
+   - Microsoft.Dynamics.CRM.msdyn_accountpricelist
+   - Microsoft.Dynamics.CRM.msdyn_actual
+   - Microsoft.Dynamics.CRM.msdyn_approval
+   - Microsoft.Dynamics.CRM.msdyn_batchjob
+   - Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+   - Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+   - Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember
+   - Microsoft.Dynamics.CRM.msdyn_contactpricelist
+   - Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule
+   - Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue
+   - Microsoft.Dynamics.CRM.msdyn_dataexport
+   - Microsoft.Dynamics.CRM.msdyn_delegation
+   - Microsoft.Dynamics.CRM.msdyn_estimate
+   - Microsoft.Dynamics.CRM.msdyn_estimateline
+   - Microsoft.Dynamics.CRM.msdyn_expense
+   - Microsoft.Dynamics.CRM.msdyn_expensecategory
+   - Microsoft.Dynamics.CRM.msdyn_expensereceipt
+   - Microsoft.Dynamics.CRM.msdyn_fact
+   - Microsoft.Dynamics.CRM.msdyn_fieldcomputation
+   - Microsoft.Dynamics.CRM.msdyn_findworkevent
+   - Microsoft.Dynamics.CRM.msdyn_integrationjob
+   - Microsoft.Dynamics.CRM.msdyn_integrationjobdetail
+   - Microsoft.Dynamics.CRM.msdyn_invoicefrequency
+   - Microsoft.Dynamics.CRM.msdyn_invoicefrequencydetail
+   - Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+   - Microsoft.Dynamics.CRM.msdyn_journal
+   - Microsoft.Dynamics.CRM.msdyn_journalline
+   - Microsoft.Dynamics.CRM.msdyn_mlresultcache
+   - Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory
+   - Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+   - Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactioncategory
+   - Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactionclassificatio
+   - Microsoft.Dynamics.CRM.msdyn_opportunitypricelist
+   - Microsoft.Dynamics.CRM.msdyn_orderlineresourcecategory
+   - Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+   - Microsoft.Dynamics.CRM.msdyn_orderlinetransactioncategory
+   - Microsoft.Dynamics.CRM.msdyn_orderlinetransactionclassification
+   - Microsoft.Dynamics.CRM.msdyn_orderpricelist
+   - Microsoft.Dynamics.CRM.msdyn_organizationalunit
+   - Microsoft.Dynamics.CRM.msdyn_postconfig
+   - Microsoft.Dynamics.CRM.msdyn_postruleconfig
+   - Microsoft.Dynamics.CRM.msdyn_processnotes
+   - Microsoft.Dynamics.CRM.msdyn_project
+   - Microsoft.Dynamics.CRM.msdyn_projectapproval
+   - Microsoft.Dynamics.CRM.msdyn_projectparameter
+   - Microsoft.Dynamics.CRM.msdyn_projectparameterpricelist
+   - Microsoft.Dynamics.CRM.msdyn_projectpricelist
+   - Microsoft.Dynamics.CRM.msdyn_projecttask
+   - Microsoft.Dynamics.CRM.msdyn_projecttaskdependency
+   - Microsoft.Dynamics.CRM.msdyn_projecttaskstatususer
+   - Microsoft.Dynamics.CRM.msdyn_projectteam
+   - Microsoft.Dynamics.CRM.msdyn_projectteammembersignup
+   - Microsoft.Dynamics.CRM.msdyn_projecttransactioncategory
+   - Microsoft.Dynamics.CRM.msdyn_quotelineanalyticsbreakdown
+   - Microsoft.Dynamics.CRM.msdyn_quotelineinvoiceschedule
+   - Microsoft.Dynamics.CRM.msdyn_quotelineresourcecategory
+   - Microsoft.Dynamics.CRM.msdyn_quotelinescheduleofvalue
+   - Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+   - Microsoft.Dynamics.CRM.msdyn_quotelinetransactioncategory
+   - Microsoft.Dynamics.CRM.msdyn_quotelinetransactionclassification
+   - Microsoft.Dynamics.CRM.msdyn_quotepricelist
+   - Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
+   - Microsoft.Dynamics.CRM.msdyn_resourceassignment
+   - Microsoft.Dynamics.CRM.msdyn_resourceassignmentdetail
+   - Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
+   - Microsoft.Dynamics.CRM.msdyn_resourcerequest
+   - Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+   - Microsoft.Dynamics.CRM.msdyn_resourcerequirementdetail
+   - Microsoft.Dynamics.CRM.msdyn_rolecompetencyrequirement
+   - Microsoft.Dynamics.CRM.msdyn_roleutilization
+   - Microsoft.Dynamics.CRM.msdyn_timeentry
+   - Microsoft.Dynamics.CRM.msdyn_timeoffcalendar
+   - Microsoft.Dynamics.CRM.msdyn_transactioncategory
+   - Microsoft.Dynamics.CRM.msdyn_transactioncategoryclassification
+   - Microsoft.Dynamics.CRM.msdyn_transactioncategoryhierarchyelement
+   - Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel
+   - Microsoft.Dynamics.CRM.msdyn_transactionconnection
+   - Microsoft.Dynamics.CRM.msdyn_transactionorigin
+   - Microsoft.Dynamics.CRM.msdyn_transactiontype
+   - Microsoft.Dynamics.CRM.msdyn_userworkhistory
+   - Microsoft.Dynamics.CRM.msdyn_workhourtemplate
+   - Microsoft.Dynamics.CRM.opportunity
+   - Microsoft.Dynamics.CRM.opportunityproduct
+   - Microsoft.Dynamics.CRM.opportunitysalesprocess
+   - Microsoft.Dynamics.CRM.pricelevel
+   - Microsoft.Dynamics.CRM.product
+   - Microsoft.Dynamics.CRM.quote
+   - Microsoft.Dynamics.CRM.quotedetail
+   - Microsoft.Dynamics.CRM.ratingmodel
+   - Microsoft.Dynamics.CRM.ratingvalue
+   - Microsoft.Dynamics.CRM.salesorder
+   - Microsoft.Dynamics.CRM.salesorderdetail
+   - Microsoft.Dynamics.CRM.systemuser
+   - Microsoft.Dynamics.CRM.task
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - Microsoft.Dynamics.CRM.msdyn_AcceptProposedBooking
+   - Microsoft.Dynamics.CRM.msdyn_AcceptTeamRecommendation
+   - Microsoft.Dynamics.CRM.msdyn_AddInvoiceLineDetails
+   - Microsoft.Dynamics.CRM.msdyn_applyworktemplate
+   - Microsoft.Dynamics.CRM.msdyn_ApprovalStatusApprove
+   - Microsoft.Dynamics.CRM.msdyn_ApprovalStatusReject
+   - Microsoft.Dynamics.CRM.msdyn_AssignGenericResource
+   - Microsoft.Dynamics.CRM.msdyn_AutoGenerateProjectTeam
+   - Microsoft.Dynamics.CRM.msdyn_batchentityCUD
+   - Microsoft.Dynamics.CRM.msdyn_BulkCreatePredecessorsForTask
+   - Microsoft.Dynamics.CRM.msdyn_BulkDeletePredecessorsForTask
+   - Microsoft.Dynamics.CRM.msdyn_ChangeRequestStatus
+   - Microsoft.Dynamics.CRM.msdyn_CloseAllOpportunityQuotes
+   - Microsoft.Dynamics.CRM.msdyn_CloseQuoteAsLost
+   - Microsoft.Dynamics.CRM.msdyn_CloseQuoteAsWon
+   - Microsoft.Dynamics.CRM.msdyn_CompleteResourceRequest
+   - Microsoft.Dynamics.CRM.msdyn_CopyProject
+   - Microsoft.Dynamics.CRM.msdyn_CopyRelatedProjectEntitiesFromTemplate
+   - Microsoft.Dynamics.CRM.msdyn_CopyWbsToProject
+   - Microsoft.Dynamics.CRM.msdyn_CorrectInvoice
+   - Microsoft.Dynamics.CRM.msdyn_CreateContractLineDetailsFromEstimate
+   - Microsoft.Dynamics.CRM.msdyn_CreateContractSpecificPriceList
+   - Microsoft.Dynamics.CRM.msdyn_CreateEstimateLines
+   - Microsoft.Dynamics.CRM.msdyn_CreateEstimatesForProjectTask
+   - Microsoft.Dynamics.CRM.msdyn_CreateExtensionRequirement
+   - Microsoft.Dynamics.CRM.msdyn_createinvoicefrominvoiceschedule
+   - Microsoft.Dynamics.CRM.msdyn_CreateQuoteFromOpportunity
+   - Microsoft.Dynamics.CRM.msdyn_CreateQuoteLineDetailsFromEstimate
+   - Microsoft.Dynamics.CRM.msdyn_CreateQuoteSpecificPriceList
+   - Microsoft.Dynamics.CRM.msdyn_createrequestfromrequirement
+   - Microsoft.Dynamics.CRM.msdyn_CreateSharepointDocumentLocation
+   - Microsoft.Dynamics.CRM.msdyn_CreateTaskBasedEstimatesForProject
+   - Microsoft.Dynamics.CRM.msdyn_CreateTemplateFromProject
+   - Microsoft.Dynamics.CRM.msdyn_DeleteEstimateLines
+   - Microsoft.Dynamics.CRM.msdyn_DeleteEstimatesForProjectTask
+   - Microsoft.Dynamics.CRM.msdyn_ExpenseApproveAction
+   - Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesApprove
+   - Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesPendingApproval
+   - Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesRecall
+   - Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesReject
+   - Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesSubmit
+   - Microsoft.Dynamics.CRM.msdyn_ExpenseRejectAction
+   - Microsoft.Dynamics.CRM.msdyn_ExpenseSubmitAction
+   - Microsoft.Dynamics.CRM.msdyn_ExportActual
+   - Microsoft.Dynamics.CRM.msdyn_FetchProjectCalendarWorkHours
+   - Microsoft.Dynamics.CRM.msdyn_FulfillResourceDemand
+   - Microsoft.Dynamics.CRM.msdyn_GenerateContractLineInvoiceSchedule
+   - Microsoft.Dynamics.CRM.msdyn_GenerateContractLineScheduleOfValues
+   - Microsoft.Dynamics.CRM.msdyn_GenerateQuoteLineInvoiceSchedule
+   - Microsoft.Dynamics.CRM.msdyn_GenerateQuoteLineScheduleOfValues
+   - Microsoft.Dynamics.CRM.msdyn_GetBookingDetailsByResource
+   - Microsoft.Dynamics.CRM.msdyn_GetCollectionData
+   - Microsoft.Dynamics.CRM.msdyn_GetContractBillingRadialGaugeData
+   - Microsoft.Dynamics.CRM.msdyn_GetContractDetailedTransactions
+   - Microsoft.Dynamics.CRM.msdyn_GetContractEffortRadialGaugeData
+   - Microsoft.Dynamics.CRM.msdyn_GetContractLineChargeability
+   - Microsoft.Dynamics.CRM.msdyn_GetContractLines
+   - Microsoft.Dynamics.CRM.msdyn_GetDataForContractPerformance
+   - Microsoft.Dynamics.CRM.msdyn_GetDataForRadialGauge
+   - Microsoft.Dynamics.CRM.msdyn_GetDocumentManagementSettings
+   - Microsoft.Dynamics.CRM.msdyn_GetDocumentStorePath
+   - Microsoft.Dynamics.CRM.msdyn_GetEstimatesforProject
+   - Microsoft.Dynamics.CRM.msdyn_GetGenericResourceDetails
+   - Microsoft.Dynamics.CRM.msdyn_GetMyChangedSkills
+   - Microsoft.Dynamics.CRM.msdyn_GetOfficeGroupForEntity
+   - Microsoft.Dynamics.CRM.msdyn_GetPrice
+   - Microsoft.Dynamics.CRM.msdyn_GetProcessNotes
+   - Microsoft.Dynamics.CRM.msdyn_GetProductLine
+   - Microsoft.Dynamics.CRM.msdyn_GetProductLines
+   - Microsoft.Dynamics.CRM.msdyn_GetProjectCoparticipation
+   - Microsoft.Dynamics.CRM.msdyn_GetProjectCurrencies
+   - Microsoft.Dynamics.CRM.msdyn_GetProjectDetails
+   - Microsoft.Dynamics.CRM.msdyn_GetProjectMapForContractLine
+   - Microsoft.Dynamics.CRM.msdyn_GetProjectMapForQuoteLine
+   - Microsoft.Dynamics.CRM.msdyn_GetProjects
+   - Microsoft.Dynamics.CRM.msdyn_GetProjectsForContract
+   - Microsoft.Dynamics.CRM.msdyn_GetProjectsForQuote
+   - Microsoft.Dynamics.CRM.msdyn_GetProjectTaskCategories
+   - Microsoft.Dynamics.CRM.msdyn_GetProposedResources
+   - Microsoft.Dynamics.CRM.msdyn_GetQuoteLineChargeability
+   - Microsoft.Dynamics.CRM.msdyn_GetResourceAvailability
+   - Microsoft.Dynamics.CRM.msdyn_GetResourceAvailabilitySummary
+   - Microsoft.Dynamics.CRM.msdyn_GetResourceBookingByProject
+   - Microsoft.Dynamics.CRM.msdyn_GetResourceDemandTimeLine
+   - Microsoft.Dynamics.CRM.msdyn_GetTimelineData
+   - Microsoft.Dynamics.CRM.msdyn_GetTransactionUnitPrices
+   - Microsoft.Dynamics.CRM.msdyn_GetUserTimeZoneName
+   - Microsoft.Dynamics.CRM.msdyn_IndentWBSTask
+   - Microsoft.Dynamics.CRM.msdyn_InvoicePaid
+   - Microsoft.Dynamics.CRM.msdyn_InvoiceRecalculate
+   - Microsoft.Dynamics.CRM.msdyn_IsProjectTemplatesView
+   - Microsoft.Dynamics.CRM.msdyn_JoinProjectTeam
+   - Microsoft.Dynamics.CRM.msdyn_LoadFactTableEstimate
+   - Microsoft.Dynamics.CRM.msdyn_LogFindWorkEvent
+   - Microsoft.Dynamics.CRM.msdyn_MarkIntegrationJobAsFailedAsync
+   - Microsoft.Dynamics.CRM.msdyn_MoveDownWBSTask
+   - Microsoft.Dynamics.CRM.msdyn_MoveProject
+   - Microsoft.Dynamics.CRM.msdyn_MoveUpWBSTask
+   - Microsoft.Dynamics.CRM.msdyn_MSProject_ExportToProject
+   - Microsoft.Dynamics.CRM.msdyn_MSProject_GetFindResourcesURL
+   - Microsoft.Dynamics.CRM.msdyn_MSProject_LinkToProject
+   - Microsoft.Dynamics.CRM.msdyn_MSProject_PublishToExistingProject
+   - Microsoft.Dynamics.CRM.msdyn_MSProject_ReadFromExistingProject
+   - Microsoft.Dynamics.CRM.msdyn_MSProject_ReadProjectTeamMembers
+   - Microsoft.Dynamics.CRM.msdyn_MSProject_UnlinkFromProject
+   - Microsoft.Dynamics.CRM.msdyn_NewInvoiceContract
+   - Microsoft.Dynamics.CRM.msdyn_OutdentWBSTask
+   - Microsoft.Dynamics.CRM.msdyn_PostInvoice
+   - Microsoft.Dynamics.CRM.msdyn_PostJournal
+   - Microsoft.Dynamics.CRM.msdyn_ProjectTeamMemberSignUpProcess
+   - Microsoft.Dynamics.CRM.msdyn_ProjectTeamMemberSignupprocessaccept
+   - Microsoft.Dynamics.CRM.msdyn_ProjectTeamUpdateMembershipStatus
+   - Microsoft.Dynamics.CRM.msdyn_ReadEstimateLines
+   - Microsoft.Dynamics.CRM.msdyn_recallrequestforrequirement
+   - Microsoft.Dynamics.CRM.msdyn_RecommendWork
+   - Microsoft.Dynamics.CRM.msdyn_RejectProposedBooking
+   - Microsoft.Dynamics.CRM.msdyn_ResAssignResourcesForTask
+   - Microsoft.Dynamics.CRM.msdyn_ResGetResourceDetail
+   - Microsoft.Dynamics.CRM.msdyn_ResourceAssignmentDetailUpdate
+   - Microsoft.Dynamics.CRM.msdyn_ResourceReservationCancel
+   - Microsoft.Dynamics.CRM.msdyn_ResourceSubstitution
+   - Microsoft.Dynamics.CRM.msdyn_ResourceUtilization
+   - Microsoft.Dynamics.CRM.msdyn_ResourceUtilizationChart
+   - Microsoft.Dynamics.CRM.msdyn_SaveProjectLineTasks
+   - Microsoft.Dynamics.CRM.msdyn_SetDefaultRole
+   - Microsoft.Dynamics.CRM.msdyn_SubmitCategoriesAndPriceLists
+   - Microsoft.Dynamics.CRM.msdyn_SubmitRolesAndPriceLists
+   - Microsoft.Dynamics.CRM.msdyn_TimeEntriesApprove
+   - Microsoft.Dynamics.CRM.msdyn_TimeEntriesCopyPaste
+   - Microsoft.Dynamics.CRM.msdyn_TimeEntriesPaste
+   - Microsoft.Dynamics.CRM.msdyn_TimeEntriesPendingApproval
+   - Microsoft.Dynamics.CRM.msdyn_TimeEntriesRecall
+   - Microsoft.Dynamics.CRM.msdyn_TimeEntriesReject
+   - Microsoft.Dynamics.CRM.msdyn_TimeEntriesSubmit
+   - Microsoft.Dynamics.CRM.msdyn_UpdateAllEstimatesForProject
+   - Microsoft.Dynamics.CRM.msdyn_UpdateChangedSkills
+   - Microsoft.Dynamics.CRM.msdyn_UpdateEffortContour
+   - Microsoft.Dynamics.CRM.msdyn_UpdateEstimateLineDetails
+   - Microsoft.Dynamics.CRM.msdyn_UpdateEstimateLines
+   - Microsoft.Dynamics.CRM.msdyn_updateprojecttask
+   - Microsoft.Dynamics.CRM.msdyn_updateremainingresourcerequirement
+   - Microsoft.Dynamics.CRM.msdyn_ValidateFixedPriceLineTotals
+# This solution has no remarks.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

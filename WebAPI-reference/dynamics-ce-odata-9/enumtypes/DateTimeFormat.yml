@@ -4,7 +4,7 @@ name: "DateTimeFormat"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement DateTimeFormat EnumType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -30,7 +30,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.DateTimeAttributeMetadata
     used_as: Property
-# There are no remarks for this enum type.
+# This enum type has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

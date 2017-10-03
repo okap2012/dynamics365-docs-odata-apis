@@ -4,12 +4,12 @@ name: "Marketing Service"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Marketing Service Solution Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: fed2cbee-2745-473d-bd3e-e1c116f041a5
+  ms.assetid: 197a59d6-fdd8-4c28-97be-7e4a88c64a70
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_MarketingService
- version: "9.0.0.1043"
+ version: "9.0.0.1053"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
@@ -28,7 +28,7 @@ entities:
    - Microsoft.Dynamics.CRM.campaignresponse
    - Microsoft.Dynamics.CRM.socialactivity
 # This solution includes no actions.
-# There are no remarks for this solution.
+# This solution has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

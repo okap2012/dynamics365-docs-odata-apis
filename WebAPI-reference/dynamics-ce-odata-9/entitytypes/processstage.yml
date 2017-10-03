@@ -4,7 +4,7 @@ name: "processstage"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement processstage EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -104,6 +104,24 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: lk_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799_activestageid
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
+    partner: activestageid
+  - name: lk_msdyn_bpf_665e73aa18c247d886bfc50499c73b82_activestageid
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+    partner: activestageid
+  - name: lk_msdyn_bpf_989e9b1857e24af18787d5143b67523b_activestageid
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
+    partner: activestageid
+  - name: lk_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3_activestageid
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
+    partner: activestageid
+  - name: lk_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39_activestageid
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
+    partner: activestageid
+  - name: lk_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d_activestageid
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+    partner: activestageid
   - name: processstage_account
     type: Microsoft.Dynamics.CRM.account
     partner: stageid_processstage
@@ -155,6 +173,45 @@ collection_valued_navigation_properties:
   - name: processstage_lists
     type: Microsoft.Dynamics.CRM.list
     partner: stageid_processstage
+  - name: processstage_msdyn_agreement
+    type: Microsoft.Dynamics.CRM.msdyn_agreement
+    partner: stageid
+  - name: processstage_msdyn_agreementbookingsetup
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
+    partner: stageid
+  - name: processstage_msdyn_agreementinvoicesetup
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
+    partner: stageid
+  - name: processstage_msdyn_expense
+    type: Microsoft.Dynamics.CRM.msdyn_expense
+    partner: stageid
+  - name: processstage_msdyn_journal
+    type: Microsoft.Dynamics.CRM.msdyn_journal
+    partner: stageid
+  - name: processstage_msdyn_project
+    type: Microsoft.Dynamics.CRM.msdyn_project
+    partner: stageid
+  - name: processstage_msdyn_purchaseorder
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+    partner: stageid
+  - name: processstage_msdyn_purchaseorderbill
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
+    partner: stageid
+  - name: processstage_msdyn_purchaseorderreceipt
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
+    partner: stageid
+  - name: processstage_msdyn_quotebookingsetup
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingsetup
+    partner: stageid
+  - name: processstage_msdyn_timegroup
+    type: Microsoft.Dynamics.CRM.msdyn_timegroup
+    partner: stageid
+  - name: processstage_msdyn_timegroupdetail
+    type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
+    partner: stageid
+  - name: processstage_msdyn_workorder
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: stageid
   - name: processstage_newprocess
     type: Microsoft.Dynamics.CRM.newprocess
     partner: activestageid
@@ -213,7 +270,7 @@ solutions:
   description: "The following solutions include the processstage entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

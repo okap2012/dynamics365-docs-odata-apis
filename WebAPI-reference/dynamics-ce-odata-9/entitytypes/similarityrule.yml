@@ -4,7 +4,7 @@ name: "similarityrule"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement similarityrule EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -46,798 +46,1158 @@ properties:
       iscomputed: false
       isreadonly: true
       options:
-        - value: 4501
-          label: "Relationship Role Map"
-        - value: 1140
-          label: "Replication Backlog"
-        - value: 9100
-          label: "Report"
-        - value: 4250
-          label: "Recurrence Rule"
-        - value: 4251
-          label: "Recurring Appointment"
-        - value: 4500
-          label: "Relationship Role"
-        - value: 9103
-          label: "Report Visibility"
-        - value: 4002
-          label: "Resource"
-        - value: 4005
-          label: "Scheduling Group"
-        - value: 9102
-          label: "Report Related Category"
-        - value: 9101
-          label: "Report Related Entity"
-        - value: 9104
-          label: "Report Link"
-        - value: 2029
-          label: "Queue Item"
-        - value: 2023
-          label: "QueueItemCount"
-        - value: 2024
-          label: "QueueMemberCount"
-        - value: 7102
-          label: "Publisher Address"
-        - value: 2002
-          label: "Quarterly Fiscal Calendar"
-        - value: 2020
-          label: "Queue"
-        - value: 1144
-          label: "Rating Model"
-        - value: 1142
-          label: "Rating Value"
-        - value: 1189
-          label: "Document Suggestions"
-        - value: 1084
-          label: "Quote"
-        - value: 4211
-          label: "Quote Close"
-        - value: 1085
-          label: "Quote Product"
-        - value: 4010
-          label: "Resource Expansion"
-        - value: 7200
-          label: "RuntimeDependency"
-        - value: 1038
-          label: "Sales Literature"
-        - value: 1070
-          label: "Sales Attachment"
-        - value: 9510
-          label: "Rollup Properties"
-        - value: 8181
-          label: "Routing Rule Set"
-        - value: 8199
-          label: "Rule Item"
-        - value: 1309
-          label: "Saved Organization Insights Configuration"
-        - value: 1039
-          label: "View"
-        - value: 1111
-          label: "System Chart"
-        - value: 1088
-          label: "Order"
-        - value: 1089
-          label: "Order Product"
-        - value: 32
-          label: "Sales Process Instance"
-        - value: 1115
-          label: "Ribbon Context Group"
-        - value: 1120
-          label: "Application Ribbons"
-        - value: 1130
-          label: "Ribbon Difference"
-        - value: 4006
-          label: "Resource Specification"
-        - value: 4579
-          label: "Ribbon Client Metadata."
-        - value: 1116
-          label: "Ribbon Command"
-        - value: 1037
-          label: "Role Template"
-        - value: 9604
-          label: "Rollup Field"
-        - value: 9511
-          label: "Rollup Job"
-        - value: 1117
-          label: "Ribbon Rule"
-        - value: 1113
-          label: "Ribbon Tab To Command Mapping"
-        - value: 1036
-          label: "Security Role"
-        - value: 7101
-          label: "Publisher"
-        - value: 1021
-          label: "Organization UI"
-        - value: 9699
-          label: "Organization Insights Metric"
-        - value: 9690
-          label: "Organization Insights Notification"
-        - value: 4209
-          label: "Order Close"
-        - value: 1019
-          label: "Organization"
-        - value: 4708
-          label: "Organization Statistic"
-        - value: 9941
-          label: "Personal Document Template"
-        - value: 4210
-          label: "Phone Call"
-        - value: 952
-          label: "Phone To Case Process"
-        - value: 7
-          label: "Owner"
-        - value: 4420
-          label: "Owner Mapping"
-        - value: 1095
-          label: "Partner Application"
-        - value: 4110
-          label: "Notification"
-        - value: 4490
-          label: "Office Document"
-        - value: 9950
-          label: "Office Graph Document"
-        - value: 9912
-          label: "Multi Select Option Value"
-        - value: 9900
-          label: "Navigation Setting"
-        - value: 950
-          label: "New Process"
-        - value: 25
-          label: "OpportunityCompetitors"
-        - value: 1083
-          label: "Opportunity Product"
-        - value: 953
-          label: "Opportunity Sales Process"
         - value: 9870
           label: "Offline Command Definition"
-        - value: 3
-          label: "Opportunity"
+        - value: 9950
+          label: "Office Graph Document"
         - value: 4208
           label: "Opportunity Close"
-        - value: 4418
-          label: "List Value Mapping"
-        - value: 31
-          label: "Privilege Object Type Code"
-        - value: 4710
-          label: "Process Session"
-        - value: 4724
-          label: "Process Stage"
-        - value: 44
-          label: "Field Sharing"
-        - value: 1404
-          label: "Principal Sync Attribute Map"
-        - value: 1023
-          label: "Privilege"
-        - value: 1026
-          label: "Price List Item"
-        - value: 21
-          label: "ProductSalesLiterature"
-        - value: 1028
-          label: "Product Relationship"
-        - value: 4712
-          label: "Process Trigger"
-        - value: 1024
-          label: "Product"
-        - value: 1025
-          label: "Product Association"
-        - value: 4603
-          label: "Plug-in Type Statistic"
-        - value: 50
-          label: "Position"
-        - value: 8000
-          label: "Post"
-        - value: 4605
-          label: "Plug-in Assembly"
-        - value: 4619
-          label: "Plug-in Trace Log"
-        - value: 4602
-          label: "Plug-in Type"
-        - value: 8002
-          label: "Post Regarding"
-        - value: 8001
-          label: "Post Role"
-        - value: 1022
-          label: "Price List"
-        - value: 8005
-          label: "Comment"
-        - value: 8003
-          label: "Follow"
-        - value: 8006
-          label: "Like"
-        - value: 9948
-          label: "Text Analytics Topic"
-        - value: 9946
-          label: "Topic History"
-        - value: 9944
-          label: "Topic Model"
-        - value: 4810
-          label: "Time Zone Definition"
-        - value: 4812
-          label: "Time Zone Localized Name"
-        - value: 4811
-          label: "Time Zone Rule"
-        - value: 8050
-          label: "Trace"
-        - value: 8052
-          label: "Trace Regarding"
-        - value: 9105
-          label: "Currency"
-        - value: 9942
-          label: "Topic Model Configuration"
-        - value: 9943
-          label: "Topic Model Execution History"
-        - value: 8051
-          label: "Trace Association"
-        - value: 9
-          label: "Team"
-        - value: 1203
-          label: "Team Profiles"
-        - value: 1403
-          label: "Team Sync-Attribute Mapping Profiles"
-        - value: 51
-          label: "System User Manager Map"
-        - value: 14
-          label: "System User Principal"
-        - value: 4212
-          label: "Task"
-        - value: 9945
-          label: "Text Analytics Entity Mapping"
-        - value: 2015
-          label: "Theme"
-        - value: 9932
-          label: "Time Stamp Date Mapping"
-        - value: 92
-          label: "Team template"
-        - value: 2010
-          label: "Email Template"
-        - value: 2013
-          label: "Territory"
-        - value: 4426
-          label: "Transformation Mapping"
-        - value: 150
-          label: "User Settings"
-        - value: 9333
-          label: "Web Resource"
-        - value: 4800
-          label: "Web Wizard"
-        - value: 4230
-          label: "Saved View"
-        - value: 1112
-          label: "User Chart"
-        - value: 52
-          label: "User Search Facet"
-        - value: 4704
-          label: "Process Dependency"
-        - value: 4706
-          label: "Process Log"
-        - value: 4702
-          label: "Workflow Wait Subscription"
-        - value: 4803
-          label: "Web Wizard Access Privilege"
-        - value: 4802
-          label: "Wizard Page"
-        - value: 4703
-          label: "Process"
-        - value: 4220
-          label: "UntrackedEmail"
-        - value: 1055
-          label: "Unit"
-        - value: 1056
-          label: "Unit Group"
-        - value: 4427
-          label: "Transformation Parameter Mapping"
-        - value: 951
-          label: "Translation Process"
-        - value: 2012
-          label: "Unresolved Address"
-        - value: 1086
-          label: "User Fiscal Calendar"
-        - value: 1031
-          label: "User Dashboard"
-        - value: 2016
-          label: "User Mapping"
-        - value: 7001
-          label: "User Application Metadata"
-        - value: 2501
-          label: "User Entity Instance Data"
-        - value: 2500
-          label: "User Entity UI Settings"
-        - value: 42
-          label: "SystemUser BusinessUnit Entity Map"
-        - value: 9509
-          label: "SharePoint Data"
-        - value: 9507
-          label: "Sharepoint Document"
-        - value: 9508
-          label: "Document Location"
-        - value: 4214
-          label: "Service Activity"
-        - value: 20
-          label: "Service Contract Contact"
-        - value: 4618
-          label: "Service Endpoint"
-        - value: 4709
-          label: "Site Map"
-        - value: 9750
-          label: "SLA"
-        - value: 9751
-          label: "SLA Item"
-        - value: 9502
-          label: "SharePoint Site"
-        - value: 9951
-          label: "Similarity Rule"
-        - value: 4009
-          label: "Site"
-        - value: 4608
-          label: "Sdk Message Processing Step"
-        - value: 4615
-          label: "Sdk Message Processing Step Image"
-        - value: 4616
-          label: "Sdk Message Processing Step Secure Configuration"
-        - value: 4606
-          label: "Sdk Message"
-        - value: 4607
-          label: "Sdk Message Filter"
-        - value: 4613
-          label: "Sdk Message Pair"
-        - value: 4611
-          label: "Sdk Message Response Field"
-        - value: 2001
-          label: "Semiannual Fiscal Calendar"
-        - value: 4001
-          label: "Service"
-        - value: 4609
-          label: "Sdk Message Request"
-        - value: 4614
-          label: "Sdk Message Request Field"
-        - value: 4610
-          label: "Sdk Message Response"
-        - value: 9752
-          label: "SLA KPI Instance"
-        - value: 33
-          label: "Subscription Synchronization Information"
-        - value: 35
-          label: "Tracking information for deleted entities"
-        - value: 1190
-          label: "SuggestionCardTemplate"
-        - value: 46
-          label: "Subscription Statistic Outlook"
-        - value: 47
-          label: "Subscription Sync Entry Offline"
-        - value: 48
-          label: "Subscription Sync Entry Outlook"
-        - value: 7000
-          label: "System Application Metadata"
-        - value: 1030
-          label: "System Form"
-        - value: 8
-          label: "User"
-        - value: 1401
-          label: "Sync Attribute Mapping"
-        - value: 1400
-          label: "Sync Attribute Mapping Profile"
-        - value: 9869
-          label: "Sync Error"
-        - value: 7100
-          label: "Solution"
-        - value: 7103
-          label: "Solution Component"
-        - value: 1075
-          label: "Status Map"
-        - value: 4216
-          label: "Social Activity"
-        - value: 1300
-          label: "SocialInsightsConfiguration"
-        - value: 99
-          label: "Social Profile"
-        - value: 1072
-          label: "Subscription Clients"
-        - value: 37
-          label: "Subscription Manually Tracked Object"
-        - value: 45
-          label: "Subscription Statistic Offline"
-        - value: 1043
-          label: "String Map"
-        - value: 129
-          label: "Subject"
-        - value: 29
-          label: "Subscription"
-        - value: 4215
-          label: "Commitment"
-        - value: 123
-          label: "Competitor"
-        - value: 1004
-          label: "Competitor Address"
-        - value: 113
-          label: "Child Incident Count"
-        - value: 36
-          label: "Client update"
-        - value: 4417
-          label: "Column Mapping"
-        - value: 3234
-          label: "Connection"
-        - value: 3231
-          label: "Connection Role"
-        - value: 3233
-          label: "Connection Role Object Type Code"
-        - value: 1006
-          label: "Competitor Product"
-        - value: 26
-          label: "CompetitorSalesLiterature"
-        - value: 9650
-          label: "Process Configuration"
-        - value: 4401
-          label: "Campaign Response"
-        - value: 9983
-          label: "Action Card Type"
-        - value: 9959
-          label: "Category"
-        - value: 4402
-          label: "Campaign Activity"
-        - value: 4404
-          label: "Campaign Activity Item"
-        - value: 4403
-          label: "Campaign Item"
-        - value: 1236
-          label: "Channel Property"
-        - value: 1234
-          label: "Channel Property Group"
-        - value: 1141
-          label: "Characteristic"
-        - value: 3005
-          label: "Channel Access Profile"
-        - value: 9400
-          label: "Channel Access Profile Rule"
-        - value: 9401
-          label: "Channel Access Profile Rule Item"
-        - value: 4007
-          label: "Resource Group"
-        - value: 4502
-          label: "Customer Relationship"
-        - value: 4450
-          label: "Data Performance Dashboard"
-        - value: 9961
-          label: "DelveActionHub"
-        - value: 9754
-          label: "Custom Control Resource"
-        - value: 1071
-          label: "Address"
-        - value: 4503
-          label: "Opportunity Relationship"
-        - value: 1013
-          label: "Discount"
-        - value: 1080
-          label: "Discount List"
-        - value: 4102
-          label: "Display String"
-        - value: 7105
-          label: "Dependency"
-        - value: 7108
-          label: "Dependency Feature"
-        - value: 7106
-          label: "Dependency Node"
-        - value: 19
-          label: "ContactOrders"
-        - value: 18
-          label: "ContactQuotes"
-        - value: 1010
-          label: "Contract"
-        - value: 2
-          label: "Contact"
-        - value: 17
-          label: "ContactInvoices"
-        - value: 22
-          label: "ContactLeads"
-        - value: 9301
-          label: "Record Creation and Update Rule Item"
-        - value: 9753
-          label: "Custom Control"
-        - value: 9755
-          label: "Custom Control Default Config"
-        - value: 1011
-          label: "Contract Line"
-        - value: 2011
-          label: "Contract Template"
-        - value: 9300
-          label: "Record Creation and Update Rule"
-        - value: 4400
-          label: "Campaign"
-        - value: 4707
-          label: "Application File"
-        - value: 9006
-          label: "App"
-        - value: 9007
-          label: "App Module Component"
-        - value: 9012
-          label: "App Configuration"
-        - value: 9013
-          label: "App Configuration Instance"
-        - value: 9011
-          label: "App Config Master"
-        - value: 9009
-          label: "App Module Roles"
-        - value: 4201
-          label: "Appointment"
-        - value: 4700
-          label: "System Job"
-        - value: 8700
-          label: "AppModule Metadata"
-        - value: 8701
-          label: "AppModule Metadata Dependency"
-        - value: 8702
-          label: "AppModule Metadata Async Operation"
-        - value: 9962
-          label: "Action Card"
-        - value: 9973
-          label: "Action Card User Settings"
-        - value: 9968
-          label: "ActionCardUserState"
-        - value: 1
-          label: "Account"
-        - value: 16
-          label: "AccountLeads"
-        - value: 8040
-          label: "ACIViewMapper"
-        - value: 9949
-          label: "Advanced Similarity Rule"
-        - value: 5
-          label: "Note"
-        - value: 2000
-          label: "Annual Fiscal Calendar"
-        - value: 1001
-          label: "Attachment"
-        - value: 135
-          label: "Activity Party"
-        - value: 4200
-          label: "Activity"
-        - value: 1002
-          label: "Attachment"
-        - value: 4406
-          label: "Quick Campaign"
-        - value: 4405
-          label: "Bulk Operation Log"
-        - value: 4232
-          label: "Business Data Localized Label"
-        - value: 1152
-          label: "Booking Status"
-        - value: 4425
-          label: "Bulk Delete Failure"
-        - value: 4424
-          label: "Bulk Delete Operation"
-        - value: 132
-          label: "Announcement"
-        - value: 4003
-          label: "Calendar"
-        - value: 4004
-          label: "Calendar Rule"
-        - value: 4725
-          label: "Business Process Flow Instance"
-        - value: 10
-          label: "Business Unit"
-        - value: 6
-          label: "Business Unit Map"
-        - value: 9936
-          label: "Azure Service Connection"
-        - value: 1150
-          label: "Bookable Resource"
-        - value: 1145
-          label: "Bookable Resource Booking"
-        - value: 4601
-          label: "Attribute Map"
-        - value: 4567
-          label: "Auditing"
-        - value: 1094
-          label: "Authorization Server"
-        - value: 1149
-          label: "Bookable Resource Category Assn"
-        - value: 1148
-          label: "Bookable Resource Characteristic"
-        - value: 1151
-          label: "Bookable Resource Group"
-        - value: 4421
-          label: "BookableResourceBooking to Exchange Id Mapping"
-        - value: 1146
-          label: "Bookable Resource Booking Header"
-        - value: 1147
-          label: "Bookable Resource Category"
-        - value: 9954
-          label: "Knowledge Article Incident"
-        - value: 9960
-          label: "Knowledge Article Category"
-        - value: 9955
-          label: "Knowledge Article Views"
-        - value: 1082
-          label: "Article Comment"
-        - value: 1016
-          label: "Article Template"
-        - value: 9953
-          label: "Knowledge Article"
-        - value: 4
-          label: "Lead"
-        - value: 1017
-          label: "Lead Address"
-        - value: 24
-          label: "LeadCompetitors"
-        - value: 9930
-          label: "Knowledge Base Record"
-        - value: 9947
-          label: "Knowledge Search Model"
-        - value: 9957
-          label: "Language"
-        - value: 3000
-          label: "Integration Status"
-        - value: 9986
-          label: "Interaction for Email"
-        - value: 1003
-          label: "Internal Address"
-        - value: 112
-          label: "Case"
-        - value: 9931
-          label: "Incident KnowledgeBaseRecord"
-        - value: 4206
-          label: "Case Resolution"
-        - value: 1091
-          label: "Invoice Product"
-        - value: 4705
-          label: "ISV Config"
-        - value: 127
-          label: "Article"
-        - value: 4011
-          label: "Inter Process Lock"
-        - value: 7107
-          label: "Invalid Dependency"
-        - value: 1090
-          label: "Invoice"
-        - value: 27
-          label: "LeadProduct"
-        - value: 9868
-          label: "Mobile Offline Profile Item Association"
-        - value: 2003
-          label: "Monthly Fiscal Calendar"
-        - value: 10000
-          label: "OData v4 Data Source"
-        - value: 9603
-          label: "Goal Metric"
-        - value: 9866
-          label: "Mobile Offline Profile"
-        - value: 9867
-          label: "Mobile Offline Profile Item"
-        - value: 10004
-          label: "Wall View"
+        - value: 3
+          label: "Opportunity"
+        - value: 4490
+          label: "Office Document"
+        - value: 9900
+          label: "Navigation Setting"
+        - value: 9912
+          label: "Multi Select Option Value"
+        - value: 4110
+          label: "Notification"
+        - value: 950
+          label: "New Process"
+        - value: 1021
+          label: "Organization UI"
+        - value: 4708
+          label: "Organization Statistic"
+        - value: 9690
+          label: "Organization Insights Notification"
+        - value: 9699
+          label: "Organization Insights Metric"
+        - value: 1019
+          label: "Organization"
+        - value: 1083
+          label: "Opportunity Line"
+        - value: 25
+          label: "OpportunityCompetitors"
+        - value: 4209
+          label: "Order Close"
+        - value: 953
+          label: "Opportunity Sales Process"
+        - value: 10179
+          label: "Work Order Incident"
+        - value: 10178
+          label: "Work Order Details Generation Queue (Deprecated)"
+        - value: 10181
+          label: "Resource Restriction (Deprecated)"
+        - value: 10180
+          label: "Work Order Product"
+        - value: 10177
+          label: "Work Order Characteristic (Deprecated)"
+        - value: 10175
+          label: "Warehouse"
         - value: 10005
           label: "Filter"
+        - value: 10176
+          label: "Work Order"
+        - value: 10030
+          label: "Work template"
+        - value: 10188
+          label: "ServicesSiteMap"
+        - value: 10187
+          label: "SalesSiteMap"
         - value: 9910
           label: "MultiEntitySearch"
-        - value: 10001
-          label: "Profile Album"
-        - value: 10002
-          label: "Post Configuration"
-        - value: 10003
-          label: "Post Rule Configuration"
-        - value: 4300
-          label: "Marketing List"
-        - value: 4301
-          label: "Marketing List Member"
-        - value: 9201
-          label: "LocalConfigStore"
-        - value: 954
-          label: "Lead To Opportunity Sales Process"
-        - value: 4207
-          label: "Letter"
-        - value: 2027
-          label: "License"
-        - value: 9608
-          label: "Mailbox Auto Tracking Folder"
-        - value: 9106
-          label: "Mail Merge Template"
-        - value: 4231
-          label: "Metadata Difference"
-        - value: 4419
-          label: "Lookup Mapping"
-        - value: 9606
-          label: "Mailbox"
-        - value: 9607
-          label: "Mailbox Statistics"
-        - value: 4411
-          label: "Data Map"
-        - value: 9700
-          label: "Entitlement"
-        - value: 9701
-          label: "Entitlement Channel"
-        - value: 7272
-          label: "Entitlement Contact"
-        - value: 4299
-          label: "Email Search"
-        - value: 9605
-          label: "Email Server Profile"
-        - value: 9997
-          label: "Email Signature"
-        - value: 4545
-          label: "Entitlement Template Product"
-        - value: 78
-          label: "Virtual Entity Data Provider"
-        - value: 85
-          label: "Virtual Entity Data Source"
-        - value: 6363
-          label: "Entitlement Product"
-        - value: 9702
-          label: "Entitlement Template"
-        - value: 9703
-          label: "Entitlement Template Channel"
-        - value: 4415
-          label: "Duplicate Record"
-        - value: 4414
-          label: "Duplicate Detection Rule"
-        - value: 4416
-          label: "Duplicate Rule Condition"
-        - value: 4101
-          label: "Display String Map"
-        - value: 126
-          label: "Indexed Article"
-        - value: 9940
-          label: "Document Template"
-        - value: 1049
-          label: "Property Option Set Item"
-        - value: 4202
-          label: "Email"
-        - value: 4023
-          label: "Email Hash"
+        - value: 10189
+          label: "SettingsSiteMap"
+        - value: 10186
+          label: "MarketingSiteMap"
+        - value: 10183
+          label: "Work Order Service Task"
+        - value: 10182
+          label: "Work Order Service"
+        - value: 10185
+          label: "Work Order Type"
+        - value: 10184
+          label: "Work Order Sub-Status"
+        - value: 4724
+          label: "Process Stage"
+        - value: 4710
+          label: "Process Session"
+        - value: 1024
+          label: "Product"
+        - value: 4712
+          label: "Process Trigger"
+        - value: 31
+          label: "Privilege Object Type Code"
+        - value: 44
+          label: "Field Sharing"
+        - value: 1022
+          label: "Price List"
+        - value: 1023
+          label: "Privilege"
+        - value: 1404
+          label: "Principal Sync Attribute Map"
+        - value: 2002
+          label: "Quarterly Fiscal Calendar"
+        - value: 7102
+          label: "Publisher Address"
+        - value: 2029
+          label: "Queue Item"
+        - value: 2020
+          label: "Queue"
+        - value: 7101
+          label: "Publisher"
+        - value: 1026
+          label: "Price List Item"
+        - value: 1025
+          label: "Product Association"
+        - value: 1028
+          label: "Product Relationship"
+        - value: 21
+          label: "ProductSalesLiterature"
+        - value: 4418
+          label: "List Value Mapping"
+        - value: 952
+          label: "Phone To Case Process"
+        - value: 4619
+          label: "Plug-in Trace Log"
+        - value: 4605
+          label: "Plug-in Assembly"
+        - value: 4210
+          label: "Phone Call"
+        - value: 4420
+          label: "Owner Mapping"
+        - value: 7
+          label: "Owner"
+        - value: 9941
+          label: "Personal Document Template"
+        - value: 1095
+          label: "Partner Application"
+        - value: 8006
+          label: "Like"
+        - value: 8003
+          label: "Follow"
+        - value: 8001
+          label: "Post Role"
+        - value: 8002
+          label: "Post Regarding"
+        - value: 8005
+          label: "Comment"
+        - value: 4603
+          label: "Plug-in Type Statistic"
+        - value: 4602
+          label: "Plug-in Type"
+        - value: 8000
+          label: "Post"
+        - value: 50
+          label: "Position"
+        - value: 10085
+          label: "Quote Line Transaction Category"
+        - value: 10084
+          label: "Quote Line Detail"
+        - value: 10087
+          label: "Quote Project Price List"
+        - value: 10086
+          label: "Quote Line Transaction Classification"
+        - value: 10083
+          label: "Quote Line Milestone"
+        - value: 10080
+          label: "Quote Line Analytics Breakdown"
+        - value: 10159
+          label: "Quote Invoicing Setup"
+        - value: 10082
+          label: "Quote Line Resource Category"
+        - value: 10081
+          label: "Quote Line Invoice Schedule"
+        - value: 10089
+          label: "Resource Assignment Detail"
+        - value: 10088
+          label: "Resource Assignment"
+        - value: 10160
+          label: "Resource Pay Type"
+        - value: 10090
+          label: "Role Price"
+        - value: 10020
+          label: "Requirement Status"
+        - value: 10017
+          label: "Requirement Organization Unit"
+        - value: 10016
+          label: "Requirement Characteristic"
+        - value: 10019
+          label: "Requirement Resource Preference"
+        - value: 10018
+          label: "Requirement Resource Category"
+        - value: 10147
+          label: "Purchase Order"
+        - value: 10079
+          label: "Project Transaction Category"
+        - value: 10149
+          label: "Purchase Order Product"
+        - value: 10148
+          label: "Purchase Order Bill"
+        - value: 10078
+          label: "Project Team Member Sign-Up"
+        - value: 10075
+          label: "Project Task Dependency"
+        - value: 10074
+          label: "Project Task"
+        - value: 10077
+          label: "Project Team Member"
+        - value: 10076
+          label: "Project Task Status User"
+        - value: 10156
+          label: "Quote Booking Service Task"
+        - value: 10155
+          label: "Quote Booking Service"
+        - value: 10158
+          label: "Quote Invoicing Product"
+        - value: 10157
+          label: "Quote Booking Setup"
+        - value: 10154
+          label: "Quote Booking Product"
+        - value: 10151
+          label: "Purchase Order Receipt Product"
+        - value: 10150
+          label: "Purchase Order Receipt"
+        - value: 10153
+          label: "Quote Booking Incident"
+        - value: 10152
+          label: "Purchase Order Sub Status"
+        - value: 10095
+          label: "Time Off Calendar"
+        - value: 10028
+          label: "Time Group Detail"
+        - value: 10096
+          label: "Transaction Category"
+        - value: 10173
+          label: "Time Off Request"
+        - value: 10027
+          label: "Time Group"
+        - value: 10171
+          label: "Tax Code"
+        - value: 10026
+          label: "System User Scheduler Setting"
+        - value: 10094
+          label: "Time Entry"
+        - value: 10172
+          label: "Tax Code Detail"
+        - value: 10174
+          label: "Unique Number"
+        - value: 10101
+          label: "Transaction Type"
+        - value: 10004
+          label: "Wall View"
+        - value: 10102
+          label: "User Work History"
+        - value: 10029
+          label: "Transaction Origin"
+        - value: 10098
+          label: "Transaction Category Hierarchy Element"
+        - value: 10097
+          label: "Transaction Category Classification"
+        - value: 10100
+          label: "Transaction Connection"
+        - value: 10099
+          label: "Transaction Category Price"
+        - value: 10163
+          label: "RMA Receipt"
+        - value: 10162
+          label: "RMA Product"
+        - value: 10165
+          label: "RMA Sub-Status"
+        - value: 10164
+          label: "RMA Receipt Product"
+        - value: 10161
+          label: "RMA"
+        - value: 10021
+          label: "Resource Requirement"
+        - value: 10091
+          label: "Resource Request"
+        - value: 10023
+          label: "Resource Territory"
+        - value: 10022
+          label: "Resource Requirement Detail"
+        - value: 10025
+          label: "Scheduling Parameter"
+        - value: 10024
+          label: "Schedule Board Setting"
+        - value: 10170
+          label: "Ship Via"
+        - value: 10169
+          label: "Service Task Type"
+        - value: 10168
+          label: "RTV Sub-Status"
+        - value: 10093
+          label: "Role Utilization"
+        - value: 10092
+          label: "Role competency requirement"
+        - value: 10167
+          label: "RTV Product"
+        - value: 10166
+          label: "RTV"
+        - value: 14
+          label: "System User Principal"
+        - value: 51
+          label: "System User Manager Map"
+        - value: 9
+          label: "Team"
+        - value: 4212
+          label: "Task"
+        - value: 42
+          label: "SystemUser BusinessUnit Entity Map"
+        - value: 7000
+          label: "System Application Metadata"
+        - value: 9869
+          label: "Sync Error"
+        - value: 8
+          label: "User"
+        - value: 1030
+          label: "System Form"
+        - value: 2015
+          label: "Theme"
+        - value: 9945
+          label: "Text Analytics Entity Mapping"
+        - value: 4810
+          label: "Time Zone Definition"
+        - value: 9932
+          label: "Time Stamp Date Mapping"
+        - value: 2013
+          label: "Territory"
+        - value: 1403
+          label: "Team Sync-Attribute Mapping Profiles"
+        - value: 1203
+          label: "Team Profiles"
+        - value: 2010
+          label: "Email Template"
+        - value: 92
+          label: "Team template"
+        - value: 29
+          label: "Subscription"
+        - value: 129
+          label: "Subject"
+        - value: 37
+          label: "Subscription Manually Tracked Object"
+        - value: 1072
+          label: "Subscription Clients"
+        - value: 1043
+          label: "String Map"
+        - value: 7100
+          label: "Solution"
+        - value: 99
+          label: "Social Profile"
+        - value: 1075
+          label: "Status Map"
+        - value: 7103
+          label: "Solution Component"
+        - value: 1190
+          label: "SuggestionCardTemplate"
+        - value: 35
+          label: "Tracking information for deleted entities"
+        - value: 1400
+          label: "Sync Attribute Mapping Profile"
+        - value: 1401
+          label: "Sync Attribute Mapping"
+        - value: 33
+          label: "Subscription Synchronization Information"
+        - value: 46
+          label: "Subscription Statistic Outlook"
+        - value: 45
+          label: "Subscription Statistic Offline"
+        - value: 48
+          label: "Subscription Sync Entry Outlook"
+        - value: 47
+          label: "Subscription Sync Entry Offline"
+        - value: 4230
+          label: "Saved View"
+        - value: 2016
+          label: "User Mapping"
+        - value: 52
+          label: "User Search Facet"
+        - value: 1112
+          label: "User Chart"
+        - value: 1031
+          label: "User Dashboard"
+        - value: 2501
+          label: "User Entity Instance Data"
+        - value: 7001
+          label: "User Application Metadata"
+        - value: 1086
+          label: "User Fiscal Calendar"
+        - value: 2500
+          label: "User Entity UI Settings"
+        - value: 4704
+          label: "Process Dependency"
+        - value: 4703
+          label: "Process"
+        - value: 4702
+          label: "Workflow Wait Subscription"
+        - value: 4706
+          label: "Process Log"
+        - value: 4802
+          label: "Wizard Page"
+        - value: 9333
+          label: "Web Resource"
+        - value: 150
+          label: "User Settings"
+        - value: 4803
+          label: "Web Wizard Access Privilege"
+        - value: 4800
+          label: "Web Wizard"
+        - value: 9943
+          label: "Topic Model Execution History"
+        - value: 9942
+          label: "Topic Model Configuration"
+        - value: 8050
+          label: "Trace"
+        - value: 8051
+          label: "Trace Association"
+        - value: 9944
+          label: "Topic Model"
+        - value: 4811
+          label: "Time Zone Rule"
+        - value: 4812
+          label: "Time Zone Localized Name"
+        - value: 9946
+          label: "Topic History"
+        - value: 9948
+          label: "Text Analytics Topic"
+        - value: 4220
+          label: "UntrackedEmail"
+        - value: 2012
+          label: "Unresolved Address"
+        - value: 1056
+          label: "Unit Group"
+        - value: 1055
+          label: "Unit"
+        - value: 951
+          label: "Translation Process"
+        - value: 9105
+          label: "Currency"
+        - value: 8052
+          label: "Trace Regarding"
+        - value: 4427
+          label: "Transformation Parameter Mapping"
+        - value: 4426
+          label: "Transformation Mapping"
+        - value: 1115
+          label: "Ribbon Context Group"
+        - value: 1116
+          label: "Ribbon Command"
+        - value: 1130
+          label: "Ribbon Difference"
+        - value: 1120
+          label: "Application Ribbons"
+        - value: 4579
+          label: "Ribbon Client Metadata."
+        - value: 4005
+          label: "Scheduling Group"
+        - value: 4002
+          label: "Resource"
+        - value: 4006
+          label: "Resource Specification"
+        - value: 4010
+          label: "Resource Expansion"
+        - value: 9510
+          label: "Rollup Properties"
+        - value: 9511
+          label: "Rollup Job"
+        - value: 8199
+          label: "Rule Item"
+        - value: 8181
+          label: "Routing Rule Set"
+        - value: 9604
+          label: "Rollup Field"
+        - value: 1113
+          label: "Ribbon Tab To Command Mapping"
+        - value: 1117
+          label: "Ribbon Rule"
+        - value: 1037
+          label: "Role Template"
+        - value: 1036
+          label: "Security Role"
+        - value: 1142
+          label: "Rating Value"
+        - value: 1144
+          label: "Rating Model"
+        - value: 4250
+          label: "Recurrence Rule"
+        - value: 1189
+          label: "Document Suggestions"
+        - value: 1085
+          label: "Quote Line"
+        - value: 2024
+          label: "QueueMemberCount"
+        - value: 2023
+          label: "QueueItemCount"
+        - value: 4211
+          label: "Quote Close"
+        - value: 1084
+          label: "Quote"
+        - value: 9101
+          label: "Report Related Entity"
+        - value: 9102
+          label: "Report Related Category"
+        - value: 9103
+          label: "Report Visibility"
+        - value: 9104
+          label: "Report Link"
+        - value: 9100
+          label: "Report"
+        - value: 4500
+          label: "Relationship Role"
+        - value: 4251
+          label: "Recurring Appointment"
+        - value: 1140
+          label: "Replication Backlog"
+        - value: 4501
+          label: "Relationship Role Map"
+        - value: 9509
+          label: "SharePoint Data"
+        - value: 4618
+          label: "Service Endpoint"
+        - value: 9508
+          label: "Document Location"
+        - value: 9507
+          label: "Sharepoint Document"
+        - value: 20
+          label: "Service Contract Contact"
+        - value: 2001
+          label: "Semiannual Fiscal Calendar"
+        - value: 4611
+          label: "Sdk Message Response Field"
+        - value: 4214
+          label: "Service Activity"
+        - value: 4001
+          label: "Service"
+        - value: 9752
+          label: "SLA KPI Instance"
+        - value: 9751
+          label: "SLA Item"
+        - value: 1300
+          label: "SocialInsightsConfiguration"
+        - value: 4216
+          label: "Social Activity"
+        - value: 9750
+          label: "SLA"
+        - value: 9951
+          label: "Similarity Rule"
+        - value: 9502
+          label: "SharePoint Site"
+        - value: 4709
+          label: "Site Map"
+        - value: 4009
+          label: "Site"
+        - value: 1309
+          label: "Saved Organization Insights Configuration"
+        - value: 32
+          label: "Sales Process Instance"
+        - value: 1111
+          label: "System Chart"
+        - value: 1039
+          label: "View"
+        - value: 1089
+          label: "Order Line"
+        - value: 1038
+          label: "Sales Literature"
+        - value: 7200
+          label: "RuntimeDependency"
+        - value: 1088
+          label: "Order"
+        - value: 1070
+          label: "Sales Attachment"
+        - value: 4609
+          label: "Sdk Message Request"
+        - value: 4616
+          label: "Sdk Message Processing Step Secure Configuration"
+        - value: 4610
+          label: "Sdk Message Response"
+        - value: 4614
+          label: "Sdk Message Request Field"
+        - value: 4615
+          label: "Sdk Message Processing Step Image"
+        - value: 4607
+          label: "Sdk Message Filter"
+        - value: 4606
+          label: "Sdk Message"
+        - value: 4608
+          label: "Sdk Message Processing Step"
+        - value: 4613
+          label: "Sdk Message Pair"
+        - value: 1013
+          label: "Discount"
+        - value: 7106
+          label: "Dependency Node"
+        - value: 4102
+          label: "Display String"
+        - value: 1080
+          label: "Discount List"
+        - value: 7108
+          label: "Dependency Feature"
+        - value: 4450
+          label: "Data Performance Dashboard"
+        - value: 4502
+          label: "Customer Relationship"
+        - value: 7105
+          label: "Dependency"
+        - value: 9961
+          label: "DelveActionHub"
         - value: 1048
           label: "Property"
-        - value: 1235
-          label: "Property Association"
+        - value: 4416
+          label: "Duplicate Rule Condition"
         - value: 1333
           label: "Property Instance"
-        - value: 4600
-          label: "Entity Map"
-        - value: 8840
-          label: "Hierarchy Rule"
-        - value: 9919
-          label: "Hierarchy Security Configuration"
-        - value: 1007
-          label: "Image Descriptor"
-        - value: 54
-          label: "Global Search Configuration"
-        - value: 9600
-          label: "Goal"
-        - value: 9602
-          label: "Rollup Query"
-        - value: 4412
-          label: "Import Source File"
-        - value: 9107
-          label: "Import Job"
-        - value: 4423
-          label: "Import Log"
-        - value: 4410
-          label: "Data Import"
-        - value: 4413
-          label: "Import Data"
-        - value: 4428
-          label: "Import Entity Mapping"
-        - value: 955
-          label: "Expired Process"
-        - value: 3008
-          label: "External Party"
-        - value: 9987
-          label: "External Party Item"
-        - value: 4000
-          label: "Facility/Equipment"
-        - value: 4120
-          label: "Exchange Sync Id Mapping"
-        - value: 4711
-          label: "Expander Event"
-        - value: 1200
-          label: "Field Security Profile"
-        - value: 30
-          label: "Filter Template"
-        - value: 2004
-          label: "Fixed Monthly Fiscal Calendar"
-        - value: 4204
-          label: "Fax"
-        - value: 9958
-          label: "Feedback"
+        - value: 1235
+          label: "Property Association"
+        - value: 4414
+          label: "Duplicate Detection Rule"
+        - value: 126
+          label: "Indexed Article"
+        - value: 4101
+          label: "Display String Map"
+        - value: 4415
+          label: "Duplicate Record"
+        - value: 9940
+          label: "Document Template"
+        - value: 19
+          label: "ContactOrders"
+        - value: 22
+          label: "ContactLeads"
+        - value: 1010
+          label: "Contract"
+        - value: 18
+          label: "ContactQuotes"
+        - value: 17
+          label: "ContactInvoices"
+        - value: 3233
+          label: "Connection Role Object Type Code"
+        - value: 3231
+          label: "Connection Role"
+        - value: 2
+          label: "Contact"
+        - value: 4007
+          label: "Resource Group"
+        - value: 9754
+          label: "Custom Control Resource"
+        - value: 9755
+          label: "Custom Control Default Config"
+        - value: 4503
+          label: "Opportunity Relationship"
+        - value: 1071
+          label: "Address"
+        - value: 9753
+          label: "Custom Control"
+        - value: 2011
+          label: "Contract Template"
+        - value: 1011
+          label: "Contract Line"
+        - value: 9301
+          label: "Record Creation and Update Rule Item"
+        - value: 9300
+          label: "Record Creation and Update Rule"
         - value: 1201
           label: "Field Permission"
+        - value: 9958
+          label: "Feedback"
+        - value: 30
+          label: "Filter Template"
+        - value: 1200
+          label: "Field Security Profile"
+        - value: 4204
+          label: "Fax"
+        - value: 955
+          label: "Expired Process"
+        - value: 4711
+          label: "Expander Event"
+        - value: 9987
+          label: "External Party Item"
+        - value: 3008
+          label: "External Party"
+        - value: 1007
+          label: "Image Descriptor"
+        - value: 9919
+          label: "Hierarchy Security Configuration"
+        - value: 4413
+          label: "Import Data"
+        - value: 4410
+          label: "Data Import"
+        - value: 8840
+          label: "Hierarchy Rule"
+        - value: 54
+          label: "Global Search Configuration"
+        - value: 2004
+          label: "Fixed Monthly Fiscal Calendar"
+        - value: 9602
+          label: "Rollup Query"
+        - value: 9600
+          label: "Goal"
+        - value: 9700
+          label: "Entitlement"
+        - value: 9997
+          label: "Email Signature"
+        - value: 7272
+          label: "Entitlement Contact"
+        - value: 9701
+          label: "Entitlement Channel"
+        - value: 9605
+          label: "Email Server Profile"
+        - value: 4202
+          label: "Email"
+        - value: 1049
+          label: "Property Option Set Item"
+        - value: 4299
+          label: "Email Search"
+        - value: 4023
+          label: "Email Hash"
+        - value: 4600
+          label: "Entity Map"
+        - value: 85
+          label: "Virtual Entity Data Source"
+        - value: 4120
+          label: "Exchange Sync Id Mapping"
+        - value: 4000
+          label: "Facility/Equipment"
+        - value: 78
+          label: "Virtual Entity Data Provider"
+        - value: 9702
+          label: "Entitlement Template"
+        - value: 6363
+          label: "Entitlement Product"
+        - value: 4545
+          label: "Entitlement Template Product"
+        - value: 9703
+          label: "Entitlement Template Channel"
+        - value: 1002
+          label: "Attachment"
+        - value: 4700
+          label: "System Job"
+        - value: 4567
+          label: "Auditing"
+        - value: 4601
+          label: "Attribute Map"
+        - value: 4201
+          label: "Appointment"
+        - value: 8701
+          label: "AppModule Metadata Dependency"
+        - value: 8700
+          label: "AppModule Metadata"
+        - value: 9009
+          label: "App Module Roles"
+        - value: 8702
+          label: "AppModule Metadata Async Operation"
+        - value: 1147
+          label: "Bookable Resource Category"
+        - value: 1146
+          label: "Bookable Resource Booking Header"
+        - value: 1148
+          label: "Bookable Resource Characteristic"
+        - value: 1149
+          label: "Bookable Resource Category Assn"
+        - value: 4421
+          label: "BookableResourceBooking to Exchange Id Mapping"
+        - value: 9936
+          label: "Azure Service Connection"
+        - value: 1094
+          label: "Authorization Server"
+        - value: 1145
+          label: "Bookable Resource Booking"
+        - value: 1150
+          label: "Bookable Resource"
+        - value: 1001
+          label: "Attachment"
+        - value: 9968
+          label: "ActionCardUserState"
+        - value: 4200
+          label: "Activity"
+        - value: 135
+          label: "Activity Party"
+        - value: 9973
+          label: "Action Card User Settings"
+        - value: 16
+          label: "AccountLeads"
+        - value: 1
+          label: "Account"
+        - value: 9962
+          label: "Action Card"
+        - value: 8040
+          label: "ACIViewMapper"
+        - value: 4707
+          label: "Application File"
+        - value: 9011
+          label: "App Config Master"
+        - value: 9007
+          label: "App Module Component"
+        - value: 9006
+          label: "App"
+        - value: 9013
+          label: "App Configuration Instance"
+        - value: 5
+          label: "Note"
+        - value: 9949
+          label: "Advanced Similarity Rule"
+        - value: 9012
+          label: "App Configuration"
+        - value: 2000
+          label: "Annual Fiscal Calendar"
+        - value: 1234
+          label: "Channel Property Group"
+        - value: 1236
+          label: "Channel Property"
+        - value: 113
+          label: "Child Incident Count"
+        - value: 1141
+          label: "Characteristic"
+        - value: 9401
+          label: "Channel Access Profile Rule Item"
+        - value: 9959
+          label: "Category"
+        - value: 9983
+          label: "Action Card Type"
+        - value: 9400
+          label: "Channel Access Profile Rule"
+        - value: 3005
+          label: "Channel Access Profile"
+        - value: 26
+          label: "CompetitorSalesLiterature"
+        - value: 1006
+          label: "Competitor Product"
+        - value: 3234
+          label: "Connection"
+        - value: 9650
+          label: "Process Configuration"
+        - value: 1004
+          label: "Competitor Address"
+        - value: 4417
+          label: "Column Mapping"
+        - value: 36
+          label: "Client update"
+        - value: 123
+          label: "Competitor"
+        - value: 4215
+          label: "Commitment"
+        - value: 4232
+          label: "Business Data Localized Label"
+        - value: 4405
+          label: "Bulk Operation Log"
+        - value: 10
+          label: "Business Unit"
+        - value: 4725
+          label: "Business Process Flow Instance"
+        - value: 4406
+          label: "Quick Campaign"
+        - value: 1152
+          label: "Booking Status"
+        - value: 1151
+          label: "Bookable Resource Group"
+        - value: 4424
+          label: "Bulk Delete Operation"
+        - value: 4425
+          label: "Bulk Delete Failure"
+        - value: 4404
+          label: "Campaign Activity Item"
+        - value: 4402
+          label: "Campaign Activity"
+        - value: 4401
+          label: "Campaign Response"
+        - value: 4403
+          label: "Campaign Item"
+        - value: 4400
+          label: "Campaign"
+        - value: 132
+          label: "Announcement"
+        - value: 6
+          label: "Business Unit Map"
+        - value: 4004
+          label: "Calendar Rule"
+        - value: 4003
+          label: "Calendar"
+        - value: 10129
+          label: "Incident Type Characteristic"
+        - value: 10128
+          label: "Incident Type"
+        - value: 10131
+          label: "Incident Type Service"
+        - value: 10130
+          label: "Incident Type Product"
+        - value: 10049
+          label: "Find Work Event"
+        - value: 10125
+          label: "Field Service Price List Item"
+        - value: 10048
+          label: "Field Computation"
+        - value: 10127
+          label: "Field Service System Job"
+        - value: 10126
+          label: "Field Service Setting"
+        - value: 10136
+          label: "Inventory Transfer"
+        - value: 10135
+          label: "Inventory Journal"
+        - value: 10053
+          label: "Invoice Frequency Detail"
+        - value: 10052
+          label: "Invoice Frequency"
+        - value: 10134
+          label: "Inventory Adjustment Product"
+        - value: 10050
+          label: "Integration Job"
+        - value: 10132
+          label: "Incident Type Service Task"
+        - value: 10133
+          label: "Inventory Adjustment"
+        - value: 10051
+          label: "Integration Job Detail"
+        - value: 10037
+          label: "Contact Price List"
+        - value: 10013
+          label: "Configuration"
+        - value: 10039
+          label: "Project Contract Line Milestone"
+        - value: 10038
+          label: "Project Contract Line Invoice Schedule"
+        - value: 10012
+          label: "Client Extension"
+        - value: 10123
+          label: "Work Order Business Process"
+        - value: 10122
+          label: "Agreement Business Process"
+        - value: 10036
+          label: "Competency Requirement (Deprecated)"
+        - value: 10035
+          label: "Invoice Process"
+        - value: 10045
+          label: "Expense Category"
+        - value: 10044
+          label: "Expense"
+        - value: 10047
+          label: "Fact"
+        - value: 10046
+          label: "Expense Receipt"
+        - value: 10043
+          label: "Estimate Line"
+        - value: 10040
+          label: "Actual Data Export (Deprecated)"
+        - value: 10124
+          label: "Customer Asset"
+        - value: 10042
+          label: "Estimate"
+        - value: 10041
+          label: "Delegation"
+        - value: 10001
+          label: "Profile Album"
+        - value: 10144
+          label: "Payment Term"
+        - value: 10002
+          label: "Post Configuration"
+        - value: 10145
+          label: "Postal Code"
+        - value: 10143
+          label: "Payment Method"
+        - value: 10014
+          label: "Organizational Unit"
+        - value: 10067
+          label: "Project Contract Project Price List"
+        - value: 10142
+          label: "Payment Detail"
+        - value: 10141
+          label: "Payment"
+        - value: 10071
+          label: "Project Parameter"
+        - value: 10070
+          label: "Project Approval"
+        - value: 10073
+          label: "Project Price List"
+        - value: 10072
+          label: "Project Parameter Price List"
+        - value: 10069
+          label: "Project"
+        - value: 10015
+          label: "Priority"
+        - value: 10003
+          label: "Post Rule Configuration"
+        - value: 10146
+          label: "Product Inventory"
+        - value: 10068
+          label: "Process Notes"
+        - value: 10059
+          label: "Opportunity Line Detail"
+        - value: 10058
+          label: "Opportunity Line Resource Category"
+        - value: 10061
+          label: "Opportunity Line Transaction Classification"
+        - value: 10060
+          label: "Opportunity Line Transaction Category"
+        - value: 10000
+          label: "OData v4 Data Source"
+        - value: 10055
+          label: "Journal"
+        - value: 10054
+          label: "Invoice Line Detail"
+        - value: 10057
+          label: "Result Cache"
+        - value: 10056
+          label: "Journal Line"
+        - value: 10064
+          label: "Project Contract Line Detail"
+        - value: 10063
+          label: "Project Contract Line Resource Category"
+        - value: 10066
+          label: "Project Contract Line Transaction Classification"
+        - value: 10065
+          label: "Project Contract Line Transaction Category"
+        - value: 10140
+          label: "Order Invoicing Setup Date"
+        - value: 10137
+          label: "Order Invoicing Date"
+        - value: 10062
+          label: "Opportunity Project Price List"
+        - value: 10139
+          label: "Order Invoicing Setup"
+        - value: 10138
+          label: "Order Invoicing Product"
+        - value: 9947
+          label: "Knowledge Search Model"
+        - value: 9930
+          label: "Knowledge Base Record"
+        - value: 4
+          label: "Lead"
+        - value: 9957
+          label: "Language"
+        - value: 9955
+          label: "Knowledge Article Views"
+        - value: 9953
+          label: "Knowledge Article"
+        - value: 1016
+          label: "Article Template"
+        - value: 9960
+          label: "Knowledge Article Category"
+        - value: 9954
+          label: "Knowledge Article Incident"
+        - value: 4300
+          label: "Marketing List"
+        - value: 2027
+          label: "License"
+        - value: 9201
+          label: "LocalConfigStore"
+        - value: 4301
+          label: "Marketing List Member"
+        - value: 4207
+          label: "Letter"
+        - value: 24
+          label: "LeadCompetitors"
+        - value: 1017
+          label: "Lead Address"
+        - value: 954
+          label: "Lead To Opportunity Sales Process"
+        - value: 27
+          label: "LeadProduct"
+        - value: 9931
+          label: "Incident KnowledgeBaseRecord"
+        - value: 112
+          label: "Case"
+        - value: 3000
+          label: "Integration Status"
+        - value: 4206
+          label: "Case Resolution"
+        - value: 4411
+          label: "Data Map"
+        - value: 4412
+          label: "Import Source File"
+        - value: 4428
+          label: "Import Entity Mapping"
+        - value: 4423
+          label: "Import Log"
+        - value: 9107
+          label: "Import Job"
+        - value: 4705
+          label: "ISV Config"
+        - value: 1091
+          label: "Invoice Line"
+        - value: 1082
+          label: "Article Comment"
+        - value: 127
+          label: "Article"
+        - value: 1090
+          label: "Invoice"
+        - value: 1003
+          label: "Internal Address"
+        - value: 9986
+          label: "Interaction for Email"
+        - value: 7107
+          label: "Invalid Dependency"
+        - value: 4011
+          label: "Inter Process Lock"
+        - value: 10032
+          label: "Approval"
+        - value: 10117
+          label: "Agreement Sub-Status"
+        - value: 10007
+          label: "Booking Alert"
+        - value: 10033
+          label: "Batch Job"
+        - value: 10116
+          label: "Agreement Invoice Setup"
+        - value: 10113
+          label: "Agreement Booking Setup"
+        - value: 10112
+          label: "Agreement Booking Service Task"
+        - value: 10115
+          label: "Agreement Invoice Product"
+        - value: 10114
+          label: "Agreement Invoice Date"
+        - value: 10120
+          label: "Purchase Order Business Process"
+        - value: 10119
+          label: "Booking Timestamp"
+        - value: 10121
+          label: "Case to Work Order Business Process"
+        - value: 10034
+          label: "Project Stages"
+        - value: 10011
+          label: "Booking Setup Metadata"
+        - value: 10009
+          label: "Booking Change"
+        - value: 10008
+          label: "Booking Alert Status"
+        - value: 10010
+          label: "Booking Rule"
+        - value: 10118
+          label: "Booking Journal"
+        - value: 9603
+          label: "Goal Metric"
+        - value: 4231
+          label: "Metadata Difference"
+        - value: 9867
+          label: "Mobile Offline Profile Item"
+        - value: 9866
+          label: "Mobile Offline Profile"
+        - value: 9106
+          label: "Mail Merge Template"
+        - value: 9606
+          label: "Mailbox"
+        - value: 4419
+          label: "Lookup Mapping"
+        - value: 9608
+          label: "Mailbox Auto Tracking Folder"
+        - value: 9607
+          label: "Mailbox Statistics"
+        - value: 10109
+          label: "Agreement Booking Incident"
+        - value: 10108
+          label: "Agreement Booking Date"
+        - value: 10111
+          label: "Agreement Booking Service"
+        - value: 10110
+          label: "Agreement Booking Product"
+        - value: 10107
+          label: "Agreement"
+        - value: 2003
+          label: "Monthly Fiscal Calendar"
+        - value: 9868
+          label: "Mobile Offline Profile Item Association"
+        - value: 10006
+          label: "Actual"
+        - value: 10031
+          label: "Account Project Price List"
     - name: componentstate
       type: Edm.Int32
       display_name: "Component State"
@@ -924,798 +1284,1158 @@ properties:
       iscomputed: false
       isreadonly: true
       options:
-        - value: 4501
-          label: "Relationship Role Map"
-        - value: 1140
-          label: "Replication Backlog"
-        - value: 9100
-          label: "Report"
-        - value: 4250
-          label: "Recurrence Rule"
-        - value: 4251
-          label: "Recurring Appointment"
-        - value: 4500
-          label: "Relationship Role"
-        - value: 9103
-          label: "Report Visibility"
-        - value: 4002
-          label: "Resource"
-        - value: 4005
-          label: "Scheduling Group"
-        - value: 9102
-          label: "Report Related Category"
-        - value: 9101
-          label: "Report Related Entity"
-        - value: 9104
-          label: "Report Link"
-        - value: 2029
-          label: "Queue Item"
-        - value: 2023
-          label: "QueueItemCount"
-        - value: 2024
-          label: "QueueMemberCount"
-        - value: 7102
-          label: "Publisher Address"
-        - value: 2002
-          label: "Quarterly Fiscal Calendar"
-        - value: 2020
-          label: "Queue"
-        - value: 1144
-          label: "Rating Model"
-        - value: 1142
-          label: "Rating Value"
-        - value: 1189
-          label: "Document Suggestions"
-        - value: 1084
-          label: "Quote"
-        - value: 4211
-          label: "Quote Close"
-        - value: 1085
-          label: "Quote Product"
-        - value: 4010
-          label: "Resource Expansion"
-        - value: 7200
-          label: "RuntimeDependency"
-        - value: 1038
-          label: "Sales Literature"
-        - value: 1070
-          label: "Sales Attachment"
-        - value: 9510
-          label: "Rollup Properties"
-        - value: 8181
-          label: "Routing Rule Set"
-        - value: 8199
-          label: "Rule Item"
-        - value: 1309
-          label: "Saved Organization Insights Configuration"
-        - value: 1039
-          label: "View"
-        - value: 1111
-          label: "System Chart"
-        - value: 1088
-          label: "Order"
-        - value: 1089
-          label: "Order Product"
-        - value: 32
-          label: "Sales Process Instance"
-        - value: 1115
-          label: "Ribbon Context Group"
-        - value: 1120
-          label: "Application Ribbons"
-        - value: 1130
-          label: "Ribbon Difference"
-        - value: 4006
-          label: "Resource Specification"
-        - value: 4579
-          label: "Ribbon Client Metadata."
-        - value: 1116
-          label: "Ribbon Command"
-        - value: 1037
-          label: "Role Template"
-        - value: 9604
-          label: "Rollup Field"
-        - value: 9511
-          label: "Rollup Job"
-        - value: 1117
-          label: "Ribbon Rule"
-        - value: 1113
-          label: "Ribbon Tab To Command Mapping"
-        - value: 1036
-          label: "Security Role"
-        - value: 7101
-          label: "Publisher"
-        - value: 1021
-          label: "Organization UI"
-        - value: 9699
-          label: "Organization Insights Metric"
-        - value: 9690
-          label: "Organization Insights Notification"
-        - value: 4209
-          label: "Order Close"
-        - value: 1019
-          label: "Organization"
-        - value: 4708
-          label: "Organization Statistic"
-        - value: 9941
-          label: "Personal Document Template"
-        - value: 4210
-          label: "Phone Call"
-        - value: 952
-          label: "Phone To Case Process"
-        - value: 7
-          label: "Owner"
-        - value: 4420
-          label: "Owner Mapping"
-        - value: 1095
-          label: "Partner Application"
-        - value: 4110
-          label: "Notification"
-        - value: 4490
-          label: "Office Document"
-        - value: 9950
-          label: "Office Graph Document"
-        - value: 9912
-          label: "Multi Select Option Value"
-        - value: 9900
-          label: "Navigation Setting"
-        - value: 950
-          label: "New Process"
-        - value: 25
-          label: "OpportunityCompetitors"
-        - value: 1083
-          label: "Opportunity Product"
-        - value: 953
-          label: "Opportunity Sales Process"
         - value: 9870
           label: "Offline Command Definition"
-        - value: 3
-          label: "Opportunity"
+        - value: 9950
+          label: "Office Graph Document"
         - value: 4208
           label: "Opportunity Close"
-        - value: 4418
-          label: "List Value Mapping"
-        - value: 31
-          label: "Privilege Object Type Code"
-        - value: 4710
-          label: "Process Session"
-        - value: 4724
-          label: "Process Stage"
-        - value: 44
-          label: "Field Sharing"
-        - value: 1404
-          label: "Principal Sync Attribute Map"
-        - value: 1023
-          label: "Privilege"
-        - value: 1026
-          label: "Price List Item"
-        - value: 21
-          label: "ProductSalesLiterature"
-        - value: 1028
-          label: "Product Relationship"
-        - value: 4712
-          label: "Process Trigger"
-        - value: 1024
-          label: "Product"
-        - value: 1025
-          label: "Product Association"
-        - value: 4603
-          label: "Plug-in Type Statistic"
-        - value: 50
-          label: "Position"
-        - value: 8000
-          label: "Post"
-        - value: 4605
-          label: "Plug-in Assembly"
-        - value: 4619
-          label: "Plug-in Trace Log"
-        - value: 4602
-          label: "Plug-in Type"
-        - value: 8002
-          label: "Post Regarding"
-        - value: 8001
-          label: "Post Role"
-        - value: 1022
-          label: "Price List"
-        - value: 8005
-          label: "Comment"
-        - value: 8003
-          label: "Follow"
-        - value: 8006
-          label: "Like"
-        - value: 9948
-          label: "Text Analytics Topic"
-        - value: 9946
-          label: "Topic History"
-        - value: 9944
-          label: "Topic Model"
-        - value: 4810
-          label: "Time Zone Definition"
-        - value: 4812
-          label: "Time Zone Localized Name"
-        - value: 4811
-          label: "Time Zone Rule"
-        - value: 8050
-          label: "Trace"
-        - value: 8052
-          label: "Trace Regarding"
-        - value: 9105
-          label: "Currency"
-        - value: 9942
-          label: "Topic Model Configuration"
-        - value: 9943
-          label: "Topic Model Execution History"
-        - value: 8051
-          label: "Trace Association"
-        - value: 9
-          label: "Team"
-        - value: 1203
-          label: "Team Profiles"
-        - value: 1403
-          label: "Team Sync-Attribute Mapping Profiles"
-        - value: 51
-          label: "System User Manager Map"
-        - value: 14
-          label: "System User Principal"
-        - value: 4212
-          label: "Task"
-        - value: 9945
-          label: "Text Analytics Entity Mapping"
-        - value: 2015
-          label: "Theme"
-        - value: 9932
-          label: "Time Stamp Date Mapping"
-        - value: 92
-          label: "Team template"
-        - value: 2010
-          label: "Email Template"
-        - value: 2013
-          label: "Territory"
-        - value: 4426
-          label: "Transformation Mapping"
-        - value: 150
-          label: "User Settings"
-        - value: 9333
-          label: "Web Resource"
-        - value: 4800
-          label: "Web Wizard"
-        - value: 4230
-          label: "Saved View"
-        - value: 1112
-          label: "User Chart"
-        - value: 52
-          label: "User Search Facet"
-        - value: 4704
-          label: "Process Dependency"
-        - value: 4706
-          label: "Process Log"
-        - value: 4702
-          label: "Workflow Wait Subscription"
-        - value: 4803
-          label: "Web Wizard Access Privilege"
-        - value: 4802
-          label: "Wizard Page"
-        - value: 4703
-          label: "Process"
-        - value: 4220
-          label: "UntrackedEmail"
-        - value: 1055
-          label: "Unit"
-        - value: 1056
-          label: "Unit Group"
-        - value: 4427
-          label: "Transformation Parameter Mapping"
-        - value: 951
-          label: "Translation Process"
-        - value: 2012
-          label: "Unresolved Address"
-        - value: 1086
-          label: "User Fiscal Calendar"
-        - value: 1031
-          label: "User Dashboard"
-        - value: 2016
-          label: "User Mapping"
-        - value: 7001
-          label: "User Application Metadata"
-        - value: 2501
-          label: "User Entity Instance Data"
-        - value: 2500
-          label: "User Entity UI Settings"
-        - value: 42
-          label: "SystemUser BusinessUnit Entity Map"
-        - value: 9509
-          label: "SharePoint Data"
-        - value: 9507
-          label: "Sharepoint Document"
-        - value: 9508
-          label: "Document Location"
-        - value: 4214
-          label: "Service Activity"
-        - value: 20
-          label: "Service Contract Contact"
-        - value: 4618
-          label: "Service Endpoint"
-        - value: 4709
-          label: "Site Map"
-        - value: 9750
-          label: "SLA"
-        - value: 9751
-          label: "SLA Item"
-        - value: 9502
-          label: "SharePoint Site"
-        - value: 9951
-          label: "Similarity Rule"
-        - value: 4009
-          label: "Site"
-        - value: 4608
-          label: "Sdk Message Processing Step"
-        - value: 4615
-          label: "Sdk Message Processing Step Image"
-        - value: 4616
-          label: "Sdk Message Processing Step Secure Configuration"
-        - value: 4606
-          label: "Sdk Message"
-        - value: 4607
-          label: "Sdk Message Filter"
-        - value: 4613
-          label: "Sdk Message Pair"
-        - value: 4611
-          label: "Sdk Message Response Field"
-        - value: 2001
-          label: "Semiannual Fiscal Calendar"
-        - value: 4001
-          label: "Service"
-        - value: 4609
-          label: "Sdk Message Request"
-        - value: 4614
-          label: "Sdk Message Request Field"
-        - value: 4610
-          label: "Sdk Message Response"
-        - value: 9752
-          label: "SLA KPI Instance"
-        - value: 33
-          label: "Subscription Synchronization Information"
-        - value: 35
-          label: "Tracking information for deleted entities"
-        - value: 1190
-          label: "SuggestionCardTemplate"
-        - value: 46
-          label: "Subscription Statistic Outlook"
-        - value: 47
-          label: "Subscription Sync Entry Offline"
-        - value: 48
-          label: "Subscription Sync Entry Outlook"
-        - value: 7000
-          label: "System Application Metadata"
-        - value: 1030
-          label: "System Form"
-        - value: 8
-          label: "User"
-        - value: 1401
-          label: "Sync Attribute Mapping"
-        - value: 1400
-          label: "Sync Attribute Mapping Profile"
-        - value: 9869
-          label: "Sync Error"
-        - value: 7100
-          label: "Solution"
-        - value: 7103
-          label: "Solution Component"
-        - value: 1075
-          label: "Status Map"
-        - value: 4216
-          label: "Social Activity"
-        - value: 1300
-          label: "SocialInsightsConfiguration"
-        - value: 99
-          label: "Social Profile"
-        - value: 1072
-          label: "Subscription Clients"
-        - value: 37
-          label: "Subscription Manually Tracked Object"
-        - value: 45
-          label: "Subscription Statistic Offline"
-        - value: 1043
-          label: "String Map"
-        - value: 129
-          label: "Subject"
-        - value: 29
-          label: "Subscription"
-        - value: 4215
-          label: "Commitment"
-        - value: 123
-          label: "Competitor"
-        - value: 1004
-          label: "Competitor Address"
-        - value: 113
-          label: "Child Incident Count"
-        - value: 36
-          label: "Client update"
-        - value: 4417
-          label: "Column Mapping"
-        - value: 3234
-          label: "Connection"
-        - value: 3231
-          label: "Connection Role"
-        - value: 3233
-          label: "Connection Role Object Type Code"
-        - value: 1006
-          label: "Competitor Product"
-        - value: 26
-          label: "CompetitorSalesLiterature"
-        - value: 9650
-          label: "Process Configuration"
-        - value: 4401
-          label: "Campaign Response"
-        - value: 9983
-          label: "Action Card Type"
-        - value: 9959
-          label: "Category"
-        - value: 4402
-          label: "Campaign Activity"
-        - value: 4404
-          label: "Campaign Activity Item"
-        - value: 4403
-          label: "Campaign Item"
-        - value: 1236
-          label: "Channel Property"
-        - value: 1234
-          label: "Channel Property Group"
-        - value: 1141
-          label: "Characteristic"
-        - value: 3005
-          label: "Channel Access Profile"
-        - value: 9400
-          label: "Channel Access Profile Rule"
-        - value: 9401
-          label: "Channel Access Profile Rule Item"
-        - value: 4007
-          label: "Resource Group"
-        - value: 4502
-          label: "Customer Relationship"
-        - value: 4450
-          label: "Data Performance Dashboard"
-        - value: 9961
-          label: "DelveActionHub"
-        - value: 9754
-          label: "Custom Control Resource"
-        - value: 1071
-          label: "Address"
-        - value: 4503
-          label: "Opportunity Relationship"
-        - value: 1013
-          label: "Discount"
-        - value: 1080
-          label: "Discount List"
-        - value: 4102
-          label: "Display String"
-        - value: 7105
-          label: "Dependency"
-        - value: 7108
-          label: "Dependency Feature"
-        - value: 7106
-          label: "Dependency Node"
-        - value: 19
-          label: "ContactOrders"
-        - value: 18
-          label: "ContactQuotes"
-        - value: 1010
-          label: "Contract"
-        - value: 2
-          label: "Contact"
-        - value: 17
-          label: "ContactInvoices"
-        - value: 22
-          label: "ContactLeads"
-        - value: 9301
-          label: "Record Creation and Update Rule Item"
-        - value: 9753
-          label: "Custom Control"
-        - value: 9755
-          label: "Custom Control Default Config"
-        - value: 1011
-          label: "Contract Line"
-        - value: 2011
-          label: "Contract Template"
-        - value: 9300
-          label: "Record Creation and Update Rule"
-        - value: 4400
-          label: "Campaign"
-        - value: 4707
-          label: "Application File"
-        - value: 9006
-          label: "App"
-        - value: 9007
-          label: "App Module Component"
-        - value: 9012
-          label: "App Configuration"
-        - value: 9013
-          label: "App Configuration Instance"
-        - value: 9011
-          label: "App Config Master"
-        - value: 9009
-          label: "App Module Roles"
-        - value: 4201
-          label: "Appointment"
-        - value: 4700
-          label: "System Job"
-        - value: 8700
-          label: "AppModule Metadata"
-        - value: 8701
-          label: "AppModule Metadata Dependency"
-        - value: 8702
-          label: "AppModule Metadata Async Operation"
-        - value: 9962
-          label: "Action Card"
-        - value: 9973
-          label: "Action Card User Settings"
-        - value: 9968
-          label: "ActionCardUserState"
-        - value: 1
-          label: "Account"
-        - value: 16
-          label: "AccountLeads"
-        - value: 8040
-          label: "ACIViewMapper"
-        - value: 9949
-          label: "Advanced Similarity Rule"
-        - value: 5
-          label: "Note"
-        - value: 2000
-          label: "Annual Fiscal Calendar"
-        - value: 1001
-          label: "Attachment"
-        - value: 135
-          label: "Activity Party"
-        - value: 4200
-          label: "Activity"
-        - value: 1002
-          label: "Attachment"
-        - value: 4406
-          label: "Quick Campaign"
-        - value: 4405
-          label: "Bulk Operation Log"
-        - value: 4232
-          label: "Business Data Localized Label"
-        - value: 1152
-          label: "Booking Status"
-        - value: 4425
-          label: "Bulk Delete Failure"
-        - value: 4424
-          label: "Bulk Delete Operation"
-        - value: 132
-          label: "Announcement"
-        - value: 4003
-          label: "Calendar"
-        - value: 4004
-          label: "Calendar Rule"
-        - value: 4725
-          label: "Business Process Flow Instance"
-        - value: 10
-          label: "Business Unit"
-        - value: 6
-          label: "Business Unit Map"
-        - value: 9936
-          label: "Azure Service Connection"
-        - value: 1150
-          label: "Bookable Resource"
-        - value: 1145
-          label: "Bookable Resource Booking"
-        - value: 4601
-          label: "Attribute Map"
-        - value: 4567
-          label: "Auditing"
-        - value: 1094
-          label: "Authorization Server"
-        - value: 1149
-          label: "Bookable Resource Category Assn"
-        - value: 1148
-          label: "Bookable Resource Characteristic"
-        - value: 1151
-          label: "Bookable Resource Group"
-        - value: 4421
-          label: "BookableResourceBooking to Exchange Id Mapping"
-        - value: 1146
-          label: "Bookable Resource Booking Header"
-        - value: 1147
-          label: "Bookable Resource Category"
-        - value: 9954
-          label: "Knowledge Article Incident"
-        - value: 9960
-          label: "Knowledge Article Category"
-        - value: 9955
-          label: "Knowledge Article Views"
-        - value: 1082
-          label: "Article Comment"
-        - value: 1016
-          label: "Article Template"
-        - value: 9953
-          label: "Knowledge Article"
-        - value: 4
-          label: "Lead"
-        - value: 1017
-          label: "Lead Address"
-        - value: 24
-          label: "LeadCompetitors"
-        - value: 9930
-          label: "Knowledge Base Record"
-        - value: 9947
-          label: "Knowledge Search Model"
-        - value: 9957
-          label: "Language"
-        - value: 3000
-          label: "Integration Status"
-        - value: 9986
-          label: "Interaction for Email"
-        - value: 1003
-          label: "Internal Address"
-        - value: 112
-          label: "Case"
-        - value: 9931
-          label: "Incident KnowledgeBaseRecord"
-        - value: 4206
-          label: "Case Resolution"
-        - value: 1091
-          label: "Invoice Product"
-        - value: 4705
-          label: "ISV Config"
-        - value: 127
-          label: "Article"
-        - value: 4011
-          label: "Inter Process Lock"
-        - value: 7107
-          label: "Invalid Dependency"
-        - value: 1090
-          label: "Invoice"
-        - value: 27
-          label: "LeadProduct"
-        - value: 9868
-          label: "Mobile Offline Profile Item Association"
-        - value: 2003
-          label: "Monthly Fiscal Calendar"
-        - value: 10000
-          label: "OData v4 Data Source"
-        - value: 9603
-          label: "Goal Metric"
-        - value: 9866
-          label: "Mobile Offline Profile"
-        - value: 9867
-          label: "Mobile Offline Profile Item"
-        - value: 10004
-          label: "Wall View"
+        - value: 3
+          label: "Opportunity"
+        - value: 4490
+          label: "Office Document"
+        - value: 9900
+          label: "Navigation Setting"
+        - value: 9912
+          label: "Multi Select Option Value"
+        - value: 4110
+          label: "Notification"
+        - value: 950
+          label: "New Process"
+        - value: 1021
+          label: "Organization UI"
+        - value: 4708
+          label: "Organization Statistic"
+        - value: 9690
+          label: "Organization Insights Notification"
+        - value: 9699
+          label: "Organization Insights Metric"
+        - value: 1019
+          label: "Organization"
+        - value: 1083
+          label: "Opportunity Line"
+        - value: 25
+          label: "OpportunityCompetitors"
+        - value: 4209
+          label: "Order Close"
+        - value: 953
+          label: "Opportunity Sales Process"
+        - value: 10179
+          label: "Work Order Incident"
+        - value: 10178
+          label: "Work Order Details Generation Queue (Deprecated)"
+        - value: 10181
+          label: "Resource Restriction (Deprecated)"
+        - value: 10180
+          label: "Work Order Product"
+        - value: 10177
+          label: "Work Order Characteristic (Deprecated)"
+        - value: 10175
+          label: "Warehouse"
         - value: 10005
           label: "Filter"
+        - value: 10176
+          label: "Work Order"
+        - value: 10030
+          label: "Work template"
+        - value: 10188
+          label: "ServicesSiteMap"
+        - value: 10187
+          label: "SalesSiteMap"
         - value: 9910
           label: "MultiEntitySearch"
-        - value: 10001
-          label: "Profile Album"
-        - value: 10002
-          label: "Post Configuration"
-        - value: 10003
-          label: "Post Rule Configuration"
-        - value: 4300
-          label: "Marketing List"
-        - value: 4301
-          label: "Marketing List Member"
-        - value: 9201
-          label: "LocalConfigStore"
-        - value: 954
-          label: "Lead To Opportunity Sales Process"
-        - value: 4207
-          label: "Letter"
-        - value: 2027
-          label: "License"
-        - value: 9608
-          label: "Mailbox Auto Tracking Folder"
-        - value: 9106
-          label: "Mail Merge Template"
-        - value: 4231
-          label: "Metadata Difference"
-        - value: 4419
-          label: "Lookup Mapping"
-        - value: 9606
-          label: "Mailbox"
-        - value: 9607
-          label: "Mailbox Statistics"
-        - value: 4411
-          label: "Data Map"
-        - value: 9700
-          label: "Entitlement"
-        - value: 9701
-          label: "Entitlement Channel"
-        - value: 7272
-          label: "Entitlement Contact"
-        - value: 4299
-          label: "Email Search"
-        - value: 9605
-          label: "Email Server Profile"
-        - value: 9997
-          label: "Email Signature"
-        - value: 4545
-          label: "Entitlement Template Product"
-        - value: 78
-          label: "Virtual Entity Data Provider"
-        - value: 85
-          label: "Virtual Entity Data Source"
-        - value: 6363
-          label: "Entitlement Product"
-        - value: 9702
-          label: "Entitlement Template"
-        - value: 9703
-          label: "Entitlement Template Channel"
-        - value: 4415
-          label: "Duplicate Record"
-        - value: 4414
-          label: "Duplicate Detection Rule"
-        - value: 4416
-          label: "Duplicate Rule Condition"
-        - value: 4101
-          label: "Display String Map"
-        - value: 126
-          label: "Indexed Article"
-        - value: 9940
-          label: "Document Template"
-        - value: 1049
-          label: "Property Option Set Item"
-        - value: 4202
-          label: "Email"
-        - value: 4023
-          label: "Email Hash"
+        - value: 10189
+          label: "SettingsSiteMap"
+        - value: 10186
+          label: "MarketingSiteMap"
+        - value: 10183
+          label: "Work Order Service Task"
+        - value: 10182
+          label: "Work Order Service"
+        - value: 10185
+          label: "Work Order Type"
+        - value: 10184
+          label: "Work Order Sub-Status"
+        - value: 4724
+          label: "Process Stage"
+        - value: 4710
+          label: "Process Session"
+        - value: 1024
+          label: "Product"
+        - value: 4712
+          label: "Process Trigger"
+        - value: 31
+          label: "Privilege Object Type Code"
+        - value: 44
+          label: "Field Sharing"
+        - value: 1022
+          label: "Price List"
+        - value: 1023
+          label: "Privilege"
+        - value: 1404
+          label: "Principal Sync Attribute Map"
+        - value: 2002
+          label: "Quarterly Fiscal Calendar"
+        - value: 7102
+          label: "Publisher Address"
+        - value: 2029
+          label: "Queue Item"
+        - value: 2020
+          label: "Queue"
+        - value: 7101
+          label: "Publisher"
+        - value: 1026
+          label: "Price List Item"
+        - value: 1025
+          label: "Product Association"
+        - value: 1028
+          label: "Product Relationship"
+        - value: 21
+          label: "ProductSalesLiterature"
+        - value: 4418
+          label: "List Value Mapping"
+        - value: 952
+          label: "Phone To Case Process"
+        - value: 4619
+          label: "Plug-in Trace Log"
+        - value: 4605
+          label: "Plug-in Assembly"
+        - value: 4210
+          label: "Phone Call"
+        - value: 4420
+          label: "Owner Mapping"
+        - value: 7
+          label: "Owner"
+        - value: 9941
+          label: "Personal Document Template"
+        - value: 1095
+          label: "Partner Application"
+        - value: 8006
+          label: "Like"
+        - value: 8003
+          label: "Follow"
+        - value: 8001
+          label: "Post Role"
+        - value: 8002
+          label: "Post Regarding"
+        - value: 8005
+          label: "Comment"
+        - value: 4603
+          label: "Plug-in Type Statistic"
+        - value: 4602
+          label: "Plug-in Type"
+        - value: 8000
+          label: "Post"
+        - value: 50
+          label: "Position"
+        - value: 10085
+          label: "Quote Line Transaction Category"
+        - value: 10084
+          label: "Quote Line Detail"
+        - value: 10087
+          label: "Quote Project Price List"
+        - value: 10086
+          label: "Quote Line Transaction Classification"
+        - value: 10083
+          label: "Quote Line Milestone"
+        - value: 10080
+          label: "Quote Line Analytics Breakdown"
+        - value: 10159
+          label: "Quote Invoicing Setup"
+        - value: 10082
+          label: "Quote Line Resource Category"
+        - value: 10081
+          label: "Quote Line Invoice Schedule"
+        - value: 10089
+          label: "Resource Assignment Detail"
+        - value: 10088
+          label: "Resource Assignment"
+        - value: 10160
+          label: "Resource Pay Type"
+        - value: 10090
+          label: "Role Price"
+        - value: 10020
+          label: "Requirement Status"
+        - value: 10017
+          label: "Requirement Organization Unit"
+        - value: 10016
+          label: "Requirement Characteristic"
+        - value: 10019
+          label: "Requirement Resource Preference"
+        - value: 10018
+          label: "Requirement Resource Category"
+        - value: 10147
+          label: "Purchase Order"
+        - value: 10079
+          label: "Project Transaction Category"
+        - value: 10149
+          label: "Purchase Order Product"
+        - value: 10148
+          label: "Purchase Order Bill"
+        - value: 10078
+          label: "Project Team Member Sign-Up"
+        - value: 10075
+          label: "Project Task Dependency"
+        - value: 10074
+          label: "Project Task"
+        - value: 10077
+          label: "Project Team Member"
+        - value: 10076
+          label: "Project Task Status User"
+        - value: 10156
+          label: "Quote Booking Service Task"
+        - value: 10155
+          label: "Quote Booking Service"
+        - value: 10158
+          label: "Quote Invoicing Product"
+        - value: 10157
+          label: "Quote Booking Setup"
+        - value: 10154
+          label: "Quote Booking Product"
+        - value: 10151
+          label: "Purchase Order Receipt Product"
+        - value: 10150
+          label: "Purchase Order Receipt"
+        - value: 10153
+          label: "Quote Booking Incident"
+        - value: 10152
+          label: "Purchase Order Sub Status"
+        - value: 10095
+          label: "Time Off Calendar"
+        - value: 10028
+          label: "Time Group Detail"
+        - value: 10096
+          label: "Transaction Category"
+        - value: 10173
+          label: "Time Off Request"
+        - value: 10027
+          label: "Time Group"
+        - value: 10171
+          label: "Tax Code"
+        - value: 10026
+          label: "System User Scheduler Setting"
+        - value: 10094
+          label: "Time Entry"
+        - value: 10172
+          label: "Tax Code Detail"
+        - value: 10174
+          label: "Unique Number"
+        - value: 10101
+          label: "Transaction Type"
+        - value: 10004
+          label: "Wall View"
+        - value: 10102
+          label: "User Work History"
+        - value: 10029
+          label: "Transaction Origin"
+        - value: 10098
+          label: "Transaction Category Hierarchy Element"
+        - value: 10097
+          label: "Transaction Category Classification"
+        - value: 10100
+          label: "Transaction Connection"
+        - value: 10099
+          label: "Transaction Category Price"
+        - value: 10163
+          label: "RMA Receipt"
+        - value: 10162
+          label: "RMA Product"
+        - value: 10165
+          label: "RMA Sub-Status"
+        - value: 10164
+          label: "RMA Receipt Product"
+        - value: 10161
+          label: "RMA"
+        - value: 10021
+          label: "Resource Requirement"
+        - value: 10091
+          label: "Resource Request"
+        - value: 10023
+          label: "Resource Territory"
+        - value: 10022
+          label: "Resource Requirement Detail"
+        - value: 10025
+          label: "Scheduling Parameter"
+        - value: 10024
+          label: "Schedule Board Setting"
+        - value: 10170
+          label: "Ship Via"
+        - value: 10169
+          label: "Service Task Type"
+        - value: 10168
+          label: "RTV Sub-Status"
+        - value: 10093
+          label: "Role Utilization"
+        - value: 10092
+          label: "Role competency requirement"
+        - value: 10167
+          label: "RTV Product"
+        - value: 10166
+          label: "RTV"
+        - value: 14
+          label: "System User Principal"
+        - value: 51
+          label: "System User Manager Map"
+        - value: 9
+          label: "Team"
+        - value: 4212
+          label: "Task"
+        - value: 42
+          label: "SystemUser BusinessUnit Entity Map"
+        - value: 7000
+          label: "System Application Metadata"
+        - value: 9869
+          label: "Sync Error"
+        - value: 8
+          label: "User"
+        - value: 1030
+          label: "System Form"
+        - value: 2015
+          label: "Theme"
+        - value: 9945
+          label: "Text Analytics Entity Mapping"
+        - value: 4810
+          label: "Time Zone Definition"
+        - value: 9932
+          label: "Time Stamp Date Mapping"
+        - value: 2013
+          label: "Territory"
+        - value: 1403
+          label: "Team Sync-Attribute Mapping Profiles"
+        - value: 1203
+          label: "Team Profiles"
+        - value: 2010
+          label: "Email Template"
+        - value: 92
+          label: "Team template"
+        - value: 29
+          label: "Subscription"
+        - value: 129
+          label: "Subject"
+        - value: 37
+          label: "Subscription Manually Tracked Object"
+        - value: 1072
+          label: "Subscription Clients"
+        - value: 1043
+          label: "String Map"
+        - value: 7100
+          label: "Solution"
+        - value: 99
+          label: "Social Profile"
+        - value: 1075
+          label: "Status Map"
+        - value: 7103
+          label: "Solution Component"
+        - value: 1190
+          label: "SuggestionCardTemplate"
+        - value: 35
+          label: "Tracking information for deleted entities"
+        - value: 1400
+          label: "Sync Attribute Mapping Profile"
+        - value: 1401
+          label: "Sync Attribute Mapping"
+        - value: 33
+          label: "Subscription Synchronization Information"
+        - value: 46
+          label: "Subscription Statistic Outlook"
+        - value: 45
+          label: "Subscription Statistic Offline"
+        - value: 48
+          label: "Subscription Sync Entry Outlook"
+        - value: 47
+          label: "Subscription Sync Entry Offline"
+        - value: 4230
+          label: "Saved View"
+        - value: 2016
+          label: "User Mapping"
+        - value: 52
+          label: "User Search Facet"
+        - value: 1112
+          label: "User Chart"
+        - value: 1031
+          label: "User Dashboard"
+        - value: 2501
+          label: "User Entity Instance Data"
+        - value: 7001
+          label: "User Application Metadata"
+        - value: 1086
+          label: "User Fiscal Calendar"
+        - value: 2500
+          label: "User Entity UI Settings"
+        - value: 4704
+          label: "Process Dependency"
+        - value: 4703
+          label: "Process"
+        - value: 4702
+          label: "Workflow Wait Subscription"
+        - value: 4706
+          label: "Process Log"
+        - value: 4802
+          label: "Wizard Page"
+        - value: 9333
+          label: "Web Resource"
+        - value: 150
+          label: "User Settings"
+        - value: 4803
+          label: "Web Wizard Access Privilege"
+        - value: 4800
+          label: "Web Wizard"
+        - value: 9943
+          label: "Topic Model Execution History"
+        - value: 9942
+          label: "Topic Model Configuration"
+        - value: 8050
+          label: "Trace"
+        - value: 8051
+          label: "Trace Association"
+        - value: 9944
+          label: "Topic Model"
+        - value: 4811
+          label: "Time Zone Rule"
+        - value: 4812
+          label: "Time Zone Localized Name"
+        - value: 9946
+          label: "Topic History"
+        - value: 9948
+          label: "Text Analytics Topic"
+        - value: 4220
+          label: "UntrackedEmail"
+        - value: 2012
+          label: "Unresolved Address"
+        - value: 1056
+          label: "Unit Group"
+        - value: 1055
+          label: "Unit"
+        - value: 951
+          label: "Translation Process"
+        - value: 9105
+          label: "Currency"
+        - value: 8052
+          label: "Trace Regarding"
+        - value: 4427
+          label: "Transformation Parameter Mapping"
+        - value: 4426
+          label: "Transformation Mapping"
+        - value: 1115
+          label: "Ribbon Context Group"
+        - value: 1116
+          label: "Ribbon Command"
+        - value: 1130
+          label: "Ribbon Difference"
+        - value: 1120
+          label: "Application Ribbons"
+        - value: 4579
+          label: "Ribbon Client Metadata."
+        - value: 4005
+          label: "Scheduling Group"
+        - value: 4002
+          label: "Resource"
+        - value: 4006
+          label: "Resource Specification"
+        - value: 4010
+          label: "Resource Expansion"
+        - value: 9510
+          label: "Rollup Properties"
+        - value: 9511
+          label: "Rollup Job"
+        - value: 8199
+          label: "Rule Item"
+        - value: 8181
+          label: "Routing Rule Set"
+        - value: 9604
+          label: "Rollup Field"
+        - value: 1113
+          label: "Ribbon Tab To Command Mapping"
+        - value: 1117
+          label: "Ribbon Rule"
+        - value: 1037
+          label: "Role Template"
+        - value: 1036
+          label: "Security Role"
+        - value: 1142
+          label: "Rating Value"
+        - value: 1144
+          label: "Rating Model"
+        - value: 4250
+          label: "Recurrence Rule"
+        - value: 1189
+          label: "Document Suggestions"
+        - value: 1085
+          label: "Quote Line"
+        - value: 2024
+          label: "QueueMemberCount"
+        - value: 2023
+          label: "QueueItemCount"
+        - value: 4211
+          label: "Quote Close"
+        - value: 1084
+          label: "Quote"
+        - value: 9101
+          label: "Report Related Entity"
+        - value: 9102
+          label: "Report Related Category"
+        - value: 9103
+          label: "Report Visibility"
+        - value: 9104
+          label: "Report Link"
+        - value: 9100
+          label: "Report"
+        - value: 4500
+          label: "Relationship Role"
+        - value: 4251
+          label: "Recurring Appointment"
+        - value: 1140
+          label: "Replication Backlog"
+        - value: 4501
+          label: "Relationship Role Map"
+        - value: 9509
+          label: "SharePoint Data"
+        - value: 4618
+          label: "Service Endpoint"
+        - value: 9508
+          label: "Document Location"
+        - value: 9507
+          label: "Sharepoint Document"
+        - value: 20
+          label: "Service Contract Contact"
+        - value: 2001
+          label: "Semiannual Fiscal Calendar"
+        - value: 4611
+          label: "Sdk Message Response Field"
+        - value: 4214
+          label: "Service Activity"
+        - value: 4001
+          label: "Service"
+        - value: 9752
+          label: "SLA KPI Instance"
+        - value: 9751
+          label: "SLA Item"
+        - value: 1300
+          label: "SocialInsightsConfiguration"
+        - value: 4216
+          label: "Social Activity"
+        - value: 9750
+          label: "SLA"
+        - value: 9951
+          label: "Similarity Rule"
+        - value: 9502
+          label: "SharePoint Site"
+        - value: 4709
+          label: "Site Map"
+        - value: 4009
+          label: "Site"
+        - value: 1309
+          label: "Saved Organization Insights Configuration"
+        - value: 32
+          label: "Sales Process Instance"
+        - value: 1111
+          label: "System Chart"
+        - value: 1039
+          label: "View"
+        - value: 1089
+          label: "Order Line"
+        - value: 1038
+          label: "Sales Literature"
+        - value: 7200
+          label: "RuntimeDependency"
+        - value: 1088
+          label: "Order"
+        - value: 1070
+          label: "Sales Attachment"
+        - value: 4609
+          label: "Sdk Message Request"
+        - value: 4616
+          label: "Sdk Message Processing Step Secure Configuration"
+        - value: 4610
+          label: "Sdk Message Response"
+        - value: 4614
+          label: "Sdk Message Request Field"
+        - value: 4615
+          label: "Sdk Message Processing Step Image"
+        - value: 4607
+          label: "Sdk Message Filter"
+        - value: 4606
+          label: "Sdk Message"
+        - value: 4608
+          label: "Sdk Message Processing Step"
+        - value: 4613
+          label: "Sdk Message Pair"
+        - value: 1013
+          label: "Discount"
+        - value: 7106
+          label: "Dependency Node"
+        - value: 4102
+          label: "Display String"
+        - value: 1080
+          label: "Discount List"
+        - value: 7108
+          label: "Dependency Feature"
+        - value: 4450
+          label: "Data Performance Dashboard"
+        - value: 4502
+          label: "Customer Relationship"
+        - value: 7105
+          label: "Dependency"
+        - value: 9961
+          label: "DelveActionHub"
         - value: 1048
           label: "Property"
-        - value: 1235
-          label: "Property Association"
+        - value: 4416
+          label: "Duplicate Rule Condition"
         - value: 1333
           label: "Property Instance"
-        - value: 4600
-          label: "Entity Map"
-        - value: 8840
-          label: "Hierarchy Rule"
-        - value: 9919
-          label: "Hierarchy Security Configuration"
-        - value: 1007
-          label: "Image Descriptor"
-        - value: 54
-          label: "Global Search Configuration"
-        - value: 9600
-          label: "Goal"
-        - value: 9602
-          label: "Rollup Query"
-        - value: 4412
-          label: "Import Source File"
-        - value: 9107
-          label: "Import Job"
-        - value: 4423
-          label: "Import Log"
-        - value: 4410
-          label: "Data Import"
-        - value: 4413
-          label: "Import Data"
-        - value: 4428
-          label: "Import Entity Mapping"
-        - value: 955
-          label: "Expired Process"
-        - value: 3008
-          label: "External Party"
-        - value: 9987
-          label: "External Party Item"
-        - value: 4000
-          label: "Facility/Equipment"
-        - value: 4120
-          label: "Exchange Sync Id Mapping"
-        - value: 4711
-          label: "Expander Event"
-        - value: 1200
-          label: "Field Security Profile"
-        - value: 30
-          label: "Filter Template"
-        - value: 2004
-          label: "Fixed Monthly Fiscal Calendar"
-        - value: 4204
-          label: "Fax"
-        - value: 9958
-          label: "Feedback"
+        - value: 1235
+          label: "Property Association"
+        - value: 4414
+          label: "Duplicate Detection Rule"
+        - value: 126
+          label: "Indexed Article"
+        - value: 4101
+          label: "Display String Map"
+        - value: 4415
+          label: "Duplicate Record"
+        - value: 9940
+          label: "Document Template"
+        - value: 19
+          label: "ContactOrders"
+        - value: 22
+          label: "ContactLeads"
+        - value: 1010
+          label: "Contract"
+        - value: 18
+          label: "ContactQuotes"
+        - value: 17
+          label: "ContactInvoices"
+        - value: 3233
+          label: "Connection Role Object Type Code"
+        - value: 3231
+          label: "Connection Role"
+        - value: 2
+          label: "Contact"
+        - value: 4007
+          label: "Resource Group"
+        - value: 9754
+          label: "Custom Control Resource"
+        - value: 9755
+          label: "Custom Control Default Config"
+        - value: 4503
+          label: "Opportunity Relationship"
+        - value: 1071
+          label: "Address"
+        - value: 9753
+          label: "Custom Control"
+        - value: 2011
+          label: "Contract Template"
+        - value: 1011
+          label: "Contract Line"
+        - value: 9301
+          label: "Record Creation and Update Rule Item"
+        - value: 9300
+          label: "Record Creation and Update Rule"
         - value: 1201
           label: "Field Permission"
+        - value: 9958
+          label: "Feedback"
+        - value: 30
+          label: "Filter Template"
+        - value: 1200
+          label: "Field Security Profile"
+        - value: 4204
+          label: "Fax"
+        - value: 955
+          label: "Expired Process"
+        - value: 4711
+          label: "Expander Event"
+        - value: 9987
+          label: "External Party Item"
+        - value: 3008
+          label: "External Party"
+        - value: 1007
+          label: "Image Descriptor"
+        - value: 9919
+          label: "Hierarchy Security Configuration"
+        - value: 4413
+          label: "Import Data"
+        - value: 4410
+          label: "Data Import"
+        - value: 8840
+          label: "Hierarchy Rule"
+        - value: 54
+          label: "Global Search Configuration"
+        - value: 2004
+          label: "Fixed Monthly Fiscal Calendar"
+        - value: 9602
+          label: "Rollup Query"
+        - value: 9600
+          label: "Goal"
+        - value: 9700
+          label: "Entitlement"
+        - value: 9997
+          label: "Email Signature"
+        - value: 7272
+          label: "Entitlement Contact"
+        - value: 9701
+          label: "Entitlement Channel"
+        - value: 9605
+          label: "Email Server Profile"
+        - value: 4202
+          label: "Email"
+        - value: 1049
+          label: "Property Option Set Item"
+        - value: 4299
+          label: "Email Search"
+        - value: 4023
+          label: "Email Hash"
+        - value: 4600
+          label: "Entity Map"
+        - value: 85
+          label: "Virtual Entity Data Source"
+        - value: 4120
+          label: "Exchange Sync Id Mapping"
+        - value: 4000
+          label: "Facility/Equipment"
+        - value: 78
+          label: "Virtual Entity Data Provider"
+        - value: 9702
+          label: "Entitlement Template"
+        - value: 6363
+          label: "Entitlement Product"
+        - value: 4545
+          label: "Entitlement Template Product"
+        - value: 9703
+          label: "Entitlement Template Channel"
+        - value: 1002
+          label: "Attachment"
+        - value: 4700
+          label: "System Job"
+        - value: 4567
+          label: "Auditing"
+        - value: 4601
+          label: "Attribute Map"
+        - value: 4201
+          label: "Appointment"
+        - value: 8701
+          label: "AppModule Metadata Dependency"
+        - value: 8700
+          label: "AppModule Metadata"
+        - value: 9009
+          label: "App Module Roles"
+        - value: 8702
+          label: "AppModule Metadata Async Operation"
+        - value: 1147
+          label: "Bookable Resource Category"
+        - value: 1146
+          label: "Bookable Resource Booking Header"
+        - value: 1148
+          label: "Bookable Resource Characteristic"
+        - value: 1149
+          label: "Bookable Resource Category Assn"
+        - value: 4421
+          label: "BookableResourceBooking to Exchange Id Mapping"
+        - value: 9936
+          label: "Azure Service Connection"
+        - value: 1094
+          label: "Authorization Server"
+        - value: 1145
+          label: "Bookable Resource Booking"
+        - value: 1150
+          label: "Bookable Resource"
+        - value: 1001
+          label: "Attachment"
+        - value: 9968
+          label: "ActionCardUserState"
+        - value: 4200
+          label: "Activity"
+        - value: 135
+          label: "Activity Party"
+        - value: 9973
+          label: "Action Card User Settings"
+        - value: 16
+          label: "AccountLeads"
+        - value: 1
+          label: "Account"
+        - value: 9962
+          label: "Action Card"
+        - value: 8040
+          label: "ACIViewMapper"
+        - value: 4707
+          label: "Application File"
+        - value: 9011
+          label: "App Config Master"
+        - value: 9007
+          label: "App Module Component"
+        - value: 9006
+          label: "App"
+        - value: 9013
+          label: "App Configuration Instance"
+        - value: 5
+          label: "Note"
+        - value: 9949
+          label: "Advanced Similarity Rule"
+        - value: 9012
+          label: "App Configuration"
+        - value: 2000
+          label: "Annual Fiscal Calendar"
+        - value: 1234
+          label: "Channel Property Group"
+        - value: 1236
+          label: "Channel Property"
+        - value: 113
+          label: "Child Incident Count"
+        - value: 1141
+          label: "Characteristic"
+        - value: 9401
+          label: "Channel Access Profile Rule Item"
+        - value: 9959
+          label: "Category"
+        - value: 9983
+          label: "Action Card Type"
+        - value: 9400
+          label: "Channel Access Profile Rule"
+        - value: 3005
+          label: "Channel Access Profile"
+        - value: 26
+          label: "CompetitorSalesLiterature"
+        - value: 1006
+          label: "Competitor Product"
+        - value: 3234
+          label: "Connection"
+        - value: 9650
+          label: "Process Configuration"
+        - value: 1004
+          label: "Competitor Address"
+        - value: 4417
+          label: "Column Mapping"
+        - value: 36
+          label: "Client update"
+        - value: 123
+          label: "Competitor"
+        - value: 4215
+          label: "Commitment"
+        - value: 4232
+          label: "Business Data Localized Label"
+        - value: 4405
+          label: "Bulk Operation Log"
+        - value: 10
+          label: "Business Unit"
+        - value: 4725
+          label: "Business Process Flow Instance"
+        - value: 4406
+          label: "Quick Campaign"
+        - value: 1152
+          label: "Booking Status"
+        - value: 1151
+          label: "Bookable Resource Group"
+        - value: 4424
+          label: "Bulk Delete Operation"
+        - value: 4425
+          label: "Bulk Delete Failure"
+        - value: 4404
+          label: "Campaign Activity Item"
+        - value: 4402
+          label: "Campaign Activity"
+        - value: 4401
+          label: "Campaign Response"
+        - value: 4403
+          label: "Campaign Item"
+        - value: 4400
+          label: "Campaign"
+        - value: 132
+          label: "Announcement"
+        - value: 6
+          label: "Business Unit Map"
+        - value: 4004
+          label: "Calendar Rule"
+        - value: 4003
+          label: "Calendar"
+        - value: 10129
+          label: "Incident Type Characteristic"
+        - value: 10128
+          label: "Incident Type"
+        - value: 10131
+          label: "Incident Type Service"
+        - value: 10130
+          label: "Incident Type Product"
+        - value: 10049
+          label: "Find Work Event"
+        - value: 10125
+          label: "Field Service Price List Item"
+        - value: 10048
+          label: "Field Computation"
+        - value: 10127
+          label: "Field Service System Job"
+        - value: 10126
+          label: "Field Service Setting"
+        - value: 10136
+          label: "Inventory Transfer"
+        - value: 10135
+          label: "Inventory Journal"
+        - value: 10053
+          label: "Invoice Frequency Detail"
+        - value: 10052
+          label: "Invoice Frequency"
+        - value: 10134
+          label: "Inventory Adjustment Product"
+        - value: 10050
+          label: "Integration Job"
+        - value: 10132
+          label: "Incident Type Service Task"
+        - value: 10133
+          label: "Inventory Adjustment"
+        - value: 10051
+          label: "Integration Job Detail"
+        - value: 10037
+          label: "Contact Price List"
+        - value: 10013
+          label: "Configuration"
+        - value: 10039
+          label: "Project Contract Line Milestone"
+        - value: 10038
+          label: "Project Contract Line Invoice Schedule"
+        - value: 10012
+          label: "Client Extension"
+        - value: 10123
+          label: "Work Order Business Process"
+        - value: 10122
+          label: "Agreement Business Process"
+        - value: 10036
+          label: "Competency Requirement (Deprecated)"
+        - value: 10035
+          label: "Invoice Process"
+        - value: 10045
+          label: "Expense Category"
+        - value: 10044
+          label: "Expense"
+        - value: 10047
+          label: "Fact"
+        - value: 10046
+          label: "Expense Receipt"
+        - value: 10043
+          label: "Estimate Line"
+        - value: 10040
+          label: "Actual Data Export (Deprecated)"
+        - value: 10124
+          label: "Customer Asset"
+        - value: 10042
+          label: "Estimate"
+        - value: 10041
+          label: "Delegation"
+        - value: 10001
+          label: "Profile Album"
+        - value: 10144
+          label: "Payment Term"
+        - value: 10002
+          label: "Post Configuration"
+        - value: 10145
+          label: "Postal Code"
+        - value: 10143
+          label: "Payment Method"
+        - value: 10014
+          label: "Organizational Unit"
+        - value: 10067
+          label: "Project Contract Project Price List"
+        - value: 10142
+          label: "Payment Detail"
+        - value: 10141
+          label: "Payment"
+        - value: 10071
+          label: "Project Parameter"
+        - value: 10070
+          label: "Project Approval"
+        - value: 10073
+          label: "Project Price List"
+        - value: 10072
+          label: "Project Parameter Price List"
+        - value: 10069
+          label: "Project"
+        - value: 10015
+          label: "Priority"
+        - value: 10003
+          label: "Post Rule Configuration"
+        - value: 10146
+          label: "Product Inventory"
+        - value: 10068
+          label: "Process Notes"
+        - value: 10059
+          label: "Opportunity Line Detail"
+        - value: 10058
+          label: "Opportunity Line Resource Category"
+        - value: 10061
+          label: "Opportunity Line Transaction Classification"
+        - value: 10060
+          label: "Opportunity Line Transaction Category"
+        - value: 10000
+          label: "OData v4 Data Source"
+        - value: 10055
+          label: "Journal"
+        - value: 10054
+          label: "Invoice Line Detail"
+        - value: 10057
+          label: "Result Cache"
+        - value: 10056
+          label: "Journal Line"
+        - value: 10064
+          label: "Project Contract Line Detail"
+        - value: 10063
+          label: "Project Contract Line Resource Category"
+        - value: 10066
+          label: "Project Contract Line Transaction Classification"
+        - value: 10065
+          label: "Project Contract Line Transaction Category"
+        - value: 10140
+          label: "Order Invoicing Setup Date"
+        - value: 10137
+          label: "Order Invoicing Date"
+        - value: 10062
+          label: "Opportunity Project Price List"
+        - value: 10139
+          label: "Order Invoicing Setup"
+        - value: 10138
+          label: "Order Invoicing Product"
+        - value: 9947
+          label: "Knowledge Search Model"
+        - value: 9930
+          label: "Knowledge Base Record"
+        - value: 4
+          label: "Lead"
+        - value: 9957
+          label: "Language"
+        - value: 9955
+          label: "Knowledge Article Views"
+        - value: 9953
+          label: "Knowledge Article"
+        - value: 1016
+          label: "Article Template"
+        - value: 9960
+          label: "Knowledge Article Category"
+        - value: 9954
+          label: "Knowledge Article Incident"
+        - value: 4300
+          label: "Marketing List"
+        - value: 2027
+          label: "License"
+        - value: 9201
+          label: "LocalConfigStore"
+        - value: 4301
+          label: "Marketing List Member"
+        - value: 4207
+          label: "Letter"
+        - value: 24
+          label: "LeadCompetitors"
+        - value: 1017
+          label: "Lead Address"
+        - value: 954
+          label: "Lead To Opportunity Sales Process"
+        - value: 27
+          label: "LeadProduct"
+        - value: 9931
+          label: "Incident KnowledgeBaseRecord"
+        - value: 112
+          label: "Case"
+        - value: 3000
+          label: "Integration Status"
+        - value: 4206
+          label: "Case Resolution"
+        - value: 4411
+          label: "Data Map"
+        - value: 4412
+          label: "Import Source File"
+        - value: 4428
+          label: "Import Entity Mapping"
+        - value: 4423
+          label: "Import Log"
+        - value: 9107
+          label: "Import Job"
+        - value: 4705
+          label: "ISV Config"
+        - value: 1091
+          label: "Invoice Line"
+        - value: 1082
+          label: "Article Comment"
+        - value: 127
+          label: "Article"
+        - value: 1090
+          label: "Invoice"
+        - value: 1003
+          label: "Internal Address"
+        - value: 9986
+          label: "Interaction for Email"
+        - value: 7107
+          label: "Invalid Dependency"
+        - value: 4011
+          label: "Inter Process Lock"
+        - value: 10032
+          label: "Approval"
+        - value: 10117
+          label: "Agreement Sub-Status"
+        - value: 10007
+          label: "Booking Alert"
+        - value: 10033
+          label: "Batch Job"
+        - value: 10116
+          label: "Agreement Invoice Setup"
+        - value: 10113
+          label: "Agreement Booking Setup"
+        - value: 10112
+          label: "Agreement Booking Service Task"
+        - value: 10115
+          label: "Agreement Invoice Product"
+        - value: 10114
+          label: "Agreement Invoice Date"
+        - value: 10120
+          label: "Purchase Order Business Process"
+        - value: 10119
+          label: "Booking Timestamp"
+        - value: 10121
+          label: "Case to Work Order Business Process"
+        - value: 10034
+          label: "Project Stages"
+        - value: 10011
+          label: "Booking Setup Metadata"
+        - value: 10009
+          label: "Booking Change"
+        - value: 10008
+          label: "Booking Alert Status"
+        - value: 10010
+          label: "Booking Rule"
+        - value: 10118
+          label: "Booking Journal"
+        - value: 9603
+          label: "Goal Metric"
+        - value: 4231
+          label: "Metadata Difference"
+        - value: 9867
+          label: "Mobile Offline Profile Item"
+        - value: 9866
+          label: "Mobile Offline Profile"
+        - value: 9106
+          label: "Mail Merge Template"
+        - value: 9606
+          label: "Mailbox"
+        - value: 4419
+          label: "Lookup Mapping"
+        - value: 9608
+          label: "Mailbox Auto Tracking Folder"
+        - value: 9607
+          label: "Mailbox Statistics"
+        - value: 10109
+          label: "Agreement Booking Incident"
+        - value: 10108
+          label: "Agreement Booking Date"
+        - value: 10111
+          label: "Agreement Booking Service"
+        - value: 10110
+          label: "Agreement Booking Product"
+        - value: 10107
+          label: "Agreement"
+        - value: 2003
+          label: "Monthly Fiscal Calendar"
+        - value: 9868
+          label: "Mobile Offline Profile Item Association"
+        - value: 10006
+          label: "Actual"
+        - value: 10031
+          label: "Account Project Price List"
     - name: maxkeywords
       type: Edm.Int32
       display_name: "Maximum Number of Key Phrases"
@@ -1862,7 +2582,7 @@ solutions:
   description: "The following solutions include the similarityrule entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

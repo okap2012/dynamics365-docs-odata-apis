@@ -4,7 +4,7 @@ name: "bookableresourcecategory"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement bookableresourcecategory EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-09-21"
+  ms.date: "2017-10-02"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,7 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement bookableresourcecategory entitytype."
 header: 
-  description: "Categorize resources that have capacity into categories such as roles."
+  description: "Resource category master used to categorize people and equipment."
   entity_set_path: "[organization URI]/api/data/v9.0/bookableresourcecategories"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Bookable Resource Category
@@ -66,6 +66,27 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_billingtype
+      type: Edm.Int32
+      display_name: "Billing Type"
+      description: "Select the billing type for this resource role."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Non Chargeable"
+        - value: 192350001
+          label: "Chargeable"
+        - value: 192350002
+          label: "Complimentary"
+        - value: 192350003
+          label: "Not Available"
+    - name: msdyn_targetutilization
+      type: Edm.Int32
+      display_name: "Target Utilization"
+      description: "Enter the target usage rate for this resource role."
+      iscomputed: false
+      isreadonly: false
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -137,6 +158,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfbyname
     description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_transactioncategory_value
+    single_valued_navigation_property:
+    - msdyn_TransactionCategory
+    description: "Enter the default transaction category for this resource role."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -172,6 +197,9 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfbyname
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_bookableresourcecategory_modifiedonbehalfby
+  - name: msdyn_TransactionCategory
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategory
+    partner: msdyn_msdyn_transactioncategory_bookableresourcecategory_TransactionCategory
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_bookableresourcecategory
@@ -217,6 +245,84 @@ collection_valued_navigation_properties:
   - name: BookableResourceCategory_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_bookableresourcecategory_syncerror
+  - name: msdyn_bookableresourcecategory_bookableresourcebooking_resourcecategoryid
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: msdyn_resourcecategoryid
+  - name: msdyn_bookableresourcecategory_bookableresourcebookingheader_resourcecategoryid
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: msdyn_resourcecategoryid
+  - name: msdyn_bookableresourcecategory_msdyn_actual_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_actual
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_estimateline_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_estimateline
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_fact_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_fact
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_invoicelinetransaction_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_journalline_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_journalline
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_opportunitylineresourcecategory_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_opportunitylinetransaction_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_orderlineresourcecategory_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_orderlineresourcecategory
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_orderlinetransaction_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_projectapproval_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_projectapproval
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_projectparameter_projectmanagerrole
+    type: Microsoft.Dynamics.CRM.msdyn_projectparameter
+    partner: msdyn_projectmanagerrole
+  - name: msdyn_bookableresourcecategory_msdyn_projectparameter_teammemberrole
+    type: Microsoft.Dynamics.CRM.msdyn_projectparameter
+    partner: msdyn_teammemberrole
+  - name: msdyn_bookableresourcecategory_msdyn_projecttask_resourcecategory
+    type: Microsoft.Dynamics.CRM.msdyn_projecttask
+    partner: msdyn_resourcecategory
+  - name: msdyn_bookableresourcecategory_msdyn_projectteam_resourcecategory
+    type: Microsoft.Dynamics.CRM.msdyn_projectteam
+    partner: msdyn_resourcecategory
+  - name: msdyn_bookableresourcecategory_msdyn_quotelineanalyticsbreakdown_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_quotelineanalyticsbreakdown
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_quotelineresourcecategory_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_quotelineresourcecategory
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_quotelinetransaction_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_resourcecategorypricelevel_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_msdyn_resourcerequest_roleid
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequest
+    partner: msdyn_roleid
+  - name: msdyn_bookableresourcecategory_msdyn_rolecompetencyrequirement_resourcecategory
+    type: Microsoft.Dynamics.CRM.msdyn_rolecompetencyrequirement
+    partner: msdyn_resourcecategory
+  - name: msdyn_bookableresourcecategory_msdyn_roleutilization_role
+    type: Microsoft.Dynamics.CRM.msdyn_roleutilization
+    partner: msdyn_role
+  - name: msdyn_bookableresourcecategory_msdyn_timeentry_resourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_timeentry
+    partner: msdyn_resourceCategory
+  - name: msdyn_bookableresourcecategory_requirementresourcecategory_ResourceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
+    partner: msdyn_ResourceCategory
+  - name: msdyn_bookableresourcecategory_resourcerequirement
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+    partner: msdyn_roleid
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the bookableresourcecategory entity type."
@@ -234,8 +340,11 @@ operations:
 solutions:
   description: "The following solutions include the bookableresourcecategory entity type."
   solution_items:
+  - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+  - Microsoft.Dynamics.CRM.ProjectService
   - Microsoft.Dynamics.CRM.msdynce_Scheduling
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
