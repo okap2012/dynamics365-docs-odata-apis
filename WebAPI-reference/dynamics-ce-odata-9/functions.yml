@@ -12,7 +12,7 @@ metadata:
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
-description: "A function is an operation that does not have observable side effects. They typically retrieve data. They may have parameters and they may return values. Functions may be bound to entity types."
+description: "A function is an operation which does not have observable side effects. They typically retrieve data. They may have parameters and they may return values. Functions may be bound to entity types."
 in_this_section:
 - Microsoft.Dynamics.CRM.CalculateRollupField
 - Microsoft.Dynamics.CRM.CalculateTotalTimeIncident
