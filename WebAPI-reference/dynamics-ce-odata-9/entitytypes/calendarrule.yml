@@ -21,8 +21,6 @@ header:
   display_name: Calendar Rule
   primary_key: calendarruleid
   primary_name_attribute: name
-  operations_supported: 
-  - None
 namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
