@@ -4,7 +4,7 @@ name: "msdyn_agreementbookingdate"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_agreementbookingdate EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_agreementbookingdate entitytype."
-header: 
+header:
   description: "Specify the maintenance booking dates for the agreement."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_agreementbookingdates"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Agreement Booking Date
   primary_key: msdyn_agreementbookingdateid
   primary_name_attribute: msdyn_name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -349,7 +349,7 @@ solutions:
   description: "The following solutions include the msdyn_agreementbookingdate entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.FieldService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

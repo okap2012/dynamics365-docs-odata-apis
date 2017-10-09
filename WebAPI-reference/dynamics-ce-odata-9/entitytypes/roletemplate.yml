@@ -4,7 +4,7 @@ name: "roletemplate"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement roletemplate EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,13 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement roletemplate entitytype."
-header: 
+header:
   description: "Template for a role. Defines initial attributes that will be used when creating a new role."
   entity_set_path: "[organization URI]/api/data/v9.0/roletemplates"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Role Template
   primary_key: roletemplateid
   primary_name_attribute: name
+  # This entity does not support any operations.
 namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
@@ -54,7 +55,7 @@ solutions:
   description: "The following solutions include the roletemplate entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -4,7 +4,7 @@ name: "CreateKnowledgeArticleVersion"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement CreateKnowledgeArticleVersion Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -42,7 +42,7 @@ entities:
   description: "Use the CreateKnowledgeArticleVersion action with this entity type:"
   entity_items:
   - Microsoft.Dynamics.CRM.knowledgearticle
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -4,7 +4,7 @@ name: "salesorder"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement salesorder EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement salesorder entitytype."
-header: 
+header:
   description: "Quote that has been accepted."
   entity_set_path: "[organization URI]/api/data/v9.0/salesorders"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Order
   primary_key: salesorderid
   primary_name_attribute: name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -1090,11 +1090,11 @@ solutions:
   description: "The following solutions include the salesorder entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.FieldService
-  - Microsoft.Dynamics.CRM.msdynce_Sales
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
   - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.ProjectService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

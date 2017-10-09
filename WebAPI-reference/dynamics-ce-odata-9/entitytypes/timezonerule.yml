@@ -4,7 +4,7 @@ name: "timezonerule"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement timezonerule EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement timezonerule entitytype."
-header: 
+header:
   description: "Definition for time conversion between local time and Coordinated Universal Time (UTC) for a particular time zone at a particular time period."
   entity_set_path: "[organization URI]/api/data/v9.0/timezonerules"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Time Zone Rule
   primary_key: timezoneruleid
   primary_name_attribute: timezoneruleversionnumber
-  operations_supported: 
+  operations_supported:
   - GET
 namespace: Microsoft.Dynamics.CRM
 properties:
@@ -215,7 +215,7 @@ solutions:
   description: "The following solutions include the timezonerule entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

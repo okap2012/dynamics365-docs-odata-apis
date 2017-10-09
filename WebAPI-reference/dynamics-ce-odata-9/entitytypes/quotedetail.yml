@@ -4,7 +4,7 @@ name: "quotedetail"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement quotedetail EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement quotedetail entitytype."
-header: 
+header:
   description: "Product line item in a quote. The details include such information as product ID, description, quantity, and cost."
   entity_set_path: "[organization URI]/api/data/v9.0/quotedetails"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Quote Line
   primary_key: quotedetailid
   primary_name_attribute: productidname
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -828,7 +828,7 @@ solutions:
   - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.ProjectService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -4,7 +4,7 @@ name: "crmbaseentity"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement crmbaseentity EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,13 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement crmbaseentity entitytype."
-header: 
+# No header required.
   # This entity doesn't have a description
-  entity_set_path: "None"
-  base_type: None
-  display_name: None
-  primary_key: None
-  primary_name_attribute: None
+  # This entity doesn't have an entitysetname
+  # This entity doesn't have a base entity
+  # This entity doesn't have a display name
+  # This entity doesn't have a primary key
+  # This entity doesn't have a primaryAttributeName
+  # This entity does not support any operations.
 namespace: Microsoft.Dynamics.CRM
 # This entity has no properties
 # This entity has no lookup properties
@@ -458,7 +459,7 @@ derived_types:
   - Microsoft.Dynamics.CRM.workflow 
 # This entity has no operations
 # This entity is not included in any solutions.
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

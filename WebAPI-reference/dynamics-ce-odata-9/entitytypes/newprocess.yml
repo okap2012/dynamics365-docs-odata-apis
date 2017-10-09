@@ -4,7 +4,7 @@ name: "newprocess"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement newprocess EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement newprocess entitytype."
-header: 
+header:
   description: "New Process Business Process Flow"
   entity_set_path: "[organization URI]/api/data/v9.0/newprocesses"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: New Process
   primary_key: businessprocessflowinstanceid
   primary_name_attribute: name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -212,9 +212,9 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the newprocess entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.System
   - Microsoft.Dynamics.CRM.msdynce_ProductManagement
-# This entity has no remarks.
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

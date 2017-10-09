@@ -4,7 +4,7 @@ name: "sitemap"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement sitemap EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement sitemap entitytype."
-header: 
+header:
   description: "XML data used to control the application navigation pane."
   entity_set_path: "[organization URI]/api/data/v9.0/sitemaps"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Site Map
   primary_key: sitemapid
-  primary_name_attribute: None
-  operations_supported: 
+  # This entity doesn't have a primaryAttributeName
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -181,7 +181,7 @@ solutions:
   description: "The following solutions include the sitemap entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

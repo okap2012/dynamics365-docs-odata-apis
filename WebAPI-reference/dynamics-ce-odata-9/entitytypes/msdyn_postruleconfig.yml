@@ -4,7 +4,7 @@ name: "msdyn_postruleconfig"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_postruleconfig EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_postruleconfig entitytype."
-header: 
+header:
   description: "Enable or disable system post rules for an entity for Activity Feeds and Yammer."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_postruleconfigs"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Post Rule Configuration
   primary_key: msdyn_postruleconfigid
   primary_name_attribute: msdyn_name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -219,9 +219,9 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_postruleconfig entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.ProjectService
   - Microsoft.Dynamics.CRM.ActivityFeedsCore
-# This entity has no remarks.
+  - Microsoft.Dynamics.CRM.ProjectService
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

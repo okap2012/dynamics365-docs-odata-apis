@@ -4,7 +4,7 @@ name: "msdyn_workorder"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_workorder EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_workorder entitytype."
-header: 
+header:
   description: "Work orders store all information about the job performed for an account. Stores incident details, resource, expenses, tasks, communications, billing and more"
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_workorders"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Work Order
   primary_key: msdyn_workorderid
   primary_name_attribute: msdyn_name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -780,7 +780,7 @@ solutions:
   description: "The following solutions include the msdyn_workorder entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.FieldService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

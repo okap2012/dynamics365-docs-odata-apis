@@ -4,7 +4,7 @@ name: "Knowledge Management"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Knowledge Management Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -26,7 +26,7 @@ entities:
    - Microsoft.Dynamics.CRM.connection
    - Microsoft.Dynamics.CRM.knowledgearticle
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

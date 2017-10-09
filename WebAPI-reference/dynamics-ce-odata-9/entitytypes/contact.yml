@@ -4,7 +4,7 @@ name: "contact"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement contact EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement contact entitytype."
-header: 
+header:
   description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
   entity_set_path: "[organization URI]/api/data/v9.0/contacts"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Contact
   primary_key: contactid
   primary_name_attribute: fullname
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -1703,20 +1703,19 @@ operations:
 solutions:
   description: "The following solutions include the contact entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.System
-  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.AppforOutlook
   - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+  - Microsoft.Dynamics.CRM.msdynce_AppCommon
+  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.msdynce_Marketing
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_ProductManagement
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
-  - Microsoft.Dynamics.CRM.msdynce_AppCommon
-  - Microsoft.Dynamics.CRM.AppforOutlook
-  - Microsoft.Dynamics.CRM.msdynce_Marketing
-  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
-  - Microsoft.Dynamics.CRM.msdynce_ProductManagement
-  - Microsoft.Dynamics.CRM.FreeTrialBaseSolution2
   - Microsoft.Dynamics.CRM.ProjectService
-# This entity has no remarks.
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

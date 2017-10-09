@@ -4,7 +4,7 @@ name: "salesorderdetail"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement salesorderdetail EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement salesorderdetail entitytype."
-header: 
+header:
   description: "Line item in a sales order."
   entity_set_path: "[organization URI]/api/data/v9.0/salesorderdetails"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Order Line
   primary_key: salesorderdetailid
   primary_name_attribute: productidname
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -764,7 +764,7 @@ solutions:
   - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.ProjectService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

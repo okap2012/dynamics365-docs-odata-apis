@@ -2557,8 +2557,6 @@ items:
     name: CRM Extensions
   - uid: Microsoft.Dynamics.CRM.FieldService
     name: Field Service
-  - uid: Microsoft.Dynamics.CRM.FreeTrialBaseSolution2
-    name: FreeTrialBaseSolution2
   - uid: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagement
     name: Knowledge Management
   - uid: Microsoft.Dynamics.CRM.msdynce_LeadManagement

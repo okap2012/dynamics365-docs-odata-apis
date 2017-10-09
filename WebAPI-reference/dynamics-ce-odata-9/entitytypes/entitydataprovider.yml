@@ -4,7 +4,7 @@ name: "entitydataprovider"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement entitydataprovider EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement entitydataprovider entitytype."
-header: 
+header:
   description: "Developers can register plug-ins on a data provider to enable data access for virtual entities in the system."
   entity_set_path: "[organization URI]/api/data/v9.0/entitydataproviders"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Virtual Entity Data Provider
   primary_key: entitydataproviderid
   primary_name_attribute: name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -155,7 +155,7 @@ solutions:
   description: "The following solutions include the entitydataprovider entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

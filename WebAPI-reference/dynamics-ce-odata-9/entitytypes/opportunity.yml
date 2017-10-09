@@ -4,7 +4,7 @@ name: "opportunity"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement opportunity EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement opportunity entitytype."
-header: 
+header:
   description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
   entity_set_path: "[organization URI]/api/data/v9.0/opportunities"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Opportunity
   primary_key: opportunityid
   primary_name_attribute: name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -315,18 +315,6 @@ properties:
           label: "Contacted"
         - value: 1
           label: "Not Contacted"
-    - name: int_forecast
-      type: Edm.Decimal
-      display_name: "Forecast"
-      description: "Shows the forecasted revenue for an Opportunity."
-      iscomputed: false
-      isreadonly: false
-    - name: int_forecast_base
-      type: Edm.Decimal
-      display_name: "Forecast (Base)"
-      description: "Value of the Forecast in base currency."
-      iscomputed: false
-      isreadonly: true
     - name: isrevenuesystemcalculated
       type: Edm.Boolean
       display_name: "Revenue"
@@ -1168,14 +1156,13 @@ operations:
 solutions:
   description: "The following solutions include the opportunity entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.FieldService
-  - Microsoft.Dynamics.CRM.msdynce_Sales
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
   - Microsoft.Dynamics.CRM.AppforOutlook
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
-  - Microsoft.Dynamics.CRM.FreeTrialBaseSolution2
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.ProjectService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

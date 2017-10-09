@@ -4,7 +4,7 @@ name: "incident"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement incident EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement incident entitytype."
-header: 
+header:
   description: "Service request case associated with a contract."
   entity_set_path: "[organization URI]/api/data/v9.0/incidents"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Case
   primary_key: incidentid
   primary_name_attribute: title
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -281,30 +281,6 @@ properties:
       description: "Will contain the Influencer score coming from NetBreeze."
       iscomputed: false
       isreadonly: false
-    - name: int_customereffort
-      type: Edm.Int32
-      display_name: "Customer Effort"
-      description: "Shows customer satisfaction by tracking effort required by the customer. Low scores typically mean higher customer satisfaction as the customer had to travel through less channels to find a resolution"
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 121590000
-          label: "Low"
-        - value: 121590001
-          label: "Medium"
-        - value: 121590002
-          label: "High"
-    - name: int_upsellreferral
-      type: Edm.Boolean
-      display_name: "UpSell Referral"
-      description: "Mark Yes if an opportunity exists to sell additional products or services to the customer."
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 1
-          label: "Yes"
-        - value: 0
-          label: "No"
     - name: isdecrementing
       type: Edm.Boolean
       display_name: "Decrementing"
@@ -914,12 +890,11 @@ operations:
 solutions:
   description: "The following solutions include the incident entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.FieldService
-  - Microsoft.Dynamics.CRM.msdynce_Service
   - Microsoft.Dynamics.CRM.AppforOutlook
+  - Microsoft.Dynamics.CRM.FieldService
   - Microsoft.Dynamics.CRM.msdynce_SalesService
-  - Microsoft.Dynamics.CRM.FreeTrialBaseSolution2
-# This entity has no remarks.
+  - Microsoft.Dynamics.CRM.msdynce_Service
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

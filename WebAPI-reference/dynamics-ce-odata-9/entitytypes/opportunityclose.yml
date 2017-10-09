@@ -4,7 +4,7 @@ name: "opportunityclose"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement opportunityclose EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement opportunityclose entitytype."
-header: 
+header:
   description: "Activity that is created automatically when an opportunity is closed, containing information such as the description of the closing and actual revenue."
   entity_set_path: "[organization URI]/api/data/v9.0/opportunitycloses"
   base_type: Microsoft.Dynamics.CRM.activitypointer
   display_name: Opportunity Close
   primary_key: activityid
   primary_name_attribute: subject
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -939,7 +939,7 @@ solutions:
   solution_items:
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_SalesService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

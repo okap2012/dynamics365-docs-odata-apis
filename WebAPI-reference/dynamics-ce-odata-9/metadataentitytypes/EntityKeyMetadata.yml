@@ -4,7 +4,7 @@ name: "EntityKeyMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement EntityKeyMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -72,7 +72,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.EntityMetadata
     used_as: NavigationProperty
-# This metadata entity has no remarks.
+# There are no remarks for this metadata entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

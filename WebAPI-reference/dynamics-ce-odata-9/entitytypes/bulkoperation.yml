@@ -4,7 +4,7 @@ name: "bulkoperation"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement bulkoperation EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement bulkoperation entitytype."
-header: 
+header:
   description: "System operation used to perform lengthy and asynchronous operations on large data sets, such as distributing a campaign activity or quick campaign."
   entity_set_path: "[organization URI]/api/data/v9.0/bulkoperations"
   base_type: Microsoft.Dynamics.CRM.activitypointer
   display_name: Quick Campaign
   primary_key: activityid
   primary_name_attribute: subject
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -1029,9 +1029,9 @@ operations:
 solutions:
   description: "The following solutions include the bulkoperation entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_MarketingService
   - Microsoft.Dynamics.CRM.msdynce_Marketing
-# This entity has no remarks.
+  - Microsoft.Dynamics.CRM.msdynce_MarketingService
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

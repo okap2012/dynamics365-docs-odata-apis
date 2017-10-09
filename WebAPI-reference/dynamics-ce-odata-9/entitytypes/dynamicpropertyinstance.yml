@@ -4,7 +4,7 @@ name: "dynamicpropertyinstance"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement dynamicpropertyinstance EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement dynamicpropertyinstance entitytype."
-header: 
+header:
   description: "Instance of a property with its value."
   entity_set_path: "[organization URI]/api/data/v9.0/dynamicpropertyinstances"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Property Instance
   primary_key: dynamicpropertyinstanceid
   primary_name_attribute: name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -251,9 +251,9 @@ operations:
 solutions:
   description: "The following solutions include the dynamicpropertyinstance entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_ProductManagement
-# This entity has no remarks.
+  - Microsoft.Dynamics.CRM.msdynce_Sales
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

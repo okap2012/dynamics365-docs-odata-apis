@@ -4,7 +4,7 @@ name: "msdyn_inventoryadjustmentproduct"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_inventoryadjustmentproduct EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_inventoryadjustmentproduct entitytype."
-header: 
+header:
   description: "Records product affected by an inventory adjustment or inventory transfer"
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_inventoryadjustmentproducts"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Inventory Adjustment Product
   primary_key: msdyn_inventoryadjustmentproductid
   primary_name_attribute: msdyn_name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -300,7 +300,7 @@ solutions:
   description: "The following solutions include the msdyn_inventoryadjustmentproduct entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.FieldService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

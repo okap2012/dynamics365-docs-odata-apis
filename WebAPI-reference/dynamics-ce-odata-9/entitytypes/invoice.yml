@@ -4,7 +4,7 @@ name: "invoice"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement invoice EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement invoice entitytype."
-header: 
+header:
   description: "Order that has been billed."
   entity_set_path: "[organization URI]/api/data/v9.0/invoices"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Invoice
   primary_key: invoiceid
   primary_name_attribute: name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -936,10 +936,10 @@ solutions:
   description: "The following solutions include the invoice entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.FieldService
-  - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
+  - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.ProjectService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

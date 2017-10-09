@@ -4,7 +4,7 @@ name: "msdyn_invoicelinetransaction"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_invoicelinetransaction EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_invoicelinetransaction entitytype."
-header: 
+header:
   description: "Transactions that are associated to an invoice line."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_invoicelinetransactions"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Invoice Line Detail
   primary_key: msdyn_invoicelinetransactionid
   primary_name_attribute: msdyn_description
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -605,7 +605,7 @@ solutions:
   description: "The following solutions include the msdyn_invoicelinetransaction entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.ProjectService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

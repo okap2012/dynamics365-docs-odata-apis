@@ -4,7 +4,7 @@ name: "msdyn_uniquenumber"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_uniquenumber EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_uniquenumber entitytype."
-header: 
+header:
   description: "Internal entity used to store unique number."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_uniquenumbers"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Unique Number
   primary_key: msdyn_uniquenumberid
   primary_name_attribute: msdyn_name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -184,7 +184,7 @@ solutions:
   description: "The following solutions include the msdyn_uniquenumber entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.FieldService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

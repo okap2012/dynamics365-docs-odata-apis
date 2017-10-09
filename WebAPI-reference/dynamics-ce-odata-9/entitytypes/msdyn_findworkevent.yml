@@ -4,7 +4,7 @@ name: "msdyn_findworkevent"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_findworkevent EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_findworkevent entitytype."
-header: 
+header:
   description: "Entity used for counting the number of times resources apply for open positions and other behavioral attributes of resources."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_findworkevents"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Find Work Event
   primary_key: msdyn_findworkeventid
   primary_name_attribute: msdyn_name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -257,7 +257,7 @@ solutions:
   description: "The following solutions include the msdyn_findworkevent entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.ProjectService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -4,7 +4,7 @@ name: "account"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement account EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement account entitytype."
-header: 
+header:
   description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
   entity_set_path: "[organization URI]/api/data/v9.0/accounts"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Account
   primary_key: accountid
   primary_name_attribute: name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -1681,18 +1681,18 @@ operations:
 solutions:
   description: "The following solutions include the account entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.System
-  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.AppforOutlook
   - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+  - Microsoft.Dynamics.CRM.msdynce_AppCommon
+  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - Microsoft.Dynamics.CRM.msdynce_Marketing
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_ProductManagement
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
-  - Microsoft.Dynamics.CRM.msdynce_AppCommon
-  - Microsoft.Dynamics.CRM.AppforOutlook
-  - Microsoft.Dynamics.CRM.msdynce_Marketing
-  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
-  - Microsoft.Dynamics.CRM.msdynce_ProductManagement
   - Microsoft.Dynamics.CRM.ProjectService
+  - Microsoft.Dynamics.CRM.System
 remarks: |
   ## SubTopic
   Here are some remarks to add for the account entity type.

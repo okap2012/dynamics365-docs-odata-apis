@@ -4,7 +4,7 @@ name: "msdyn_projectteam"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_projectteam EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_projectteam entitytype."
-header: 
+header:
   description: "Entity used to model relationship between resources and project teams."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_projectteams"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Project Team Member
   primary_key: msdyn_projectteamid
   primary_name_attribute: msdyn_name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -488,7 +488,7 @@ solutions:
   description: "The following solutions include the msdyn_projectteam entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.ProjectService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

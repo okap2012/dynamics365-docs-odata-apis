@@ -4,7 +4,7 @@ name: "phonecall"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement phonecall EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement phonecall entitytype."
-header: 
+header:
   description: "Activity to track a telephone call."
   entity_set_path: "[organization URI]/api/data/v9.0/phonecalls"
   base_type: Microsoft.Dynamics.CRM.activitypointer
   display_name: Phone Call
   primary_key: activityid
   primary_name_attribute: subject
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -1131,16 +1131,16 @@ operations:
 solutions:
   description: "The following solutions include the phonecall entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.System
-  - Microsoft.Dynamics.CRM.msdynce_Activities
+  - Microsoft.Dynamics.CRM.AppforOutlook
   - Microsoft.Dynamics.CRM.FieldService
+  - Microsoft.Dynamics.CRM.msdynce_Activities
+  - Microsoft.Dynamics.CRM.msdynce_AppCommon
+  - Microsoft.Dynamics.CRM.msdynce_Marketing
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
   - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
-  - Microsoft.Dynamics.CRM.msdynce_AppCommon
-  - Microsoft.Dynamics.CRM.AppforOutlook
-  - Microsoft.Dynamics.CRM.msdynce_Marketing
-# This entity has no remarks.
+  - Microsoft.Dynamics.CRM.System
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

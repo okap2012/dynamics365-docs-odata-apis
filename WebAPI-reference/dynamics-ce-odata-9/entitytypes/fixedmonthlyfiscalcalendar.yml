@@ -4,7 +4,7 @@ name: "fixedmonthlyfiscalcalendar"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement fixedmonthlyfiscalcalendar EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement fixedmonthlyfiscalcalendar entitytype."
-header: 
+header:
   description: "Fixed monthly fiscal calendar of an organization. A span of time during which the financial activities of an organization are calculated."
   entity_set_path: "[organization URI]/api/data/v9.0/fixedmonthlyfiscalcalendars"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Fixed Monthly Fiscal Calendar
   primary_key: userfiscalcalendarid
-  primary_name_attribute: None
-  operations_supported: 
+  # This entity doesn't have a primaryAttributeName
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -299,7 +299,7 @@ solutions:
   description: "The following solutions include the fixedmonthlyfiscalcalendar entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

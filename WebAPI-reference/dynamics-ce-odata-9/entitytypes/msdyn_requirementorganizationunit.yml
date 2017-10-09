@@ -4,7 +4,7 @@ name: "msdyn_requirementorganizationunit"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_requirementorganizationunit EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_requirementorganizationunit entitytype."
-header: 
+header:
   description: "Requirement of Organization Unit"
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_requirementorganizationunits"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Requirement Organization Unit
   primary_key: msdyn_requirementorganizationunitid
   primary_name_attribute: msdyn_name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -229,7 +229,7 @@ solutions:
   description: "The following solutions include the msdyn_requirementorganizationunit entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

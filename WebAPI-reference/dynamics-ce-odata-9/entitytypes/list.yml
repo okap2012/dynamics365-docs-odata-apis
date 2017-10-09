@@ -4,7 +4,7 @@ name: "list"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement list EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement list entitytype."
-header: 
+header:
   description: "Group of existing or potential customers created for a marketing campaign or other sales purposes."
   entity_set_path: "[organization URI]/api/data/v9.0/lists"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Marketing List
   primary_key: listid
   primary_name_attribute: listname
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -400,9 +400,9 @@ operations:
 solutions:
   description: "The following solutions include the list entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
   - Microsoft.Dynamics.CRM.msdynce_Marketing
-# This entity has no remarks.
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

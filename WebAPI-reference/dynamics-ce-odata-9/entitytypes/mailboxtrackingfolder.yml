@@ -4,7 +4,7 @@ name: "mailboxtrackingfolder"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement mailboxtrackingfolder EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement mailboxtrackingfolder entitytype."
-header: 
+header:
   description: "Stores data about what folders for a mailbox are auto tracked"
   entity_set_path: "[organization URI]/api/data/v9.0/mailboxtrackingfolders"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Mailbox Auto Tracking Folder
   primary_key: mailboxtrackingfolderid
-  primary_name_attribute: None
-  operations_supported: 
+  # This entity doesn't have a primaryAttributeName
+  operations_supported:
   - POST
   - PATCH
   - DELETE
@@ -1240,7 +1240,7 @@ solutions:
   description: "The following solutions include the mailboxtrackingfolder entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.System
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

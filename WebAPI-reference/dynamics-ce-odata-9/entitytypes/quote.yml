@@ -4,7 +4,7 @@ name: "quote"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement quote EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-02"
+  ms.date: "2017-10-09"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,14 +14,14 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement quote entitytype."
-header: 
+header:
   description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
   entity_set_path: "[organization URI]/api/data/v9.0/quotes"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Quote
   primary_key: quoteid
   primary_name_attribute: name
-  operations_supported: 
+  operations_supported:
   - POST
   - GET
   - PATCH
@@ -1174,11 +1174,11 @@ solutions:
   description: "The following solutions include the quote entity type."
   solution_items:
   - Microsoft.Dynamics.CRM.FieldService
-  - Microsoft.Dynamics.CRM.msdynce_Sales
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
   - Microsoft.Dynamics.CRM.msdynce_CRMExtensions
+  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - Microsoft.Dynamics.CRM.msdynce_Sales
   - Microsoft.Dynamics.CRM.ProjectService
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
