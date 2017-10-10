@@ -1,3 +1,5 @@
+name: Customer Engagement Web API Reference
+href: index.md
 items:
 - uid: Microsoft.Dynamics.CRM.EntityTypeIndex
   name: EntityType Reference
