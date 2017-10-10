@@ -103,7 +103,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {},
-    "fileMetadata": {},
+    "fileMetadata": {
+      "breadcrumb_path": {
+        "web-api/**.*": "bc/toc.yml"
+      }
+    },
     "template": [],
     "dest": "WebAPI-reference"
   }
