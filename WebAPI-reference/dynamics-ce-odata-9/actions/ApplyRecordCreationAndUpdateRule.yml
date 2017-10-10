@@ -21,7 +21,7 @@ owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
 parameters:
-  description: "Parameters allow for data to be passed to the action."
+  description: "Parameters allowed for data to be passed to the action."
   parameter_items:
   - name: Target
     type: Microsoft.Dynamics.CRM.crmbaseentity
