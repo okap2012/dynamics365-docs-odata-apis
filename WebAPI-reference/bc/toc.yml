@@ -1,11 +1,11 @@
 - name: Dynamics 365
-  tocHref: /web-api/
+  tocHref: /dynamics365/customer-engagement/web-api/
   topicHref: /dynamics365/
   items:
   - name: Developer Documentation
-    tocHref: /web-api/
+    tocHref: /dynamics365/customer-engagement/web-api/
     topicHref: /dynamics365/customer-engagement/developer/index
     items:
     - name: Web API Reference
-      tocHref: /web-api/
+      tocHref: /dynamics365/customer-engagement/web-api/
       topicHref: /dynamics365/customer-engagement/web-api/index
