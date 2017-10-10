@@ -105,7 +105,7 @@
     "globalMetadata": {},
     "fileMetadata": {
       "breadcrumb_path": {
-        "web-api/**.*": "bc/toc.yml"
+        "dynamics-ce-odata-9/**.*": "bc/toc.yml"
       }
     },
     "template": [],
