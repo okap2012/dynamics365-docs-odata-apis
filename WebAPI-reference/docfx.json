@@ -4,7 +4,8 @@
 	  {
         "files": [
           "*.md",
-          "*.yml"
+          "*.yml",
+          "bc/toc.yml"
         ],
 		"src": "dynamics-ce-odata-9",
 		"version": "dynamics-ce-odata-9",
