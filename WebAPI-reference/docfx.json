@@ -103,12 +103,10 @@
      },
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {
-      "breadcrumb_path": {
-        "dynamics-ce-odata-9/**.*": "bc/toc.yml"
-      }
+    "globalMetadata": {
+      "breadcrumb_path": "/WebAPI-reference/bc/toc.json"
     },
+    "fileMetadata": {},
     "template": [],
     "dest": "WebAPI-reference"
   }
