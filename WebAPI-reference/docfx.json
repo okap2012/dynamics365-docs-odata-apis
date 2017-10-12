@@ -84,12 +84,9 @@
       },
       {
         "files": [
-          "*.md",
-          "*.yml"
+          "bc/toc.yml"
         ],
-        "src": "bc",
-        "version": "dynamics-ce-odata-9",
-        "dest": "./"
+        "version": "dynamics-ce-odata-9"
       }
     ],
     "resource": [
