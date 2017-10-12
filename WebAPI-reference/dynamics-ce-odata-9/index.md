@@ -1,3 +1,3 @@
 ---
-redirect_url: /dynamics365/customer-engagement/developer/web-api/about
+redirect_url: /dynamics365/customer-engagement/web-api/about
 ---
