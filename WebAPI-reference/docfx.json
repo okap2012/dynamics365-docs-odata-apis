@@ -1,87 +1,95 @@
 {
   "build": {
     "content": [
-	  {
-        "files": [
-          "*.md",
-          "*.yml",
-          "bc/toc.yml"
-        ],
-		"src": "dynamics-ce-odata-9",
-		"version": "dynamics-ce-odata-9",
-		"dest": "./"
-      },
-	  {
+      {
         "files": [
           "*.md",
           "*.yml"
         ],
-		"src": "dynamics-ce-odata-9/solutions",
-		"version": "dynamics-ce-odata-9",
-		"dest": "./"
-      },
-	  {
-        "files": [
-          "*.md",
-          "*.yml"
-        ],
-		"src": "dynamics-ce-odata-9/queryfunctions",
-		"version": "dynamics-ce-odata-9",
-		"dest": "./"
-      },
-	  {
-        "files": [
-          "*.md",
-          "*.yml"
-        ],
-		"src": "dynamics-ce-odata-9/metadataentitytypes",
-		"version": "dynamics-ce-odata-9",
-		"dest": "./"
-      },
-	  {
-        "files": [
-          "*.md",
-          "*.yml"
-        ],
-		"src": "dynamics-ce-odata-9/functions",
-		"version": "dynamics-ce-odata-9",
-		"dest": "./"
+        "src": "dynamics-ce-odata-9",
+        "version": "dynamics-ce-odata-9",
+        "dest": "./"
       },
       {
         "files": [
           "*.md",
           "*.yml"
         ],
-		"src": "dynamics-ce-odata-9/actions",
-		"version": "dynamics-ce-odata-9",
-		"dest": "./"
+        "src": "dynamics-ce-odata-9/solutions",
+        "version": "dynamics-ce-odata-9",
+        "dest": "./"
       },
-	  {
+      {
         "files": [
           "*.md",
           "*.yml"
         ],
-		"src": "dynamics-ce-odata-9/complextypes",
-		"version": "dynamics-ce-odata-9",
-		"dest": "./"
+        "src": "dynamics-ce-odata-9/queryfunctions",
+        "version": "dynamics-ce-odata-9",
+        "dest": "./"
       },
-	  {
+      {
         "files": [
           "*.md",
           "*.yml"
         ],
-		"src": "dynamics-ce-odata-9/entitytypes",
-		"version": "dynamics-ce-odata-9",
-		"dest": "./"
+        "src": "dynamics-ce-odata-9/metadataentitytypes",
+        "version": "dynamics-ce-odata-9",
+        "dest": "./"
       },
-	  {
+      {
         "files": [
           "*.md",
           "*.yml"
         ],
-		"src": "dynamics-ce-odata-9/enumtypes",
-		"version": "dynamics-ce-odata-9",
-		"dest": "./"
+        "src": "dynamics-ce-odata-9/functions",
+        "version": "dynamics-ce-odata-9",
+        "dest": "./"
+      },
+      {
+        "files": [
+          "*.md",
+          "*.yml"
+        ],
+        "src": "dynamics-ce-odata-9/actions",
+        "version": "dynamics-ce-odata-9",
+        "dest": "./"
+      },
+      {
+        "files": [
+          "*.md",
+          "*.yml"
+        ],
+        "src": "dynamics-ce-odata-9/complextypes",
+        "version": "dynamics-ce-odata-9",
+        "dest": "./"
+      },
+      {
+        "files": [
+          "*.md",
+          "*.yml"
+        ],
+        "src": "dynamics-ce-odata-9/entitytypes",
+        "version": "dynamics-ce-odata-9",
+        "dest": "./"
+      },
+      {
+        "files": [
+          "*.md",
+          "*.yml"
+        ],
+        "src": "dynamics-ce-odata-9/enumtypes",
+        "version": "dynamics-ce-odata-9",
+        "dest": "./"
+      },
+      {
+        "files": [
+          "*.md",
+          "*.yml"
+        ],
+        "src": "bc",
+        "version": "dynamics-ce-odata-9",
+        "dest": "./"
       }
     ],
     "resource": [
@@ -96,18 +104,20 @@
         ]
       }
     ],
-	"versions": { 
-       "dynamics-ce-odata-9": { 
-         "dest": "dynamics-ce-odata-9" 
-       }
-     },
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "breadcrumb_path": "/WebAPI-reference/bc/toc.json"
+    "versions": {
+      "dynamics-ce-odata-9": {
+        "dest": "dynamics-ce-odata-9"
+      }
     },
-    "fileMetadata": {},
-    "template": [],
+    "overwrite": [ ],
+    "externalReference": [ ],
+    "globalMetadata": {
+      "breadcrumb_path": "bc/toc.yml"
+    },
+    "fileMetadata": {
+
+    },
+    "template": [ ],
     "dest": "WebAPI-reference"
   }
 }
