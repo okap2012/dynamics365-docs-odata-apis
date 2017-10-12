@@ -1,11 +1,11 @@
 - name: Dynamics 365
-  tocHref: /WebAPI-reference/dynamics-ce-odata-9/
-  topicHref: /dynamics365/
+  tocHref: /dynamics365/
+  topicHref: /dynamics365/index
   items:
   - name: Developer Documentation
-    tocHref: /WebAPI-reference/dynamics-ce-odata-9/
+    tocHref: /dynamics365/customer-engagement/developer/
     topicHref: /dynamics365/customer-engagement/developer/index
     items:
     - name: Web API Reference
-      tocHref: /WebAPI-reference/dynamics-ce-odata-9/
+      tocHref: /dynamics365/customer-engagement/web-api/
       topicHref: /dynamics365/customer-engagement/web-api/index
