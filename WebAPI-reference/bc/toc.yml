@@ -3,5 +3,9 @@
   topicHref: /dynamics365/index
   items:
   - name: Developer Documentation
-    tocHref: /dynamics365/customer-engagement/developer/
+    tocHref: /dynamics365/customer-engagement/web-api/
     topicHref: /dynamics365/customer-engagement/developer/index
+      items:
+      - name: Customer Engagement Web API Reference
+        tocHref: /dynamics365/customer-engagement/developer/web-api/about
+        topicHref: /dynamics365/customer-engagement/developer/web-api/about
