@@ -4,7 +4,7 @@ name: "RemoveSolutionComponent"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RemoveSolutionComponent Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "2017-10-13"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -46,7 +46,9 @@ return_type:
 entities:
   description: "Use the RemoveSolutionComponent action with this entity type:"
   entity_items:
-  - Microsoft.Dynamics.CRM.solutioncomponent
+  - type: Microsoft.Dynamics.CRM.solutioncomponent
+    displayName: Solution Component
+    description: A component of a CRM solution.
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

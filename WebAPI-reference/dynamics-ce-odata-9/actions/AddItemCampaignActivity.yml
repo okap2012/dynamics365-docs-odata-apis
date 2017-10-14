@@ -4,7 +4,7 @@ name: "AddItemCampaignActivity"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement AddItemCampaignActivity Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "2017-10-13"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -41,8 +41,12 @@ return_type:
 entities:
   description: "Use the AddItemCampaignActivity action with the following entity types:"
   entity_items:
-  - Microsoft.Dynamics.CRM.campaign
-  - Microsoft.Dynamics.CRM.campaignactivity
+  - type: Microsoft.Dynamics.CRM.campaign
+    displayName: Campaign
+    description: Container for campaign activities and responses, sales literature, products, and lists to create, plan, execute, and track the results of a specific marketing campaign through its life.
+  - type: Microsoft.Dynamics.CRM.campaignactivity
+    displayName: Campaign Activity
+    description: Task performed, or to be performed, by a user for planning or running a campaign.
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

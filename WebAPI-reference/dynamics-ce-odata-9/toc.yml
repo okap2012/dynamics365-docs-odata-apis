@@ -1,4 +1,5 @@
-- name: Web API Reference
+items:
+- name: "Web API Reference"
   href: about.md
   items:
   - uid: Microsoft.Dynamics.CRM.EntityTypeIndex

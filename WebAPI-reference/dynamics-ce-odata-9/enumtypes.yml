@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.EnumTypeIndex
 name: Web API EnumType Reference
 title: "Dynamics 365 Customer Engagement Web API EnumType Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "2017-10-09"
+  ms.date: "2017-10-13"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,47 +14,89 @@ metadata:
   manager: "jdaly"
 description: "An EnumType represents an enumeration type in an OData v4 entity model. "
 in_this_section:
-- Microsoft.Dynamics.CRM.AccessRights
-- Microsoft.Dynamics.CRM.AssociatedMenuBehavior
-- Microsoft.Dynamics.CRM.AssociatedMenuGroup
-- Microsoft.Dynamics.CRM.AttributeRequiredLevel
-- Microsoft.Dynamics.CRM.AttributeTypeCode
-- Microsoft.Dynamics.CRM.BusinessNotificationParameterType
-- Microsoft.Dynamics.CRM.BusinessNotificationSeverity
-- Microsoft.Dynamics.CRM.CascadeType
-- Microsoft.Dynamics.CRM.ConditionOperator
-- Microsoft.Dynamics.CRM.DateTimeFormat
-- Microsoft.Dynamics.CRM.DeletedMetadataFilters
-- Microsoft.Dynamics.CRM.EndpointAccessType
-- Microsoft.Dynamics.CRM.EndpointType
-- Microsoft.Dynamics.CRM.EntityFilters
-- Microsoft.Dynamics.CRM.EntityKeyIndexStatus
-- Microsoft.Dynamics.CRM.ErrorType
-- Microsoft.Dynamics.CRM.ImeMode
-- Microsoft.Dynamics.CRM.IntegerFormat
-- Microsoft.Dynamics.CRM.JoinOperator
-- Microsoft.Dynamics.CRM.LogicalOperator
-- Microsoft.Dynamics.CRM.LookupFormat
-- Microsoft.Dynamics.CRM.ManagedPropertyEvaluationPriority
-- Microsoft.Dynamics.CRM.ManagedPropertyOperation
-- Microsoft.Dynamics.CRM.ManagedPropertyType
-- Microsoft.Dynamics.CRM.MetadataConditionOperator
-- Microsoft.Dynamics.CRM.OptionSetType
-- Microsoft.Dynamics.CRM.OrderType
-- Microsoft.Dynamics.CRM.OrganizationState
-- Microsoft.Dynamics.CRM.OwnershipTypes
-- Microsoft.Dynamics.CRM.PrivilegeDepth
-- Microsoft.Dynamics.CRM.PrivilegeType
-- Microsoft.Dynamics.CRM.PropagationOwnershipOptions
-- Microsoft.Dynamics.CRM.RelationshipType
-- Microsoft.Dynamics.CRM.RibbonLocationFilters
-- Microsoft.Dynamics.CRM.RollupType
-- Microsoft.Dynamics.CRM.SearchDirection
-- Microsoft.Dynamics.CRM.SecurityTypes
-- Microsoft.Dynamics.CRM.StringFormat
-- Microsoft.Dynamics.CRM.SubCode
-- Microsoft.Dynamics.CRM.TargetFieldType
-- Microsoft.Dynamics.CRM.TimeCode
+items:
+- type: Microsoft.Dynamics.CRM.AccessRights
+  description: "Contains the possible access rights for a user. "
+- type: Microsoft.Dynamics.CRM.AssociatedMenuBehavior
+  description: "Describes the behavior of the associated menu for a one-to-many relationship. "
+- type: Microsoft.Dynamics.CRM.AssociatedMenuGroup
+  description: "Describes the group in which to display the associated menu for an entity relationship "
+- type: Microsoft.Dynamics.CRM.AttributeRequiredLevel
+  description: "Describes the requirement level for an attribute. "
+- type: Microsoft.Dynamics.CRM.AttributeTypeCode
+  description: "Describes the type of an attribute. "
+- type: Microsoft.Dynamics.CRM.BusinessNotificationParameterType
+  description: "For internal use only."
+- type: Microsoft.Dynamics.CRM.BusinessNotificationSeverity
+  description: "For internal use only."
+- type: Microsoft.Dynamics.CRM.CascadeType
+  description: "Describes the type of behavior for a specific action applied to the referenced entity in a one-to-many entity relationship. "
+- type: Microsoft.Dynamics.CRM.ConditionOperator
+  description: "Describes the type of comparison in a condition expression. "
+- type: Microsoft.Dynamics.CRM.DateTimeFormat
+  description: "Describes the formatting of a DateTimeAttributeMetadata attribute. "
+- type: Microsoft.Dynamics.CRM.DeletedMetadataFilters
+  description: "Not Found"
+- type: Microsoft.Dynamics.CRM.EndpointAccessType
+  description: "Indicates the type of network access an endpoint has. "
+- type: Microsoft.Dynamics.CRM.EndpointType
+  description: "Identifies the type of service available at an endpoint. "
+- type: Microsoft.Dynamics.CRM.EntityFilters
+  description: "Describes the type of entity metadata to retrieve. "
+- type: Microsoft.Dynamics.CRM.EntityKeyIndexStatus
+  description: "Represents the enumerator for the entity key status when the index creation job is in progress. "
+- type: Microsoft.Dynamics.CRM.ErrorType
+  description: "Not Found"
+- type: Microsoft.Dynamics.CRM.ImeMode
+  description: "Describes the input method editor mode "
+- type: Microsoft.Dynamics.CRM.IntegerFormat
+  description: "Describes the formatting of an integer attribute. "
+- type: Microsoft.Dynamics.CRM.JoinOperator
+  description: " the possible values for a join operator in a LinkEntity. "
+- type: Microsoft.Dynamics.CRM.LogicalOperator
+  description: "The possible values for an operator in a FilterExpression. "
+- type: Microsoft.Dynamics.CRM.LookupFormat
+  description: "Not Found"
+- type: Microsoft.Dynamics.CRM.ManagedPropertyEvaluationPriority
+  description: "For internal use only."
+- type: Microsoft.Dynamics.CRM.ManagedPropertyOperation
+  description: "For internal use only."
+- type: Microsoft.Dynamics.CRM.ManagedPropertyType
+  description: "For internal use only."
+- type: Microsoft.Dynamics.CRM.MetadataConditionOperator
+  description: "Not Found"
+- type: Microsoft.Dynamics.CRM.OptionSetType
+  description: "Indicates the type of option set. "
+- type: Microsoft.Dynamics.CRM.OrderType
+  description: "The possible values for the order type in an OrderExpression. "
+- type: Microsoft.Dynamics.CRM.OrganizationState
+  description: "Describes the state of the organization. "
+- type: Microsoft.Dynamics.CRM.OwnershipTypes
+  description: "Specifies the type of ownership for an entity. "
+- type: Microsoft.Dynamics.CRM.PrivilegeDepth
+  description: "Contains the possible values for the depth of a privilege within a role. "
+- type: Microsoft.Dynamics.CRM.PrivilegeType
+  description: "Describes the type of operation for the privilege "
+- type: Microsoft.Dynamics.CRM.PropagationOwnershipOptions
+  description: "Contains the possible values for propagation ownership options. "
+- type: Microsoft.Dynamics.CRM.RelationshipType
+  description: "Specifies the type of entity relationship. "
+- type: Microsoft.Dynamics.CRM.RibbonLocationFilters
+  description: "Contains the values for ribbon filters for an entity. "
+- type: Microsoft.Dynamics.CRM.RollupType
+  description: "The possible values for the RollupType property in the Rollup Function, which you use to retrieve all the entity records for a specified record. "
+- type: Microsoft.Dynamics.CRM.SearchDirection
+  description: "Contains the possible values for the search direction in an appointment request. "
+- type: Microsoft.Dynamics.CRM.SecurityTypes
+  description: "Describes the security type for the relationship. "
+- type: Microsoft.Dynamics.CRM.StringFormat
+  description: "Describes the formatting of a string attribute for the StringAttributeMetadata.Format property. (Deprecated)"
+- type: Microsoft.Dynamics.CRM.SubCode
+  description: "Contains the possible values for a subcode, used in scheduling appointments. "
+- type: Microsoft.Dynamics.CRM.TargetFieldType
+  description: "Indicates the attribute type for the target of the InitializeFromRequest message.  "
+- type: Microsoft.Dynamics.CRM.TimeCode
+  description: "Contains the possible values for a time code, used when querying a schedule. "
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

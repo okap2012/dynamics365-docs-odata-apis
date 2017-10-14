@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
 name: Web API Metadata EntityType Reference
 title: "Dynamics 365 Customer Engagement Web API Metadata EntityType Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "2017-10-09"
+  ms.date: "2017-10-13"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,37 +14,69 @@ metadata:
   manager: "jdaly"
 description: "Metadata entity types represent the types used in the Microsoft Dynamics CRM metadata model. See [Use the Web API with CRM metadata](https://msdn.microsoft.com/library/mt607833.aspx) for information about how to use these entity types. "
 in_this_section:
-- Microsoft.Dynamics.CRM.AttributeMetadata
-- Microsoft.Dynamics.CRM.BigIntAttributeMetadata
-- Microsoft.Dynamics.CRM.BooleanAttributeMetadata
-- Microsoft.Dynamics.CRM.BooleanOptionSetMetadata
-- Microsoft.Dynamics.CRM.crmmodelbaseentity
-- Microsoft.Dynamics.CRM.DateTimeAttributeMetadata
-- Microsoft.Dynamics.CRM.DecimalAttributeMetadata
-- Microsoft.Dynamics.CRM.DoubleAttributeMetadata
-- Microsoft.Dynamics.CRM.EntityKeyMetadata
-- Microsoft.Dynamics.CRM.EntityMetadata
-- Microsoft.Dynamics.CRM.EntityNameAttributeMetadata
-- Microsoft.Dynamics.CRM.EnumAttributeMetadata
-- Microsoft.Dynamics.CRM.ImageAttributeMetadata
-- Microsoft.Dynamics.CRM.IntegerAttributeMetadata
-- Microsoft.Dynamics.CRM.LookupAttributeMetadata
-- Microsoft.Dynamics.CRM.ManagedPropertyAttributeMetadata
-- Microsoft.Dynamics.CRM.ManagedPropertyMetadata
-- Microsoft.Dynamics.CRM.ManyToManyRelationshipMetadata
-- Microsoft.Dynamics.CRM.MemoAttributeMetadata
-- Microsoft.Dynamics.CRM.MetadataBase
-- Microsoft.Dynamics.CRM.MoneyAttributeMetadata
-- Microsoft.Dynamics.CRM.MultiSelectPicklistAttributeMetadata
-- Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata
-- Microsoft.Dynamics.CRM.OptionSetMetadata
-- Microsoft.Dynamics.CRM.OptionSetMetadataBase
-- Microsoft.Dynamics.CRM.PicklistAttributeMetadata
-- Microsoft.Dynamics.CRM.RelationshipMetadataBase
-- Microsoft.Dynamics.CRM.StateAttributeMetadata
-- Microsoft.Dynamics.CRM.StatusAttributeMetadata
-- Microsoft.Dynamics.CRM.StringAttributeMetadata
-- Microsoft.Dynamics.CRM.UniqueIdentifierAttributeMetadata
+entity_items:
+- type: Microsoft.Dynamics.CRM.AttributeMetadata
+  description: "Contains all the metadata for an entity attribute."
+- type: Microsoft.Dynamics.CRM.BigIntAttributeMetadata
+  description: "Contains the metadata for a BigInt attribute."
+- type: Microsoft.Dynamics.CRM.BooleanAttributeMetadata
+  description: "Contains the metadata for a Boolean attribute."
+- type: Microsoft.Dynamics.CRM.BooleanOptionSetMetadata
+  description: "Contains the data for the options in a boolean attribute."
+- type: Microsoft.Dynamics.CRM.crmmodelbaseentity
+  description: "An abstract EntityType from which all metadata entity types inherit."
+- type: Microsoft.Dynamics.CRM.DateTimeAttributeMetadata
+  description: "Contains the metadata for a DateTime attribute."
+- type: Microsoft.Dynamics.CRM.DecimalAttributeMetadata
+  description: "Contains the metadata for a Decimal attribute."
+- type: Microsoft.Dynamics.CRM.DoubleAttributeMetadata
+  description: "Contains the metadata for a Double attribute."
+- type: Microsoft.Dynamics.CRM.EntityKeyMetadata
+  description: "Contains the metadata for entity key."
+- type: Microsoft.Dynamics.CRM.EntityMetadata
+  description: "Contains the metadata for an entity."
+- type: Microsoft.Dynamics.CRM.EntityNameAttributeMetadata
+  description: "Contains the metadata for an attribute that references an entity."
+- type: Microsoft.Dynamics.CRM.EnumAttributeMetadata
+  description: "An abstract class that contains the data for an attribute that provides options."
+- type: Microsoft.Dynamics.CRM.ImageAttributeMetadata
+  description: "Contains the metadata for a Image attribute"
+- type: Microsoft.Dynamics.CRM.IntegerAttributeMetadata
+  description: "Contains the metadata for a Integer attribute."
+- type: Microsoft.Dynamics.CRM.LookupAttributeMetadata
+  description: "Contains the metadata for a lookup attribute."
+- type: Microsoft.Dynamics.CRM.ManagedPropertyAttributeMetadata
+  description: "For internal use only."
+- type: Microsoft.Dynamics.CRM.ManagedPropertyMetadata
+  description: "For internal use only."
+- type: Microsoft.Dynamics.CRM.ManyToManyRelationshipMetadata
+  description: "Contains the metadata for a many-to-many entity relationship."
+- type: Microsoft.Dynamics.CRM.MemoAttributeMetadata
+  description: "Contains the metadata for the attribute type Memo."
+- type: Microsoft.Dynamics.CRM.MetadataBase
+  description: "An abstract EntityType for used as base type for other Metadata EntityTypes, containing common metadata information."
+- type: Microsoft.Dynamics.CRM.MoneyAttributeMetadata
+  description: "Contains the metadata for a Money attribute."
+- type: Microsoft.Dynamics.CRM.MultiSelectPicklistAttributeMetadata
+  description: ""
+- type: Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata
+  description: "Contains the metadata for a one-to-many entity relationship."
+- type: Microsoft.Dynamics.CRM.OptionSetMetadata
+  description: "Contains metadata that defines a set of options."
+- type: Microsoft.Dynamics.CRM.OptionSetMetadataBase
+  description: "Contains data that defines a set of options."
+- type: Microsoft.Dynamics.CRM.PicklistAttributeMetadata
+  description: "Contains the metadata for a Picklist attribute."
+- type: Microsoft.Dynamics.CRM.RelationshipMetadataBase
+  description: "Contains the metadata for an entity relationship."
+- type: Microsoft.Dynamics.CRM.StateAttributeMetadata
+  description: "Contains the metadata for a State attribute."
+- type: Microsoft.Dynamics.CRM.StatusAttributeMetadata
+  description: "Contains the metadata for a Status attribute."
+- type: Microsoft.Dynamics.CRM.StringAttributeMetadata
+  description: "Contains the metadata for an String attribute."
+- type: Microsoft.Dynamics.CRM.UniqueIdentifierAttributeMetadata
+  description: "Represents the unique identifier attribute metadata."
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

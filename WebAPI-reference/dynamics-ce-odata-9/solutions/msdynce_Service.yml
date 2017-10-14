@@ -4,7 +4,7 @@ name: "Service"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Service Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "2017-10-13"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for service."
  unique_name: msdynce_Service
- version: "9.0.0.1053"
+ version: "9.0.1.61"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."

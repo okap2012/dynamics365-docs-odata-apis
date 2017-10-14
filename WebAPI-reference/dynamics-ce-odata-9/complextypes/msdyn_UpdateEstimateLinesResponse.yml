@@ -4,7 +4,7 @@ name: "msdyn_UpdateEstimateLinesResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_UpdateEstimateLinesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "2017-10-13"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 

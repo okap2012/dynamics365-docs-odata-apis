@@ -4,7 +4,7 @@ name: "salesorder"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement salesorder EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "2017-10-13"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -622,16 +622,16 @@ properties:
       iscomputed: false
       isreadonly: false
       options:
-        - value: 1
-          label: "New"
-        - value: 2
-          label: "Pending"
         - value: 690970000
           label: "On hold"
         - value: 3
           label: "In Progress"
         - value: 4
           label: "No Money"
+        - value: 1
+          label: "New"
+        - value: 2
+          label: "Pending"
         - value: 100001
           label: "Complete"
         - value: 100002

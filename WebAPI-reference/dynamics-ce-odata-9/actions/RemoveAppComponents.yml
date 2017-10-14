@@ -4,7 +4,7 @@ name: "RemoveAppComponents"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RemoveAppComponents Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "2017-10-13"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -37,7 +37,9 @@ hasreturnvalue: false
 entities:
   description: "Use the RemoveAppComponents action with this entity type:"
   entity_items:
-  - Microsoft.Dynamics.CRM.appmodule
+  - type: Microsoft.Dynamics.CRM.appmodule
+    displayName: App
+    description: A role-based, modular business app that provides task-based functionality for a particular area of work.
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

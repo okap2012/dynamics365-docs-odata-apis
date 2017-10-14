@@ -4,7 +4,7 @@ name: "OData v4 Data Provider"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement OData v4 Data Provider Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "2017-10-13"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,7 +18,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: ODatav4DataProvider
- version: "9.0.0.0"
+ version: "9.0.0.5"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
