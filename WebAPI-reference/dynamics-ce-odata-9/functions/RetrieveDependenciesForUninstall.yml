@@ -4,7 +4,7 @@ name: "RetrieveDependenciesForUninstall"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveDependenciesForUninstall Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -33,7 +33,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.dependency
   iscollection: true
   nullable: false
-  description: "Contains the results from the RetrieveDependenciesForUninstall function. "
+  description: "Retrieves a list of the solution component dependencies that can prevent you from uninstalling a managed solution.  "
 entities:
   description: "Use the RetrieveDependenciesForUninstall function with this entity type:"
   entity_items:

@@ -4,7 +4,7 @@ name: "RetrieveRecordWall"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveRecordWall Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -76,7 +76,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.post
   iscollection: true
   nullable: false
-  description: "Contains the results from the RetrieveRecordWall function."
+  description: "Retrieves pages of posts, including comments for each post, for a specified record. "
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:

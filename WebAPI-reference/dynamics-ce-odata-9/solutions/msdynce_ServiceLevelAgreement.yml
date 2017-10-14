@@ -4,7 +4,7 @@ name: "Service Level Agreement (SLA)"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Service Level Agreement (SLA) Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -23,9 +23,12 @@ header:
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.sla
-   - Microsoft.Dynamics.CRM.slaitem
-   - Microsoft.Dynamics.CRM.slakpiinstance
+   - type: Microsoft.Dynamics.CRM.sla
+     description: "Contains information about the tracked service-level KPIs for cases that belong to different customers."
+   - type: Microsoft.Dynamics.CRM.slaitem
+     description: "Contains information about a tracked support KPI for a specific customer."
+   - type: Microsoft.Dynamics.CRM.slakpiinstance
+     description: "Service level agreement (SLA) key performance indicator (KPI) instance that is tracked for an individual case"
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

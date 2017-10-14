@@ -4,7 +4,7 @@ name: "RetrieveRolePrivilegesRole"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveRolePrivilegesRole Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -33,7 +33,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveRolePrivilegesRoleResponse
   iscollection: false
   nullable: false
-  description: "Contains the results from the RetrieveRolePrivilegesRole function. "
+  description: "Retrieves the privileges that are assigned to the specified role.  "
 entities:
   description: "Use the RetrieveRolePrivilegesRole function with this entity type:"
   entity_items:

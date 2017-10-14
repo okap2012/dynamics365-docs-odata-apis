@@ -4,7 +4,7 @@ name: "Field Service"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Field Service Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -23,130 +23,251 @@ header:
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.account
-   - Microsoft.Dynamics.CRM.activitypointer
-   - Microsoft.Dynamics.CRM.annotation
-   - Microsoft.Dynamics.CRM.bookableresource
-   - Microsoft.Dynamics.CRM.bookableresourcebooking
-   - Microsoft.Dynamics.CRM.bookableresourcebookingheader
-   - Microsoft.Dynamics.CRM.bookableresourcecategory
-   - Microsoft.Dynamics.CRM.bookableresourcecategoryassn
-   - Microsoft.Dynamics.CRM.bookableresourcecharacteristic
-   - Microsoft.Dynamics.CRM.bookableresourcegroup
-   - Microsoft.Dynamics.CRM.bookingstatus
-   - Microsoft.Dynamics.CRM.businessunit
-   - Microsoft.Dynamics.CRM.characteristic
-   - Microsoft.Dynamics.CRM.contact
-   - Microsoft.Dynamics.CRM.incident
-   - Microsoft.Dynamics.CRM.invoice
-   - Microsoft.Dynamics.CRM.invoicedetail
-   - Microsoft.Dynamics.CRM.lead
-   - Microsoft.Dynamics.CRM.msdyn_actual
-   - Microsoft.Dynamics.CRM.msdyn_agreement
-   - Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
-   - Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
-   - Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
-   - Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
-   - Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask
-   - Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
-   - Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
-   - Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
-   - Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
-   - Microsoft.Dynamics.CRM.msdyn_agreementsubstatus
-   - Microsoft.Dynamics.CRM.msdyn_bookingjournal
-   - Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
-   - Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
-   - Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
-   - Microsoft.Dynamics.CRM.msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
-   - Microsoft.Dynamics.CRM.msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
-   - Microsoft.Dynamics.CRM.msdyn_customerasset
-   - Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem
-   - Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
-   - Microsoft.Dynamics.CRM.msdyn_fieldservicesystemjob
-   - Microsoft.Dynamics.CRM.msdyn_incidenttype
-   - Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
-   - Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
-   - Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
-   - Microsoft.Dynamics.CRM.msdyn_incidenttypeservicetask
-   - Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
-   - Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
-   - Microsoft.Dynamics.CRM.msdyn_inventoryjournal
-   - Microsoft.Dynamics.CRM.msdyn_inventorytransfer
-   - Microsoft.Dynamics.CRM.msdyn_orderinvoicingdate
-   - Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct
-   - Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetup
-   - Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetupdate
-   - Microsoft.Dynamics.CRM.msdyn_organizationalunit
-   - Microsoft.Dynamics.CRM.msdyn_payment
-   - Microsoft.Dynamics.CRM.msdyn_paymentdetail
-   - Microsoft.Dynamics.CRM.msdyn_paymentmethod
-   - Microsoft.Dynamics.CRM.msdyn_paymentterm
-   - Microsoft.Dynamics.CRM.msdyn_postalcode
-   - Microsoft.Dynamics.CRM.msdyn_productinventory
-   - Microsoft.Dynamics.CRM.msdyn_purchaseorder
-   - Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
-   - Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
-   - Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
-   - Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
-   - Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus
-   - Microsoft.Dynamics.CRM.msdyn_quotebookingincident
-   - Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
-   - Microsoft.Dynamics.CRM.msdyn_quotebookingservice
-   - Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask
-   - Microsoft.Dynamics.CRM.msdyn_quotebookingsetup
-   - Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct
-   - Microsoft.Dynamics.CRM.msdyn_quoteinvoicingsetup
-   - Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
-   - Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
-   - Microsoft.Dynamics.CRM.msdyn_resourcepaytype
-   - Microsoft.Dynamics.CRM.msdyn_resourcerequirement
-   - Microsoft.Dynamics.CRM.msdyn_rma
-   - Microsoft.Dynamics.CRM.msdyn_rmaproduct
-   - Microsoft.Dynamics.CRM.msdyn_rmareceipt
-   - Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct
-   - Microsoft.Dynamics.CRM.msdyn_rmasubstatus
-   - Microsoft.Dynamics.CRM.msdyn_rtv
-   - Microsoft.Dynamics.CRM.msdyn_rtvproduct
-   - Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
-   - Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
-   - Microsoft.Dynamics.CRM.msdyn_servicetasktype
-   - Microsoft.Dynamics.CRM.msdyn_shipvia
-   - Microsoft.Dynamics.CRM.msdyn_taxcode
-   - Microsoft.Dynamics.CRM.msdyn_taxcodedetail
-   - Microsoft.Dynamics.CRM.msdyn_timeoffrequest
-   - Microsoft.Dynamics.CRM.msdyn_uniquenumber
-   - Microsoft.Dynamics.CRM.msdyn_warehouse
-   - Microsoft.Dynamics.CRM.msdyn_workorder
-   - Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
-   - Microsoft.Dynamics.CRM.msdyn_workorderdetailsgenerationqueue
-   - Microsoft.Dynamics.CRM.msdyn_workorderincident
-   - Microsoft.Dynamics.CRM.msdyn_workorderproduct
-   - Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
-   - Microsoft.Dynamics.CRM.msdyn_workorderservice
-   - Microsoft.Dynamics.CRM.msdyn_workorderservicetask
-   - Microsoft.Dynamics.CRM.msdyn_workordersubstatus
-   - Microsoft.Dynamics.CRM.msdyn_workordertype
-   - Microsoft.Dynamics.CRM.opportunity
-   - Microsoft.Dynamics.CRM.opportunityproduct
-   - Microsoft.Dynamics.CRM.phonecall
-   - Microsoft.Dynamics.CRM.pricelevel
-   - Microsoft.Dynamics.CRM.product
-   - Microsoft.Dynamics.CRM.productpricelevel
-   - Microsoft.Dynamics.CRM.quote
-   - Microsoft.Dynamics.CRM.quotedetail
-   - Microsoft.Dynamics.CRM.ratingmodel
-   - Microsoft.Dynamics.CRM.ratingvalue
-   - Microsoft.Dynamics.CRM.salesorder
-   - Microsoft.Dynamics.CRM.salesorderdetail
-   - Microsoft.Dynamics.CRM.systemuser
-   - Microsoft.Dynamics.CRM.territory
-   - Microsoft.Dynamics.CRM.transactioncurrency
-   - Microsoft.Dynamics.CRM.uom
-   - Microsoft.Dynamics.CRM.uomschedule
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.activitypointer
+     description: "Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar."
+   - type: Microsoft.Dynamics.CRM.annotation
+     description: "Note that is attached to one or more objects, including other notes."
+   - type: Microsoft.Dynamics.CRM.bookableresource
+     description: "Resource that has capacity which can be allocated to work."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebooking
+     description: "Represents the line details of a resource booking."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+     description: "Shows the reservation table where the summary of resource bookings are persisted."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecategory
+     description: "Resource category master used to categorize people and equipment."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+     description: "Association entity to model the categorization of resources."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+     description: "Associates resources with their characteristics and specifies the proficiency level of a resource for that characteristic."
+   - type: Microsoft.Dynamics.CRM.bookableresourcegroup
+     description: "Associates resources with resource groups that they are a member of."
+   - type: Microsoft.Dynamics.CRM.bookingstatus
+     description: "Allows creation of multiple sub statuses mapped to a booking status option."
+   - type: Microsoft.Dynamics.CRM.businessunit
+     description: "Business, division, or department in the Microsoft Dynamics 365 database."
+   - type: Microsoft.Dynamics.CRM.characteristic
+     description: "Skills, education and certifications of resources."
+   - type: Microsoft.Dynamics.CRM.contact
+     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+   - type: Microsoft.Dynamics.CRM.incident
+     description: "Service request case associated with a contract."
+   - type: Microsoft.Dynamics.CRM.invoice
+     description: "Order that has been billed."
+   - type: Microsoft.Dynamics.CRM.invoicedetail
+     description: "Line item in an invoice containing detailed billing information for a product."
+   - type: Microsoft.Dynamics.CRM.lead
+     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
+   - type: Microsoft.Dynamics.CRM.msdyn_actual
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_agreement
+     description: "Provides ability to store details about service agreements you have with your customers"
+   - type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
+     description: "Specify the maintenance booking dates for the agreement."
+   - type: Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
+     description: "Specify the booking incident for the agreement."
+   - type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
+     description: "Specify the booking product for the agreement."
+   - type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
+     description: "Specify the booking service for the agreement."
+   - type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask
+     description: "Specify the booking service task for the agreement."
+   - type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
+     description: "Specify the maintenance bookings for the agreement."
+   - type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
+     description: "Specify the invoice dates for the agreement."
+   - type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+     description: "Specify the booking product invoice for the agreement."
+   - type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
+     description: "Specify the invoices for this agreement."
+   - type: Microsoft.Dynamics.CRM.msdyn_agreementsubstatus
+     description: "Specify custom agreement sub-statuses, which can be used to specify the current agreement status more precisely."
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingjournal
+     description: "System generated journal to calculate the cost of the resource bookings"
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
+     description: "Tracks status changes of bookings and timestamps the change of the status"
+   - type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
+     description: "Base entity for process Purchase Order Business Process"
+   - type: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
+     description: "Base entity for process Case to Work Order Business Process"
+   - type: Microsoft.Dynamics.CRM.msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
+     description: "Base entity for process Agreement Business Process"
+   - type: Microsoft.Dynamics.CRM.msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
+     description: "Base entity for process Work Order Business Process"
+   - type: Microsoft.Dynamics.CRM.msdyn_customerasset
+     description: "Specify customer asset."
+   - type: Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem
+     description: "Pricing options in addition to or above the Price List Items"
+   - type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
+     description: "Settings controlling functionality related to Field Service"
+   - type: Microsoft.Dynamics.CRM.msdyn_fieldservicesystemjob
+     description: "An internal entity used to track field service system jobs."
+   - type: Microsoft.Dynamics.CRM.msdyn_incidenttype
+     description: "Incident types define the various types of incidents (issues) that a customer could report, on which work orders are based."
+   - type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
+     description: "Specify characteristic insident type."
+   - type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
+     description: "This entity gives the ability to pre-configure products to be added to a work order when the related incident is added to the work order"
+   - type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
+     description: "This entity gives the ability to pre-configure services to be added to a work order when the related incident is added to the work order"
+   - type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservicetask
+     description: "In this entity you define all the default service tasks that should be added to the work order as soon as this incident type is added to the work order"
+   - type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
+     description: "Records inventory adjustments"
+   - type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
+     description: "Records product affected by an inventory adjustment or inventory transfer"
+   - type: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
+     description: "Inventory change tracking"
+   - type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
+     description: "Records inventory adjustments"
+   - type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingdate
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetup
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetupdate
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+     description: "Division of the company or organization that has a specific cost price list associated to it."
+   - type: Microsoft.Dynamics.CRM.msdyn_payment
+     description: "Specify payment."
+   - type: Microsoft.Dynamics.CRM.msdyn_paymentdetail
+     description: "Specify payment details."
+   - type: Microsoft.Dynamics.CRM.msdyn_paymentmethod
+     description: "Specify payment method."
+   - type: Microsoft.Dynamics.CRM.msdyn_paymentterm
+     description: "Specify payment terms used for billing."
+   - type: Microsoft.Dynamics.CRM.msdyn_postalcode
+     description: "Specify postal codes and their relationship to territories."
+   - type: Microsoft.Dynamics.CRM.msdyn_productinventory
+     description: "Inventory Record"
+   - type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+     description: "Record Purchase Orders pertaining to Work Orders or otherwise"
+   - type: Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
+     description: "Specify purchase order bill."
+   - type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+     description: "Record products to be ordered on purchase order"
+   - type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
+     description: "Specify purchase order receipt."
+   - type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
+     description: "Specify product for purchase order receipt."
+   - type: Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus
+     description: "Specify custom PO sub-statuses, which can be used to specify the current PO status more precisely."
+   - type: Microsoft.Dynamics.CRM.msdyn_quotebookingincident
+     description: "Stores the Incidents associated with Quote and Quote Booking Setup"
+   - type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+     description: "Provides ability to store information about the products that are associated with Quote Booking Setup"
+   - type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+     description: "Stores details about the services associated with Quote Booking Setup "
+   - type: Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_quotebookingsetup
+     description: "Specify the maintenance bookings for the agreement."
+   - type: Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_quoteinvoicingsetup
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
+     description: "Requirement Characteristic"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
+     description: "Requirement Resource Preference"
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcepaytype
+     description: "Pay Types of resources hourly rate to calculate the resource cost"
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+     description: "Entity used to track the high-level information about resource requirements."
+   - type: Microsoft.Dynamics.CRM.msdyn_rma
+     description: "Records RMAs for products to be retuned from customers"
+   - type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+     description: "Records products to be returned on an RMA"
+   - type: Microsoft.Dynamics.CRM.msdyn_rmareceipt
+     description: "Specify RMA receipt."
+   - type: Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct
+     description: "Specify RMA receipt product."
+   - type: Microsoft.Dynamics.CRM.msdyn_rmasubstatus
+     description: "Specify custom RMA sub-statuses, which can be used to specify the current RMA status more precisely."
+   - type: Microsoft.Dynamics.CRM.msdyn_rtv
+     description: "Records RTVs for products to be retuned to vendors"
+   - type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
+     description: "Records products to be returned on an RTV"
+   - type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
+     description: "Specify custom RTV sub-statuses, which can be used to specify the current RTV status more precisely."
+   - type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
+     description: "To store settings of SB by user & tabs"
+   - type: Microsoft.Dynamics.CRM.msdyn_servicetasktype
+     description: "Specify the different service task and labor types that your resources perform as part of their work orders."
+   - type: Microsoft.Dynamics.CRM.msdyn_shipvia
+     description: "Specify the different shipping methods used."
+   - type: Microsoft.Dynamics.CRM.msdyn_taxcode
+     description: "Store tax related information. Each tax code could contain multiple child tax codes, and in that case the tax rate will be determined by the total tax of all children."
+   - type: Microsoft.Dynamics.CRM.msdyn_taxcodedetail
+     description: "In this entity you can link multiple tax codes together to form a group of tax codes to be charged for the customer to form the total tax."
+   - type: Microsoft.Dynamics.CRM.msdyn_timeoffrequest
+     description: "Specify time resource time off request."
+   - type: Microsoft.Dynamics.CRM.msdyn_uniquenumber
+     description: "Internal entity used to store unique number."
+   - type: Microsoft.Dynamics.CRM.msdyn_warehouse
+     description: "Warehouses where inventory products are stored and managed"
+   - type: Microsoft.Dynamics.CRM.msdyn_workorder
+     description: "Work orders store all information about the job performed for an account. Stores incident details, resource, expenses, tasks, communications, billing and more"
+   - type: Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
+     description: "This entity is deprecated."
+   - type: Microsoft.Dynamics.CRM.msdyn_workorderdetailsgenerationqueue
+     description: "Pool for WO Generation"
+   - type: Microsoft.Dynamics.CRM.msdyn_workorderincident
+     description: "Specify work order incidents reported to you by the client. These are also referred to as problem codes."
+   - type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+     description: "In this entity you record all the products proposed and used for a work order"
+   - type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
+     description: "This entity is deprecated."
+   - type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+     description: "Record all services proposed and performed for work order"
+   - type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
+     description: "Store service tasks that are to be performed for this work order"
+   - type: Microsoft.Dynamics.CRM.msdyn_workordersubstatus
+     description: "Specify custom work order sub-statuses, which can be used to specify the current work order status more precisely."
+   - type: Microsoft.Dynamics.CRM.msdyn_workordertype
+     description: "Create different work order types to reflect the different types of work that your company offers. Work Order types are used to control various settings on a work order."
+   - type: Microsoft.Dynamics.CRM.opportunity
+     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
+   - type: Microsoft.Dynamics.CRM.opportunityproduct
+     description: "Association between an opportunity and a product."
+   - type: Microsoft.Dynamics.CRM.phonecall
+     description: "Activity to track a telephone call."
+   - type: Microsoft.Dynamics.CRM.pricelevel
+     description: "Entity that defines pricing levels."
+   - type: Microsoft.Dynamics.CRM.product
+     description: "Information about products and their pricing information."
+   - type: Microsoft.Dynamics.CRM.productpricelevel
+     description: "Information about how to price a product in the specified price level, including pricing method, rounding option, and discount type based on a specified product unit."
+   - type: Microsoft.Dynamics.CRM.quote
+     description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
+   - type: Microsoft.Dynamics.CRM.quotedetail
+     description: "Product line item in a quote. The details include such information as product ID, description, quantity, and cost."
+   - type: Microsoft.Dynamics.CRM.ratingmodel
+     description: "Represents a model to evaluate skills or other related entities."
+   - type: Microsoft.Dynamics.CRM.ratingvalue
+     description: "A unique value associated with a rating model that allows providing a user friendly rating value."
+   - type: Microsoft.Dynamics.CRM.salesorder
+     description: "Quote that has been accepted."
+   - type: Microsoft.Dynamics.CRM.salesorderdetail
+     description: "Line item in a sales order."
+   - type: Microsoft.Dynamics.CRM.systemuser
+     description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
+   - type: Microsoft.Dynamics.CRM.territory
+     description: "Territory represents sales regions."
+   - type: Microsoft.Dynamics.CRM.transactioncurrency
+     description: "Currency in which a financial transaction is carried out."
+   - type: Microsoft.Dynamics.CRM.uom
+     description: "Unit of measure."
+   - type: Microsoft.Dynamics.CRM.uomschedule
+     description: "Grouping of units."
 actions:
   description: "The following actions are included in this solution."
   action_items:
-   - Microsoft.Dynamics.CRM.msdyn_FieldServiceSystemAction
+   - type: Microsoft.Dynamics.CRM.msdyn_FieldServiceSystemAction
+     description: ""
 # There are no remarks for this solution.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

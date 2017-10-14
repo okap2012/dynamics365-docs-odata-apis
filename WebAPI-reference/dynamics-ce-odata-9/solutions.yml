@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.SolutionIndex
 name: Web API Solution Reference
 title: "Dynamics 365 Customer Engagement Web API Solution Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,7 +14,6 @@ metadata:
   manager: "jdaly"
 description: "Solutions include components that are available in the Web API. Solutions can include custom entities, attributes, entity relationships, and custom actions which change the objects available to use in the Web API depending on the solutions installed for the organization. "
 in_this_section:
-items:
 - type: Microsoft.Dynamics.CRM.ActivityFeedsCore
   description: "This solution enables Activity Feeds including Walls for your Microsoft Dynamics 365 organization."
 - type: Microsoft.Dynamics.CRM.AppforOutlook

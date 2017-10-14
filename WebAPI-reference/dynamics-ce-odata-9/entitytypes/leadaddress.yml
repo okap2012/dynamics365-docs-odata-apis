@@ -4,7 +4,7 @@ name: "leadaddress"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement leadaddress EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -284,7 +284,8 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the leadaddress entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
+  - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
+    description: "Dynamics 365 workload for lead management."
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

@@ -4,7 +4,7 @@ name: "Unified Resource Scheduling"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Unified Resource Scheduling Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -23,67 +23,125 @@ header:
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.account
-   - Microsoft.Dynamics.CRM.bookableresource
-   - Microsoft.Dynamics.CRM.bookableresourcebooking
-   - Microsoft.Dynamics.CRM.bookableresourcebookingheader
-   - Microsoft.Dynamics.CRM.bookableresourcecategory
-   - Microsoft.Dynamics.CRM.bookingstatus
-   - Microsoft.Dynamics.CRM.characteristic
-   - Microsoft.Dynamics.CRM.contact
-   - Microsoft.Dynamics.CRM.msdyn_actual
-   - Microsoft.Dynamics.CRM.msdyn_bookingalert
-   - Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
-   - Microsoft.Dynamics.CRM.msdyn_bookingchange
-   - Microsoft.Dynamics.CRM.msdyn_bookingrule
-   - Microsoft.Dynamics.CRM.msdyn_bookingsetupmetadata
-   - Microsoft.Dynamics.CRM.msdyn_clientextension
-   - Microsoft.Dynamics.CRM.msdyn_configuration
-   - Microsoft.Dynamics.CRM.msdyn_organizationalunit
-   - Microsoft.Dynamics.CRM.msdyn_priority
-   - Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
-   - Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
-   - Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
-   - Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
-   - Microsoft.Dynamics.CRM.msdyn_requirementstatus
-   - Microsoft.Dynamics.CRM.msdyn_resourcerequirement
-   - Microsoft.Dynamics.CRM.msdyn_resourcerequirementdetail
-   - Microsoft.Dynamics.CRM.msdyn_resourceterritory
-   - Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
-   - Microsoft.Dynamics.CRM.msdyn_schedulingparameter
-   - Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
-   - Microsoft.Dynamics.CRM.msdyn_timegroup
-   - Microsoft.Dynamics.CRM.msdyn_timegroupdetail
-   - Microsoft.Dynamics.CRM.msdyn_transactionorigin
-   - Microsoft.Dynamics.CRM.msdyn_workhourtemplate
-   - Microsoft.Dynamics.CRM.ratingvalue
-   - Microsoft.Dynamics.CRM.systemuser
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.bookableresource
+     description: "Resource that has capacity which can be allocated to work."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebooking
+     description: "Represents the line details of a resource booking."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+     description: "Shows the reservation table where the summary of resource bookings are persisted."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecategory
+     description: "Resource category master used to categorize people and equipment."
+   - type: Microsoft.Dynamics.CRM.bookingstatus
+     description: "Allows creation of multiple sub statuses mapped to a booking status option."
+   - type: Microsoft.Dynamics.CRM.characteristic
+     description: "Skills, education and certifications of resources."
+   - type: Microsoft.Dynamics.CRM.contact
+     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+   - type: Microsoft.Dynamics.CRM.msdyn_actual
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+     description: "Alerts that notify schedule board users of booking issues or information."
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
+     description: "The status of a booking alert."
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingchange
+     description: "An internal entity used to track changes that affect the schedule board."
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingrule
+     description: "Specify custom rules to be validated by the system before saving a booking record."
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingsetupmetadata
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_clientextension
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_configuration
+     description: "This entity is used to store queries and templates."
+   - type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+     description: "Division of the company or organization that has a specific cost price list associated to it."
+   - type: Microsoft.Dynamics.CRM.msdyn_priority
+     description: "Priorities to be used on bookings. In addition, a color could be specified for each priority type and the color selected will be shown visually on the schedule board."
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
+     description: "Requirement Characteristic"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
+     description: "Requirement of Organization Unit"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
+     description: "Requirement Resource Category"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
+     description: "Requirement Resource Preference"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementstatus
+     description: "Requirement Status"
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+     description: "Entity used to track the high-level information about resource requirements."
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcerequirementdetail
+     description: "Entity used to track the detailed information about resource requirements."
+   - type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
+     description: "Allows to specify for which territory a resource could provide services for"
+   - type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
+     description: "To store settings of SB by user & tabs"
+   - type: Microsoft.Dynamics.CRM.msdyn_schedulingparameter
+     description: "Scheduling Parameters"
+   - type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
+     description: "Stores user-specific settings for the schedule board."
+   - type: Microsoft.Dynamics.CRM.msdyn_timegroup
+     description: "Specify time groups consisting of multiple time windows to be used for scheduling, for example."
+   - type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
+     description: "Specify individual time windows under a time group."
+   - type: Microsoft.Dynamics.CRM.msdyn_transactionorigin
+     description: "System entity used to record the source of a project cost or sales actual."
+   - type: Microsoft.Dynamics.CRM.msdyn_workhourtemplate
+     description: "Template where resource working hours can be saved and reused."
+   - type: Microsoft.Dynamics.CRM.ratingvalue
+     description: "A unique value associated with a rating model that allows providing a user friendly rating value."
+   - type: Microsoft.Dynamics.CRM.systemuser
+     description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
 actions:
   description: "The following actions are included in this solution."
   action_items:
-   - Microsoft.Dynamics.CRM.msdyn_applyworktemplateforresources
-   - Microsoft.Dynamics.CRM.msdyn_BookingResource
-   - Microsoft.Dynamics.CRM.msdyn_BookingResourceRequirement
-   - Microsoft.Dynamics.CRM.msdyn_CancelBookings
-   - Microsoft.Dynamics.CRM.msdyn_cloneentity
-   - Microsoft.Dynamics.CRM.msdyn_FpsAction
-   - Microsoft.Dynamics.CRM.msdyn_GeocodeAddress
-   - Microsoft.Dynamics.CRM.msdyn_GetAvailabilitySummaryFromDemand
-   - Microsoft.Dynamics.CRM.msdyn_GetBookingDetailsByRequirementIds
-   - Microsoft.Dynamics.CRM.msdyn_GetMultipleResourceBookingDetails
-   - Microsoft.Dynamics.CRM.msdyn_GetRequirementChartData
-   - Microsoft.Dynamics.CRM.msdyn_GetRequirementDemand
-   - Microsoft.Dynamics.CRM.msdyn_GetRequirementDemandDisplay
-   - Microsoft.Dynamics.CRM.msdyn_GetResourceBookingDetails
-   - Microsoft.Dynamics.CRM.msdyn_GetResourceBookingFormParameters
-   - Microsoft.Dynamics.CRM.msdyn_GetResourcePopupDetails
-   - Microsoft.Dynamics.CRM.msdyn_GetResources
-   - Microsoft.Dynamics.CRM.msdyn_GetSummaryBookings
-   - Microsoft.Dynamics.CRM.msdyn_initializedefaultclonequery
-   - Microsoft.Dynamics.CRM.msdyn_ResolveTimezone
-   - Microsoft.Dynamics.CRM.msdyn_RetrieveDistanceMatrix
-   - Microsoft.Dynamics.CRM.msdyn_RetrieveResourceAvailability
-   - Microsoft.Dynamics.CRM.msdyn_UpdateRequirementDemand
+   - type: Microsoft.Dynamics.CRM.msdyn_applyworktemplateforresources
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_BookingResource
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_BookingResourceRequirement
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CancelBookings
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_cloneentity
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_FpsAction
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GeocodeAddress
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetAvailabilitySummaryFromDemand
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetBookingDetailsByRequirementIds
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetMultipleResourceBookingDetails
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetRequirementChartData
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetRequirementDemand
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetRequirementDemandDisplay
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetResourceBookingDetails
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetResourceBookingFormParameters
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetResourcePopupDetails
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetResources
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetSummaryBookings
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_initializedefaultclonequery
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ResolveTimezone
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveDistanceMatrix
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveResourceAvailability
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_UpdateRequirementDemand
+     description: ""
 # There are no remarks for this solution.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

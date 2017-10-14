@@ -4,7 +4,7 @@ name: "Marketing"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Marketing Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -23,29 +23,52 @@ header:
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.account
-   - Microsoft.Dynamics.CRM.activitypointer
-   - Microsoft.Dynamics.CRM.appointment
-   - Microsoft.Dynamics.CRM.bulkoperation
-   - Microsoft.Dynamics.CRM.bulkoperationlog
-   - Microsoft.Dynamics.CRM.campaign
-   - Microsoft.Dynamics.CRM.campaignactivity
-   - Microsoft.Dynamics.CRM.campaignactivityitem
-   - Microsoft.Dynamics.CRM.campaignitem
-   - Microsoft.Dynamics.CRM.campaignresponse
-   - Microsoft.Dynamics.CRM.connection
-   - Microsoft.Dynamics.CRM.contact
-   - Microsoft.Dynamics.CRM.email
-   - Microsoft.Dynamics.CRM.fax
-   - Microsoft.Dynamics.CRM.lead
-   - Microsoft.Dynamics.CRM.letter
-   - Microsoft.Dynamics.CRM.list
-   - Microsoft.Dynamics.CRM.listmember
-   - Microsoft.Dynamics.CRM.phonecall
-   - Microsoft.Dynamics.CRM.recurringappointmentmaster
-   - Microsoft.Dynamics.CRM.socialactivity
-   - Microsoft.Dynamics.CRM.task
-   - Microsoft.Dynamics.CRM.template
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.activitypointer
+     description: "Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar."
+   - type: Microsoft.Dynamics.CRM.appointment
+     description: "Commitment representing a time interval with start/end times and duration."
+   - type: Microsoft.Dynamics.CRM.bulkoperation
+     description: "System operation used to perform lengthy and asynchronous operations on large data sets, such as distributing a campaign activity or quick campaign."
+   - type: Microsoft.Dynamics.CRM.bulkoperationlog
+     description: "Log used to track bulk operation execution, successes, and failures."
+   - type: Microsoft.Dynamics.CRM.campaign
+     description: "Container for campaign activities and responses, sales literature, products, and lists to create, plan, execute, and track the results of a specific marketing campaign through its life."
+   - type: Microsoft.Dynamics.CRM.campaignactivity
+     description: "Task performed, or to be performed, by a user for planning or running a campaign."
+   - type: Microsoft.Dynamics.CRM.campaignactivityitem
+     description: "Work item of a campaign activity, such as a list or sales literature."
+   - type: Microsoft.Dynamics.CRM.campaignitem
+     description: "Work item in a campaign, a list or sales literature."
+   - type: Microsoft.Dynamics.CRM.campaignresponse
+     description: "Response from an existing or a potential new customer for a campaign."
+   - type: Microsoft.Dynamics.CRM.connection
+     description: "Relationship between two entities."
+   - type: Microsoft.Dynamics.CRM.contact
+     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+   - type: Microsoft.Dynamics.CRM.email
+     description: "Activity that is delivered using email protocols."
+   - type: Microsoft.Dynamics.CRM.fax
+     description: "Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document."
+   - type: Microsoft.Dynamics.CRM.lead
+     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
+   - type: Microsoft.Dynamics.CRM.letter
+     description: "Activity that tracks the delivery of a letter. The activity can contain the electronic copy of the letter."
+   - type: Microsoft.Dynamics.CRM.list
+     description: "Group of existing or potential customers created for a marketing campaign or other sales purposes."
+   - type: Microsoft.Dynamics.CRM.listmember
+     description: "Item in a marketing list."
+   - type: Microsoft.Dynamics.CRM.phonecall
+     description: "Activity to track a telephone call."
+   - type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+     description: "The Master appointment of a recurring appointment series."
+   - type: Microsoft.Dynamics.CRM.socialactivity
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.task
+     description: "Generic activity representing work needed to be done."
+   - type: Microsoft.Dynamics.CRM.template
+     description: "Template for an email message that contains the standard attributes of an email message."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

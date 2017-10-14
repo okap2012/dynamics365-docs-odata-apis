@@ -4,7 +4,7 @@ name: "knowledgearticle"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement knowledgearticle EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -671,11 +671,16 @@ operations:
 solutions:
   description: "The following solutions include the knowledgearticle entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.AppforOutlook
-  - Microsoft.Dynamics.CRM.msdynce_KnowledgeManagement
-  - Microsoft.Dynamics.CRM.msdynce_ProductManagement
-  - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.System
+  - type: Microsoft.Dynamics.CRM.AppforOutlook
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagement
+    description: "Dynamics 365 workload for knowledge management."
+  - type: Microsoft.Dynamics.CRM.msdynce_ProductManagement
+    description: "Dynamics 365 workload for product management."
+  - type: Microsoft.Dynamics.CRM.msdynce_Service
+    description: "Dynamics 365 workload for service."
+  - type: Microsoft.Dynamics.CRM.System
+    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

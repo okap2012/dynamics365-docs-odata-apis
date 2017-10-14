@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.FunctionIndex
 name: Web API Function Reference
 title: "Dynamics 365 Customer Engagement Web API Function Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,7 +14,6 @@ metadata:
   manager: "jdaly"
 description: "A function is an operation which does not have observable side effects. They typically retrieve data. They may have parameters and they may return values. Functions may be bound to entity types."
 in_this_section:
-items:
 - type: Microsoft.Dynamics.CRM.CalculateRollupField
   description: "Calculates the value of a rollup attribute. "
 - type: Microsoft.Dynamics.CRM.CalculateTotalTimeIncident

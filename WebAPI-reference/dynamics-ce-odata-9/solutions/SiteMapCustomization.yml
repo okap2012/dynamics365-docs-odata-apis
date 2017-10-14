@@ -4,7 +4,7 @@ name: "Trial Site Map Customization"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Trial Site Map Customization Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -23,10 +23,14 @@ header:
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-   - Microsoft.Dynamics.CRM.msdynsm_salessitemap
-   - Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-   - Microsoft.Dynamics.CRM.msdynsm_settingssitemap
+   - type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
+     description: ""
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

@@ -4,7 +4,7 @@ name: "AttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement AttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -168,20 +168,34 @@ properties:
 derived_types:
   description: The following entity types inherit from the AttributeMetadata entity type.
   derived_type_items:
-   - Microsoft.Dynamics.CRM.BigIntAttributeMetadata
-   - Microsoft.Dynamics.CRM.BooleanAttributeMetadata
-   - Microsoft.Dynamics.CRM.DateTimeAttributeMetadata
-   - Microsoft.Dynamics.CRM.DecimalAttributeMetadata
-   - Microsoft.Dynamics.CRM.DoubleAttributeMetadata
-   - Microsoft.Dynamics.CRM.EnumAttributeMetadata
-   - Microsoft.Dynamics.CRM.ImageAttributeMetadata
-   - Microsoft.Dynamics.CRM.IntegerAttributeMetadata
-   - Microsoft.Dynamics.CRM.LookupAttributeMetadata
-   - Microsoft.Dynamics.CRM.ManagedPropertyAttributeMetadata
-   - Microsoft.Dynamics.CRM.MemoAttributeMetadata
-   - Microsoft.Dynamics.CRM.MoneyAttributeMetadata
-   - Microsoft.Dynamics.CRM.StringAttributeMetadata
-   - Microsoft.Dynamics.CRM.UniqueIdentifierAttributeMetadata
+   - type: Microsoft.Dynamics.CRM.BigIntAttributeMetadata
+     description: "Contains the metadata for a BigInt attribute."
+   - type: Microsoft.Dynamics.CRM.BooleanAttributeMetadata
+     description: "Contains the metadata for a Boolean attribute."
+   - type: Microsoft.Dynamics.CRM.DateTimeAttributeMetadata
+     description: "Contains the metadata for a DateTime attribute."
+   - type: Microsoft.Dynamics.CRM.DecimalAttributeMetadata
+     description: "Contains the metadata for a Decimal attribute."
+   - type: Microsoft.Dynamics.CRM.DoubleAttributeMetadata
+     description: "Contains the metadata for a Double attribute."
+   - type: Microsoft.Dynamics.CRM.EnumAttributeMetadata
+     description: "An abstract class that contains the data for an attribute that provides options."
+   - type: Microsoft.Dynamics.CRM.ImageAttributeMetadata
+     description: "Contains the metadata for a Image attribute"
+   - type: Microsoft.Dynamics.CRM.IntegerAttributeMetadata
+     description: "Contains the metadata for a Integer attribute."
+   - type: Microsoft.Dynamics.CRM.LookupAttributeMetadata
+     description: "Contains the metadata for a lookup attribute."
+   - type: Microsoft.Dynamics.CRM.ManagedPropertyAttributeMetadata
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.MemoAttributeMetadata
+     description: "Contains the metadata for the attribute type Memo."
+   - type: Microsoft.Dynamics.CRM.MoneyAttributeMetadata
+     description: "Contains the metadata for a Money attribute."
+   - type: Microsoft.Dynamics.CRM.StringAttributeMetadata
+     description: "Contains the metadata for an String attribute."
+   - type: Microsoft.Dynamics.CRM.UniqueIdentifierAttributeMetadata
+     description: "Represents the unique identifier attribute metadata."
 usedby:
   description: "The following use the AttributeMetadata metadata entity type."
   usedby_items:

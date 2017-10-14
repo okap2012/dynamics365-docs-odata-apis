@@ -4,7 +4,7 @@ name: "RetrieveLocLabels"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveLocLabels Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -43,7 +43,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveLocLabelsResponse
   iscollection: false
   nullable: false
-  description: "Contains the results from the RetrieveLocLabels function."
+  description: "Retrieves localized labels for a limited set of entity attributes."
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:

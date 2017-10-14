@@ -4,7 +4,7 @@ name: "RetrieveDependentComponents"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveDependentComponents Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -38,7 +38,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.dependency
   iscollection: true
   nullable: false
-  description: "Contains the results from the RetrieveDependentComponents function."
+  description: "Retrieves a list dependencies for solution components that directly depend on a solution component.  "
 entities:
   description: "Use the RetrieveDependentComponents function with this entity type:"
   entity_items:

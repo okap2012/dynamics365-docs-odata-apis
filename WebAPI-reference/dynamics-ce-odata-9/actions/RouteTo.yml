@@ -4,7 +4,7 @@ name: "RouteTo"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RouteTo Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -40,7 +40,7 @@ entities:
   entity_items:
   - type: Microsoft.Dynamics.CRM.queueitem
     displayName: Queue Item
-    description: A specific item in a queue, such as a case record or an activity record.
+    description: "A specific item in a queue, such as a case record or an activity record."
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

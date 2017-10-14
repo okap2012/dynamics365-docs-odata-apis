@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.QueryFunctionIndex
 name: Web API Query Function Reference
 title: "Dynamics 365 Customer Engagement Web API Query Function Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,7 +14,6 @@ metadata:
   manager: "jdaly"
 description: "Query functions are functions that can be used as a filter criteria in a query. They accept parameters and return a boolean value."
 in_this_section:
-items:
 - type: Microsoft.Dynamics.CRM.Above
   description: "Query function that evaluates whether the entity is above the referenced entity in the hierarchy.  "
 - type: Microsoft.Dynamics.CRM.AboveOrEqual

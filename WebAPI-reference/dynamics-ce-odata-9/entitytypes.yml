@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.EntityTypeIndex
 name: Web API EntityType Reference
 title: "Dynamics 365 Customer Engagement Web API EntityType Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,7 +14,6 @@ metadata:
   manager: "jdaly"
 description: "An EntityType represents an entity type in the OData v4 entity model."
 in_this_section:
-entity_items:
 - type: Microsoft.Dynamics.CRM.account
   displayName: "Account"
   description: "Business that represents a customer or potential customer. The company that is billed in business transactions."

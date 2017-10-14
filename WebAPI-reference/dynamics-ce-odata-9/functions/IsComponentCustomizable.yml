@@ -4,7 +4,7 @@ name: "IsComponentCustomizable"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement IsComponentCustomizable Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -38,7 +38,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.IsComponentCustomizableResponse
   iscollection: false
   nullable: false
-  description: "Whether a solution component is customizable."
+  description: "Determines whether a solution component is customizable. "
 entities:
   description: "Use the IsComponentCustomizable function with this entity type:"
   entity_items:

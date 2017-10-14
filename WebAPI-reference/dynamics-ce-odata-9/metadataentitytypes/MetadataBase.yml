@@ -4,7 +4,7 @@ name: "MetadataBase"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement MetadataBase Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -36,12 +36,18 @@ properties:
 derived_types:
   description: The following entity types inherit from the MetadataBase entity type.
   derived_type_items:
-   - Microsoft.Dynamics.CRM.AttributeMetadata
-   - Microsoft.Dynamics.CRM.EntityMetadata
-   - Microsoft.Dynamics.CRM.EntityKeyMetadata
-   - Microsoft.Dynamics.CRM.OptionSetMetadataBase
-   - Microsoft.Dynamics.CRM.ManagedPropertyMetadata
-   - Microsoft.Dynamics.CRM.RelationshipMetadataBase
+   - type: Microsoft.Dynamics.CRM.AttributeMetadata
+     description: "Contains all the metadata for an entity attribute."
+   - type: Microsoft.Dynamics.CRM.EntityMetadata
+     description: "Contains the metadata for an entity."
+   - type: Microsoft.Dynamics.CRM.EntityKeyMetadata
+     description: "Contains the metadata for entity key."
+   - type: Microsoft.Dynamics.CRM.OptionSetMetadataBase
+     description: "Contains data that defines a set of options."
+   - type: Microsoft.Dynamics.CRM.ManagedPropertyMetadata
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.RelationshipMetadataBase
+     description: "Contains the metadata for an entity relationship."
 # This entity is not used by other entities or operations.
 # There are no remarks for this metadata entity.
 href_see_also:

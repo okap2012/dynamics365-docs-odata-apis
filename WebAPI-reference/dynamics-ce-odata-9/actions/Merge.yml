@@ -4,7 +4,7 @@ name: "Merge"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Merge Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -50,16 +50,16 @@ entities:
   entity_items:
   - type: Microsoft.Dynamics.CRM.account
     displayName: Account
-    description: Business that represents a customer or potential customer. The company that is billed in business transactions.
+    description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
   - type: Microsoft.Dynamics.CRM.contact
     displayName: Contact
-    description: Person with whom a business unit has a relationship, such as customer, supplier, and colleague.
+    description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
   - type: Microsoft.Dynamics.CRM.incident
     displayName: Case
-    description: Service request case associated with a contract.
+    description: "Service request case associated with a contract."
   - type: Microsoft.Dynamics.CRM.lead
     displayName: Lead
-    description: Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived.
+    description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

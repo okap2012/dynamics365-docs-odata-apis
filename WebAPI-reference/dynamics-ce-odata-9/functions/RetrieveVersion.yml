@@ -4,7 +4,7 @@ name: "RetrieveVersion"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveVersion Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -27,7 +27,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveVersionResponse
   iscollection: false
   nullable: false
-  description: "Contains the results from the RetrieveVersion function "
+  description: "Retrieves the version number of the Microsoft Dynamics 365 Server. "
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:

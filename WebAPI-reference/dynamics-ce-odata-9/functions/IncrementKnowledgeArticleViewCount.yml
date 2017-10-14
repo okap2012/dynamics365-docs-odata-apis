@@ -4,7 +4,7 @@ name: "IncrementKnowledgeArticleViewCount"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement IncrementKnowledgeArticleViewCount Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -48,7 +48,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
   iscollection: false
   nullable: false
-  description: "Contains the response from the IncrementKnowledgeArticleViewCount function."
+  description: "Increments the per day view count of a knowledge article record."
 entities:
   description: "Use the IncrementKnowledgeArticleViewCount function with this entity type:"
   entity_items:

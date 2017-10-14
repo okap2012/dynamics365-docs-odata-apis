@@ -4,7 +4,7 @@ name: "RetrieveDependenciesForDelete"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveDependenciesForDelete Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -38,7 +38,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.dependency
   iscollection: true
   nullable: false
-  description: "Contains the results from the RetrieveDependenciesForDelete function."
+  description: "Retrieves a collection of dependency records that describe any solution components that would prevent a solution component from being deleted. "
 entities:
   description: "Use the RetrieveDependenciesForDelete function with this entity type:"
   entity_items:

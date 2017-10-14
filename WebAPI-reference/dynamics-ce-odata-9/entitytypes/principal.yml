@@ -4,7 +4,7 @@ name: "principal"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement principal EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -700,8 +700,10 @@ collection_valued_navigation_properties:
 derived_types:
   description: "The following entity types inherit from the principal entity type."
   derived_type_items:
-  - Microsoft.Dynamics.CRM.systemuser 
-  - Microsoft.Dynamics.CRM.team 
+  - type: Microsoft.Dynamics.CRM.systemuser 
+    description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database." 
+  - type: Microsoft.Dynamics.CRM.team 
+    description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units." 
 # This entity has no operations
 # This entity is not included in any solutions.
 # There are no remarks for this entity.

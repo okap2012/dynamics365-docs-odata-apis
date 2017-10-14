@@ -4,7 +4,7 @@ name: "GetHeaderColumnsImportFile"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement GetHeaderColumnsImportFile Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -30,7 +30,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.GetHeaderColumnsImportFileResponse
   iscollection: false
   nullable: false
-  description: "The response from this function."
+  description: "Retrieves the source-file column headings; or retrieve the system-generated column headings if the source file does not contain column headings. "
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:

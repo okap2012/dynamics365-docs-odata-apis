@@ -4,7 +4,7 @@ name: "GetValidReferencingEntities"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement GetValidReferencingEntities Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -33,7 +33,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.GetValidReferencingEntitiesResponse
   iscollection: false
   nullable: false
-  description: "Contains the results from the GetValidReferencingEntities function."
+  description: "Retrieves the set of entities that are valid as the related entity (many) to the specified entity in a one-to-many relationship.  "
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:

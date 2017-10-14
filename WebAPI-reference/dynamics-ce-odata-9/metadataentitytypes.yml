@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
 name: Web API Metadata EntityType Reference
 title: "Dynamics 365 Customer Engagement Web API Metadata EntityType Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,7 +14,6 @@ metadata:
   manager: "jdaly"
 description: "Metadata entity types represent the types used in the Microsoft Dynamics CRM metadata model. See [Use the Web API with CRM metadata](https://msdn.microsoft.com/library/mt607833.aspx) for information about how to use these entity types. "
 in_this_section:
-entity_items:
 - type: Microsoft.Dynamics.CRM.AttributeMetadata
   description: "Contains all the metadata for an entity attribute."
 - type: Microsoft.Dynamics.CRM.BigIntAttributeMetadata

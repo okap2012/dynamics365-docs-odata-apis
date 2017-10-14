@@ -4,7 +4,7 @@ name: "Social Profile"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Social Profile Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -23,7 +23,8 @@ header:
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.socialprofile
+   - type: Microsoft.Dynamics.CRM.socialprofile
+     description: "This entity is used to store social profile information of its associated account and contacts on different social channels."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

@@ -4,7 +4,7 @@ name: "SetParentSystemUser"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement SetParentSystemUser Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -43,10 +43,10 @@ entities:
   entity_items:
   - type: Microsoft.Dynamics.CRM.businessunit
     displayName: Business Unit
-    description: Business, division, or department in the Microsoft Dynamics 365 database.
+    description: "Business, division, or department in the Microsoft Dynamics 365 database."
   - type: Microsoft.Dynamics.CRM.team
     displayName: Team
-    description: Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units.
+    description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units."
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

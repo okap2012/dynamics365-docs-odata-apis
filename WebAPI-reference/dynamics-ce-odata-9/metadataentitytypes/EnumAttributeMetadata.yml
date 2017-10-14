@@ -4,7 +4,7 @@ name: "EnumAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement EnumAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -223,11 +223,16 @@ single_valued_navigation_properties:
 derived_types:
   description: The following entity types inherit from the EnumAttributeMetadata entity type.
   derived_type_items:
-   - Microsoft.Dynamics.CRM.EntityNameAttributeMetadata
-   - Microsoft.Dynamics.CRM.MultiSelectPicklistAttributeMetadata
-   - Microsoft.Dynamics.CRM.PicklistAttributeMetadata
-   - Microsoft.Dynamics.CRM.StateAttributeMetadata
-   - Microsoft.Dynamics.CRM.StatusAttributeMetadata
+   - type: Microsoft.Dynamics.CRM.EntityNameAttributeMetadata
+     description: "Contains the metadata for an attribute that references an entity."
+   - type: Microsoft.Dynamics.CRM.MultiSelectPicklistAttributeMetadata
+     description: ""
+   - type: Microsoft.Dynamics.CRM.PicklistAttributeMetadata
+     description: "Contains the metadata for a Picklist attribute."
+   - type: Microsoft.Dynamics.CRM.StateAttributeMetadata
+     description: "Contains the metadata for a State attribute."
+   - type: Microsoft.Dynamics.CRM.StatusAttributeMetadata
+     description: "Contains the metadata for a Status attribute."
 # This entity is not used by other entities or operations.
 # There are no remarks for this metadata entity.
 href_see_also:

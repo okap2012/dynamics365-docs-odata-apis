@@ -4,7 +4,7 @@ name: "Sales"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Sales Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -23,55 +23,104 @@ header:
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.account
-   - Microsoft.Dynamics.CRM.actioncard
-   - Microsoft.Dynamics.CRM.appointment
-   - Microsoft.Dynamics.CRM.competitor
-   - Microsoft.Dynamics.CRM.competitoraddress
-   - Microsoft.Dynamics.CRM.competitorproduct
-   - Microsoft.Dynamics.CRM.competitorsalesliterature
-   - Microsoft.Dynamics.CRM.connection
-   - Microsoft.Dynamics.CRM.contact
-   - Microsoft.Dynamics.CRM.contactinvoices
-   - Microsoft.Dynamics.CRM.contactorders
-   - Microsoft.Dynamics.CRM.contactquotes
-   - Microsoft.Dynamics.CRM.discount
-   - Microsoft.Dynamics.CRM.discounttype
-   - Microsoft.Dynamics.CRM.dynamicpropertyinstance
-   - Microsoft.Dynamics.CRM.email
-   - Microsoft.Dynamics.CRM.fax
-   - Microsoft.Dynamics.CRM.invoice
-   - Microsoft.Dynamics.CRM.invoicedetail
-   - Microsoft.Dynamics.CRM.lead
-   - Microsoft.Dynamics.CRM.leadcompetitors
-   - Microsoft.Dynamics.CRM.leadproduct
-   - Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
-   - Microsoft.Dynamics.CRM.letter
-   - Microsoft.Dynamics.CRM.mailmergetemplate
-   - Microsoft.Dynamics.CRM.opportunity
-   - Microsoft.Dynamics.CRM.opportunityclose
-   - Microsoft.Dynamics.CRM.opportunitycompetitors
-   - Microsoft.Dynamics.CRM.opportunityproduct
-   - Microsoft.Dynamics.CRM.opportunitysalesprocess
-   - Microsoft.Dynamics.CRM.orderclose
-   - Microsoft.Dynamics.CRM.phonecall
-   - Microsoft.Dynamics.CRM.postfollow
-   - Microsoft.Dynamics.CRM.postregarding
-   - Microsoft.Dynamics.CRM.productpricelevel
-   - Microsoft.Dynamics.CRM.productsalesliterature
-   - Microsoft.Dynamics.CRM.quote
-   - Microsoft.Dynamics.CRM.quoteclose
-   - Microsoft.Dynamics.CRM.quotedetail
-   - Microsoft.Dynamics.CRM.recurringappointmentmaster
-   - Microsoft.Dynamics.CRM.salesliterature
-   - Microsoft.Dynamics.CRM.salesliteratureitem
-   - Microsoft.Dynamics.CRM.salesorder
-   - Microsoft.Dynamics.CRM.salesorderdetail
-   - Microsoft.Dynamics.CRM.sharepointdocumentlocation
-   - Microsoft.Dynamics.CRM.socialprofile
-   - Microsoft.Dynamics.CRM.systemuser
-   - Microsoft.Dynamics.CRM.task
-   - Microsoft.Dynamics.CRM.template
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.actioncard
+     description: "Action card entity to show action cards."
+   - type: Microsoft.Dynamics.CRM.appointment
+     description: "Commitment representing a time interval with start/end times and duration."
+   - type: Microsoft.Dynamics.CRM.competitor
+     description: "Business competing for the sale represented by a lead or opportunity."
+   - type: Microsoft.Dynamics.CRM.competitoraddress
+     description: "Additional addresses for a competitor. The first two addresses are stored in the competitor object."
+   - type: Microsoft.Dynamics.CRM.competitorproduct
+     description: "Association between a competitor and a product offered by the competitor."
+   - type: Microsoft.Dynamics.CRM.competitorsalesliterature
+     description: ""
+   - type: Microsoft.Dynamics.CRM.connection
+     description: "Relationship between two entities."
+   - type: Microsoft.Dynamics.CRM.contact
+     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+   - type: Microsoft.Dynamics.CRM.contactinvoices
+     description: ""
+   - type: Microsoft.Dynamics.CRM.contactorders
+     description: ""
+   - type: Microsoft.Dynamics.CRM.contactquotes
+     description: ""
+   - type: Microsoft.Dynamics.CRM.discount
+     description: "Price reduction made from the list price of a product or service based on the quantity purchased."
+   - type: Microsoft.Dynamics.CRM.discounttype
+     description: "Type of discount specified as either a percentage or an amount."
+   - type: Microsoft.Dynamics.CRM.dynamicpropertyinstance
+     description: "Instance of a property with its value."
+   - type: Microsoft.Dynamics.CRM.email
+     description: "Activity that is delivered using email protocols."
+   - type: Microsoft.Dynamics.CRM.fax
+     description: "Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document."
+   - type: Microsoft.Dynamics.CRM.invoice
+     description: "Order that has been billed."
+   - type: Microsoft.Dynamics.CRM.invoicedetail
+     description: "Line item in an invoice containing detailed billing information for a product."
+   - type: Microsoft.Dynamics.CRM.lead
+     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
+   - type: Microsoft.Dynamics.CRM.leadcompetitors
+     description: ""
+   - type: Microsoft.Dynamics.CRM.leadproduct
+     description: ""
+   - type: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
+     description: "Lead To Opportunity Sales Process Business Process Flow"
+   - type: Microsoft.Dynamics.CRM.letter
+     description: "Activity that tracks the delivery of a letter. The activity can contain the electronic copy of the letter."
+   - type: Microsoft.Dynamics.CRM.mailmergetemplate
+     description: "Template for a mail merge document that contains the standard attributes of that document."
+   - type: Microsoft.Dynamics.CRM.opportunity
+     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
+   - type: Microsoft.Dynamics.CRM.opportunityclose
+     description: "Activity that is created automatically when an opportunity is closed, containing information such as the description of the closing and actual revenue."
+   - type: Microsoft.Dynamics.CRM.opportunitycompetitors
+     description: ""
+   - type: Microsoft.Dynamics.CRM.opportunityproduct
+     description: "Association between an opportunity and a product."
+   - type: Microsoft.Dynamics.CRM.opportunitysalesprocess
+     description: "Base entity for process Opportunity Sales Process"
+   - type: Microsoft.Dynamics.CRM.orderclose
+     description: "Activity generated automatically when an order is closed."
+   - type: Microsoft.Dynamics.CRM.phonecall
+     description: "Activity to track a telephone call."
+   - type: Microsoft.Dynamics.CRM.postfollow
+     description: "Represents a user following the activity feed of an object."
+   - type: Microsoft.Dynamics.CRM.postregarding
+     description: "Represents which object an activity feed post is regarding. For internal use only."
+   - type: Microsoft.Dynamics.CRM.productpricelevel
+     description: "Information about how to price a product in the specified price level, including pricing method, rounding option, and discount type based on a specified product unit."
+   - type: Microsoft.Dynamics.CRM.productsalesliterature
+     description: ""
+   - type: Microsoft.Dynamics.CRM.quote
+     description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
+   - type: Microsoft.Dynamics.CRM.quoteclose
+     description: "Activity generated when a quote is closed."
+   - type: Microsoft.Dynamics.CRM.quotedetail
+     description: "Product line item in a quote. The details include such information as product ID, description, quantity, and cost."
+   - type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+     description: "The Master appointment of a recurring appointment series."
+   - type: Microsoft.Dynamics.CRM.salesliterature
+     description: "Storage of sales literature, which may contain one or more documents."
+   - type: Microsoft.Dynamics.CRM.salesliteratureitem
+     description: "Item in the sales literature collection."
+   - type: Microsoft.Dynamics.CRM.salesorder
+     description: "Quote that has been accepted."
+   - type: Microsoft.Dynamics.CRM.salesorderdetail
+     description: "Line item in a sales order."
+   - type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+     description: "Document libraries or folders on a SharePoint server from where documents can be managed in Microsoft Dynamics 365."
+   - type: Microsoft.Dynamics.CRM.socialprofile
+     description: "This entity is used to store social profile information of its associated account and contacts on different social channels."
+   - type: Microsoft.Dynamics.CRM.systemuser
+     description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
+   - type: Microsoft.Dynamics.CRM.task
+     description: "Generic activity representing work needed to be done."
+   - type: Microsoft.Dynamics.CRM.template
+     description: "Template for an email message that contains the standard attributes of an email message."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

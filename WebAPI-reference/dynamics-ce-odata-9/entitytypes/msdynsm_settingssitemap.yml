@@ -4,7 +4,7 @@ name: "msdynsm_settingssitemap"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdynsm_settingssitemap EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -177,7 +177,8 @@ operations:
 solutions:
   description: "The following solutions include the msdynsm_settingssitemap entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.SiteMapCustomization
+  - type: Microsoft.Dynamics.CRM.SiteMapCustomization
+    description: ""
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

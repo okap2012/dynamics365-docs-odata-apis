@@ -4,7 +4,7 @@ name: "RetrieveByTopIncidentSubjectKbArticle"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveByTopIncidentSubjectKbArticle Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-13"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -30,7 +30,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.kbarticle
   iscollection: true
   nullable: false
-  description: "Contains the results from the RetrieveByTopIncidentSubjectKbArticle function. "
+  description: "Retrieves the top-ten articles about a specified subject from the knowledge base of articles for your organization.  "
 entities:
   description: "Use the RetrieveByTopIncidentSubjectKbArticle function with this entity type:"
   entity_items:
