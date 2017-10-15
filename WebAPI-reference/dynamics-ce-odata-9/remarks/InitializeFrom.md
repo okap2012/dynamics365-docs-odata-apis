@@ -41,6 +41,7 @@ Other attribute values can also be set and/or modified for the new record by add
         "@odata.type": "#Microsoft.Dynamics.CRM.account",
         "parentaccountid@odata.bind": "accounts(c65127ed-2097-e711-80eb-00155db75426)",
         "transactioncurrencyid@odata.bind": "transactioncurrencies(732e87e1-1d96-e711-80e4-00155db75426)",
+        "name":"Contoso Ltd",
         "numberofemployees":"200",
         "address1_line1":"100 Maple St.",
         "address1_city":"Seattle",
