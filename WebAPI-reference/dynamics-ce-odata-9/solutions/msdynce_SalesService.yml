@@ -4,7 +4,7 @@ name: "Sales Service"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Sales Service Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,17 +18,23 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_SalesService
- version: "9.0.0.1053"
+ version: "9.0.1.61"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.appointment
-   - Microsoft.Dynamics.CRM.incident
-   - Microsoft.Dynamics.CRM.opportunityclose
-   - Microsoft.Dynamics.CRM.orderclose
-   - Microsoft.Dynamics.CRM.quoteclose
-   - Microsoft.Dynamics.CRM.socialprofile
+   - type: Microsoft.Dynamics.CRM.appointment
+     description: "Commitment representing a time interval with start/end times and duration."
+   - type: Microsoft.Dynamics.CRM.incident
+     description: "Service request case associated with a contract."
+   - type: Microsoft.Dynamics.CRM.opportunityclose
+     description: "Activity that is created automatically when an opportunity is closed, containing information such as the description of the closing and actual revenue."
+   - type: Microsoft.Dynamics.CRM.orderclose
+     description: "Activity generated automatically when an order is closed."
+   - type: Microsoft.Dynamics.CRM.quoteclose
+     description: "Activity generated when a quote is closed."
+   - type: Microsoft.Dynamics.CRM.socialprofile
+     description: "This entity is used to store social profile information of its associated account and contacts on different social channels."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

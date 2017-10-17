@@ -4,7 +4,7 @@ name: "PrincipalAccess"
 type: complextype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement PrincipalAccess ComplexType Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 

@@ -4,7 +4,7 @@ name: "CalculateActualValueOpportunity"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement CalculateActualValueOpportunity Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 

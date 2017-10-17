@@ -4,7 +4,7 @@ name: "msdyn_odatav4ds"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_odatav4ds EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -331,7 +331,8 @@ properties:
 solutions:
   description: "The following solutions include the msdyn_odatav4ds entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.ODatav4DataProvider
+  - type: Microsoft.Dynamics.CRM.ODatav4DataProvider
+    description: ""
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

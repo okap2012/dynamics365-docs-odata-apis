@@ -4,7 +4,7 @@ name: "Product Management"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Product Management Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,30 +18,49 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for product management."
  unique_name: msdynce_ProductManagement
- version: "9.0.0.1053"
+ version: "9.0.1.61"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.account
-   - Microsoft.Dynamics.CRM.connection
-   - Microsoft.Dynamics.CRM.contact
-   - Microsoft.Dynamics.CRM.dynamicproperty
-   - Microsoft.Dynamics.CRM.dynamicpropertyassociation
-   - Microsoft.Dynamics.CRM.dynamicpropertyinstance
-   - Microsoft.Dynamics.CRM.dynamicpropertyoptionsetitem
-   - Microsoft.Dynamics.CRM.expiredprocess
-   - Microsoft.Dynamics.CRM.knowledgearticle
-   - Microsoft.Dynamics.CRM.newprocess
-   - Microsoft.Dynamics.CRM.pricelevel
-   - Microsoft.Dynamics.CRM.product
-   - Microsoft.Dynamics.CRM.productassociation
-   - Microsoft.Dynamics.CRM.productpricelevel
-   - Microsoft.Dynamics.CRM.productsubstitute
-   - Microsoft.Dynamics.CRM.systemuser
-   - Microsoft.Dynamics.CRM.translationprocess
-   - Microsoft.Dynamics.CRM.uom
-   - Microsoft.Dynamics.CRM.uomschedule
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.connection
+     description: "Relationship between two entities."
+   - type: Microsoft.Dynamics.CRM.contact
+     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+   - type: Microsoft.Dynamics.CRM.dynamicproperty
+     description: "Information about a product property."
+   - type: Microsoft.Dynamics.CRM.dynamicpropertyassociation
+     description: "Association of a property definition with another entity in the system."
+   - type: Microsoft.Dynamics.CRM.dynamicpropertyinstance
+     description: "Instance of a property with its value."
+   - type: Microsoft.Dynamics.CRM.dynamicpropertyoptionsetitem
+     description: "Item with a name and value in a property option set type."
+   - type: Microsoft.Dynamics.CRM.expiredprocess
+     description: "Expired Process Business Process Flow"
+   - type: Microsoft.Dynamics.CRM.knowledgearticle
+     description: "Organizational knowledge for internal and external use."
+   - type: Microsoft.Dynamics.CRM.newprocess
+     description: "New Process Business Process Flow"
+   - type: Microsoft.Dynamics.CRM.pricelevel
+     description: "Entity that defines pricing levels."
+   - type: Microsoft.Dynamics.CRM.product
+     description: "Information about products and their pricing information."
+   - type: Microsoft.Dynamics.CRM.productassociation
+     description: "Instance of a product added to a bundle or kit."
+   - type: Microsoft.Dynamics.CRM.productpricelevel
+     description: "Information about how to price a product in the specified price level, including pricing method, rounding option, and discount type based on a specified product unit."
+   - type: Microsoft.Dynamics.CRM.productsubstitute
+     description: "Information about the selling relationship between two products, including the relationship type, such as up-sell, cross-sell, substitute, or accessory."
+   - type: Microsoft.Dynamics.CRM.systemuser
+     description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
+   - type: Microsoft.Dynamics.CRM.translationprocess
+     description: "Translation Process Business Process Flow"
+   - type: Microsoft.Dynamics.CRM.uom
+     description: "Unit of measure."
+   - type: Microsoft.Dynamics.CRM.uomschedule
+     description: "Grouping of units."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

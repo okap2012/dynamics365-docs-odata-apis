@@ -4,7 +4,7 @@ name: "CRM Extensions"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement CRM Extensions Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,17 +18,23 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_CRMExtensions
- version: "9.0.0.1053"
+ version: "9.0.1.61"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.entitlement
-   - Microsoft.Dynamics.CRM.invoice
-   - Microsoft.Dynamics.CRM.lead
-   - Microsoft.Dynamics.CRM.opportunity
-   - Microsoft.Dynamics.CRM.quote
-   - Microsoft.Dynamics.CRM.salesorder
+   - type: Microsoft.Dynamics.CRM.entitlement
+     description: "Defines the amount and type of support a customer should receive."
+   - type: Microsoft.Dynamics.CRM.invoice
+     description: "Order that has been billed."
+   - type: Microsoft.Dynamics.CRM.lead
+     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
+   - type: Microsoft.Dynamics.CRM.opportunity
+     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
+   - type: Microsoft.Dynamics.CRM.quote
+     description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
+   - type: Microsoft.Dynamics.CRM.salesorder
+     description: "Quote that has been accepted."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

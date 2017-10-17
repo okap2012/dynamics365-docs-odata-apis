@@ -4,7 +4,7 @@ name: "socialprofile"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement socialprofile EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -277,11 +277,16 @@ operations:
 solutions:
   description: "The following solutions include the socialprofile entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_Sales
-  - Microsoft.Dynamics.CRM.msdynce_SalesService
-  - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.msdynce_SocialProfile
-  - Microsoft.Dynamics.CRM.System
+  - type: Microsoft.Dynamics.CRM.msdynce_Sales
+    description: "Dynamics 365 workload for sales."
+  - type: Microsoft.Dynamics.CRM.msdynce_SalesService
+    description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_Service
+    description: "Dynamics 365 workload for service."
+  - type: Microsoft.Dynamics.CRM.msdynce_SocialProfile
+    description: "Dynamics 365 workload for social profiles."
+  - type: Microsoft.Dynamics.CRM.System
+    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

@@ -4,7 +4,7 @@ name: "OptionSetMetadataBase"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement OptionSetMetadataBase Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -80,8 +80,10 @@ properties:
 derived_types:
   description: The following entity types inherit from the OptionSetMetadataBase entity type.
   derived_type_items:
-   - Microsoft.Dynamics.CRM.BooleanOptionSetMetadata
-   - Microsoft.Dynamics.CRM.OptionSetMetadata
+   - type: Microsoft.Dynamics.CRM.BooleanOptionSetMetadata
+     description: "Contains the data for the options in a boolean attribute."
+   - type: Microsoft.Dynamics.CRM.OptionSetMetadata
+     description: "Contains metadata that defines a set of options."
 # This entity is not used by other entities or operations.
 # There are no remarks for this metadata entity.
 href_see_also:

@@ -4,7 +4,7 @@ name: "RetrieveMissingComponents"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveMissingComponents Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -33,7 +33,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveMissingComponentsResponse
   iscollection: false
   nullable: false
-  description: "Contains the results from the  RetrieveMissingComponents function. "
+  description: "Retrieves a list of missing components in the target organization.  "
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:

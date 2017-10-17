@@ -4,7 +4,7 @@ name: "activityparty"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement activityparty EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -329,8 +329,10 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the activityparty entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.System
+  - type: Microsoft.Dynamics.CRM.msdynce_Service
+    description: "Dynamics 365 workload for service."
+  - type: Microsoft.Dynamics.CRM.System
+    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

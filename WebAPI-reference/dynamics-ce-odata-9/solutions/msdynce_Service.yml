@@ -4,7 +4,7 @@ name: "Service"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Service Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,59 +18,107 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for service."
  unique_name: msdynce_Service
- version: "9.0.0.1053"
+ version: "9.0.1.61"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.account
-   - Microsoft.Dynamics.CRM.actioncard
-   - Microsoft.Dynamics.CRM.activityparty
-   - Microsoft.Dynamics.CRM.activitypointer
-   - Microsoft.Dynamics.CRM.appointment
-   - Microsoft.Dynamics.CRM.calendarrule
-   - Microsoft.Dynamics.CRM.connection
-   - Microsoft.Dynamics.CRM.constraintbasedgroup
-   - Microsoft.Dynamics.CRM.contact
-   - Microsoft.Dynamics.CRM.contract
-   - Microsoft.Dynamics.CRM.contractdetail
-   - Microsoft.Dynamics.CRM.contracttemplate
-   - Microsoft.Dynamics.CRM.email
-   - Microsoft.Dynamics.CRM.entitlement
-   - Microsoft.Dynamics.CRM.entitlementchannel
-   - Microsoft.Dynamics.CRM.entitlementcontacts
-   - Microsoft.Dynamics.CRM.entitlementproducts
-   - Microsoft.Dynamics.CRM.entitlementtemplate
-   - Microsoft.Dynamics.CRM.entitlementtemplatechannel
-   - Microsoft.Dynamics.CRM.entitlementtemplateproducts
-   - Microsoft.Dynamics.CRM.equipment
-   - Microsoft.Dynamics.CRM.fax
-   - Microsoft.Dynamics.CRM.incident
-   - Microsoft.Dynamics.CRM.incidentknowledgebaserecord
-   - Microsoft.Dynamics.CRM.incidentresolution
-   - Microsoft.Dynamics.CRM.knowledgearticle
-   - Microsoft.Dynamics.CRM.knowledgearticleincident
-   - Microsoft.Dynamics.CRM.knowledgebaserecord
-   - Microsoft.Dynamics.CRM.lead
-   - Microsoft.Dynamics.CRM.letter
-   - Microsoft.Dynamics.CRM.phonecall
-   - Microsoft.Dynamics.CRM.phonetocaseprocess
-   - Microsoft.Dynamics.CRM.postfollow
-   - Microsoft.Dynamics.CRM.postregarding
-   - Microsoft.Dynamics.CRM.recurringappointmentmaster
-   - Microsoft.Dynamics.CRM.resource
-   - Microsoft.Dynamics.CRM.resourcegroup
-   - Microsoft.Dynamics.CRM.resourcespec
-   - Microsoft.Dynamics.CRM.service
-   - Microsoft.Dynamics.CRM.serviceappointment
-   - Microsoft.Dynamics.CRM.servicecontractcontacts
-   - Microsoft.Dynamics.CRM.site
-   - Microsoft.Dynamics.CRM.slakpiinstance
-   - Microsoft.Dynamics.CRM.socialactivity
-   - Microsoft.Dynamics.CRM.socialprofile
-   - Microsoft.Dynamics.CRM.systemuser
-   - Microsoft.Dynamics.CRM.task
-   - Microsoft.Dynamics.CRM.template
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.actioncard
+     description: "Action card entity to show action cards."
+   - type: Microsoft.Dynamics.CRM.activityparty
+     description: "Person or group associated with an activity. An activity can have multiple activity parties."
+   - type: Microsoft.Dynamics.CRM.activitypointer
+     description: "Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar."
+   - type: Microsoft.Dynamics.CRM.appointment
+     description: "Commitment representing a time interval with start/end times and duration."
+   - type: Microsoft.Dynamics.CRM.calendarrule
+     description: "Defines free/busy times for a service and for resources or resource groups, such as working, non-working, vacation, and blocked."
+   - type: Microsoft.Dynamics.CRM.connection
+     description: "Relationship between two entities."
+   - type: Microsoft.Dynamics.CRM.constraintbasedgroup
+     description: "Group or collection of people, equipment, and/or facilities that can be scheduled."
+   - type: Microsoft.Dynamics.CRM.contact
+     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+   - type: Microsoft.Dynamics.CRM.contract
+     description: "Agreement to provide customer service during a specified amount of time or number of cases."
+   - type: Microsoft.Dynamics.CRM.contractdetail
+     description: "Line item in a contract that specifies the type of service a customer is entitled to."
+   - type: Microsoft.Dynamics.CRM.contracttemplate
+     description: "Template for a contract containing the standard attributes of a contract."
+   - type: Microsoft.Dynamics.CRM.email
+     description: "Activity that is delivered using email protocols."
+   - type: Microsoft.Dynamics.CRM.entitlement
+     description: "Defines the amount and type of support a customer should receive."
+   - type: Microsoft.Dynamics.CRM.entitlementchannel
+     description: "Defines the amount and type of support for a channel."
+   - type: Microsoft.Dynamics.CRM.entitlementcontacts
+     description: ""
+   - type: Microsoft.Dynamics.CRM.entitlementproducts
+     description: ""
+   - type: Microsoft.Dynamics.CRM.entitlementtemplate
+     description: "Contains predefined customer support terms that can be used to created entitlements for customers."
+   - type: Microsoft.Dynamics.CRM.entitlementtemplatechannel
+     description: "Contains predefined support terms for a channel to create entitlements for customers."
+   - type: Microsoft.Dynamics.CRM.entitlementtemplateproducts
+     description: ""
+   - type: Microsoft.Dynamics.CRM.equipment
+     description: "Resource that can be scheduled."
+   - type: Microsoft.Dynamics.CRM.fax
+     description: "Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document."
+   - type: Microsoft.Dynamics.CRM.incident
+     description: "Service request case associated with a contract."
+   - type: Microsoft.Dynamics.CRM.incidentknowledgebaserecord
+     description: ""
+   - type: Microsoft.Dynamics.CRM.incidentresolution
+     description: "Special type of activity that includes description of the resolution, billing status, and the duration of the case."
+   - type: Microsoft.Dynamics.CRM.knowledgearticle
+     description: "Organizational knowledge for internal and external use."
+   - type: Microsoft.Dynamics.CRM.knowledgearticleincident
+     description: "Association between an knowledge article and incident."
+   - type: Microsoft.Dynamics.CRM.knowledgebaserecord
+     description: "Metadata of knowledge base (KB) articles associated with Microsoft Dynamics 365 entities."
+   - type: Microsoft.Dynamics.CRM.lead
+     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
+   - type: Microsoft.Dynamics.CRM.letter
+     description: "Activity that tracks the delivery of a letter. The activity can contain the electronic copy of the letter."
+   - type: Microsoft.Dynamics.CRM.phonecall
+     description: "Activity to track a telephone call."
+   - type: Microsoft.Dynamics.CRM.phonetocaseprocess
+     description: "Phone To Case Process Business Process Flow"
+   - type: Microsoft.Dynamics.CRM.postfollow
+     description: "Represents a user following the activity feed of an object."
+   - type: Microsoft.Dynamics.CRM.postregarding
+     description: "Represents which object an activity feed post is regarding. For internal use only."
+   - type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+     description: "The Master appointment of a recurring appointment series."
+   - type: Microsoft.Dynamics.CRM.resource
+     description: "User or facility/equipment that can be scheduled for a service."
+   - type: Microsoft.Dynamics.CRM.resourcegroup
+     description: "Resource group or team whose members can be scheduled for a service."
+   - type: Microsoft.Dynamics.CRM.resourcespec
+     description: "Selection rule that allows the scheduling engine to select a number of resources from a pool of resources. The rules can be associated with a service."
+   - type: Microsoft.Dynamics.CRM.service
+     description: "Activity that represents work done to satisfy a customer's need."
+   - type: Microsoft.Dynamics.CRM.serviceappointment
+     description: "Activity offered by the organization to satisfy its customer's needs. Each service activity includes date, time, duration, and required resources."
+   - type: Microsoft.Dynamics.CRM.servicecontractcontacts
+     description: "Item in a Service contract."
+   - type: Microsoft.Dynamics.CRM.site
+     description: "Location or branch office where an organization does business. An organization can have multiple sites."
+   - type: Microsoft.Dynamics.CRM.slakpiinstance
+     description: "Service level agreement (SLA) key performance indicator (KPI) instance that is tracked for an individual case"
+   - type: Microsoft.Dynamics.CRM.socialactivity
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.socialprofile
+     description: "This entity is used to store social profile information of its associated account and contacts on different social channels."
+   - type: Microsoft.Dynamics.CRM.systemuser
+     description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
+   - type: Microsoft.Dynamics.CRM.task
+     description: "Generic activity representing work needed to be done."
+   - type: Microsoft.Dynamics.CRM.template
+     description: "Template for an email message that contains the standard attributes of an email message."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

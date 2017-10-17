@@ -4,7 +4,7 @@ name: "email"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement email EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -1479,15 +1479,24 @@ operations:
 solutions:
   description: "The following solutions include the email entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.AppforOutlook
-  - Microsoft.Dynamics.CRM.msdynce_Activities
-  - Microsoft.Dynamics.CRM.msdynce_AppCommon
-  - Microsoft.Dynamics.CRM.msdynce_LeadManagement
-  - Microsoft.Dynamics.CRM.msdynce_Marketing
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
-  - Microsoft.Dynamics.CRM.msdynce_Sales
-  - Microsoft.Dynamics.CRM.msdynce_Service
-  - Microsoft.Dynamics.CRM.System
+  - type: Microsoft.Dynamics.CRM.AppforOutlook
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdynce_Activities
+    description: "Dynamics 365 workload for activities."
+  - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
+    description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
+    description: "Dynamics 365 workload for lead management."
+  - type: Microsoft.Dynamics.CRM.msdynce_Marketing
+    description: "Dynamics 365 workload for marketing and enterprise."
+  - type: Microsoft.Dynamics.CRM.msdynce_MarketingSales
+    description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_Sales
+    description: "Dynamics 365 workload for sales."
+  - type: Microsoft.Dynamics.CRM.msdynce_Service
+    description: "Dynamics 365 workload for service."
+  - type: Microsoft.Dynamics.CRM.System
+    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

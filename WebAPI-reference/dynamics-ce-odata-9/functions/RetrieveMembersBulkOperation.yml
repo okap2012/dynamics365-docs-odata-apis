@@ -4,7 +4,7 @@ name: "RetrieveMembersBulkOperation"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveMembersBulkOperation Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -41,7 +41,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
   iscollection: true
   nullable: false
-  description: "The members of a bulk operation. "
+  description: "Retrieves the members of a bulk operation. "
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:

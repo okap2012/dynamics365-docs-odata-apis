@@ -4,7 +4,7 @@ name: "Scheduling"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Scheduling Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -23,17 +23,28 @@ header:
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.bookableresource
-   - Microsoft.Dynamics.CRM.bookableresourcebooking
-   - Microsoft.Dynamics.CRM.bookableresourcebookingheader
-   - Microsoft.Dynamics.CRM.bookableresourcecategory
-   - Microsoft.Dynamics.CRM.bookableresourcecategoryassn
-   - Microsoft.Dynamics.CRM.bookableresourcecharacteristic
-   - Microsoft.Dynamics.CRM.bookableresourcegroup
-   - Microsoft.Dynamics.CRM.bookingstatus
-   - Microsoft.Dynamics.CRM.characteristic
-   - Microsoft.Dynamics.CRM.ratingmodel
-   - Microsoft.Dynamics.CRM.ratingvalue
+   - type: Microsoft.Dynamics.CRM.bookableresource
+     description: "Resource that has capacity which can be allocated to work."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebooking
+     description: "Represents the line details of a resource booking."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+     description: "Shows the reservation table where the summary of resource bookings are persisted."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecategory
+     description: "Resource category master used to categorize people and equipment."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+     description: "Association entity to model the categorization of resources."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+     description: "Associates resources with their characteristics and specifies the proficiency level of a resource for that characteristic."
+   - type: Microsoft.Dynamics.CRM.bookableresourcegroup
+     description: "Associates resources with resource groups that they are a member of."
+   - type: Microsoft.Dynamics.CRM.bookingstatus
+     description: "Allows creation of multiple sub statuses mapped to a booking status option."
+   - type: Microsoft.Dynamics.CRM.characteristic
+     description: "Skills, education and certifications of resources."
+   - type: Microsoft.Dynamics.CRM.ratingmodel
+     description: "Represents a model to evaluate skills or other related entities."
+   - type: Microsoft.Dynamics.CRM.ratingvalue
+     description: "A unique value associated with a rating model that allows providing a user friendly rating value."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

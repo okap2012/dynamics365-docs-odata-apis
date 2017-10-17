@@ -4,7 +4,7 @@ name: "FormatAddress"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement FormatAddress Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -53,7 +53,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.FormatAddressResponse
   iscollection: false
   nullable: false
-  description: "Contains the response from the FormatAddress  Function."
+  description: ""
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:

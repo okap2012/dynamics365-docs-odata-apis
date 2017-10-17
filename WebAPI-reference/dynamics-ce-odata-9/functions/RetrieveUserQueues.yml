@@ -4,7 +4,7 @@ name: "RetrieveUserQueues"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveUserQueues Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -36,11 +36,13 @@ return_type:
   type: Microsoft.Dynamics.CRM.queue
   iscollection: true
   nullable: false
-  description: "Contains the results from the RetrieveUserQueuesResponse function. "
+  description: "Retrieves all private queues of a specified user and optionally all public queues. "
 entities:
   description: "Use the RetrieveUserQueues function with this entity type:"
   entity_items:
-  - Microsoft.Dynamics.CRM.queue
+  - type: Microsoft.Dynamics.CRM.queue
+    displayName: "Queue"
+    description: "A list of records that require action, such as accounts, activities, and cases."
 # There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

@@ -4,7 +4,7 @@ name: "ApplyRecordCreationAndUpdateRule"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement ApplyRecordCreationAndUpdateRule Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -21,7 +21,7 @@ owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
 parameters:
-  description: "Parameters allowed for data to be passed to the action."
+  description: "Parameters allow for data to be passed to the action."
   parameter_items:
   - name: Target
     type: Microsoft.Dynamics.CRM.crmbaseentity

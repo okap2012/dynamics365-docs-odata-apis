@@ -4,7 +4,7 @@ name: "campaign"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement campaign EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -544,8 +544,10 @@ operations:
 solutions:
   description: "The following solutions include the campaign entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.msdynce_Marketing
-  - Microsoft.Dynamics.CRM.msdynce_MarketingSales
+  - type: Microsoft.Dynamics.CRM.msdynce_Marketing
+    description: "Dynamics 365 workload for marketing and enterprise."
+  - type: Microsoft.Dynamics.CRM.msdynce_MarketingSales
+    description: "For internal use only."
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

@@ -4,7 +4,7 @@ name: "msdyn_clientextension"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_clientextension EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -246,7 +246,8 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_clientextension entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+    description: "Unified scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

@@ -4,7 +4,7 @@ name: "CreateException"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement CreateException Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -49,7 +49,9 @@ return_type:
 entities:
   description: "Use the CreateException action with this entity type:"
   entity_items:
-  - Microsoft.Dynamics.CRM.appointment
+  - type: Microsoft.Dynamics.CRM.appointment
+    displayName: Appointment
+    description: "Commitment representing a time interval with start/end times and duration."
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

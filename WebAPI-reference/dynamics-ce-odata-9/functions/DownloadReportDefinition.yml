@@ -4,7 +4,7 @@ name: "DownloadReportDefinition"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement DownloadReportDefinition Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -13,7 +13,7 @@ metadata:
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement DownloadReport Definition Function."
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement DownloadReportDefinition Function."
 namespace: Microsoft.Dynamics.CRM
 header:
   description: "Downloads a report definition.  "
@@ -30,7 +30,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.DownloadReportDefinitionResponse
   iscollection: false
   nullable: false
-  description: "Contains the response from DownloadReportDefinition function "
+  description: "Downloads a report definition.  "
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:

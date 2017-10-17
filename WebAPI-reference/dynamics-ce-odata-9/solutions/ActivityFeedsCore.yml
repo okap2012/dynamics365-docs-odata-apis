@@ -4,7 +4,7 @@ name: "Activity Feeds"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Activity Feeds Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -23,12 +23,18 @@ header:
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.msdyn_postalbum
-   - Microsoft.Dynamics.CRM.msdyn_postconfig
-   - Microsoft.Dynamics.CRM.msdyn_postruleconfig
-   - Microsoft.Dynamics.CRM.msdyn_wallsavedquery
-   - Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
-   - Microsoft.Dynamics.CRM.systemuser
+   - type: Microsoft.Dynamics.CRM.msdyn_postalbum
+     description: "Contains user profile images that are stored as attachments and displayed in posts."
+   - type: Microsoft.Dynamics.CRM.msdyn_postconfig
+     description: "Enable or disable entities for Activity Feeds and Yammer collaboration."
+   - type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
+     description: "Enable or disable system post rules for an entity for Activity Feeds and Yammer."
+   - type: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
+     description: "Contains information regarding which views are available for users to display on their personal walls. Only an administrator can specify the views that users can choose from to display on their personal walls."
+   - type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+     description: "Contains user personalization information regarding which of the administrator’s selected views to display on a user’s personal wall."
+   - type: Microsoft.Dynamics.CRM.systemuser
+     description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

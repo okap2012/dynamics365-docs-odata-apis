@@ -4,7 +4,7 @@ name: "Marketing Sales"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Marketing Sales Solution Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -18,33 +18,55 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_MarketingSales
- version: "9.0.0.1053"
+ version: "9.0.1.61"
  customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:
-   - Microsoft.Dynamics.CRM.account
-   - Microsoft.Dynamics.CRM.appointment
-   - Microsoft.Dynamics.CRM.campaign
-   - Microsoft.Dynamics.CRM.campaignitem
-   - Microsoft.Dynamics.CRM.campaignresponse
-   - Microsoft.Dynamics.CRM.connection
-   - Microsoft.Dynamics.CRM.contact
-   - Microsoft.Dynamics.CRM.email
-   - Microsoft.Dynamics.CRM.fax
-   - Microsoft.Dynamics.CRM.lead
-   - Microsoft.Dynamics.CRM.letter
-   - Microsoft.Dynamics.CRM.list
-   - Microsoft.Dynamics.CRM.listmember
-   - Microsoft.Dynamics.CRM.opportunity
-   - Microsoft.Dynamics.CRM.phonecall
-   - Microsoft.Dynamics.CRM.postfollow
-   - Microsoft.Dynamics.CRM.postregarding
-   - Microsoft.Dynamics.CRM.quote
-   - Microsoft.Dynamics.CRM.recurringappointmentmaster
-   - Microsoft.Dynamics.CRM.salesorder
-   - Microsoft.Dynamics.CRM.sharepointdocumentlocation
-   - Microsoft.Dynamics.CRM.task
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.appointment
+     description: "Commitment representing a time interval with start/end times and duration."
+   - type: Microsoft.Dynamics.CRM.campaign
+     description: "Container for campaign activities and responses, sales literature, products, and lists to create, plan, execute, and track the results of a specific marketing campaign through its life."
+   - type: Microsoft.Dynamics.CRM.campaignitem
+     description: "Work item in a campaign, a list or sales literature."
+   - type: Microsoft.Dynamics.CRM.campaignresponse
+     description: "Response from an existing or a potential new customer for a campaign."
+   - type: Microsoft.Dynamics.CRM.connection
+     description: "Relationship between two entities."
+   - type: Microsoft.Dynamics.CRM.contact
+     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+   - type: Microsoft.Dynamics.CRM.email
+     description: "Activity that is delivered using email protocols."
+   - type: Microsoft.Dynamics.CRM.fax
+     description: "Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document."
+   - type: Microsoft.Dynamics.CRM.lead
+     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
+   - type: Microsoft.Dynamics.CRM.letter
+     description: "Activity that tracks the delivery of a letter. The activity can contain the electronic copy of the letter."
+   - type: Microsoft.Dynamics.CRM.list
+     description: "Group of existing or potential customers created for a marketing campaign or other sales purposes."
+   - type: Microsoft.Dynamics.CRM.listmember
+     description: "Item in a marketing list."
+   - type: Microsoft.Dynamics.CRM.opportunity
+     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
+   - type: Microsoft.Dynamics.CRM.phonecall
+     description: "Activity to track a telephone call."
+   - type: Microsoft.Dynamics.CRM.postfollow
+     description: "Represents a user following the activity feed of an object."
+   - type: Microsoft.Dynamics.CRM.postregarding
+     description: "Represents which object an activity feed post is regarding. For internal use only."
+   - type: Microsoft.Dynamics.CRM.quote
+     description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
+   - type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+     description: "The Master appointment of a recurring appointment series."
+   - type: Microsoft.Dynamics.CRM.salesorder
+     description: "Quote that has been accepted."
+   - type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
+     description: "Document libraries or folders on a SharePoint server from where documents can be managed in Microsoft Dynamics 365."
+   - type: Microsoft.Dynamics.CRM.task
+     description: "Generic activity representing work needed to be done."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

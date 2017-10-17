@@ -4,7 +4,7 @@ name: "CalculatePrice"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement CalculatePrice Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -38,14 +38,30 @@ hasreturnvalue: false
 entities:
   description: "Use the CalculatePrice action with the following entity types:"
   entity_items:
-  - Microsoft.Dynamics.CRM.invoice
-  - Microsoft.Dynamics.CRM.invoicedetail
-  - Microsoft.Dynamics.CRM.opportunity
-  - Microsoft.Dynamics.CRM.opportunityproduct
-  - Microsoft.Dynamics.CRM.quote
-  - Microsoft.Dynamics.CRM.quotedetail
-  - Microsoft.Dynamics.CRM.salesorder
-  - Microsoft.Dynamics.CRM.salesorderdetail
+  - type: Microsoft.Dynamics.CRM.invoice
+    displayName: Invoice
+    description: "Order that has been billed."
+  - type: Microsoft.Dynamics.CRM.invoicedetail
+    displayName: Invoice Line
+    description: "Line item in an invoice containing detailed billing information for a product."
+  - type: Microsoft.Dynamics.CRM.opportunity
+    displayName: Opportunity
+    description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
+  - type: Microsoft.Dynamics.CRM.opportunityproduct
+    displayName: Opportunity Line
+    description: "Association between an opportunity and a product."
+  - type: Microsoft.Dynamics.CRM.quote
+    displayName: Quote
+    description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
+  - type: Microsoft.Dynamics.CRM.quotedetail
+    displayName: Quote Line
+    description: "Product line item in a quote. The details include such information as product ID, description, quantity, and cost."
+  - type: Microsoft.Dynamics.CRM.salesorder
+    displayName: Order
+    description: "Quote that has been accepted."
+  - type: Microsoft.Dynamics.CRM.salesorderdetail
+    displayName: Order Line
+    description: "Line item in a sales order."
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

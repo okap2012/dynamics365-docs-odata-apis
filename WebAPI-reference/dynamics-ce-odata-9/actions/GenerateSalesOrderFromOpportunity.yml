@@ -4,7 +4,7 @@ name: "GenerateSalesOrderFromOpportunity"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement GenerateSalesOrderFromOpportunity Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -41,7 +41,9 @@ return_type:
 entities:
   description: "Use the GenerateSalesOrderFromOpportunity action with this entity type:"
   entity_items:
-  - Microsoft.Dynamics.CRM.salesorder
+  - type: Microsoft.Dynamics.CRM.salesorder
+    displayName: Order
+    description: "Quote that has been accepted."
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

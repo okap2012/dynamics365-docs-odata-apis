@@ -4,7 +4,7 @@ name: "Rollup"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Rollup Function Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -43,20 +43,40 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
   iscollection: true
   nullable: false
-  description: "Contains the response from the Rollup Function."
+  description: "Retrieves all the entity records that are related to the specified record. "
 entities:
   description: "Use the Rollup function with the following entity types:"
   entity_items:
-  - Microsoft.Dynamics.CRM.account
-  - Microsoft.Dynamics.CRM.activitypointer
-  - Microsoft.Dynamics.CRM.annotation
-  - Microsoft.Dynamics.CRM.contact
-  - Microsoft.Dynamics.CRM.contract
-  - Microsoft.Dynamics.CRM.incident
-  - Microsoft.Dynamics.CRM.invoice
-  - Microsoft.Dynamics.CRM.opportunity
-  - Microsoft.Dynamics.CRM.quote
-  - Microsoft.Dynamics.CRM.salesorder
+  - type: Microsoft.Dynamics.CRM.account
+    displayName: "Account"
+    description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+  - type: Microsoft.Dynamics.CRM.activitypointer
+    displayName: "Activity"
+    description: "Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar."
+  - type: Microsoft.Dynamics.CRM.annotation
+    displayName: "Note"
+    description: "Note that is attached to one or more objects, including other notes."
+  - type: Microsoft.Dynamics.CRM.contact
+    displayName: "Contact"
+    description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+  - type: Microsoft.Dynamics.CRM.contract
+    displayName: "Contract"
+    description: "Agreement to provide customer service during a specified amount of time or number of cases."
+  - type: Microsoft.Dynamics.CRM.incident
+    displayName: "Case"
+    description: "Service request case associated with a contract."
+  - type: Microsoft.Dynamics.CRM.invoice
+    displayName: "Invoice"
+    description: "Order that has been billed."
+  - type: Microsoft.Dynamics.CRM.opportunity
+    displayName: "Opportunity"
+    description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
+  - type: Microsoft.Dynamics.CRM.quote
+    displayName: "Quote"
+    description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
+  - type: Microsoft.Dynamics.CRM.salesorder
+    displayName: "Order"
+    description: "Quote that has been accepted."
 # There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

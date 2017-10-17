@@ -4,7 +4,7 @@ name: "msdyn_wallsavedquery"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_wallsavedquery EntityType Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -239,7 +239,8 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_wallsavedquery entity type."
   solution_items:
-  - Microsoft.Dynamics.CRM.ActivityFeedsCore
+  - type: Microsoft.Dynamics.CRM.ActivityFeedsCore
+    description: "This solution enables Activity Feeds including Walls for your Microsoft Dynamics 365 organization."
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"

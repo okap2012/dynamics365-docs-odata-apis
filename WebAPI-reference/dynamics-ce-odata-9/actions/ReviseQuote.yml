@@ -4,7 +4,7 @@ name: "ReviseQuote"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement ReviseQuote Action Reference | MicrosoftDocs"
-  ms.date: "2017-10-09"
+  ms.date: "10/14/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -41,7 +41,9 @@ return_type:
 entities:
   description: "Use the ReviseQuote action with this entity type:"
   entity_items:
-  - Microsoft.Dynamics.CRM.quote
+  - type: Microsoft.Dynamics.CRM.quote
+    displayName: Quote
+    description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
