@@ -4,7 +4,7 @@ name: "msdyn_projectparameterpricelist"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_projectparameterpricelist EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_projectparameterpricelist entitytype."
+description: "Set of default cost and sales price lists that the company uses when there are no specific pricing agreements for cost and sales."
 header:
-  description: "Set of default cost and sales price lists that the company uses when there are no specific pricing agreements for cost and sales."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_projectparameterpricelists"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Project Parameter Price List

@@ -4,7 +4,7 @@ name: "plugintype"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement plugintype EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement plugintype entitytype."
+description: "Type that inherits from the IPlugin interface and is contained within a plug-in assembly."
 header:
-  description: "Type that inherits from the IPlugin interface and is contained within a plug-in assembly."
   entity_set_path: "[organization URI]/api/data/v9.0/plugintypes"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Plug-in Type

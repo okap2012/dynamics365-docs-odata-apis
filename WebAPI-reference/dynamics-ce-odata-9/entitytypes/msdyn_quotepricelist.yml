@@ -4,7 +4,7 @@ name: "msdyn_quotepricelist"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_quotepricelist EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_quotepricelist entitytype."
+description: "Sales price list that will used by the quote to default sales prices on all project-based components such as time and expense."
 header:
-  description: "Sales price list that will used by the quote to default sales prices on all project-based components such as time and expense."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_quotepricelists"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Quote Project Price List

@@ -4,7 +4,7 @@ name: "msdyn_uniquenumber"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_uniquenumber EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_uniquenumber entitytype."
+description: "Internal entity used to store unique number."
 header:
-  description: "Internal entity used to store unique number."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_uniquenumbers"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Unique Number

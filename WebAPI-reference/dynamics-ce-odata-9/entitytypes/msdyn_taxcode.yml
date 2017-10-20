@@ -4,7 +4,7 @@ name: "msdyn_taxcode"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_taxcode EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_taxcode entitytype."
+description: "Store tax related information. Each tax code could contain multiple child tax codes, and in that case the tax rate will be determined by the total tax of all children."
 header:
-  description: "Store tax related information. Each tax code could contain multiple child tax codes, and in that case the tax rate will be determined by the total tax of all children."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_taxcodes"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Tax Code

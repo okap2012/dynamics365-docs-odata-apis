@@ -4,7 +4,7 @@ name: "monthlyfiscalcalendar"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement monthlyfiscalcalendar EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement monthlyfiscalcalendar entitytype."
+description: "Monthly fiscal calendar of an organization. A span of time during which the financial activities of an organization are calculated."
 header:
-  description: "Monthly fiscal calendar of an organization. A span of time during which the financial activities of an organization are calculated."
   entity_set_path: "[organization URI]/api/data/v9.0/monthlyfiscalcalendars"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Monthly Fiscal Calendar

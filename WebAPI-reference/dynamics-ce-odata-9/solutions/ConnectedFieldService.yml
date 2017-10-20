@@ -1,0 +1,49 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.ConnectedFieldService
+name: "Connected Field Service for Microsoft Dynamics 365"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Connected Field Service for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
+  ms.date: "10/20/2017"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: a83a524d-78cd-4080-9c3b-bdc7b6c2c44c
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Connected Field Service for Microsoft Dynamics 365 Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
+ unique_name: ConnectedFieldService
+ version: "1.0.17222.3"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+     description: "Base entity for process CFS - IoT Alert Process Flow"
+   - type: Microsoft.Dynamics.CRM.msdyn_customerasset
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_iotalert
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+     description: "Represents an outgoing message to a device connected to an IoT hub."
+   - type: Microsoft.Dynamics.CRM.msdyn_workorder
+     description: "Work orders store all information about the job performed for an account. Stores incident details, resource, expenses, tasks, communications, billing and more"
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Microsoft Dynamics CRM Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -4,7 +4,7 @@ name: "languagelocale"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement languagelocale EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement languagelocale entitytype."
+description: "Language"
 header:
-  description: "Language"
   entity_set_path: "[organization URI]/api/data/v9.0/languagelocale"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Language

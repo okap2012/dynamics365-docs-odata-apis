@@ -4,7 +4,7 @@ name: "list"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement list EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement list entitytype."
+description: "Group of existing or potential customers created for a marketing campaign or other sales purposes."
 header:
-  description: "Group of existing or potential customers created for a marketing campaign or other sales purposes."
   entity_set_path: "[organization URI]/api/data/v9.0/lists"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Marketing List

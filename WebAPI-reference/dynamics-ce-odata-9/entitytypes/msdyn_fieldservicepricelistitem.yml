@@ -4,7 +4,7 @@ name: "msdyn_fieldservicepricelistitem"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_fieldservicepricelistitem EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_fieldservicepricelistitem entitytype."
+description: "Pricing options in addition to or above the Price List Items"
 header:
-  description: "Pricing options in addition to or above the Price List Items"
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_fieldservicepricelistitems"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Field Service Price List Item

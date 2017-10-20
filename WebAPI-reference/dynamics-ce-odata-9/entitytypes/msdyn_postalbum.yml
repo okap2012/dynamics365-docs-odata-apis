@@ -4,7 +4,7 @@ name: "msdyn_postalbum"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_postalbum EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_postalbum entitytype."
+description: "Contains user profile images that are stored as attachments and displayed in posts."
 header:
-  description: "Contains user profile images that are stored as attachments and displayed in posts."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_postalbums"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Profile Album

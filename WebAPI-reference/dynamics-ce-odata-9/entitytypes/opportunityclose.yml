@@ -4,7 +4,7 @@ name: "opportunityclose"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement opportunityclose EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement opportunityclose entitytype."
+description: "Activity that is created automatically when an opportunity is closed, containing information such as the description of the closing and actual revenue."
 header:
-  description: "Activity that is created automatically when an opportunity is closed, containing information such as the description of the closing and actual revenue."
   entity_set_path: "[organization URI]/api/data/v9.0/opportunitycloses"
   base_type: Microsoft.Dynamics.CRM.activitypointer
   display_name: Opportunity Close

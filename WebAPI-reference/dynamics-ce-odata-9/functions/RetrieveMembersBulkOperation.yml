@@ -4,7 +4,7 @@ name: "RetrieveMembersBulkOperation"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveMembersBulkOperation Function Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,9 +15,9 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement RetrieveMembersBulkOperation Function."
 namespace: Microsoft.Dynamics.CRM
-header:
-  description: "Retrieves the members of a bulk operation. "
-  iscomposable: true
+description: "Retrieves the members of a bulk operation. "
+iscomposable: true
+compositiontype: query
 bound_entities:
   description: "Bound functions are invoked by appending the function name to the URI representing an entity or collection."
   bound_entity_items:

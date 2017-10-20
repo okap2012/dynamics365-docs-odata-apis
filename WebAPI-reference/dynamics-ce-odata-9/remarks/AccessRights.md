@@ -1,1 +1,0 @@
-These are some remarks I want to add for the AccessRights enumeration.

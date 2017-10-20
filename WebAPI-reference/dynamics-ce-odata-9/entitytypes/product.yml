@@ -4,7 +4,7 @@ name: "product"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement product EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement product entitytype."
+description: "Information about products and their pricing information."
 header:
-  description: "Information about products and their pricing information."
   entity_set_path: "[organization URI]/api/data/v9.0/products"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Product

@@ -4,7 +4,7 @@ name: "ExecuteWorkflow"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement ExecuteWorkflow Action Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,8 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement ExecuteWorkflow Action."
 namespace: Microsoft.Dynamics.CRM
-header: 
-  description: "Executes a workflow."
+description: "Executes a workflow."
 owningsolution: Microsoft.Dynamics.CRM.System
 bound_entities:
   description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."

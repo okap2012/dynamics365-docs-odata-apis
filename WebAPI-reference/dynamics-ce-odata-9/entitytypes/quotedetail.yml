@@ -4,7 +4,7 @@ name: "quotedetail"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement quotedetail EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement quotedetail entitytype."
+description: "Product line item in a quote. The details include such information as product ID, description, quantity, and cost."
 header:
-  description: "Product line item in a quote. The details include such information as product ID, description, quantity, and cost."
   entity_set_path: "[organization URI]/api/data/v9.0/quotedetails"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Quote Line

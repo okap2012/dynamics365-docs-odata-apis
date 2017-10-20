@@ -4,7 +4,7 @@ name: "RetrievePrincipalAccess"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrievePrincipalAccess Function Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,9 +15,8 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement RetrievePrincipalAccess Function."
 namespace: Microsoft.Dynamics.CRM
-header:
-  description: "Retrieves the access rights of the specified security principal (team or user) to the specified record."
-  iscomposable: false
+description: "Retrieves the access rights of the specified security principal (team or user) to the specified record."
+iscomposable: false
 bound_entities:
   description: "Bound functions are invoked by appending the function name to the URI representing an entity or collection."
   bound_entity_items:
@@ -248,7 +247,7 @@ entities:
     description: "List of billing milestones and invoice amounts for this project contract line."
   - type: Microsoft.Dynamics.CRM.msdyn_customerasset
     displayName: "Customer Asset"
-    description: "Specify customer asset."
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_dataexport
     displayName: "Actual Data Export (Deprecated)"
     description: "Data export entity for the actual entity."
@@ -315,6 +314,21 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
     displayName: "Invoice Line Detail"
     description: "Transactions that are associated to an invoice line."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    displayName: "IoT Alert"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    displayName: "IoT Device"
+    description: "Represents a connected device that can registered with an IoT hub."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    displayName: "IoT Device Category"
+    description: "Used to categorize IoT devices."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    displayName: "IoT Device Command"
+    description: "Represents an outgoing message to a device connected to an IoT hub."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
+    displayName: "IoT Device Registration History"
+    description: "Tracks registration activities on an IoT device."
   - type: Microsoft.Dynamics.CRM.msdyn_journal
     displayName: "Journal"
     description: "Unposted business transactions, for example, time and expense."

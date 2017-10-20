@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.ActionIndex
 name: Web API Action Reference
 title: "Dynamics 365 Customer Engagement Web API Action Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -408,10 +408,18 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_InvoiceRecalculate
   description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_IoTSendTestAlert
+  description: "[Reserved for future use.] "
 - type: Microsoft.Dynamics.CRM.msdyn_IsProjectTemplatesView
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_JoinProjectTeam
   description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_JsonGetBoolean
+  description: "Reads a Boolean property in the specified JSON object."
+- type: Microsoft.Dynamics.CRM.msdyn_JsonGetNumber
+  description: "Reads a numeric property in the specified JSON object."
+- type: Microsoft.Dynamics.CRM.msdyn_JsonGetString
+  description: "Reads a text property in the specified JSON object"
 - type: Microsoft.Dynamics.CRM.msdyn_LoadFactTableEstimate
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_LogFindWorkEvent
@@ -442,6 +450,8 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_OutdentWBSTask
   description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_ParentIoTAlerts
+  description: "Calls the IoT - Debounce IoT Alerts action and passes 60 for the TimeSpan parameter."
 - type: Microsoft.Dynamics.CRM.msdyn_PostInvoice
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_PostJournal
@@ -458,6 +468,10 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_RecommendWork
   description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_RegisterCustomEntity
+  description: "Registers any custom entity that may or may not already have connected IoT devices. This action invokes the IoT – Register Device action."
+- type: Microsoft.Dynamics.CRM.msdyn_RegisterIoTDevice
+  description: "Publishes the registration requests for an IoT device."
 - type: Microsoft.Dynamics.CRM.msdyn_RejectProposedBooking
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_ResAssignResourcesForTask

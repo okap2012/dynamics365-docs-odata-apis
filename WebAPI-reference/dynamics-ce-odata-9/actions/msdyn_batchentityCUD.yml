@@ -4,7 +4,7 @@ name: "msdyn_batchentityCUD"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_batchentityCUD Action Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 

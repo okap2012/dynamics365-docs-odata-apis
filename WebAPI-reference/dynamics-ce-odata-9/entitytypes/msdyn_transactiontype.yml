@@ -4,7 +4,7 @@ name: "msdyn_transactiontype"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_transactiontype EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_transactiontype entitytype."
+description: "Broad classification, such as time or expense, and the context such cost, unbilled revenue, or billed revenue of a project actual."
 header:
-  description: "Broad classification, such as time or expense, and the context such cost, unbilled revenue, or billed revenue of a project actual."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_transactiontypes"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Transaction Type

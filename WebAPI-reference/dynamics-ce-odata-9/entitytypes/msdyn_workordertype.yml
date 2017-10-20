@@ -4,7 +4,7 @@ name: "msdyn_workordertype"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_workordertype EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_workordertype entitytype."
+description: "Create different work order types to reflect the different types of work that your company offers. Work Order types are used to control various settings on a work order."
 header:
-  description: "Create different work order types to reflect the different types of work that your company offers. Work Order types are used to control various settings on a work order."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_workordertypes"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Work Order Type

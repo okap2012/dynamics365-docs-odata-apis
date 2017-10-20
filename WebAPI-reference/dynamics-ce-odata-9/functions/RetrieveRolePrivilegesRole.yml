@@ -4,7 +4,7 @@ name: "RetrieveRolePrivilegesRole"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveRolePrivilegesRole Function Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,9 +15,8 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement RetrieveRolePrivilegesRole Function."
 namespace: Microsoft.Dynamics.CRM
-header:
-  description: "Retrieves the privileges that are assigned to the specified role.  "
-  iscomposable: false
+description: "Retrieves the privileges that are assigned to the specified role.  "
+iscomposable: false
 # This function is not bound to any entities.
 isbound: false
 parameters:

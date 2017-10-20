@@ -4,7 +4,7 @@ name: "msdyn_configuration"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_configuration EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_configuration entitytype."
+description: "This entity is used to store queries and templates."
 header:
-  description: "This entity is used to store queries and templates."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_configurations"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Configuration

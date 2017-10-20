@@ -4,7 +4,7 @@ name: "IsValidStateTransition"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement IsValidStateTransition Function Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,9 +15,8 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement IsValidStateTransition Function."
 namespace: Microsoft.Dynamics.CRM
-header:
-  description: "Validates the state transition."
-  iscomposable: false
+description: "Validates the state transition."
+iscomposable: false
 # This function is not bound to any entities.
 isbound: false
 parameters:
@@ -119,6 +118,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
     displayName: "Purchase Order Business Process"
     description: "Base entity for process Purchase Order Business Process"
+  - type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    displayName: "CFS - IoT Alert Process Flow"
+    description: "Base entity for process CFS - IoT Alert Process Flow"
   - type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
     displayName: "Project Stages"
     description: "Base entity for process Project Stages"
@@ -154,7 +156,7 @@ entities:
     description: "List of billing milestones and invoice amounts for this project contract line."
   - type: Microsoft.Dynamics.CRM.msdyn_customerasset
     displayName: "Customer Asset"
-    description: "Specify customer asset."
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_dataexport
     displayName: "Actual Data Export (Deprecated)"
     description: "Data export entity for the actual entity."
@@ -236,6 +238,21 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
     displayName: "Invoice Line Detail"
     description: "Transactions that are associated to an invoice line."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    displayName: "IoT Alert"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    displayName: "IoT Device"
+    description: "Represents a connected device that can registered with an IoT hub."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    displayName: "IoT Device Category"
+    description: "Used to categorize IoT devices."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    displayName: "IoT Device Command"
+    description: "Represents an outgoing message to a device connected to an IoT hub."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
+    displayName: "IoT Device Registration History"
+    description: "Tracks registration activities on an IoT device."
   - type: Microsoft.Dynamics.CRM.msdyn_journal
     displayName: "Journal"
     description: "Unposted business transactions, for example, time and expense."

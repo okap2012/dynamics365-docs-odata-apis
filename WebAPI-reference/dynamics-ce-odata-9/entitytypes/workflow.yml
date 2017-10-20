@@ -4,7 +4,7 @@ name: "workflow"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement workflow EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement workflow entitytype."
+description: "Set of logical rules that define the steps necessary to automate a specific business process, task, or set of actions to be performed."
 header:
-  description: "Set of logical rules that define the steps necessary to automate a specific business process, task, or set of actions to be performed."
   entity_set_path: "[organization URI]/api/data/v9.0/workflows"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Process
@@ -533,6 +533,9 @@ collection_valued_navigation_properties:
     partner: workflowactivationid
   - name: lk_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799_processid
     type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
+    partner: processid
+  - name: lk_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b_processid
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
     partner: processid
   - name: lk_msdyn_bpf_665e73aa18c247d886bfc50499c73b82_processid
     type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82

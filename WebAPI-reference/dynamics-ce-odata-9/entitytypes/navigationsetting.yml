@@ -4,7 +4,7 @@ name: "navigationsetting"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement navigationsetting EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement navigationsetting entitytype."
+description: "Navigation Setting: A setting page or group of pages available for configuration within an app. A record representing a group of pages is regarded as the parent navigation setting of one or more other records. For internal use only."
 header:
-  description: "Navigation Setting: A setting page or group of pages available for configuration within an app. A record representing a group of pages is regarded as the parent navigation setting of one or more other records. For internal use only."
   entity_set_path: "[organization URI]/api/data/v9.0/navigationsettings"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Navigation Setting

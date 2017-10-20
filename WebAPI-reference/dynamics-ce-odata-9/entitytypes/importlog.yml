@@ -4,7 +4,7 @@ name: "importlog"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement importlog EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement importlog entitytype."
+description: "Failure reason and other detailed information for a record that failed to import."
 header:
-  description: "Failure reason and other detailed information for a record that failed to import."
   entity_set_path: "[organization URI]/api/data/v9.0/importlogs"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Import Log

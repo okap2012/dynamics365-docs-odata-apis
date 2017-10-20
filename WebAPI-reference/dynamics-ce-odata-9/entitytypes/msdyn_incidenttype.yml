@@ -4,7 +4,7 @@ name: "msdyn_incidenttype"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_incidenttype EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_incidenttype entitytype."
+description: "Incident types define the various types of incidents (issues) that a customer could report, on which work orders are based."
 header:
-  description: "Incident types define the various types of incidents (issues) that a customer could report, on which work orders are based."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_incidenttypes"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Incident Type

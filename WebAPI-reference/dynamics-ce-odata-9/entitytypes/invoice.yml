@@ -4,7 +4,7 @@ name: "invoice"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement invoice EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement invoice entitytype."
+description: "Order that has been billed."
 header:
-  description: "Order that has been billed."
   entity_set_path: "[organization URI]/api/data/v9.0/invoices"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Invoice

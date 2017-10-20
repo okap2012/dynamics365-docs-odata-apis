@@ -4,7 +4,7 @@ name: "businessunit"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement businessunit EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement businessunit entitytype."
+description: "Business, division, or department in the Microsoft Dynamics 365 database."
 header:
-  description: "Business, division, or department in the Microsoft Dynamics 365 database."
   entity_set_path: "[organization URI]/api/data/v9.0/businessunits"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Business Unit
@@ -789,6 +789,21 @@ collection_valued_navigation_properties:
     partner: owningbusinessunit
   - name: business_unit_msdyn_invoicelinetransaction
     type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_iotalert
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_iotdevice
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_iotdevicecategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_iotdevicecommand
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_iotdeviceregistrationhistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
     partner: owningbusinessunit
   - name: business_unit_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal

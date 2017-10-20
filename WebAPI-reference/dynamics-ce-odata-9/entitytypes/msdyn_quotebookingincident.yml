@@ -4,7 +4,7 @@ name: "msdyn_quotebookingincident"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_quotebookingincident EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_quotebookingincident entitytype."
+description: "Stores the Incidents associated with Quote and Quote Booking Setup"
 header:
-  description: "Stores the Incidents associated with Quote and Quote Booking Setup"
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_quotebookingincidents"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Quote Booking Incident

@@ -4,7 +4,7 @@ name: "msdyn_contractlineinvoiceschedule"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_contractlineinvoiceschedule EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_contractlineinvoiceschedule entitytype."
+description: "List of dates that shows when invoicing for this customer should be run. This list is used by the invoice creation job."
 header:
-  description: "List of dates that shows when invoicing for this customer should be run. This list is used by the invoice creation job."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_contractlineinvoiceschedules"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Project Contract Line Invoice Schedule

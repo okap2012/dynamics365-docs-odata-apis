@@ -325,6 +325,8 @@ items:
       name: msdyn_bookingtimestamp
     - uid: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
       name: msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
+    - uid: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+      name: msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
     - uid: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
       name: msdyn_bpf_665e73aa18c247d886bfc50499c73b82
     - uid: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
@@ -403,6 +405,16 @@ items:
       name: msdyn_invoicefrequencydetail
     - uid: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
       name: msdyn_invoicelinetransaction
+    - uid: Microsoft.Dynamics.CRM.msdyn_iotalert
+      name: msdyn_iotalert
+    - uid: Microsoft.Dynamics.CRM.msdyn_iotdevice
+      name: msdyn_iotdevice
+    - uid: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+      name: msdyn_iotdevicecategory
+    - uid: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+      name: msdyn_iotdevicecommand
+    - uid: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
+      name: msdyn_iotdeviceregistrationhistory
     - uid: Microsoft.Dynamics.CRM.msdyn_journal
       name: msdyn_journal
     - uid: Microsoft.Dynamics.CRM.msdyn_journalline
@@ -1298,10 +1310,18 @@ items:
       name: msdyn_InvoicePaid
     - uid: Microsoft.Dynamics.CRM.msdyn_InvoiceRecalculate
       name: msdyn_InvoiceRecalculate
+    - uid: Microsoft.Dynamics.CRM.msdyn_IoTSendTestAlert
+      name: msdyn_IoTSendTestAlert
     - uid: Microsoft.Dynamics.CRM.msdyn_IsProjectTemplatesView
       name: msdyn_IsProjectTemplatesView
     - uid: Microsoft.Dynamics.CRM.msdyn_JoinProjectTeam
       name: msdyn_JoinProjectTeam
+    - uid: Microsoft.Dynamics.CRM.msdyn_JsonGetBoolean
+      name: msdyn_JsonGetBoolean
+    - uid: Microsoft.Dynamics.CRM.msdyn_JsonGetNumber
+      name: msdyn_JsonGetNumber
+    - uid: Microsoft.Dynamics.CRM.msdyn_JsonGetString
+      name: msdyn_JsonGetString
     - uid: Microsoft.Dynamics.CRM.msdyn_LoadFactTableEstimate
       name: msdyn_LoadFactTableEstimate
     - uid: Microsoft.Dynamics.CRM.msdyn_LogFindWorkEvent
@@ -1332,6 +1352,8 @@ items:
       name: msdyn_NewInvoiceContract
     - uid: Microsoft.Dynamics.CRM.msdyn_OutdentWBSTask
       name: msdyn_OutdentWBSTask
+    - uid: Microsoft.Dynamics.CRM.msdyn_ParentIoTAlerts
+      name: msdyn_ParentIoTAlerts
     - uid: Microsoft.Dynamics.CRM.msdyn_PostInvoice
       name: msdyn_PostInvoice
     - uid: Microsoft.Dynamics.CRM.msdyn_PostJournal
@@ -1348,6 +1370,10 @@ items:
       name: msdyn_recallrequestforrequirement
     - uid: Microsoft.Dynamics.CRM.msdyn_RecommendWork
       name: msdyn_RecommendWork
+    - uid: Microsoft.Dynamics.CRM.msdyn_RegisterCustomEntity
+      name: msdyn_RegisterCustomEntity
+    - uid: Microsoft.Dynamics.CRM.msdyn_RegisterIoTDevice
+      name: msdyn_RegisterIoTDevice
     - uid: Microsoft.Dynamics.CRM.msdyn_RejectProposedBooking
       name: msdyn_RejectProposedBooking
     - uid: Microsoft.Dynamics.CRM.msdyn_ResAssignResourcesForTask
@@ -2201,6 +2227,12 @@ items:
       name: msdyn_GetUserTimeZoneNameResponse
     - uid: Microsoft.Dynamics.CRM.msdyn_IsProjectTemplatesViewResponse
       name: msdyn_IsProjectTemplatesViewResponse
+    - uid: Microsoft.Dynamics.CRM.msdyn_JsonGetBooleanResponse
+      name: msdyn_JsonGetBooleanResponse
+    - uid: Microsoft.Dynamics.CRM.msdyn_JsonGetNumberResponse
+      name: msdyn_JsonGetNumberResponse
+    - uid: Microsoft.Dynamics.CRM.msdyn_JsonGetStringResponse
+      name: msdyn_JsonGetStringResponse
     - uid: Microsoft.Dynamics.CRM.msdyn_LogFindWorkEventResponse
       name: msdyn_LogFindWorkEventResponse
     - uid: Microsoft.Dynamics.CRM.msdyn_MSProject_GetFindResourcesURLResponse
@@ -2556,10 +2588,14 @@ items:
       name: App for Outlook
     - uid: Microsoft.Dynamics.CRM.msdynce_AppCommon
       name: Application Common
+    - uid: Microsoft.Dynamics.CRM.ConnectedFieldService
+      name: Connected Field Service for Microsoft Dynamics 365
     - uid: Microsoft.Dynamics.CRM.msdynce_CRMExtensions
       name: CRM Extensions
     - uid: Microsoft.Dynamics.CRM.FieldService
       name: Field Service
+    - uid: Microsoft.Dynamics.CRM.IoTConnector
+      name: IoT Connector for Microsoft Dynamics 365
     - uid: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagement
       name: Knowledge Management
     - uid: Microsoft.Dynamics.CRM.msdynce_LeadManagement

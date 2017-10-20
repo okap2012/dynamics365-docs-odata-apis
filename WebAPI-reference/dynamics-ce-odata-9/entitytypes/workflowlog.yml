@@ -4,7 +4,7 @@ name: "workflowlog"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement workflowlog EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement workflowlog entitytype."
+description: "Log used to track process execution."
 header:
-  description: "Log used to track process execution."
   entity_set_path: "[organization URI]/api/data/v9.0/workflowlogs"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Process Log
@@ -130,6 +130,7 @@ lookup_properties:
   property_items:
   - name: _asyncoperationid_value
     single_valued_navigation_property:
+    - asyncoperationid_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
     - PhoneToCaseProcess_asyncoperationid
     - LeadToOpportunitySalesProcess_asyncoperationid
     - OpportunitySalesProcess_asyncoperationid
@@ -189,6 +190,9 @@ single_valued_navigation_properties:
   - name: asyncoperationid_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
     type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
     partner: msdyn_bpf_2c5fe86acc8b414b8322ae571000c799_WorkflowLogs
+  - name: asyncoperationid_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    partner: msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b_WorkflowLogs
   - name: asyncoperationid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
     type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
     partner: msdyn_bpf_665e73aa18c247d886bfc50499c73b82_WorkflowLogs

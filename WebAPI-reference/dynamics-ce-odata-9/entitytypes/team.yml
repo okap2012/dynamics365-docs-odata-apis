@@ -4,7 +4,7 @@ name: "team"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement team EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement team entitytype."
+description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units."
 header:
-  description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units."
   entity_set_path: "[organization URI]/api/data/v9.0/teams"
   base_type: Microsoft.Dynamics.CRM.principal
   display_name: Team
@@ -550,6 +550,21 @@ collection_valued_navigation_properties:
     partner: ownerid
   - name: owner_msdyn_invoicelinetransaction
     type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: ownerid
+  - name: owner_msdyn_iotalert
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: ownerid
+  - name: owner_msdyn_iotdevice
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    partner: ownerid
+  - name: owner_msdyn_iotdevicecategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    partner: ownerid
+  - name: owner_msdyn_iotdevicecommand
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: ownerid
+  - name: owner_msdyn_iotdeviceregistrationhistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
     partner: ownerid
   - name: owner_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal
@@ -1228,6 +1243,21 @@ collection_valued_navigation_properties:
     partner: owningteam
   - name: team_msdyn_invoicelinetransaction
     type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: owningteam
+  - name: team_msdyn_iotalert
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: owningteam
+  - name: team_msdyn_iotdevice
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    partner: owningteam
+  - name: team_msdyn_iotdevicecategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    partner: owningteam
+  - name: team_msdyn_iotdevicecommand
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: owningteam
+  - name: team_msdyn_iotdeviceregistrationhistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
     partner: owningteam
   - name: team_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal

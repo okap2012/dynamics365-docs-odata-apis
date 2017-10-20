@@ -4,7 +4,7 @@ name: "msdyn_bpf_2c5fe86acc8b414b8322ae571000c799"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_bpf_2c5fe86acc8b414b8322ae571000c799 EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_bpf_2c5fe86acc8b414b8322ae571000c799 entitytype."
+description: "Base entity for process Purchase Order Business Process"
 header:
-  description: "Base entity for process Purchase Order Business Process"
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_bpf_2c5fe86acc8b414b8322ae571000c799s"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Purchase Order Business Process

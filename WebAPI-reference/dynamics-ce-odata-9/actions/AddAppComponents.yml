@@ -4,7 +4,7 @@ name: "AddAppComponents"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement AddAppComponents Action Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -40,9 +40,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.appmodule
     displayName: App
     description: "A role-based, modular business app that provides task-based functionality for a particular area of work."
-remarks: |
-  ## Remarks
-  There is something to say about this action.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

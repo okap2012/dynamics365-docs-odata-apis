@@ -4,7 +4,7 @@ name: "CreateCustomerRelationships"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement CreateCustomerRelationships Action Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,8 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement CreateCustomerRelationships Action."
 namespace: Microsoft.Dynamics.CRM
-header: 
-  description: "Creates a new customer lookup attribute, and optionally, to add it to a specified unmanaged solution."
+description: "Creates a new customer lookup attribute, and optionally, to add it to a specified unmanaged solution."
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false

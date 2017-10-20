@@ -4,7 +4,7 @@ name: "duplicaterecord"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement duplicaterecord EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement duplicaterecord entitytype."
+description: "Potential duplicate record."
 header:
-  description: "Potential duplicate record."
   entity_set_path: "[organization URI]/api/data/v9.0/duplicaterecords"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Duplicate Record
@@ -60,6 +60,10 @@ lookup_properties:
     description: "Unique identifier of the system job that created this record."
   - name: _baserecordid_value
     single_valued_navigation_property:
+    - baserecordid_msdyn_iotdevice
+    - baserecordid_msdyn_iotdevicecategory
+    - baserecordid_msdyn_iotdevicecommand
+    - baserecordid_msdyn_iotdeviceregistrationhistory
     - baserecordid_lead
     - baserecordid_bookableresource
     - baserecordid_bookableresourcebooking
@@ -256,6 +260,10 @@ lookup_properties:
     description: "Unique identifier of the base record."
   - name: _duplicaterecordid_value
     single_valued_navigation_property:
+    - duplicaterecordid_msdyn_iotdevice
+    - duplicaterecordid_msdyn_iotdevicecategory
+    - duplicaterecordid_msdyn_iotdevicecommand
+    - duplicaterecordid_msdyn_iotdeviceregistrationhistory
     - duplicaterecordid_lead
     - duplicaterecordid_bookableresource
     - duplicaterecordid_bookableresourcebooking
@@ -699,6 +707,18 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_invoicelinetransaction
     type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
     partner: msdyn_invoicelinetransaction_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotdevice
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    partner: msdyn_iotdevice_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotdevicecategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    partner: msdyn_iotdevicecategory_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotdevicecommand
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: msdyn_iotdevicecommand_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotdeviceregistrationhistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
+    partner: msdyn_iotdeviceregistrationhistory_DuplicateBaseRecord
   - name: baserecordid_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal
     partner: msdyn_journal_DuplicateBaseRecord
@@ -1311,6 +1331,18 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_invoicelinetransaction
     type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
     partner: msdyn_invoicelinetransaction_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotdevice
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    partner: msdyn_iotdevice_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotdevicecategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    partner: msdyn_iotdevicecategory_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotdevicecommand
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: msdyn_iotdevicecommand_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotdeviceregistrationhistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
+    partner: msdyn_iotdeviceregistrationhistory_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal
     partner: msdyn_journal_DuplicateMatchingRecord

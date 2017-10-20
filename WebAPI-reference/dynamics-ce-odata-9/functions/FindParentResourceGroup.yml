@@ -4,7 +4,7 @@ name: "FindParentResourceGroup"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement FindParentResourceGroup Function Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,9 +15,8 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement FindParentResourceGroup Function."
 namespace: Microsoft.Dynamics.CRM
-header:
-  description: "Finds a parent resource group (scheduling group) for the specified resource groups (scheduling groups)."
-  iscomposable: false
+description: "Finds a parent resource group (scheduling group) for the specified resource groups (scheduling groups)."
+iscomposable: false
 bound_entities:
   description: "Bound functions are invoked by appending the function name to the URI representing an entity or collection."
   bound_entity_items:

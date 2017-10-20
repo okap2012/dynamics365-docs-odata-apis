@@ -4,7 +4,7 @@ name: "syncerror"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement syncerror EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement syncerror entitytype."
+description: "Failure reason and other detailed information for a record that failed to sync."
 header:
-  description: "Failure reason and other detailed information for a record that failed to sync."
   entity_set_path: "[organization URI]/api/data/v9.0/syncerrors"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Sync Error
@@ -182,6 +182,12 @@ lookup_properties:
     description: "Unique identifier of the user who owns the sync error."
   - name: _regardingobjectid_value
     single_valued_navigation_property:
+    - regardingobjectid_msdyn_iotalert
+    - regardingobjectid_msdyn_iotdevice
+    - regardingobjectid_msdyn_iotdevicecategory
+    - regardingobjectid_msdyn_iotdevicecommand
+    - regardingobjectid_msdyn_iotdeviceregistrationhistory
+    - regardingobjectid_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
     - regardingobjectid_territory_syncerror
     - regardingobjectid_leadaddress_syncerror
     - regardingobjectid_lead_syncerror
@@ -802,6 +808,9 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
     type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
     partner: msdyn_bpf_2c5fe86acc8b414b8322ae571000c799_SyncErrors
+  - name: regardingobjectid_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    partner: msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b_SyncErrors
   - name: regardingobjectid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
     type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
     partner: msdyn_bpf_665e73aa18c247d886bfc50499c73b82_SyncErrors
@@ -919,6 +928,21 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_invoicelinetransaction
     type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
     partner: msdyn_invoicelinetransaction_SyncErrors
+  - name: regardingobjectid_msdyn_iotalert
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: msdyn_iotalert_SyncErrors
+  - name: regardingobjectid_msdyn_iotdevice
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    partner: msdyn_iotdevice_SyncErrors
+  - name: regardingobjectid_msdyn_iotdevicecategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    partner: msdyn_iotdevicecategory_SyncErrors
+  - name: regardingobjectid_msdyn_iotdevicecommand
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: msdyn_iotdevicecommand_SyncErrors
+  - name: regardingobjectid_msdyn_iotdeviceregistrationhistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
+    partner: msdyn_iotdeviceregistrationhistory_SyncErrors
   - name: regardingobjectid_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal
     partner: msdyn_journal_SyncErrors
