@@ -85,7 +85,7 @@ derived_types:
    - type: Microsoft.Dynamics.CRM.OptionSetMetadata
      description: "Contains metadata that defines a set of options."
 # This entity is not used by other entities or operations.
-# There are no remarks for this metadata entity.
+# This metadata entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

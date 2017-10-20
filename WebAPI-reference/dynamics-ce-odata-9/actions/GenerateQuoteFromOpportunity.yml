@@ -48,7 +48,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.quote
     displayName: Quote
     description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

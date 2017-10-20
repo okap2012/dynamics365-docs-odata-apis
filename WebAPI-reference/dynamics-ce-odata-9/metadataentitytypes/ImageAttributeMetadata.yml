@@ -219,7 +219,7 @@ properties:
 # No functions or actions are bound to this entity.
 # This entity has no derived entities.
 # This entity is not used by other entities or operations.
-# There are no remarks for this metadata entity.
+# This metadata entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

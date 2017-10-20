@@ -655,14 +655,6 @@ items:
       name: msdyn_workordersubstatus
     - uid: Microsoft.Dynamics.CRM.msdyn_workordertype
       name: msdyn_workordertype
-    - uid: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-      name: msdynsm_marketingsitemap
-    - uid: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-      name: msdynsm_salessitemap
-    - uid: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-      name: msdynsm_servicessitemap
-    - uid: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-      name: msdynsm_settingssitemap
     - uid: Microsoft.Dynamics.CRM.navigationsetting
       name: navigationsetting
     - uid: Microsoft.Dynamics.CRM.newprocess

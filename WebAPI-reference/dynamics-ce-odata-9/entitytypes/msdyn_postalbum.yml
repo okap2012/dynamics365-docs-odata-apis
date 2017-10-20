@@ -261,7 +261,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.ActivityFeedsCore
     description: "This solution enables Activity Feeds including Walls for your Microsoft Dynamics 365 organization."
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -59,7 +59,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.lead
     displayName: Lead
     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

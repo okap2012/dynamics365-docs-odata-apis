@@ -26,7 +26,7 @@ entities:
    - type: Microsoft.Dynamics.CRM.socialprofile
      description: "This entity is used to store social profile information of its associated account and contacts on different social channels."
 # This solution includes no actions.
-# There are no remarks for this solution.
+# This solution has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

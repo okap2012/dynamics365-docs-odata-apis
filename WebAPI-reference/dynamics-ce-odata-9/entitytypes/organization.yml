@@ -2795,18 +2795,6 @@ collection_valued_navigation_properties:
   - name: organization_msdyn_workorderdetailsgenerationqueue
     type: Microsoft.Dynamics.CRM.msdyn_workorderdetailsgenerationqueue
     partner: organizationid
-  - name: organization_msdynsm_marketingsitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-    partner: organizationid
-  - name: organization_msdynsm_salessitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-    partner: organizationid
-  - name: organization_msdynsm_servicessitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-    partner: organizationid
-  - name: organization_msdynsm_settingssitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-    partner: organizationid
   - name: organization_navigationsetting
     type: Microsoft.Dynamics.CRM.navigationsetting
     partner: organization_navigationsetting_navigationsetting
@@ -2970,7 +2958,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -610,22 +610,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_workordertype
     displayName: "Work Order Type"
     description: "Create different work order types to reflect the different types of work that your company offers. Work Order types are used to control various settings on a work order."
-  - type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-    displayName: "MarketingSiteMap"
-    description: ""
-  - type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-    displayName: "SalesSiteMap"
-    description: ""
-  - type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-    displayName: "ServicesSiteMap"
-    description: ""
-  - type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-    displayName: "SettingsSiteMap"
-    description: ""
   - type: Microsoft.Dynamics.CRM.opportunity
     displayName: "Opportunity"
     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
-# There are no remarks for this function.
+# This function has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

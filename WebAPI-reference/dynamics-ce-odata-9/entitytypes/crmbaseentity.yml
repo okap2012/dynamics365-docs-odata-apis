@@ -658,14 +658,6 @@ derived_types:
     description: "Specify custom work order sub-statuses, which can be used to specify the current work order status more precisely." 
   - type: Microsoft.Dynamics.CRM.msdyn_workordertype 
     description: "Create different work order types to reflect the different types of work that your company offers. Work Order types are used to control various settings on a work order." 
-  - type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap 
-    description: "" 
-  - type: Microsoft.Dynamics.CRM.msdynsm_salessitemap 
-    description: "" 
-  - type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap 
-    description: "" 
-  - type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap 
-    description: "" 
   - type: Microsoft.Dynamics.CRM.navigationsetting 
     description: "Navigation Setting: A setting page or group of pages available for configuration within an app. A record representing a group of pages is regarded as the parent navigation setting of one or more other records. For internal use only." 
   - type: Microsoft.Dynamics.CRM.newprocess 
@@ -898,7 +890,7 @@ derived_types:
     description: "Set of logical rules that define the steps necessary to automate a specific business process, task, or set of actions to be performed." 
 # This entity has no operations
 # This entity is not included in any solutions.
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

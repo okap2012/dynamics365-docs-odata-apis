@@ -32,7 +32,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.RetrieveTimestamp
     used_as: ReturnType
-# There are no remarks for this complex type.
+# This complex type has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -39,7 +39,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.service
     displayName: "Service"
     description: "Activity that represents work done to satisfy a customer's need."
-# There are no remarks for this function.
+# This function has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

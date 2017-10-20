@@ -26,7 +26,7 @@ entities:
    - type: Microsoft.Dynamics.CRM.msdyn_odatav4ds
      description: "Data sources used by the OData v4 data provider to access data from an external web service."
 # This solution includes no actions.
-# There are no remarks for this solution.
+# This solution has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

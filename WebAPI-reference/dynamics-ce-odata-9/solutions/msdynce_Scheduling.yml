@@ -46,7 +46,7 @@ entities:
    - type: Microsoft.Dynamics.CRM.ratingvalue
      description: "A unique value associated with a rating model that allows providing a user friendly rating value."
 # This solution includes no actions.
-# There are no remarks for this solution.
+# This solution has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

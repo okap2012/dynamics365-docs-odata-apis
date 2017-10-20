@@ -20,19 +20,9 @@ header:
  unique_name: SiteMapCustomization
  version: "9.1"
  customization_prefix: msdynsm
-entities:
-  description: "The following entities are included in this solution."
-  entity_items:
-   - type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-     description: ""
-   - type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-     description: ""
-   - type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-     description: ""
-   - type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-     description: ""
+# This solution includes no entities.
 # This solution includes no actions.
-# There are no remarks for this solution.
+# This solution has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -304,7 +304,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

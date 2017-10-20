@@ -989,18 +989,6 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.msdyn_workordertype
   displayName: "Work Order Type"
   description: "Create different work order types to reflect the different types of work that your company offers. Work Order types are used to control various settings on a work order."
-- type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-  displayName: "MarketingSiteMap"
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-  displayName: "SalesSiteMap"
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-  displayName: "ServicesSiteMap"
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-  displayName: "SettingsSiteMap"
-  description: ""
 - type: Microsoft.Dynamics.CRM.navigationsetting
   displayName: "Navigation Setting"
   description: "Navigation Setting: A setting page or group of pages available for configuration within an app. A record representing a group of pages is regarded as the parent navigation setting of one or more other records. For internal use only."

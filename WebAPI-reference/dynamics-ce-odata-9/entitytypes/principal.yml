@@ -721,7 +721,7 @@ derived_types:
     description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units." 
 # This entity has no operations
 # This entity is not included in any solutions.
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

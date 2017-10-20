@@ -684,10 +684,6 @@ lookup_properties:
     - regardingobjectid_msdyn_workorderservicetask
     - regardingobjectid_msdyn_workordersubstatus
     - regardingobjectid_msdyn_workordertype
-    - regardingobjectid_msdynsm_marketingsitemap
-    - regardingobjectid_msdynsm_salessitemap
-    - regardingobjectid_msdynsm_servicessitemap
-    - regardingobjectid_msdynsm_settingssitemap
     - regardingobjectid_theme
     - regardingobjectid_usermapping
     - regardingobjectid_new_interactionforemail
@@ -1617,18 +1613,6 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_workordertype
     type: Microsoft.Dynamics.CRM.msdyn_workordertype
     partner: msdyn_workordertype_AsyncOperations
-  - name: regardingobjectid_msdynsm_marketingsitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-    partner: msdynsm_marketingsitemap_AsyncOperations
-  - name: regardingobjectid_msdynsm_salessitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-    partner: msdynsm_salessitemap_AsyncOperations
-  - name: regardingobjectid_msdynsm_servicessitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-    partner: msdynsm_servicessitemap_AsyncOperations
-  - name: regardingobjectid_msdynsm_settingssitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-    partner: msdynsm_settingssitemap_AsyncOperations
   - name: regardingobjectid_new_interactionforemail
     type: Microsoft.Dynamics.CRM.interactionforemail
     partner: new_interactionforemail_AsyncOperations
@@ -1862,7 +1846,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

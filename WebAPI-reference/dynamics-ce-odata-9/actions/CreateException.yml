@@ -51,7 +51,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.appointment
     displayName: Appointment
     description: "Commitment representing a time interval with start/end times and duration."
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

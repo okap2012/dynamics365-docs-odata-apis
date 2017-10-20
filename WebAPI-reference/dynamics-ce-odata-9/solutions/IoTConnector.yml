@@ -52,7 +52,7 @@ actions:
      description: "Registers any custom entity that may or may not already have connected IoT devices. This action invokes the IoT – Register Device action."
    - type: Microsoft.Dynamics.CRM.msdyn_RegisterIoTDevice
      description: "Publishes the registration requests for an IoT device."
-# There are no remarks for this solution.
+# This solution has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

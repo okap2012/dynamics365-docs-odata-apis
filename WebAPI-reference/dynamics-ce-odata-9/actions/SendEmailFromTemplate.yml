@@ -48,7 +48,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.email
     displayName: Email
     description: "Activity that is delivered using email protocols."
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

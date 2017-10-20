@@ -624,7 +624,7 @@ solutions:
     description: ""
   - type: Microsoft.Dynamics.CRM.msdynce_Sales
     description: "Dynamics 365 workload for sales."
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

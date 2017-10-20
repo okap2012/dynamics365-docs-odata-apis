@@ -340,10 +340,6 @@ lookup_properties:
     - objectid_msdyn_workorderservicetask
     - objectid_msdyn_workordersubstatus
     - objectid_msdyn_workordertype
-    - objectid_msdynsm_marketingsitemap
-    - objectid_msdynsm_salessitemap
-    - objectid_msdynsm_servicessitemap
-    - objectid_msdynsm_settingssitemap
     - objectid_contact
     - objectid_account
     - objectid_knowledgearticle
@@ -1155,18 +1151,6 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_workordertype
     type: Microsoft.Dynamics.CRM.msdyn_workordertype
     partner: msdyn_workordertype_PrincipalObjectAttributeAccesses
-  - name: objectid_msdynsm_marketingsitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-    partner: msdynsm_marketingsitemap_PrincipalObjectAttributeAccesses
-  - name: objectid_msdynsm_salessitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-    partner: msdynsm_salessitemap_PrincipalObjectAttributeAccesses
-  - name: objectid_msdynsm_servicessitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-    partner: msdynsm_servicessitemap_PrincipalObjectAttributeAccesses
-  - name: objectid_msdynsm_settingssitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-    partner: msdynsm_settingssitemap_PrincipalObjectAttributeAccesses
   - name: objectid_opportunity
     type: Microsoft.Dynamics.CRM.opportunity
     partner: opportunity_principalobjectattributeaccess
@@ -1319,7 +1303,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

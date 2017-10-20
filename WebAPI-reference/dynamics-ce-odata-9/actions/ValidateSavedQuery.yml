@@ -46,7 +46,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.serviceappointment
     displayName: Service Activity
     description: "Activity offered by the organization to satisfy its customer's needs. Each service activity includes date, time, duration, and required resources."
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

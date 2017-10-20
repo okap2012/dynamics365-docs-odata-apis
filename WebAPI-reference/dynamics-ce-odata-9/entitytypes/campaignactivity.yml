@@ -1087,7 +1087,7 @@ solutions:
     description: "Dynamics 365 workload for marketing and enterprise."
   - type: Microsoft.Dynamics.CRM.msdynce_MarketingService
     description: "For internal use only."
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

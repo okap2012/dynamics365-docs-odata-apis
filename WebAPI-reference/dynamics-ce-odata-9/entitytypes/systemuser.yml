@@ -4464,54 +4464,6 @@ collection_valued_navigation_properties:
   - name: lk_msdyn_workordertype_modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.msdyn_workordertype
     partner: modifiedonbehalfby
-  - name: lk_msdynsm_marketingsitemap_createdby
-    type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-    partner: createdby
-  - name: lk_msdynsm_marketingsitemap_createdonbehalfby
-    type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-    partner: createdonbehalfby
-  - name: lk_msdynsm_marketingsitemap_modifiedby
-    type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-    partner: modifiedby
-  - name: lk_msdynsm_marketingsitemap_modifiedonbehalfby
-    type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-    partner: modifiedonbehalfby
-  - name: lk_msdynsm_salessitemap_createdby
-    type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-    partner: createdby
-  - name: lk_msdynsm_salessitemap_createdonbehalfby
-    type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-    partner: createdonbehalfby
-  - name: lk_msdynsm_salessitemap_modifiedby
-    type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-    partner: modifiedby
-  - name: lk_msdynsm_salessitemap_modifiedonbehalfby
-    type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-    partner: modifiedonbehalfby
-  - name: lk_msdynsm_servicessitemap_createdby
-    type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-    partner: createdby
-  - name: lk_msdynsm_servicessitemap_createdonbehalfby
-    type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-    partner: createdonbehalfby
-  - name: lk_msdynsm_servicessitemap_modifiedby
-    type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-    partner: modifiedby
-  - name: lk_msdynsm_servicessitemap_modifiedonbehalfby
-    type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-    partner: modifiedonbehalfby
-  - name: lk_msdynsm_settingssitemap_createdby
-    type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-    partner: createdby
-  - name: lk_msdynsm_settingssitemap_createdonbehalfby
-    type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-    partner: createdonbehalfby
-  - name: lk_msdynsm_settingssitemap_modifiedby
-    type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-    partner: modifiedby
-  - name: lk_msdynsm_settingssitemap_modifiedonbehalfby
-    type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-    partner: modifiedonbehalfby
   - name: lk_new_interactionforemail_createdby
     type: Microsoft.Dynamics.CRM.interactionforemail
     partner: createdbyname
@@ -7344,7 +7296,7 @@ solutions:
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -33,7 +33,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.EndpointCollection
     used_as: Property
-# There are no remarks for this enum type.
+# This enum type has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

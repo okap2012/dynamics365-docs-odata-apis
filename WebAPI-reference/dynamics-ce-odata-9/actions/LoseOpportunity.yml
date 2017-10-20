@@ -40,7 +40,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.opportunity
     displayName: Opportunity
     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
