@@ -4,7 +4,7 @@ name: "CheckPromoteEmail"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement CheckPromoteEmail Function Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,9 +15,8 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement CheckPromoteEmail Function."
 namespace: Microsoft.Dynamics.CRM
-header:
-  description: "Contains the data that is needed to check whether the incoming email message should be promoted to the Microsoft Dynamics 365 system. "
-  iscomposable: false
+description: "Contains the data that is needed to check whether the incoming email message should be promoted to the Microsoft Dynamics 365 system. "
+iscomposable: false
 # This function is not bound to any entities.
 isbound: false
 parameters:
@@ -50,7 +49,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.email
     displayName: "Email"
     description: "Activity that is delivered using email protocols."
-# There are no remarks for this function.
+# This function has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

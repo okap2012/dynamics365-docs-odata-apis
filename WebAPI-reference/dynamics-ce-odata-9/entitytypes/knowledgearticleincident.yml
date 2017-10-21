@@ -4,7 +4,7 @@ name: "knowledgearticleincident"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement knowledgearticleincident EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement knowledgearticleincident entitytype."
+description: "Association between an knowledge article and incident."
 header:
-  description: "Association between an knowledge article and incident."
   entity_set_path: "[organization URI]/api/data/v9.0/knowledgearticleincidents"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Knowledge Article Incident
@@ -231,7 +231,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_Service
     description: "Dynamics 365 workload for service."
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

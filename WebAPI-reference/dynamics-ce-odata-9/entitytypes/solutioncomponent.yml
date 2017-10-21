@@ -4,7 +4,7 @@ name: "solutioncomponent"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement solutioncomponent EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement solutioncomponent entitytype."
+description: "A component of a CRM solution."
 header:
-  description: "A component of a CRM solution."
   entity_set_path: "[organization URI]/api/data/v9.0/solutioncomponents"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Solution Component
@@ -309,7 +309,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -1,26 +1,26 @@
 ### YamlMime:OData
-uid: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-name: "msdynsm_settingssitemap"
+uid: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+name: "msdyn_iotdevicecategory"
 type: entitytype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement msdynsm_settingssitemap EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  title: "Microsoft Dynamics 365 Customer Engagement msdyn_iotdevicecategory EntityType Reference | MicrosoftDocs"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
   - "Dynamics 365 (online)"
-  ms.assetid: 73b5d8ef-660f-40fd-b448-2af7430f8f89
+  ms.assetid: 3c8a32e1-273b-4636-9f38-255bd21dac65
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement msdynsm_settingssitemap entitytype."
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_iotdevicecategory entitytype."
+description: "Used to categorize IoT devices."
 header:
-  # This entity doesn't have a description
-  entity_set_path: "[organization URI]/api/data/v9.0/msdynsm_settingssitemaps"
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_iotdevicecategories"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
-  display_name: SettingsSiteMap
-  primary_key: msdynsm_settingssitemapid
-  primary_name_attribute: msdynsm_name
+  display_name: IoT Device Category
+  primary_key: msdyn_iotdevicecategoryid
+  primary_name_attribute: msdyn_name
   operations_supported:
   - POST
   - GET
@@ -48,16 +48,16 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
-    - name: msdynsm_name
+    - name: msdyn_iotdevicecategoryid
+      type: Edm.Guid
+      display_name: "IoT Device Category"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_name
       type: Edm.String
       display_name: "Name"
       description: "The name of the custom entity."
-      iscomputed: false
-      isreadonly: false
-    - name: msdynsm_settingssitemapid
-      type: Edm.Guid
-      display_name: "SettingsSIteMap"
-      description: "Unique identifier for entity instances"
       iscomputed: false
       isreadonly: false
     - name: overriddencreatedon
@@ -69,7 +69,7 @@ properties:
     - name: statecode
       type: Edm.Int32
       display_name: "Status"
-      description: "Status of the SettingsSIteMap"
+      description: "Status of the IoT Device Category"
       iscomputed: false
       isreadonly: false
       options:
@@ -80,7 +80,7 @@ properties:
     - name: statuscode
       type: Edm.Int32
       display_name: "Status Reason"
-      description: "Reason for the status of the SettingsSIteMap"
+      description: "Reason for the status of the IoT Device Category"
       iscomputed: false
       isreadonly: false
       options:
@@ -125,61 +125,110 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who modified the record."
-  - name: _organizationid_value
+  - name: _ownerid_value
     single_valued_navigation_property:
-    - organizationid
-    description: "Unique identifier for the organization"
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
   property_items:
   - name: createdby
     type: Microsoft.Dynamics.CRM.systemuser
-    partner: lk_msdynsm_settingssitemap_createdby
+    partner: lk_msdyn_iotdevicecategory_createdby
   - name: createdonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
-    partner: lk_msdynsm_settingssitemap_createdonbehalfby
+    partner: lk_msdyn_iotdevicecategory_createdonbehalfby
   - name: modifiedby
     type: Microsoft.Dynamics.CRM.systemuser
-    partner: lk_msdynsm_settingssitemap_modifiedby
+    partner: lk_msdyn_iotdevicecategory_modifiedby
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
-    partner: lk_msdynsm_settingssitemap_modifiedonbehalfby
-  - name: organizationid
-    type: Microsoft.Dynamics.CRM.organization
-    partner: organization_msdynsm_settingssitemap
+    partner: lk_msdyn_iotdevicecategory_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_iotdevicecategory
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_iotdevicecategory
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_iotdevicecategory
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_iotdevicecategory
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
-  - name: msdynsm_settingssitemap_AsyncOperations
+  - name: msdyn_iotdevicecategory_Annotations
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: objectid_msdyn_iotdevicecategory
+  - name: msdyn_iotdevicecategory_AsyncOperations
     type: Microsoft.Dynamics.CRM.asyncoperation
-    partner: regardingobjectid_msdynsm_settingssitemap
-  - name: msdynsm_settingssitemap_BulkDeleteFailures
+    partner: regardingobjectid_msdyn_iotdevicecategory
+  - name: msdyn_iotdevicecategory_BulkDeleteFailures
     type: Microsoft.Dynamics.CRM.bulkdeletefailure
-    partner: regardingobjectid_msdynsm_settingssitemap
-  - name: msdynsm_settingssitemap_MailboxTrackingFolders
+    partner: regardingobjectid_msdyn_iotdevicecategory
+  - name: msdyn_iotdevicecategory_connections1
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record1id_msdyn_iotdevicecategory
+  - name: msdyn_iotdevicecategory_connections2
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record2id_msdyn_iotdevicecategory
+  - name: msdyn_iotdevicecategory_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_iotdevicecategory
+  - name: msdyn_iotdevicecategory_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_iotdevicecategory
+  - name: msdyn_iotdevicecategory_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
-    partner: regardingobjectid_msdynsm_settingssitemap
-  - name: msdynsm_settingssitemap_PrincipalObjectAttributeAccesses
+    partner: regardingobjectid_msdyn_iotdevicecategory
+  - name: msdyn_iotdevicecategory_PrincipalObjectAttributeAccesses
     type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
-    partner: objectid_msdynsm_settingssitemap
-  - name: msdynsm_settingssitemap_ProcessSession
+    partner: objectid_msdyn_iotdevicecategory
+  - name: msdyn_iotdevicecategory_ProcessSession
     type: Microsoft.Dynamics.CRM.processsession
-    partner: regardingobjectid_msdynsm_settingssitemap
-  - name: msdynsm_settingssitemap_SyncErrors
+    partner: regardingobjectid_msdyn_iotdevicecategory
+  - name: msdyn_iotdevicecategory_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
-    partner: regardingobjectid_msdynsm_settingssitemap
+    partner: regardingobjectid_msdyn_iotdevicecategory
+  - name: msdyn_msdyn_iotdevicecategory_msdyn_iotdevice_Category
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    partner: msdyn_Category
 # This entity has no derived entities.
 operations:
-  description: "The following operations can be used with the msdynsm_settingssitemap entity type."
+  description: "The following operations can be used with the msdyn_iotdevicecategory entity type."
   operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.IsValidStateTransition
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
 solutions:
-  description: "The following solutions include the msdynsm_settingssitemap entity type."
+  description: "The following solutions include the msdyn_iotdevicecategory entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.SiteMapCustomization
-    description: ""
-# There are no remarks for this entity.
+  - type: Microsoft.Dynamics.CRM.IoTConnector
+    description: "Enables IoT scenarios in Dynamics 365."
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

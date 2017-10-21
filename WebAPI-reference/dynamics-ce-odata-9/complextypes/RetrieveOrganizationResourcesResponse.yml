@@ -4,7 +4,7 @@ name: "RetrieveOrganizationResourcesResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RetrieveOrganizationResourcesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -32,7 +32,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.RetrieveOrganizationResources
     used_as: ReturnType
-# There are no remarks for this complex type.
+# This complex type has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

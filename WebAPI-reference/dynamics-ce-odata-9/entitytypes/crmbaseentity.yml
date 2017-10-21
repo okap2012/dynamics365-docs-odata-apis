@@ -4,7 +4,7 @@ name: "crmbaseentity"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement crmbaseentity EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement crmbaseentity entitytype."
+# This entity doesn't have a description
 # No header required.
-  # This entity doesn't have a description
   # This entity doesn't have an entitysetname
   # This entity doesn't have a base entity
   # This entity doesn't have a display name
@@ -328,6 +328,8 @@ derived_types:
     description: "Tracks status changes of bookings and timestamps the change of the status" 
   - type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799 
     description: "Base entity for process Purchase Order Business Process" 
+  - type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b 
+    description: "Base entity for process CFS - IoT Alert Process Flow" 
   - type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82 
     description: "Base entity for process Project Stages" 
   - type: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b 
@@ -351,7 +353,7 @@ derived_types:
   - type: Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue 
     description: "List of billing milestones and invoice amounts for this project contract line." 
   - type: Microsoft.Dynamics.CRM.msdyn_customerasset 
-    description: "Specify customer asset." 
+    description: "" 
   - type: Microsoft.Dynamics.CRM.msdyn_dataexport 
     description: "Data export entity for the actual entity." 
   - type: Microsoft.Dynamics.CRM.msdyn_delegation 
@@ -406,6 +408,16 @@ derived_types:
     description: "List of days expressed as dates or day of week for a specific invoice schedule template." 
   - type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction 
     description: "Transactions that are associated to an invoice line." 
+  - type: Microsoft.Dynamics.CRM.msdyn_iotalert 
+    description: "" 
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory 
+    description: "Used to categorize IoT devices." 
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand 
+    description: "Represents an outgoing message to a device connected to an IoT hub." 
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory 
+    description: "Tracks registration activities on an IoT device." 
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevice 
+    description: "Represents a connected device that can registered with an IoT hub." 
   - type: Microsoft.Dynamics.CRM.msdyn_journalline 
     description: "Unposted business transaction line details." 
   - type: Microsoft.Dynamics.CRM.msdyn_journal 
@@ -646,14 +658,6 @@ derived_types:
     description: "Specify custom work order sub-statuses, which can be used to specify the current work order status more precisely." 
   - type: Microsoft.Dynamics.CRM.msdyn_workordertype 
     description: "Create different work order types to reflect the different types of work that your company offers. Work Order types are used to control various settings on a work order." 
-  - type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap 
-    description: "" 
-  - type: Microsoft.Dynamics.CRM.msdynsm_salessitemap 
-    description: "" 
-  - type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap 
-    description: "" 
-  - type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap 
-    description: "" 
   - type: Microsoft.Dynamics.CRM.navigationsetting 
     description: "Navigation Setting: A setting page or group of pages available for configuration within an app. A record representing a group of pages is regarded as the parent navigation setting of one or more other records. For internal use only." 
   - type: Microsoft.Dynamics.CRM.newprocess 
@@ -886,7 +890,7 @@ derived_types:
     description: "Set of logical rules that define the steps necessary to automate a specific business process, task, or set of actions to be performed." 
 # This entity has no operations
 # This entity is not included in any solutions.
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

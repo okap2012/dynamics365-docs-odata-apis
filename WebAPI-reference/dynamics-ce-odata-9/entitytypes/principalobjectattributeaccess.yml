@@ -4,7 +4,7 @@ name: "principalobjectattributeaccess"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement principalobjectattributeaccess EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement principalobjectattributeaccess entitytype."
+description: "Defines CRM security principals (users and teams) access rights to secured field for an entity instance."
 header:
-  description: "Defines CRM security principals (users and teams) access rights to secured field for an entity instance."
   entity_set_path: "[organization URI]/api/data/v9.0/principalobjectattributeaccessset"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Field Sharing
@@ -75,6 +75,12 @@ lookup_properties:
   property_items:
   - name: _objectid_value
     single_valued_navigation_property:
+    - objectid_msdyn_iotalert
+    - objectid_msdyn_iotdevice
+    - objectid_msdyn_iotdevicecategory
+    - objectid_msdyn_iotdevicecommand
+    - objectid_msdyn_iotdeviceregistrationhistory
+    - objectid_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
     - objectid_territory
     - objectid_accountleads
     - objectid_contactleads
@@ -334,10 +340,6 @@ lookup_properties:
     - objectid_msdyn_workorderservicetask
     - objectid_msdyn_workordersubstatus
     - objectid_msdyn_workordertype
-    - objectid_msdynsm_marketingsitemap
-    - objectid_msdynsm_salessitemap
-    - objectid_msdynsm_servicessitemap
-    - objectid_msdynsm_settingssitemap
     - objectid_contact
     - objectid_account
     - objectid_knowledgearticle
@@ -657,6 +659,9 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
     type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
     partner: msdyn_bpf_2c5fe86acc8b414b8322ae571000c799_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    partner: msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
     type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
     partner: msdyn_bpf_665e73aa18c247d886bfc50499c73b82_PrincipalObjectAttributeAccesses
@@ -774,6 +779,21 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_invoicelinetransaction
     type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
     partner: msdyn_invoicelinetransaction_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotalert
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: msdyn_iotalert_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotdevice
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    partner: msdyn_iotdevice_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotdevicecategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    partner: msdyn_iotdevicecategory_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotdevicecommand
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: msdyn_iotdevicecommand_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotdeviceregistrationhistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
+    partner: msdyn_iotdeviceregistrationhistory_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal
     partner: msdyn_journal_PrincipalObjectAttributeAccesses
@@ -1131,18 +1151,6 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_workordertype
     type: Microsoft.Dynamics.CRM.msdyn_workordertype
     partner: msdyn_workordertype_PrincipalObjectAttributeAccesses
-  - name: objectid_msdynsm_marketingsitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_marketingsitemap
-    partner: msdynsm_marketingsitemap_PrincipalObjectAttributeAccesses
-  - name: objectid_msdynsm_salessitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_salessitemap
-    partner: msdynsm_salessitemap_PrincipalObjectAttributeAccesses
-  - name: objectid_msdynsm_servicessitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_servicessitemap
-    partner: msdynsm_servicessitemap_PrincipalObjectAttributeAccesses
-  - name: objectid_msdynsm_settingssitemap
-    type: Microsoft.Dynamics.CRM.msdynsm_settingssitemap
-    partner: msdynsm_settingssitemap_PrincipalObjectAttributeAccesses
   - name: objectid_opportunity
     type: Microsoft.Dynamics.CRM.opportunity
     partner: opportunity_principalobjectattributeaccess
@@ -1295,7 +1303,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

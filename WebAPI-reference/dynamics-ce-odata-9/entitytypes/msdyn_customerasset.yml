@@ -4,7 +4,7 @@ name: "msdyn_customerasset"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_customerasset EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_customerasset entitytype."
+# This entity doesn't have a description
 header:
-  description: "Specify customer asset."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_customerassets"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Customer Asset
@@ -54,6 +54,18 @@ properties:
       description: "Shows the entity instances."
       iscomputed: false
       isreadonly: false
+    - name: msdyn_deviceid
+      type: Edm.String
+      display_name: "Device ID"
+      description: "Device ID used to register with IoT hub. This will not be used if there are two or more connected devices for this asset."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_lastcommandsenttime
+      type: Edm.DateTimeOffset
+      display_name: "Last Command Sent Time"
+      description: "The timestamp of the last command sent for any of the connected devices for this asset."
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_latitude
       type: Edm.Double
       display_name: "Latitude"
@@ -72,6 +84,23 @@ properties:
       description: "Enter the name of the custom entity."
       iscomputed: false
       isreadonly: false
+    - name: msdyn_registrationstatus
+      type: Edm.Int32
+      display_name: "Registration Status"
+      description: "A status field that denotes whether all the devices connected to this asset are registered with the IoT hub."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Unknown"
+        - value: 192350001
+          label: "Unregistered"
+        - value: 192350002
+          label: "In Progress"
+        - value: 192350003
+          label: "Registered"
+        - value: 192350004
+          label: "Error"
     - name: overriddencreatedon
       type: Edm.DateTimeOffset
       display_name: "Record Created On"
@@ -141,6 +170,10 @@ lookup_properties:
     single_valued_navigation_property:
     - msdyn_account
     description: "Parent Customer of this Asset"
+  - name: _msdyn_lastcommandsent_value
+    single_valued_navigation_property:
+    - msdyn_LastCommandSent
+    description: "The last command sent to any of the connected devices for this asset."
   - name: _msdyn_masterasset_value
     single_valued_navigation_property:
     - msdyn_masterasset_msdyn_customerasset
@@ -191,6 +224,9 @@ single_valued_navigation_properties:
   - name: msdyn_account
     type: Microsoft.Dynamics.CRM.account
     partner: msdyn_account_msdyn_customerasset_Account
+  - name: msdyn_LastCommandSent
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: msdyn_msdyn_iotdevicecommand_msdyn_customerasset_LastCommandSent
   - name: msdyn_masterasset_msdyn_customerasset
     type: Microsoft.Dynamics.CRM.msdyn_customerasset
     partner: msdyn_msdyn_customerasset_msdyn_customerasset_MasterAsset
@@ -305,6 +341,12 @@ collection_valued_navigation_properties:
   - name: msdyn_msdyn_customerasset_msdyn_customerasset_ParentAsset
     type: Microsoft.Dynamics.CRM.msdyn_customerasset
     partner: msdyn_parentasset_msdyn_customerasset
+  - name: msdyn_msdyn_customerasset_msdyn_iotalert_CustomerAsset
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: msdyn_CustomerAsset
+  - name: msdyn_msdyn_customerasset_msdyn_iotdevicecommand_CustomerAsset
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: msdyn_CustomerAsset
   - name: msdyn_msdyn_customerasset_msdyn_quotebookingincident_CustomerAsset
     type: Microsoft.Dynamics.CRM.msdyn_quotebookingincident
     partner: msdyn_customerasset
@@ -354,9 +396,11 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_customerasset entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.ConnectedFieldService
+    description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

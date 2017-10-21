@@ -4,7 +4,7 @@ name: "InstantiateTemplate"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement InstantiateTemplate Action Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,8 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement InstantiateTemplate Action."
 namespace: Microsoft.Dynamics.CRM
-header: 
-  description: "Creates an email message from a template (email template).  "
+description: "Creates an email message from a template (email template).  "
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
@@ -49,7 +48,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.template
     displayName: Email Template
     description: "Template for an email message that contains the standard attributes of an email message."
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

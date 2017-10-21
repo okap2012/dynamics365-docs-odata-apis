@@ -4,7 +4,7 @@ name: "site"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement site EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement site entitytype."
+description: "Location or branch office where an organization does business. An organization can have multiple sites."
 header:
-  description: "Location or branch office where an organization does business. An organization can have multiple sites."
   entity_set_path: "[organization URI]/api/data/v9.0/sites"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Site
@@ -486,7 +486,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_Service
     description: "Dynamics 365 workload for service."
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

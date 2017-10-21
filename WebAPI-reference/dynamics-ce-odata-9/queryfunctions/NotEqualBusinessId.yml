@@ -4,7 +4,7 @@ name: "NotEqualBusinessId"
 type: queryfunction
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement NotEqualBusinessId Query Function Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -25,7 +25,7 @@ parameters:
     unicode: false
     description: "The name of the property to evaluate. "
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.NotEqualBusinessId(PropertyName=@p1)&@p1='name'"
-# There are no remarks for this query function.
+# This query function has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

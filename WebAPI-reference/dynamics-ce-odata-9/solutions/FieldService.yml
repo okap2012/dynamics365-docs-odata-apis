@@ -4,7 +4,7 @@ name: "Field Service"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Field Service Solution Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -96,7 +96,7 @@ entities:
    - type: Microsoft.Dynamics.CRM.msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
      description: "Base entity for process Work Order Business Process"
    - type: Microsoft.Dynamics.CRM.msdyn_customerasset
-     description: "Specify customer asset."
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem
      description: "Pricing options in addition to or above the Price List Items"
    - type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
@@ -268,7 +268,7 @@ actions:
   action_items:
    - type: Microsoft.Dynamics.CRM.msdyn_FieldServiceSystemAction
      description: ""
-# There are no remarks for this solution.
+# This solution has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

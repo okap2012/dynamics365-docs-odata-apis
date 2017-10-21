@@ -4,7 +4,7 @@ name: "msdyn_odatav4ds"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_odatav4ds EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_odatav4ds entitytype."
+description: "Data sources used by the OData v4 data provider to access data from an external web service."
 header:
-  description: "Data sources used by the OData v4 data provider to access data from an external web service."
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_odatav4ds"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: OData v4 Data Source
@@ -333,7 +333,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.ODatav4DataProvider
     description: ""
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

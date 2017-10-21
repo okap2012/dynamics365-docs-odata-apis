@@ -4,7 +4,7 @@ name: "processstage"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement processstage EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement processstage entitytype."
+description: "Stage associated with a process."
 header:
-  description: "Stage associated with a process."
   entity_set_path: "[organization URI]/api/data/v9.0/processstages"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Process Stage
@@ -107,6 +107,9 @@ collection_valued_navigation_properties:
   - name: lk_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799_activestageid
     type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
     partner: activestageid
+  - name: lk_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b_activestageid
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    partner: activestageid
   - name: lk_msdyn_bpf_665e73aa18c247d886bfc50499c73b82_activestageid
     type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
     partner: activestageid
@@ -184,6 +187,9 @@ collection_valued_navigation_properties:
     partner: stageid
   - name: processstage_msdyn_expense
     type: Microsoft.Dynamics.CRM.msdyn_expense
+    partner: stageid
+  - name: processstage_msdyn_iotalert
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
     partner: stageid
   - name: processstage_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal
@@ -271,7 +277,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

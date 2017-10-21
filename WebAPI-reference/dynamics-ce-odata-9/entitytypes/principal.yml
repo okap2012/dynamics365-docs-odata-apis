@@ -4,7 +4,7 @@ name: "principal"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement principal EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement principal entitytype."
+description: "Group of undeleted system users and undeleted teams. Owners can be used to control access to specific objects."
 header:
-  description: "Group of undeleted system users and undeleted teams. Owners can be used to control access to specific objects."
   # This entity doesn't have an entitysetname
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   # This entity doesn't have a display name
@@ -324,6 +324,21 @@ collection_valued_navigation_properties:
     partner: ownerid
   - name: owner_msdyn_invoicelinetransaction
     type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+    partner: ownerid
+  - name: owner_msdyn_iotalert
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: ownerid
+  - name: owner_msdyn_iotdevice
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    partner: ownerid
+  - name: owner_msdyn_iotdevicecategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    partner: ownerid
+  - name: owner_msdyn_iotdevicecommand
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: ownerid
+  - name: owner_msdyn_iotdeviceregistrationhistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
     partner: ownerid
   - name: owner_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal
@@ -706,7 +721,7 @@ derived_types:
     description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units." 
 # This entity has no operations
 # This entity is not included in any solutions.
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

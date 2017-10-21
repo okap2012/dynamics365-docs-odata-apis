@@ -4,7 +4,7 @@ name: "AccessRights"
 type: enumtype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement AccessRights EnumType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -53,8 +53,7 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.PrincipalAccess
     used_as: Property
-remarks: |
-  These are some remarks I want to add for the AccessRights enumeration.
+# This enum type has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

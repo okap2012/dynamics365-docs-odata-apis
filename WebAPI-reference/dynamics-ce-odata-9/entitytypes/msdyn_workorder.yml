@@ -4,7 +4,7 @@ name: "msdyn_workorder"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement msdyn_workorder EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_workorder entitytype."
+description: "Work orders store all information about the job performed for an account. Stores incident details, resource, expenses, tasks, communications, billing and more"
 header:
-  description: "Work orders store all information about the job performed for an account. Stores incident details, resource, expenses, tasks, communications, billing and more"
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_workorders"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Work Order
@@ -433,6 +433,10 @@ lookup_properties:
     single_valued_navigation_property:
     - msdyn_customerasset
     description: "Customer Asset related to this incident reported"
+  - name: _msdyn_iotalert_value
+    single_valued_navigation_property:
+    - msdyn_IoTAlert
+    description: "The iot alert which initiated this work order."
   - name: _msdyn_opportunityid_value
     single_valued_navigation_property:
     - msdyn_opportunityid
@@ -544,6 +548,9 @@ single_valued_navigation_properties:
   - name: msdyn_customerasset
     type: Microsoft.Dynamics.CRM.msdyn_customerasset
     partner: msdyn_msdyn_customerasset_msdyn_workorder_CustomerAsset
+  - name: msdyn_IoTAlert
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: msdyn_msdyn_iotalert_msdyn_workorder_IoTAlert
   - name: msdyn_opportunityid
     type: Microsoft.Dynamics.CRM.opportunity
     partner: msdyn_opportunity_msdyn_workorder
@@ -610,6 +617,9 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: bpf_msdyn_workorder_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    partner: bpf_msdyn_workorderid
   - name: bpf_msdyn_workorder_msdyn_bpf_989e9b1857e24af18787d5143b67523b
     type: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
     partner: bpf_msdyn_workorderid
@@ -631,6 +641,9 @@ collection_valued_navigation_properties:
   - name: msdyn_msdyn_workorder_msdyn_inventoryjournal_AllocatedToWorkOrder
     type: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
     partner: msdyn_allocatedtoworkorder
+  - name: msdyn_msdyn_workorder_msdyn_iotalert_Workorder
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: msdyn_Workorder
   - name: msdyn_msdyn_workorder_msdyn_payment_WorkOrder
     type: Microsoft.Dynamics.CRM.msdyn_payment
     partner: msdyn_workorder
@@ -779,9 +792,11 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_workorder entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.ConnectedFieldService
+    description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

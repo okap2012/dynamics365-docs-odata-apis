@@ -4,7 +4,7 @@ name: "ValidateSavedQuery"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement ValidateSavedQuery Action Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,8 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement ValidateSavedQuery Action."
 namespace: Microsoft.Dynamics.CRM
-header: 
-  description: "Validates a saved query."
+description: "Validates a saved query."
 owningsolution: Microsoft.Dynamics.CRM.System
 bound_entities:
   description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."
@@ -47,7 +46,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.serviceappointment
     displayName: Service Activity
     description: "Activity offered by the organization to satisfy its customer's needs. Each service activity includes date, time, duration, and required resources."
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

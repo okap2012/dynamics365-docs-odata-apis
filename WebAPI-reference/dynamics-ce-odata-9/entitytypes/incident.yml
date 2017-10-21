@@ -4,7 +4,7 @@ name: "incident"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement incident EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement incident entitytype."
+description: "Service request case associated with a contract."
 header:
-  description: "Service request case associated with a contract."
   entity_set_path: "[organization URI]/api/data/v9.0/incidents"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Case
@@ -733,6 +733,9 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: bpf_incident_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    partner: bpf_incidentid
   - name: bpf_incident_msdyn_bpf_989e9b1857e24af18787d5143b67523b
     type: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
     partner: bpf_incidentid
@@ -898,7 +901,7 @@ solutions:
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_Service
     description: "Dynamics 365 workload for service."
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

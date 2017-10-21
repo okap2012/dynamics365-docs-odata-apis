@@ -4,7 +4,7 @@ name: "account"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement account EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement account entitytype."
+description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
 header:
-  description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
   entity_set_path: "[organization URI]/api/data/v9.0/accounts"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Account
@@ -1558,6 +1558,9 @@ collection_valued_navigation_properties:
   - name: msdyn_account_msdyn_invoicelinetransaction_AccountVendor
     type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
     partner: msdyn_AccountVendor
+  - name: msdyn_account_msdyn_iotdevice_Account
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    partner: msdyn_Account
   - name: msdyn_account_msdyn_journalline_AccountCustomer
     type: Microsoft.Dynamics.CRM.msdyn_journalline
     partner: msdyn_AccountCustomer
@@ -1705,24 +1708,7 @@ solutions:
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-remarks: |
-  ## SubTopic
-  Here are some remarks to add for the account entity type.
-  
-  I'm expecting this markdown to get formatted appropriately.
-  
-  <a name="specialpoint" ></a>
-  
-  ## Special point
-  
-  This is where I would add some content I want to link to.
-  
-  And add a table or any other markdown content.
-  
-  |key|value|
-  |--|--|
-  |one| The number one.|
-  |two| The number two.|
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

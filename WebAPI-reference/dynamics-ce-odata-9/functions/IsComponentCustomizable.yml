@@ -4,7 +4,7 @@ name: "IsComponentCustomizable"
 type: function
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement IsComponentCustomizable Function Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,9 +15,8 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement IsComponentCustomizable Function."
 namespace: Microsoft.Dynamics.CRM
-header:
-  description: "Determines whether a solution component is customizable. "
-  iscomposable: false
+description: "Determines whether a solution component is customizable. "
+iscomposable: false
 # This function is not bound to any entities.
 isbound: false
 parameters:
@@ -45,7 +44,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.solutioncomponent
     displayName: "Solution Component"
     description: "A component of a CRM solution."
-# There are no remarks for this function.
+# This function has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

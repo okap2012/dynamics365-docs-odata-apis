@@ -4,7 +4,7 @@ name: "queueitem"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement queueitem EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement queueitem entitytype."
+description: "A specific item in a queue, such as a case record or an activity record."
 header:
-  description: "A specific item in a queue, such as a case record or an activity record."
   entity_set_path: "[organization URI]/api/data/v9.0/queueitems"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Queue Item
@@ -67,22 +67,22 @@ properties:
       iscomputed: false
       isreadonly: true
       options:
-        - value: 4401
-          label: "Campaign Response"
-        - value: 10091
-          label: "Resource Request"
-        - value: 4210
-          label: "Phone Call"
         - value: 10007
           label: "Booking Alert"
-        - value: 4402
-          label: "Campaign Activity"
-        - value: 4214
-          label: "Service Activity"
-        - value: 10074
-          label: "Project Task"
+        - value: 4401
+          label: "Campaign Response"
+        - value: 10028
+          label: "Time Group Detail"
+        - value: 4210
+          label: "Phone Call"
         - value: 10136
           label: "Inventory Transfer"
+        - value: 4402
+          label: "Campaign Activity"
+        - value: 10091
+          label: "Resource Request"
+        - value: 10074
+          label: "Project Task"
         - value: 10182
           label: "Work Order Service"
         - value: 4406
@@ -91,14 +91,16 @@ properties:
           label: "Work Order Service Task"
         - value: 4202
           label: "Email"
+        - value: 10190
+          label: "IoT Alert"
         - value: 10176
           label: "Work Order"
-        - value: 10028
-          label: "Time Group Detail"
         - value: 10113
           label: "Agreement Booking Setup"
         - value: 4212
           label: "Task"
+        - value: 4214
+          label: "Service Activity"
         - value: 4201
           label: "Appointment"
         - value: 4204
@@ -216,6 +218,7 @@ lookup_properties:
     description: "Unique identifier of the delegate user who last modified the queueitem."
   - name: _objectid_value
     single_valued_navigation_property:
+    - objectid_msdyn_iotalert
     - objectid_incident
     - objectid_msdyn_timegroup
     - objectid_msdyn_timegroupdetail
@@ -327,6 +330,9 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_inventorytransfer
     type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
     partner: msdyn_inventorytransfer_QueueItems
+  - name: objectid_msdyn_iotalert
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: msdyn_iotalert_QueueItems
   - name: objectid_msdyn_project
     type: Microsoft.Dynamics.CRM.msdyn_project
     partner: msdyn_project_QueueItems
@@ -423,7 +429,7 @@ solutions:
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

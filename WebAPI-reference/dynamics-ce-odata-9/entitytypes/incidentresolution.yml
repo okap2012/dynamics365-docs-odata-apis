@@ -4,7 +4,7 @@ name: "incidentresolution"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement incidentresolution EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement incidentresolution entitytype."
+description: "Special type of activity that includes description of the resolution, billing status, and the duration of the case."
 header:
-  description: "Special type of activity that includes description of the resolution, billing status, and the duration of the case."
   entity_set_path: "[organization URI]/api/data/v9.0/incidentresolutions"
   base_type: Microsoft.Dynamics.CRM.activitypointer
   display_name: Case Resolution
@@ -921,7 +921,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_Service
     description: "Dynamics 365 workload for service."
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

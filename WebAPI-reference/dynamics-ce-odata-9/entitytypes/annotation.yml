@@ -4,7 +4,7 @@ name: "annotation"
 type: entitytype
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement annotation EntityType Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -14,8 +14,8 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement annotation entitytype."
+description: "Note that is attached to one or more objects, including other notes."
 header:
-  description: "Note that is attached to one or more objects, including other notes."
   entity_set_path: "[organization URI]/api/data/v9.0/annotations"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Note
@@ -158,6 +158,11 @@ lookup_properties:
     description: "Unique identifier of the delegate user who last modified the annotation."
   - name: _objectid_value
     single_valued_navigation_property:
+    - objectid_msdyn_iotalert
+    - objectid_msdyn_iotdevice
+    - objectid_msdyn_iotdevicecategory
+    - objectid_msdyn_iotdevicecommand
+    - objectid_msdyn_iotdeviceregistrationhistory
     - objectid_lead
     - objectid_product
     - objectid_bookableresource
@@ -589,6 +594,21 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_invoicelinetransaction
     type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
     partner: msdyn_invoicelinetransaction_Annotations
+  - name: objectid_msdyn_iotalert
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: msdyn_iotalert_Annotations
+  - name: objectid_msdyn_iotdevice
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+    partner: msdyn_iotdevice_Annotations
+  - name: objectid_msdyn_iotdevicecategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    partner: msdyn_iotdevicecategory_Annotations
+  - name: objectid_msdyn_iotdevicecommand
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: msdyn_iotdevicecommand_Annotations
+  - name: objectid_msdyn_iotdeviceregistrationhistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
+    partner: msdyn_iotdeviceregistrationhistory_Annotations
   - name: objectid_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal
     partner: msdyn_journal_Annotations
@@ -966,7 +986,7 @@ solutions:
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# There are no remarks for this entity.
+# This entity has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

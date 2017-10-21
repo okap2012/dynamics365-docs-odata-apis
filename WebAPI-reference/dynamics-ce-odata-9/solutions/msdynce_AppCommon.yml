@@ -4,7 +4,7 @@ name: "Application Common"
 type: solution
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement Application Common Solution Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -64,7 +64,7 @@ entities:
    - type: Microsoft.Dynamics.CRM.workflow
      description: "Set of logical rules that define the steps necessary to automate a specific business process, task, or set of actions to be performed."
 # This solution includes no actions.
-# There are no remarks for this solution.
+# This solution has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

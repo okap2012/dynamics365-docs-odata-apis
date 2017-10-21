@@ -4,7 +4,7 @@ name: "CreateInstance"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement CreateInstance Action Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,8 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement CreateInstance Action."
 namespace: Microsoft.Dynamics.CRM
-header: 
-  description: "Creates future unexpanded instances for the recurring appointment master.  "
+description: "Creates future unexpanded instances for the recurring appointment master.  "
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
@@ -44,7 +43,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.recurringappointmentmaster
     displayName: Recurring Appointment
     description: "The Master appointment of a recurring appointment series."
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

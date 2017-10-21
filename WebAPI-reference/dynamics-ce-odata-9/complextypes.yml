@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.ComplexTypeIndex
 name: Web API ComplexType Reference
 title: "Dynamics 365 Customer Engagement Web API ComplexType Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -328,6 +328,12 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_IsProjectTemplatesViewResponse
   description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_JsonGetBooleanResponse
+  description: "Contains the value returned from the msdyn_JsonGetBoolean Action."
+- type: Microsoft.Dynamics.CRM.msdyn_JsonGetNumberResponse
+  description: "Contains the value returned from the msdyn_JsonGetNumber Action."
+- type: Microsoft.Dynamics.CRM.msdyn_JsonGetStringResponse
+  description: "Contains the value returned from the msdyn_JsonGetString Action."
 - type: Microsoft.Dynamics.CRM.msdyn_LogFindWorkEventResponse
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_MSProject_GetFindResourcesURLResponse

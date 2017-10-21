@@ -4,7 +4,7 @@ name: "RemoveItemCampaignActivity"
 type: action
 metadata: 
   title: "Microsoft Dynamics 365 Customer Engagement RemoveItemCampaignActivity Action Reference | MicrosoftDocs"
-  ms.date: "10/14/2017"
+  ms.date: "10/20/2017"
   ms.service: "crm-online"
   ms.topic: "reference"
   applies_to: 
@@ -15,8 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement RemoveItemCampaignActivity Action."
 namespace: Microsoft.Dynamics.CRM
-header: 
-  description: "Removes an item from a campaign activity. "
+description: "Removes an item from a campaign activity. "
 owningsolution: Microsoft.Dynamics.CRM.System
 bound_entities:
   description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."
@@ -39,7 +38,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.campaign
     displayName: Campaign
     description: "Container for campaign activities and responses, sales literature, products, and lists to create, plan, execute, and track the results of a specific marketing campaign through its life."
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dynamics CRM Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
