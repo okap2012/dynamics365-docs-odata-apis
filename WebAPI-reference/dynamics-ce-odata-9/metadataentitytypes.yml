@@ -77,7 +77,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.UniqueIdentifierAttributeMetadata
   description: "Represents the unique identifier attribute metadata."
 href_see_also:
-- text: "Use the Microsoft Dynamics CRM Web API"
+- text: "Use the Dynamics 365 Customer Engagement Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

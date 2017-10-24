@@ -245,7 +245,7 @@ solutions:
     description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics CRM Web API"
+- text: "Use the Dynamics 365 Customer Engagement Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
