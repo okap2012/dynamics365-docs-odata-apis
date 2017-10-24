@@ -3,7 +3,7 @@ items:
   href: about.md
   items:
   - uid: Microsoft.Dynamics.CRM.EntityTypeIndex
-    name: EntityType Reference
+    name: EntityType
     items:
     - uid: Microsoft.Dynamics.CRM.account
       name: account
@@ -906,7 +906,7 @@ items:
     - uid: Microsoft.Dynamics.CRM.workflowlog
       name: workflowlog
   - uid: Microsoft.Dynamics.CRM.ActionIndex
-    name: Action Reference
+    name: Action
     items:
     - uid: Microsoft.Dynamics.CRM.AddAppComponents
       name: AddAppComponents
@@ -1561,7 +1561,7 @@ items:
     - uid: Microsoft.Dynamics.CRM.WinQuote
       name: WinQuote
   - uid: Microsoft.Dynamics.CRM.FunctionIndex
-    name: Function Reference
+    name: Function
     items:
     - uid: Microsoft.Dynamics.CRM.CalculateRollupField
       name: CalculateRollupField
@@ -1764,7 +1764,7 @@ items:
     - uid: Microsoft.Dynamics.CRM.WhoAmI
       name: WhoAmI
   - uid: Microsoft.Dynamics.CRM.QueryFunctionIndex
-    name: Query Function Reference
+    name: Query Function
     items:
     - uid: Microsoft.Dynamics.CRM.Above
       name: Above
@@ -1905,7 +1905,7 @@ items:
     - uid: Microsoft.Dynamics.CRM.Yesterday
       name: Yesterday
   - uid: Microsoft.Dynamics.CRM.ComplexTypeIndex
-    name: ComplexType Reference
+    name: ComplexType
     items:
     - uid: Microsoft.Dynamics.CRM.AddItemCampaignActivityResponse
       name: AddItemCampaignActivityResponse
@@ -2420,7 +2420,7 @@ items:
     - uid: Microsoft.Dynamics.CRM.WhoAmIResponse
       name: WhoAmIResponse
   - uid: Microsoft.Dynamics.CRM.EnumTypeIndex
-    name: EnumType Reference
+    name: EnumType
     items:
     - uid: Microsoft.Dynamics.CRM.AccessRights
       name: AccessRights
@@ -2505,7 +2505,7 @@ items:
     - uid: Microsoft.Dynamics.CRM.TimeCode
       name: TimeCode
   - uid: Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
-    name: Metadata EntityType Reference
+    name: Metadata EntityType
     items:
     - uid: Microsoft.Dynamics.CRM.AttributeMetadata
       name: AttributeMetadata
@@ -2570,7 +2570,7 @@ items:
     - uid: Microsoft.Dynamics.CRM.UniqueIdentifierAttributeMetadata
       name: UniqueIdentifierAttributeMetadata
   - uid: Microsoft.Dynamics.CRM.SolutionIndex
-    name: Solutions Reference
+    name: Solutions
     items:
     - uid: Microsoft.Dynamics.CRM.msdynce_Activities
       name: Activities
