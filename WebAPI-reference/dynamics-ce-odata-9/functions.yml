@@ -215,7 +215,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.WhoAmI
   description: "Retrieves the system user ID for the currently logged on user or the user under whose context the code is running.  "
 href_see_also:
-- text: "Use the Microsoft Dynamics CRM Web API"
+- text: "Use the Dynamics 365 Customer Engagement Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

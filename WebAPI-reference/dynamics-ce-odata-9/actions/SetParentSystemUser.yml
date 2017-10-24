@@ -48,7 +48,7 @@ entities:
     description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units."
 # This action has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics CRM Web API"
+- text: "Use the Dynamics 365 Customer Engagement Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

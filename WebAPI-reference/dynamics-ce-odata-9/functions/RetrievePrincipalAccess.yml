@@ -712,7 +712,7 @@ entities:
     description: "Set of logical rules that define the steps necessary to automate a specific business process, task, or set of actions to be performed."
 # This function has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics CRM Web API"
+- text: "Use the Dynamics 365 Customer Engagement Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
