@@ -1,0 +1,43 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagement
+name: "Knowledge Management"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Knowledge Management Solution Reference | MicrosoftDocs"
+  ms.date: "10/20/2017"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: cb801b8c-756b-426b-8cf2-2dd9f239b6fc
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Knowledge Management Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Dynamics 365 workload for knowledge management."
+ unique_name: msdynce_KnowledgeManagement
+ version: "9.0.0.0"
+ customization_prefix: none
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.connection
+     description: "Relationship between two entities."
+   - type: Microsoft.Dynamics.CRM.knowledgearticle
+     description: "Organizational knowledge for internal and external use."
+# This solution includes no actions.
+# This solution has no remarks.
+href_see_also:
+- text: "Use the Dynamics 365 Customer Engagement Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

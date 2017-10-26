@@ -1,0 +1,51 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.ActivityFeedsCore
+name: "Activity Feeds"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Activity Feeds Solution Reference | MicrosoftDocs"
+  ms.date: "10/20/2017"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: b188879d-d0df-4b5f-a803-d97e7e3d3490
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Activity Feeds Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "This solution enables Activity Feeds including Walls for your Microsoft Dynamics 365 organization."
+ unique_name: ActivityFeedsCore
+ version: "9.0.0.0"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_postalbum
+     description: "Contains user profile images that are stored as attachments and displayed in posts."
+   - type: Microsoft.Dynamics.CRM.msdyn_postconfig
+     description: "Enable or disable entities for Activity Feeds and Yammer collaboration."
+   - type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
+     description: "Enable or disable system post rules for an entity for Activity Feeds and Yammer."
+   - type: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
+     description: "Contains information regarding which views are available for users to display on their personal walls. Only an administrator can specify the views that users can choose from to display on their personal walls."
+   - type: Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings
+     description: "Contains user personalization information regarding which of the administrator’s selected views to display on a user’s personal wall."
+   - type: Microsoft.Dynamics.CRM.systemuser
+     description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
+# This solution includes no actions.
+# This solution has no remarks.
+href_see_also:
+- text: "Use the Dynamics 365 Customer Engagement Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

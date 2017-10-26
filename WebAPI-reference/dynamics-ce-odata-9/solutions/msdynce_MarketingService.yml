@@ -1,0 +1,47 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_MarketingService
+name: "Marketing Service"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Marketing Service Solution Reference | MicrosoftDocs"
+  ms.date: "10/20/2017"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 197a59d6-fdd8-4c28-97be-7e4a88c64a70
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Marketing Service Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "For internal use only."
+ unique_name: msdynce_MarketingService
+ version: "9.0.1.61"
+ customization_prefix: none
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.bulkoperation
+     description: "System operation used to perform lengthy and asynchronous operations on large data sets, such as distributing a campaign activity or quick campaign."
+   - type: Microsoft.Dynamics.CRM.campaignactivity
+     description: "Task performed, or to be performed, by a user for planning or running a campaign."
+   - type: Microsoft.Dynamics.CRM.campaignresponse
+     description: "Response from an existing or a potential new customer for a campaign."
+   - type: Microsoft.Dynamics.CRM.socialactivity
+     description: "For internal use only."
+# This solution includes no actions.
+# This solution has no remarks.
+href_see_also:
+- text: "Use the Dynamics 365 Customer Engagement Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

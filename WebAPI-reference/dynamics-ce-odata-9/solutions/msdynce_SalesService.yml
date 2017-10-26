@@ -1,0 +1,51 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_SalesService
+name: "Sales Service"
+type: solution
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement Sales Service Solution Reference | MicrosoftDocs"
+  ms.date: "10/20/2017"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 429fbc9c-3d14-4572-aafb-c95325f69735
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Sales Service Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "For internal use only."
+ unique_name: msdynce_SalesService
+ version: "9.0.1.61"
+ customization_prefix: none
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.appointment
+     description: "Commitment representing a time interval with start/end times and duration."
+   - type: Microsoft.Dynamics.CRM.incident
+     description: "Service request case associated with a contract."
+   - type: Microsoft.Dynamics.CRM.opportunityclose
+     description: "Activity that is created automatically when an opportunity is closed, containing information such as the description of the closing and actual revenue."
+   - type: Microsoft.Dynamics.CRM.orderclose
+     description: "Activity generated automatically when an order is closed."
+   - type: Microsoft.Dynamics.CRM.quoteclose
+     description: "Activity generated when a quote is closed."
+   - type: Microsoft.Dynamics.CRM.socialprofile
+     description: "This entity is used to store social profile information of its associated account and contacts on different social channels."
+# This solution includes no actions.
+# This solution has no remarks.
+href_see_also:
+- text: "Use the Dynamics 365 Customer Engagement Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex
