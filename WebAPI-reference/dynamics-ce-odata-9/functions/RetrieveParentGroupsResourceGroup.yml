@@ -17,7 +17,7 @@ metadata:
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the collection of the parent resource groups of the specified resource group (scheduling group).  "
 iscomposable: true
-compositiontype: query
+compositionType: query
 # This function is not bound to any entities.
 isbound: false
 parameters:
