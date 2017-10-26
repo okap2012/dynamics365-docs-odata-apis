@@ -17,7 +17,7 @@ metadata:
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the default price level (price list) for the current user based on the user’s territory relationship with the price level. "
 iscomposable: true
-compositiontype: select
+compositionType: select
 bound_entities:
   description: "Bound functions are invoked by appending the function name to the URI representing an entity or collection."
   bound_entity_items:
