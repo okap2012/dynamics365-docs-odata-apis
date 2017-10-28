@@ -764,7 +764,7 @@ properties:
         - value: 0
           label: "Address"
 lookup_properties:
-  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/query-data-web-api#retrieve-data-about-lookup-properties)."
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
   property_items:
   - name: _accountid_value
     description: "Shows the parent account related to the record. This information is used to link the sales order to the account selected in the Customer field for reporting and analytics."
