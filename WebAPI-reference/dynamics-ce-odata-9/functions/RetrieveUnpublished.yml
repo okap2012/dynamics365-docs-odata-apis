@@ -46,19 +46,8 @@ bound_entities:
     binding_type: entity
 # This function has no parameters.
 hasparameters: false
-return_type:
-  description: "The RetrieveUnpublished function returns the following value."
-  type: Microsoft.Dynamics.CRM.savedqueryvisualization
-  iscollection: false
-  nullable: false
-  description: ""
-entities:
-  description: "Use the RetrieveUnpublished function with this entity type:"
-  entity_items:
-  - type: Microsoft.Dynamics.CRM.mobileofflineprofileitemassociation
-    displayName: "Mobile Offline Profile Item Association"
-    description: "Information on relationships to be used to follow related entity's records for mobile offline profile item."
-# This function has no remarks.
+remarks: |
+  This function will return the unpublished instance of the entity the function is bound to.
 href_see_also:
 - text: "Use the Dynamics 365 Customer Engagement Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

@@ -41,7 +41,7 @@ parameters:
     type: Edm.Boolean
     nullable: true
     unicode: true
-    description: ""
+    description: "For internal use only."
 return_type:
   description: "The InitializeFrom function returns the following value."
   type: Microsoft.Dynamics.CRM.crmbaseentity
