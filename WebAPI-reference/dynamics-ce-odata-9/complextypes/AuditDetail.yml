@@ -16,7 +16,7 @@ metadata:
   meta-description: "Reference information about the Dynamics 365 Customer Engagement Web API AuditDetail ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
-description: "" 
+description: "Stores details of data changes." 
 # This complex type doesn't have any properties.
 navigation_properties:
   description: "The navigation properties of a complex type contain references to an entity type or a collection of entity types."
