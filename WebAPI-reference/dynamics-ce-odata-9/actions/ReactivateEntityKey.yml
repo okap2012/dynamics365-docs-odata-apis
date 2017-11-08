@@ -15,7 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement ReactivateEntityKey Action."
 namespace: Microsoft.Dynamics.CRM
-# This Action has no description.
+description: "Contains data that is needed to submit a new asynchronous system job to create the index for the key."
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
