@@ -15,7 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement RetrieveMetadataChanges Function."
 namespace: Microsoft.Dynamics.CRM
-description: ""
+description: "Retrieves a collection of metadata records that satisfy the specified criteria."
 iscomposable: false
 # This function is not bound to any entities.
 isbound: false
