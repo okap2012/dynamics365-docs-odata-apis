@@ -16,7 +16,7 @@ metadata:
   meta-description: "Reference information about the Dynamics 365 Customer Engagement SetAutoNumberSeed Action."
   description: "Sets the initial value for the auto-number attribute."
 namespace: Microsoft.Dynamics.CRM
-description: ""
+description: "Sets the initial value for the auto-number attribute."
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
