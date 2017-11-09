@@ -14,8 +14,9 @@ metadata:
   ms.author: "jdaly"
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement SetAutoNumberSeed Action."
+  description: "Sets the initial value for the auto-number attribute."
 namespace: Microsoft.Dynamics.CRM
-# This Action has no description.
+description: ""
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
@@ -26,17 +27,17 @@ parameters:
     type: Edm.String
     nullable: false
     unicode: false
-    description: ""
+    description: "The logical name of the entity that contains the attribute you want to set the seed on."
   - name: AttributeName
     type: Edm.String
     nullable: false
     unicode: false
-    description: ""
+    description: "The logical name of the attribute you want to set the seed on."
   - name: Value
     type: Edm.Int64
     nullable: false
     unicode: true
-    description: ""
+    description: "The next auto-number value for the attribute."
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
