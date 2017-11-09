@@ -15,7 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement BackgroundSendEmail Action."
 namespace: Microsoft.Dynamics.CRM
-description: "Contains the data that is needed to send email messages asynchronously."
+description: "Send email messages asynchronously."
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
