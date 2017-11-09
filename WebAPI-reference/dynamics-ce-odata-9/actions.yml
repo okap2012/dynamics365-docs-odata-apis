@@ -621,7 +621,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.SendTemplate
   description: "Sends a bulk email message that is created from a template.  "
 - type: Microsoft.Dynamics.CRM.SetAutoNumberSeed
-  description: ""
+  description: "Sets the initial value for the auto-number attribute."
 - type: Microsoft.Dynamics.CRM.SetBusinessSystemUser
   description: "Moves a system user (user) to a different business unit. "
 - type: Microsoft.Dynamics.CRM.SetDataEncryptionKey
