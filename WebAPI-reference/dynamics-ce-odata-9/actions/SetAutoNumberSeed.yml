@@ -13,7 +13,6 @@ metadata:
   author: "jimdaly"
   ms.author: "jdaly"
   manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement SetAutoNumberSeed Action."
   description: "Sets the initial value for the auto-number attribute."
 namespace: Microsoft.Dynamics.CRM
 description: "Sets the initial value for the auto-number attribute."
