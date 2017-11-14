@@ -26,7 +26,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveTimestampResponse
   iscollection: false
   nullable: false
-  description: "Retrieves a time stamp for the metadata.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

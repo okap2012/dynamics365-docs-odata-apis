@@ -26,7 +26,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveAuditPartitionListResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the list of database partitions that are used to store audited history data.  "
 entities:
   description: "Use the RetrieveAuditPartitionList function with this entity type:"
   entity_items:

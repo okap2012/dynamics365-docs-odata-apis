@@ -37,7 +37,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
   iscollection: true
   nullable: false
-  description: "Retrieves a collection of solution components that are required for a solution component.  "
 entities:
   description: "Use the RetrieveRequiredComponents function with this entity type:"
   entity_items:

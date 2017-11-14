@@ -45,7 +45,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.systemform
   iscollection: true
   nullable: false
-  description: "Retrieves the entity forms that are available for a specified user. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

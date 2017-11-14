@@ -36,7 +36,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.pricelevel
   iscollection: true
   nullable: false
-  description: "Retrieves the default price level (price list) for the current user based on the user’s territory relationship with the price level. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

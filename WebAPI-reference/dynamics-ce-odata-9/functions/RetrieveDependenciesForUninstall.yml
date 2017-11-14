@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.dependency
   iscollection: true
   nullable: false
-  description: "Retrieves a list of the solution component dependencies that can prevent you from uninstalling a managed solution.  "
 entities:
   description: "Use the RetrieveDependenciesForUninstall function with this entity type:"
   entity_items:

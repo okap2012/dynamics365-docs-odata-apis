@@ -29,7 +29,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveTeamPrivilegesResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the privileges for a team. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

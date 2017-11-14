@@ -26,7 +26,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveProvisionedLanguagesResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the list of provisioned languages.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

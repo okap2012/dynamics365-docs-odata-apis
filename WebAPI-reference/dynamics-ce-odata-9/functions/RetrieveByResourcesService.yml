@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.service
   iscollection: true
   nullable: false
-  description: "Retrieve the collection of services that are related to the specified set of resources."
 entities:
   description: "Use the RetrieveByResourcesService function with this entity type:"
   entity_items:

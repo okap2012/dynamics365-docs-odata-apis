@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccessResponse
   iscollection: false
   nullable: false
-  description: ""
 entities:
   description: "Use the RetrieveSharedPrincipalsAndAccess function with the following entity types:"
   entity_items:

@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.ValidateAppResponse
   iscollection: false
   nullable: false
-  description: ""
 entities:
   description: "Use the ValidateApp function with this entity type:"
   entity_items:

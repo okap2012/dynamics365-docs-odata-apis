@@ -35,7 +35,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
   iscollection: true
   nullable: false
-  description: "Retrieves all the time zone definitions for the specified locale and to return only the display name attribute.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

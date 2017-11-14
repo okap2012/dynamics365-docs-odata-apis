@@ -46,7 +46,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.kbarticle
   iscollection: true
   nullable: false
-  description: "Searches for knowledge base articles that contain the specified body text."
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

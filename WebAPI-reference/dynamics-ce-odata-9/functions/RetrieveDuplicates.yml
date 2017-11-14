@@ -42,7 +42,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
   iscollection: true
   nullable: false
-  description: "Detects and retrieves duplicates for a specified record."
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

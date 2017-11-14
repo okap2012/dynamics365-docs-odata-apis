@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.processstage
   iscollection: true
   nullable: false
-  description: "Retrieves a collection of stages currently in the active path for a business process flow instance."
 entities:
   description: "Use the RetrieveActivePath function with this entity type:"
   entity_items:

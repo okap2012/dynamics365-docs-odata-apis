@@ -30,7 +30,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.resource
   iscollection: true
   nullable: false
-  description: "Retrieves all resources that are related to the specified resource group  "
 entities:
   description: "Use the RetrieveByGroupResource function with this entity type:"
   entity_items:

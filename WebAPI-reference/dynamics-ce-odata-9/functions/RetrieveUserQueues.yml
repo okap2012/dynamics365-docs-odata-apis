@@ -35,7 +35,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.queue
   iscollection: true
   nullable: false
-  description: "Retrieves all private queues of a specified user and optionally all public queues. "
 entities:
   description: "Use the RetrieveUserQueues function with this entity type:"
   entity_items:

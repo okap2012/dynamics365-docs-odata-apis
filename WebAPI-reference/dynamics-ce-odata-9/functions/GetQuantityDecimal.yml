@@ -46,7 +46,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.GetQuantityDecimalResponse
   iscollection: false
   nullable: false
-  description: "Gets the quantity decimal value of a product for the specified entity in the target. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

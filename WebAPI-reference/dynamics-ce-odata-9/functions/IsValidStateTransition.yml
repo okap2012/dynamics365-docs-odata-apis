@@ -42,7 +42,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.IsValidStateTransitionResponse
   iscollection: false
   nullable: false
-  description: "Validates the state transition."
 entities:
   description: "Use the IsValidStateTransition function with the following entity types:"
   entity_items:

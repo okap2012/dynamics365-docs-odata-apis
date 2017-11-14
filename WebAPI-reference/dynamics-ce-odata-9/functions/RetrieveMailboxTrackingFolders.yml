@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveMailboxTrackingFoldersResponse
   iscollection: false
   nullable: false
-  description: "Retrieves folder-level tracking rules for a mailbox.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

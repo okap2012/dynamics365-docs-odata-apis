@@ -37,7 +37,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.GetTimeZoneCodeByLocalizedNameResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the time zone code for the specified localized time zone name. "
 entities:
   description: "Use the GetTimeZoneCodeByLocalizedName function with this entity type:"
   entity_items:

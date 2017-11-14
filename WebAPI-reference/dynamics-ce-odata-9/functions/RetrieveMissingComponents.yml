@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveMissingComponentsResponse
   iscollection: false
   nullable: false
-  description: "Retrieves a list of missing components in the target organization.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

@@ -37,7 +37,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.dependency
   iscollection: true
   nullable: false
-  description: "Retrieves a collection of dependency records that describe any solution components that would prevent a solution component from being deleted. "
 entities:
   description: "Use the RetrieveDependenciesForDelete function with this entity type:"
   entity_items:

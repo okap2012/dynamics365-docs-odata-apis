@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveCurrentOrganizationResponse
   iscollection: false
   nullable: false
-  description: "Retrieve information about the current organization. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

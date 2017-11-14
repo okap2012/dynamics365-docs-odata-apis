@@ -26,7 +26,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveApplicationRibbonResponse
   iscollection: false
   nullable: false
-  description: "Retrieve the data that defines the content and behavior of the application ribbon.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

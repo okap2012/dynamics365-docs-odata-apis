@@ -29,7 +29,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.GetHeaderColumnsImportFileResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the source-file column headings; or retrieve the system-generated column headings if the source file does not contain column headings. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:
