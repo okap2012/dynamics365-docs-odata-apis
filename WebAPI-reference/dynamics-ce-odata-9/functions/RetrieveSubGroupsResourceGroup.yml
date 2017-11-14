@@ -30,7 +30,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.resourcegroup
   iscollection: true
   nullable: false
-  description: "Retrieves the collection of child resource groups from the specified resource group.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

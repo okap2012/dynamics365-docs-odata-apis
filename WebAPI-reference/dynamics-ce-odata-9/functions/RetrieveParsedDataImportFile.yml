@@ -37,7 +37,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveParsedDataImportFileResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the data from the parse table."
 entities:
   description: "Use the RetrieveParsedDataImportFile function with this entity type:"
   entity_items:

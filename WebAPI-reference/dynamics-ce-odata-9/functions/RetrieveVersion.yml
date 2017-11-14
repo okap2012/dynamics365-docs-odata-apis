@@ -26,7 +26,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveVersionResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the version number of the Microsoft Dynamics 365 Server. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

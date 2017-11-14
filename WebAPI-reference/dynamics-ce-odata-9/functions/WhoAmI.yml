@@ -26,7 +26,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.WhoAmIResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the system user ID for the currently logged on user or the user under whose context the code is running.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

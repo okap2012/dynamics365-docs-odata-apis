@@ -70,7 +70,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.post
   iscollection: true
   nullable: false
-  description: "Retrieves pages of posts, including comments for each post, for all records that the calling user is following.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

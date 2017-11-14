@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
   iscollection: true
   nullable: false
-  description: ""
 entities:
   description: "Use the RetrieveAppComponents function with this entity type:"
   entity_items:

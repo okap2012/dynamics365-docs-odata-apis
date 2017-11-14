@@ -31,7 +31,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrievePrincipalSyncAttributeMappingsResponse
   iscollection: false
   nullable: false
-  description: "For internal use only."
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

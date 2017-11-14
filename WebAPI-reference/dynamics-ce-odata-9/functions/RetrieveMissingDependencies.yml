@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
   iscollection: true
   nullable: false
-  description: "Retrieves any required solution components that are not included in the solution. "
 entities:
   description: "Use the RetrieveMissingDependencies function with this entity type:"
   entity_items:

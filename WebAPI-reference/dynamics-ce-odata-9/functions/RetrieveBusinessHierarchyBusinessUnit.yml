@@ -30,7 +30,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.businessunit
   iscollection: true
   nullable: false
-  description: "Retrieves all business units from the business unit hierarchy.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

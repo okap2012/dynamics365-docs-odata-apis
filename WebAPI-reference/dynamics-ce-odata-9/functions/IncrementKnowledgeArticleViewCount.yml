@@ -47,7 +47,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
   iscollection: false
   nullable: false
-  description: "Increments the per day view count of a knowledge article record."
 entities:
   description: "Use the IncrementKnowledgeArticleViewCount function with this entity type:"
   entity_items:

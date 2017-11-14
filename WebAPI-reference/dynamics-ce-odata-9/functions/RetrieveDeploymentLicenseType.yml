@@ -26,7 +26,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveDeploymentLicenseTypeResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the type of license for a deployment of Microsoft Dynamics 365.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

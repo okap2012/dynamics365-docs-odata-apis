@@ -37,7 +37,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.IsComponentCustomizableResponse
   iscollection: false
   nullable: false
-  description: "Determines whether a solution component is customizable. "
 entities:
   description: "Use the IsComponentCustomizable function with this entity type:"
   entity_items:

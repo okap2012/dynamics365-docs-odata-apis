@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.ValidateRecurrenceRuleResponse
   iscollection: false
   nullable: false
-  description: "Validates a rule for a recurring appointment. "
 entities:
   description: "Use the ValidateRecurrenceRule function with this entity type:"
   entity_items:

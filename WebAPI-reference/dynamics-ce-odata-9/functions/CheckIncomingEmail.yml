@@ -15,7 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement CheckIncomingEmail Function."
 namespace: Microsoft.Dynamics.CRM
-description: "Check whether the incoming email message is relevant to the Microsoft Dynamics 365 system. "
+description: "Checks whether the incoming email message is relevant to the Microsoft Dynamics 365 system. "
 iscomposable: false
 # This function is not bound to any entities.
 isbound: false
@@ -62,7 +62,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.CheckIncomingEmailResponse
   iscollection: false
   nullable: false
-  description: "Check whether the incoming email message is relevant to the Microsoft Dynamics 365 system. "
 entities:
   description: "Use the CheckIncomingEmail function with this entity type:"
   entity_items:

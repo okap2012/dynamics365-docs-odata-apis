@@ -30,7 +30,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.resourcegroup
   iscollection: true
   nullable: false
-  description: "Retrieves the resource groups (scheduling groups) that contain the specified resource.  "
 entities:
   description: "Use the RetrieveByResourceResourceGroup function with this entity type:"
   entity_items:

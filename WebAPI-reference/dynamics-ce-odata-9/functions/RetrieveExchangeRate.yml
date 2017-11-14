@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveExchangeRateResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the exchange rate.  "
 entities:
   description: "Use the RetrieveExchangeRate function with this entity type:"
   entity_items:

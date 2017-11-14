@@ -33,7 +33,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.resourcegroup
   iscollection: true
   nullable: false
-  description: "Retrieves the collection of the parent resource groups of the specified resource group (scheduling group).  "
 entities:
   description: "Use the RetrieveParentGroupsResourceGroup function with this entity type:"
   entity_items:

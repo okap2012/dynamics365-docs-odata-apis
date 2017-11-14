@@ -37,7 +37,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrievePrincipalAccessResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the access rights of the specified security principal (team or user) to the specified record."
 entities:
   description: "Use the RetrievePrincipalAccess function with the following entity types:"
   entity_items:

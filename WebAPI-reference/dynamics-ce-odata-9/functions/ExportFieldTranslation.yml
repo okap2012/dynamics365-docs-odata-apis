@@ -26,7 +26,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.ExportFieldTranslationResponse
   iscollection: false
   nullable: false
-  description: "Exports localizable fields values to a compressed file. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

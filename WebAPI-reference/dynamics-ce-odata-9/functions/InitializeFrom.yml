@@ -47,7 +47,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
   iscollection: false
   nullable: false
-  description: "Initializes a new record from an existing record."
 # This function no specific entities for this function identified.
 remarks: |
   InitializeFrom function allows you to create new records in the context of an existing record where a mapping exists between the entities to which the records belong. 

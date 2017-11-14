@@ -52,7 +52,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.FormatAddressResponse
   iscollection: false
   nullable: false
-  description: ""
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

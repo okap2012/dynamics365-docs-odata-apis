@@ -37,7 +37,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveRecordChangeHistoryResponse
   iscollection: false
   nullable: false
-  description: ""
 entities:
   description: "Use the RetrieveRecordChangeHistory function with this entity type:"
   entity_items:

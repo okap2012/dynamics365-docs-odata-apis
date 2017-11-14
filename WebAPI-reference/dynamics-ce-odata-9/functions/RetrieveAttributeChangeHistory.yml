@@ -42,7 +42,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveAttributeChangeHistoryResponse
   iscollection: false
   nullable: false
-  description: ""
 entities:
   description: "Use the RetrieveAttributeChangeHistory function with this entity type:"
   entity_items:

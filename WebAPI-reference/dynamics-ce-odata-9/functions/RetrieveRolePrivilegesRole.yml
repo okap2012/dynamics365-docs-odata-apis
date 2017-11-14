@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveRolePrivilegesRoleResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the privileges that are assigned to the specified role.  "
 entities:
   description: "Use the RetrieveRolePrivilegesRole function with this entity type:"
   entity_items:

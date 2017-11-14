@@ -40,7 +40,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.ExpandCalendarResponse
   iscollection: false
   nullable: false
-  description: "Converts the calendar rules to an array of available time blocks for the specified period. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

@@ -31,7 +31,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrievePrincipalAttributePrivilegesResponse
   iscollection: false
   nullable: false
-  description: "Retrieves all the secured attribute privileges a user or team has through direct or indirect (through team membership) associations with the FieldSecurityProfile entity. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

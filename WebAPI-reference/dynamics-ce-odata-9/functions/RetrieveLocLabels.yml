@@ -42,7 +42,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveLocLabelsResponse
   iscollection: false
   nullable: false
-  description: "Retrieves localized labels for a limited set of entity attributes."
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

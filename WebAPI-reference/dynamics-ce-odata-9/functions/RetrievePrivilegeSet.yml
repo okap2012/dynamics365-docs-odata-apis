@@ -29,7 +29,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.privilege
   iscollection: true
   nullable: false
-  description: "Retrieves the set of privileges defined in the system. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

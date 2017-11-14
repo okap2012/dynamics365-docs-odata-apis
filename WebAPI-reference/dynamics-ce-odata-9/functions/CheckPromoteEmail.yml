@@ -42,7 +42,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.CheckPromoteEmailResponse
   iscollection: false
   nullable: false
-  description: "Contains the data that is needed to check whether the incoming email message should be promoted to the Microsoft Dynamics 365 system. "
 entities:
   description: "Use the CheckPromoteEmail function with this entity type:"
   entity_items:

@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.SearchResponse
   iscollection: false
   nullable: false
-  description: "Searches for available time slots that fulfill the specified appointment request.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

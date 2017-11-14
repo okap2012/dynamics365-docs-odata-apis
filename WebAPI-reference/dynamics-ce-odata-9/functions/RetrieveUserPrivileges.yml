@@ -29,7 +29,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveUserPrivilegesResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the privileges a system user (user) has through his or her roles in the specified business unit.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

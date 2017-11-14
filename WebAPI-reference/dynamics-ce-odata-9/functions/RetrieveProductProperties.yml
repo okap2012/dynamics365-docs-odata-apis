@@ -35,7 +35,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.dynamicproperty
   iscollection: true
   nullable: false
-  description: "Retrieve all the property instances (dynamic property instances) for a product added to an opportunity, quote, order, or invoice. "
 entities:
   description: "Use the RetrieveProductProperties function with this entity type:"
   entity_items:

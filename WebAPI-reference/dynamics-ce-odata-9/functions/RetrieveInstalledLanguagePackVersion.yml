@@ -32,7 +32,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveInstalledLanguagePackVersionResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the version of an installed language pack.  "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

@@ -31,7 +31,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.RetrieveAbsoluteAndSiteCollectionUrlResponse
   iscollection: false
   nullable: false
-  description: "Retrieves the absolute URL and the site collection URL for a SharePoint location record in Microsoft Dynamics 365. "
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:

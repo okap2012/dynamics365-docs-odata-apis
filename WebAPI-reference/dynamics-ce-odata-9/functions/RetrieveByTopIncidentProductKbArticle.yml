@@ -29,7 +29,6 @@ return_type:
   type: Microsoft.Dynamics.CRM.kbarticle
   iscollection: true
   nullable: false
-  description: "Retrieves the top-ten articles about a specified product from the knowledge base of articles for the organization "
 entities:
   description: "Use the RetrieveByTopIncidentProductKbArticle function with this entity type:"
   entity_items:
