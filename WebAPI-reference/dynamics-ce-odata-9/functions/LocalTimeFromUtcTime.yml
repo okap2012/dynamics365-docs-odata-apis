@@ -1,0 +1,43 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.LocalTimeFromUtcTime
+name: "LocalTimeFromUtcTime"
+type: function
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement UtcTimeFromLocalTime Function Reference | MicrosoftDocs"
+  ms.date: "11/20/2017"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: 9632ED26-8596-4066-BF3D-57096E2DC690
+  author: "sushantsikka"
+  ms.author: "susikka"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement LocalTimeFromUtcTime Function."
+namespace: Microsoft.Dynamics.CRM
+description: "Retrieves the local time from the specified Coordinated Universal Time(UTC)."
+iscomposable: false
+parameters:
+  description: "Parameters allow for data to be passed to the function."
+  parameter_items:
+  - name: TimeZoneCode
+    type: Int32
+    nullable: false
+    unicode: true
+    description: "The code of the time zone of local time."
+  - name: UtcTime
+    type: DateTime
+    nullable: false
+    unicode: true
+    description: "The value of the Coordinated Universal Time(UTC)."
+return_type:
+  description: "The value of Coordinated Universal Time(UTC)."
+  type: DateTime
+  iscollection: true
+  nullable: false
+# This function has no remarks.
+href_see_also:
+- text: "Use the Dynamics 365 Customer Engagement Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.UtcTimeFromLocalTime  
