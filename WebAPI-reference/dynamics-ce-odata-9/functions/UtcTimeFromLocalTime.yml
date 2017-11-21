@@ -24,12 +24,12 @@ parameters:
     type: Int32
     nullable: false
     unicode: true
-    description: "The code of the time zone of local time"
+    description: "The code of the time zone of local time."
   - name: LocalTime
     type: DateTime
     nullable: false
     unicode: true
-    description: "The value of local time"
+    description: "The value of local time."
 return_type:
   description: "The value of Coordinated Universal Time(UTC)."
   type: DateTime

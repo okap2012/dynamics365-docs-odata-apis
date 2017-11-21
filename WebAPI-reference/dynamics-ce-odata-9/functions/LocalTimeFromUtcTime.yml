@@ -31,7 +31,7 @@ parameters:
     unicode: true
     description: "The value of the Coordinated Universal Time(UTC)."
 return_type:
-  description: "The value of Coordinated Universal Time(UTC)."
+  description: "The value of local time in the specified time zone."
   type: DateTime
   iscollection: true
   nullable: false
