@@ -72,7 +72,7 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
 # This action has no identified unbound entities.
 # This action has no remarks.
-remarks:
+remarks:  |
 
   ## Example
 
