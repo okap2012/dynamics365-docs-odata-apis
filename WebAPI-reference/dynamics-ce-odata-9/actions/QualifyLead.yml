@@ -72,6 +72,37 @@ return_type:
   type: Microsoft.Dynamics.CRM.crmbaseentity
 # This action has no identified unbound entities.
 # This action has no remarks.
+remarks:
+
+## Example
+
+**Request**
+
+```HTTP
+POST [Organization URI]/org1/api/data/v9.0/leads(f282fa8b-3bcf-e711-80f3-00155d889a3b)/Microsoft.Dynamics.CRM.QualifyLead HTTP/1.1
+If-None-Match: null
+OData-Version: 4.0
+Content-Type: application/json
+Accept: application/json
+OData-MaxVersion: 4.0
+Prefer: return=representation
+
+{
+	"CreateAccount":true,
+	"CreateContact":true,
+	"CreateOpportunity":true,
+	"Status":3
+}
+```
+**Response**
+```JSON
+{
+    "@odata.context": "[Organization URI]/api/data/v9.0/$metadata#Collection(Microsoft.Dynamics.CRM.crmbaseentity)",
+    "value": [
+                <JSON data of created Account, Contact and Opportunity records omitted for brevity>
+             ]
+}
+```
 href_see_also:
 - text: "Use the Dynamics 365 Customer Engagement Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
