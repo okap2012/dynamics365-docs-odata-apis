@@ -30,7 +30,7 @@ hasreturnvalue: false
 # This action has no remarks.
 remarks:  |
 
-  PublishTheme Action allows you to publish an existing theme on a Microsoft Dynamics 365 instance.
+  PublishTheme Action allows you to publish a theme and set it as the current theme.
 
   ## Example
 
