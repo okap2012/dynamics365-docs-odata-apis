@@ -6,7 +6,7 @@ QualifyLead Action qualifies a lead record and creates account, contact, and opp
 **Request**
 
 ```HTTP
-POST [Organization URI]/org1/api/data/v9.0/leads(f282fa8b-3bcf-e711-80f3-00155d889a3b)/Microsoft.Dynamics.CRM.QualifyLead HTTP/1.1
+POST [Organization URI]/api/data/v9.0/leads(f282fa8b-3bcf-e711-80f3-00155d889a3b)/Microsoft.Dynamics.CRM.QualifyLead HTTP/1.1
 If-None-Match: null
 OData-Version: 4.0
 Content-Type: application/json
