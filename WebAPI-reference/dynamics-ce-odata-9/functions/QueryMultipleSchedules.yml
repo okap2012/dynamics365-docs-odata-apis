@@ -27,6 +27,7 @@ parameters:
     nullable: false
     unicode: true
     description: "Specifies the resources."
+    iscollection: true
   - name: Start
     type: Edm.DateTimeOffset
     nullable: false
