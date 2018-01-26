@@ -1694,6 +1694,8 @@
       name: RetrieveMissingComponents
     - uid: Microsoft.Dynamics.CRM.RetrieveMissingDependencies
       name: RetrieveMissingDependencies
+    - uid: Microsoft.Dynamics.CRM.RetrieveOrganizationInfo
+      name: RetrieveOrganizationInfo      
     - uid: Microsoft.Dynamics.CRM.RetrieveOrganizationResources
       name: RetrieveOrganizationResources
     - uid: Microsoft.Dynamics.CRM.RetrieveParentGroupsResourceGroup
@@ -1740,6 +1742,8 @@
       name: RetrieveUnpublished
     - uid: Microsoft.Dynamics.CRM.RetrieveUnpublishedMultiple
       name: RetrieveUnpublishedMultiple
+    - uid: Microsoft.Dynamics.CRM.RetrieveUserLicenseInfo
+      name: RetrieveUserLicenseInfo
     - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivileges
       name: RetrieveUserPrivileges
     - uid: Microsoft.Dynamics.CRM.RetrieveUserQueues
@@ -2276,6 +2280,8 @@
       name: OrderExpression
     - uid: Microsoft.Dynamics.CRM.OrganizationDetail
       name: OrganizationDetail
+    - uid: Microsoft.Dynamics.CRM.OrganizationInfo
+      name: OrganizationInfo      
     - uid: Microsoft.Dynamics.CRM.OrganizationResources
       name: OrganizationResources
     - uid: Microsoft.Dynamics.CRM.PagingInfo
@@ -2352,6 +2358,8 @@
       name: RetrieveMetadataChangesResponse
     - uid: Microsoft.Dynamics.CRM.RetrieveMissingComponentsResponse
       name: RetrieveMissingComponentsResponse
+    - uid: Microsoft.Dynamics.CRM.RetrieveOrganizationInfoResponse
+      name: RetrieveOrganizationInfoResponse      
     - uid: Microsoft.Dynamics.CRM.RetrieveOrganizationResourcesResponse
       name: RetrieveOrganizationResourcesResponse
     - uid: Microsoft.Dynamics.CRM.RetrieveParsedDataImportFileResponse
@@ -2378,6 +2386,8 @@
       name: RetrieveTimestampResponse
     - uid: Microsoft.Dynamics.CRM.RetrieveTotalRecordCountResponse
       name: RetrieveTotalRecordCountResponse
+    - uid: Microsoft.Dynamics.CRM.RetrieveUserLicenseInfoResponse
+      name: RetrieveUserLicenseInfoResponse      
     - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivilegesResponse
       name: RetrieveUserPrivilegesResponse
     - uid: Microsoft.Dynamics.CRM.RetrieveVersionResponse
@@ -2392,6 +2402,10 @@
       name: SecurityPrivilegeMetadata
     - uid: Microsoft.Dynamics.CRM.SendEmailResponse
       name: SendEmailResponse
+    - uid: Microsoft.Dynamics.CRM.ServicePlan
+      name: ServicePlan 
+    - uid: Microsoft.Dynamics.CRM.Solution
+      name: Solution           
     - uid: Microsoft.Dynamics.CRM.StateOptionMetadata
       name: StateOptionMetadata
     - uid: Microsoft.Dynamics.CRM.StatusOptionMetadata
@@ -2406,6 +2420,8 @@
       name: TimeInfoCollection
     - uid: Microsoft.Dynamics.CRM.TraceInfo
       name: TraceInfo
+    - uid: Microsoft.Dynamics.CRM.UserLicenseInfo
+      name: UserLicenseInfo      
     - uid: Microsoft.Dynamics.CRM.ValidateAppResponse
       name: ValidateAppResponse
     - uid: Microsoft.Dynamics.CRM.ValidateRecurrenceRuleResponse
@@ -2477,6 +2493,8 @@
       name: OrderType
     - uid: Microsoft.Dynamics.CRM.OrganizationState
       name: OrganizationState
+    - uid: Microsoft.Dynamics.CRM.OrganizationType
+      name: OrganizationType      
     - uid: Microsoft.Dynamics.CRM.OwnershipTypes
       name: OwnershipTypes
     - uid: Microsoft.Dynamics.CRM.PrivilegeDepth

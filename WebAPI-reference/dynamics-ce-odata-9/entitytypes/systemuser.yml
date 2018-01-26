@@ -7263,6 +7263,8 @@ operations:
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalSyncAttributeMappings
     binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.RetrieveUserLicenseInfo
+    binding_type: "Entity"    
   - name: Microsoft.Dynamics.CRM.RetrieveUserPrivileges
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrieveUserQueues

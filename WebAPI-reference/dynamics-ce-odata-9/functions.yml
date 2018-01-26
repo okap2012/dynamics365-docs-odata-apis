@@ -146,6 +146,8 @@ in_this_section:
   description: "Retrieves a list of missing components in the target organization.  "
 - type: Microsoft.Dynamics.CRM.RetrieveMissingDependencies
   description: "Retrieves any required solution components that are not included in the solution. "
+- type: Microsoft.Dynamics.CRM.RetrieveOrganizationInfo
+  description: "TODO"  
 - type: Microsoft.Dynamics.CRM.RetrieveOrganizationResources
   description: "Retrieves the resources that are used by an organization.  "
 - type: Microsoft.Dynamics.CRM.RetrieveParentGroupsResourceGroup
@@ -192,6 +194,8 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveUnpublishedMultiple
   description: "Retrieves a collection of unpublished organization-owned records that satisfy the specified query criteria. "
+- type: Microsoft.Dynamics.CRM.RetrieveUserLicenseInfo
+  description: "TODO"
 - type: Microsoft.Dynamics.CRM.RetrieveUserPrivileges
   description: "Retrieves the privileges a system user (user) has through his or her roles in the specified business unit.  "
 - type: Microsoft.Dynamics.CRM.RetrieveUserQueues

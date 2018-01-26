@@ -70,6 +70,8 @@ in_this_section:
   description: "The possible values for the order type in an OrderExpression. "
 - type: Microsoft.Dynamics.CRM.OrganizationState
   description: "Describes the state of the organization. "
+- type: Microsoft.Dynamics.CRM.OrganizationType
+  description: "TODO"  
 - type: Microsoft.Dynamics.CRM.OwnershipTypes
   description: "Specifies the type of ownership for an entity. "
 - type: Microsoft.Dynamics.CRM.PrivilegeDepth

@@ -386,6 +386,8 @@ in_this_section:
   description: "The order in which the entity instances are returned from the query."
 - type: Microsoft.Dynamics.CRM.OrganizationDetail
   description: "Provides detailed information on an organization. "
+- type: Microsoft.Dynamics.CRM.OrganizationInfo
+  description: "TODO"  
 - type: Microsoft.Dynamics.CRM.OrganizationResources
   description: "Contains data regarding the resources used by an organization. "
 - type: Microsoft.Dynamics.CRM.PagingInfo
@@ -462,6 +464,8 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveMissingComponentsResponse
   description: "Contains the response from the RetrieveMissingComponents function. "
+- type: Microsoft.Dynamics.CRM.RetrieveOrganizationInfoResponse
+  description: "Contains the response from the RetrieveOrganizationInfo function."  
 - type: Microsoft.Dynamics.CRM.RetrieveOrganizationResourcesResponse
   description: "Contains the response from the RetrieveOrganizationResources function."
 - type: Microsoft.Dynamics.CRM.RetrieveParsedDataImportFileResponse
@@ -477,17 +481,19 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.RetrieveProvisionedLanguagesResponse
   description: "Contains the response from the RetrieveProvisionedLanguages function."
 - type: Microsoft.Dynamics.CRM.RetrieveRecordChangeHistoryResponse
-  description: ""
+  description: "Contains the response from the RetrieveRecordChangeHistory function. "
 - type: Microsoft.Dynamics.CRM.RetrieveRolePrivilegesRoleResponse
   description: "Contains the response from the RetrieveRolePrivilegesRole function."
 - type: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccessResponse
-  description: ""
+  description: "Contains the response from the RetrieveSharedPrincipalsAndAccess function. "
 - type: Microsoft.Dynamics.CRM.RetrieveTeamPrivilegesResponse
   description: "Contains the response from the RetrieveTeamPrivileges function. "
 - type: Microsoft.Dynamics.CRM.RetrieveTimestampResponse
   description: "Contains the response from the RetrieveTimestamp function."
 - type: Microsoft.Dynamics.CRM.RetrieveTotalRecordCountResponse
-  description: ""
+  description: "Contains the response from the RetrieveTotalRecordCount function. "
+- type: Microsoft.Dynamics.CRM.RetrieveUserLicenseInfoResponse
+  description: "Contains the response from the RetrieveUserLicenseInfo function. "    
 - type: Microsoft.Dynamics.CRM.RetrieveUserPrivilegesResponse
   description: "Contains the response from the RetrieveUserPrivileges function. "
 - type: Microsoft.Dynamics.CRM.RetrieveVersionResponse
@@ -502,6 +508,10 @@ in_this_section:
   description: "The metadata that describes a security privilege for access to an entity. "
 - type: Microsoft.Dynamics.CRM.SendEmailResponse
   description: "Contains the response from the BackgroundSendEmail action. "
+- type: Microsoft.Dynamics.CRM.ServicePlan
+  description: "TODO"
+- type: Microsoft.Dynamics.CRM.Solution
+  description: "TODO"  
 - type: Microsoft.Dynamics.CRM.StateOptionMetadata
   description: "Contains data to define an option for the options in a State attribute. "
 - type: Microsoft.Dynamics.CRM.StatusOptionMetadata
@@ -516,6 +526,8 @@ in_this_section:
   description: "The results of a search using the QueryMultipleSchedules function."
 - type: Microsoft.Dynamics.CRM.TraceInfo
   description: "Contains the results of a scheduling operation using the ValidateRequest, BookRequest, RescheduleRequest, or Search actions. "
+- type: Microsoft.Dynamics.CRM.UserLicenseInfo
+  description: "TODO"
 - type: Microsoft.Dynamics.CRM.ValidateAppResponse
   description: ""
 - type: Microsoft.Dynamics.CRM.ValidateRecurrenceRuleResponse
