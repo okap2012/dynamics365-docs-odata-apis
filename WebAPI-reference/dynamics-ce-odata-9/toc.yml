@@ -2404,7 +2404,7 @@
       name: SendEmailResponse
     - uid: Microsoft.Dynamics.CRM.ServicePlan
       name: ServicePlan 
-    - uid: Microsoft.Dynamics.CRM.SolutionInfo
+    - uid: Microsoft.Dynamics.CRM.Solution
       name: Solution           
     - uid: Microsoft.Dynamics.CRM.StateOptionMetadata
       name: StateOptionMetadata

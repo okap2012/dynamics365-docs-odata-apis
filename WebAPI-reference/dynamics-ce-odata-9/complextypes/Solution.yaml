@@ -1,5 +1,5 @@
 ### YamlMime:OData
-uid: Microsoft.Dynamics.CRM.SolutionInfo
+uid: Microsoft.Dynamics.CRM.Solution
 name: "Solution"
 type: complextype
 metadata: 
