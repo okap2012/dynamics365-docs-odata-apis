@@ -510,7 +510,7 @@ in_this_section:
   description: "Contains the response from the BackgroundSendEmail action. "
 - type: Microsoft.Dynamics.CRM.ServicePlan
   description: "TODO"
-- type: Microsoft.Dynamics.CRM.Solution
+- type: Microsoft.Dynamics.CRM.SolutionType
   description: "TODO"  
 - type: Microsoft.Dynamics.CRM.StateOptionMetadata
   description: "Contains data to define an option for the options in a State attribute. "
