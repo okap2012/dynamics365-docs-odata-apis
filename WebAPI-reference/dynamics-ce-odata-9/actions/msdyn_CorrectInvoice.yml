@@ -15,7 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_CorrectInvoice Action."
 namespace: Microsoft.Dynamics.CRM
-# This Action has no description.
+description: "For internal use only."
 owningsolution: Microsoft.Dynamics.CRM.ProjectService
 bound_entities:
   description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."
