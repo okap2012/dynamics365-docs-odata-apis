@@ -15,7 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_ResourceUtilizationChart Action."
 namespace: Microsoft.Dynamics.CRM
-# This Action has no description.
+description: "For internal use only."
 owningsolution: Microsoft.Dynamics.CRM.ProjectService
 # This action has no bound entities.
 isbound: false
