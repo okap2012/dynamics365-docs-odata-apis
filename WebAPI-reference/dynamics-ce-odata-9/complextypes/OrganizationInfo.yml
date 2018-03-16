@@ -27,7 +27,7 @@ properties:
     description: "TODO"
     iscollection: false
   - name: Solutions
-    type: Microsoft.Dynamics.CRM.Solution
+    type: Microsoft.Dynamics.CRM.Solution1
     nullable: true
     unicode: true
     description: "TODO"
