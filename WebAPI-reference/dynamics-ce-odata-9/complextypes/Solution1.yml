@@ -16,7 +16,7 @@ metadata:
   meta-description: "Reference information about the Dynamics 365 Customer Engagement Web API Solution ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
-description: "TODO " 
+description: "TODO Add descripion " 
 properties:
   description: "The properties of a complex type contain the structured data of the type."
   property_items:
