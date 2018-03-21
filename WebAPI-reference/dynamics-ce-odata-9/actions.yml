@@ -253,7 +253,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.msdyn_createinvoicefrominvoiceschedule
   description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_CreateQuoteFromOpportunity
-   description: "For internal use only."
+  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_CreateQuoteLineDetailsFromEstimate
   description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_CreateQuoteSpecificPriceList
@@ -263,17 +263,17 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.msdyn_CreateSharepointDocumentLocation
   description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_CreateTaskBasedEstimatesForProject
-   description: "For internal use only."
+  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_CreateTemplateFromProject
-   description: "For internal use only."
+  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_DeleteEstimateLines
   description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_DeleteEstimatesForProjectTask
   description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_ExpandResourceAssignment
-   description: "For internal use only."
+  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_ExpenseApproveAction
-   description: "For internal use only."
+  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesApprove
   description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesPendingApproval
@@ -285,7 +285,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesSubmit
   description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_ExpenseRejectAction
-    description: "For internal use only."
+  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_ExpenseSubmitAction
   description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_ExportActual
