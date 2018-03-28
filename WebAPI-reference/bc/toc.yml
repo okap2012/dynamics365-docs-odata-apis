@@ -11,9 +11,5 @@
       topicHref: /dynamics365/customer-engagement/developer/
       items:
       - name: Web API
-        tocHref: /dynamics365/customer-engagement/developer/web-api/
+        tocHref: /dynamics365/customer-engagement/web-api/
         topicHref: /dynamics365/customer-engagement/developer/webapi/
-        items:
-        - name: Reference
-          tocHref: /dynamics365/customer-engagement/developer/web-api/
-          topicHref: /dynamics365/customer-engagement/developer/web-api/about
