@@ -115,6 +115,7 @@
 
     },
     "template": [ ],
-    "dest": "WebAPI-reference"
+    "dest": "WebAPI-reference",
+    "xref": ["externalxrefmap.yml"]
   }
 }
