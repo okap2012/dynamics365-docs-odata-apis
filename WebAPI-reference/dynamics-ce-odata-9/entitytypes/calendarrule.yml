@@ -271,8 +271,6 @@ solutions:
 href_see_also:
 - text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
-remarks:
-  description: "Calendar Rule entity type is not supported with RetrieveMultiple Web API request."
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex
