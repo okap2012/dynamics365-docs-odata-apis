@@ -69,6 +69,8 @@ properties:
           label: "Action"
         - value: 4
           label: "Business Process Flow"
+        - value: 5
+          label: "Flow"
     - name: clientdata
       type: Edm.String
       display_name: "Client Data"

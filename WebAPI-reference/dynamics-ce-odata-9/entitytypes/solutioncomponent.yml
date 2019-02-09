@@ -192,6 +192,8 @@ properties:
           label: "Index"
         - value: 208
           label: "Import Map"
+        - value: 300
+          label: "Canvas App"
     - name: createdon
       type: Edm.DateTimeOffset
       display_name: "Created On"
