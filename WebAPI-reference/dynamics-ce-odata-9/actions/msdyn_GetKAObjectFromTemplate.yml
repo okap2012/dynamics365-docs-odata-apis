@@ -31,7 +31,7 @@ return_type:
   description: "The msdyn_GetKAObjectFromTemplate action returns the following value."
   iscollection: false
   nullable: false
-  type: Microsoft.Dynamics.CRM.GetKAObjectFromTemplate
+  type: Microsoft.Dynamics.CRM.KnowledgeArticle
 # This action has no identified unbound entities.
 # This action has no remarks.
 href_see_also:
