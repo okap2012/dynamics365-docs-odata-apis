@@ -28,7 +28,7 @@ parameters:
     unicode: true
     description: ""
 return_type:
-  description: "The msdyn_GetResources action returns the following value."
+  description: "The msdyn_GetKAObjectFromTemplate action returns the following value."
   iscollection: false
   nullable: false
   type: Microsoft.Dynamics.CRM.GetKAObjectFromTemplate
