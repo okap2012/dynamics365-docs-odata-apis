@@ -1239,6 +1239,8 @@
       name: msdyn_GetEstimatesforProject
     - uid: Microsoft.Dynamics.CRM.msdyn_GetGenericResourceDetails
       name: msdyn_GetGenericResourceDetails
+    - uid: Microsoft.Dynamics.CRM.msdyn_GetKAObjectFromTemplate
+      name: msdyn_GetKAObjectFromTemplate
     - uid: Microsoft.Dynamics.CRM.msdyn_GetMultipleResourceBookingDetails
       name: msdyn_GetMultipleResourceBookingDetails
     - uid: Microsoft.Dynamics.CRM.msdyn_GetMyChangedSkills
