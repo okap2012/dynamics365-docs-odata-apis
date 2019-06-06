@@ -9,9 +9,9 @@ ms.author: "kvivek"
 ms.reviewer: "kvivek"
 ---
 # Web API Reference 
-This section contains reference documentation of the types, functions, and actions that constitute the Web API for Common Data Service (CDS) for Apps and Dynamics 365 Customer Engagement. More information:
+This section contains reference documentation of the types, functions, and actions that constitute the Web API for Common Data Service and Dynamics 365 for Customer Engagement. More information:
 
-- [Use the Common Data Service for Apps Web API](/powerapps/developer/common-data-service/webapi/overview)
+- [Use the Common Data Service Web API](/powerapps/developer/common-data-service/webapi/overview)
 
 - [Use the Microsoft Dynamics 365 Customer Engagement Web API](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api) 
 
