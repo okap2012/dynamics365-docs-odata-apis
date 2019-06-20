@@ -15,7 +15,7 @@ metadata:
   manager: "jdaly"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement RetrieveUserPrivilegeByPrivilegeName Function."
 namespace: Microsoft.Dynamics.CRM
-description: "Retrieves the list of privileges for a system user (user) from all direct roles associated with the system user and from all indirect roles associated with teams in which the system user is a member of based on the specified privilege name.""
+description: "Retrieves the list of privileges for a system user (user) from all direct roles associated with the system user and from all indirect roles associated with teams in which the system user is a member of based on the specified privilege name."
 iscomposable: false
 bound_entities:
   description: "Bound functions are invoked by appending the function name to the URI representing an entity or collection."
