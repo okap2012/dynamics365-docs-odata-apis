@@ -1759,6 +1759,10 @@
     - uid: Microsoft.Dynamics.CRM.RetrieveUserLicenseInfo
       name: RetrieveUserLicenseInfo
     - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivileges
+    - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeId
+      name: RetrieveUserPrivilegeByPrivilegeId
+    - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeName
+      name: RetrieveUserPrivilegeByPrivilegeName
       name: RetrieveUserPrivileges
     - uid: Microsoft.Dynamics.CRM.RetrieveUserQueues
       name: RetrieveUserQueues
