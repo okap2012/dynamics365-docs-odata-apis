@@ -1758,11 +1758,11 @@
       name: RetrieveUnpublishedMultiple
     - uid: Microsoft.Dynamics.CRM.RetrieveUserLicenseInfo
       name: RetrieveUserLicenseInfo
-    - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivileges
     - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeId
       name: RetrieveUserPrivilegeByPrivilegeId
     - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeName
       name: RetrieveUserPrivilegeByPrivilegeName
+    - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivileges
       name: RetrieveUserPrivileges
     - uid: Microsoft.Dynamics.CRM.RetrieveUserQueues
       name: RetrieveUserQueues
