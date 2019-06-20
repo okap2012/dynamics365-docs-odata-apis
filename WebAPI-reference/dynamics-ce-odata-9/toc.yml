@@ -2418,6 +2418,10 @@
       name: RetrieveTotalRecordCountResponse
     - uid: Microsoft.Dynamics.CRM.RetrieveUserLicenseInfoResponse
       name: RetrieveUserLicenseInfoResponse
+    - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeIdResponse
+      name: RetrieveUserPrivilegeByPrivilegeIdResponse
+    - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeNameResponse
+      name: RetrieveUserPrivilegeByPrivilegeNameResponse
     - uid: Microsoft.Dynamics.CRM.RetrieveUserPrivilegesResponse
       name: RetrieveUserPrivilegesResponse
     - uid: Microsoft.Dynamics.CRM.RetrieveVersionResponse
