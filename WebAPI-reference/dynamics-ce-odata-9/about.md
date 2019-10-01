@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 Customer Engagement Web API Reference| MicrosoftDocs"
+title: "Common Data Service and Dynamics 365 Customer Engagement (on-premises) Web API Reference| MicrosoftDocs"
 ms.date: 10/31/2018
 ms.service: "powerapps"
 ms.topic: "reference"
@@ -9,11 +9,11 @@ ms.author: "kvivek"
 ms.reviewer: "kvivek"
 ---
 # Web API Reference 
-This section contains reference documentation of the types, functions, and actions that constitute the Web API for Common Data Service and Dynamics 365 for Customer Engagement. More information:
+This section contains reference documentation of the types, functions, and actions that constitute the Web API for Common Data Service and Dynamics 365 Customer Engagement (on-premises). More information:
 
 - [Use the Common Data Service Web API](/powerapps/developer/common-data-service/webapi/overview)
 
-- [Use the Microsoft Dynamics 365 Customer Engagement Web API](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api) 
+- [Use the Microsoft Dynamics 365 Customer Engagement (on-premises) Web API](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api) 
 
 ## In This Section  
  <xref:Microsoft.Dynamics.CRM.EntityTypeIndex>
@@ -58,5 +58,5 @@ objects available to use in the Web API.
 ## Related Sections
  [Use the Common Data Service for Apps Web API](/powerapps/developer/common-data-service/webapi/overview)
 
- [Use the Microsoft Dynamics 365 Customer Engagement Web API](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api)
+ [Use the Microsoft Dynamics 365 Customer Engagement (on-premises) Web API](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api)
  
