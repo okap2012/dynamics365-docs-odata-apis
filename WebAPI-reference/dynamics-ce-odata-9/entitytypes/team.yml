@@ -141,6 +141,10 @@ properties:
           label: "Owner"
         - value: 1
           label: "Access"
+        - value: 2
+          label: "AAD Security Group"
+        - value: 3
+          label: "AAD Office Group"
     - name: traversedpath
       type: Edm.String
       display_name: "Traversed Path"
