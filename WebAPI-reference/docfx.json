@@ -111,6 +111,8 @@
     "globalMetadata": {
       "breadcrumb_path": "~/bc/toc.yml"
     },
+    "exportRawModel": true,
+    "exportViewModel": true,
     "fileMetadata": {},
     "template": [],
     "dest": "WebAPI-reference",
