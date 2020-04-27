@@ -3,17 +3,15 @@ uid: Microsoft.Dynamics.CRM.duplicaterecord
 name: "duplicaterecord"
 type: entitytype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement duplicaterecord EntityType Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement duplicaterecord EntityType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
   ms.assetid: a29c6379-e1d1-495e-9062-97d25604f27e
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement duplicaterecord entitytype."
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the duplicaterecord entitytype."
 description: "Potential duplicate record."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/duplicaterecords"
@@ -60,6 +58,50 @@ lookup_properties:
     description: "Unique identifier of the system job that created this record."
   - name: _baserecordid_value
     single_valued_navigation_property:
+    - baserecordid_kbarticle
+    - baserecordid_socialprofile
+    - baserecordid_knowledgearticle
+    - baserecordid_emailserverprofile
+    - baserecordid_publisher
+    - baserecordid_sharepointdocumentlocation
+    - baserecordid_account
+    - baserecordid_goal
+    - baserecordid_systemuser
+    - baserecordid_contact
+    - baserecordid_knowledgebaserecord
+    - baserecordid_goalrollupquery
+    - baserecordid_queue
+    - baserecordid_feedback
+    - baserecordid_transactioncurrency
+    - baserecordid_team
+    - baserecordid_sharepointsite
+    - baserecordid_solutioncomponentattributeconfiguration
+    - baserecordid_solutioncomponentconfiguration
+    - baserecordid_stagesolutionupload
+    - baserecordid_serviceplan
+    - baserecordid_msdyn_knowledgearticleimage
+    - baserecordid_msdyn_knowledgearticletemplate
+    - baserecordid_msdyn_dataflow
+    - baserecordid_connector
+    - baserecordid_msdyn_aibdataset
+    - baserecordid_msdyn_aibdatasetfile
+    - baserecordid_msdyn_aibdatasetrecord
+    - baserecordid_msdyn_aibdatasetscontainer
+    - baserecordid_msdyn_aibfile
+    - baserecordid_msdyn_aibfileattacheddata
+    - baserecordid_msdyn_aiodimage
+    - baserecordid_msdyn_aiodlabel
+    - baserecordid_msdyn_aiodtrainingboundingbox
+    - baserecordid_msdyn_aiodtrainingimage
+    - baserecordid_environmentvariabledefinition
+    - baserecordid_environmentvariablevalue
+    - baserecordid_msdyn_analysiscomponent
+    - baserecordid_msdyn_analysisjob
+    - baserecordid_msdyn_analysisresult
+    - baserecordid_msdyn_analysisresultdetail
+    - baserecordid_msdyn_solutionhealthrule
+    - baserecordid_msdyn_solutionhealthruleargument
+    - baserecordid_msdyn_solutionhealthruleset
     - baserecordid_lead
     - baserecordid_bookableresource
     - baserecordid_bookableresourcebooking
@@ -82,19 +124,43 @@ lookup_properties:
     - baserecordid_entitlementtemplate
     - baserecordid_resourcegroup
     - baserecordid_service
+    - baserecordid_entitlemententityallocationtypemapping
+    - baserecordid_msdyn_callablecontext
+    - baserecordid_msdyn_playbookactivity
+    - baserecordid_msdyn_playbookactivityattribute
+    - baserecordid_msdyn_playbookcategory
+    - baserecordid_msdyn_playbookinstance
+    - baserecordid_msdyn_playbooktemplate
+    - baserecordid_adminsettingsentity
     - baserecordid_opportunity
     - baserecordid_quote
     - baserecordid_competitor
     - baserecordid_territory
+    - baserecordid_msdyn_forecastconfiguration
+    - baserecordid_msdyn_forecastdefinition
+    - baserecordid_msdyn_forecastinstance
+    - baserecordid_msdyn_forecastrecurrence
+    - baserecordid_msdyn_relationshipinsightsunifiedconfig
+    - baserecordid_msdyn_siconfig
+    - baserecordid_msdyn_actioncardregarding
+    - baserecordid_msdyn_flowcardtype
+    - baserecordid_msdyn_salesinsightssettings
+    - baserecordid_msdyn_autocapturerule
+    - baserecordid_msdyn_autocapturesettings
+    - baserecordid_msdyn_untrackedappointment
+    - baserecordid_msdyn_icebreakersconfig
     - baserecordid_msdyn_postalbum
     - baserecordid_msdyn_actual
+    - baserecordid_msdyn_bookableresourceassociation
     - baserecordid_msdyn_bookingalertstatus
     - baserecordid_msdyn_bookingrule
     - baserecordid_msdyn_clientextension
     - baserecordid_msdyn_organizationalunit
     - baserecordid_msdyn_priority
     - baserecordid_msdyn_requirementcharacteristic
+    - baserecordid_msdyn_requirementgroup
     - baserecordid_msdyn_requirementorganizationunit
+    - baserecordid_msdyn_requirementrelationship
     - baserecordid_msdyn_requirementresourcecategory
     - baserecordid_msdyn_requirementresourcepreference
     - baserecordid_msdyn_requirementstatus
@@ -115,6 +181,8 @@ lookup_properties:
     - baserecordid_msdyn_contractlinescheduleofvalue
     - baserecordid_msdyn_dataexport
     - baserecordid_msdyn_delegation
+    - baserecordid_msdyn_dimension
+    - baserecordid_msdyn_dimensionfieldname
     - baserecordid_msdyn_estimate
     - baserecordid_msdyn_estimateline
     - baserecordid_msdyn_expense
@@ -158,6 +226,7 @@ lookup_properties:
     - baserecordid_msdyn_quotelinetransactionclassification
     - baserecordid_msdyn_quotepricelist
     - baserecordid_msdyn_resourceassignmentdetail
+    - baserecordid_msdyn_resourcecategorymarkuppricelevel
     - baserecordid_msdyn_resourcecategorypricelevel
     - baserecordid_msdyn_resourcerequest
     - baserecordid_msdyn_rolecompetencyrequirement
@@ -183,12 +252,16 @@ lookup_properties:
     - baserecordid_msdyn_agreementsubstatus
     - baserecordid_msdyn_bookingtimestamp
     - baserecordid_msdyn_customerasset
+    - baserecordid_msdyn_customerassetcategory
+    - baserecordid_msdyn_entitlementapplication
     - baserecordid_msdyn_fieldservicepricelistitem
     - baserecordid_msdyn_incidenttype
     - baserecordid_msdyn_incidenttypecharacteristic
     - baserecordid_msdyn_incidenttypeproduct
     - baserecordid_msdyn_incidenttypeservice
     - baserecordid_msdyn_incidenttypeservicetask
+    - baserecordid_msdyn_incidenttypessetup
+    - baserecordid_msdyn_incidenttype_requirementgroup
     - baserecordid_msdyn_inventoryadjustment
     - baserecordid_msdyn_inventoryadjustmentproduct
     - baserecordid_msdyn_inventoryjournal
@@ -240,28 +313,118 @@ lookup_properties:
     - baserecordid_msdyn_iotdevice
     - baserecordid_msdyn_iotdevicecategory
     - baserecordid_msdyn_iotdevicecommand
+    - baserecordid_msdyn_iotdevicecommanddefinition
+    - baserecordid_msdyn_iotdevicedatahistory
+    - baserecordid_msdyn_iotdeviceproperty
     - baserecordid_msdyn_iotdeviceregistrationhistory
-    - baserecordid_ms_newsitem
-    - baserecordid_ms_satori
-    - baserecordid_knowledgearticle
-    - baserecordid_knowledgebaserecord
-    - baserecordid_goalrollupquery
-    - baserecordid_transactioncurrency
-    - baserecordid_socialprofile
-    - baserecordid_team
-    - baserecordid_systemuser
-    - baserecordid_account
-    - baserecordid_sharepointdocumentlocation
-    - baserecordid_publisher
-    - baserecordid_sharepointsite
-    - baserecordid_kbarticle
-    - baserecordid_goal
-    - baserecordid_contact
-    - baserecordid_queue
-    - baserecordid_emailserverprofile
+    - baserecordid_msdyn_iotpropertydefinition
+    - baserecordid_msdyn_iotprovider
+    - baserecordid_msdyn_iotproviderinstance
+    - baserecordid_msdyn_iotsettings
+    - baserecordid_msdyn_entityconfiguration
+    - baserecordid_msdyn_geofence
+    - baserecordid_msdyn_geofenceevent
+    - baserecordid_msdyn_geofencingsettings
+    - baserecordid_msdyn_ciprovider
+    - baserecordid_msdyn_consoleapplicationnotificationfield
+    - baserecordid_msdyn_consoleapplicationnotificationtemplate
+    - baserecordid_msdyn_consoleapplicationsessiontemplate
+    - baserecordid_msdyn_consoleapplicationtemplate
+    - baserecordid_msdyn_consoleapplicationtemplateparameter
+    - baserecordid_msdyn_templatetags
+    - baserecordid_msdyn_consoleapplicationtype
+    - baserecordid_msdyn_conversationdata
+    - baserecordid_msdyn_kpieventdata
+    - baserecordid_msdyn_kpieventdefinition
+    - baserecordid_msdyn_sessiondata
+    - baserecordid_msdyn_sessionparticipantdata
+    - baserecordid_msdyn_channel
+    - baserecordid_msdyn_scenario
+    - baserecordid_msdyn_analytics
+    - baserecordid_msdyn_cannedmessage
+    - baserecordid_msdyn_maskingrule
+    - baserecordid_msdyn_ocbotchannelregistration
+    - baserecordid_msdyn_occhannelconfiguration
+    - baserecordid_msdyn_occhannelstateconfiguration
+    - baserecordid_msdyn_ocliveworkitemcontextitem
+    - baserecordid_msdyn_ocliveworkitemparticipant
+    - baserecordid_msdyn_ocliveworkstreamcontextvariable
+    - baserecordid_msdyn_oclocalizationdata
+    - baserecordid_msdyn_ocprovisioningstate
+    - baserecordid_msdyn_ocrequest
+    - baserecordid_msdyn_ocsystemmessage
+    - baserecordid_msdyn_oc_geolocationprovider
+    - baserecordid_msdyn_presence
+    - baserecordid_msdyn_routingrequest
+    - baserecordid_msdyn_sentimentanalysis
+    - baserecordid_msdyn_sessionevent
+    - baserecordid_msdyn_sessionparticipant
+    - baserecordid_msdyn_chatwidgetlanguage
+    - baserecordid_msdyn_localizedsurveyquestion
+    - baserecordid_msdyn_channelcapability
+    - baserecordid_msdyn_conversationaction
+    - baserecordid_msdyn_conversationactionlocale
+    - baserecordid_msdyn_omnichannelconfiguration
+    - baserecordid_msdyn_omnichannelsyncconfig
+    - baserecordid_msdyn_provider
+    - baserecordid_msdyn_ocliveworkitemcharacteristic
+    - baserecordid_msdyn_ocsessioncharacteristic
+    - baserecordid_msdyn_skillattachmentruleitem
+    - baserecordid_msdyn_skillattachmenttarget
+    - baserecordid_msdyn_smsnumber
+    - baserecordid_msdyn_ocfbapplication
+    - baserecordid_msdyn_ocfbpage
+    - baserecordid_msdyn_serviceconfiguration
+    - baserecordid_msdyn_slakpi
+    - baserecordid_msdyn_iotdevicevisualizationconfiguration
+    - baserecordid_msdyn_iotfieldmapping
     description: "Unique identifier of the base record."
   - name: _duplicaterecordid_value
     single_valued_navigation_property:
+    - duplicaterecordid_kbarticle
+    - duplicaterecordid_publisher
+    - duplicaterecordid_socialprofile
+    - duplicaterecordid_knowledgearticle
+    - duplicaterecordid_knowledgebaserecord
+    - duplicaterecordid_feedback
+    - duplicaterecordid_transactioncurrency
+    - duplicaterecordid_systemuser
+    - duplicaterecordid_queue
+    - duplicaterecordid_emailserverprofile
+    - duplicaterecordid_team
+    - duplicaterecordid_sharepointdocumentlocation
+    - duplicaterecordid_goal
+    - duplicaterecordid_goalrollupquery
+    - duplicaterecordid_account
+    - duplicaterecordid_contact
+    - duplicaterecordid_sharepointsite
+    - duplicaterecordid_solutioncomponentattributeconfiguration
+    - duplicaterecordid_solutioncomponentconfiguration
+    - duplicaterecordid_stagesolutionupload
+    - duplicaterecordid_serviceplan
+    - duplicaterecordid_msdyn_knowledgearticleimage
+    - duplicaterecordid_msdyn_knowledgearticletemplate
+    - duplicaterecordid_msdyn_dataflow
+    - duplicaterecordid_connector
+    - duplicaterecordid_msdyn_aibdataset
+    - duplicaterecordid_msdyn_aibdatasetfile
+    - duplicaterecordid_msdyn_aibdatasetrecord
+    - duplicaterecordid_msdyn_aibdatasetscontainer
+    - duplicaterecordid_msdyn_aibfile
+    - duplicaterecordid_msdyn_aibfileattacheddata
+    - duplicaterecordid_msdyn_aiodimage
+    - duplicaterecordid_msdyn_aiodlabel
+    - duplicaterecordid_msdyn_aiodtrainingboundingbox
+    - duplicaterecordid_msdyn_aiodtrainingimage
+    - duplicaterecordid_environmentvariabledefinition
+    - duplicaterecordid_environmentvariablevalue
+    - duplicaterecordid_msdyn_analysiscomponent
+    - duplicaterecordid_msdyn_analysisjob
+    - duplicaterecordid_msdyn_analysisresult
+    - duplicaterecordid_msdyn_analysisresultdetail
+    - duplicaterecordid_msdyn_solutionhealthrule
+    - duplicaterecordid_msdyn_solutionhealthruleargument
+    - duplicaterecordid_msdyn_solutionhealthruleset
     - duplicaterecordid_lead
     - duplicaterecordid_bookableresource
     - duplicaterecordid_bookableresourcebooking
@@ -284,19 +447,43 @@ lookup_properties:
     - duplicaterecordid_entitlementtemplate
     - duplicaterecordid_resourcegroup
     - duplicaterecordid_service
+    - duplicaterecordid_entitlemententityallocationtypemapping
+    - duplicaterecordid_msdyn_callablecontext
+    - duplicaterecordid_msdyn_playbookactivity
+    - duplicaterecordid_msdyn_playbookactivityattribute
+    - duplicaterecordid_msdyn_playbookcategory
+    - duplicaterecordid_msdyn_playbookinstance
+    - duplicaterecordid_msdyn_playbooktemplate
+    - duplicaterecordid_adminsettingsentity
     - duplicaterecordid_opportunity
     - duplicaterecordid_quote
     - duplicaterecordid_competitor
     - duplicaterecordid_territory
+    - duplicaterecordid_msdyn_forecastconfiguration
+    - duplicaterecordid_msdyn_forecastdefinition
+    - duplicaterecordid_msdyn_forecastinstance
+    - duplicaterecordid_msdyn_forecastrecurrence
+    - duplicaterecordid_msdyn_relationshipinsightsunifiedconfig
+    - duplicaterecordid_msdyn_siconfig
+    - duplicaterecordid_msdyn_actioncardregarding
+    - duplicaterecordid_msdyn_flowcardtype
+    - duplicaterecordid_msdyn_salesinsightssettings
+    - duplicaterecordid_msdyn_autocapturerule
+    - duplicaterecordid_msdyn_autocapturesettings
+    - duplicaterecordid_msdyn_untrackedappointment
+    - duplicaterecordid_msdyn_icebreakersconfig
     - duplicaterecordid_msdyn_postalbum
     - duplicaterecordid_msdyn_actual
+    - duplicaterecordid_msdyn_bookableresourceassociation
     - duplicaterecordid_msdyn_bookingalertstatus
     - duplicaterecordid_msdyn_bookingrule
     - duplicaterecordid_msdyn_clientextension
     - duplicaterecordid_msdyn_organizationalunit
     - duplicaterecordid_msdyn_priority
     - duplicaterecordid_msdyn_requirementcharacteristic
+    - duplicaterecordid_msdyn_requirementgroup
     - duplicaterecordid_msdyn_requirementorganizationunit
+    - duplicaterecordid_msdyn_requirementrelationship
     - duplicaterecordid_msdyn_requirementresourcecategory
     - duplicaterecordid_msdyn_requirementresourcepreference
     - duplicaterecordid_msdyn_requirementstatus
@@ -317,6 +504,8 @@ lookup_properties:
     - duplicaterecordid_msdyn_contractlinescheduleofvalue
     - duplicaterecordid_msdyn_dataexport
     - duplicaterecordid_msdyn_delegation
+    - duplicaterecordid_msdyn_dimension
+    - duplicaterecordid_msdyn_dimensionfieldname
     - duplicaterecordid_msdyn_estimate
     - duplicaterecordid_msdyn_estimateline
     - duplicaterecordid_msdyn_expense
@@ -360,6 +549,7 @@ lookup_properties:
     - duplicaterecordid_msdyn_quotelinetransactionclassification
     - duplicaterecordid_msdyn_quotepricelist
     - duplicaterecordid_msdyn_resourceassignmentdetail
+    - duplicaterecordid_msdyn_resourcecategorymarkuppricelevel
     - duplicaterecordid_msdyn_resourcecategorypricelevel
     - duplicaterecordid_msdyn_resourcerequest
     - duplicaterecordid_msdyn_rolecompetencyrequirement
@@ -385,12 +575,16 @@ lookup_properties:
     - duplicaterecordid_msdyn_agreementsubstatus
     - duplicaterecordid_msdyn_bookingtimestamp
     - duplicaterecordid_msdyn_customerasset
+    - duplicaterecordid_msdyn_customerassetcategory
+    - duplicaterecordid_msdyn_entitlementapplication
     - duplicaterecordid_msdyn_fieldservicepricelistitem
     - duplicaterecordid_msdyn_incidenttype
     - duplicaterecordid_msdyn_incidenttypecharacteristic
     - duplicaterecordid_msdyn_incidenttypeproduct
     - duplicaterecordid_msdyn_incidenttypeservice
     - duplicaterecordid_msdyn_incidenttypeservicetask
+    - duplicaterecordid_msdyn_incidenttypessetup
+    - duplicaterecordid_msdyn_incidenttype_requirementgroup
     - duplicaterecordid_msdyn_inventoryadjustment
     - duplicaterecordid_msdyn_inventoryadjustmentproduct
     - duplicaterecordid_msdyn_inventoryjournal
@@ -442,25 +636,71 @@ lookup_properties:
     - duplicaterecordid_msdyn_iotdevice
     - duplicaterecordid_msdyn_iotdevicecategory
     - duplicaterecordid_msdyn_iotdevicecommand
+    - duplicaterecordid_msdyn_iotdevicecommanddefinition
+    - duplicaterecordid_msdyn_iotdevicedatahistory
+    - duplicaterecordid_msdyn_iotdeviceproperty
     - duplicaterecordid_msdyn_iotdeviceregistrationhistory
-    - duplicaterecordid_ms_newsitem
-    - duplicaterecordid_ms_satori
-    - duplicaterecordid_knowledgearticle
-    - duplicaterecordid_knowledgebaserecord
-    - duplicaterecordid_publisher
-    - duplicaterecordid_goal
-    - duplicaterecordid_transactioncurrency
-    - duplicaterecordid_sharepointsite
-    - duplicaterecordid_kbarticle
-    - duplicaterecordid_team
-    - duplicaterecordid_goalrollupquery
-    - duplicaterecordid_contact
-    - duplicaterecordid_systemuser
-    - duplicaterecordid_sharepointdocumentlocation
-    - duplicaterecordid_socialprofile
-    - duplicaterecordid_account
-    - duplicaterecordid_queue
-    - duplicaterecordid_emailserverprofile
+    - duplicaterecordid_msdyn_iotpropertydefinition
+    - duplicaterecordid_msdyn_iotprovider
+    - duplicaterecordid_msdyn_iotproviderinstance
+    - duplicaterecordid_msdyn_iotsettings
+    - duplicaterecordid_msdyn_entityconfiguration
+    - duplicaterecordid_msdyn_geofence
+    - duplicaterecordid_msdyn_geofenceevent
+    - duplicaterecordid_msdyn_geofencingsettings
+    - duplicaterecordid_msdyn_ciprovider
+    - duplicaterecordid_msdyn_consoleapplicationnotificationfield
+    - duplicaterecordid_msdyn_consoleapplicationnotificationtemplate
+    - duplicaterecordid_msdyn_consoleapplicationsessiontemplate
+    - duplicaterecordid_msdyn_consoleapplicationtemplate
+    - duplicaterecordid_msdyn_consoleapplicationtemplateparameter
+    - duplicaterecordid_msdyn_templatetags
+    - duplicaterecordid_msdyn_consoleapplicationtype
+    - duplicaterecordid_msdyn_conversationdata
+    - duplicaterecordid_msdyn_kpieventdata
+    - duplicaterecordid_msdyn_kpieventdefinition
+    - duplicaterecordid_msdyn_sessiondata
+    - duplicaterecordid_msdyn_sessionparticipantdata
+    - duplicaterecordid_msdyn_channel
+    - duplicaterecordid_msdyn_scenario
+    - duplicaterecordid_msdyn_analytics
+    - duplicaterecordid_msdyn_cannedmessage
+    - duplicaterecordid_msdyn_maskingrule
+    - duplicaterecordid_msdyn_ocbotchannelregistration
+    - duplicaterecordid_msdyn_occhannelconfiguration
+    - duplicaterecordid_msdyn_occhannelstateconfiguration
+    - duplicaterecordid_msdyn_ocliveworkitemcontextitem
+    - duplicaterecordid_msdyn_ocliveworkitemparticipant
+    - duplicaterecordid_msdyn_ocliveworkstreamcontextvariable
+    - duplicaterecordid_msdyn_oclocalizationdata
+    - duplicaterecordid_msdyn_ocprovisioningstate
+    - duplicaterecordid_msdyn_ocrequest
+    - duplicaterecordid_msdyn_ocsystemmessage
+    - duplicaterecordid_msdyn_oc_geolocationprovider
+    - duplicaterecordid_msdyn_presence
+    - duplicaterecordid_msdyn_routingrequest
+    - duplicaterecordid_msdyn_sentimentanalysis
+    - duplicaterecordid_msdyn_sessionevent
+    - duplicaterecordid_msdyn_sessionparticipant
+    - duplicaterecordid_msdyn_chatwidgetlanguage
+    - duplicaterecordid_msdyn_localizedsurveyquestion
+    - duplicaterecordid_msdyn_channelcapability
+    - duplicaterecordid_msdyn_conversationaction
+    - duplicaterecordid_msdyn_conversationactionlocale
+    - duplicaterecordid_msdyn_omnichannelconfiguration
+    - duplicaterecordid_msdyn_omnichannelsyncconfig
+    - duplicaterecordid_msdyn_provider
+    - duplicaterecordid_msdyn_ocliveworkitemcharacteristic
+    - duplicaterecordid_msdyn_ocsessioncharacteristic
+    - duplicaterecordid_msdyn_skillattachmentruleitem
+    - duplicaterecordid_msdyn_skillattachmenttarget
+    - duplicaterecordid_msdyn_smsnumber
+    - duplicaterecordid_msdyn_ocfbapplication
+    - duplicaterecordid_msdyn_ocfbpage
+    - duplicaterecordid_msdyn_serviceconfiguration
+    - duplicaterecordid_msdyn_slakpi
+    - duplicaterecordid_msdyn_iotdevicevisualizationconfiguration
+    - duplicaterecordid_msdyn_iotfieldmapping
     description: "Unique identifier of the potential duplicate record."
   - name: _duplicateruleid_value
     single_valued_navigation_property:
@@ -543,6 +783,9 @@ single_valued_navigation_properties:
   - name: baserecordid_fax
     type: Microsoft.Dynamics.CRM.fax
     partner: Fax_DuplicateBaseRecord
+  - name: baserecordid_feedback
+    type: Microsoft.Dynamics.CRM.feedback
+    partner: feedback_DuplicateBaseRecord
   - name: baserecordid_goal
     type: Microsoft.Dynamics.CRM.goal
     partner: Goal_DuplicateBaseRecord
@@ -570,12 +813,6 @@ single_valued_navigation_properties:
   - name: baserecordid_list
     type: Microsoft.Dynamics.CRM.list
     partner: List_DuplicateBaseRecord
-  - name: baserecordid_ms_newsitem
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: ms_newsitem_DuplicateBaseRecord
-  - name: baserecordid_ms_satori
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: ms_satori_DuplicateBaseRecord
   - name: baserecordid_msdyn_accountpricelist
     type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
     partner: msdyn_accountpricelist_DuplicateBaseRecord
@@ -1173,6 +1410,9 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_fax
     type: Microsoft.Dynamics.CRM.fax
     partner: Fax_DuplicateMatchingRecord
+  - name: duplicaterecordid_feedback
+    type: Microsoft.Dynamics.CRM.feedback
+    partner: feedback_DuplicateMatchingRecord
   - name: duplicaterecordid_goal
     type: Microsoft.Dynamics.CRM.goal
     partner: Goal_DuplicateMatchingRecord
@@ -1200,12 +1440,6 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_list
     type: Microsoft.Dynamics.CRM.list
     partner: List_DuplicateMatchingRecord
-  - name: duplicaterecordid_ms_newsitem
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: ms_newsitem_DuplicateMatchingRecord
-  - name: duplicaterecordid_ms_satori
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: ms_satori_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_accountpricelist
     type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
     partner: msdyn_accountpricelist_DuplicateMatchingRecord
@@ -1747,8 +1981,8 @@ solutions:
     description: "Internal CRM System Solution"
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

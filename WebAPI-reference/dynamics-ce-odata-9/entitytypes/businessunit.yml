@@ -3,17 +3,15 @@ uid: Microsoft.Dynamics.CRM.businessunit
 name: "businessunit"
 type: entitytype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement businessunit EntityType Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement businessunit EntityType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
   ms.assetid: e85b8304-38e8-4c70-bf14-297a98889a43
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement businessunit entitytype."
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the businessunit entitytype."
 description: "Business, division, or department in the Microsoft Dynamics 365 database."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/businessunits"
@@ -853,9 +851,6 @@ collection_valued_navigation_properties:
   - name: business_unit_msdyn_orderpricelist
     type: Microsoft.Dynamics.CRM.msdyn_orderpricelist
     partner: owningbusinessunit
-  - name: business_unit_msdyn_orginsightsuserdashboarddefinition
-    type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
-    partner: owningbusinessunit
   - name: business_unit_msdyn_payment
     type: Microsoft.Dynamics.CRM.msdyn_payment
     partner: owningbusinessunit
@@ -1270,9 +1265,6 @@ collection_valued_navigation_properties:
   - name: BusinessUnit_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_businessunit_syncerror
-  - name: mbs_businessunit_mbs_pluginprofile
-    type: Microsoft.Dynamics.CRM.mbs_pluginprofile
-    partner: mbs_BusinessUnitId
   - name: msdyn_approval_businessunit_owningbusinessunit
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: owningbusinessunit_msdyn_approval
@@ -1299,8 +1291,8 @@ solutions:
     description: "Internal CRM System Solution"
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

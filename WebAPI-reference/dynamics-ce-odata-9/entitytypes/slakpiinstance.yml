@@ -3,17 +3,15 @@ uid: Microsoft.Dynamics.CRM.slakpiinstance
 name: "slakpiinstance"
 type: entitytype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement slakpiinstance EntityType Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement slakpiinstance EntityType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
   ms.assetid: e44bf0cb-d6f9-4f6d-b75b-027c955c87a2
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement slakpiinstance entitytype."
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the slakpiinstance entitytype."
 description: "Service level agreement (SLA) key performance indicator (KPI) instance that is tracked for an individual case"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/slakpiinstances"
@@ -30,6 +28,12 @@ namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
   property_items:
+    - name: applicablefromvalue
+      type: Edm.DateTimeOffset
+      display_name: "Applicable From Value"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: computedfailuretime
       type: Edm.DateTimeOffset
       display_name: "Computed Failure Time"
@@ -54,6 +58,12 @@ properties:
       description: "For internal use only."
       iscomputed: false
       isreadonly: false
+    - name: elapsedtime
+      type: Edm.Int32
+      display_name: "Elapsed Time"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: exchangerate
       type: Edm.Decimal
       display_name: "Exchange Rate"
@@ -66,6 +76,12 @@ properties:
       description: "Enter the date and time when the service level agreement (SLA) key performance indicator (KPI) will expire."
       iscomputed: false
       isreadonly: false
+    - name: lastresumetime
+      type: Edm.DateTimeOffset
+      display_name: "Last Resume Time"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: modifiedon
       type: Edm.DateTimeOffset
       display_name: "Modified On"
@@ -76,6 +92,18 @@ properties:
       type: Edm.String
       display_name: "Name"
       description: "Type a descriptive name for the service level agreement (SLA) key performance indicator (KPI) instance."
+      iscomputed: false
+      isreadonly: false
+    - name: pausedon
+      type: Edm.DateTimeOffset
+      display_name: "Paused On"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: regardingentityid
+      type: Edm.String
+      display_name: "Regarding ID"
+      description: ""
       iscomputed: false
       isreadonly: false
     - name: slakpiinstanceid
@@ -107,6 +135,29 @@ properties:
       type: Edm.DateTimeOffset
       display_name: "Succeeded On"
       description: "Shows the date and time when the service level agreement (SLA) key performance indicator (KPI) success criteria was met."
+      iscomputed: false
+      isreadonly: false
+    - name: successcheckedat
+      type: Edm.DateTimeOffset
+      display_name: "SuccessCheckedAt"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: terminalstatereached
+      type: Edm.Boolean
+      display_name: "Terminal State Reached"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: terminalstatetime
+      type: Edm.DateTimeOffset
+      display_name: "Terminal State Time"
+      description: ""
       iscomputed: false
       isreadonly: false
     - name: versionnumber
@@ -151,6 +202,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "For internal use only."
+  - name: _msdyn_slaitemid_value
+    single_valued_navigation_property:
+    - msdyn_slaitemid
+    description: "Unique identifier for SLA KPI Instance associated with SLA Item."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -165,15 +220,15 @@ lookup_properties:
     description: "Owning User."
   - name: _regarding_value
     single_valued_navigation_property:
+    - regarding_contact
+    - regarding_account
+    - regarding_activitypointer
     - regarding_lead
     - regarding
     - regarding_invoice
     - regarding_opportunity
     - regarding_quote
     - regarding_salesorder
-    - regarding_account
-    - regarding_contact
-    - regarding_activitypointer
     description: "Unique identifier of the record that this service level agreement (SLA) key performance indicator (KPI) instance is associated with."
   - name: _transactioncurrencyid_value
     single_valued_navigation_property:
@@ -194,6 +249,9 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_slakpiinstancebase_modifiedonbehalfby
+  - name: msdyn_slaitemid
+    type: Microsoft.Dynamics.CRM.slaitem
+    partner: msdyn_slaitem_slakpiinstance
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: slakpiinstance_owner
@@ -257,6 +315,12 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: msdyn_slakpiinstance_msdyn_workorder_arrival_timekpi
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_workorderarrivaltimekpiid
+  - name: msdyn_slakpiinstance_msdyn_workorder_resolutionkpiid
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_workorderresolutionkpiid
   - name: slakpiinstance_incident_firstresponsebykpi
     type: Microsoft.Dynamics.CRM.incident
     partner: firstresponsebykpiid
@@ -283,16 +347,20 @@ operations:
 solutions:
   description: "The following solutions include the slakpiinstance entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.FieldService
+    description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.msdynce_Service
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreement
     description: "Dynamics 365 workload for service level agreements."
+  - type: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreementExtension
+    description: "Extension solution for Dynamics 365 workload for service level agreements."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

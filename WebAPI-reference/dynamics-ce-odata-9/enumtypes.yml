@@ -1,17 +1,15 @@
 ### YamlMime:ODataIndex
 uid: Microsoft.Dynamics.CRM.EnumTypeIndex
 name: Web API EnumType Reference
-title: "Dynamics 365 Customer Engagement Web API EnumType Reference | MicrosoftDocs"
+title: "Common Data Service and 365 Customer Engagement Web API EnumType Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "03/20/2018"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-    - "Dynamics 365 (online)"
   ms.assetid: ed96bb52-43bc-4b4c-a7e2-f47969238bf5
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
 description: "An EnumType represents an enumeration type in an OData v4 entity model. "
 in_this_section:
 - type: Microsoft.Dynamics.CRM.AccessRights
@@ -71,7 +69,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.OrganizationState
   description: "Describes the state of the organization. "
 - type: Microsoft.Dynamics.CRM.OrganizationType
-  description: "Not Found"
+  description: "Contains the possible values for the type of organization or environment. "
 - type: Microsoft.Dynamics.CRM.OwnershipTypes
   description: "Specifies the type of ownership for an entity. "
 - type: Microsoft.Dynamics.CRM.PrivilegeDepth
@@ -80,6 +78,8 @@ in_this_section:
   description: "Describes the type of operation for the privilege "
 - type: Microsoft.Dynamics.CRM.PropagationOwnershipOptions
   description: "Contains the possible values for propagation ownership options. "
+- type: Microsoft.Dynamics.CRM.RecentlyViewedRecordType
+  description: "Not Found"
 - type: Microsoft.Dynamics.CRM.RelationshipType
   description: "Specifies the type of entity relationship. "
 - type: Microsoft.Dynamics.CRM.RibbonLocationFilters
@@ -98,6 +98,10 @@ in_this_section:
   description: "Indicates the attribute type for the target of the InitializeFromRequest message.  "
 - type: Microsoft.Dynamics.CRM.TimeCode
   description: "Contains the possible values for a time code, used when querying a schedule. "
+- type: Microsoft.Dynamics.CRM.XrmAggregateType
+  description: "Not Found"
+- type: Microsoft.Dynamics.CRM.XrmDateTimeGrouping
+  description: "Not Found"
 href_see_also:
 - text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

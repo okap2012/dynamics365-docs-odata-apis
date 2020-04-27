@@ -3,17 +3,15 @@ uid: Microsoft.Dynamics.CRM.ServicePlan
 name: "ServicePlan"
 type: complextype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement ServicePlan ComplexType Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement ServicePlan ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-    - "Dynamics 365 (online)"
-  ms.assetid: ebd75bdf-5e4f-40fd-bb45-4d14ecb93557
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Web API ServicePlan ComplexType."
+  ms.assetid: 55e2fce0-3b60-42ae-8524-f958365b2446
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the Web API ServicePlan ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains information about a service plan assigned to a system user. " 
@@ -33,15 +31,11 @@ properties:
     description: "Display name of the service plan assigned to a system user. "
     iscollection: false
 # This complex type doesn't have any navigation properties.
-usedby:
-  description: "The following use the ServicePlan ComplexType."
-  usedby_items:
-  - name: Microsoft.Dynamics.CRM.UserLicenseInfo
-    used_as: Property
+
 # This complex type has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

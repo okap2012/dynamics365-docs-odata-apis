@@ -3,17 +3,15 @@ uid: Microsoft.Dynamics.CRM.principalobjectattributeaccess
 name: "principalobjectattributeaccess"
 type: entitytype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement principalobjectattributeaccess EntityType Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement principalobjectattributeaccess EntityType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
   ms.assetid: 2d9c9b60-1989-4c54-a5cf-85163f11e593
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement principalobjectattributeaccess entitytype."
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the principalobjectattributeaccess entitytype."
 description: "Defines CRM security principals (users and teams) access rights to secured field for an entity instance."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/principalobjectattributeaccessset"
@@ -75,7 +73,66 @@ lookup_properties:
   property_items:
   - name: _objectid_value
     single_valued_navigation_property:
-    - objectid_territory
+    - objectid_customeraddress
+    - objectid_knowledgearticleviews
+    - objectid_mailmergetemplate
+    - objectid_feedback
+    - objectid_reportcategory
+    - objectid_sharepointdocumentlocation
+    - objectid_socialprofile
+    - objectid_queueitem
+    - objectid_kbarticle
+    - objectid_sharepointsite
+    - objectid_knowledgebaserecord
+    - objectid_goal
+    - objectid_queue
+    - objectid_connection
+    - objectid_systemuser
+    - objectid_contact
+    - objectid_position
+    - objectid_account
+    - objectid_businessunit
+    - objectid_knowledgearticle
+    - objectid_team
+    - objectid_solutioncomponentattributeconfiguration
+    - objectid_solutioncomponentconfiguration
+    - objectid_stagesolutionupload
+    - objectid_serviceplan
+    - objectid_msdyn_knowledgearticleimage
+    - objectid_msdyn_knowledgearticletemplate
+    - objectid_attributeimageconfig
+    - objectid_entityimageconfig
+    - objectid_entityanalyticsconfig
+    - objectid_msdyn_dataflow
+    - objectid_connector
+    - objectid_msdyn_aiconfiguration
+    - objectid_msdyn_aimodel
+    - objectid_msdyn_aitemplate
+    - objectid_msdyn_aibdataset
+    - objectid_msdyn_aibdatasetfile
+    - objectid_msdyn_aibdatasetrecord
+    - objectid_msdyn_aibdatasetscontainer
+    - objectid_msdyn_aibfile
+    - objectid_msdyn_aibfileattacheddata
+    - objectid_msdyn_aifptrainingdocument
+    - objectid_msdyn_aiodimage
+    - objectid_msdyn_aiodlabel
+    - objectid_msdyn_aiodtrainingboundingbox
+    - objectid_msdyn_aiodtrainingimage
+    - objectid_environmentvariabledefinition
+    - objectid_environmentvariablevalue
+    - objectid_processstageparameter
+    - objectid_flowsession
+    - objectid_workflowbinary
+    - objectid_connectionreference
+    - objectid_msdyn_helppage
+    - objectid_msdyn_analysiscomponent
+    - objectid_msdyn_analysisjob
+    - objectid_msdyn_analysisresult
+    - objectid_msdyn_analysisresultdetail
+    - objectid_msdyn_solutionhealthrule
+    - objectid_msdyn_solutionhealthruleargument
+    - objectid_msdyn_solutionhealthruleset
     - objectid_accountleads
     - objectid_contactleads
     - objectid_leadaddress
@@ -85,7 +142,6 @@ lookup_properties:
     - objectid_dynamicpropertyinstance
     - objectid_dynamicpropertyoptionsetitem
     - objectid_pricelevel
-    - objectid_product
     - objectid_productassociation
     - objectid_productpricelevel
     - objectid_productsubstitute
@@ -108,6 +164,10 @@ lookup_properties:
     - objectid_campaignitem
     - objectid_list
     - objectid_listmember
+    - objectid_msdyn_databaseversion
+    - objectid_msdyn_upgraderun
+    - objectid_msdyn_upgradestep
+    - objectid_msdyn_upgradeversion
     - objectid_constraintbasedgroup
     - objectid_contract
     - objectid_contractdetail
@@ -130,6 +190,14 @@ lookup_properties:
     - objectid_service
     - objectid_servicecontractcontacts
     - objectid_site
+    - objectid_product
+    - objectid_entitlemententityallocationtypemapping
+    - objectid_msdyn_callablecontext
+    - objectid_msdyn_playbookactivity
+    - objectid_msdyn_playbookactivityattribute
+    - objectid_msdyn_playbookcategory
+    - objectid_msdyn_playbookinstance
+    - objectid_msdyn_playbooktemplate
     - objectid_competitoraddress
     - objectid_competitorproduct
     - objectid_competitorsalesliterature
@@ -138,39 +206,71 @@ lookup_properties:
     - objectid_contactquotes
     - objectid_discount
     - objectid_discounttype
-    - objectid_invoice
-    - objectid_invoicedetail
     - objectid_leadcompetitors
     - objectid_leadproduct
     - objectid_leadtoopportunitysalesprocess
-    - objectid_opportunity
     - objectid_opportunitycompetitors
-    - objectid_opportunityproduct
     - objectid_opportunitysalesprocess
     - objectid_productsalesliterature
+    - objectid_salesliteratureitem
+    - objectid_adminsettingsentity
+    - objectid_invoice
+    - objectid_invoicedetail
+    - objectid_opportunity
+    - objectid_opportunityproduct
     - objectid_quote
     - objectid_quotedetail
     - objectid_salesliterature
-    - objectid_salesliteratureitem
     - objectid_salesorder
     - objectid_salesorderdetail
     - objectid_competitor
+    - objectid_territory
+    - objectid_msdyn_forecastconfiguration
+    - objectid_msdyn_forecastdefinition
+    - objectid_msdyn_forecastinstance
+    - objectid_msdyn_forecastrecurrence
+    - objectid_msdyn_relationshipinsightsunifiedconfig
+    - objectid_msdyn_siconfig
+    - objectid_msdyn_sikeyvalueconfig
+    - objectid_msdyn_actioncardregarding
+    - objectid_msdyn_actioncardrolesetting
+    - objectid_msdyn_entityrankingrule
+    - objectid_msdyn_flowcardtype
+    - objectid_msdyn_salesinsightssettings
+    - objectid_msdyn_autocapturerule
+    - objectid_msdyn_autocapturesettings
+    - objectid_msdyn_untrackedappointment
+    - objectid_msdyn_notesanalysisconfig
+    - objectid_msdyn_icebreakersconfig
     - objectid_msdyn_postalbum
     - objectid_msdyn_postconfig
     - objectid_msdyn_postruleconfig
     - objectid_msdyn_wallsavedquery
     - objectid_msdyn_wallsavedqueryusersettings
+    - objectid_msfp_emailtemplate
+    - objectid_msfp_question
+    - objectid_msfp_questionresponse
+    - objectid_msfp_survey
+    - objectid_msfp_unsubscribedrecipient
+    - objectid_msdyn_collabgraphresource
+    - objectid_msdyn_msteamssetting
+    - objectid_msdyn_msteamssettingsv2
+    - objectid_msdyn_teamscollaboration
     - objectid_msdyn_actual
+    - objectid_msdyn_bookableresourceassociation
     - objectid_msdyn_bookingalertstatus
     - objectid_msdyn_bookingchange
     - objectid_msdyn_bookingrule
     - objectid_msdyn_bookingsetupmetadata
+    - objectid_msdyn_businessclosure
     - objectid_msdyn_clientextension
     - objectid_msdyn_configuration
     - objectid_msdyn_organizationalunit
     - objectid_msdyn_priority
     - objectid_msdyn_requirementcharacteristic
+    - objectid_msdyn_requirementgroup
     - objectid_msdyn_requirementorganizationunit
+    - objectid_msdyn_requirementrelationship
     - objectid_msdyn_requirementresourcecategory
     - objectid_msdyn_requirementresourcepreference
     - objectid_msdyn_requirementstatus
@@ -194,6 +294,8 @@ lookup_properties:
     - objectid_msdyn_contractlinescheduleofvalue
     - objectid_msdyn_dataexport
     - objectid_msdyn_delegation
+    - objectid_msdyn_dimension
+    - objectid_msdyn_dimensionfieldname
     - objectid_msdyn_estimate
     - objectid_msdyn_estimateline
     - objectid_msdyn_expense
@@ -242,6 +344,7 @@ lookup_properties:
     - objectid_msdyn_quotepricelist
     - objectid_msdyn_resourceassignment
     - objectid_msdyn_resourceassignmentdetail
+    - objectid_msdyn_resourcecategorymarkuppricelevel
     - objectid_msdyn_resourcecategorypricelevel
     - objectid_msdyn_resourcerequest
     - objectid_msdyn_rolecompetencyrequirement
@@ -255,6 +358,7 @@ lookup_properties:
     - objectid_msdyn_transactionconnection
     - objectid_msdyn_transactiontype
     - objectid_msdyn_userworkhistory
+    - objectid_msdyn_3dmodel
     - objectid_msdyn_agreement
     - objectid_msdyn_agreementbookingdate
     - objectid_msdyn_agreementbookingincident
@@ -273,14 +377,19 @@ lookup_properties:
     - objectid_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
     - objectid_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
     - objectid_msdyn_customerasset
+    - objectid_msdyn_customerassetcategory
+    - objectid_msdyn_entitlementapplication
     - objectid_msdyn_fieldservicepricelistitem
     - objectid_msdyn_fieldservicesetting
+    - objectid_msdyn_fieldserviceslaconfiguration
     - objectid_msdyn_fieldservicesystemjob
     - objectid_msdyn_incidenttype
     - objectid_msdyn_incidenttypecharacteristic
     - objectid_msdyn_incidenttypeproduct
     - objectid_msdyn_incidenttypeservice
     - objectid_msdyn_incidenttypeservicetask
+    - objectid_msdyn_incidenttypessetup
+    - objectid_msdyn_incidenttype_requirementgroup
     - objectid_msdyn_inventoryadjustment
     - objectid_msdyn_inventoryadjustmentproduct
     - objectid_msdyn_inventoryjournal
@@ -334,37 +443,107 @@ lookup_properties:
     - objectid_msdyn_workorderservicetask
     - objectid_msdyn_workordersubstatus
     - objectid_msdyn_workordertype
-    - objectid_mbs_pluginprofile
     - objectid_msdyn_iotalert
     - objectid_msdyn_iotdevice
     - objectid_msdyn_iotdevicecategory
     - objectid_msdyn_iotdevicecommand
+    - objectid_msdyn_iotdevicecommanddefinition
+    - objectid_msdyn_iotdevicedatahistory
+    - objectid_msdyn_iotdeviceproperty
     - objectid_msdyn_iotdeviceregistrationhistory
+    - objectid_msdyn_iotpropertydefinition
+    - objectid_msdyn_iotprovider
+    - objectid_msdyn_iotproviderinstance
+    - objectid_msdyn_iotsettings
     - objectid_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
-    - objectid_msdyn_orginsightsuserdashboarddefinition
-    - objectid_ms_newsitem
-    - objectid_ms_satori
-    - objectid_contact
-    - objectid_account
-    - objectid_knowledgearticle
-    - objectid_knowledgebaserecord
-    - objectid_reportcategory
-    - objectid_sharepointdocumentlocation
-    - objectid_connection
-    - objectid_position
-    - objectid_feedback
-    - objectid_mailmergetemplate
-    - objectid_sharepointsite
-    - objectid_socialprofile
-    - objectid_kbarticle
-    - objectid_knowledgearticleviews
-    - objectid_team
-    - objectid_businessunit
-    - objectid_queue
-    - objectid_customeraddress
-    - objectid_systemuser
-    - objectid_queueitem
-    - objectid_goal
+    - objectid_msdyn_entityconfiguration
+    - objectid_msdyn_geofence
+    - objectid_msdyn_geofenceevent
+    - objectid_msdyn_geofencingsettings
+    - objectid_msdynsm_marketingsitemap
+    - objectid_msdynsm_salessitemap
+    - objectid_msdynsm_servicessitemap
+    - objectid_msdynsm_settingssitemap
+    - objectid_msdyn_ciprovider
+    - objectid_msdyn_consoleapplicationnotificationfield
+    - objectid_msdyn_consoleapplicationnotificationtemplate
+    - objectid_msdyn_consoleappparameterdefinition
+    - objectid_msdyn_consoleapplicationsessiontemplate
+    - objectid_msdyn_consoleapplicationtemplate
+    - objectid_msdyn_consoleapplicationtemplateparameter
+    - objectid_msdyn_templatetags
+    - objectid_msdyn_consoleapplicationtype
+    - objectid_msdyn_conversationdata
+    - objectid_msdyn_kpieventdata
+    - objectid_msdyn_kpieventdefinition
+    - objectid_msdyn_sessiondata
+    - objectid_msdyn_sessionparticipantdata
+    - objectid_msdyn_channel
+    - objectid_msdyn_scenario
+    - objectid_msdyn_analytics
+    - objectid_msdyn_cannedmessage
+    - objectid_msdyn_cdsentityengagementctx
+    - objectid_msdyn_entityconfig
+    - objectid_msdyn_liveconversation
+    - objectid_msdyn_liveworkstream
+    - objectid_msdyn_maskingrule
+    - objectid_msdyn_ocbotchannelregistration
+    - objectid_msdyn_occhannelconfiguration
+    - objectid_msdyn_occhannelstateconfiguration
+    - objectid_msdyn_ocliveworkitemcontextitem
+    - objectid_msdyn_ocliveworkitemparticipant
+    - objectid_msdyn_ocliveworkitemsentiment
+    - objectid_msdyn_ocliveworkstreamcontextvariable
+    - objectid_msdyn_oclocalizationdata
+    - objectid_msdyn_ocprovisioningstate
+    - objectid_msdyn_ocrequest
+    - objectid_msdyn_ocruleitem
+    - objectid_msdyn_ocsystemmessage
+    - objectid_msdyn_oc_geolocationprovider
+    - objectid_msdyn_omnichannelpersonalization
+    - objectid_msdyn_omnichannelqueue
+    - objectid_msdyn_operatinghour
+    - objectid_msdyn_presence
+    - objectid_msdyn_routingrequest
+    - objectid_msdyn_searchconfiguration
+    - objectid_msdyn_sentimentanalysis
+    - objectid_msdyn_sessionevent
+    - objectid_msdyn_sessionparticipant
+    - objectid_msdyn_transcript
+    - objectid_msdyn_authenticationsettings
+    - objectid_msdyn_chatansweroption
+    - objectid_msdyn_chatquestionnaireresponse
+    - objectid_msdyn_chatquestionnaireresponseitem
+    - objectid_msdyn_chatwidgetlanguage
+    - objectid_msdyn_livechatconfig
+    - objectid_msdyn_livechatengagementctx
+    - objectid_msdyn_livechatwidgetlocation
+    - objectid_msdyn_localizedsurveyquestion
+    - objectid_msdyn_questionsequence
+    - objectid_msdyn_surveyquestion
+    - objectid_msdyn_channelcapability
+    - objectid_msdyn_conversationaction
+    - objectid_msdyn_conversationactionlocale
+    - objectid_msdyn_entityroutingconfiguration
+    - objectid_msdyn_ocsessionsentiment
+    - objectid_msdyn_omnichannelconfiguration
+    - objectid_msdyn_omnichannelsyncconfig
+    - objectid_msdyn_provider
+    - objectid_msdyn_visitorjourney
+    - objectid_msdyn_ocliveworkitemcharacteristic
+    - objectid_msdyn_ocsessioncharacteristic
+    - objectid_msdyn_skillattachmentruleitem
+    - objectid_msdyn_skillattachmenttarget
+    - objectid_msdyn_smsengagementctx
+    - objectid_msdyn_smsnumber
+    - objectid_msdyn_facebookengagementctx
+    - objectid_msdyn_ocfbapplication
+    - objectid_msdyn_ocfbpage
+    - objectid_msdyn_serviceconfiguration
+    - objectid_msdyn_slakpi
+    - objectid_msdyn_iotdevicevisualizationconfiguration
+    - objectid_msdyn_iotfieldmapping
+    - objectid_msdyn_iottocaseprocess
     description: "Unique identifier of the entity instance with shared secured field"
   - name: _organizationid_value
     single_valued_navigation_property:
@@ -594,15 +773,6 @@ single_valued_navigation_properties:
   - name: objectid_mailmergetemplate
     type: Microsoft.Dynamics.CRM.mailmergetemplate
     partner: mailmergetemplate_principalobjectattributeaccess
-  - name: objectid_mbs_pluginprofile
-    type: Microsoft.Dynamics.CRM.mbs_pluginprofile
-    partner: mbs_pluginprofile_PrincipalObjectAttributeAccesses
-  - name: objectid_ms_newsitem
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: ms_newsitem_PrincipalObjectAttributeAccesses
-  - name: objectid_ms_satori
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: ms_satori_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_accountpricelist
     type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
     partner: msdyn_accountpricelist_PrincipalObjectAttributeAccesses
@@ -861,9 +1031,6 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_organizationalunit
     type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
     partner: msdyn_organizationalunit_PrincipalObjectAttributeAccesses
-  - name: objectid_msdyn_orginsightsuserdashboarddefinition
-    type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
-    partner: msdyn_orginsightsuserdashboarddefinition_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_payment
     type: Microsoft.Dynamics.CRM.msdyn_payment
     partner: msdyn_payment_PrincipalObjectAttributeAccesses
@@ -1321,8 +1488,8 @@ solutions:
     description: "Internal CRM System Solution"
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,17 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_iotalert
 name: "msdyn_iotalert"
 type: entitytype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement msdyn_iotalert EntityType Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_iotalert EntityType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
   ms.assetid: e00fac3c-a88f-4b18-bd2d-b580edc36506
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_iotalert entitytype."
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the msdyn_iotalert entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_iotalerts"
@@ -54,6 +52,12 @@ properties:
       description: "Data sent from the device about the alert."
       iscomputed: false
       isreadonly: false
+    - name: msdyn_alertpriorityscore
+      type: Edm.Int32
+      display_name: "Priority Score (%)"
+      description: "The suggested priority score for this alert."
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_alerttime
       type: Edm.DateTimeOffset
       display_name: "Alert Time"
@@ -63,7 +67,7 @@ properties:
     - name: msdyn_alerttoken
       type: Edm.String
       display_name: "Alert Token"
-      description: "The unique reference to the event id on the IoT hub."
+      description: "The unique reference to the event id on the IoT provider."
       iscomputed: false
       isreadonly: false
     - name: msdyn_alerttype
@@ -113,10 +117,25 @@ properties:
       isreadonly: false
     - name: msdyn_parentalerttoken
       type: Edm.String
-      display_name: "Parent Alert Token"
-      description: "Reference to a previously created parent iot alert"
+      display_name: "Primary Alert Token"
+      description: "Reference to a previously created primary iot alert"
       iscomputed: false
       isreadonly: false
+    - name: msdyn_suggestedpriority
+      type: Edm.Int32
+      display_name: "Suggested Priority"
+      description: "The suggested priority for this alert."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Calculating"
+        - value: 192350001
+          label: "High"
+        - value: 192350002
+          label: "Low"
+        - value: 192350003
+          label: "No Suggestions"
     - name: overriddencreatedon
       type: Edm.DateTimeOffset
       display_name: "Record Created On"
@@ -140,9 +159,13 @@ properties:
           label: "Active"
         - value: 1
           label: "Inactive"
+        - value: 2
+          label: "InProgress"
+        - value: 3
+          label: "Closed"
     - name: statuscode
       type: Edm.Int32
-      display_name: "Status Reason"
+      display_name: "Alert Status"
       description: "Reason for the status of the IoT Alert"
       iscomputed: false
       isreadonly: false
@@ -151,6 +174,16 @@ properties:
           label: "Active"
         - value: 2
           label: "Inactive"
+        - value: 3
+          label: "In Progress - Case Created"
+        - value: 4
+          label: "In Progress - Work Order Created"
+        - value: 5
+          label: "In Progress - Command Sent"
+        - value: 6
+          label: "Closed"
+        - value: 7
+          label: "In Progress - Command Failed"
     - name: timezoneruleversionnumber
       type: Edm.Int32
       display_name: "Time Zone Rule Version Number"
@@ -194,6 +227,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_case_value
+    single_valued_navigation_property:
+    - msdyn_Case
+    description: "Case created for this iot alert."
   - name: _msdyn_customerasset_value
     single_valued_navigation_property:
     - msdyn_CustomerAsset
@@ -209,7 +246,7 @@ lookup_properties:
   - name: _msdyn_parentalert_value
     single_valued_navigation_property:
     - msdyn_ParentAlert
-    description: "Reference to a parent alert. This field is inferred if Parent Alert Token is set."
+    description: "Reference to a primary alert. This field is inferred if Primary Alert Token is set."
   - name: _msdyn_workorder_value
     single_valued_navigation_property:
     - msdyn_Workorder
@@ -249,6 +286,9 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_msdyn_iotalert_modifiedonbehalfby
+  - name: msdyn_Case
+    type: Microsoft.Dynamics.CRM.incident
+    partner: msdyn_incident_msdyn_iotalert_Case
   - name: msdyn_CustomerAsset
     type: Microsoft.Dynamics.CRM.msdyn_customerasset
     partner: msdyn_msdyn_customerasset_msdyn_iotalert_CustomerAsset
@@ -318,6 +358,9 @@ collection_valued_navigation_properties:
   - name: msdyn_iotalert_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_msdyn_iotalert
+  - name: msdyn_msdyn_iotalert_incident_IoTAlert
+    type: Microsoft.Dynamics.CRM.incident
+    partner: msdyn_IoTAlert
   - name: msdyn_msdyn_iotalert_msdyn_iotdevicecommand_ParentAlert
     type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
     partner: msdyn_ParentAlert
@@ -349,10 +392,18 @@ solutions:
     description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
   - type: Microsoft.Dynamics.CRM.IoTConnector
     description: "Enables IoT scenarios in Dynamics 365."
+  - type: Microsoft.Dynamics.CRM.msdyn_CFS_Patch_1
+    description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
+  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerService
+    description: "Use Connected Customer Service to monitor connected devices to make sure your customer’s equipment is functioning properly. If a piece of equipment fails, you’ll receive a notification so that you can troubleshoot the problem remotely."
+  - type: Microsoft.Dynamics.CRM.msdyn_IoT_Patch_1
+    description: "Enables IoT scenarios in Dynamics 365."
+  - type: Microsoft.Dynamics.CRM.msdyn_IoTAssetCommon
+    description: "Enables IoT Scenarios for Device"
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

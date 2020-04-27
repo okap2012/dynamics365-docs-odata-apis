@@ -3,20 +3,18 @@ uid: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeIdResponse
 name: "RetrieveUserPrivilegeByPrivilegeIdResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement RetrieveUserPrivilegeByPrivilegeIdResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "06/20/2019"
+  title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveUserPrivilegeByPrivilegeIdResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-    - "Dynamics 365 (online)"
-  ms.assetid: 43041ce1-cb0f-4339-a426-de114d3441ec
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Web API RetrieveUserPrivilegeByPrivilegeIdResponse ComplexType."
+  ms.assetid: 1160b2a8-ed20-4545-9f1b-d2bcbd23dbd3
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the Web API RetrieveUserPrivilegeByPrivilegeIdResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
-description: "Contains the response from the RetrieveUserPrivilegeByPrivilegeId function." 
+description: "" 
 properties:
   description: "The properties of a complex type contain the structured data of the type."
   property_items:
@@ -24,7 +22,7 @@ properties:
     type: Microsoft.Dynamics.CRM.RolePrivilege
     nullable: false
     unicode: true
-    description: "Role privileges for the system user (user) for the specified privilege ID."
+    description: ""
     iscollection: true
 # This complex type doesn't have any navigation properties.
 usedby:
@@ -34,8 +32,8 @@ usedby:
     used_as: ReturnType
 # This complex type has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

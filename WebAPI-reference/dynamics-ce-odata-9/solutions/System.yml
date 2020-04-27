@@ -3,23 +3,21 @@ uid: Microsoft.Dynamics.CRM.System
 name: "System Solution"
 type: solution
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement System Solution Solution Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement System Solution Solution Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
   ms.assetid: fd140aad-4df4-11dd-bd17-0019b9312238
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement System Solution Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Internal CRM System Solution"
  unique_name: System
  version: "5.0"
- customization_prefix: none
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -251,6 +249,8 @@ entities:
      description: "Categories related to a report. A report can be related to multiple categories."
    - type: Microsoft.Dynamics.CRM.role
      description: "Grouping of security privileges. Users are assigned roles that authorize their access to the Microsoft CRM system."
+   - type: Microsoft.Dynamics.CRM.roleprivileges
+     description: "Group of privileges used to categorize users to provide appropriate access to entities."
    - type: Microsoft.Dynamics.CRM.roletemplate
      description: "Template for a role. Defines initial attributes that will be used when creating a new role."
    - type: Microsoft.Dynamics.CRM.rollupfield
@@ -363,7 +363,7 @@ actions:
   description: "The following actions are included in this solution."
   action_items:
    - type: Microsoft.Dynamics.CRM.AddAppComponents
-     description: ""
+     description: "Adds app components to an app."
    - type: Microsoft.Dynamics.CRM.AddItemCampaign
      description: "Adds an item to a campaign."
    - type: Microsoft.Dynamics.CRM.AddItemCampaignActivity
@@ -470,6 +470,8 @@ actions:
      description: "Deletes an option value in a global or local option set.  "
    - type: Microsoft.Dynamics.CRM.DeleteRecordChangeHistory
      description: "Deletes all audit change history records for a particular record.  "
+   - type: Microsoft.Dynamics.CRM.DeliverImmediatePromoteEmail
+     description: ""
    - type: Microsoft.Dynamics.CRM.DeliverIncomingEmail
      description: "Creates an email activity record from an incoming email message. "
    - type: Microsoft.Dynamics.CRM.DeliverPromoteEmail
@@ -538,8 +540,6 @@ actions:
      description: "Merges the information from two entity records of the same type. "
    - type: Microsoft.Dynamics.CRM.ModifyAccess
      description: "Replaces the access rights on the target record for the specified security principal (user or team). "
-   - type: Microsoft.Dynamics.CRM.msdyn_ExpandResourceAssignment
-     description: ""
    - type: Microsoft.Dynamics.CRM.OrderOption
      description: "Sets the order for an option set.  "
    - type: Microsoft.Dynamics.CRM.ParseImport
@@ -579,7 +579,7 @@ actions:
    - type: Microsoft.Dynamics.CRM.ReleaseToQueue
      description: "Assigns a queue item back to the queue owner so others can pick it.  "
    - type: Microsoft.Dynamics.CRM.RemoveAppComponents
-     description: ""
+     description: "Removes app components from an app."
    - type: Microsoft.Dynamics.CRM.RemoveFromQueue
      description: "Removes a queue item from a queue.  "
    - type: Microsoft.Dynamics.CRM.RemoveItemCampaign
@@ -627,19 +627,19 @@ actions:
    - type: Microsoft.Dynamics.CRM.SendTemplate
      description: "Sends a bulk email message that is created from a template.  "
    - type: Microsoft.Dynamics.CRM.SetAutoNumberSeed
-     description: ""
+     description: "Sets a different starting value after creating the auto-numbering attribute.  "
    - type: Microsoft.Dynamics.CRM.SetBusinessSystemUser
      description: "Moves a system user (user) to a different business unit. "
    - type: Microsoft.Dynamics.CRM.SetDataEncryptionKey
      description: "Sets or restore the data encryption key.  "
    - type: Microsoft.Dynamics.CRM.SetFeatureStatus
-     description: "internal"
+     description: "For internal use only."
    - type: Microsoft.Dynamics.CRM.SetLocLabels
      description: "Sets localized labels for a limited set of entity attributes.  "
    - type: Microsoft.Dynamics.CRM.SetParentSystemUser
      description: "Sets a new parent system user (user) for the specified user.  "
    - type: Microsoft.Dynamics.CRM.SetProcess
-     description: "Sets the process that associates with a given target entity. The user can set to another business process or specify null to clear out the current process."
+     description: "For internal use only."
    - type: Microsoft.Dynamics.CRM.SetReportRelated
      description: "Links an instance of a report entity to related entities.  "
    - type: Microsoft.Dynamics.CRM.TransformImport
@@ -655,7 +655,7 @@ actions:
    - type: Microsoft.Dynamics.CRM.UnpublishDuplicateRule
      description: "Submits an asynchronous job to unpublish a duplicate rule.  "
    - type: Microsoft.Dynamics.CRM.UpdateFeatureConfig
-     description: "internal"
+     description: "For internal use only."
    - type: Microsoft.Dynamics.CRM.UpdateOptionValue
      description: "Updates an option value in a global or local option set. "
    - type: Microsoft.Dynamics.CRM.UpdateProductProperties
@@ -674,8 +674,8 @@ actions:
      description: "Sets the state of a quote to Won.  "
 # This solution has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

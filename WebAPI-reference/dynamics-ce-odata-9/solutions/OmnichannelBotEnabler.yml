@@ -1,0 +1,39 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.OmnichannelBotEnabler
+name: "Omnichannel – Bot Enabler"
+type: solution
+metadata: 
+  title: "Common Data Service and Dynamics 365 Customer Engagement Omnichannel – Bot Enabler Solution Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  ms.assetid: c315c31a-54cb-48af-b0b0-dedc980270f0
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Omnichannel – Bot Enabler Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "This solution provides the Bot specific features for Omnichannel."
+ unique_name: OmnichannelBotEnabler
+ version: "1.5.0.4"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.systemuser
+     description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
+# This solution includes no actions.
+# This solution has no remarks.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

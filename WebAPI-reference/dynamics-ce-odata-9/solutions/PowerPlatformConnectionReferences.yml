@@ -1,0 +1,35 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.PowerPlatformConnectionReferences
+name: "Power Platform Connection References"
+type: solution
+metadata: 
+  title: "Common Data Service and Dynamics 365 Customer Engagement Power Platform Connection References Solution Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  ms.assetid: a94cc83d-677b-4f20-b8c5-a951193ea6eb
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Power Platform Connection References Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Power Platform Connection References Solution."
+ unique_name: PowerPlatformConnectionReferences
+ version: "1.0.1.0"
+ customization_prefix: 
+# This solution includes no entities.
+# This solution includes no actions.
+# This solution has no remarks.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

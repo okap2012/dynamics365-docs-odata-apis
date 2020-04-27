@@ -1,0 +1,35 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_IoTHealth_Patch_1
+name: "IoT Health"
+type: solution
+metadata: 
+  title: "Common Data Service and Dynamics 365 Customer Engagement IoT Health Solution Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  ms.assetid: ad097a52-fe26-4efa-8f4c-24844a590674
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement IoT Health Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "IoT Health introduces rules to evaluate the health of any IoT implementation. New rules will be shipped regularly to highlight fixes and improvements to IoT configurations. Analysis jobs can be triggered from the Solution Health Hub."
+ unique_name: msdyn_IoTHealth_Patch_1
+ version: "1.7.17.6"
+ customization_prefix: msdyn
+# This solution includes no entities.
+# This solution includes no actions.
+# This solution has no remarks.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

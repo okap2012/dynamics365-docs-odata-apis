@@ -3,23 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_Service
 name: "Service"
 type: solution
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement Service Solution Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement Service Solution Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
-  ms.assetid: f1ec13e7-4cbe-4ed4-af56-15731bbc2073
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
+  ms.assetid: 9c8ca9cb-451a-47b0-a94a-9cf39f515f49
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
   meta-description: "Reference information about the Dynamics 365 Customer Engagement Service Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for service."
  unique_name: msdynce_Service
- version: "9.0.1.61"
- customization_prefix: none
+ version: "9.0.5.56"
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -122,8 +120,8 @@ entities:
 # This solution includes no actions.
 # This solution has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,17 +3,15 @@ uid: Microsoft.Dynamics.CRM.systemuser
 name: "systemuser"
 type: entitytype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement systemuser EntityType Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement systemuser EntityType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
   ms.assetid: eab4e150-fafa-40a4-b929-4a6fc08d5cdd
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement systemuser entitytype."
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the systemuser entitytype."
 description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/systemusers"
@@ -641,6 +639,88 @@ properties:
       description: "Date and time when the user was last modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_agentType
+      type: Edm.Int32
+      display_name: "User type"
+      description: "Type of user - Application user or Bot application user"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Application user"
+        - value: 192350001
+          label: "Bot application user"
+    - name: msdyn_botapplicationid
+      type: Edm.String
+      display_name: "Bot application ID"
+      description: "Application ID of the bot."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_botdescription
+      type: Edm.String
+      display_name: "Description"
+      description: "BOT User Description"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_botendpoint
+      type: Edm.String
+      display_name: "Endpoint"
+      description: "Bot User Endpoint"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_botprovider
+      type: Edm.Int32
+      display_name: "Bot Provider"
+      description: "Indicates the type of bot"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Virtual Agent"
+        - value: 192350001
+          label: "Other"
+        - value: 192350002
+          label: "None"
+    - name: msdyn_botsecretkeys
+      type: Edm.String
+      display_name: "Secret Keys"
+      description: "Bot User Secret Keys"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_capacity
+      type: Edm.Int32
+      display_name: "Capacity"
+      description: "Capacity associated with the User."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_gdproptout
+      type: Edm.Boolean
+      display_name: "GDPR Optout"
+      description: "Describes whether user is opted out or not"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_gridwrappercontrolfield
+      type: Edm.String
+      display_name: "Grid Wrapper Control field"
+      description: "Field to bind grid wrapper control"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_usertype
+      type: Edm.Int32
+      display_name: "Type"
+      description: "Type of user - CRM or BOT user"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "CRM User"
+        - value: 192350001
+          label: "BOT User"
     - name: nickname
       type: Edm.String
       display_name: "Nickname"
@@ -774,7 +854,7 @@ properties:
       isreadonly: false
     - name: stageid
       type: Edm.Guid
-      display_name: "Process Stage"
+      display_name: "(Deprecated) Process Stage"
       description: "Shows the ID of the stage."
       iscomputed: false
       isreadonly: false
@@ -798,7 +878,7 @@ properties:
       isreadonly: false
     - name: traversedpath
       type: Edm.String
-      display_name: "Traversed Path"
+      display_name: "(Deprecated) Traversed Path"
       description: "For internal use only."
       iscomputed: false
       isreadonly: false
@@ -808,6 +888,12 @@ properties:
       description: "Shows the type of user license."
       iscomputed: false
       isreadonly: false
+    - name: userpuid
+      type: Edm.String
+      display_name: "User PUID"
+      description: " User PUID User Identifiable Information"
+      iscomputed: false
+      isreadonly: true
     - name: utcconversiontimezonecode
       type: Edm.Int32
       display_name: "UTC Conversion Time Zone Code"
@@ -897,6 +983,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who last modified the systemuser."
+  - name: _msdyn_defaultpresenceiduser_value
+    single_valued_navigation_property:
+    - msdyn_DefaultPresenceIdUser
+    description: "Unique identifier for Presence associated with User."
   - name: _parentsystemuserid_value
     single_valued_navigation_property:
     - parentsystemuserid
@@ -2181,18 +2271,6 @@ collection_valued_navigation_properties:
   - name: lk_mailmergetemplatebase_modifiedby
     type: Microsoft.Dynamics.CRM.mailmergetemplate
     partner: modifiedby
-  - name: lk_mbs_pluginprofile_createdby
-    type: Microsoft.Dynamics.CRM.mbs_pluginprofile
-    partner: createdby
-  - name: lk_mbs_pluginprofile_createdonbehalfby
-    type: Microsoft.Dynamics.CRM.mbs_pluginprofile
-    partner: createdonbehalfby
-  - name: lk_mbs_pluginprofile_modifiedby
-    type: Microsoft.Dynamics.CRM.mbs_pluginprofile
-    partner: modifiedby
-  - name: lk_mbs_pluginprofile_modifiedonbehalfby
-    type: Microsoft.Dynamics.CRM.mbs_pluginprofile
-    partner: modifiedonbehalfby
   - name: lk_metric_createdby
     type: Microsoft.Dynamics.CRM.metric
     partner: createdby
@@ -2256,30 +2334,6 @@ collection_valued_navigation_properties:
   - name: lk_monthlyfiscalcalendar_salespersonid
     type: Microsoft.Dynamics.CRM.monthlyfiscalcalendar
     partner: salespersonid
-  - name: lk_ms_newsitem_createdby
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: createdby
-  - name: lk_ms_newsitem_createdonbehalfby
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: createdonbehalfby
-  - name: lk_ms_newsitem_modifiedby
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: modifiedby
-  - name: lk_ms_newsitem_modifiedonbehalfby
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: modifiedonbehalfby
-  - name: lk_ms_satori_createdby
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: createdby
-  - name: lk_ms_satori_createdonbehalfby
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: createdonbehalfby
-  - name: lk_ms_satori_modifiedby
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: modifiedby
-  - name: lk_ms_satori_modifiedonbehalfby
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: modifiedonbehalfby
   - name: lk_msdyn_accountpricelist_createdby
     type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
     partner: createdby
@@ -3287,18 +3341,6 @@ collection_valued_navigation_properties:
     partner: modifiedby
   - name: lk_msdyn_organizationalunit_modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
-    partner: modifiedonbehalfby
-  - name: lk_msdyn_orginsightsuserdashboarddefinition_createdby
-    type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
-    partner: createdby
-  - name: lk_msdyn_orginsightsuserdashboarddefinition_createdonbehalfby
-    type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
-    partner: createdonbehalfby
-  - name: lk_msdyn_orginsightsuserdashboarddefinition_modifiedby
-    type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
-    partner: modifiedby
-  - name: lk_msdyn_orginsightsuserdashboarddefinition_modifiedonbehalfby
-    type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
     partner: modifiedonbehalfby
   - name: lk_msdyn_payment_createdby
     type: Microsoft.Dynamics.CRM.msdyn_payment
@@ -5640,9 +5682,6 @@ collection_valued_navigation_properties:
   - name: mailbox_regarding_systemuser
     type: Microsoft.Dynamics.CRM.mailbox
     partner: regardingobjectid
-  - name: mbs_systemuser_mbs_pluginprofile
-    type: Microsoft.Dynamics.CRM.mbs_pluginprofile
-    partner: mbs_InitiatingUserId
   - name: modifiedby_connection
     type: Microsoft.Dynamics.CRM.connection
     partner: modifiedby
@@ -6113,9 +6152,6 @@ collection_valued_navigation_properties:
     partner: ownerid
   - name: owner_msdyn_orderpricelist
     type: Microsoft.Dynamics.CRM.msdyn_orderpricelist
-    partner: ownerid
-  - name: owner_msdyn_orginsightsuserdashboarddefinition
-    type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
     partner: ownerid
   - name: owner_msdyn_payment
     type: Microsoft.Dynamics.CRM.msdyn_payment
@@ -6954,9 +6990,6 @@ collection_valued_navigation_properties:
   - name: user_msdyn_orderpricelist
     type: Microsoft.Dynamics.CRM.msdyn_orderpricelist
     partner: owninguser
-  - name: user_msdyn_orginsightsuserdashboarddefinition
-    type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
-    partner: owninguser
   - name: user_msdyn_payment
     type: Microsoft.Dynamics.CRM.msdyn_payment
     partner: owninguser
@@ -7298,13 +7331,7 @@ operations:
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.InstantiateFilters
     binding_type: "Entity"
-  - name: Microsoft.Dynamics.CRM.msdyn_GetMyChangedSkills
-    binding_type: "Entity"
-  - name: Microsoft.Dynamics.CRM.msdyn_LogFindWorkEvent
-    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_RecommendWork
-    binding_type: "Entity"
-  - name: Microsoft.Dynamics.CRM.msdyn_UpdateChangedSkills
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.ReassignObjectsSystemUser
     binding_type: "Entity"
@@ -7321,6 +7348,10 @@ operations:
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalSyncAttributeMappings
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrieveUserLicenseInfo
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeId
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeName
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrieveUserPrivileges
     binding_type: "Entity"
@@ -7340,8 +7371,28 @@ solutions:
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
-    description: "Unified scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_3
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_5
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftFormsPro
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_11
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+  - type: Microsoft.Dynamics.CRM.msdyn_OmnichannelBasePatch
+    description: "The patch solution upgrades the base components of Omnichannel."
+  - type: Microsoft.Dynamics.CRM.msdyn_OmnichannelBotEnablerPatch
+    description: "The patch solution upgrades the BotEnabler for Omnichannel"
+  - type: Microsoft.Dynamics.CRM.msdyn_OmnichannelSBRPatch
+    description: "The patch solution upgrades the Skill Based Routing components of Omnichannel."
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
+    description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch
+    description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
     description: "Dynamics 365 workload for lead management."
@@ -7351,14 +7402,24 @@ solutions:
     description: "Dynamics 365 workload for sales."
   - type: Microsoft.Dynamics.CRM.msdynce_Service
     description: "Dynamics 365 workload for service."
+  - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
+    description: "Dynamics 365 workload for service."
+  - type: Microsoft.Dynamics.CRM.OmnichannelBase
+    description: "The solution provides the base components of Omnichannel."
+  - type: Microsoft.Dynamics.CRM.OmnichannelBotEnabler
+    description: "This solution provides the Bot specific features for Omnichannel."
+  - type: Microsoft.Dynamics.CRM.OmnichannelSBR
+    description: "This solution provides Skill Based Routing integration for Omni-channel Engagement Hub."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
+  - type: Microsoft.Dynamics.CRM.SICommon
+    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

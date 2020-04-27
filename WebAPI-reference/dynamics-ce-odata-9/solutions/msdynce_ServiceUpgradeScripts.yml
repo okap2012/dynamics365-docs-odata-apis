@@ -1,0 +1,35 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_ServiceUpgradeScripts
+name: "Service Upgrade Scripts"
+type: solution
+metadata: 
+  title: "Common Data Service and Dynamics 365 Customer Engagement Service Upgrade Scripts Solution Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  ms.assetid: 19aa2f14-4ed5-4202-90bb-1f9f14c91c48
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Service Upgrade Scripts Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Contains components used during the upgrade process for Service"
+ unique_name: msdynce_ServiceUpgradeScripts
+ version: "9.0.20034.2061"
+ customization_prefix: msdyn
+# This solution includes no entities.
+# This solution includes no actions.
+# This solution has no remarks.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

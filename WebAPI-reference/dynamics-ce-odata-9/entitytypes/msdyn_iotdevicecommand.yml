@@ -3,18 +3,16 @@ uid: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
 name: "msdyn_iotdevicecommand"
 type: entitytype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement msdyn_iotdevicecommand EntityType Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_iotdevicecommand EntityType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
   ms.assetid: 7c71db04-c5eb-43e7-8bce-f1dab6c72e8a
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement msdyn_iotdevicecommand entitytype."
-description: "Represents an outgoing message to a device connected to an IoT hub."
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the msdyn_iotdevicecommand entitytype."
+description: "Represents an outgoing message to a device connected to an IoT provider."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_iotdevicecommands"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
@@ -167,6 +165,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_command_value
+    single_valued_navigation_property:
+    - msdyn_Command
+    description: "This optional field denotes the command definition that is used to construct the command string."
   - name: _msdyn_customerasset_value
     single_valued_navigation_property:
     - msdyn_CustomerAsset
@@ -178,7 +180,7 @@ lookup_properties:
   - name: _msdyn_parentalert_value
     single_valued_navigation_property:
     - msdyn_ParentAlert
-    description: "Reference to a parent alert in response to which the message is being sent."
+    description: "Reference to a primary alert in response to which the message is being sent."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -299,10 +301,16 @@ solutions:
     description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
   - type: Microsoft.Dynamics.CRM.IoTConnector
     description: "Enables IoT scenarios in Dynamics 365."
+  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerService
+    description: "Use Connected Customer Service to monitor connected devices to make sure your customer’s equipment is functioning properly. If a piece of equipment fails, you’ll receive a notification so that you can troubleshoot the problem remotely."
+  - type: Microsoft.Dynamics.CRM.msdyn_IoT_Patch_1
+    description: "Enables IoT scenarios in Dynamics 365."
+  - type: Microsoft.Dynamics.CRM.msdyn_IoTAssetCommon
+    description: "Enables IoT Scenarios for Device"
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

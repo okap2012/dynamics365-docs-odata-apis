@@ -1,0 +1,39 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementFeatures
+name: "Knowledge Management Features"
+type: solution
+metadata: 
+  title: "Common Data Service and Dynamics 365 Customer Engagement Knowledge Management Features Solution Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  ms.assetid: 2fd91e62-d06b-41af-b6e6-dc1bf5ff890f
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement Knowledge Management Features Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Dynamics 365 features and migrated controls for knowledge management."
+ unique_name: msdynce_KnowledgeManagementFeatures
+ version: "9.0.1.1128"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.knowledgearticle
+     description: "Organizational knowledge for internal and external use."
+# This solution includes no actions.
+# This solution has no remarks.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -3,17 +3,15 @@ uid: Microsoft.Dynamics.CRM.annotation
 name: "annotation"
 type: entitytype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement annotation EntityType Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement annotation EntityType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
   ms.assetid: 108a7d17-f416-4d6b-9045-e23a1f6c21a5
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement annotation entitytype."
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the annotation entitytype."
 description: "Note that is attached to one or more objects, including other notes."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/annotations"
@@ -119,6 +117,12 @@ properties:
       description: "Date and time that the record was migrated."
       iscomputed: false
       isreadonly: false
+    - name: prefix
+      type: Edm.String
+      display_name: "Prefix"
+      description: "Prefix of the file pointer in blob storage."
+      iscomputed: false
+      isreadonly: true
     - name: stepid
       type: Edm.String
       display_name: "Step Id"
@@ -158,8 +162,24 @@ lookup_properties:
     description: "Unique identifier of the delegate user who last modified the annotation."
   - name: _objectid_value
     single_valued_navigation_property:
+    - objectid_duplicaterule
+    - objectid_kbarticle
+    - objectid_calendar
+    - objectid_knowledgebaserecord
+    - objectid_goal
+    - objectid_knowledgearticle
+    - objectid_emailserverprofile
+    - objectid_workflow
+    - objectid_mailbox
+    - objectid_account
+    - objectid_contact
+    - objectid_sla
+    - objectid_msdyn_solutionhistorydatasource
+    - objectid_msdyn_solutioncomponentdatasource
+    - objectid_msdyn_aimodel
+    - objectid_msdyn_aifptrainingdocument
+    - objectid_msdyn_aiodimage
     - objectid_lead
-    - objectid_product
     - objectid_bookableresource
     - objectid_bookableresourcebooking
     - objectid_bookableresourcebookingheader
@@ -177,11 +197,14 @@ lookup_properties:
     - objectid_incident
     - objectid_resourcespec
     - objectid_service
+    - objectid_product
+    - objectid_msdyn_playbookinstance
+    - objectid_msdyn_playbooktemplate
+    - objectid_competitor
     - objectid_invoice
     - objectid_opportunity
     - objectid_quote
     - objectid_salesorder
-    - objectid_competitor
     - objectid_msdyn_postalbum
     - objectid_msdyn_actual
     - objectid_msdyn_bookingalertstatus
@@ -252,6 +275,7 @@ lookup_properties:
     - objectid_msdyn_transactionconnection
     - objectid_msdyn_transactiontype
     - objectid_msdyn_workhourtemplate
+    - objectid_msdyn_3dmodel
     - objectid_msdyn_agreement
     - objectid_msdyn_agreementbookingdate
     - objectid_msdyn_agreementbookingincident
@@ -271,6 +295,7 @@ lookup_properties:
     - objectid_msdyn_incidenttypecharacteristic
     - objectid_msdyn_incidenttypeproduct
     - objectid_msdyn_incidenttypeservice
+    - objectid_msdyn_incidenttypessetup
     - objectid_msdyn_inventoryadjustment
     - objectid_msdyn_inventoryadjustmentproduct
     - objectid_msdyn_inventoryjournal
@@ -319,20 +344,8 @@ lookup_properties:
     - objectid_msdyn_iotdevicecategory
     - objectid_msdyn_iotdevicecommand
     - objectid_msdyn_iotdeviceregistrationhistory
-    - objectid_ms_newsitem
-    - objectid_ms_satori
-    - objectid_knowledgearticle
-    - objectid_knowledgebaserecord
-    - objectid_account
-    - objectid_kbarticle
-    - objectid_sla
-    - objectid_calendar
-    - objectid_contact
-    - objectid_goal
-    - objectid_workflow
-    - objectid_mailbox
-    - objectid_duplicaterule
-    - objectid_emailserverprofile
+    - objectid_msdyn_liveconversation
+    - objectid_msdyn_transcript
     description: "Unique identifier of the object with which the note is associated."
   - name: _ownerid_value
     single_valued_navigation_property:
@@ -473,12 +486,6 @@ single_valued_navigation_properties:
   - name: objectid_mailbox
     type: Microsoft.Dynamics.CRM.mailbox
     partner: Mailbox_Annotation
-  - name: objectid_ms_newsitem
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: ms_newsitem_Annotations
-  - name: objectid_ms_satori
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: ms_satori_Annotations
   - name: objectid_msdyn_accountpricelist
     type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
     partner: msdyn_accountpricelist_Annotations
@@ -996,8 +1003,8 @@ solutions:
     description: "Internal CRM System Solution"
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,17 +3,15 @@ uid: Microsoft.Dynamics.CRM.team
 name: "team"
 type: entitytype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement team EntityType Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement team EntityType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
   ms.assetid: 3c62c4cc-6841-4b6e-81a4-d8992ba19d86
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement team entitytype."
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the team entitytype."
 description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/teams"
@@ -30,6 +28,12 @@ namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
   property_items:
+    - name: azureactivedirectoryobjectid
+      type: Edm.Guid
+      display_name: "Azure AD Object Id for a group"
+      description: "The Azure active directory object Id for a group."
+      iscomputed: false
+      isreadonly: false
     - name: createdon
       type: Edm.DateTimeOffset
       display_name: "Created On"
@@ -109,7 +113,7 @@ properties:
       isreadonly: false
     - name: stageid
       type: Edm.Guid
-      display_name: "Process Stage"
+      display_name: "(Deprecated) Process Stage"
       description: "Shows the ID of the stage."
       iscomputed: false
       isreadonly: false
@@ -147,7 +151,7 @@ properties:
           label: "AAD Office Group"
     - name: traversedpath
       type: Edm.String
-      display_name: "Traversed Path"
+      display_name: "(Deprecated) Traversed Path"
       description: "For internal use only."
       iscomputed: false
       isreadonly: false
@@ -196,8 +200,8 @@ lookup_properties:
     description: "Unique identifier of the default queue for the team."
   - name: _regardingobjectid_value
     single_valued_navigation_property:
-    - regardingobjectid_opportunity
     - regardingobjectid_knowledgearticle
+    - regardingobjectid_opportunity
     description: "Choose the record that the team relates to."
   - name: _teamtemplateid_value
     single_valued_navigation_property:
@@ -617,9 +621,6 @@ collection_valued_navigation_properties:
     partner: ownerid
   - name: owner_msdyn_orderpricelist
     type: Microsoft.Dynamics.CRM.msdyn_orderpricelist
-    partner: ownerid
-  - name: owner_msdyn_orginsightsuserdashboarddefinition
-    type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
     partner: ownerid
   - name: owner_msdyn_payment
     type: Microsoft.Dynamics.CRM.msdyn_payment
@@ -1314,9 +1315,6 @@ collection_valued_navigation_properties:
   - name: team_msdyn_orderpricelist
     type: Microsoft.Dynamics.CRM.msdyn_orderpricelist
     partner: owningteam
-  - name: team_msdyn_orginsightsuserdashboarddefinition
-    type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
-    partner: owningteam
   - name: team_msdyn_payment
     type: Microsoft.Dynamics.CRM.msdyn_payment
     partner: owningteam
@@ -1708,12 +1706,16 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch
+    description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.OmnichannelBase
+    description: "The solution provides the base components of Omnichannel."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

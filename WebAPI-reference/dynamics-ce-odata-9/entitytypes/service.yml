@@ -3,17 +3,15 @@ uid: Microsoft.Dynamics.CRM.service
 name: "service"
 type: entitytype
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement service EntityType Reference | MicrosoftDocs"
-  ms.date: "03/20/2018"
+  title: "Common Data Service and Dynamics 365 Customer Engagement service EntityType Reference | MicrosoftDocs"
+  ms.date: "04/27/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  applies_to: 
-  - "Dynamics 365 (online)"
   ms.assetid: 4c60a0e6-bbac-4f12-a4cf-e2f9da658a99
-  author: "jimdaly"
-  ms.author: "jdaly"
-  manager: "jdaly"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement service entitytype."
+  author: "KumarVivek"
+  ms.author: "kvivek"
+  manager: "Annbe"
+  meta-description: "Reference information about the service entitytype."
 description: "Activity that represents work done to satisfy a customer's need."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/services"
@@ -125,6 +123,17 @@ properties:
       description: "Date and time when the service was last modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_SchedulingEngine
+      type: Edm.Int32
+      display_name: "Scheduling Engine"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Legacy Scheduling"
+        - value: 1
+          label: "Universal Resource Scheduling"
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -191,6 +200,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who last modified the service."
+  - name: _msdyn_requirementgroupid_value
+    single_valued_navigation_property:
+    - msdyn_requirementgroupid
+    description: "Unique identifier for Requirement Group associated with Service."
   - name: _organizationid_value
     single_valued_navigation_property:
     - organizationid
@@ -326,12 +339,16 @@ operations:
 solutions:
   description: "The following solutions include the service entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdynce_CoreServiceScheduling
+    description: "Dynamics 365 workload for service scheduling."
   - type: Microsoft.Dynamics.CRM.msdynce_Service
+    description: "Dynamics 365 workload for service."
+  - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
     description: "Dynamics 365 workload for service."
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
-  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex
