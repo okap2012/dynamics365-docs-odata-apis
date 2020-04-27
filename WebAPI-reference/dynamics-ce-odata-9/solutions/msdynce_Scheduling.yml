@@ -17,7 +17,7 @@ header:
  description: "Dynamics 365 workload for scheduling."
  unique_name: msdynce_Scheduling
  version: "9.0.0.0"
- customization_prefix: 
+ customization_prefix: msdynce
 entities:
   description: "The following entities are included in this solution."
   entity_items:

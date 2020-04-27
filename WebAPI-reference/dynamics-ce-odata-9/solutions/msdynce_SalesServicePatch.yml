@@ -17,7 +17,7 @@ header:
  description: "For internal use only."
  unique_name: msdynce_SalesServicePatch
  version: "9.0.1912.5012"
- customization_prefix: 
+ customization_prefix: msdynce
 entities:
   description: "The following entities are included in this solution."
   entity_items:

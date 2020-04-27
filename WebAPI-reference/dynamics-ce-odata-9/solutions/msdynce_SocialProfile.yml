@@ -17,7 +17,7 @@ header:
  description: "Dynamics 365 workload for social profiles."
  unique_name: msdynce_SocialProfile
  version: "9.0.1.0015"
- customization_prefix: 
+ customization_prefix: msdynce
 entities:
   description: "The following entities are included in this solution."
   entity_items:

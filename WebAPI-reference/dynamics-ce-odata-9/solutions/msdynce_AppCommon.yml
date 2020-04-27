@@ -17,7 +17,7 @@ header:
  description: "For internal use only."
  unique_name: msdynce_AppCommon
  version: "9.0.4.0066"
- customization_prefix: 
+ customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:

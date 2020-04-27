@@ -17,7 +17,7 @@ header:
  description: "Dynamics 365 workload for third patch of Sales."
  unique_name: msdynce_SalesPatch202001
  version: "9.0.1912.3031"
- customization_prefix: 
+ customization_prefix: msdynce
 entities:
   description: "The following entities are included in this solution."
   entity_items:

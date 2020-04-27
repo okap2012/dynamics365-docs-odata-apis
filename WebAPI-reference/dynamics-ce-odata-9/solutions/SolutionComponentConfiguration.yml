@@ -17,7 +17,7 @@ header:
 # This solution has no description.
  unique_name: SolutionComponentConfiguration
  version: "9.1.0.3"
- customization_prefix: 
+ customization_prefix: none
 # This solution includes no entities.
 # This solution includes no actions.
 # This solution has no remarks.

@@ -17,7 +17,7 @@ header:
  description: "License Enforcement solution"
  unique_name: LicenseEnforcement
  version: "1.0"
- customization_prefix: 
+ customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:

@@ -17,7 +17,7 @@ header:
  description: "Patch for Dynamics 365 workload for service."
  unique_name: msdynce_ServicePatch
  version: "9.0.19111.1004"
- customization_prefix: 
+ customization_prefix: msdynce
 entities:
   description: "The following entities are included in this solution."
   entity_items:

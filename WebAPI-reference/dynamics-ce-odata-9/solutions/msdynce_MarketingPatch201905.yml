@@ -17,7 +17,7 @@ header:
  description: "Patch from 05/2019 for Dynamics 365 workload for marketing and enterprise."
  unique_name: msdynce_MarketingPatch201905
  version: "9.0.1912.3004"
- customization_prefix: 
+ customization_prefix: msdynce
 entities:
   description: "The following entities are included in this solution."
   entity_items:
