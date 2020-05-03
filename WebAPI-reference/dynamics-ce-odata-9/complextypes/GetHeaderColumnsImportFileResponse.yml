@@ -4,7 +4,7 @@ name: "GetHeaderColumnsImportFileResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement GetHeaderColumnsImportFileResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: f9b66241-58fd-43f4-aad9-69837c6a9744

@@ -4,7 +4,7 @@ name: "PickFromQueue"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement PickFromQueue Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 1d21e305-3fd2-486d-bf46-f18c345251f6

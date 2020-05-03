@@ -4,7 +4,7 @@ name: "msdyn_GetDataForContractPerformance"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetDataForContractPerformance Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 9bfc958c-7617-46d7-b460-9005bfa225a1

@@ -4,7 +4,7 @@ name: "RetrieveMetadataChangesResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveMetadataChangesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: c2460161-48b1-42a4-9d02-8f7f7bb2c002

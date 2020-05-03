@@ -4,10 +4,10 @@ name: "Microsoft Dynamics 365 Settings APIs"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Microsoft Dynamics 365 Settings APIs Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 11aa268a-5d1b-404d-993f-e050aaeb85a3
+  ms.assetid: 154e84df-280d-4dfd-b0ff-048b42ba192f
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: CRMSettingsAPIs
- version: "10.0.0.116"
+ version: "10.0.0.119"
  customization_prefix: msdyn
 # This solution includes no entities.
 # This solution includes no actions.

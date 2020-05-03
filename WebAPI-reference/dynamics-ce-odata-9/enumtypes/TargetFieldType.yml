@@ -4,7 +4,7 @@ name: "TargetFieldType"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement TargetFieldType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: c48caf9e-5677-4bef-a8cb-e02084f5e780

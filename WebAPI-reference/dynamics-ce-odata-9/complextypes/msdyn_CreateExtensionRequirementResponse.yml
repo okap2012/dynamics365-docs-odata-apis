@@ -4,7 +4,7 @@ name: "msdyn_CreateExtensionRequirementResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_CreateExtensionRequirementResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: e1d1a0b4-a1e1-4a4a-863b-7edf1f11ddd1

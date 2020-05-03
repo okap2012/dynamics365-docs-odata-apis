@@ -4,7 +4,7 @@ name: "RetrieveMissingDependencies"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveMissingDependencies Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: d161c5d0-3d2d-429d-9d54-cee0fd64d9ca

@@ -4,7 +4,7 @@ name: "RetrieveVersion"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveVersion Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 132aa536-4f58-491d-ba47-79b6544c59a5

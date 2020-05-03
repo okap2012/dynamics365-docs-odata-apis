@@ -4,7 +4,7 @@ name: "UpdateProductProperties"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement UpdateProductProperties Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 46b4577e-94e1-42b6-8019-f5c2c783b968

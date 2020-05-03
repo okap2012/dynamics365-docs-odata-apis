@@ -4,7 +4,7 @@ name: "msdyn_ExportActual"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_ExportActual Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 7d53a5a0-5bfa-446d-b233-b378fd4e72aa

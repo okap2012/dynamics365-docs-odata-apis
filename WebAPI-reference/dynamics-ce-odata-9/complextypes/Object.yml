@@ -4,7 +4,7 @@ name: "Object"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Object ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: a6ceee19-6f9a-4ef1-a1d4-c36e92618689
@@ -37,6 +37,10 @@ usedby:
   - name: Microsoft.Dynamics.CRM.InputArgument
     used_as: Property
   - name: Microsoft.Dynamics.CRM.MetadataConditionExpression
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.QueryByAttribute
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ConditionExpression
     used_as: Property
 # This complex type has no remarks.
 href_see_also:

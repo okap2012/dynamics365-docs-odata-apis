@@ -4,7 +4,7 @@ name: "opportunityclose"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement opportunityclose EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 279bed26-60c4-43a7-aa60-d7d30781f1cf
@@ -971,6 +971,8 @@ solutions:
     description: "Patch for Dynamics 365 workload for sales."
   - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch201904
     description: "Dynamics 365 workload for Sales Patch Version 2."
+  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
+    description: "Dynamics 365 workload for third patch of Sales."
   - type: Microsoft.Dynamics.CRM.msdynce_SalesService
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_SalesServicePatch

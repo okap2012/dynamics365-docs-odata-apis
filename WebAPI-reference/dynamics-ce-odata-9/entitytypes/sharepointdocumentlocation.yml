@@ -4,7 +4,7 @@ name: "sharepointdocumentlocation"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement sharepointdocumentlocation EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: e36b40e6-57b5-4e1b-9d6c-885579320dc6
@@ -222,8 +222,6 @@ lookup_properties:
     - regardingobjectid_msdyn_resourceterritory
     - regardingobjectid_msdyn_timegroup
     - regardingobjectid_msdyn_timegroupdetail
-    - regardingobjectid_msdyn_expense
-    - regardingobjectid_msdyn_project
     - regardingobjectid_msdyn_agreement
     - regardingobjectid_msdyn_agreementbookingdate
     - regardingobjectid_msdyn_agreementbookingsetup
@@ -246,6 +244,8 @@ lookup_properties:
     - regardingobjectid_msdyn_workorderproduct
     - regardingobjectid_msdyn_workorderservice
     - regardingobjectid_msdyn_workorderservicetask
+    - regardingobjectid_msdyn_expense
+    - regardingobjectid_msdyn_project
     description: "Unique identifier of the object with which the SharePoint document location record is associated."
   - name: _transactioncurrencyid_value
     single_valued_navigation_property:

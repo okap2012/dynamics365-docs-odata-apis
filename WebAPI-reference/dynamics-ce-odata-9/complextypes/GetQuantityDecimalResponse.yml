@@ -4,7 +4,7 @@ name: "GetQuantityDecimalResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement GetQuantityDecimalResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 4d8af45a-7c92-4bc8-89be-bad685aabc1e

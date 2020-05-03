@@ -4,7 +4,7 @@ name: "account"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement account EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b587728b-db31-4d53-be70-98a1ed5fe7e9
@@ -1706,18 +1706,8 @@ solutions:
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_3
-    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_5
-    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerService
-    description: "Use Connected Customer Service to monitor connected devices to make sure your customer’s equipment is functioning properly. If a piece of equipment fails, you’ll receive a notification so that you can troubleshoot the problem remotely."
-  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_11
-    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.msdyn_LinkedInExtensions
     description: "LinkedIn Extension for Dynamics365"
-  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
-    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch
@@ -1744,14 +1734,12 @@ solutions:
     description: "Patch for Dynamics 365 workload for sales."
   - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch201904
     description: "Dynamics 365 workload for Sales Patch Version 2."
+  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
+    description: "Dynamics 365 workload for third patch of Sales."
   - type: Microsoft.Dynamics.CRM.msdynce_Service
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
     description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.OmnichannelBase
-    description: "The solution provides the base components of Omnichannel."
-  - type: Microsoft.Dynamics.CRM.OmnichannelPrime
-    description: "This solution provides the base components of Omnichannel that are dependent on Microsoft Dynamics 365 applications."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.SICommon

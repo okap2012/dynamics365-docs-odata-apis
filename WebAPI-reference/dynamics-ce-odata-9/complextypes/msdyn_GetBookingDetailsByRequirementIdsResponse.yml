@@ -4,7 +4,7 @@ name: "msdyn_GetBookingDetailsByRequirementIdsResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetBookingDetailsByRequirementIdsResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 71968bab-df40-461f-8cd3-5a069f80eb39

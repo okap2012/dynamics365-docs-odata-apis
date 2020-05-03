@@ -4,7 +4,7 @@ name: "DeletedMetadataFilters"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement DeletedMetadataFilters EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 634252f3-b7b5-41be-b4cb-01e4d0b08d35

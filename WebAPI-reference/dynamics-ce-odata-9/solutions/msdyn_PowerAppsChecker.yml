@@ -4,10 +4,10 @@ name: "PowerApps Checker"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement PowerApps Checker Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 3270249f-62a9-401a-8f4f-88b85403ace3
+  ms.assetid: e72650cf-8d5d-4e2c-8e2d-b6e2f709b367
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -18,7 +18,17 @@ header:
  unique_name: msdyn_PowerAppsChecker
  version: "1.1.0.10"
  customization_prefix: msdyn
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_analysiscomponent
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_analysisjob
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_analysisresult
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_analysisresultdetail
+     description: ""
 # This solution includes no actions.
 # This solution has no remarks.
 href_see_also:

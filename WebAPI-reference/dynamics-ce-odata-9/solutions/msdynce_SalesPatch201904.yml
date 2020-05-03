@@ -4,10 +4,10 @@ name: "Sales Patch Version 2"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Sales Patch Version 2 Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 71c12b35-3cc7-45b4-b9eb-8d2ef7300d7f
+  ms.assetid: 369e2934-7022-41ad-88b8-6932dd5641ae
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,7 +17,7 @@ header:
  description: "Dynamics 365 workload for Sales Patch Version 2."
  unique_name: msdynce_SalesPatch201904
  version: "9.0.1912.1007"
- customization_prefix: msdynce
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

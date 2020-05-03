@@ -4,7 +4,7 @@ name: "msdyn_UpdateEstimateLinesResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_UpdateEstimateLinesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 8f567d00-3033-4dfd-9de8-6e5fd5b179f1

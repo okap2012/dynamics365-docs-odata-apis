@@ -4,7 +4,7 @@ name: "SecurityTypes"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement SecurityTypes EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b2dd5983-c06d-4a28-9335-26c0f7c25596

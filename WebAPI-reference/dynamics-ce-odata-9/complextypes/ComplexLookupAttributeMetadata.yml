@@ -4,7 +4,7 @@ name: "ComplexLookupAttributeMetadata"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement ComplexLookupAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: babddd42-65b3-44d8-8a32-45e7c6680e41

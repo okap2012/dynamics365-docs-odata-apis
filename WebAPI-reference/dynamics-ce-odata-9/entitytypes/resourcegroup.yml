@@ -4,7 +4,7 @@ name: "resourcegroup"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement resourcegroup EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: bd8463c5-17ab-47f9-9f38-b910e856382b

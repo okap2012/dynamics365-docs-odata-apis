@@ -4,7 +4,7 @@ name: "msdyn_GetContractBillingRadialGaugeData"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetContractBillingRadialGaugeData Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 03decde4-04a8-47f2-ac71-e1a150db9c5d

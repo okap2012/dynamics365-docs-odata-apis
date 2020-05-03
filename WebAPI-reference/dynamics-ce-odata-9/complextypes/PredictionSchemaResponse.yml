@@ -4,7 +4,7 @@ name: "PredictionSchemaResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement PredictionSchemaResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 5d071d75-f0dc-41bd-86b1-1f7059cbe0a5
@@ -32,7 +32,11 @@ navigation_properties:
     nullable: false
     description: ""
     iscollection: false
-
+usedby:
+  description: "The following use the PredictionSchemaResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.PredictionSchema
+    used_as: ReturnType
 # This complex type has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

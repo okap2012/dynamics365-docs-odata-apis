@@ -4,7 +4,7 @@ name: "businessunit"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement businessunit EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: e85b8304-38e8-4c70-bf14-297a98889a43
@@ -530,6 +530,9 @@ collection_valued_navigation_properties:
   - name: business_unit_activitypointer
     type: Microsoft.Dynamics.CRM.activitypointer
     partner: owningbusinessunit
+  - name: business_unit_adminsettingsentity
+    type: Microsoft.Dynamics.CRM.adminsettingsentity
+    partner: owningbusinessunit
   - name: business_unit_annotations
     type: Microsoft.Dynamics.CRM.annotation
     partner: owningbusinessunit
@@ -581,8 +584,14 @@ collection_valued_navigation_properties:
   - name: business_unit_characteristic
     type: Microsoft.Dynamics.CRM.characteristic
     partner: owningbusinessunit
+  - name: business_unit_connectionreference
+    type: Microsoft.Dynamics.CRM.connectionreference
+    partner: owningbusinessunit
   - name: business_unit_connections
     type: Microsoft.Dynamics.CRM.connection
+    partner: owningbusinessunit
+  - name: business_unit_connector
+    type: Microsoft.Dynamics.CRM.connector
     partner: owningbusinessunit
   - name: business_unit_constraint_based_groups
     type: Microsoft.Dynamics.CRM.constraintbasedgroup
@@ -602,6 +611,12 @@ collection_valued_navigation_properties:
   - name: business_unit_entitlement
     type: Microsoft.Dynamics.CRM.entitlement
     partner: owningbusinessunit
+  - name: business_unit_environmentvariabledefinition
+    type: Microsoft.Dynamics.CRM.environmentvariabledefinition
+    partner: owningbusinessunit
+  - name: business_unit_environmentvariablevalue
+    type: Microsoft.Dynamics.CRM.environmentvariablevalue
+    partner: owningbusinessunit
   - name: business_unit_equipment
     type: Microsoft.Dynamics.CRM.equipment
     partner: businessunitid_businessunit
@@ -613,6 +628,9 @@ collection_valued_navigation_properties:
     partner: owningbusinessunit_fax
   - name: business_unit_feedback
     type: Microsoft.Dynamics.CRM.feedback
+    partner: owningbusinessunit
+  - name: business_unit_flowsession
+    type: Microsoft.Dynamics.CRM.flowsession
     partner: owningbusinessunit
   - name: business_unit_goal
     type: Microsoft.Dynamics.CRM.goal
@@ -686,6 +704,60 @@ collection_valued_navigation_properties:
   - name: business_unit_msdyn_agreementsubstatus
     type: Microsoft.Dynamics.CRM.msdyn_agreementsubstatus
     partner: owningbusinessunit
+  - name: business_unit_msdyn_aibdataset
+    type: Microsoft.Dynamics.CRM.msdyn_aibdataset
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aibdatasetfile
+    type: Microsoft.Dynamics.CRM.msdyn_aibdatasetfile
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aibdatasetrecord
+    type: Microsoft.Dynamics.CRM.msdyn_aibdatasetrecord
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aibdatasetscontainer
+    type: Microsoft.Dynamics.CRM.msdyn_aibdatasetscontainer
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aibfile
+    type: Microsoft.Dynamics.CRM.msdyn_aibfile
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aibfileattacheddata
+    type: Microsoft.Dynamics.CRM.msdyn_aibfileattacheddata
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aiconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_aiconfiguration
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aifptrainingdocument
+    type: Microsoft.Dynamics.CRM.msdyn_aifptrainingdocument
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aimodel
+    type: Microsoft.Dynamics.CRM.msdyn_aimodel
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aiodimage
+    type: Microsoft.Dynamics.CRM.msdyn_aiodimage
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aiodlabel
+    type: Microsoft.Dynamics.CRM.msdyn_aiodlabel
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aiodtrainingboundingbox
+    type: Microsoft.Dynamics.CRM.msdyn_aiodtrainingboundingbox
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aiodtrainingimage
+    type: Microsoft.Dynamics.CRM.msdyn_aiodtrainingimage
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_aitemplate
+    type: Microsoft.Dynamics.CRM.msdyn_aitemplate
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_analysiscomponent
+    type: Microsoft.Dynamics.CRM.msdyn_analysiscomponent
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_analysisjob
+    type: Microsoft.Dynamics.CRM.msdyn_analysisjob
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_analysisresult
+    type: Microsoft.Dynamics.CRM.msdyn_analysisresult
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_analysisresultdetail
+    type: Microsoft.Dynamics.CRM.msdyn_analysisresultdetail
+    partner: owningbusinessunit
   - name: business_unit_msdyn_bookingalertstatus
     type: Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
     partner: owningbusinessunit
@@ -748,6 +820,9 @@ collection_valued_navigation_properties:
     partner: owningbusinessunit
   - name: business_unit_msdyn_fieldservicesetting
     type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_fieldserviceslaconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_fieldserviceslaconfiguration
     partner: owningbusinessunit
   - name: business_unit_msdyn_findworkevent
     type: Microsoft.Dynamics.CRM.msdyn_findworkevent
@@ -1022,6 +1097,9 @@ collection_valued_navigation_properties:
   - name: business_unit_msdyn_rtvsubstatus
     type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
     partner: owningbusinessunit
+  - name: business_unit_msdyn_salesinsightssettings
+    type: Microsoft.Dynamics.CRM.msdyn_salesinsightssettings
+    partner: owningbusinessunit
   - name: business_unit_msdyn_scheduleboardsetting
     type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
     partner: owningbusinessunit
@@ -1030,6 +1108,9 @@ collection_valued_navigation_properties:
     partner: owningbusinessunit
   - name: business_unit_msdyn_shipvia
     type: Microsoft.Dynamics.CRM.msdyn_shipvia
+    partner: owningbusinessunit
+  - name: business_unit_msdyn_siconfig
+    type: Microsoft.Dynamics.CRM.msdyn_siconfig
     partner: owningbusinessunit
   - name: business_unit_msdyn_systemuserschedulersetting
     type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
@@ -1229,8 +1310,14 @@ collection_valued_navigation_properties:
   - name: BusinessUnit_BulkDeleteFailures
     type: Microsoft.Dynamics.CRM.bulkdeletefailure
     partner: regardingobjectid_businessunit
+  - name: businessunit_callbackregistration
+    type: Microsoft.Dynamics.CRM.callbackregistration
+    partner: owningbusinessunit
   - name: BusinessUnit_Campaigns
     type: Microsoft.Dynamics.CRM.campaign
+    partner: owningbusinessunit
+  - name: businessunit_canvasapp
+    type: Microsoft.Dynamics.CRM.canvasapp
     partner: owningbusinessunit
   - name: BusinessUnit_DuplicateRules
     type: Microsoft.Dynamics.CRM.duplicaterule

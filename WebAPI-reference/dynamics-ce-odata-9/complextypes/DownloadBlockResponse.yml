@@ -4,7 +4,7 @@ name: "DownloadBlockResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement DownloadBlockResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: d49c5737-7de4-455e-aac0-046d0a20a1bc
@@ -25,7 +25,11 @@ properties:
     description: ""
     iscollection: false
 # This complex type doesn't have any navigation properties.
-
+usedby:
+  description: "The following use the DownloadBlockResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.DownloadBlock
+    used_as: ReturnType
 # This complex type has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

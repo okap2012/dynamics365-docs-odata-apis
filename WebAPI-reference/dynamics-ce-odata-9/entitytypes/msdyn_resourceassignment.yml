@@ -4,7 +4,7 @@ name: "msdyn_resourceassignment"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_resourceassignment EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: fdbc49f3-72b0-4e29-97b3-1ea99ac78876
@@ -233,7 +233,7 @@ lookup_properties:
     - msdyn_taskid
     description: "Select the task for which the resource is assigned to."
   - name: _msdyn_userresourceid_value
-    description: "Select the user whose capacity is assigned (Deprecated in v3.0)."
+    description: "Select the user whose capacity is assigned."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -344,8 +344,6 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_resourceassignment entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
-    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
 # This entity has no remarks.

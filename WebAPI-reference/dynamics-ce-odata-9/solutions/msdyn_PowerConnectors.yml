@@ -4,10 +4,10 @@ name: "Power Connector Solution"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Power Connector Solution Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 421207ff-da2a-4537-bb1a-969e79396725
+  ms.assetid: a31677f2-bf4a-41d8-befe-2174c7f64158
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,8 +17,12 @@ header:
  description: "Power Connector Solution"
  unique_name: msdyn_PowerConnectors
  version: "9.2.0.0"
- customization_prefix: none
-# This solution includes no entities.
+ customization_prefix: 
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.connector
+     description: "Connector Entity to support Solutioning Integration"
 # This solution includes no actions.
 # This solution has no remarks.
 href_see_also:

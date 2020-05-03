@@ -4,7 +4,7 @@ name: "PublishProductHierarchy"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement PublishProductHierarchy Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 09f4c358-f15a-4c93-9a57-75181bdb0f41

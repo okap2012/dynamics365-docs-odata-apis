@@ -4,10 +4,10 @@ name: "Application Common Patch"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Application Common Patch Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 7b6e124a-133c-4451-ab9c-11857d7d313c
+  ms.assetid: 9f60923d-3725-4bb7-a5ff-de825565e8b5
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,7 +17,7 @@ header:
  description: "For internal use only."
  unique_name: msdynce_AppCommonPatch
  version: "9.0.1904.4006"
- customization_prefix: none
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

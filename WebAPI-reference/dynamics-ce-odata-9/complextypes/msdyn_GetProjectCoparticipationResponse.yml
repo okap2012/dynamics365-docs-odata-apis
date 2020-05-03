@@ -4,7 +4,7 @@ name: "msdyn_GetProjectCoparticipationResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetProjectCoparticipationResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 376f938c-299d-4dea-b7da-3ba7f549e34f

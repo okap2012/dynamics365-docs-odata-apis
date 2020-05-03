@@ -4,7 +4,7 @@ name: "LookupDataRequest"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement LookupDataRequest ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: f4ac3f80-e932-4b58-888a-17ad261c8157

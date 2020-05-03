@@ -4,7 +4,7 @@ name: "ImportRecordsImport"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement ImportRecordsImport Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 511c4c3b-6c72-4a15-a72d-1485a8e209e7

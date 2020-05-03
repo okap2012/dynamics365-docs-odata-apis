@@ -4,10 +4,10 @@ name: "Knowledge Management Patch"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Knowledge Management Patch Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 3ec8deab-1e34-4566-b578-633aa5489177
+  ms.assetid: e46f2de9-6301-40c0-895f-3c711459c344
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,8 +16,8 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for knowledge management."
  unique_name: msdynce_KnowledgeManagementPatch
- version: "9.0.1.1128"
- customization_prefix: none
+ version: "9.0.1.1092"
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

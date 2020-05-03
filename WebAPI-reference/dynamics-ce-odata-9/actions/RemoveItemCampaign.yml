@@ -4,7 +4,7 @@ name: "RemoveItemCampaign"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RemoveItemCampaign Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b82a4098-2ed5-4b49-b8de-273d77f54d11

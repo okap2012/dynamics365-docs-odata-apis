@@ -4,7 +4,7 @@ name: "NotIn"
 type: queryfunction
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement NotIn Query Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: e9a1a0d5-a975-45b3-8129-d6d739070553

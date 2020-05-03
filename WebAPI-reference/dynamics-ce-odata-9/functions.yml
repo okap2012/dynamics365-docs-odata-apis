@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.FunctionIndex
 name: Web API Function Reference
 title: "Common Data Service and 365 Customer Engagement Web API Function Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: ab719434-7c3c-4bc3-8fee-bb14335d3f9d
@@ -62,10 +62,14 @@ in_this_section:
   description: "Determines whether data encryption is currently running (active or inactive).  "
 - type: Microsoft.Dynamics.CRM.IsValidStateTransition
   description: "Validates the state transition."
+- type: Microsoft.Dynamics.CRM.LocalTimeFromUtcTime
+  description: ""
 - type: Microsoft.Dynamics.CRM.QueryMultipleSchedules
   description: "Searches multiple resources for available time block that matches the specified parameters."
 - type: Microsoft.Dynamics.CRM.QuerySchedule
   description: "Searches the specified resource for an available time block that matches the specified parameters.  "
+- type: Microsoft.Dynamics.CRM.RemoveActiveCustomizations
+  description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveAbsoluteAndSiteCollectionUrl
   description: "Retrieves the absolute URL and the site collection URL for a SharePoint location record in Microsoft Dynamics 365. "
 - type: Microsoft.Dynamics.CRM.RetrieveActivePath
@@ -74,6 +78,8 @@ in_this_section:
   description: "Retrieves the collection of users that report to the specified system user (user).  "
 - type: Microsoft.Dynamics.CRM.RetrieveAllEntities
   description: "Retrieves metadata information about all the entities. "
+- type: Microsoft.Dynamics.CRM.RetrieveAnalyticsStoreDetails
+  description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveAppComponents
   description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveApplicationRibbon
@@ -184,6 +190,8 @@ in_this_section:
   description: "Retrieves the collection of child resource groups from the specified resource group.  "
 - type: Microsoft.Dynamics.CRM.RetrieveTeamPrivileges
   description: "Retrieves the privileges for a team. "
+- type: Microsoft.Dynamics.CRM.RetrieveTimelineWallRecords
+  description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveTimestamp
   description: "Retrieves a time stamp for the metadata.  "
 - type: Microsoft.Dynamics.CRM.RetrieveTotalRecordCount
@@ -202,6 +210,8 @@ in_this_section:
   description: "Retrieves the privileges a system user (user) has through his or her roles in the specified business unit.  "
 - type: Microsoft.Dynamics.CRM.RetrieveUserQueues
   description: "Retrieves all private queues of a specified user and optionally all public queues. "
+- type: Microsoft.Dynamics.CRM.RetrieveUsersPrivilegesThroughTeams
+  description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveVersion
   description: "Retrieves the version number of the Microsoft Dynamics 365 Server. "
 - type: Microsoft.Dynamics.CRM.Rollup
@@ -217,6 +227,8 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.UtcTimeFromLocalTime
   description: ""
 - type: Microsoft.Dynamics.CRM.ValidateApp
+  description: ""
+- type: Microsoft.Dynamics.CRM.ValidateFetchXmlExpression
   description: ""
 - type: Microsoft.Dynamics.CRM.ValidateRecurrenceRule
   description: "Validates a rule for a recurring appointment. "

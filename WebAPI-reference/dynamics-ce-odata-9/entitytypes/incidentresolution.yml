@@ -4,7 +4,7 @@ name: "incidentresolution"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement incidentresolution EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 1960a7ac-93cb-4a1f-8228-65618696dfbb
@@ -110,7 +110,7 @@ properties:
           label: "High"
     - name: description
       type: Edm.String
-      display_name: "Remarks"
+      display_name: "Description"
       description: "Description of the activity."
       iscomputed: false
       isreadonly: false
@@ -259,17 +259,6 @@ properties:
       description: "Unique identifier of the Process."
       iscomputed: false
       isreadonly: false
-    - name: resolutiontypecode
-      type: Edm.Int32
-      display_name: "Resolution Type"
-      description: ""
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 5
-          label: "Problem Solved"
-        - value: 1000
-          label: "Information Provided"
     - name: scheduleddurationminutes
       type: Edm.Int32
       display_name: "Scheduled Duration"
@@ -352,7 +341,7 @@ properties:
       isreadonly: false
     - name: timespent
       type: Edm.Int32
-      display_name: "Billable Time"
+      display_name: "Time Spent"
       description: "Time spent on the case resolution activity."
       iscomputed: false
       isreadonly: false
@@ -360,12 +349,6 @@ properties:
       type: Edm.Int32
       display_name: "Time Zone Rule Version Number"
       description: "For internal use only."
-      iscomputed: false
-      isreadonly: false
-    - name: totaltimespent
-      type: Edm.Int32
-      display_name: "Total Time"
-      description: "Total time spent on the case resolution activity."
       iscomputed: false
       isreadonly: false
     - name: traversedpath

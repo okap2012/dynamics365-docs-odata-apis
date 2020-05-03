@@ -4,7 +4,7 @@ name: "entitlement"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement entitlement EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 5f36c031-5ac0-47ad-8f32-8dc0c74dd1ea
@@ -89,10 +89,10 @@ properties:
       iscomputed: false
       isreadonly: false
       options:
-        - value: 192350000
-          label: "Work Order"
         - value: 0
           label: "Case"
+        - value: 192350000
+          label: "Work Order"
     - name: exchangerate
       type: Edm.Decimal
       display_name: "Exchange Rate"

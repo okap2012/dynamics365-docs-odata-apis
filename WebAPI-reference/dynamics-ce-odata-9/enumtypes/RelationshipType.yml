@@ -4,7 +4,7 @@ name: "RelationshipType"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RelationshipType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: ba7b559a-8642-4ced-8709-0cf1ae3b72f0
@@ -31,6 +31,8 @@ usedby:
   - name: Microsoft.Dynamics.CRM.ComplexManyToManyRelationshipMetadata
     used_as: Property
   - name: Microsoft.Dynamics.CRM.ComplexOneToManyRelationshipMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.DependentRelationship
     used_as: Property
 # This enum type has no remarks.
 href_see_also:

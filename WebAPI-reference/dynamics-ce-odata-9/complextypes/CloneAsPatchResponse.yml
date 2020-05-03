@@ -4,7 +4,7 @@ name: "CloneAsPatchResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement CloneAsPatchResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: fd11be2e-e79c-4624-b97b-4828263d32f9

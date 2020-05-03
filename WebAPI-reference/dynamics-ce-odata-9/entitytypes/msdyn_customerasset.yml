@@ -4,7 +4,7 @@ name: "msdyn_customerasset"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_customerasset EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 6dfb7584-282d-4396-88a7-167715c74d44
@@ -46,35 +46,6 @@ properties:
       description: "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
       iscomputed: false
       isreadonly: true
-    - name: msdyn_alert
-      type: Edm.Boolean
-      display_name: "Active or in-progress alerts"
-      description: "If active parent alerts exist for the device"
-      iscomputed: true
-      isreadonly: true
-      options:
-        - value: 1
-          label: "Yes"
-        - value: 0
-          label: "No"
-    - name: msdyn_alertcount
-      type: Edm.Int32
-      display_name: "Alert Count"
-      description: "Count of parent alerts for this device"
-      iscomputed: true
-      isreadonly: true
-    - name: msdyn_alertcount_date
-      type: Edm.DateTimeOffset
-      display_name: "Alert Count (Last Updated On)"
-      description: "Last Updated time of rollup field Alert Count."
-      iscomputed: false
-      isreadonly: true
-    - name: msdyn_alertcount_state
-      type: Edm.Int32
-      display_name: "Alert Count (State)"
-      description: "State of rollup field Alert Count."
-      iscomputed: false
-      isreadonly: true
     - name: msdyn_customerassetid
       type: Edm.Guid
       display_name: "Customer Asset"
@@ -87,24 +58,6 @@ properties:
       description: "Device ID used to register with the IoT provider. This will not be used if there are two or more connected devices for this asset."
       iscomputed: false
       isreadonly: false
-    - name: msdyn_lastalerttime
-      type: Edm.DateTimeOffset
-      display_name: "Last active alert time"
-      description: ""
-      iscomputed: true
-      isreadonly: true
-    - name: msdyn_lastalerttime_date
-      type: Edm.DateTimeOffset
-      display_name: "Last active alert time (Last Updated On)"
-      description: "Last Updated time of rollup field Last active alert time."
-      iscomputed: false
-      isreadonly: true
-    - name: msdyn_lastalerttime_state
-      type: Edm.Int32
-      display_name: "Last active alert time (State)"
-      description: "State of rollup field Last active alert time."
-      iscomputed: false
-      isreadonly: true
     - name: msdyn_lastcommandsenttime
       type: Edm.DateTimeOffset
       display_name: "Last Command Sent Time"
@@ -372,9 +325,6 @@ collection_valued_navigation_properties:
   - name: msdyn_customerasset_Tasks
     type: Microsoft.Dynamics.CRM.task
     partner: regardingobjectid_msdyn_customerasset_task
-  - name: msdyn_incident_msdyn_customerasset
-    type: Microsoft.Dynamics.CRM.incident
-    partner: msdyn_incident_msdyn_customerasset
   - name: msdyn_msdyn_customerasset_msdyn_agreementbookingincident_CustomerAsset
     type: Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
     partner: msdyn_customerasset
@@ -452,18 +402,6 @@ solutions:
     description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-  - type: Microsoft.Dynamics.CRM.msdyn_AssetCommon
-    description: "This solution contains the Customer Asset entity and the attributes commonly used across Asset related scenarios within Dynamics 365. It is introduced as a precursor for any solution with work related to the Asset entity."
-  - type: Microsoft.Dynamics.CRM.msdyn_CFS_Patch_1
-    description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
-  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerService
-    description: "Use Connected Customer Service to monitor connected devices to make sure your customer’s equipment is functioning properly. If a piece of equipment fails, you’ll receive a notification so that you can troubleshoot the problem remotely."
-  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerServiceAsset
-    description: "Connected Customer Service Asset for Dynamics 365 Solution"
-  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_11
-    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-  - type: Microsoft.Dynamics.CRM.msdyn_IoTAssetCommon
-    description: "Enables IoT Scenarios for Device"
 # This entity has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

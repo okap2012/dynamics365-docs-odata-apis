@@ -4,10 +4,10 @@ name: "Knowledge Management Online Features"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Knowledge Management Online Features Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 0a9606a2-5deb-48dd-bbb4-6615c7ab044f
+  ms.assetid: 823ed7ad-6976-45e4-bc7a-3ae598bf9ec3
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 knowledge management Online Features"
  unique_name: msdynce_KnowledgeManagementOnlineFeatures
- version: "9.0.1.1128"
+ version: "9.0.1.1092"
  customization_prefix: msdyn
 # This solution includes no entities.
 # This solution includes no actions.

@@ -4,7 +4,7 @@ name: "OlderThanXDays"
 type: queryfunction
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement OlderThanXDays Query Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b8013e5d-56ea-459e-9c6f-fe853465949c

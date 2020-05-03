@@ -4,7 +4,7 @@ name: "OptionSetType"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement OptionSetType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 47ff322a-813f-4831-8a92-dcc484a0114f
@@ -33,6 +33,10 @@ usedby:
   description: "The following use the OptionSetType EnumType."
   usedby_items:
   - name: Microsoft.Dynamics.CRM.OptionSetMetadataBase
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexBooleanOptionSetMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexOptionSetMetadata
     used_as: Property
 # This enum type has no remarks.
 href_see_also:

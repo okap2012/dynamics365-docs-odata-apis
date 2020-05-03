@@ -4,7 +4,7 @@ name: "msdyn_JsonGetStringResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_JsonGetStringResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: d7385493-7826-4390-89e0-37ae9902d294

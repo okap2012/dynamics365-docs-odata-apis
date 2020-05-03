@@ -4,7 +4,7 @@ name: "QueryMultipleSchedulesResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement QueryMultipleSchedulesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: e1d92433-0dd8-4549-8282-425183ee9611

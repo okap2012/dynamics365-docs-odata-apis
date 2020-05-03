@@ -4,7 +4,7 @@ name: "RetrieveLicenseInfoResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveLicenseInfoResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: c112bc8f-75a1-483d-9135-81bdb5fc1a12

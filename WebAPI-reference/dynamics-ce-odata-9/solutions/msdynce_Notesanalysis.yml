@@ -4,10 +4,10 @@ name: "Notes analysis"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Notes analysis Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 6b5d7d9c-1248-49bf-976c-ed605433e1ed
+  ms.assetid: d90fc80c-883d-41c9-acd2-119c915d2bbc
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Suggests actions for notes and posts on the timeline wall"
  unique_name: msdynce_Notesanalysis
- version: "9.0.1.70878"
+ version: "9.0.1.70947"
  customization_prefix: msdyn
 # This solution includes no entities.
 # This solution includes no actions.

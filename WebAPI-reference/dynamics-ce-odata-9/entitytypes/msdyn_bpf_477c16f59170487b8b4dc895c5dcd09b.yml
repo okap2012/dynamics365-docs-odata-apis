@@ -4,7 +4,7 @@ name: "msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 1f24db67-311f-4d63-8e21-0517aa6d414e
@@ -240,8 +240,6 @@ solutions:
   description: "The following solutions include the msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b entity type."
   solution_items:
   - type: Microsoft.Dynamics.CRM.ConnectedFieldService
-    description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
-  - type: Microsoft.Dynamics.CRM.msdyn_CFS_Patch_1
     description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
 # This entity has no remarks.
 href_see_also:

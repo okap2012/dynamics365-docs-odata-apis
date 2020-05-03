@@ -4,7 +4,7 @@ name: "DeleteAndPromoteResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement DeleteAndPromoteResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b532b76d-15f5-4706-8c9e-5aa32f0a6ca6

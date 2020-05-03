@@ -4,10 +4,10 @@ name: "Sales Patch"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Sales Patch Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: bf696089-9013-4979-adb4-14cda927bcb2
+  ms.assetid: 9e99afa8-64cc-41d2-a999-0c1b3967f374
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,12 +17,14 @@ header:
  description: "Patch for Dynamics 365 workload for sales."
  unique_name: msdynce_SalesPatch
  version: "9.0.1904.3002"
- customization_prefix: msdynce
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:
    - type: Microsoft.Dynamics.CRM.account
      description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.adminsettingsentity
+     description: ""
    - type: Microsoft.Dynamics.CRM.appointment
      description: "Commitment representing a time interval with start/end times and duration."
    - type: Microsoft.Dynamics.CRM.contact

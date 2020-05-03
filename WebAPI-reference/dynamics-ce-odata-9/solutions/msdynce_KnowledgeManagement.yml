@@ -4,10 +4,10 @@ name: "Knowledge Management"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Knowledge Management Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 6431e17e-b1ac-4bcd-bfd8-ad689e16f48e
+  ms.assetid: 618a6a89-0e5c-4cff-87d6-100ad61542ec
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,7 +17,7 @@ header:
  description: "Dynamics 365 workload for knowledge management."
  unique_name: msdynce_KnowledgeManagement
  version: "9.0.1.33"
- customization_prefix: none
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

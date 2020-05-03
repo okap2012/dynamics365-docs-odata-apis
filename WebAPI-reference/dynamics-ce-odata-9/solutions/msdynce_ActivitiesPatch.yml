@@ -4,10 +4,10 @@ name: "Activities Patch"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Activities Patch Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: f1fd5065-0066-4ca0-accf-79f92ec7e267
+  ms.assetid: ea8c99fd-5b85-48e6-8eac-9ddd10f1ac5a
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,8 +16,8 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Patch for Dynamics 365 workload for activities."
  unique_name: msdynce_ActivitiesPatch
- version: "9.0.20032.200305002"
- customization_prefix: none
+ version: "9.0.20034.200323002"
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

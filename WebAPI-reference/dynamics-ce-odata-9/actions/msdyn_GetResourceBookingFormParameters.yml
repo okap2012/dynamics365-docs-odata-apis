@@ -4,7 +4,7 @@ name: "msdyn_GetResourceBookingFormParameters"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetResourceBookingFormParameters Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 9dd88f78-6c45-4b9a-87aa-66a0deb1253c

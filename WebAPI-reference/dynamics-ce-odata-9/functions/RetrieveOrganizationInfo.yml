@@ -4,7 +4,7 @@ name: "RetrieveOrganizationInfo"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveOrganizationInfo Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 234d3e59-cb4a-42c3-beff-df1e2d30567c

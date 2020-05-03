@@ -4,7 +4,7 @@ name: "DateTimeFormat"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement DateTimeFormat EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 39e23353-d152-4f0a-8d7c-a3491fba431b
@@ -27,6 +27,8 @@ usedby:
   description: "The following use the DateTimeFormat EnumType."
   usedby_items:
   - name: Microsoft.Dynamics.CRM.DateTimeAttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexDateTimeAttributeMetadata
     used_as: Property
 # This enum type has no remarks.
 href_see_also:

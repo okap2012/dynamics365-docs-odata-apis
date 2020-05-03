@@ -4,7 +4,7 @@ name: "UtcTimeFromLocalTime"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement UtcTimeFromLocalTime Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: bffc7d84-43f8-47f7-8c58-8a8d8b57a204

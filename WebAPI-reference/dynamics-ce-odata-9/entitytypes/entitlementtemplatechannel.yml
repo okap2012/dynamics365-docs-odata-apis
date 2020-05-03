@@ -4,7 +4,7 @@ name: "entitlementtemplatechannel"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement entitlementtemplatechannel EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 68ee3b42-f709-4a8d-977e-4dcc0c3d3104
@@ -45,8 +45,6 @@ properties:
           label: "Facebook"
         - value: 3986
           label: "Twitter"
-        - value: 700610000
-          label: "IoT"
     - name: createdon
       type: Edm.DateTimeOffset
       display_name: "Created On"

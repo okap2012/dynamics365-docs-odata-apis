@@ -4,7 +4,7 @@ name: "DeliverImmediatePromoteEmail"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement DeliverImmediatePromoteEmail Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: d33ae0f0-4e16-4456-b0ba-4b4c7881a70d

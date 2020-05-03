@@ -4,7 +4,7 @@ name: "AddUserToRecordTeamResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement AddUserToRecordTeamResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b7227b0c-b6a5-4a78-8e21-ce2df7cef793

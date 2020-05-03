@@ -4,7 +4,7 @@ name: "solution"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement solution EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 4dd9f73e-8d40-4f80-ade4-a65fabf7f7b8
@@ -232,6 +232,9 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: FK_CanvasApp_Solution
+    type: Microsoft.Dynamics.CRM.canvasapp
+    partner: FK_CanvasApp_Solution
   - name: regardingobjectid_fileattachment_solution
     type: Microsoft.Dynamics.CRM.fileattachment
     partner: FileAttachment_Solution

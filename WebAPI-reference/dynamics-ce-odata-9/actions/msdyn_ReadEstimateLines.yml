@@ -4,7 +4,7 @@ name: "msdyn_ReadEstimateLines"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_ReadEstimateLines Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b151da0e-8225-4f28-a852-aa3ec6e553ff

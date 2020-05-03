@@ -4,7 +4,7 @@ name: "RelationshipQueryExpression"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RelationshipQueryExpression ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: a11e233c-d4ab-45b0-bb47-03b9e6cb501b

@@ -4,7 +4,7 @@ name: "PrivilegeDepth"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement PrivilegeDepth EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 056ac66a-95d7-4a5f-bdb5-2782d6ec6c14

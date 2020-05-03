@@ -4,7 +4,7 @@ name: "RemovePrivilegeRole"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RemovePrivilegeRole Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 27dcf697-2340-4d9e-9f52-0c802987644b

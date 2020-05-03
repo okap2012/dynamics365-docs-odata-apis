@@ -4,7 +4,7 @@ name: "QueryExpression"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement QueryExpression ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 1fafe641-bea4-4033-869c-593539b5a497
@@ -85,6 +85,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.BulkDelete
     used_as: Parameter
+  - name: Microsoft.Dynamics.CRM.SyncBulkOperation
+    used_as: Parameter
+  - name: Microsoft.Dynamics.CRM.FetchXmlToQueryExpressionResponse
+    used_as: Property
 # This complex type has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

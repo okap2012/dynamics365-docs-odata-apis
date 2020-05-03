@@ -4,7 +4,7 @@ name: "discounttype"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement discounttype EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: cd5556b4-b520-4d2f-a92d-ebb21794de93
@@ -207,6 +207,8 @@ solutions:
     description: "Patch for Dynamics 365 workload for sales."
   - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch201904
     description: "Dynamics 365 workload for Sales Patch Version 2."
+  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
+    description: "Dynamics 365 workload for third patch of Sales."
 # This entity has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

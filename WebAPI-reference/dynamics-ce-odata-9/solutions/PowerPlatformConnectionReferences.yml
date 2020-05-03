@@ -4,10 +4,10 @@ name: "Power Platform Connection References"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Power Platform Connection References Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: a94cc83d-677b-4f20-b8c5-a951193ea6eb
+  ms.assetid: 3d98d7f2-a8d6-4b88-b4b8-aecb50382ec7
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,8 +17,12 @@ header:
  description: "Power Platform Connection References Solution."
  unique_name: PowerPlatformConnectionReferences
  version: "1.0.1.0"
- customization_prefix: none
-# This solution includes no entities.
+ customization_prefix: 
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.connectionreference
+     description: ""
 # This solution includes no actions.
 # This solution has no remarks.
 href_see_also:

@@ -4,7 +4,7 @@ name: "BusinessNotificationParameter"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement BusinessNotificationParameter ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: efd8ce7c-fa2c-4183-9bed-94887373e130

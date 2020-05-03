@@ -4,7 +4,7 @@ name: "AttributeRequiredLevel"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement AttributeRequiredLevel EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 270cc6ff-d3c9-4801-b617-56ad55392979

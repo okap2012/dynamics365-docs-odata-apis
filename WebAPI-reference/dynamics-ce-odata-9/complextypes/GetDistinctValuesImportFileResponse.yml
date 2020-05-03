@@ -4,7 +4,7 @@ name: "GetDistinctValuesImportFileResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement GetDistinctValuesImportFileResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 11dfbbc6-4e70-4c72-b546-883831747046

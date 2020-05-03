@@ -4,7 +4,7 @@ name: "calendar"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement calendar EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: eaae22ed-6651-48a5-b5d9-b7be3d53b8da
@@ -184,9 +184,6 @@ collection_valued_navigation_properties:
   - name: calendar_services
     type: Microsoft.Dynamics.CRM.service
     partner: calendarid_calendar
-  - name: calendar_slaitem
-    type: Microsoft.Dynamics.CRM.slaitem
-    partner: businesshoursid
   - name: calendar_system_users
     type: Microsoft.Dynamics.CRM.systemuser
     partner: calendarid

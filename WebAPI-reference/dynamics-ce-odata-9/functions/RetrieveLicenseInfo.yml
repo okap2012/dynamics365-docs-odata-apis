@@ -4,7 +4,7 @@ name: "RetrieveLicenseInfo"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveLicenseInfo Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: a4a7b05f-bad1-4695-9197-46d80803c2d0

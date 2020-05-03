@@ -4,10 +4,10 @@ name: "Marketing Sales Patch"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Marketing Sales Patch Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 2a8bcd66-bb91-48e7-8c51-02a603dbd2ef
+  ms.assetid: 498f410b-87a1-48c2-846a-1b1b31378117
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,8 +16,8 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_MarketingSalesPatch
- version: "9.0.1912.5013"
- customization_prefix: msdynce
+ version: "9.0.1912.5021"
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

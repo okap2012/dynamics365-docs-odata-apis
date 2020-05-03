@@ -4,7 +4,7 @@ name: "RecentlyViewedRecordType"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RecentlyViewedRecordType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 31c8fa63-2039-4110-9693-9653fce5e879
@@ -29,7 +29,11 @@ members:
   - description: ""
     name: "Invalid"
     value: -1
-
+usedby:
+  description: "The following use the RecentlyViewedRecordType EnumType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.RecentItem
+    used_as: Property
 # This enum type has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

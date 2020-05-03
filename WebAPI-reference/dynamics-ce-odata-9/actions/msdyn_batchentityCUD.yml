@@ -4,7 +4,7 @@ name: "msdyn_batchentityCUD"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_batchentityCUD Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 15f09529-ab0a-4816-8c83-04f3b55f1e78

@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.EntityTypeIndex
 name: Web API EntityType Reference
 title: "Common Data Service and 365 Customer Engagement Web API EntityType Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: ed96bb52-43bc-4b4c-a7e2-f47969238bf5
@@ -36,6 +36,9 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.activitypointer
   displayName: "Activity"
   description: "Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar."
+- type: Microsoft.Dynamics.CRM.adminsettingsentity
+  displayName: "admin_settings_entity"
+  description: ""
 - type: Microsoft.Dynamics.CRM.annotation
   displayName: "Note"
   description: "Note that is attached to one or more objects, including other notes."
@@ -69,6 +72,12 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.attachment
   displayName: "Attachment"
   description: "Attachment for an email activity."
+- type: Microsoft.Dynamics.CRM.attribute
+  displayName: "Attribute"
+  description: ""
+- type: Microsoft.Dynamics.CRM.attributeimageconfig
+  displayName: "Image Attribute Configuration"
+  description: "Store configuration for each image attribute"
 - type: Microsoft.Dynamics.CRM.audit
   displayName: "Auditing"
   description: "Track changes to records for analysis, record keeping, and compliance."
@@ -120,6 +129,9 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.calendarrule
   displayName: "Calendar Rule"
   description: "Defines free/busy times for a service and for resources or resource groups, such as working, non-working, vacation, and blocked."
+- type: Microsoft.Dynamics.CRM.callbackregistration
+  displayName: "Callback Registration"
+  description: "Callback Registration that stores configuration."
 - type: Microsoft.Dynamics.CRM.campaign
   displayName: "Campaign"
   description: "Container for campaign activities and responses, sales literature, products, and lists to create, plan, execute, and track the results of a specific marketing campaign through its life."
@@ -135,6 +147,9 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.campaignresponse
   displayName: "Campaign Response"
   description: "Response from an existing or a potential new customer for a campaign."
+- type: Microsoft.Dynamics.CRM.canvasapp
+  displayName: "Canvas App"
+  description: "An application built through a canvas-based editing experience."
 - type: Microsoft.Dynamics.CRM.category
   displayName: "Category"
   description: "Entity for categorizing records to make it easier for your customers to find them on portals and through search."
@@ -162,9 +177,15 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.connection
   displayName: "Connection"
   description: "Relationship between two entities."
+- type: Microsoft.Dynamics.CRM.connectionreference
+  displayName: "Connection Reference"
+  description: ""
 - type: Microsoft.Dynamics.CRM.connectionrole
   displayName: "Connection Role"
   description: "Role describing a relationship between a two records."
+- type: Microsoft.Dynamics.CRM.connector
+  displayName: "Connector"
+  description: "Connector Entity to support Solutioning Integration"
 - type: Microsoft.Dynamics.CRM.constraintbasedgroup
   displayName: "Resource Group"
   description: "Group or collection of people, equipment, and/or facilities that can be scheduled."
@@ -273,9 +294,30 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.entitlementtemplateproducts
   displayName: "Entitlement Template Product"
   description: ""
+- type: Microsoft.Dynamics.CRM.entity
+  displayName: "Entity"
+  description: ""
+- type: Microsoft.Dynamics.CRM.entityanalyticsconfig
+  displayName: "Entity Analytics Config"
+  description: "This entity contains information about which entities are enabled for Azure Data Lake Services integration"
 - type: Microsoft.Dynamics.CRM.entitydataprovider
   displayName: "Virtual Entity Data Provider"
   description: "Developers can register plug-ins on a data provider to enable data access for virtual entities in the system."
+- type: Microsoft.Dynamics.CRM.entityimageconfig
+  displayName: "Entity Image Configuration"
+  description: "Store image configuration for each entity"
+- type: Microsoft.Dynamics.CRM.entitykey
+  displayName: "Entity Key"
+  description: ""
+- type: Microsoft.Dynamics.CRM.entityrelationship
+  displayName: "Entity Relationship"
+  description: ""
+- type: Microsoft.Dynamics.CRM.environmentvariabledefinition
+  displayName: "Environment Variable Definition"
+  description: "Contains information about the settable variable: its type, default value, and etc."
+- type: Microsoft.Dynamics.CRM.environmentvariablevalue
+  displayName: "Environment Variable Value"
+  description: "Holds the value for the associated EnvironmentVariableDefinition entity."
 - type: Microsoft.Dynamics.CRM.equipment
   displayName: "Facility/Equipment"
   description: "Resource that can be scheduled."
@@ -303,6 +345,9 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.fixedmonthlyfiscalcalendar
   displayName: "Fixed Monthly Fiscal Calendar"
   description: "Fixed monthly fiscal calendar of an organization. A span of time during which the financial activities of an organization are calculated."
+- type: Microsoft.Dynamics.CRM.flowsession
+  displayName: "Flow Session"
+  description: "Entity to store the information that is generated when a modern flow or UI flow runs."
 - type: Microsoft.Dynamics.CRM.goal
   displayName: "Goal"
   description: "Target objective for a user or a team for a specified time period."
@@ -465,6 +510,60 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.msdyn_agreementsubstatus
   displayName: "Agreement Substatus"
   description: "Specify custom agreement substatuses, which can be used to specify the current agreement status more precisely."
+- type: Microsoft.Dynamics.CRM.msdyn_aibdataset
+  displayName: "AI Builder Dataset"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aibdatasetfile
+  displayName: "AI Builder Dataset File"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aibdatasetrecord
+  displayName: "AI Builder Dataset Record"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aibdatasetscontainer
+  displayName: "AI Builder Datasets Container"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aibfile
+  displayName: "AI Builder File"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aibfileattacheddata
+  displayName: "AI Builder File Attached Data"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aiconfiguration
+  displayName: "AI Configuration"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aifptrainingdocument
+  displayName: "AI Form Processing Document"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aimodel
+  displayName: "AI Model"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aiodimage
+  displayName: "AI Object Detection Image"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aiodlabel
+  displayName: "AI Object Detection Label"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aiodtrainingboundingbox
+  displayName: "AI Object Detection Bounding Box"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aiodtrainingimage
+  displayName: "AI Object Detection Image Mapping"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_aitemplate
+  displayName: "AI Template"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_analysiscomponent
+  displayName: "Analysis Component"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_analysisjob
+  displayName: "Analysis Job"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_analysisresult
+  displayName: "Analysis Result"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_analysisresultdetail
+  displayName: "Analysis Result Detail"
+  description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_approval
   displayName: "Project Service Approval"
   description: "Container for approvals."
@@ -567,6 +666,9 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
   displayName: "Field Service Setting"
   description: "Settings controlling functionality related to Field Service"
+- type: Microsoft.Dynamics.CRM.msdyn_fieldserviceslaconfiguration
+  displayName: "Field Service SLA Configuration"
+  description: "Allows configuration of SLA Type and appropriate behavior based on creation and update of SLA KPI Instances related to Field Service entities."
 - type: Microsoft.Dynamics.CRM.msdyn_fieldservicesystemjob
   displayName: "Field Service System Job"
   description: "An internal entity used to track field service system jobs."
@@ -885,6 +987,9 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
   displayName: "RTV Substatus"
   description: "Specify custom RTV substatuses, which can be used to specify the current RTV status more precisely."
+- type: Microsoft.Dynamics.CRM.msdyn_salesinsightssettings
+  displayName: "salesinsightssettings"
+  description: "Storing settings for studio feature"
 - type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
   displayName: "Schedule Board Setting"
   description: "To store settings of SB by user & tabs"
@@ -897,6 +1002,12 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.msdyn_shipvia
   displayName: "Ship Via"
   description: "Specify the different shipping methods used."
+- type: Microsoft.Dynamics.CRM.msdyn_siconfig
+  displayName: "siconfig"
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_sikeyvalueconfig
+  displayName: "SI Key Value Config"
+  description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
   displayName: "System User Scheduler Setting"
   description: "Stores user-specific settings for the schedule board."
@@ -906,6 +1017,9 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.msdyn_taxcodedetail
   displayName: "Tax Code Detail"
   description: "In this entity you can link multiple tax codes together to form a group of tax codes to be charged for the customer to form the total tax."
+- type: Microsoft.Dynamics.CRM.msdyn_teamscollaboration
+  displayName: "Microsoft Teams Collaboration entity"
+  description: "Entity which stores collaboration data of Dynamics 365 with Microsoft Teams"
 - type: Microsoft.Dynamics.CRM.msdyn_timeentry
   displayName: "Time Entry"
   description: "Entity used  for time entry."
@@ -1224,6 +1338,12 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.serviceendpoint
   displayName: "Service Endpoint"
   description: "Service endpoint that can be contacted."
+- type: Microsoft.Dynamics.CRM.serviceplan
+  displayName: "Service Plan"
+  description: "Service Plan"
+- type: Microsoft.Dynamics.CRM.serviceplanappmodules
+  displayName: ""
+  description: ""
 - type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
   displayName: "Document Location"
   description: "Document libraries or folders on a SharePoint server from where documents can be managed in Microsoft Dynamics 365."

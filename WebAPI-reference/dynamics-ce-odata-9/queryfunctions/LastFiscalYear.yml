@@ -4,7 +4,7 @@ name: "LastFiscalYear"
 type: queryfunction
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement LastFiscalYear Query Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 77c24f91-ea20-4326-b338-bc503889d9f4

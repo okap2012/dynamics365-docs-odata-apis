@@ -4,7 +4,7 @@ name: "LookupEntityInfo"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement LookupEntityInfo ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: d9e637a2-9583-420d-89bc-847f1cd4bc7d

@@ -4,10 +4,10 @@ name: "AISolution"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement AISolution Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 040e95a9-be5f-4a53-9366-eebe484b9857
+  ms.assetid: 1f9ad7df-4c4c-4479-a51d-5e370de5db4a
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,9 +16,17 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: msdyn_AISolution
- version: "2.3.1.10"
- customization_prefix: none
-# This solution includes no entities.
+ version: "2.3.4.13"
+ customization_prefix: 
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_aiconfiguration
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_aimodel
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_aitemplate
+     description: ""
 # This solution includes no actions.
 # This solution has no remarks.
 href_see_also:

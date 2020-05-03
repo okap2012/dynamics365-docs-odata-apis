@@ -4,10 +4,10 @@ name: "Talking points"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Talking points Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 9930413b-62cc-4f09-ad0c-0b37237145af
+  ms.assetid: 7330db97-cad4-4bce-b28b-412716ea58ab
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Intelligently extracts talking points with your contact, from your exchange mailbox"
  unique_name: msdynce_Talkingpoints
- version: "9.0.1.70921"
+ version: "9.0.1.70947"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."

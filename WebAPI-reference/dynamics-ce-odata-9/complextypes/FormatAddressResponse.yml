@@ -4,7 +4,7 @@ name: "FormatAddressResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement FormatAddressResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 0efb5df7-3379-45f7-8857-2bec0d20d060

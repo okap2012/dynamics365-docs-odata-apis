@@ -4,7 +4,7 @@ name: "msdyn_CorrectInvoice"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_CorrectInvoice Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 8a1eb4cd-d71c-4fc0-9932-879d28686a52

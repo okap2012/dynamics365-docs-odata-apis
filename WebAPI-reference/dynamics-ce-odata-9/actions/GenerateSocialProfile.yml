@@ -4,7 +4,7 @@ name: "GenerateSocialProfile"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement GenerateSocialProfile Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 0a5e4dcc-66be-417c-b6aa-3abaeebb25d6

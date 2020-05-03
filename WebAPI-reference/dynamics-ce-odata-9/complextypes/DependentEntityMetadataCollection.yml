@@ -4,7 +4,7 @@ name: "DependentEntityMetadataCollection"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement DependentEntityMetadataCollection ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 8f54dfd4-0344-42c1-b4b7-8724cc1030a5
@@ -25,7 +25,13 @@ properties:
     description: ""
     iscollection: true
 # This complex type doesn't have any navigation properties.
-
+usedby:
+  description: "The following use the DependentEntityMetadataCollection ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.QueryWithEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityRelationsWithDependantEntityMetadata
+    used_as: Property
 # This complex type has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

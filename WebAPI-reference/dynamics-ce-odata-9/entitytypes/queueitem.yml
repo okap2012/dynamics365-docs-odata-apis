@@ -4,7 +4,7 @@ name: "queueitem"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement queueitem EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: bdb8e12f-1f2d-40ce-8a80-ed6efd71edd2
@@ -65,84 +65,78 @@ properties:
       iscomputed: false
       isreadonly: true
       options:
-        - value: 10203
-          label: "Agreement Booking Setup"
-        - value: 10198
-          label: "Agreement Booking Date"
-        - value: 10206
-          label: "Agreement Invoice Setup"
-        - value: 10204
-          label: "Agreement Invoice Date"
-        - value: 10178
-          label: "Resource Request"
-        - value: 10116
-          label: "Project Service Approval"
-        - value: 10112
-          label: "Time Group Detail"
-        - value: 10160
-          label: "Project Task"
-        - value: 10155
-          label: "Project"
-        - value: 10228
-          label: "Inventory Adjustment"
-        - value: 10333
-          label: "Ongoing conversation"
-        - value: 10282
+        - value: 4402
+          label: "Campaign Activity"
+        - value: 10089
+          label: "Booking Alert"
+        - value: 10201
           label: "IoT Alert"
-        - value: 10348
-          label: "Session"
-        - value: 10339
-          label: "Conversation"
-        - value: 10278
-          label: "Work Order Service Task"
-        - value: 10271
+        - value: 10221
+          label: "Project Service Approval"
+        - value: 4406
+          label: "Quick Campaign"
+        - value: 10190
           label: "Work Order"
-        - value: 10231
-          label: "Inventory Transfer"
-        - value: 10277
+        - value: 10080
+          label: "Forms Pro survey response"
+        - value: 10123
+          label: "Agreement Invoice Date"
+        - value: 10260
+          label: "Project"
+        - value: 10283
+          label: "Resource Request"
+        - value: 10147
+          label: "Inventory Adjustment"
+        - value: 4204
+          label: "Fax"
+        - value: 10196
           label: "Work Order Service"
-        - value: 10274
-          label: "Work Order Incident"
-        - value: 10111
+        - value: 4216
+          label: "Social Activity"
+        - value: 10122
+          label: "Agreement Booking Setup"
+        - value: 4207
+          label: "Letter"
+        - value: 10112
           label: "Fulfillment Preference"
         - value: 4251
           label: "Recurring Appointment"
-        - value: 4200
-          label: "Activity"
-        - value: 4212
-          label: "Task"
-        - value: 4210
-          label: "Phone Call"
-        - value: 4207
-          label: "Letter"
-        - value: 4201
-          label: "Appointment"
-        - value: 4204
-          label: "Fax"
-        - value: 9953
-          label: "Knowledge Article"
-        - value: 4216
-          label: "Social Activity"
-        - value: 4202
-          label: "Email"
-        - value: 10079
-          label: "Forms Pro survey invite"
-        - value: 4214
-          label: "Service Activity"
-        - value: 10088
-          label: "Booking Alert"
-        - value: 10080
-          label: "Forms Pro survey response"
-        - value: 112
-          label: "Case"
-        - value: 4402
-          label: "Campaign Activity"
         - value: 10011
           label: "Knowledge Article Template"
-        - value: 4406
-          label: "Quick Campaign"
         - value: 4401
           label: "Campaign Response"
+        - value: 10150
+          label: "Inventory Transfer"
+        - value: 4201
+          label: "Appointment"
+        - value: 10113
+          label: "Time Group Detail"
+        - value: 10265
+          label: "Project Task"
+        - value: 4212
+          label: "Task"
+        - value: 10125
+          label: "Agreement Invoice Setup"
+        - value: 4214
+          label: "Service Activity"
+        - value: 10117
+          label: "Agreement Booking Date"
+        - value: 10197
+          label: "Work Order Service Task"
+        - value: 10193
+          label: "Work Order Incident"
+        - value: 112
+          label: "Case"
+        - value: 10079
+          label: "Forms Pro survey invite"
+        - value: 4210
+          label: "Phone Call"
+        - value: 4202
+          label: "Email"
+        - value: 9953
+          label: "Knowledge Article"
+        - value: 4200
+          label: "Activity"
     - name: overriddencreatedon
       type: Edm.DateTimeOffset
       display_name: "Record Created On"
@@ -234,9 +228,6 @@ lookup_properties:
     - objectid_incident
     - objectid_msdyn_timegroup
     - objectid_msdyn_timegroupdetail
-    - objectid_msdyn_project
-    - objectid_msdyn_projecttask
-    - objectid_msdyn_resourcerequest
     - objectid_msdyn_agreementbookingdate
     - objectid_msdyn_agreementbookingsetup
     - objectid_msdyn_agreementinvoicedate
@@ -248,7 +239,9 @@ lookup_properties:
     - objectid_msdyn_workorderservice
     - objectid_msdyn_workorderservicetask
     - objectid_msdyn_iotalert
-    - objectid_msdyn_liveconversation
+    - objectid_msdyn_project
+    - objectid_msdyn_projecttask
+    - objectid_msdyn_resourcerequest
     description: "Choose the activity, case, or article assigned to the queue."
   - name: _organizationid_value
     single_valued_navigation_property:

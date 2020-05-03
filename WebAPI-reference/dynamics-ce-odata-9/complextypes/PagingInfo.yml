@@ -4,7 +4,7 @@ name: "PagingInfo"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement PagingInfo ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 36db5e90-14e7-460b-a2f2-e01854643ef6
@@ -55,6 +55,10 @@ usedby:
   - name: Microsoft.Dynamics.CRM.RetrieveRecordChangeHistory
     used_as: Parameter
   - name: Microsoft.Dynamics.CRM.QueryExpression
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.QueryByAttribute
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.LookupEntityInfo
     used_as: Property
 # This complex type has no remarks.
 href_see_also:

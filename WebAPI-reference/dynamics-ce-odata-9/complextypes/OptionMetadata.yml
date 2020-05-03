@@ -4,7 +4,7 @@ name: "OptionMetadata"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement OptionMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b9af4ea3-6e65-4100-8a99-4a3edf92158f
@@ -81,6 +81,12 @@ usedby:
   - name: Microsoft.Dynamics.CRM.BooleanOptionSetMetadata
     used_as: Property
   - name: Microsoft.Dynamics.CRM.OptionSetMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexBooleanOptionSetMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexBooleanOptionSetMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexOptionSetMetadata
     used_as: Property
 # This complex type has no remarks.
 href_see_also:

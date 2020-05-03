@@ -4,7 +4,7 @@ name: "RetrievePrincipalAttributePrivilegesResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrievePrincipalAttributePrivilegesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b15a6426-348f-4029-97cb-f1840487f44c

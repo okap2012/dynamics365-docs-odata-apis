@@ -4,10 +4,10 @@ name: "AutoDataCapture"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement AutoDataCapture Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 82f914a9-12ee-4728-bca1-1f720b7367f5
+  ms.assetid: f3304004-4a83-41ec-86ce-98e8c295357f
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"

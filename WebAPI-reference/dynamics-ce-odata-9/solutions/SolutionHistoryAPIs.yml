@@ -4,10 +4,10 @@ name: "Microsoft Dynamics 365 Solution History APIs"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Microsoft Dynamics 365 Solution History APIs Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: e5476ab7-9b05-460f-a948-aba9f0eb8ad9
+  ms.assetid: 7f647f09-1212-4677-aa09-d5406e4f7e8c
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: SolutionHistoryAPIs
- version: "9.1.0.10"
+ version: "9.1.0.12"
  customization_prefix: msdyn
 # This solution includes no entities.
 # This solution includes no actions.

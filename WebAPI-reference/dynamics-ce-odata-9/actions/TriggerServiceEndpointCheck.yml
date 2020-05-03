@@ -4,7 +4,7 @@ name: "TriggerServiceEndpointCheck"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement TriggerServiceEndpointCheck Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: eb92b321-933a-4aaa-8b13-d19cae17f4b4

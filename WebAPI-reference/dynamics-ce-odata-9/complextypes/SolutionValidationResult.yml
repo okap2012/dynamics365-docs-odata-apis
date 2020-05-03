@@ -4,7 +4,7 @@ name: "SolutionValidationResult"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement SolutionValidationResult ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 065b1d6a-88c7-4ee8-a9b8-b693ca8452d5

@@ -4,10 +4,10 @@ name: "Service Upgrade Scripts"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Service Upgrade Scripts Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 19aa2f14-4ed5-4202-90bb-1f9f14c91c48
+  ms.assetid: 3951e2d7-ad4d-4b3a-bf4e-d5274dd2a95f
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Contains components used during the upgrade process for Service"
  unique_name: msdynce_ServiceUpgradeScripts
- version: "9.0.20034.2061"
+ version: "9.0.20031.1004"
  customization_prefix: msdyn
 # This solution includes no entities.
 # This solution includes no actions.

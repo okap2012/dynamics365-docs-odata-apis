@@ -4,7 +4,7 @@ name: "msdyn_MSProject_ReadProjectTeamMembersResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_MSProject_ReadProjectTeamMembersResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: fe145b72-7c1c-49ec-891c-74fed33001cd

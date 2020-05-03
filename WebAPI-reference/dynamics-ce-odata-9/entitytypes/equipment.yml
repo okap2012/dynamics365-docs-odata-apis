@@ -4,7 +4,7 @@ name: "equipment"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement equipment EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 36a416ed-9684-451c-8dad-7e918f49e3e1
@@ -162,10 +162,6 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who last modified the equipment."
-  - name: _msdyn_organizationalunitid_value
-    single_valued_navigation_property:
-    - msdyn_organizationalunitid
-    description: "Unique identifier for OrganizationalUnit associated with Equipment"
   - name: _organizationid_value
     single_valued_navigation_property:
     - organizationid
@@ -202,9 +198,6 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_equipment_modifiedonbehalfby
-  - name: msdyn_organizationalunitid
-    type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
-    partner: msdyn_organizationalunit_equipment
   - name: organizationid
     type: Microsoft.Dynamics.CRM.organization
     partner: organization_equipment
@@ -265,9 +258,6 @@ collection_valued_navigation_properties:
   - name: Equipment_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_equipment_syncerror
-  - name: msdyn_equipment_bookableresource_FacilityEquipmentId
-    type: Microsoft.Dynamics.CRM.bookableresource
-    partner: msdyn_facilityequipmentid
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the equipment entity type."
@@ -277,8 +267,6 @@ operations:
 solutions:
   description: "The following solutions include the equipment entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.msdynce_CoreServiceScheduling
-    description: "Dynamics 365 workload for service scheduling."
   - type: Microsoft.Dynamics.CRM.msdynce_Service
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911

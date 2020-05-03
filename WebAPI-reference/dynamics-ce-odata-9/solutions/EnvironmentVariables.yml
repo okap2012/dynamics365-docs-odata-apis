@@ -4,10 +4,10 @@ name: "Environment Variables"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Environment Variables Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 6506ac48-fb16-46a9-8cf9-b4b6eeccb55e
+  ms.assetid: 3ad12be6-5358-4b4c-9c4e-3c5104a4b94d
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,8 +17,14 @@ header:
 # This solution has no description.
  unique_name: EnvironmentVariables
  version: "1.0.2.7"
- customization_prefix: none
-# This solution includes no entities.
+ customization_prefix: 
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.environmentvariabledefinition
+     description: "Contains information about the settable variable: its type, default value, and etc."
+   - type: Microsoft.Dynamics.CRM.environmentvariablevalue
+     description: "Holds the value for the associated EnvironmentVariableDefinition entity."
 # This solution includes no actions.
 # This solution has no remarks.
 href_see_also:

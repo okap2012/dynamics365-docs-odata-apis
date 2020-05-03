@@ -4,7 +4,7 @@ name: "msdyn_GetProjectMapForContractLineResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetProjectMapForContractLineResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 40b941bc-70e8-43ed-87d3-dcdb9451ef54

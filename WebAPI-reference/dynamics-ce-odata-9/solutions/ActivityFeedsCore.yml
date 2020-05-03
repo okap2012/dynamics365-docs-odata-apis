@@ -4,10 +4,10 @@ name: "Activity Feeds"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Activity Feeds Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 3763e4b2-b575-417d-909a-a10bb3853af7
+  ms.assetid: 9e76c690-cf2c-49e7-a78b-e6c27bf9de5a
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"

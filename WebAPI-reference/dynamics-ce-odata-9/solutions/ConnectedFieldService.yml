@@ -4,10 +4,10 @@ name: "Connected Field Service for Microsoft Dynamics 365"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Connected Field Service for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 2df80bfe-74e8-49f8-b79b-63264297a06a
+  ms.assetid: 75694ab5-37c9-4120-89d2-a2bf3bec8755
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"

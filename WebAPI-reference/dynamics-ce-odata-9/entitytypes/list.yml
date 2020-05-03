@@ -4,7 +4,7 @@ name: "list"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement list EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: ace4973a-7d83-441d-a981-0556fcd2d9b4
@@ -387,6 +387,8 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.AddMemberList
     binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.AddMembersBatchList
+    binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.CopyDynamicListToStatic
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.CopyMembersList
@@ -399,6 +401,8 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.QualifyMemberList
     binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.RemoveListMembersList
+    binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RemoveMemberList
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess

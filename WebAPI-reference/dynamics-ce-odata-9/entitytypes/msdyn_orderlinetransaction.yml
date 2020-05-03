@@ -4,7 +4,7 @@ name: "msdyn_orderlinetransaction"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_orderlinetransaction EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 7f281bdd-9f3a-4125-a1fc-ca34124d8af2
@@ -248,8 +248,6 @@ properties:
           label: "Commission"
         - value: 690970001
           label: "Additional"
-        - value: 690970002
-          label: "Tax"
         - value: 192350000
           label: "Time"
         - value: 192350001
@@ -260,6 +258,8 @@ properties:
           label: "Milestone"
         - value: 192350004
           label: "Fee"
+        - value: 690970002
+          label: "Tax"
     - name: msdyn_transactiontypecode
       type: Edm.Int32
       display_name: "Transaction Type"
@@ -391,10 +391,6 @@ lookup_properties:
     single_valued_navigation_property:
     - msdyn_Project
     description: "Select the name of the project on the project contract estimate line."
-  - name: _msdyn_quotelinetransactionid_value
-    single_valued_navigation_property:
-    - msdyn_QuoteLineTransactionId
-    description: "Unique identifier for Quote Line Detail that Order Line Detail is created from."
   - name: _msdyn_resourcecategory_value
     single_valued_navigation_property:
     - msdyn_ResourceCategory
@@ -489,9 +485,6 @@ single_valued_navigation_properties:
   - name: msdyn_Project
     type: Microsoft.Dynamics.CRM.msdyn_project
     partner: msdyn_msdyn_project_msdyn_orderlinetransaction_Project
-  - name: msdyn_QuoteLineTransactionId
-    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
-    partner: msdyn_quotelinetransaction_msdyn_orderlinetransaction
   - name: msdyn_ResourceCategory
     type: Microsoft.Dynamics.CRM.bookableresourcecategory
     partner: msdyn_bookableresourcecategory_msdyn_orderlinetransaction_ResourceCategory
@@ -583,8 +576,6 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_orderlinetransaction entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
-    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
 # This entity has no remarks.

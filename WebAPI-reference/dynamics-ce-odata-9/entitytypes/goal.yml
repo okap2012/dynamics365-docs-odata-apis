@@ -4,7 +4,7 @@ name: "goal"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement goal EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: aba9bc0d-bb47-4fc7-965b-e206141537a4
@@ -872,8 +872,6 @@ operations:
 solutions:
   description: "The following solutions include the goal entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.FreeTrialBaseSolution2
-    description: "Solution to enhance out of the box Microsoft Dynamics CRM capabilities for the purpose of trial."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch

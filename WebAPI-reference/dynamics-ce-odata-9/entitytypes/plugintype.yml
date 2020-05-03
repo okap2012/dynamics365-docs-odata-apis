@@ -4,7 +4,7 @@ name: "plugintype"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement plugintype EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: a75e415c-022a-4304-9c48-6dc4dfe9b698

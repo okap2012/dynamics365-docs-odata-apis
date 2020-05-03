@@ -4,7 +4,7 @@ name: "RetrievePrincipalAttributePrivileges"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrievePrincipalAttributePrivileges Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 8319dc42-e40c-4888-9918-a54f6def7326

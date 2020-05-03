@@ -4,7 +4,7 @@ name: "msdyn_GetRequirementDemandResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetRequirementDemandResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 04cd40e1-e12d-49c2-b56f-6d207e2b7a29

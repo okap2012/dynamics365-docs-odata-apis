@@ -4,7 +4,7 @@ name: "CancelContract"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement CancelContract Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 558f0df0-4ba0-4e10-b466-b153377284d8

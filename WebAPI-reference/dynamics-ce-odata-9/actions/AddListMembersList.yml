@@ -4,7 +4,7 @@ name: "AddListMembersList"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement AddListMembersList Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 617c59e9-67d4-4e2e-8982-b9e9aa459b0b

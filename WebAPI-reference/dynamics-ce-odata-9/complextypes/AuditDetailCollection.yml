@@ -4,7 +4,7 @@ name: "AuditDetailCollection"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement AuditDetailCollection ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 83294001-276b-4b6d-9cd6-889404a43316

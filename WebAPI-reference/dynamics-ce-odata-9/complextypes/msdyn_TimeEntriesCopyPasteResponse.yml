@@ -4,7 +4,7 @@ name: "msdyn_TimeEntriesCopyPasteResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_TimeEntriesCopyPasteResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 506512b2-27a6-44e8-b30e-6c890ec66529

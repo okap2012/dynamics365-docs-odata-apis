@@ -4,10 +4,10 @@ name: "Marketing Service"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Marketing Service Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: f6f4c64c-3c75-4528-9d81-e677f11cc648
+  ms.assetid: f5938611-31fc-4ce3-9c4e-54c080649c11
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,7 +17,7 @@ header:
  description: "For internal use only."
  unique_name: msdynce_MarketingService
  version: "9.0.4.29"
- customization_prefix: msdynce
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

@@ -4,7 +4,7 @@ name: "DependentManyToManyRelationshipMetadata"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement DependentManyToManyRelationshipMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 15a3cc4d-c492-4c99-90cb-7291ae92519e
@@ -49,7 +49,11 @@ properties:
     description: ""
     iscollection: false
 # This complex type doesn't have any navigation properties.
-
+usedby:
+  description: "The following use the DependentManyToManyRelationshipMetadata ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.DependentRelationship
+    used_as: Property
 # This complex type has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

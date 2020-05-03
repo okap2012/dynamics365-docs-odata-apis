@@ -4,7 +4,7 @@ name: "AddSolutionComponent"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement AddSolutionComponent Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 1a24ced2-806b-4649-a5b6-ca155b7bd87e

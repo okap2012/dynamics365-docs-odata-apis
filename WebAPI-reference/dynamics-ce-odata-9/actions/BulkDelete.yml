@@ -4,7 +4,7 @@ name: "BulkDelete"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement BulkDelete Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: bae1666e-bfbf-492d-8285-8616930acc85

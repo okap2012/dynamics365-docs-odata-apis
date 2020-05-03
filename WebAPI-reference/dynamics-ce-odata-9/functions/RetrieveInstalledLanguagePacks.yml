@@ -4,7 +4,7 @@ name: "RetrieveInstalledLanguagePacks"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveInstalledLanguagePacks Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 7332a1c5-9a8b-46ee-92e3-491b9a6c8373

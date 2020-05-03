@@ -4,7 +4,7 @@ name: "CheckIncomingEmailResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement CheckIncomingEmailResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: c94b04d7-3303-4c0e-b58a-13dab57e8244

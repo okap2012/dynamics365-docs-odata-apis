@@ -4,7 +4,7 @@ name: "ConditionExpression"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement ConditionExpression ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 186ea866-25b3-4605-8874-6f4a5e4d1b46

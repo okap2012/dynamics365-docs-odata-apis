@@ -4,7 +4,7 @@ name: "XrmAggregateType"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement XrmAggregateType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 3e0d0cda-5c7f-4a32-a6a9-af0d1b1f09dd

@@ -4,7 +4,7 @@ name: "EntityRecordCountCollection"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement EntityRecordCountCollection ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: d7cf22a9-8dc2-49cb-9984-b8d536a0efa3

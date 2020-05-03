@@ -4,10 +4,10 @@ name: "OData v4 Data Provider"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement OData v4 Data Provider Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: f09c36ef-551e-4a3a-93ea-91e95a8348c6
+  ms.assetid: f04b35a1-e3ff-4db0-9923-db67f1dc7882
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"

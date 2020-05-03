@@ -4,7 +4,7 @@ name: "SearchDirection"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement SearchDirection EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 1fcc62a3-2867-4f12-89c6-315fbb4d8075

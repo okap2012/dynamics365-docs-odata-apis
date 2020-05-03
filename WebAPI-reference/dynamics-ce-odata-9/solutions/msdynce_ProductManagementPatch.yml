@@ -4,10 +4,10 @@ name: "Product Management Patch"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Product Management Patch Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 67a0e8f6-46a5-433f-9a9a-30b68875fe17
+  ms.assetid: 1e61d40e-0f43-4f50-863e-4a459efec86e
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,7 +17,7 @@ header:
  description: "Dynamics 365 workload for product management."
  unique_name: msdynce_ProductManagementPatch
  version: "9.0.2002.2005 "
- customization_prefix: msdynce
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

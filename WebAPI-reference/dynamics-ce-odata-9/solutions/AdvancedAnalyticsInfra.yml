@@ -4,10 +4,10 @@ name: "Advanced Analytics Infrastructure"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Advanced Analytics Infrastructure Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: bbbfec91-7a27-41b1-84a4-316873f7182a
+  ms.assetid: f565e985-3fc0-42f5-aa4b-0ef628581f23
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,8 +17,12 @@ header:
 # This solution has no description.
  unique_name: AdvancedAnalyticsInfra
  version: "1.0.0.7"
- customization_prefix: none
-# This solution includes no entities.
+ customization_prefix: 
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.entityanalyticsconfig
+     description: "This entity contains information about which entities are enabled for Azure Data Lake Services integration"
 # This solution includes no actions.
 # This solution has no remarks.
 href_see_also:

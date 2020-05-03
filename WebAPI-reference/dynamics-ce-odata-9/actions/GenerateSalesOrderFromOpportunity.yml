@@ -4,7 +4,7 @@ name: "GenerateSalesOrderFromOpportunity"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement GenerateSalesOrderFromOpportunity Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 68735a48-108a-4837-9566-28ffb1635945

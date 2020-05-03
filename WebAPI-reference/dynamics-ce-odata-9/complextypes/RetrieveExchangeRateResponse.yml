@@ -4,7 +4,7 @@ name: "RetrieveExchangeRateResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveExchangeRateResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: ae4a8de6-8382-4cb1-a3da-56e255a75b03

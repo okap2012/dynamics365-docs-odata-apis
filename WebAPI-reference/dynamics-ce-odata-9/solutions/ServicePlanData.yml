@@ -4,10 +4,10 @@ name: "Service Plan Data"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Service Plan Data Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 44169ee3-9d4d-450e-9da1-1bcbba3da8c3
+  ms.assetid: 1cf5e350-0ad7-4907-9459-ba16adaa1604
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,8 +17,12 @@ header:
  description: "Service Plan Data solution"
  unique_name: ServicePlanData
  version: "1.01"
- customization_prefix: none
-# This solution includes no entities.
+ customization_prefix: 
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.serviceplan
+     description: "Service Plan"
 # This solution includes no actions.
 # This solution has no remarks.
 href_see_also:

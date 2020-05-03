@@ -4,7 +4,7 @@ name: "organization"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement organization EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 9e191826-8548-4fe6-a631-0227c15d8c99
@@ -3078,6 +3078,9 @@ collection_valued_navigation_properties:
   - name: organization_emailserverprofile
     type: Microsoft.Dynamics.CRM.emailserverprofile
     partner: organizationid
+  - name: organization_entityanalyticsconfig
+    type: Microsoft.Dynamics.CRM.entityanalyticsconfig
+    partner: organizationid
   - name: organization_equipment
     type: Microsoft.Dynamics.CRM.equipment
     partner: organizationid
@@ -3185,6 +3188,9 @@ collection_valued_navigation_properties:
     partner: organizationid
   - name: organization_msdyn_schedulingparameter
     type: Microsoft.Dynamics.CRM.msdyn_schedulingparameter
+    partner: organizationid
+  - name: organization_msdyn_sikeyvalueconfig
+    type: Microsoft.Dynamics.CRM.msdyn_sikeyvalueconfig
     partner: organizationid
   - name: organization_msdyn_transactioncategory
     type: Microsoft.Dynamics.CRM.msdyn_transactioncategory

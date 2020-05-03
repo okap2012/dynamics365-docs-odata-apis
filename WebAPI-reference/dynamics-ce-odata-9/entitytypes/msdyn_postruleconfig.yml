@@ -4,7 +4,7 @@ name: "msdyn_postruleconfig"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_postruleconfig EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: f2d9e3ee-c07e-4d01-9298-f0a97958b3e3

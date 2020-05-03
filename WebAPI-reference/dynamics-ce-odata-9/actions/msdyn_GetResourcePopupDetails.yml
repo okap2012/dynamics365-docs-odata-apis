@@ -4,7 +4,7 @@ name: "msdyn_GetResourcePopupDetails"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetResourcePopupDetails Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b844f9ff-67f7-454e-8636-079d3a0fb361

@@ -4,7 +4,7 @@ name: "emailserverprofile"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement emailserverprofile EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: bc588c67-2962-4d40-9f04-ef3beb2e6b41

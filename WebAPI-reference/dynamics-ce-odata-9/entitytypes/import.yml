@@ -4,7 +4,7 @@ name: "import"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement import EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 1d2a805f-a2ba-47a5-ab9f-f7517f48d2d7

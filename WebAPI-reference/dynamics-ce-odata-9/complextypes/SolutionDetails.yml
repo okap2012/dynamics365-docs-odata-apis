@@ -4,7 +4,7 @@ name: "SolutionDetails"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement SolutionDetails ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 0027a895-2a3d-4b2c-846c-5131f81ad712

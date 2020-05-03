@@ -4,7 +4,7 @@ name: "ExportMappingsImportMapResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement ExportMappingsImportMapResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 4089f8d9-0de1-41ff-b7e0-263b027c01a4

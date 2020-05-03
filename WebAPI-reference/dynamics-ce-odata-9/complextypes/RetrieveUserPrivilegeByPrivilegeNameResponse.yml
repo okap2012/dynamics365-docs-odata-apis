@@ -4,7 +4,7 @@ name: "RetrieveUserPrivilegeByPrivilegeNameResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveUserPrivilegeByPrivilegeNameResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 62427bdb-9101-4b09-869a-7e513cda6941

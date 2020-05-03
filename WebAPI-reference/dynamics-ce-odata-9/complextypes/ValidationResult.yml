@@ -4,7 +4,7 @@ name: "ValidationResult"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement ValidationResult ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 62ce2287-331d-4199-8b0b-9aa24a94a8b7
@@ -41,6 +41,12 @@ usedby:
   description: "The following use the ValidationResult ComplexType."
   usedby_items:
   - name: Microsoft.Dynamics.CRM.BookResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ImmediateBookResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RescheduleResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ValidateResponse
     used_as: Property
 # This complex type has no remarks.
 href_see_also:

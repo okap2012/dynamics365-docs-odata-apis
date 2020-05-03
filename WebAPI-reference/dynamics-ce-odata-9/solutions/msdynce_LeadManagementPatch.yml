@@ -4,10 +4,10 @@ name: "Lead Management Patch"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Lead Management Patch Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: bc38260f-7b72-4564-a81b-ea4941c56e8f
+  ms.assetid: 67ad0fe4-6aa2-4160-8d56-373fe97e32bc
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,8 +16,8 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for lead management."
  unique_name: msdynce_LeadManagementPatch
- version: "9.0.2003.2001"
- customization_prefix: msdynce
+ version: "9.0.2003.4003"
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

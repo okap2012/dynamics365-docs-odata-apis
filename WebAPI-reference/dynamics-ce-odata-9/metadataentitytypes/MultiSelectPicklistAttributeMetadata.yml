@@ -4,7 +4,7 @@ name: "MultiSelectPicklistAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement MultiSelectPicklistAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 73a01b9d-dabe-4a8c-80d9-819396c9ed75

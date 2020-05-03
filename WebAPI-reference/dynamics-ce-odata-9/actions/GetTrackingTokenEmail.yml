@@ -4,7 +4,7 @@ name: "GetTrackingTokenEmail"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement GetTrackingTokenEmail Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 0a146e8b-1d31-4874-bff5-2f23d6b38f74

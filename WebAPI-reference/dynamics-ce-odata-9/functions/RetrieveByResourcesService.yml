@@ -4,7 +4,7 @@ name: "RetrieveByResourcesService"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveByResourcesService Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: e08ea08d-3391-48e5-8f9f-626a6c71dee8

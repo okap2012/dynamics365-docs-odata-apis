@@ -4,10 +4,10 @@ name: "IoT Connector for Microsoft Dynamics 365"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement IoT Connector for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 19935594-ce3b-4e72-8862-d2dc756993e9
+  ms.assetid: 67410e0d-c6e2-4e5a-a05c-8d977adf75de
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"

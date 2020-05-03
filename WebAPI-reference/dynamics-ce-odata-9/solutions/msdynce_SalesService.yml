@@ -4,10 +4,10 @@ name: "Sales Service"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Sales Service Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 15613ff8-2294-4970-878b-95e40351ec3a
+  ms.assetid: 9c282caf-53fe-4dac-ba22-15f38be42bfa
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,7 +17,7 @@ header:
  description: "For internal use only."
  unique_name: msdynce_SalesService
  version: "9.0.4.29"
- customization_prefix: msdynce
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

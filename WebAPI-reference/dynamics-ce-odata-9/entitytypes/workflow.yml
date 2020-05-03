@@ -4,7 +4,7 @@ name: "workflow"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement workflow EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 7c5681b1-7ae7-428e-bbec-6a733a45bb34
@@ -587,12 +587,18 @@ collection_valued_navigation_properties:
   - name: lk_processsession_processid
     type: Microsoft.Dynamics.CRM.processsession
     partner: processid
+  - name: msdyn_retrainworkflow_msdyn_toaimodel
+    type: Microsoft.Dynamics.CRM.msdyn_aimodel
+    partner: msdyn_retrainworkflowid
   - name: process_processstage
     type: Microsoft.Dynamics.CRM.processstage
     partner: processid
   - name: process_processtrigger
     type: Microsoft.Dynamics.CRM.processtrigger
     partner: processid
+  - name: regardingobjectid_process
+    type: Microsoft.Dynamics.CRM.flowsession
+    partner: regardingobjectid_process
   - name: slabase_workflowid
     type: Microsoft.Dynamics.CRM.sla
     partner: workflowid
@@ -639,6 +645,8 @@ operations:
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.GrantAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.InitializeModernFlowFromAsyncWorkflow
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
@@ -654,8 +662,6 @@ solutions:
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch
     description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.OmnichannelBase
-    description: "The solution provides the base components of Omnichannel."
   - type: Microsoft.Dynamics.CRM.Relationshipassistant
     description: "Relationship assistant Feature Description."
   - type: Microsoft.Dynamics.CRM.System

@@ -4,7 +4,7 @@ name: "mailboxtrackingfolder"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement mailboxtrackingfolder EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: f6cf14db-0289-4912-b0ee-e85657552f91
@@ -148,7 +148,6 @@ lookup_properties:
     - regardingobjectid_flowsession
     - regardingobjectid_workflowbinary
     - regardingobjectid_connectionreference
-    - regardingobjectid_msdyn_helppage
     - regardingobjectid_msdyn_analysiscomponent
     - regardingobjectid_msdyn_analysisjob
     - regardingobjectid_msdyn_analysisresult
@@ -278,6 +277,7 @@ lookup_properties:
     - regardingobjectid_msdyn_msteamssetting
     - regardingobjectid_msdyn_msteamssettingsv2
     - regardingobjectid_msdyn_teamscollaboration
+    - regardingobjectid_msdyn_3dmodel
     - regardingobjectid_msdyn_actual
     - regardingobjectid_msdyn_bookableresourceassociation
     - regardingobjectid_msdyn_bookingalertstatus
@@ -306,81 +306,6 @@ lookup_properties:
     - regardingobjectid_msdyn_timegroupdetail
     - regardingobjectid_msdyn_transactionorigin
     - regardingobjectid_msdyn_workhourtemplate
-    - regardingobjectid_msdyn_accountpricelist
-    - regardingobjectid_msdyn_batchjob
-    - regardingobjectid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
-    - regardingobjectid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
-    - regardingobjectid_msdyn_characteristicreqforteammember
-    - regardingobjectid_msdyn_contactpricelist
-    - regardingobjectid_msdyn_contractlineinvoiceschedule
-    - regardingobjectid_msdyn_contractlinescheduleofvalue
-    - regardingobjectid_msdyn_dataexport
-    - regardingobjectid_msdyn_delegation
-    - regardingobjectid_msdyn_dimension
-    - regardingobjectid_msdyn_dimensionfieldname
-    - regardingobjectid_msdyn_estimate
-    - regardingobjectid_msdyn_estimateline
-    - regardingobjectid_msdyn_expense
-    - regardingobjectid_msdyn_expensecategory
-    - regardingobjectid_msdyn_expensereceipt
-    - regardingobjectid_msdyn_fact
-    - regardingobjectid_msdyn_fieldcomputation
-    - regardingobjectid_msdyn_findworkevent
-    - regardingobjectid_msdyn_integrationjob
-    - regardingobjectid_msdyn_integrationjobdetail
-    - regardingobjectid_msdyn_invoicefrequency
-    - regardingobjectid_msdyn_invoicefrequencydetail
-    - regardingobjectid_msdyn_invoicelinetransaction
-    - regardingobjectid_msdyn_journal
-    - regardingobjectid_msdyn_journalline
-    - regardingobjectid_msdyn_mlresultcache
-    - regardingobjectid_msdyn_opportunitylineresourcecategory
-    - regardingobjectid_msdyn_opportunitylinetransaction
-    - regardingobjectid_msdyn_opportunitylinetransactioncategory
-    - regardingobjectid_msdyn_opportunitylinetransactionclassificatio
-    - regardingobjectid_msdyn_opportunitypricelist
-    - regardingobjectid_msdyn_orderlineresourcecategory
-    - regardingobjectid_msdyn_orderlinetransaction
-    - regardingobjectid_msdyn_orderlinetransactioncategory
-    - regardingobjectid_msdyn_orderlinetransactionclassification
-    - regardingobjectid_msdyn_orderpricelist
-    - regardingobjectid_msdyn_processnotes
-    - regardingobjectid_msdyn_project
-    - regardingobjectid_msdyn_projectapproval
-    - regardingobjectid_msdyn_projectparameter
-    - regardingobjectid_msdyn_projectparameterpricelist
-    - regardingobjectid_msdyn_projectpricelist
-    - regardingobjectid_msdyn_projecttask
-    - regardingobjectid_msdyn_projecttaskdependency
-    - regardingobjectid_msdyn_projecttaskstatususer
-    - regardingobjectid_msdyn_projectteam
-    - regardingobjectid_msdyn_projectteammembersignup
-    - regardingobjectid_msdyn_projecttransactioncategory
-    - regardingobjectid_msdyn_quotelineanalyticsbreakdown
-    - regardingobjectid_msdyn_quotelineinvoiceschedule
-    - regardingobjectid_msdyn_quotelineresourcecategory
-    - regardingobjectid_msdyn_quotelinescheduleofvalue
-    - regardingobjectid_msdyn_quotelinetransaction
-    - regardingobjectid_msdyn_quotelinetransactioncategory
-    - regardingobjectid_msdyn_quotelinetransactionclassification
-    - regardingobjectid_msdyn_quotepricelist
-    - regardingobjectid_msdyn_resourceassignment
-    - regardingobjectid_msdyn_resourceassignmentdetail
-    - regardingobjectid_msdyn_resourcecategorymarkuppricelevel
-    - regardingobjectid_msdyn_resourcecategorypricelevel
-    - regardingobjectid_msdyn_resourcerequest
-    - regardingobjectid_msdyn_rolecompetencyrequirement
-    - regardingobjectid_msdyn_roleutilization
-    - regardingobjectid_msdyn_timeentry
-    - regardingobjectid_msdyn_timeoffcalendar
-    - regardingobjectid_msdyn_transactioncategory
-    - regardingobjectid_msdyn_transactioncategoryclassification
-    - regardingobjectid_msdyn_transactioncategoryhierarchyelement
-    - regardingobjectid_msdyn_transactioncategorypricelevel
-    - regardingobjectid_msdyn_transactionconnection
-    - regardingobjectid_msdyn_transactiontype
-    - regardingobjectid_msdyn_userworkhistory
-    - regardingobjectid_msdyn_3dmodel
     - regardingobjectid_msdyn_agreement
     - regardingobjectid_msdyn_agreementbookingdate
     - regardingobjectid_msdyn_agreementbookingincident
@@ -482,90 +407,80 @@ lookup_properties:
     - regardingobjectid_msdyn_geofence
     - regardingobjectid_msdyn_geofenceevent
     - regardingobjectid_msdyn_geofencingsettings
-    - regardingobjectid_msdynsm_marketingsitemap
-    - regardingobjectid_msdynsm_salessitemap
-    - regardingobjectid_msdynsm_servicessitemap
-    - regardingobjectid_msdynsm_settingssitemap
-    - regardingobjectid_msdyn_ciprovider
-    - regardingobjectid_msdyn_consoleapplicationnotificationfield
-    - regardingobjectid_msdyn_consoleapplicationnotificationtemplate
-    - regardingobjectid_msdyn_consoleappparameterdefinition
-    - regardingobjectid_msdyn_consoleapplicationsessiontemplate
-    - regardingobjectid_msdyn_consoleapplicationtemplate
-    - regardingobjectid_msdyn_consoleapplicationtemplateparameter
-    - regardingobjectid_msdyn_templatetags
-    - regardingobjectid_msdyn_consoleapplicationtype
-    - regardingobjectid_msdyn_conversationdata
-    - regardingobjectid_msdyn_kpieventdata
-    - regardingobjectid_msdyn_kpieventdefinition
-    - regardingobjectid_msdyn_sessiondata
-    - regardingobjectid_msdyn_sessionparticipantdata
-    - regardingobjectid_msdyn_channel
-    - regardingobjectid_msdyn_scenario
-    - regardingobjectid_msdyn_analytics
-    - regardingobjectid_msdyn_cannedmessage
-    - regardingobjectid_msdyn_cdsentityengagementctx
-    - regardingobjectid_msdyn_entityconfig
-    - regardingobjectid_msdyn_liveconversation
-    - regardingobjectid_msdyn_liveworkstream
-    - regardingobjectid_msdyn_maskingrule
-    - regardingobjectid_msdyn_ocbotchannelregistration
-    - regardingobjectid_msdyn_occhannelconfiguration
-    - regardingobjectid_msdyn_occhannelstateconfiguration
-    - regardingobjectid_msdyn_ocliveworkitemcontextitem
-    - regardingobjectid_msdyn_ocliveworkitemparticipant
-    - regardingobjectid_msdyn_ocliveworkitemsentiment
-    - regardingobjectid_msdyn_ocliveworkstreamcontextvariable
-    - regardingobjectid_msdyn_oclocalizationdata
-    - regardingobjectid_msdyn_ocprovisioningstate
-    - regardingobjectid_msdyn_ocrequest
-    - regardingobjectid_msdyn_ocruleitem
-    - regardingobjectid_msdyn_ocsystemmessage
-    - regardingobjectid_msdyn_oc_geolocationprovider
-    - regardingobjectid_msdyn_omnichannelpersonalization
-    - regardingobjectid_msdyn_omnichannelqueue
-    - regardingobjectid_msdyn_operatinghour
-    - regardingobjectid_msdyn_presence
-    - regardingobjectid_msdyn_routingrequest
-    - regardingobjectid_msdyn_searchconfiguration
-    - regardingobjectid_msdyn_sentimentanalysis
-    - regardingobjectid_msdyn_sessionevent
-    - regardingobjectid_msdyn_sessionparticipant
-    - regardingobjectid_msdyn_transcript
-    - regardingobjectid_msdyn_authenticationsettings
-    - regardingobjectid_msdyn_chatansweroption
-    - regardingobjectid_msdyn_chatquestionnaireresponse
-    - regardingobjectid_msdyn_chatquestionnaireresponseitem
-    - regardingobjectid_msdyn_chatwidgetlanguage
-    - regardingobjectid_msdyn_livechatconfig
-    - regardingobjectid_msdyn_livechatengagementctx
-    - regardingobjectid_msdyn_livechatwidgetlocation
-    - regardingobjectid_msdyn_localizedsurveyquestion
-    - regardingobjectid_msdyn_questionsequence
-    - regardingobjectid_msdyn_surveyquestion
-    - regardingobjectid_msdyn_channelcapability
-    - regardingobjectid_msdyn_conversationaction
-    - regardingobjectid_msdyn_conversationactionlocale
-    - regardingobjectid_msdyn_entityroutingconfiguration
-    - regardingobjectid_msdyn_ocsessionsentiment
-    - regardingobjectid_msdyn_omnichannelconfiguration
-    - regardingobjectid_msdyn_omnichannelsyncconfig
-    - regardingobjectid_msdyn_provider
-    - regardingobjectid_msdyn_visitorjourney
-    - regardingobjectid_msdyn_ocliveworkitemcharacteristic
-    - regardingobjectid_msdyn_ocsessioncharacteristic
-    - regardingobjectid_msdyn_skillattachmentruleitem
-    - regardingobjectid_msdyn_skillattachmenttarget
-    - regardingobjectid_msdyn_smsengagementctx
-    - regardingobjectid_msdyn_smsnumber
-    - regardingobjectid_msdyn_facebookengagementctx
-    - regardingobjectid_msdyn_ocfbapplication
-    - regardingobjectid_msdyn_ocfbpage
-    - regardingobjectid_msdyn_serviceconfiguration
-    - regardingobjectid_msdyn_slakpi
-    - regardingobjectid_msdyn_iotdevicevisualizationconfiguration
-    - regardingobjectid_msdyn_iotfieldmapping
-    - regardingobjectid_msdyn_iottocaseprocess
+    - regardingobjectid_msdyn_accountpricelist
+    - regardingobjectid_msdyn_batchjob
+    - regardingobjectid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+    - regardingobjectid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+    - regardingobjectid_msdyn_characteristicreqforteammember
+    - regardingobjectid_msdyn_contactpricelist
+    - regardingobjectid_msdyn_contractlineinvoiceschedule
+    - regardingobjectid_msdyn_contractlinescheduleofvalue
+    - regardingobjectid_msdyn_dataexport
+    - regardingobjectid_msdyn_delegation
+    - regardingobjectid_msdyn_dimension
+    - regardingobjectid_msdyn_dimensionfieldname
+    - regardingobjectid_msdyn_estimate
+    - regardingobjectid_msdyn_estimateline
+    - regardingobjectid_msdyn_expense
+    - regardingobjectid_msdyn_expensecategory
+    - regardingobjectid_msdyn_expensereceipt
+    - regardingobjectid_msdyn_fact
+    - regardingobjectid_msdyn_fieldcomputation
+    - regardingobjectid_msdyn_findworkevent
+    - regardingobjectid_msdyn_integrationjob
+    - regardingobjectid_msdyn_integrationjobdetail
+    - regardingobjectid_msdyn_invoicefrequency
+    - regardingobjectid_msdyn_invoicefrequencydetail
+    - regardingobjectid_msdyn_invoicelinetransaction
+    - regardingobjectid_msdyn_journal
+    - regardingobjectid_msdyn_journalline
+    - regardingobjectid_msdyn_mlresultcache
+    - regardingobjectid_msdyn_opportunitylineresourcecategory
+    - regardingobjectid_msdyn_opportunitylinetransaction
+    - regardingobjectid_msdyn_opportunitylinetransactioncategory
+    - regardingobjectid_msdyn_opportunitylinetransactionclassificatio
+    - regardingobjectid_msdyn_opportunitypricelist
+    - regardingobjectid_msdyn_orderlineresourcecategory
+    - regardingobjectid_msdyn_orderlinetransaction
+    - regardingobjectid_msdyn_orderlinetransactioncategory
+    - regardingobjectid_msdyn_orderlinetransactionclassification
+    - regardingobjectid_msdyn_orderpricelist
+    - regardingobjectid_msdyn_processnotes
+    - regardingobjectid_msdyn_project
+    - regardingobjectid_msdyn_projectapproval
+    - regardingobjectid_msdyn_projectparameter
+    - regardingobjectid_msdyn_projectparameterpricelist
+    - regardingobjectid_msdyn_projectpricelist
+    - regardingobjectid_msdyn_projecttask
+    - regardingobjectid_msdyn_projecttaskdependency
+    - regardingobjectid_msdyn_projecttaskstatususer
+    - regardingobjectid_msdyn_projectteam
+    - regardingobjectid_msdyn_projectteammembersignup
+    - regardingobjectid_msdyn_projecttransactioncategory
+    - regardingobjectid_msdyn_quotelineanalyticsbreakdown
+    - regardingobjectid_msdyn_quotelineinvoiceschedule
+    - regardingobjectid_msdyn_quotelineresourcecategory
+    - regardingobjectid_msdyn_quotelinescheduleofvalue
+    - regardingobjectid_msdyn_quotelinetransaction
+    - regardingobjectid_msdyn_quotelinetransactioncategory
+    - regardingobjectid_msdyn_quotelinetransactionclassification
+    - regardingobjectid_msdyn_quotepricelist
+    - regardingobjectid_msdyn_resourceassignment
+    - regardingobjectid_msdyn_resourceassignmentdetail
+    - regardingobjectid_msdyn_resourcecategorymarkuppricelevel
+    - regardingobjectid_msdyn_resourcecategorypricelevel
+    - regardingobjectid_msdyn_resourcerequest
+    - regardingobjectid_msdyn_rolecompetencyrequirement
+    - regardingobjectid_msdyn_roleutilization
+    - regardingobjectid_msdyn_timeentry
+    - regardingobjectid_msdyn_timeoffcalendar
+    - regardingobjectid_msdyn_transactioncategory
+    - regardingobjectid_msdyn_transactioncategoryclassification
+    - regardingobjectid_msdyn_transactioncategoryhierarchyelement
+    - regardingobjectid_msdyn_transactioncategorypricelevel
+    - regardingobjectid_msdyn_transactionconnection
+    - regardingobjectid_msdyn_transactiontype
+    - regardingobjectid_msdyn_userworkhistory
     description: "The regarding object such as Account, Contact, Lead etc. that the folder relates to."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
@@ -603,9 +518,15 @@ single_valued_navigation_properties:
   - name: regardingobjectid_accountleads
     type: Microsoft.Dynamics.CRM.accountleads
     partner: accountleads_MailboxTrackingFolders
+  - name: regardingobjectid_adminsettingsentity
+    type: Microsoft.Dynamics.CRM.adminsettingsentity
+    partner: adminsettingsentity_MailboxTrackingFolders
   - name: regardingobjectid_asyncoperation
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: AsyncOperation_MailboxTrackingFolder
+  - name: regardingobjectid_attributeimageconfig
+    type: Microsoft.Dynamics.CRM.attributeimageconfig
+    partner: attributeimageconfig_MailboxTrackingFolders
   - name: regardingobjectid_bookableresource
     type: Microsoft.Dynamics.CRM.bookableresource
     partner: bookableresource_MailboxTrackingFolders
@@ -666,6 +587,12 @@ single_valued_navigation_properties:
   - name: regardingobjectid_competitorsalesliterature
     type: Microsoft.Dynamics.CRM.competitorsalesliterature
     partner: competitorsalesliterature_MailboxTrackingFolders
+  - name: regardingobjectid_connectionreference
+    type: Microsoft.Dynamics.CRM.connectionreference
+    partner: connectionreference_MailboxTrackingFolders
+  - name: regardingobjectid_connector
+    type: Microsoft.Dynamics.CRM.connector
+    partner: connector_MailboxTrackingFolders
   - name: regardingobjectid_constraintbasedgroup
     type: Microsoft.Dynamics.CRM.constraintbasedgroup
     partner: constraintbasedgroup_MailboxTrackingFolders
@@ -732,9 +659,24 @@ single_valued_navigation_properties:
   - name: regardingobjectid_entitlementtemplateproducts
     type: Microsoft.Dynamics.CRM.entitlementtemplateproducts
     partner: entitlementtemplateproducts_MailboxTrackingFolders
+  - name: regardingobjectid_entityanalyticsconfig
+    type: Microsoft.Dynamics.CRM.entityanalyticsconfig
+    partner: entityanalyticsconfig_MailboxTrackingFolders
+  - name: regardingobjectid_entityimageconfig
+    type: Microsoft.Dynamics.CRM.entityimageconfig
+    partner: entityimageconfig_MailboxTrackingFolders
+  - name: regardingobjectid_environmentvariabledefinition
+    type: Microsoft.Dynamics.CRM.environmentvariabledefinition
+    partner: environmentvariabledefinition_MailboxTrackingFolders
+  - name: regardingobjectid_environmentvariablevalue
+    type: Microsoft.Dynamics.CRM.environmentvariablevalue
+    partner: environmentvariablevalue_MailboxTrackingFolders
   - name: regardingobjectid_equipment
     type: Microsoft.Dynamics.CRM.equipment
     partner: equipment_MailboxTrackingFolders
+  - name: regardingobjectid_flowsession
+    type: Microsoft.Dynamics.CRM.flowsession
+    partner: flowsession_MailboxTrackingFolders
   - name: regardingobjectid_incident
     type: Microsoft.Dynamics.CRM.incident
     partner: Incident_MailboxTrackingFolder
@@ -813,6 +755,60 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_agreementsubstatus
     type: Microsoft.Dynamics.CRM.msdyn_agreementsubstatus
     partner: msdyn_agreementsubstatus_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aibdataset
+    type: Microsoft.Dynamics.CRM.msdyn_aibdataset
+    partner: msdyn_aibdataset_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aibdatasetfile
+    type: Microsoft.Dynamics.CRM.msdyn_aibdatasetfile
+    partner: msdyn_aibdatasetfile_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aibdatasetrecord
+    type: Microsoft.Dynamics.CRM.msdyn_aibdatasetrecord
+    partner: msdyn_aibdatasetrecord_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aibdatasetscontainer
+    type: Microsoft.Dynamics.CRM.msdyn_aibdatasetscontainer
+    partner: msdyn_aibdatasetscontainer_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aibfile
+    type: Microsoft.Dynamics.CRM.msdyn_aibfile
+    partner: msdyn_aibfile_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aibfileattacheddata
+    type: Microsoft.Dynamics.CRM.msdyn_aibfileattacheddata
+    partner: msdyn_aibfileattacheddata_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aiconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_aiconfiguration
+    partner: msdyn_aiconfiguration_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aifptrainingdocument
+    type: Microsoft.Dynamics.CRM.msdyn_aifptrainingdocument
+    partner: msdyn_aifptrainingdocument_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aimodel
+    type: Microsoft.Dynamics.CRM.msdyn_aimodel
+    partner: msdyn_aimodel_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aiodimage
+    type: Microsoft.Dynamics.CRM.msdyn_aiodimage
+    partner: msdyn_aiodimage_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aiodlabel
+    type: Microsoft.Dynamics.CRM.msdyn_aiodlabel
+    partner: msdyn_aiodlabel_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aiodtrainingboundingbox
+    type: Microsoft.Dynamics.CRM.msdyn_aiodtrainingboundingbox
+    partner: msdyn_aiodtrainingboundingbox_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aiodtrainingimage
+    type: Microsoft.Dynamics.CRM.msdyn_aiodtrainingimage
+    partner: msdyn_aiodtrainingimage_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_aitemplate
+    type: Microsoft.Dynamics.CRM.msdyn_aitemplate
+    partner: msdyn_aitemplate_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_analysiscomponent
+    type: Microsoft.Dynamics.CRM.msdyn_analysiscomponent
+    partner: msdyn_analysiscomponent_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_analysisjob
+    type: Microsoft.Dynamics.CRM.msdyn_analysisjob
+    partner: msdyn_analysisjob_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_analysisresult
+    type: Microsoft.Dynamics.CRM.msdyn_analysisresult
+    partner: msdyn_analysisresult_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_analysisresultdetail
+    type: Microsoft.Dynamics.CRM.msdyn_analysisresultdetail
+    partner: msdyn_analysisresultdetail_MailboxTrackingFolders
   - name: regardingobjectid_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: msdyn_approval_MailboxTrackingFolders
@@ -915,6 +911,9 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_fieldservicesetting
     type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
     partner: msdyn_fieldservicesetting_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_fieldserviceslaconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_fieldserviceslaconfiguration
+    partner: msdyn_fieldserviceslaconfiguration_MailboxTrackingFolders
   - name: regardingobjectid_msdyn_fieldservicesystemjob
     type: Microsoft.Dynamics.CRM.msdyn_fieldservicesystemjob
     partner: msdyn_fieldservicesystemjob_MailboxTrackingFolders
@@ -1230,6 +1229,9 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_rtvsubstatus
     type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
     partner: msdyn_rtvsubstatus_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_salesinsightssettings
+    type: Microsoft.Dynamics.CRM.msdyn_salesinsightssettings
+    partner: msdyn_salesinsightssettings_MailboxTrackingFolders
   - name: regardingobjectid_msdyn_scheduleboardsetting
     type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
     partner: msdyn_scheduleboardsetting_MailboxTrackingFolders
@@ -1242,6 +1244,12 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_shipvia
     type: Microsoft.Dynamics.CRM.msdyn_shipvia
     partner: msdyn_shipvia_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_siconfig
+    type: Microsoft.Dynamics.CRM.msdyn_siconfig
+    partner: msdyn_siconfig_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_sikeyvalueconfig
+    type: Microsoft.Dynamics.CRM.msdyn_sikeyvalueconfig
+    partner: msdyn_sikeyvalueconfig_MailboxTrackingFolders
   - name: regardingobjectid_msdyn_systemuserschedulersetting
     type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
     partner: msdyn_systemuserschedulersetting_MailboxTrackingFolders
@@ -1251,6 +1259,9 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_taxcodedetail
     type: Microsoft.Dynamics.CRM.msdyn_taxcodedetail
     partner: msdyn_taxcodedetail_MailboxTrackingFolders
+  - name: regardingobjectid_msdyn_teamscollaboration
+    type: Microsoft.Dynamics.CRM.msdyn_teamscollaboration
+    partner: msdyn_teamscollaboration_MailboxTrackingFolders
   - name: regardingobjectid_msdyn_timeentry
     type: Microsoft.Dynamics.CRM.msdyn_timeentry
     partner: msdyn_timeentry_MailboxTrackingFolders
@@ -1419,6 +1430,9 @@ single_valued_navigation_properties:
   - name: regardingobjectid_servicecontractcontacts
     type: Microsoft.Dynamics.CRM.servicecontractcontacts
     partner: servicecontractcontacts_MailboxTrackingFolders
+  - name: regardingobjectid_serviceplan
+    type: Microsoft.Dynamics.CRM.serviceplan
+    partner: serviceplan_MailboxTrackingFolders
   - name: regardingobjectid_site
     type: Microsoft.Dynamics.CRM.site
     partner: site_MailboxTrackingFolders

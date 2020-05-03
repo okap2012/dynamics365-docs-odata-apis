@@ -4,7 +4,7 @@ name: "msdyn_GetProductLinesResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetProductLinesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 536dca5a-ffb4-4a73-8c80-db935d5daf4e

@@ -4,7 +4,7 @@ name: "RevokeAccess"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RevokeAccess Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 362a2d8f-b543-4994-b87c-6ede3ca5e7f6
@@ -38,6 +38,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.account
     displayName: Account
     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+  - type: Microsoft.Dynamics.CRM.adminsettingsentity
+    displayName: admin_settings_entity
+    description: ""
   - type: Microsoft.Dynamics.CRM.annotation
     displayName: Note
     description: "Note that is attached to one or more objects, including other notes."
@@ -77,6 +80,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.campaignresponse
     displayName: Campaign Response
     description: "Response from an existing or a potential new customer for a campaign."
+  - type: Microsoft.Dynamics.CRM.canvasapp
+    displayName: Canvas App
+    description: "An application built through a canvas-based editing experience."
   - type: Microsoft.Dynamics.CRM.category
     displayName: Category
     description: "Entity for categorizing records to make it easier for your customers to find them on portals and through search."
@@ -86,6 +92,12 @@ entities:
   - type: Microsoft.Dynamics.CRM.connection
     displayName: Connection
     description: "Relationship between two entities."
+  - type: Microsoft.Dynamics.CRM.connectionreference
+    displayName: Connection Reference
+    description: ""
+  - type: Microsoft.Dynamics.CRM.connector
+    displayName: Connector
+    description: "Connector Entity to support Solutioning Integration"
   - type: Microsoft.Dynamics.CRM.contact
     displayName: Contact
     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
@@ -104,12 +116,21 @@ entities:
   - type: Microsoft.Dynamics.CRM.entitlement
     displayName: Entitlement
     description: "Defines the amount and type of support a customer should receive."
+  - type: Microsoft.Dynamics.CRM.environmentvariabledefinition
+    displayName: Environment Variable Definition
+    description: "Contains information about the settable variable: its type, default value, and etc."
+  - type: Microsoft.Dynamics.CRM.environmentvariablevalue
+    displayName: Environment Variable Value
+    description: "Holds the value for the associated EnvironmentVariableDefinition entity."
   - type: Microsoft.Dynamics.CRM.fax
     displayName: Fax
     description: "Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document."
   - type: Microsoft.Dynamics.CRM.feedback
     displayName: Feedback
     description: "Container for feedback and ratings for knowledge articles."
+  - type: Microsoft.Dynamics.CRM.flowsession
+    displayName: Flow Session
+    description: "Entity to store the information that is generated when a modern flow or UI flow runs."
   - type: Microsoft.Dynamics.CRM.goal
     displayName: Goal
     description: "Target objective for a user or a team for a specified time period."
@@ -194,6 +215,60 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_agreementsubstatus
     displayName: Agreement Substatus
     description: "Specify custom agreement substatuses, which can be used to specify the current agreement status more precisely."
+  - type: Microsoft.Dynamics.CRM.msdyn_aibdataset
+    displayName: AI Builder Dataset
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aibdatasetfile
+    displayName: AI Builder Dataset File
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aibdatasetrecord
+    displayName: AI Builder Dataset Record
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aibdatasetscontainer
+    displayName: AI Builder Datasets Container
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aibfile
+    displayName: AI Builder File
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aibfileattacheddata
+    displayName: AI Builder File Attached Data
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aiconfiguration
+    displayName: AI Configuration
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aifptrainingdocument
+    displayName: AI Form Processing Document
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aimodel
+    displayName: AI Model
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aiodimage
+    displayName: AI Object Detection Image
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aiodlabel
+    displayName: AI Object Detection Label
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aiodtrainingboundingbox
+    displayName: AI Object Detection Bounding Box
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aiodtrainingimage
+    displayName: AI Object Detection Image Mapping
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aitemplate
+    displayName: AI Template
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_analysiscomponent
+    displayName: Analysis Component
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_analysisjob
+    displayName: Analysis Job
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_analysisresult
+    displayName: Analysis Result
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_analysisresultdetail
+    displayName: Analysis Result Detail
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_approval
     displayName: Project Service Approval
     description: "Container for approvals."
@@ -263,6 +338,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
     displayName: Field Service Setting
     description: "Settings controlling functionality related to Field Service"
+  - type: Microsoft.Dynamics.CRM.msdyn_fieldserviceslaconfiguration
+    displayName: Field Service SLA Configuration
+    description: "Allows configuration of SLA Type and appropriate behavior based on creation and update of SLA KPI Instances related to Field Service entities."
   - type: Microsoft.Dynamics.CRM.msdyn_findworkevent
     displayName: Find Work Event (Deprecated in v3.0)
     description: "Entity used for counting the number of times resources apply for open positions and other behavioral attributes of resources."
@@ -536,6 +614,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
     displayName: RTV Substatus
     description: "Specify custom RTV substatuses, which can be used to specify the current RTV status more precisely."
+  - type: Microsoft.Dynamics.CRM.msdyn_salesinsightssettings
+    displayName: salesinsightssettings
+    description: "Storing settings for studio feature"
   - type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
     displayName: Schedule Board Setting
     description: "To store settings of SB by user & tabs"
@@ -545,6 +626,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_shipvia
     displayName: Ship Via
     description: "Specify the different shipping methods used."
+  - type: Microsoft.Dynamics.CRM.msdyn_siconfig
+    displayName: siconfig
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
     displayName: System User Scheduler Setting
     description: "Stores user-specific settings for the schedule board."

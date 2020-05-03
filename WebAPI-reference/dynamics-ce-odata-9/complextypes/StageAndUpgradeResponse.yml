@@ -4,7 +4,7 @@ name: "StageAndUpgradeResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement StageAndUpgradeResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: bba5b7ff-e0a4-4b02-b30c-9b7b5e2e9692
@@ -25,7 +25,11 @@ properties:
     description: ""
     iscollection: false
 # This complex type doesn't have any navigation properties.
-
+usedby:
+  description: "The following use the StageAndUpgradeResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.StageAndUpgrade
+    used_as: ReturnType
 # This complex type has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

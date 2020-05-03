@@ -4,7 +4,7 @@ name: "CopyMembersList"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement CopyMembersList Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 5b16e100-1fe7-4695-9db5-a9885c4db5ed

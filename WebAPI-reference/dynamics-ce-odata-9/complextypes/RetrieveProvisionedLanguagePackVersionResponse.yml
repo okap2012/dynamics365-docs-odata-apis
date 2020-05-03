@@ -4,7 +4,7 @@ name: "RetrieveProvisionedLanguagePackVersionResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveProvisionedLanguagePackVersionResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: cdc242d1-4706-4170-80a1-db09cec8819a

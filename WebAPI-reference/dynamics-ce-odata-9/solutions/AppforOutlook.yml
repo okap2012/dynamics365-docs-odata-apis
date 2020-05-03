@@ -4,10 +4,10 @@ name: "Dynamics 365 App for Outlook"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Dynamics 365 App for Outlook Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 46273d72-1c2d-4a8b-8d03-666825ec2fde
+  ms.assetid: e41a778b-4f5c-4351-bc00-f6830e010802
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"

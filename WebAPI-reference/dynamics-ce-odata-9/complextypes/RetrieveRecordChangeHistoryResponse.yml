@@ -4,7 +4,7 @@ name: "RetrieveRecordChangeHistoryResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveRecordChangeHistoryResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: bddb0105-b160-4627-a51d-f75c30bb83c4

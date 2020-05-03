@@ -4,7 +4,7 @@ name: "CalculateActualValueOpportunity"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement CalculateActualValueOpportunity Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: d82eac0f-1dde-4564-acd8-40e8cb3e5b5b

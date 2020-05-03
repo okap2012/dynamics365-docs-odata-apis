@@ -4,7 +4,7 @@ name: "CreateActivitiesListResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement CreateActivitiesListResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 1d82c0fa-b596-40d2-a4a1-2cfc7961a050

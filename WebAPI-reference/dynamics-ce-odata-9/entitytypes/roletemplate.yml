@@ -4,7 +4,7 @@ name: "roletemplate"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement roletemplate EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 763100f7-315a-4b0c-8319-0f992220862c

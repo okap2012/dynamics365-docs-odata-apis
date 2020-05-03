@@ -4,7 +4,7 @@ name: "OrganizationType"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement OrganizationType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 53469202-caf7-4d19-a209-0011be4c858d

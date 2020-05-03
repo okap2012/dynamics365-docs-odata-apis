@@ -4,7 +4,7 @@ name: "ConditionOperator"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement ConditionOperator EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 44bb0e44-b2a1-45cd-94cb-470ea5fa594a

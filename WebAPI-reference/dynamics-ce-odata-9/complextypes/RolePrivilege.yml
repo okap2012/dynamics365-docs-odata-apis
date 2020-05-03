@@ -4,7 +4,7 @@ name: "RolePrivilege"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RolePrivilege ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: d9487317-ed6d-4569-8d65-6732db95a86c
@@ -53,6 +53,12 @@ usedby:
   - name: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeNameResponse
     used_as: Property
   - name: Microsoft.Dynamics.CRM.RetrieveUserPrivilegesResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RetrieveUsersPrivilegesThroughTeamsResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RolePrivilegeAuditDetail
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RolePrivilegeAuditDetail
     used_as: Property
 # This complex type has no remarks.
 href_see_also:

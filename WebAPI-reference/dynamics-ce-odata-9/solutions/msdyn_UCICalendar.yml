@@ -4,10 +4,10 @@ name: "UCI Calendar Control"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement UCI Calendar Control Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: e0df47fe-01cf-4d03-b3c8-a49353f3b4f5
+  ms.assetid: ba6e2d91-b18c-48bc-802b-02cf8285fccb
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "The UCI Calendar Control provides common UI experience for bookable resource time management"
  unique_name: msdyn_UCICalendar
- version: "1.0.0.119"
+ version: "1.0.0.135"
  customization_prefix: msdyn
 # This solution includes no entities.
 # This solution includes no actions.

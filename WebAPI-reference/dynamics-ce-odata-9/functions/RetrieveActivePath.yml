@@ -4,7 +4,7 @@ name: "RetrieveActivePath"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveActivePath Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 5502e57f-f7f8-4b24-a3eb-b29f1622fe03

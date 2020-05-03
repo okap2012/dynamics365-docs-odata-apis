@@ -4,7 +4,7 @@ name: "recurringappointmentmaster"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement recurringappointmentmaster EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 51d82ced-688a-4966-bb59-223a0c3d27d3
@@ -1433,6 +1433,8 @@ solutions:
     description: "Dynamics 365 workload for sales."
   - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch
     description: "Patch for Dynamics 365 workload for sales."
+  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
+    description: "Dynamics 365 workload for third patch of Sales."
   - type: Microsoft.Dynamics.CRM.msdynce_Service
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch

@@ -4,10 +4,10 @@ name: "Microsoft Flow Extensions core package"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Microsoft Flow Extensions core package Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 4d19933b-c08a-411e-a81f-f3a449f0d424
+  ms.assetid: f9208cfd-ac9a-4551-9881-3c1e1feff361
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,10 +17,12 @@ header:
 # This solution has no description.
  unique_name: MicrosoftFlowExtensionsCore
  version: "1.1.7.0"
- customization_prefix: none
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:
+   - type: Microsoft.Dynamics.CRM.flowsession
+     description: "Entity to store the information that is generated when a modern flow or UI flow runs."
    - type: Microsoft.Dynamics.CRM.processstage
      description: "Stage associated with a process."
    - type: Microsoft.Dynamics.CRM.workflowlog

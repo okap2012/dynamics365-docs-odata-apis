@@ -4,7 +4,7 @@ name: "SendEmail"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement SendEmail Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: eb5e5e5e-2a17-4c71-a1b5-bd1dfb7e478a

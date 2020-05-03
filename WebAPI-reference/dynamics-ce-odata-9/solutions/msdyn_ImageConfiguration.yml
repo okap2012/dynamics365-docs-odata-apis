@@ -4,10 +4,10 @@ name: "Image Configuration"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Image Configuration Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: fd6c98df-b7ef-4188-9b38-f74612944d07
+  ms.assetid: f7efcc3d-c454-404a-bdbc-a36208f7c07c
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,8 +17,14 @@ header:
 # This solution has no description.
  unique_name: msdyn_ImageConfiguration
  version: "1.0.0.6"
- customization_prefix: none
-# This solution includes no entities.
+ customization_prefix: 
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.attributeimageconfig
+     description: "Store configuration for each image attribute"
+   - type: Microsoft.Dynamics.CRM.entityimageconfig
+     description: "Store image configuration for each entity"
 # This solution includes no actions.
 # This solution has no remarks.
 href_see_also:

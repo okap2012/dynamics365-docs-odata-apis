@@ -4,7 +4,7 @@ name: "timezonerule"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement timezonerule EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 39e610e8-cbae-4447-8dc6-9e027cec349c

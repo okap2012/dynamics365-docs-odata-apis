@@ -4,7 +4,7 @@ name: "workflowlog"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement workflowlog EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: d30a875d-acbf-40e2-b968-5ba4789851bf
@@ -184,14 +184,13 @@ lookup_properties:
     - PhoneToCaseProcess_asyncoperationid
     - LeadToOpportunitySalesProcess_asyncoperationid
     - OpportunitySalesProcess_asyncoperationid
-    - asyncoperationid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
-    - asyncoperationid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
     - asyncoperationid_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
     - asyncoperationid_msdyn_bpf_989e9b1857e24af18787d5143b67523b
     - asyncoperationid_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
     - asyncoperationid_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
     - asyncoperationid_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
-    - asyncoperationid_msdyn_iottocaseprocess
+    - asyncoperationid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+    - asyncoperationid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
     description: "Unique identifier of the parent record."
   - name: _childworkflowinstanceid_value
     single_valued_navigation_property:

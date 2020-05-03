@@ -4,7 +4,7 @@ name: "msdyn_GetResourcesResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetResourcesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: c3cd8921-c03a-44fc-84ae-11ec2533e65d

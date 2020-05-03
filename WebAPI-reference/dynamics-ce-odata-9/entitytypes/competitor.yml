@@ -4,7 +4,7 @@ name: "competitor"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement competitor EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: d8f7e9f4-5fa0-4c42-ad4f-c9f88e0c93d7
@@ -622,6 +622,8 @@ solutions:
     description: ""
   - type: Microsoft.Dynamics.CRM.msdynce_Sales
     description: "Dynamics 365 workload for sales."
+  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
+    description: "Dynamics 365 workload for third patch of Sales."
 # This entity has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

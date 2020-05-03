@@ -4,7 +4,7 @@ name: "DeleteAuditDataResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement DeleteAuditDataResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 6c833dfb-ee8e-4ac0-a03e-74b1dc02d1ca

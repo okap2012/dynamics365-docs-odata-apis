@@ -4,7 +4,7 @@ name: "IsValidStateTransition"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement IsValidStateTransition Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 27121c41-5d48-4079-bf8f-2a03e9e44a12
@@ -46,6 +46,30 @@ return_type:
 entities:
   description: "Use the IsValidStateTransition function with the following entity types:"
   entity_items:
+  - type: Microsoft.Dynamics.CRM.adminsettingsentity
+    displayName: "admin_settings_entity"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.attributeimageconfig
+    displayName: "Image Attribute Configuration"
+    description: "Store configuration for each image attribute"
+  - type: Microsoft.Dynamics.CRM.connectionreference
+    displayName: "Connection Reference"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.connector
+    displayName: "Connector"
+    description: "Connector Entity to support Solutioning Integration"
+  - type: Microsoft.Dynamics.CRM.entityimageconfig
+    displayName: "Entity Image Configuration"
+    description: "Store image configuration for each entity"
+  - type: Microsoft.Dynamics.CRM.environmentvariabledefinition
+    displayName: "Environment Variable Definition"
+    description: "Contains information about the settable variable: its type, default value, and etc."
+  - type: Microsoft.Dynamics.CRM.environmentvariablevalue
+    displayName: "Environment Variable Value"
+    description: "Holds the value for the associated EnvironmentVariableDefinition entity."
+  - type: Microsoft.Dynamics.CRM.flowsession
+    displayName: "Flow Session"
+    description: "Entity to store the information that is generated when a modern flow or UI flow runs."
   - type: Microsoft.Dynamics.CRM.incident
     displayName: "Case"
     description: "Service request case associated with a contract."
@@ -88,6 +112,60 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_agreementsubstatus
     displayName: "Agreement Substatus"
     description: "Specify custom agreement substatuses, which can be used to specify the current agreement status more precisely."
+  - type: Microsoft.Dynamics.CRM.msdyn_aibdataset
+    displayName: "AI Builder Dataset"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aibdatasetfile
+    displayName: "AI Builder Dataset File"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aibdatasetrecord
+    displayName: "AI Builder Dataset Record"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aibdatasetscontainer
+    displayName: "AI Builder Datasets Container"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aibfile
+    displayName: "AI Builder File"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aibfileattacheddata
+    displayName: "AI Builder File Attached Data"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aiconfiguration
+    displayName: "AI Configuration"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aifptrainingdocument
+    displayName: "AI Form Processing Document"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aimodel
+    displayName: "AI Model"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aiodimage
+    displayName: "AI Object Detection Image"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aiodlabel
+    displayName: "AI Object Detection Label"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aiodtrainingboundingbox
+    displayName: "AI Object Detection Bounding Box"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aiodtrainingimage
+    displayName: "AI Object Detection Image Mapping"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_aitemplate
+    displayName: "AI Template"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_analysiscomponent
+    displayName: "Analysis Component"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_analysisjob
+    displayName: "Analysis Job"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_analysisresult
+    displayName: "Analysis Result"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_analysisresultdetail
+    displayName: "Analysis Result Detail"
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_approval
     displayName: "Project Service Approval"
     description: "Container for approvals."
@@ -190,6 +268,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
     displayName: "Field Service Setting"
     description: "Settings controlling functionality related to Field Service"
+  - type: Microsoft.Dynamics.CRM.msdyn_fieldserviceslaconfiguration
+    displayName: "Field Service SLA Configuration"
+    description: "Allows configuration of SLA Type and appropriate behavior based on creation and update of SLA KPI Instances related to Field Service entities."
   - type: Microsoft.Dynamics.CRM.msdyn_fieldservicesystemjob
     displayName: "Field Service System Job"
     description: "An internal entity used to track field service system jobs."
@@ -505,6 +586,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
     displayName: "RTV Substatus"
     description: "Specify custom RTV substatuses, which can be used to specify the current RTV status more precisely."
+  - type: Microsoft.Dynamics.CRM.msdyn_salesinsightssettings
+    displayName: "salesinsightssettings"
+    description: "Storing settings for studio feature"
   - type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
     displayName: "Schedule Board Setting"
     description: "To store settings of SB by user & tabs"
@@ -517,6 +601,12 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_shipvia
     displayName: "Ship Via"
     description: "Specify the different shipping methods used."
+  - type: Microsoft.Dynamics.CRM.msdyn_siconfig
+    displayName: "siconfig"
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_sikeyvalueconfig
+    displayName: "SI Key Value Config"
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
     displayName: "System User Scheduler Setting"
     description: "Stores user-specific settings for the schedule board."
@@ -526,6 +616,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_taxcodedetail
     displayName: "Tax Code Detail"
     description: "In this entity you can link multiple tax codes together to form a group of tax codes to be charged for the customer to form the total tax."
+  - type: Microsoft.Dynamics.CRM.msdyn_teamscollaboration
+    displayName: "Microsoft Teams Collaboration entity"
+    description: "Entity which stores collaboration data of Dynamics 365 with Microsoft Teams"
   - type: Microsoft.Dynamics.CRM.msdyn_timeentry
     displayName: "Time Entry"
     description: "Entity used  for time entry."

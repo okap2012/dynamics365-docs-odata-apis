@@ -4,7 +4,7 @@ name: "CancelSalesOrder"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement CancelSalesOrder Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 4f122b13-c10e-4cd1-818b-e6bd90a2a4e0

@@ -4,10 +4,10 @@ name: "Activities"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Activities Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 5844f3b7-ce4b-483f-b84f-a705465f6587
+  ms.assetid: 1b1970e9-7191-49e5-97f7-cd93e5b89a57
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,7 +17,7 @@ header:
  description: "Dynamics 365 workload for activities."
  unique_name: msdynce_Activities
  version: "9.0.1.2033"
- customization_prefix: none
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

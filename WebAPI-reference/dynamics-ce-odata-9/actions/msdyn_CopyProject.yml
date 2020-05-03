@@ -4,7 +4,7 @@ name: "msdyn_CopyProject"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_CopyProject Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: bc50f1fb-3c7a-4c6d-9fc5-b15294ad4397

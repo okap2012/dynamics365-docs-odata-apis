@@ -4,7 +4,7 @@ name: "msdyn_CreateQuoteSpecificPriceList"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_CreateQuoteSpecificPriceList Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: efeb8e62-6171-4f35-81bc-13f2e9d7d475

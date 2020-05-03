@@ -4,7 +4,7 @@ name: "GetHeaderColumnsImportFile"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement GetHeaderColumnsImportFile Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 286353a0-b264-429c-98f5-1d7bb4f67acd

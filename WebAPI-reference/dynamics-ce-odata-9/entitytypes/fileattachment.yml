@@ -4,7 +4,7 @@ name: "fileattachment"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement fileattachment EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 0d81dfbd-f6cd-47aa-9c3f-9b6b74d6afc4
@@ -91,6 +91,12 @@ single_valued_navigation_properties:
   - name: FileAttachment_Solution
     type: Microsoft.Dynamics.CRM.solution
     partner: regardingobjectid_fileattachment_solution
+  - name: objectid_flowsession
+    type: Microsoft.Dynamics.CRM.flowsession
+    partner: flowsession_FileAttachments
+  - name: objectid_msdyn_aibfile
+    type: Microsoft.Dynamics.CRM.msdyn_aibfile
+    partner: msdyn_aibfile_FileAttachments
   - name: objectid_workflowlog
     type: Microsoft.Dynamics.CRM.workflowlog
     partner: workflowlog_FileAttachments

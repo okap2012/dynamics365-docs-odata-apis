@@ -4,7 +4,7 @@ name: "msdyn_GetBookingDetailsByRequirementIds"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetBookingDetailsByRequirementIds Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 4e27a2a4-4ba4-4a00-baf0-b8f5d3234bca

@@ -4,7 +4,7 @@ name: "InFiscalYear"
 type: queryfunction
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement InFiscalYear Query Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 4807d462-ebc9-4fc4-b549-81bd66272f06

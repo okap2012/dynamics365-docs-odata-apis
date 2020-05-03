@@ -4,7 +4,7 @@ name: "BackgroundSendEmailResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement BackgroundSendEmailResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: e9ce1f1c-f84a-4f83-839f-8e65ad7b0d96

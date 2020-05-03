@@ -4,7 +4,7 @@ name: "appointment"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement appointment EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 0e56b1bb-f0e5-4a33-a510-f255a983cbcd
@@ -1205,6 +1205,8 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.GrantAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ImmediateBook
+    binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.Reschedule
@@ -1218,6 +1220,8 @@ operations:
   - name: Microsoft.Dynamics.CRM.Validate
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ValidateSavedQuery
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ValidateUnpublished
     binding_type: "Not Bound"
 solutions:
   description: "The following solutions include the appointment entity type."

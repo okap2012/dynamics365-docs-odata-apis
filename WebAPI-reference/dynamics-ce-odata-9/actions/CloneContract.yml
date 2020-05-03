@@ -4,7 +4,7 @@ name: "CloneContract"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement CloneContract Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b602ab4d-e486-463e-a34e-d962d6860ec1

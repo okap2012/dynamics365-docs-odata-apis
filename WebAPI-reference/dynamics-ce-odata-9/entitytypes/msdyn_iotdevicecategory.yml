@@ -4,7 +4,7 @@ name: "msdyn_iotdevicecategory"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_iotdevicecategory EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 3c8a32e1-273b-4636-9f38-255bd21dac65
@@ -225,8 +225,6 @@ solutions:
   description: "The following solutions include the msdyn_iotdevicecategory entity type."
   solution_items:
   - type: Microsoft.Dynamics.CRM.IoTConnector
-    description: "Enables IoT scenarios in Dynamics 365."
-  - type: Microsoft.Dynamics.CRM.msdyn_IoT_Patch_1
     description: "Enables IoT scenarios in Dynamics 365."
 # This entity has no remarks.
 href_see_also:

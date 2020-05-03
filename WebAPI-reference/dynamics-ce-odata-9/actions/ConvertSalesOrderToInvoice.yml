@@ -4,7 +4,7 @@ name: "ConvertSalesOrderToInvoice"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement ConvertSalesOrderToInvoice Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 7ecfa2c6-d4c8-470d-9e5d-ff96e97140af

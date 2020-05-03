@@ -4,7 +4,7 @@ name: "MetadataPropertiesExpression"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement MetadataPropertiesExpression ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 62a529fa-68dd-4348-961f-de79929c7324

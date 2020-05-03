@@ -4,7 +4,7 @@ name: "BooleanManagedProperty"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement BooleanManagedProperty ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 20243394-dd7b-4529-bf44-cc01e0247032
@@ -37,7 +37,33 @@ properties:
     description: "The logical name for the managed property. "
     iscollection: false
 # This complex type doesn't have any navigation properties.
-
+usedby:
+  description: "The following use the BooleanManagedProperty ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.connectionreference
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.connectionrole
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.connector
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.contracttemplate
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.entitydataprovider
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.environmentvariabledefinition
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.environmentvariablevalue
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.kbarticletemplate
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.mailmergetemplate
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_aiconfiguration
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_aimodel
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_aitemplate
+    used_as: Property
 # This complex type has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

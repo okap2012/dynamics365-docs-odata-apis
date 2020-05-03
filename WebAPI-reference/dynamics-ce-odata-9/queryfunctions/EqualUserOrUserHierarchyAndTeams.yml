@@ -4,7 +4,7 @@ name: "EqualUserOrUserHierarchyAndTeams"
 type: queryfunction
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement EqualUserOrUserHierarchyAndTeams Query Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 3234e028-f7b8-474f-b6b0-911815278d2c

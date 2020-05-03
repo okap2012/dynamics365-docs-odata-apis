@@ -4,7 +4,7 @@ name: "campaignitem"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement campaignitem EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: a754bdbd-bb5b-41d4-89a7-148ef43913b7
@@ -125,6 +125,8 @@ solutions:
     description: "Dynamics 365 workload for marketing and enterprise."
   - type: Microsoft.Dynamics.CRM.msdynce_MarketingPatch
     description: "Patch for Dynamics 365 workload for marketing and enterprise."
+  - type: Microsoft.Dynamics.CRM.msdynce_MarketingPatch201905
+    description: "Patch from 05/2019 for Dynamics 365 workload for marketing and enterprise."
   - type: Microsoft.Dynamics.CRM.msdynce_MarketingSales
     description: "For internal use only."
 # This entity has no remarks.

@@ -4,7 +4,7 @@ name: "serviceendpoint"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement serviceendpoint EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 302cc977-c26b-4001-be1e-759f1af5ab6c

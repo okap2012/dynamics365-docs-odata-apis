@@ -4,10 +4,10 @@ name: "This solution contains Office Productivity implementation"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement This solution contains Office Productivity implementation Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 7146c201-151a-4efe-94e7-90da263202c7
+  ms.assetid: 28b0c999-6786-4f01-b6ea-19ead04a301d
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -18,7 +18,11 @@ header:
  unique_name: msdynce_OfficeProductivity
  version: "9.0.2.11032"
  customization_prefix: msdyn
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_teamscollaboration
+     description: "Entity which stores collaboration data of Dynamics 365 with Microsoft Teams"
 actions:
   description: "The following actions are included in this solution."
   action_items:

@@ -4,7 +4,7 @@ name: "msdyn_GetContractBillingRadialGaugeDataResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetContractBillingRadialGaugeDataResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: b5ef9beb-da3e-43c9-9a56-850b2c74c763

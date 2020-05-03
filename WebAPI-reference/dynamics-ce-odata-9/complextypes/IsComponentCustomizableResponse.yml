@@ -4,7 +4,7 @@ name: "IsComponentCustomizableResponse"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement IsComponentCustomizableResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: cc32e0ef-333e-4817-8985-33b7d5e66ea9

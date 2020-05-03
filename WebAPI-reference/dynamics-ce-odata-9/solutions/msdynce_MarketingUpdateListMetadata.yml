@@ -4,10 +4,10 @@ name: "Marketing Update List Metadata"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Marketing Update List Metadata Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 4a4a680c-75f1-48ef-97fa-abfb23aead34
+  ms.assetid: 7c37138f-779c-40dd-a9ef-cae475f93f1c
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Updates the attribute for mobile client availability of Marketing List"
  unique_name: msdynce_MarketingUpdateListMetadata
- version: "9.0.1912.3004"
+ version: "9.0.2003.3004"
  customization_prefix: msdyn
 # This solution includes no entities.
 # This solution includes no actions.

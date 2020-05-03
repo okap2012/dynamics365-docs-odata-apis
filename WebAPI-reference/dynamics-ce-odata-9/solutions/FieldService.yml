@@ -4,10 +4,10 @@ name: "Field Service"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Field Service Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: d0283624-2391-4939-96f7-e73f0a3a1fa4
+  ms.assetid: ab8de56e-1d7a-4f42-8787-f2bb7cb85e63
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -99,6 +99,8 @@ entities:
      description: "Pricing options in addition to or above the Price List Items"
    - type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
      description: "Settings controlling functionality related to Field Service"
+   - type: Microsoft.Dynamics.CRM.msdyn_fieldserviceslaconfiguration
+     description: "Allows configuration of SLA Type and appropriate behavior based on creation and update of SLA KPI Instances related to Field Service entities."
    - type: Microsoft.Dynamics.CRM.msdyn_fieldservicesystemjob
      description: "An internal entity used to track field service system jobs."
    - type: Microsoft.Dynamics.CRM.msdyn_incidenttype

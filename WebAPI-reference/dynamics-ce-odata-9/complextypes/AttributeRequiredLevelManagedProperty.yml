@@ -4,7 +4,7 @@ name: "AttributeRequiredLevelManagedProperty"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement AttributeRequiredLevelManagedProperty ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 6ad3a123-511e-4c4e-bad4-8a5cc0007f12

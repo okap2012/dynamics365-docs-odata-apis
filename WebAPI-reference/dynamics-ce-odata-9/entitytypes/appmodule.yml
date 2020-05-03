@@ -4,7 +4,7 @@ name: "appmodule"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement appmodule EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: f95d3037-475c-4641-8a4a-6a5307cffa12
@@ -297,6 +297,9 @@ collection_valued_navigation_properties:
   - name: appmoduleroles_association
     type: Microsoft.Dynamics.CRM.role
     partner: appmoduleroles_association
+  - name: serviceplan_appmodule_association
+    type: Microsoft.Dynamics.CRM.serviceplan
+    partner: serviceplan_appmodule_association
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the appmodule entity type."

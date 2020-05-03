@@ -4,7 +4,7 @@ name: "FindParentResourceGroup"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement FindParentResourceGroup Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: ab61d0c5-a8db-4b74-9aa7-b4652e021683

@@ -4,7 +4,7 @@ name: "EqualUserId"
 type: queryfunction
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement EqualUserId Query Function Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 2ee94601-7e1d-4761-8887-02730bca9860

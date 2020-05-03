@@ -4,10 +4,10 @@ name: "Microsoft Dynamics 365 Component History APIs"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Microsoft Dynamics 365 Component History APIs Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: dc6ee013-d74b-4b65-981a-8d40edcb5ebb
+  ms.assetid: 4c7d29e6-9307-4b6e-acac-d5e3a0f8f170
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"

@@ -4,10 +4,10 @@ name: "Knowledge Management Features"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Knowledge Management Features Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 2fd91e62-d06b-41af-b6e6-dc1bf5ff890f
+  ms.assetid: 4555ef08-fa2a-4c48-a129-4fbbe44f552c
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 features and migrated controls for knowledge management."
  unique_name: msdynce_KnowledgeManagementFeatures
- version: "9.0.1.1128"
+ version: "9.0.1.1092"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."

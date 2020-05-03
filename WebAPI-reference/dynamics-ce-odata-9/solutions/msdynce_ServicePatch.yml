@@ -4,10 +4,10 @@ name: "Service Patch"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Service Patch Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 873a459a-5e12-4e21-9746-3e109ec51b53
+  ms.assetid: 84c66255-342f-401e-858c-d6900141c05e
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,7 +17,7 @@ header:
  description: "Patch for Dynamics 365 workload for service."
  unique_name: msdynce_ServicePatch
  version: "9.0.19111.1004"
- customization_prefix: msdynce
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

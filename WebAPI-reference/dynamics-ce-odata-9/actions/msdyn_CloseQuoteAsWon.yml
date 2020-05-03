@@ -4,7 +4,7 @@ name: "msdyn_CloseQuoteAsWon"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_CloseQuoteAsWon Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: a09f5652-41e8-4317-b755-08c75510cbb3

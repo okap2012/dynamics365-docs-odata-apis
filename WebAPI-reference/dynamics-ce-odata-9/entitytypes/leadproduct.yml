@@ -4,7 +4,7 @@ name: "leadproduct"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement leadproduct EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: da95bbaa-5055-4b39-a661-1335318c4dda
@@ -103,6 +103,8 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_Sales
     description: "Dynamics 365 workload for sales."
+  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
+    description: "Dynamics 365 workload for third patch of Sales."
 # This entity has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

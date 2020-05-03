@@ -4,7 +4,7 @@ name: "msdyn_GenerateQuoteLineScheduleOfValues"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GenerateQuoteLineScheduleOfValues Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 82a376cc-c261-4376-bccd-27bc5b4b488f

@@ -4,7 +4,7 @@ name: "Merge"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Merge Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 6acc5dd1-0570-4550-82be-db15d6992068

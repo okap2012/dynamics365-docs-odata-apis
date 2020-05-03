@@ -4,7 +4,7 @@ name: "BusinessNotificationParameterType"
 type: enumtype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement BusinessNotificationParameterType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: db922903-c15e-4720-8bf4-41f10c31012a

@@ -4,7 +4,7 @@ name: "ImportSolution"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement ImportSolution Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: fcae8173-c927-45a0-9787-e52f0751028c
@@ -68,6 +68,11 @@ parameters:
   - name: AsyncRibbonProcessing
     type: Edm.Boolean
     nullable: true
+    unicode: true
+    description: ""
+  - name: ComponentParameters
+    type: Microsoft.Dynamics.CRM.crmbaseentity
+    nullable: false
     unicode: true
     description: ""
 # This action has no return value.

@@ -4,7 +4,7 @@ name: "msdyn_CreateTemplateFromProject"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_CreateTemplateFromProject Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 93fe8b7a-d499-4952-90ae-5fbd90a1a524

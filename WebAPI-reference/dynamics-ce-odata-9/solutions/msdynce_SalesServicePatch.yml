@@ -4,10 +4,10 @@ name: "Sales Service Patch"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Sales Service Patch Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: d57dd167-ecbb-4f0d-9a17-abc17d01c052
+  ms.assetid: 5a222f32-9d95-484c-a483-59ed38368114
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,8 +16,8 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_SalesServicePatch
- version: "9.0.1912.5012"
- customization_prefix: msdynce
+ version: "9.0.1912.5020"
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

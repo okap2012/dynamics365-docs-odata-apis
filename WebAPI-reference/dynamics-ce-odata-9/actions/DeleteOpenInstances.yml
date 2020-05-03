@@ -4,7 +4,7 @@ name: "DeleteOpenInstances"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement DeleteOpenInstances Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: e8405993-4e34-4a7f-9007-b00db726ac23

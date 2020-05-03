@@ -4,7 +4,7 @@ name: "msdyn_TimeEntriesPendingApproval"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_TimeEntriesPendingApproval Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 82f7f5e0-9da9-4fa3-86ca-6cfbf7ad220c

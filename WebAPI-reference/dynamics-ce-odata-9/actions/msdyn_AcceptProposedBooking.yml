@@ -4,7 +4,7 @@ name: "msdyn_AcceptProposedBooking"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_AcceptProposedBooking Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 9307bb80-8ae1-4338-b602-bf1aef69bfca

@@ -4,7 +4,7 @@ name: "annotation"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement annotation EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 108a7d17-f416-4d6b-9045-e23a1f6c21a5
@@ -200,12 +200,13 @@ lookup_properties:
     - objectid_product
     - objectid_msdyn_playbookinstance
     - objectid_msdyn_playbooktemplate
-    - objectid_competitor
     - objectid_invoice
     - objectid_opportunity
     - objectid_quote
     - objectid_salesorder
+    - objectid_competitor
     - objectid_msdyn_postalbum
+    - objectid_msdyn_3dmodel
     - objectid_msdyn_actual
     - objectid_msdyn_bookingalertstatus
     - objectid_msdyn_bookingrule
@@ -222,60 +223,6 @@ lookup_properties:
     - objectid_msdyn_timegroup
     - objectid_msdyn_timegroupdetail
     - objectid_msdyn_transactionorigin
-    - objectid_msdyn_accountpricelist
-    - objectid_msdyn_characteristicreqforteammember
-    - objectid_msdyn_contactpricelist
-    - objectid_msdyn_dataexport
-    - objectid_msdyn_delegation
-    - objectid_msdyn_estimate
-    - objectid_msdyn_estimateline
-    - objectid_msdyn_expense
-    - objectid_msdyn_expensecategory
-    - objectid_msdyn_expensereceipt
-    - objectid_msdyn_fact
-    - objectid_msdyn_findworkevent
-    - objectid_msdyn_invoicelinetransaction
-    - objectid_msdyn_journal
-    - objectid_msdyn_journalline
-    - objectid_msdyn_opportunitylineresourcecategory
-    - objectid_msdyn_opportunitylinetransaction
-    - objectid_msdyn_opportunitylinetransactioncategory
-    - objectid_msdyn_opportunitylinetransactionclassificatio
-    - objectid_msdyn_opportunitypricelist
-    - objectid_msdyn_orderlineresourcecategory
-    - objectid_msdyn_orderlinetransaction
-    - objectid_msdyn_orderlinetransactioncategory
-    - objectid_msdyn_orderlinetransactionclassification
-    - objectid_msdyn_orderpricelist
-    - objectid_msdyn_processnotes
-    - objectid_msdyn_project
-    - objectid_msdyn_projectapproval
-    - objectid_msdyn_projectparameter
-    - objectid_msdyn_projectparameterpricelist
-    - objectid_msdyn_projectpricelist
-    - objectid_msdyn_projecttask
-    - objectid_msdyn_projecttaskdependency
-    - objectid_msdyn_projecttaskstatususer
-    - objectid_msdyn_projectteam
-    - objectid_msdyn_projectteammembersignup
-    - objectid_msdyn_projecttransactioncategory
-    - objectid_msdyn_quotelineresourcecategory
-    - objectid_msdyn_quotelinetransaction
-    - objectid_msdyn_quotelinetransactioncategory
-    - objectid_msdyn_quotelinetransactionclassification
-    - objectid_msdyn_quotepricelist
-    - objectid_msdyn_resourcecategorypricelevel
-    - objectid_msdyn_resourcerequest
-    - objectid_msdyn_rolecompetencyrequirement
-    - objectid_msdyn_timeentry
-    - objectid_msdyn_transactioncategory
-    - objectid_msdyn_transactioncategoryclassification
-    - objectid_msdyn_transactioncategoryhierarchyelement
-    - objectid_msdyn_transactioncategorypricelevel
-    - objectid_msdyn_transactionconnection
-    - objectid_msdyn_transactiontype
-    - objectid_msdyn_workhourtemplate
-    - objectid_msdyn_3dmodel
     - objectid_msdyn_agreement
     - objectid_msdyn_agreementbookingdate
     - objectid_msdyn_agreementbookingincident
@@ -344,8 +291,59 @@ lookup_properties:
     - objectid_msdyn_iotdevicecategory
     - objectid_msdyn_iotdevicecommand
     - objectid_msdyn_iotdeviceregistrationhistory
-    - objectid_msdyn_liveconversation
-    - objectid_msdyn_transcript
+    - objectid_msdyn_accountpricelist
+    - objectid_msdyn_characteristicreqforteammember
+    - objectid_msdyn_contactpricelist
+    - objectid_msdyn_dataexport
+    - objectid_msdyn_delegation
+    - objectid_msdyn_estimate
+    - objectid_msdyn_estimateline
+    - objectid_msdyn_expense
+    - objectid_msdyn_expensecategory
+    - objectid_msdyn_expensereceipt
+    - objectid_msdyn_fact
+    - objectid_msdyn_findworkevent
+    - objectid_msdyn_invoicelinetransaction
+    - objectid_msdyn_journal
+    - objectid_msdyn_journalline
+    - objectid_msdyn_opportunitylineresourcecategory
+    - objectid_msdyn_opportunitylinetransaction
+    - objectid_msdyn_opportunitylinetransactioncategory
+    - objectid_msdyn_opportunitylinetransactionclassificatio
+    - objectid_msdyn_opportunitypricelist
+    - objectid_msdyn_orderlineresourcecategory
+    - objectid_msdyn_orderlinetransaction
+    - objectid_msdyn_orderlinetransactioncategory
+    - objectid_msdyn_orderlinetransactionclassification
+    - objectid_msdyn_orderpricelist
+    - objectid_msdyn_processnotes
+    - objectid_msdyn_project
+    - objectid_msdyn_projectapproval
+    - objectid_msdyn_projectparameter
+    - objectid_msdyn_projectparameterpricelist
+    - objectid_msdyn_projectpricelist
+    - objectid_msdyn_projecttask
+    - objectid_msdyn_projecttaskdependency
+    - objectid_msdyn_projecttaskstatususer
+    - objectid_msdyn_projectteam
+    - objectid_msdyn_projectteammembersignup
+    - objectid_msdyn_projecttransactioncategory
+    - objectid_msdyn_quotelineresourcecategory
+    - objectid_msdyn_quotelinetransaction
+    - objectid_msdyn_quotelinetransactioncategory
+    - objectid_msdyn_quotelinetransactionclassification
+    - objectid_msdyn_quotepricelist
+    - objectid_msdyn_resourcecategorypricelevel
+    - objectid_msdyn_resourcerequest
+    - objectid_msdyn_rolecompetencyrequirement
+    - objectid_msdyn_timeentry
+    - objectid_msdyn_transactioncategory
+    - objectid_msdyn_transactioncategoryclassification
+    - objectid_msdyn_transactioncategoryhierarchyelement
+    - objectid_msdyn_transactioncategorypricelevel
+    - objectid_msdyn_transactionconnection
+    - objectid_msdyn_transactiontype
+    - objectid_msdyn_workhourtemplate
     description: "Unique identifier of the object with which the note is associated."
   - name: _ownerid_value
     single_valued_navigation_property:
@@ -525,6 +523,15 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_agreementsubstatus
     type: Microsoft.Dynamics.CRM.msdyn_agreementsubstatus
     partner: msdyn_agreementsubstatus_Annotations
+  - name: objectid_msdyn_aifptrainingdocument
+    type: Microsoft.Dynamics.CRM.msdyn_aifptrainingdocument
+    partner: msdyn_aifptrainingdocument_Annotations
+  - name: objectid_msdyn_aimodel
+    type: Microsoft.Dynamics.CRM.msdyn_aimodel
+    partner: msdyn_aimodel_Annotations
+  - name: objectid_msdyn_aiodimage
+    type: Microsoft.Dynamics.CRM.msdyn_aiodimage
+    partner: msdyn_aiodimage_Annotations
   - name: objectid_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: msdyn_approval_Annotations

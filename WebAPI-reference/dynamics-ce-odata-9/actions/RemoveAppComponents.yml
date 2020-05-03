@@ -4,7 +4,7 @@ name: "RemoveAppComponents"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RemoveAppComponents Action Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 0ba3750b-da80-4fd6-ac3d-080edee7ce26

@@ -4,10 +4,10 @@ name: "Scheduling Patch"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Scheduling Patch Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 09d5b425-2d67-44dd-920a-129953b8029d
+  ms.assetid: 4a1588b5-8a23-4419-ad78-655ac7a34c1b
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -17,7 +17,7 @@ header:
  description: "Dynamics 365 workload for scheduling."
  unique_name: msdynce_SchedulingPatch
  version: "9.0.3.0"
- customization_prefix: msdynce
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:

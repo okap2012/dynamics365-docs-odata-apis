@@ -4,7 +4,7 @@ name: "activitypointer"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement activitypointer EntityType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: d8413f17-5b14-41c1-bb4b-b8553945ab90
@@ -403,8 +403,6 @@ lookup_properties:
     - regardingobjectid_msdyn_systemuserschedulersetting
     - regardingobjectid_msdyn_timegroup
     - regardingobjectid_msdyn_timegroupdetail
-    - regardingobjectid_msdyn_processnotes
-    - regardingobjectid_msdyn_projectteam
     - regardingobjectid_msdyn_agreement
     - regardingobjectid_msdyn_agreementbookingdate
     - regardingobjectid_msdyn_agreementbookingincident
@@ -459,6 +457,8 @@ lookup_properties:
     - regardingobjectid_msdyn_workorderresourcerestriction
     - regardingobjectid_msdyn_workorderservice
     - regardingobjectid_msdyn_workorderservicetask
+    - regardingobjectid_msdyn_processnotes
+    - regardingobjectid_msdyn_projectteam
     description: "Unique identifier of the object with which the activity is associated."
   - name: _sendermailboxid_value
     single_valued_navigation_property:
@@ -909,6 +909,8 @@ derived_types:
 operations:
   description: "The following operations can be used with the activitypointer entity type."
   operation_items:
+  - name: Microsoft.Dynamics.CRM.RetrieveTimelineWallRecords
+    binding_type: "Collection"
   - name: Microsoft.Dynamics.CRM.Rollup
     binding_type: "Not Bound"
 solutions:
@@ -924,8 +926,6 @@ solutions:
     description: "Dynamics 365 workload for activities."
   - type: Microsoft.Dynamics.CRM.msdynce_ActivitiesPatch
     description: "Patch for Dynamics 365 workload for activities."
-  - type: Microsoft.Dynamics.CRM.msdynce_CoreServiceScheduling
-    description: "Dynamics 365 workload for service scheduling."
   - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
     description: "Dynamics 365 workload for lead management."
   - type: Microsoft.Dynamics.CRM.msdynce_LeadManagementPatch

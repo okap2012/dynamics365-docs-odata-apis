@@ -4,10 +4,10 @@ name: "Solution Component Configuration"
 type: solution
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement Solution Component Configuration Solution Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 2ca5a1e8-1100-4ebd-8e90-a130322d5569
+  ms.assetid: 647ff285-5b4b-40fe-bfa2-c6b9c23f9170
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
@@ -16,8 +16,8 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: SolutionComponentConfiguration
- version: "9.1.0.3"
- customization_prefix: none
+ version: "9.1.0.4"
+ customization_prefix: 
 # This solution includes no entities.
 # This solution includes no actions.
 # This solution has no remarks.

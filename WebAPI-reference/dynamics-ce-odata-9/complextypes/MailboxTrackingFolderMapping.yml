@@ -4,7 +4,7 @@ name: "MailboxTrackingFolderMapping"
 type: complextype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement MailboxTrackingFolderMapping ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/27/2020"
+  ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: a50b0bfe-63f5-4397-98b5-9ad425df3b97
