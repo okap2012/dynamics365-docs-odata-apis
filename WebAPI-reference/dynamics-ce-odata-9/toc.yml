@@ -2286,6 +2286,10 @@
       name: GetValidReferencingEntitiesResponse
     - uid: Microsoft.Dynamics.CRM.GuidCollection
       name: GuidCollection
+    - uid: Microsoft.Dynamics.CRM.IChangedItem
+      name: IChangedItem
+    - uid: Microsoft.Dynamics.CRM.IEnumerable`1
+      name: IEnumerable`1
     - uid: Microsoft.Dynamics.CRM.ImmediateBookResponse
       name: ImmediateBookResponse
     - uid: Microsoft.Dynamics.CRM.ImportCardTypeSchemaResponse
