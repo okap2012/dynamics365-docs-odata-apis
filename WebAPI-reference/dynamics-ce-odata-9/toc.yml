@@ -44,8 +44,6 @@
       name: asyncoperation
     - uid: Microsoft.Dynamics.CRM.attachment
       name: attachment
-    - uid: Microsoft.Dynamics.CRM.attribute
-      name: attribute
     - uid: Microsoft.Dynamics.CRM.attributeimageconfig
       name: attributeimageconfig
     - uid: Microsoft.Dynamics.CRM.audit
