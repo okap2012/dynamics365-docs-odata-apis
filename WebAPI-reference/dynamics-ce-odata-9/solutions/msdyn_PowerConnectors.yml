@@ -17,7 +17,7 @@ header:
  description: "Power Connector Solution"
  unique_name: msdyn_PowerConnectors
  version: "9.2.0.0"
- customization_prefix: 
+ customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:

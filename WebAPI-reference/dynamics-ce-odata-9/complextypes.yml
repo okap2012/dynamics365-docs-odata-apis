@@ -346,6 +346,8 @@ in_this_section:
   description: "Contains a collection of translations for a label. "
 - type: Microsoft.Dynamics.CRM.LabelQueryExpression
   description: "Contains the languages for the labels to be retrieved for metadata items. "
+- type: Microsoft.Dynamics.CRM.LayerDesiredOrder
+  description: ""
 - type: Microsoft.Dynamics.CRM.LinkEntity
   description: "Specifies the links between multiple entity types used in creating complex queries."
 - type: Microsoft.Dynamics.CRM.LocalizedLabel
@@ -476,6 +478,10 @@ in_this_section:
   description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_RecommendWorkResponse
   description: "For internal use only."
+- type: Microsoft.Dynamics.CRM.msdyn_RetrieveDistanceMatrixResponse
+  description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_RetrieveResourceAvailabilityResponse
+  description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_TimeEntriesCopyPasteResponse
   description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_UpdateEstimateLinesResponse
@@ -742,12 +748,16 @@ in_this_section:
   description: "Contains the result from the ValidateRequest, BookRequest, or Reschedule actions. "
 - type: Microsoft.Dynamics.CRM.ValidatorIssue
   description: ""
+- type: Microsoft.Dynamics.CRM.ViewColumn
+  description: ""
 - type: Microsoft.Dynamics.CRM.WebResourceDetails
   description: ""
 - type: Microsoft.Dynamics.CRM.WebResourceInfo
   description: ""
 - type: Microsoft.Dynamics.CRM.WhoAmIResponse
   description: "Contains the response from WhoAmI function."
+- type: Microsoft.Dynamics.CRM.XrmAttributeExpression
+  description: ""
 href_see_also:
 - text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

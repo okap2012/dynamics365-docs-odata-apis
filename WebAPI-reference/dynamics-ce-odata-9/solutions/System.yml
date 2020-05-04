@@ -17,7 +17,7 @@ header:
  description: "Internal CRM System Solution"
  unique_name: System
  version: "5.0"
- customization_prefix: 
+ customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:

@@ -17,7 +17,7 @@ header:
  description: "Patch for Dynamics 365 workload for activities."
  unique_name: msdynce_ActivitiesPatch
  version: "9.0.20034.200323002"
- customization_prefix: 
+ customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:

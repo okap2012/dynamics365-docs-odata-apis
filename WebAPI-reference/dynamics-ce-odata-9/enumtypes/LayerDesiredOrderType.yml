@@ -26,7 +26,11 @@ members:
   - description: ""
     name: "Base"
     value: 2
-
+usedby:
+  description: "The following use the LayerDesiredOrderType EnumType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.LayerDesiredOrder
+    used_as: Property
 # This enum type has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

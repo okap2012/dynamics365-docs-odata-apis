@@ -41,7 +41,11 @@ members:
   - description: ""
     name: "FiscalYear"
     value: 7
-
+usedby:
+  description: "The following use the XrmDateTimeGrouping EnumType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.XrmAttributeExpression
+    used_as: Property
 # This enum type has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"

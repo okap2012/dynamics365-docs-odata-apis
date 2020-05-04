@@ -17,7 +17,7 @@ header:
  description: "Dynamics 365 workload for product management."
  unique_name: msdynce_ProductManagementPatch
  version: "9.0.2002.2005 "
- customization_prefix: 
+ customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:

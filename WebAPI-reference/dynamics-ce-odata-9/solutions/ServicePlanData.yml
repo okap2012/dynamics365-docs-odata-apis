@@ -17,7 +17,7 @@ header:
  description: "Service Plan Data solution"
  unique_name: ServicePlanData
  version: "1.01"
- customization_prefix: 
+ customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:

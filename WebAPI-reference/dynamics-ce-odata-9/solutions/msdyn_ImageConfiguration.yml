@@ -17,7 +17,7 @@ header:
 # This solution has no description.
  unique_name: msdyn_ImageConfiguration
  version: "1.0.0.6"
- customization_prefix: 
+ customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:

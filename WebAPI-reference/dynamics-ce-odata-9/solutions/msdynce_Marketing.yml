@@ -17,7 +17,7 @@ header:
  description: "Dynamics 365 workload for marketing and enterprise."
  unique_name: msdynce_Marketing
  version: "9.0.4.37"
- customization_prefix: 
+ customization_prefix: none
 entities:
   description: "The following entities are included in this solution."
   entity_items:

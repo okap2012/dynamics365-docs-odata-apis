@@ -2322,6 +2322,8 @@
       name: Label
     - uid: Microsoft.Dynamics.CRM.LabelQueryExpression
       name: LabelQueryExpression
+    - uid: Microsoft.Dynamics.CRM.LayerDesiredOrder
+      name: LayerDesiredOrder
     - uid: Microsoft.Dynamics.CRM.LinkEntity
       name: LinkEntity
     - uid: Microsoft.Dynamics.CRM.LocalizedLabel
@@ -2452,6 +2454,10 @@
       name: msdyn_ReadEstimateLinesResponse
     - uid: Microsoft.Dynamics.CRM.msdyn_RecommendWorkResponse
       name: msdyn_RecommendWorkResponse
+    - uid: Microsoft.Dynamics.CRM.msdyn_RetrieveDistanceMatrixResponse
+      name: msdyn_RetrieveDistanceMatrixResponse
+    - uid: Microsoft.Dynamics.CRM.msdyn_RetrieveResourceAvailabilityResponse
+      name: msdyn_RetrieveResourceAvailabilityResponse
     - uid: Microsoft.Dynamics.CRM.msdyn_TimeEntriesCopyPasteResponse
       name: msdyn_TimeEntriesCopyPasteResponse
     - uid: Microsoft.Dynamics.CRM.msdyn_UpdateEstimateLinesResponse
@@ -2718,12 +2724,16 @@
       name: ValidationResult
     - uid: Microsoft.Dynamics.CRM.ValidatorIssue
       name: ValidatorIssue
+    - uid: Microsoft.Dynamics.CRM.ViewColumn
+      name: ViewColumn
     - uid: Microsoft.Dynamics.CRM.WebResourceDetails
       name: WebResourceDetails
     - uid: Microsoft.Dynamics.CRM.WebResourceInfo
       name: WebResourceInfo
     - uid: Microsoft.Dynamics.CRM.WhoAmIResponse
       name: WhoAmIResponse
+    - uid: Microsoft.Dynamics.CRM.XrmAttributeExpression
+      name: XrmAttributeExpression
   - uid: Microsoft.Dynamics.CRM.EnumTypeIndex
     name: EnumType
     items:
