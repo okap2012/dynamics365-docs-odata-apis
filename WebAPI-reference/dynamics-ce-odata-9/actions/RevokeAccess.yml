@@ -13,7 +13,7 @@ metadata:
   manager: "Annbe"
   meta-description: "Reference information about the RevokeAccess Action."
 namespace: Microsoft.Dynamics.CRM
-description: "Replaces the access rights on the target record for the specified security principal (user or team).  "
+description: "Replaces the access rights on the target record for the specified security principal (organization, user, or team).  "
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false

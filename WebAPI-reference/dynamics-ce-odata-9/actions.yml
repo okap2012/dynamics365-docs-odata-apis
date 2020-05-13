@@ -189,7 +189,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.GetTrackingTokenEmail
   description: "Returns a tracking token that can then be passed as a parameter to the SendEmailRequest message. "
 - type: Microsoft.Dynamics.CRM.GrantAccess
-  description: "Grants a security principal (user or team) access to the specified record."
+  description: "Grants a security principal (organization, user, or team) access to the specified record."
 - type: Microsoft.Dynamics.CRM.ImmediateBook
   description: ""
 - type: Microsoft.Dynamics.CRM.ImportCardTypeSchema
@@ -559,7 +559,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.ReviseQuote
   description: "Sets the state of a quote to Draft. "
 - type: Microsoft.Dynamics.CRM.RevokeAccess
-  description: "Replaces the access rights on the target record for the specified security principal (user or team).  "
+  description: "Replaces the access rights on the target record for the specified security principal (organization, user, or team).  "
 - type: Microsoft.Dynamics.CRM.RouteTo
   description: "Routes a queue item to a queue, a user, or a team.  "
 - type: Microsoft.Dynamics.CRM.SchedulePrediction

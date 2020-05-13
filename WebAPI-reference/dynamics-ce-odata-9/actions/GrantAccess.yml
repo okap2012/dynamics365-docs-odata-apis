@@ -13,7 +13,7 @@ metadata:
   manager: "Annbe"
   meta-description: "Reference information about the GrantAccess Action."
 namespace: Microsoft.Dynamics.CRM
-description: "Grants a security principal (user or team) access to the specified record."
+description: "Grants a security principal (organization, user, or team) access to the specified record."
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
