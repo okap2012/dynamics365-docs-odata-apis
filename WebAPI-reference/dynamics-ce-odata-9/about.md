@@ -1,5 +1,5 @@
 ---
-title: "Commmon Data Service and Dynamics 365 Customer Engagement Web API Reference| MicrosoftDocs"
+title: "Common Data Service and Dynamics 365 Customer Engagement Web API Reference| MicrosoftDocs"
 ms.date: 04/27/2020
 ms.service: "crm-online"
 ms.topic: "reference"
