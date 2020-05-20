@@ -4,7 +4,7 @@ name: "annotation"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement annotation EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
+  ms.date: "05/20/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 108a7d17-f416-4d6b-9045-e23a1f6c21a5
@@ -27,6 +27,7 @@ header:
 namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  note: "Any customization should not block the write operation on this entity, as this is internally used by Omnichannel for Customer Service."
   property_items:
     - name: annotationid
       type: Edm.Guid
