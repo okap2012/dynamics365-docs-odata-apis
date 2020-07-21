@@ -27,13 +27,13 @@ parameters:
     type: Edm.Boolean
     nullable: false
     unicode: true
-    description: ""
+    description: "Indicates whether to exclude disabled privileges."
     iscollection: false
   - name: IncludeSetupUserFiltering
     type: Edm.Boolean
     nullable: false
     unicode: true
-    description: ""
+    description: "Indicates whether to exclude privileges based on user license and access mode."
     iscollection: false
 return_type:
   description: "The RetrieveUsersPrivilegesThroughTeams function returns the following value."
