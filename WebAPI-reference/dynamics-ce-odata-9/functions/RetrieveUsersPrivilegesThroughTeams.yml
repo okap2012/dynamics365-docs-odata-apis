@@ -13,7 +13,7 @@ metadata:
   manager: "Annbe"
   meta-description: "Reference information about the RetrieveUsersPrivilegesThroughTeams Function."
 namespace: Microsoft.Dynamics.CRM
-description: ""
+description: "Retrieves privileges which the user gets through team memberships."
 iscomposable: false
 bound_entities:
   description: "Bound functions are invoked by appending the function name to the URI representing an entity or collection."
