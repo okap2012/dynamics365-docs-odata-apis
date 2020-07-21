@@ -17,16 +17,16 @@ description: "Contains the possible values for the depth of a privilege within a
 members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
-  - description: "Indicates basic privileges. "
+  - description: "Indicates basic privileges. Users who have basic privileges can only use privileges to perform actions on objects that are owned by, or shared with, the user."
     name: "Basic"
     value: 0
-  - description: "Indicates local privileges."
+  - description: "Indicates local privileges. Users who have local privileges can only use privileges to perform actions on data and objects that are in the user's current business unit."
     name: "Local"
     value: 1
-  - description: "Indicates deep privileges. "
+  - description: "Indicates deep privileges. Users who have deep privileges can perform actions on all objects in the user's current business units and all objects down the hierarchy of business units."
     name: "Deep"
     value: 2
-  - description: "Indicates global privileges."
+  - description: "Indicates global privileges. Users who have global privileges can perform actions on data and objects anywhere within the organization regardless of the business unit or user to which it belongs."
     name: "Global"
     value: 3
 usedby:
