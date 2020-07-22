@@ -13,14 +13,14 @@ metadata:
   manager: "Annbe"
   meta-description: "Reference information about the RetrieveVersion Function."
 namespace: Microsoft.Dynamics.CRM
-description: "Retrieves the version number of the Microsoft Dynamics 365 Server. "
+description: "Retrieves the version number of the Microsoft Dynamics 365 Server "
 iscomposable: false
 # This function is not bound to any entities.
 isbound: false
 # This function has no parameters.
 hasparameters: false
 return_type:
-  description: "The RetrieveVersion function returns the following value."
+  description: "The RetrieveVersion function returns the following value"
   type: Microsoft.Dynamics.CRM.RetrieveVersionResponse
   iscollection: false
   nullable: false
