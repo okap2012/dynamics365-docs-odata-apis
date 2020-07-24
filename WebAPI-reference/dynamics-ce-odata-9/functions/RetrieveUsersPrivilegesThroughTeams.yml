@@ -4,7 +4,7 @@ name: "RetrieveUsersPrivilegesThroughTeams"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveUsersPrivilegesThroughTeams Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
+  ms.date: "07/23/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 62874b19-c54b-43c2-b320-244bf170f85c
