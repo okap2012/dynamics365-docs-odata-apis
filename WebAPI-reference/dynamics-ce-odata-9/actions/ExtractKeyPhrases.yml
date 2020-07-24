@@ -13,7 +13,7 @@ metadata:
   manager: "Annbe"
   meta-description: "Reference information about the ExtractKeyPhrases Action."
 namespace: Microsoft.Dynamics.CRM
-description: "For internal use only.  "
+# This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false

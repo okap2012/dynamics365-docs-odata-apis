@@ -15,7 +15,7 @@ metadata:
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
-description: "For internal use only.  "
+# This action has no bound entities.
 isbound: false
 parameters:
   description: "Parameters allow for data to be passed to the action."

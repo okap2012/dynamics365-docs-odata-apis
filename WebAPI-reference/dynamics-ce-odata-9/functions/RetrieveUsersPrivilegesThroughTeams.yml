@@ -13,7 +13,7 @@ metadata:
   manager: "Annbe"
   meta-description: "Reference information about the RetrieveUsersPrivilegesThroughTeams Function."
 namespace: Microsoft.Dynamics.CRM
-description: "Retrieves privileges that the user gets through team memberships."
+description: ""
 iscomposable: false
 bound_entities:
   description: "Bound functions are invoked by appending the function name to the URI representing an entity or collection."
@@ -27,13 +27,13 @@ parameters:
     type: Edm.Boolean
     nullable: false
     unicode: true
-    description: "Indicates whether to exclude disabled privileges."
+    description: ""
     iscollection: false
   - name: IncludeSetupUserFiltering
     type: Edm.Boolean
     nullable: false
     unicode: true
-    description: "Indicates whether to exclude privileges based on user license and access mode."
+    description: ""
     iscollection: false
 return_type:
   description: "The RetrieveUsersPrivilegesThroughTeams function returns the following value."
