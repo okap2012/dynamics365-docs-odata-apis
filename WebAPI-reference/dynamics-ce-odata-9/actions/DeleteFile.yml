@@ -24,7 +24,7 @@ parameters:
     type: Edm.Guid
     nullable: false
     unicode: true
-    description: "IF of the file to be deleted."
+    description: "ID of the file to be deleted."
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
