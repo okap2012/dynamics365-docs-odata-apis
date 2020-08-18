@@ -4,7 +4,7 @@ name: "RetrieveUsersPrivilegesThroughTeams"
 type: function
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement RetrieveUsersPrivilegesThroughTeams Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
+  ms.date: "07/24/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 62874b19-c54b-43c2-b320-244bf170f85c
@@ -27,13 +27,13 @@ parameters:
     type: Edm.Boolean
     nullable: false
     unicode: true
-    description: "Indicates whether to exclude disabled privileges."
+    description: "Indicates whether to exclude disabled privileges. "
     iscollection: false
   - name: IncludeSetupUserFiltering
     type: Edm.Boolean
     nullable: false
     unicode: true
-    description: "Indicates whether to exclude privileges based on user license and access mode."
+    description: "Indicates whether to exclude privileges based on user license and access mode. "
     iscollection: false
 return_type:
   description: "The RetrieveUsersPrivilegesThroughTeams function returns the following value."

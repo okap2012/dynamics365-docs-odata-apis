@@ -1,46 +1,34 @@
 ### YamlMime:OData
-uid: Microsoft.Dynamics.CRM.ExtractTextEntities
-name: "ExtractTextEntities"
+uid: Microsoft.Dynamics.CRM.CreateAsyncJobToRevokeInheritedAccess
+name: "CreateAsyncJobToRevokeInheritedAccess"
 type: action
 metadata: 
-  title: "Common Data Service and Dynamics 365 Customer Engagement ExtractTextEntities Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
+  title: "Common Data Service and Dynamics 365 Customer Engagement CreateAsyncJobToRevokeInheritedAccess Action Reference | MicrosoftDocs"
+  ms.date: "08/17/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 017ebc50-7b93-4568-b01b-00c12e52e80e
+  ms.assetid: c19b8aca-f005-4b06-8fe9-7e52f3b28ebd
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
-  meta-description: "Reference information about the ExtractTextEntities Action."
+  meta-description: "Reference information about the CreateAsyncJobToRevokeInheritedAccess Action."
 namespace: Microsoft.Dynamics.CRM
-# This Action has no description.
+description: "Creates and executes an asynchronous cleanup job to revoke inherited access granted through cascading inheritance. "
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
 parameters:
   description: "Parameters allow for data to be passed to the action."
   parameter_items:
-  - name: text
+  - name: RelationshipSchema
     type: Edm.String
     nullable: false
     unicode: false
-    description: ""
-  - name: modelId
-    type: Edm.Guid
-    nullable: true
-    unicode: true
-    description: ""
-  - name: language
-    type: Edm.String
-    nullable: true
-    unicode: false
-    description: ""
-return_type:
-  description: "The ExtractTextEntities action returns the following value."
-  iscollection: false
-  nullable: false
-  type: Microsoft.Dynamics.CRM.ExtractTextEntitiesResponse
+    description: "The schema name of the entity relationship."  
+# This action has no return value.
+hasreturnvalue: false
 # This action has no identified unbound entities.
+remarks: "When an entity relationship that is using Reparent or Share is changed from Cascade All to Cascade None, a cleanup job can be run to remove access that was granted through cascading inheritance. This cleanup will not impact any user that was directly granted access to an entity."
 # This action has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"
