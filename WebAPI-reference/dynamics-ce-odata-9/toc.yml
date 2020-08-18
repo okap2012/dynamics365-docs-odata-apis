@@ -1087,6 +1087,8 @@
       name: CopySystemForm
     - uid: Microsoft.Dynamics.CRM.CreateActivitiesList
       name: CreateActivitiesList
+    - uid: Microsoft.Dynamics.CRM.CreateAsyncJobToRevokeInheritedAccess
+      name: CreateAsyncJobToRevokeInheritedAccess
     - uid: Microsoft.Dynamics.CRM.CreateCustomerRelationships
       name: CreateCustomerRelationships
     - uid: Microsoft.Dynamics.CRM.CreateException

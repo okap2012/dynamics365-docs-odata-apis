@@ -112,6 +112,8 @@ in_this_section:
   description: "Creates a new entity form that is based on an existing entity form.  "
 - type: Microsoft.Dynamics.CRM.CreateActivitiesList
   description: "Creates a quick campaign to distribute an activity to members of a list (marketing list). "
+- type: Microsoft.Dynamics.CRM.CreateAsyncJobToRevokeInheritedAccess
+  description: "Creates and executes an asynchronous cleanup job to revoke inherited access granted through cascading inheritance. "
 - type: Microsoft.Dynamics.CRM.CreateCustomerRelationships
   description: "Creates a new customer lookup attribute, and optionally, to add it to a specified unmanaged solution."
 - type: Microsoft.Dynamics.CRM.CreateException

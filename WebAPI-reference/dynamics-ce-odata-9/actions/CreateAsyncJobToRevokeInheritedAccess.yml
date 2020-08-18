@@ -1,33 +1,34 @@
 ### YamlMime:OData
-uid: Microsoft.Dynamics.CRM.DeleteFile
-name: "DeleteFile"
+uid: Microsoft.Dynamics.CRM.CreateAsyncJobToRevokeInheritedAccess
+name: "CreateAsyncJobToRevokeInheritedAccess"
 type: action
 metadata: 
-  title: "Common Data Service and Dynamics 365 Customer Engagement DeleteFile Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
+  title: "Common Data Service and Dynamics 365 Customer Engagement CreateAsyncJobToRevokeInheritedAccess Action Reference | MicrosoftDocs"
+  ms.date: "08/17/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
-  ms.assetid: 49c61bb3-1bd9-43cf-a2f0-2e7f491ea30c
+  ms.assetid: c19b8aca-f005-4b06-8fe9-7e52f3b28ebd
   author: "KumarVivek"
   ms.author: "kvivek"
   manager: "Annbe"
-  meta-description: "Reference information about the DeleteFile Action."
+  meta-description: "Reference information about the CreateAsyncJobToRevokeInheritedAccess Action."
 namespace: Microsoft.Dynamics.CRM
-# This Action has no description.
+description: "Creates and executes an asynchronous cleanup job to revoke inherited access granted through cascading inheritance. "
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
 parameters:
   description: "Parameters allow for data to be passed to the action."
   parameter_items:
-  - name: FileId
-    type: Edm.Guid
+  - name: RelationshipSchema
+    type: Edm.String
     nullable: false
-    unicode: true
-    description: "IF of the file to be deleted."
+    unicode: false
+    description: "The schema name of the entity relationship."  
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
+remarks: "When an entity relationship that is using Reparent or Share is changed from Cascade All to Cascade None, a cleanup job can be run to remove access that was granted through cascading inheritance. This cleanup will not impact any user that was directly granted access to an entity."
 # This action has no remarks.
 href_see_also:
 - text: "Use the Common Data Service Web API"
