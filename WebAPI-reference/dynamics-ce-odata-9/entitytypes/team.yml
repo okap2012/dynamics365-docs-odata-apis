@@ -4,7 +4,7 @@ name: "team"
 type: entitytype
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement team EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
+  ms.date: "09/16/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 3c62c4cc-6841-4b6e-81a4-d8992ba19d86
@@ -75,6 +75,21 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
+    - name: membershiptype
+      type: Edm.Int32
+      display_name: "Membership Type"
+      description: "Information about team membership type."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Members and guests"
+        - value: 1
+          label: "Members"
+        - value: 2
+          label: "Owners"
+        - value: 3
+          label: "Guests"
     - name: modifiedon
       type: Edm.DateTimeOffset
       display_name: "Modified On"
