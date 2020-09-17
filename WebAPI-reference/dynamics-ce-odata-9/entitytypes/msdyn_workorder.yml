@@ -26,7 +26,7 @@ header:
   - DELETE
 namespace: Microsoft.Dynamics.CRM
 properties:
-  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  description: "Properties represent fields of data stored in the entity. Some properties are read-only."
   property_items:
     - name: createdon
       type: Edm.DateTimeOffset
